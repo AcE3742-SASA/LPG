@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "version": "1.0.0",
+  "snapshot_date": "2026-11-13",
+  "research_snapshot_commit": "b197aca936eabd0f1ba82bf308ebc2df6faa34bb",
+  "coverage": {
+    "research_files": 1253340,
+    "research_bytes": 87470921715,
+    "git_files": 3770,
+    "git_bytes": 146659355,
+    "symlinks": 3,
+    "unique_objects": 24989,
+    "unique_bytes": 36730921504,
+    "release_bytes": 12453551374
+  },
+  "documentation_links_checked": 48,
+  "archive_verification": {
+    "packs": 36,
+    "blob_sha256_checks": 24989,
+    "multichunk_unique_files": 20,
+    "streamed_unique_files": 17,
+    "restored_unique_files": 3,
+    "restored_files": [
+      {
+        "path": "research/analysis/remeasure_720_v3_2026-09-30/first_replay/results.sqlite3",
+        "sha256": "1608e1965e5ddc6b7fc73121c26bad2589b7407d5f9a783d1e609f8098479d8a",
+        "size": 1882636288
+      },
+      {
+        "path": "research/analysis/remeasure_720_v3_result_2026-10-01/recomputed/full_720_remeasure2_20260930/results.sqlite3",
+        "sha256": "2454b34c1c85c76404cb1ceb5a0a382a412b5a2e79834c800d02246265d015e3",
+        "size": 1912836096
+      },
+      {
+        "path": "research/analysis/remeasure_720_v4_result_2026-10-01/recomputed/full_720_remeasure3_20261001/results.sqlite3",
+        "sha256": "6a2db7e55ea1f19dcd7d54240c00b823b48c40888ff04a3a449d2e265323361b",
+        "size": 1912856576
+      }
+    ]
+  },
+  "restore_smoke_test": {
+    "path_prefix": "research/analysis/final_test_2026-11-11/summary",
+    "files_restored_and_verified": 8
+  },
+  "restore_tool_tests": {
+    "passed": 16,
+    "command": "python3 -m unittest discover -s tests -v"
+  },
+  "citation_schema": "CFF 1.2.0: PASS",
+  "github_asset_verification": {
+    "status": "PASS",
+    "packs": 36,
+    "bytes": 12453551374,
+    "local_and_remote_sha256_matches": 36
+  }
+}
