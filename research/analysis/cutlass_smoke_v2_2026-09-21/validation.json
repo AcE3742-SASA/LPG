@@ -1,0 +1,17 @@
+{
+  "script_sha256": "0e96a77e8e295a672dafa5467789eb34e9205f28b8962755885e01cf8d99dbd6",
+  "checks": "bash syntax and 9 offline mocked runner cases passed",
+  "cases": [
+    "ok",
+    "verify",
+    "clock",
+    "exit",
+    "busy",
+    "lock",
+    "preclock",
+    "setfail",
+    "monitor"
+  ],
+  "gpu_executed": false,
+  "real_device_verification": "pending"
+}

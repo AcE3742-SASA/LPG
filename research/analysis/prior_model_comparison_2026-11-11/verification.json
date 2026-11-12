@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "original_inputs_unchanged": 700,
+  "source_files_unchanged": 42,
+  "metric_predictions_recomputed": 203389,
+  "saved_models_reloaded": 354,
+  "saved_validation_predictions_reproduced": 66672,
+  "layer_choices_verified": 68,
+  "training_validation_test_overlap": 0,
+  "bootstrap": "5000 paired shape resamples; errors averaged over fixed seeds first; descriptive 95% percentile interval without multiplicity correction"
+}

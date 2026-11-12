@@ -1,0 +1,29 @@
+{
+  "package": "timing_audit_2026-09-19_v4.zip",
+  "sha256": "89a42133c0aaa0bf78736e1f2cafcd3cc7a9b174c84bb560341ce524d3a45c99",
+  "source_hashes": {
+    "audit.py": "5ec32a2a891868823f738711ff8a23007f4592ce8400e4fc20534d90c992c9e0",
+    "analyze.py": "ece1747238801955e22e20051ed8ae22c8361fe93bc5f7387eff82585803c950",
+    "test_audit.py": "c4d03239e4fb7202fd325d44f83d4e7c6e62309e07911332d17f6a193080323b",
+    "launch.sh": "b0c47112b155d9ceaf51eb644e2ae7c1fd7e8f00fc53e91a7dcc4d203cdbd339",
+    "baseline_v5.json": "b983c14d84c22886578095e340399469e17d1a9f46d761fa3da1cfc83ebd641c",
+    "README.md": "22e2eb513facd2deeb7ac523d5b4f49dd293f26914587eb5f5f8f8a2373203f7"
+  },
+  "cpu_tests_passed": 22,
+  "python_ast": "PASS",
+  "bash_syntax": "PASS",
+  "zip_byte_comparison": "PASS",
+  "v5_hashes_unchanged": 13,
+  "raw_files_unchanged": 157,
+  "original_v2_blocks_reanalyzed": 56,
+  "existing_kernel_metrics_preserved": true,
+  "gap_partition_and_union_conservation": "PASS all 56 blocks",
+  "c05_memsets_correlated": 56,
+  "v4_gpu_status": "NOT_RUN",
+  "user_v3_status": "NOT_RUN",
+  "full": "ON_HOLD",
+  "estimated_minutes": [
+    12,
+    20
+  ]
+}

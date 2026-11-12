@@ -1,0 +1,31 @@
+{
+  "archive_raw_database_exports_unchanged": true,
+  "baseline_weight_hashes": 144,
+  "figures_png_pdf": 8,
+  "frozen_input_hashes": 14,
+  "full_models_exact": 144,
+  "local_document_links_checked": 26,
+  "locked_test_opened": false,
+  "metrics_recomputed": 1728,
+  "old_predictions_exact": 103104,
+  "original_full_context_unchanged": true,
+  "selected_weight_references": 18,
+  "source_syntax_and_terminal_literals": "PASS",
+  "status": "PASS",
+  "time": "2026-11-05T19:59:11.333494+00:00",
+  "vault_commit": "9d05ac23b8434417fedcf6a26b0c7f660de1ac13",
+  "vault_new_findings": {
+    "actionable_unreferenced": [],
+    "broken_links": [],
+    "frontmatter_issues": [],
+    "hierarchy_issues": [],
+    "invalid_markers": [],
+    "orphans": [],
+    "pending_markers": [],
+    "review_issues": [],
+    "stubs": [],
+    "unreachable": [],
+    "unreferenced_sources": []
+  },
+  "vault_regression": "PASS"
+}

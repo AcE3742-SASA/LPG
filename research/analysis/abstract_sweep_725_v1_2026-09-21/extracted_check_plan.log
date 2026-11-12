@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "size": "check",
+  "tasks": 48,
+  "phases": {
+    "check": 48
+  },
+  "triplets": 16,
+  "task_digest": "fe646801047a5ff74350ca62e17388aa0facf526b994721ed9048f0f8bf13029"
+}

@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "experiment_gate": "REVIEW",
+  "expected": 180000,
+  "recorded": 180000,
+  "duplicate_tasks": 0,
+  "missing_tasks": 0,
+  "source_hashes_checked": 223,
+  "dependency_hashes_checked": 91,
+  "zip_crc": "PASS",
+  "archive_sha256": "ec461b0f1d1eebc23ff34e362757385b84f09b79ecea1411674c6a21f85559d0",
+  "summary_exact": true,
+  "exports_exact": {
+    "between_round.json": true,
+    "blocks.csv": true,
+    "blocks_fresh_holdout_LOCKED.csv": true,
+    "fresh_holdout_LOCKED.csv": true,
+    "manifest.json": true,
+    "metrics.csv": true,
+    "raw_attempts.jsonl": true,
+    "remeasure_tasks.json": true,
+    "report.md": true,
+    "review_fresh_holdout_LOCKED.csv": true,
+    "review_queue.csv": true,
+    "shape_splits.csv": true,
+    "summary.json": true,
+    "triplets.csv": true,
+    "triplets_fresh_holdout_LOCKED.csv": true
+  },
+  "sqlite_quick_check": "ok",
+  "raw_sqlite_unchanged": true,
+  "raw_exports_unchanged": true,
+  "raw_statuses": {
+    "PASS": 180000
+  },
+  "correctness_passed": 180000,
+  "correctness_scopes": {
+    "sampled": 179676,
+    "full": 324
+  },
+  "sessions": {
+    "20261028_154646_29b609ad": 180000
+  },
+  "segment_quality_exact": 1500,
+  "segment_flags": {
+    "worker_mismatch:clocks.mem": 20,
+    "worker_active:clocks_event_reasons.sw_power_cap": 30,
+    "worker_mismatch:clocks.sm": 1
+  },
+  "sensor_samples": 13335960,
+  "sensor_ranges": {
+    "clocks.sm": [
+      705.0,
+      720.0
+    ],
+    "clocks.mem": [
+      6800.0,
+      6801.0
+    ],
+    "power.limit": [
+      70.0,
+      70.0
+    ],
+    "power.draw": [
+      20.93,
+      69.67
+    ],
+    "temperature.gpu": [
+      35.0,
+      67.0
+    ]
+  },
+  "review_tasks": 6041,
+  "between_round_conditions": 14,
+  "accepted_measurements": 173959,
+  "task_wall_sum_seconds": 695035.4209508304,
+  "task_wall_median_seconds": 3.858331354567781,
+  "worker_elapsed_seconds": 700102.0072186622,
+  "finished_utc": "2026-11-05T09:15:08.063028+00:00",
+  "locked_test_opened": false
+}

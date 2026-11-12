@@ -1,0 +1,51 @@
+Preheating GPU for 0 seconds; telemetry is recording.
+[1/4] gemm [1024, 512, 256] fp16 prealloc r0
+  PASS (0.0s)
+[2/4] gemm [1024, 512, 256] fp16 graph r0
+STOP requested: finishing this task and saving it; no next task.
+  PASS (0.0s)
+{
+  "gate": "INCOMPLETE",
+  "expected": 4,
+  "recorded": 2,
+  "missing": 2,
+  "attempts": 2,
+  "counts": {
+    "PASS": 2
+  },
+  "between_round_flags": 0,
+  "result_digest": "451f2e0d1690aea3d1caa0b6b990063002804a0d5c82a6714ba09bfd524132c4",
+  "size": "pilot",
+  "paired_expected": 2,
+  "paired_complete": 1
+}
+Report: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmp3996ryek/report.html
+No automatic transition to full sweep.
+Preheating GPU for 0 seconds; telemetry is recording.
+[3/4] gemm [1024, 512, 256] fp16 graph r1
+  PASS (0.0s)
+[4/4] gemm [1024, 512, 256] fp16 prealloc r1
+  PASS (0.0s)
+{
+  "gate": "PASS",
+  "expected": 4,
+  "recorded": 4,
+  "missing": 0,
+  "attempts": 4,
+  "counts": {
+    "PASS": 4
+  },
+  "between_round_flags": 0,
+  "result_digest": "4052d1846127c74feb0dc9a750f4cb629ac4b275dfa473c3f7614f35a2527e55",
+  "size": "pilot",
+  "paired_expected": 2,
+  "paired_complete": 2
+}
+Report: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmp3996ryek/report.html
+No automatic transition to full sweep.
+NOTE: Desktop GPU clients retained in process log: ['6470, /usr/libexec/xdg-desktop-portal-gnome, 9 MiB']
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 1.396s
+
+OK

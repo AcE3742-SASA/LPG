@@ -1,0 +1,174 @@
+{
+  "definition": "100*(block latency / same shape,dtype,mode,round seven-block median - 1)",
+  "scope": "Common ten shape/dtype conditions, prealloc and graph, two rounds. 750 after is separate. Only timed blocks; setup is excluded.",
+  "limits": "Each observation is elapsed CUDA event time divided by GEMM count over a roughly 100 ms block, not a per-call latency. Runs at 900 and lower clocks are separate sessions. No causal attribution.",
+  "source_sha256": {
+    "/Users/studyhard/Claude/자율연구/analysis/clock_lower_result_2026-09-20/raw/clock_lower_20260920_192959_la2ofx/s0_750_before/results.json": "cf9b79777f98249af6a81fb3a8d1f5e8ef5d2ea36128db5e1946ee5992bbeda8",
+    "/Users/studyhard/Claude/자율연구/analysis/clock_lower_result_2026-09-20/raw/clock_lower_20260920_192959_la2ofx/s1_780/results.json": "32e447f23d55a3a223162234b147737ef6df5b02319572104163631cc5587a00",
+    "/Users/studyhard/Claude/자율연구/analysis/clock_lower_result_2026-09-20/raw/clock_lower_20260920_192959_la2ofx/s2_810/results.json": "d9b44c330e3c6b900d6fe557ca020b24a620a21661e09fcfbc69431fbea5e390",
+    "/Users/studyhard/Claude/자율연구/analysis/clock_lower_result_2026-09-20/raw/clock_lower_20260920_192959_la2ofx/s3_750_after/results.json": "eeb1ad05f2df1ff401c665ce225e3ecd78858e4a0c710b474e33b8b358413eab",
+    "/Users/studyhard/Claude/자율연구/analysis/fixed_pilot_result_2026-09-20/raw/fixed_pilot_20260920_182355_DtvOGG/pilot/results.json": "5c9480dda993501f4ecd9ae89a1f531412bd96e46dbca51f3dd605aeb1a5eedc"
+  },
+  "stages": [
+    {
+      "stage": "s0_750_before",
+      "measurements": 40,
+      "blocks": 280,
+      "max_above_7block_median_pct": 0.49433084442591646,
+      "above_1pct_blocks": 0,
+      "above_2pct_blocks": 0,
+      "above_5pct_blocks": 0,
+      "max_above_14block_median_pct": 0.6495822589027034,
+      "worst": {
+        "task": {
+          "id": "c5_graph_r0",
+          "kind": "gemm",
+          "shape": [
+            392,
+            2776,
+            80
+          ],
+          "dtype": "fp32",
+          "mode": "graph",
+          "round": 0,
+          "phase": "clock_lower",
+          "split": "diagnostic_only"
+        },
+        "block": 4,
+        "above_7block_median_pct": 0.49433084442591646,
+        "latency_us": 47.54333926322765,
+        "median_us": 47.30947394120066,
+        "repeats": 38,
+        "operations_per_call": 56
+      }
+    },
+    {
+      "stage": "s1_780",
+      "measurements": 40,
+      "blocks": 280,
+      "max_above_7block_median_pct": 0.6197101549970219,
+      "above_1pct_blocks": 0,
+      "above_2pct_blocks": 0,
+      "above_5pct_blocks": 0,
+      "max_above_14block_median_pct": 0.858640083267237,
+      "worst": {
+        "task": {
+          "id": "c0_prealloc_r1",
+          "kind": "gemm",
+          "shape": [
+            1888,
+            832,
+            632
+          ],
+          "dtype": "fp32",
+          "mode": "prealloc",
+          "round": 1,
+          "phase": "clock_lower",
+          "split": "diagnostic_only"
+        },
+        "block": 3,
+        "above_7block_median_pct": 0.6197101549970219,
+        "latency_us": 382.4600513164814,
+        "median_us": 380.1045050987831,
+        "repeats": 260,
+        "operations_per_call": 1
+      }
+    },
+    {
+      "stage": "s2_810",
+      "measurements": 40,
+      "blocks": 280,
+      "max_above_7block_median_pct": 0.5716148532277199,
+      "above_1pct_blocks": 0,
+      "above_2pct_blocks": 0,
+      "above_5pct_blocks": 0,
+      "max_above_14block_median_pct": 0.7025651796434218,
+      "worst": {
+        "task": {
+          "id": "c3_graph_r1",
+          "kind": "gemm",
+          "shape": [
+            1999,
+            646,
+            425
+          ],
+          "dtype": "fp32",
+          "mode": "graph",
+          "round": 1,
+          "phase": "clock_lower",
+          "split": "diagnostic_only"
+        },
+        "block": 2,
+        "above_7block_median_pct": 0.5716148532277199,
+        "latency_us": 249.507137373382,
+        "median_us": 248.0890236648859,
+        "repeats": 51,
+        "operations_per_call": 8
+      }
+    },
+    {
+      "stage": "s3_750_after",
+      "measurements": 40,
+      "blocks": 280,
+      "max_above_7block_median_pct": 0.43094945710824284,
+      "above_1pct_blocks": 0,
+      "above_2pct_blocks": 0,
+      "above_5pct_blocks": 0,
+      "max_above_14block_median_pct": 0.37151031522530964,
+      "worst": {
+        "task": {
+          "id": "c7_prealloc_r0",
+          "kind": "gemm",
+          "shape": [
+            4096,
+            4096,
+            4096
+          ],
+          "dtype": "fp32",
+          "mode": "prealloc",
+          "round": 0,
+          "phase": "clock_lower",
+          "split": "diagnostic_only"
+        },
+        "block": 5,
+        "above_7block_median_pct": 0.43094945710824284,
+        "latency_us": 18613.86260986328,
+        "median_us": 18533.990478515625,
+        "repeats": 5,
+        "operations_per_call": 1
+      }
+    },
+    {
+      "stage": "900_common",
+      "measurements": 40,
+      "blocks": 280,
+      "max_above_7block_median_pct": 2.5930469615987883,
+      "above_1pct_blocks": 12,
+      "above_2pct_blocks": 2,
+      "above_5pct_blocks": 0,
+      "max_above_14block_median_pct": 3.539800621100042,
+      "worst": {
+        "task": {
+          "kind": "gemm",
+          "phase": "main",
+          "shape": [
+            1888,
+            832,
+            632
+          ],
+          "dtype": "fp32",
+          "round": 1,
+          "mode": "graph",
+          "split": "development",
+          "id": "45faf98888291b67072d6fc3"
+        },
+        "block": 2,
+        "above_7block_median_pct": 2.5930469615987883,
+        "latency_us": 370.6951141357422,
+        "median_us": 361.3257673051622,
+        "repeats": 32,
+        "operations_per_call": 9
+      }
+    }
+  ]
+}

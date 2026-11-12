@@ -1,0 +1,593 @@
+{
+  "source_archive_sha256": "719cb872d36026494713637f447c79bd609fb4d40de064ca356476ac75246b29",
+  "raw_files": 718,
+  "source_files": 7,
+  "dependency_files": 110,
+  "summary_exact_reproduction": true,
+  "independent_timing_window_checks": 128,
+  "raw_preserved": true,
+  "collection": "COMPLETE",
+  "correctness_checks": 144,
+  "groups": [
+    {
+      "round": 1,
+      "k": 72,
+      "trials": 16,
+      "start_temperature_c": 34.0,
+      "power_w_median": 66.9225,
+      "power_instant_w_median": 66.95,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 51.5,
+      "latency_ms_median": 0.5004646976788838,
+      "intertrial_gap_ms_median": 27.358
+    },
+    {
+      "round": 1,
+      "k": 127,
+      "trials": 16,
+      "start_temperature_c": 51.0,
+      "power_w_median": 63.7,
+      "power_instant_w_median": 63.705,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 63.0,
+      "latency_ms_median": 0.8356700544597722,
+      "intertrial_gap_ms_median": 26.995
+    },
+    {
+      "round": 2,
+      "k": 72,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 69.14500000000001,
+      "power_instant_w_median": 69.17,
+      "timing_cap_trials": 16,
+      "timing_drop_trials": 6,
+      "minimum_sm_mhz": 705.0,
+      "temperature_median_c": 67.0,
+      "latency_ms_median": 0.500736007399152,
+      "intertrial_gap_ms_median": 26.591
+    },
+    {
+      "round": 2,
+      "k": 127,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 64.285,
+      "power_instant_w_median": 64.325,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 66.0,
+      "latency_ms_median": 0.8357185105145988,
+      "intertrial_gap_ms_median": 26.429000000000002
+    },
+    {
+      "round": 3,
+      "k": 72,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 69.19999999999999,
+      "power_instant_w_median": 69.18,
+      "timing_cap_trials": 16,
+      "timing_drop_trials": 6,
+      "minimum_sm_mhz": 705.0,
+      "temperature_median_c": 67.5,
+      "latency_ms_median": 0.50082288217479,
+      "intertrial_gap_ms_median": 26.483
+    },
+    {
+      "round": 3,
+      "k": 127,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 64.285,
+      "power_instant_w_median": 64.265,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 66.5,
+      "latency_ms_median": 0.8357705585027144,
+      "intertrial_gap_ms_median": 26.612000000000002
+    },
+    {
+      "round": 4,
+      "k": 72,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 69.26,
+      "power_instant_w_median": 69.245,
+      "timing_cap_trials": 16,
+      "timing_drop_trials": 7,
+      "minimum_sm_mhz": 705.0,
+      "temperature_median_c": 67.5,
+      "latency_ms_median": 0.5008079251451332,
+      "intertrial_gap_ms_median": 26.447
+    },
+    {
+      "round": 4,
+      "k": 127,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 64.465,
+      "power_instant_w_median": 64.52,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 66.5,
+      "latency_ms_median": 0.8358440722449352,
+      "intertrial_gap_ms_median": 26.549
+    }
+  ],
+  "matched_rounds": [
+    2,
+    3,
+    4
+  ],
+  "matched": {
+    "72": {
+      "trials": 48,
+      "power_w_median": 69.19,
+      "cap_trials": 48,
+      "drop_trials": 19,
+      "min_sm_mhz": 705.0,
+      "latency_ms_median": 0.5008006848787007,
+      "timing_flags": 0
+    },
+    "127": {
+      "trials": 48,
+      "power_w_median": 64.39,
+      "cap_trials": 0,
+      "drop_trials": 0,
+      "min_sm_mhz": 720.0,
+      "latency_ms_median": 0.8357705585027144,
+      "timing_flags": 0
+    }
+  },
+  "paired_trial_power_delta_w": {
+    "median": 5.005000000000003,
+    "min": 4.180000000000007,
+    "max": 5.529999999999994
+  },
+  "stages": [
+    {
+      "stage": "ncu_k127",
+      "rows": 331,
+      "correctness_checks": 2,
+      "maximum_gap_s": 0.12999987602233887,
+      "recovery_wait_s": 10.213077472988516,
+      "starting_temperature_c": 52.0,
+      "active_start_utc": "2026-10-01T11:57:23.434394+00:00",
+      "active_end_utc": "2026-10-01T11:57:24.306347+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1
+      ],
+      "first_cap": null,
+      "first_drop": null,
+      "cap_after_start_s": null,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 0,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 35
+    },
+    {
+      "stage": "ncu_k72",
+      "rows": 333,
+      "correctness_checks": 2,
+      "maximum_gap_s": 0.1360001564025879,
+      "recovery_wait_s": 10.213783247992978,
+      "starting_temperature_c": 52.0,
+      "active_start_utc": "2026-10-01T11:57:05.681656+00:00",
+      "active_end_utc": "2026-10-01T11:57:06.521870+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1
+      ],
+      "first_cap": null,
+      "first_drop": null,
+      "cap_after_start_s": null,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 0,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 38
+    },
+    {
+      "stage": "nsys_k127",
+      "rows": 372,
+      "correctness_checks": 2,
+      "maximum_gap_s": 0.10000014305114746,
+      "recovery_wait_s": 10.23173250099353,
+      "starting_temperature_c": 53.0,
+      "active_start_utc": "2026-10-01T11:56:46.820299+00:00",
+      "active_end_utc": "2026-10-01T11:56:48.501932+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1
+      ],
+      "first_cap": null,
+      "first_drop": null,
+      "cap_after_start_s": null,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 0,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 33
+    },
+    {
+      "stage": "nsys_k72",
+      "rows": 847,
+      "correctness_checks": 2,
+      "maximum_gap_s": 0.11399984359741211,
+      "recovery_wait_s": 35.49969061400043,
+      "starting_temperature_c": 54.0,
+      "active_start_utc": "2026-10-01T11:56:26.666345+00:00",
+      "active_end_utc": "2026-10-01T11:56:28.370336+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1,
+        4
+      ],
+      "first_cap": {
+        "utc": "2026-10-01T11:56:26.685000+00:00",
+        "temperature.gpu": 61.0,
+        "clocks.sm": 720.0,
+        "power.draw": 68.57,
+        "power.draw.instant": 68.67,
+        "clocks_event_reasons.active": 4
+      },
+      "first_drop": null,
+      "cap_after_start_s": 0.018655061721801758,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 1,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 34
+    },
+    {
+      "stage": "r1_p1_k72",
+      "rows": 1369,
+      "correctness_checks": 17,
+      "maximum_gap_s": 0.10500001907348633,
+      "recovery_wait_s": 10.230644490002305,
+      "starting_temperature_c": 34.0,
+      "active_start_utc": "2026-10-01T11:43:18.511025+00:00",
+      "active_end_utc": "2026-10-01T11:44:20.412476+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1
+      ],
+      "first_cap": null,
+      "first_drop": null,
+      "cap_after_start_s": null,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 0,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 651
+    },
+    {
+      "stage": "r1_p2_k127",
+      "rows": 1374,
+      "correctness_checks": 17,
+      "maximum_gap_s": 0.10299992561340332,
+      "recovery_wait_s": 10.230512334994273,
+      "starting_temperature_c": 51.0,
+      "active_start_utc": "2026-10-01T11:44:32.493527+00:00",
+      "active_end_utc": "2026-10-01T11:45:34.558974+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0
+      ],
+      "first_cap": null,
+      "first_drop": null,
+      "cap_after_start_s": null,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 0,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 640
+    },
+    {
+      "stage": "r2_p1_k127",
+      "rows": 1696,
+      "correctness_checks": 17,
+      "maximum_gap_s": 0.10500001907348633,
+      "recovery_wait_s": 27.27780788599921,
+      "starting_temperature_c": 54.0,
+      "active_start_utc": "2026-10-01T11:46:03.744509+00:00",
+      "active_end_utc": "2026-10-01T11:47:05.815428+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1
+      ],
+      "first_cap": null,
+      "first_drop": null,
+      "cap_after_start_s": null,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 0,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 640
+    },
+    {
+      "stage": "r2_p2_k72",
+      "rows": 1838,
+      "correctness_checks": 17,
+      "maximum_gap_s": 0.10500001907348633,
+      "recovery_wait_s": 35.296294998013764,
+      "starting_temperature_c": 54.0,
+      "active_start_utc": "2026-10-01T11:47:42.960297+00:00",
+      "active_end_utc": "2026-10-01T11:48:44.607463+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1,
+        4
+      ],
+      "first_cap": {
+        "utc": "2026-10-01T11:47:46.391000+00:00",
+        "temperature.gpu": 61.0,
+        "clocks.sm": 720.0,
+        "power.draw": 68.43,
+        "power.draw.instant": 68.48,
+        "clocks_event_reasons.active": 4
+      },
+      "first_drop": {
+        "utc": "2026-10-01T11:48:24.370000+00:00",
+        "temperature.gpu": 68.0,
+        "clocks.sm": 705.0,
+        "power.draw": 69.7,
+        "power.draw.instant": 69.74,
+        "clocks_event_reasons.active": 4
+      },
+      "cap_after_start_s": 3.4307029247283936,
+      "drop_after_start_s": 41.40970277786255,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 1069,
+      "drop_samples_in_selected_interval": 328,
+      "all_event_blocks": 642
+    },
+    {
+      "stage": "r3_p1_k127",
+      "rows": 1961,
+      "correctness_checks": 17,
+      "maximum_gap_s": 0.0989999771118164,
+      "recovery_wait_s": 41.31262174900621,
+      "starting_temperature_c": 54.0,
+      "active_start_utc": "2026-10-01T11:49:27.772529+00:00",
+      "active_end_utc": "2026-10-01T11:50:29.914673+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1
+      ],
+      "first_cap": null,
+      "first_drop": null,
+      "cap_after_start_s": null,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 0,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 640
+    },
+    {
+      "stage": "r3_p2_k72",
+      "rows": 1899,
+      "correctness_checks": 17,
+      "maximum_gap_s": 0.10500001907348633,
+      "recovery_wait_s": 38.312907257000916,
+      "starting_temperature_c": 54.0,
+      "active_start_utc": "2026-10-01T11:51:10.106528+00:00",
+      "active_end_utc": "2026-10-01T11:52:12.015355+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1,
+        4
+      ],
+      "first_cap": {
+        "utc": "2026-10-01T11:51:11.490000+00:00",
+        "temperature.gpu": 60.0,
+        "clocks.sm": 720.0,
+        "power.draw": 68.42,
+        "power.draw.instant": 68.56,
+        "clocks_event_reasons.active": 4
+      },
+      "first_drop": {
+        "utc": "2026-10-01T11:51:51.016000+00:00",
+        "temperature.gpu": 68.0,
+        "clocks.sm": 705.0,
+        "power.draw": 69.67,
+        "power.draw.instant": 69.74,
+        "clocks_event_reasons.active": 4
+      },
+      "cap_after_start_s": 1.383471965789795,
+      "drop_after_start_s": 40.90947198867798,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 1101,
+      "drop_samples_in_selected_interval": 389,
+      "all_event_blocks": 643
+    },
+    {
+      "stage": "r4_p1_k72",
+      "rows": 1953,
+      "correctness_checks": 17,
+      "maximum_gap_s": 0.10100007057189941,
+      "recovery_wait_s": 41.31389218098775,
+      "starting_temperature_c": 54.0,
+      "active_start_utc": "2026-10-01T11:52:55.210288+00:00",
+      "active_end_utc": "2026-10-01T11:53:56.957722+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1,
+        4
+      ],
+      "first_cap": {
+        "utc": "2026-10-01T11:52:58.569000+00:00",
+        "temperature.gpu": 61.0,
+        "clocks.sm": 720.0,
+        "power.draw": 68.51,
+        "power.draw.instant": 68.65,
+        "clocks_event_reasons.active": 4
+      },
+      "first_drop": {
+        "utc": "2026-10-01T11:53:32.619000+00:00",
+        "temperature.gpu": 68.0,
+        "clocks.sm": 705.0,
+        "power.draw": 69.57,
+        "power.draw.instant": 68.91,
+        "clocks_event_reasons.active": 4
+      },
+      "cap_after_start_s": 3.3587119579315186,
+      "drop_after_start_s": 37.4087119102478,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 1072,
+      "drop_samples_in_selected_interval": 413,
+      "all_event_blocks": 644
+    },
+    {
+      "stage": "r4_p2_k127",
+      "rows": 1978,
+      "correctness_checks": 17,
+      "maximum_gap_s": 0.10400009155273438,
+      "recovery_wait_s": 42.317863483011024,
+      "starting_temperature_c": 54.0,
+      "active_start_utc": "2026-10-01T11:54:41.165763+00:00",
+      "active_end_utc": "2026-10-01T11:55:43.220192+00:00",
+      "thermal_samples": 0,
+      "flag_masks": [
+        0,
+        1
+      ],
+      "first_cap": null,
+      "first_drop": null,
+      "cap_after_start_s": null,
+      "drop_after_start_s": null,
+      "raw_memory_clocks": [
+        6801.0
+      ],
+      "cap_samples_in_selected_interval": 0,
+      "drop_samples_in_selected_interval": 0,
+      "all_event_blocks": 640
+    }
+  ],
+  "nsys": {
+    "72": {
+      "kernels": 20,
+      "kernel_name": "ampere_sgemm_128x64_nn",
+      "resources": {
+        "gridX": [
+          32
+        ],
+        "gridY": [
+          64
+        ],
+        "gridZ": [
+          1
+        ],
+        "blockX": [
+          128
+        ],
+        "blockY": [
+          1
+        ],
+        "blockZ": [
+          1
+        ],
+        "registersPerThread": [
+          122
+        ],
+        "staticSharedMemory": [
+          12544
+        ],
+        "dynamicSharedMemory": [
+          0
+        ]
+      },
+      "mean_gpu_duration_us": 500.04595,
+      "mean_gap_us": 1.2934736842105263,
+      "kernel_duty_fraction_in_trace": 0.9975486497175451
+    },
+    "127": {
+      "kernels": 20,
+      "kernel_name": "ampere_sgemm_128x64_nn",
+      "resources": {
+        "gridX": [
+          32
+        ],
+        "gridY": [
+          64
+        ],
+        "gridZ": [
+          1
+        ],
+        "blockX": [
+          128
+        ],
+        "blockY": [
+          1
+        ],
+        "blockZ": [
+          1
+        ],
+        "registersPerThread": [
+          122
+        ],
+        "staticSharedMemory": [
+          12544
+        ],
+        "dynamicSharedMemory": [
+          0
+        ]
+      },
+      "mean_gpu_duration_us": 835.76535,
+      "mean_gap_us": 1.3658947368421053,
+      "kernel_duty_fraction_in_trace": 0.998449817901987
+    }
+  },
+  "ncu_selected_capture_count": 2,
+  "ncu_passes_per_capture": 10,
+  "limitations": [
+    "Round 1 starts differ by 17 C and is excluded from paired inference.",
+    "Normal trials are repeated measurements within 8 bouts, not 128 independent sessions.",
+    "Kernel identity and activity were profiled in separate runs, not throughout every ordinary bout.",
+    "NCU used uncontrolled caches with 10 replay passes; K127 L2 hit rate 100.11 percent is not a valid literal probability.",
+    "Voltage query was unavailable. Power attribution to individual GPU units remains unmeasured.",
+    "A 50 ms polling request is not the power sensor update interval."
+  ]
+}

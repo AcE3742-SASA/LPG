@@ -1,0 +1,63 @@
+[
+  {
+    "layer": "linear",
+    "dtype": "fp16",
+    "planned_groups": 250,
+    "retained_groups": 250,
+    "excluded_group_ids": []
+  },
+  {
+    "layer": "linear",
+    "dtype": "fp32",
+    "planned_groups": 250,
+    "retained_groups": 250,
+    "excluded_group_ids": []
+  },
+  {
+    "layer": "ffn",
+    "dtype": "fp16",
+    "planned_groups": 250,
+    "retained_groups": 250,
+    "excluded_group_ids": []
+  },
+  {
+    "layer": "ffn",
+    "dtype": "fp32",
+    "planned_groups": 250,
+    "retained_groups": 248,
+    "excluded_group_ids": [
+      "lfg_5d946932365838fe",
+      "lfg_a463bc0e43c0d487"
+    ]
+  },
+  {
+    "layer": "conv1",
+    "dtype": "fp16",
+    "planned_groups": 250,
+    "retained_groups": 250,
+    "excluded_group_ids": []
+  },
+  {
+    "layer": "conv1",
+    "dtype": "fp32",
+    "planned_groups": 250,
+    "retained_groups": 250,
+    "excluded_group_ids": []
+  },
+  {
+    "layer": "conv3",
+    "dtype": "fp16",
+    "planned_groups": 250,
+    "retained_groups": 250,
+    "excluded_group_ids": []
+  },
+  {
+    "layer": "conv3",
+    "dtype": "fp32",
+    "planned_groups": 250,
+    "retained_groups": 249,
+    "excluded_group_ids": [
+      "lfg_b9e9ba927cac0b77"
+    ]
+  }
+]

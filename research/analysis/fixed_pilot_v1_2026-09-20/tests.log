@@ -1,0 +1,25 @@
+..FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpbyoeok4i/worker.log
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: PASS; full remains HOLD
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpl9i9m29e/worker.log
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: REVIEW; full remains HOLD
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpsig8dv80/worker.log
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpfu_lzhjx/worker.log
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmppgmk1oj8/worker.log
+RESTORE: FAILED; inspect restore.json
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rgc
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rmc
+FIXED PILOT: FAIL; full remains HOLD
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpzseos64h/worker.log
+RESTORE: COMMANDS ACCEPTED
+......
+----------------------------------------------------------------------
+Ran 8 tests in 6.094s
+
+OK

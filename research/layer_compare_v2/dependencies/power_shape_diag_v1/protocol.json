@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "sm_mhz": 720,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "mode": "prealloc",
+  "dtype": "fp32",
+  "tasks": [
+    {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        72
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "split": "development",
+      "mode": "prealloc",
+      "id": "2b51d6f5be47c2b82ead9f67"
+    },
+    {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        127
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "split": "legacy_train",
+      "mode": "prealloc",
+      "id": "ef6a1146350275b207b1d00f"
+    }
+  ],
+  "rounds": 4,
+  "case_orders": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "continuous_trials": 16,
+  "cooldown_max_c": 55,
+  "cooldown_stable_s": 10,
+  "cooldown_timeout_s": 300,
+  "start_temperature_tolerance_c": 2,
+  "interval_ms": 50,
+  "worker_timeout_s": 1800,
+  "profiler_timeout_s": 900,
+  "optional_sensor_fields": [
+    "power.draw.average",
+    "power.draw.instant",
+    "fan.speed",
+    "voltage.graphics",
+    "utilization.memory"
+  ],
+  "ncu_sections": [
+    "SpeedOfLight",
+    "MemoryWorkloadAnalysis",
+    "ComputeWorkloadAnalysis",
+    "Occupancy",
+    "LaunchStats"
+  ],
+  "source_archive_sha256": "319c8480f15fd5f310bd0c211b326104ed341276b76e214bec688b673ecdc5c4",
+  "source_manifest_sha256": "96d66f7c465fa198aec36402b6a7ee5f9647d9486df0fb5c5fca64b8a0b2e9b7",
+  "diagnostic_only": true,
+  "replace_measurements": false,
+  "preheat_policy": "No global preheat. Match low-temperature starts; retain 3000 event-ms per-task settling."
+}

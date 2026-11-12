@@ -1,0 +1,78 @@
+health: round=1/3 case=1/4 linear fp16 saved
+health: round=1/3 case=1/4 linear fp32 saved
+health: round=1/3 case=2/4 ffn fp16 saved
+health: round=1/3 case=2/4 ffn fp32 saved
+health: round=1/3 case=3/4 conv1 fp16 saved
+health: round=1/3 case=3/4 conv1 fp32 saved
+health: round=1/3 case=4/4 conv3 fp16 saved
+health: round=1/3 case=4/4 conv3 fp32 saved
+health: round=2/3 case=1/4 conv3 fp32 saved
+health: round=2/3 case=1/4 conv3 fp16 saved
+health: round=2/3 case=2/4 conv1 fp32 saved
+health: round=2/3 case=2/4 conv1 fp16 saved
+health: round=2/3 case=3/4 ffn fp32 saved
+health: round=2/3 case=3/4 ffn fp16 saved
+health: round=2/3 case=4/4 linear fp32 saved
+health: round=2/3 case=4/4 linear fp16 saved
+health: round=3/3 case=1/4 linear fp16 saved
+health: round=3/3 case=1/4 linear fp32 saved
+health: round=3/3 case=2/4 conv1 fp16 saved
+health: round=3/3 case=2/4 conv1 fp32 saved
+health: round=3/3 case=3/4 conv3 fp16 saved
+health: round=3/3 case=3/4 conv3 fp32 saved
+health: round=3/3 case=4/4 ffn fp16 saved
+health: round=3/3 case=4/4 ffn fp32 saved
+HEALTH PASS: continuing the selected phase.
+pilot: round=1/3 case=1/36 linear fp16 saved
+pilot: round=1/3 case=1/36 linear fp32 saved
+pilot: round=1/3 case=2/36 ffn fp16 saved
+pilot: round=1/3 case=2/36 ffn fp32 saved
+pilot: round=1/3 case=3/36 linear fp16 saved
+pilot: round=1/3 case=3/36 linear fp32 saved
+pilot: round=1/3 case=4/36 ffn fp16 saved
+pilot: round=1/3 case=4/36 ffn fp32 saved
+pilot: round=1/3 case=5/36 linear fp16 saved
+pilot: round=1/3 case=5/36 linear fp32 saved
+pilot: round=1/3 case=6/36 ffn fp16 saved
+pilot: round=1/3 case=6/36 ffn fp32 saved
+pilot: round=1/3 case=7/36 linear fp16 saved
+pilot: round=1/3 case=7/36 linear fp32 saved
+pilot: round=1/3 case=8/36 ffn fp16 saved
+pilot: round=1/3 case=8/36 ffn fp32 saved
+pilot: round=1/3 case=9/36 linear fp16 saved
+pilot: round=1/3 case=9/36 linear fp32 saved
+pilot: round=1/3 case=10/36 ffn fp16 saved
+pilot: round=1/3 case=10/36 ffn fp32 saved
+pilot: round=1/3 case=11/36 linear fp16 saved
+pilot: round=1/3 case=11/36 linear fp32 saved
+pilot: round=1/3 case=12/36 ffn fp16 saved
+pilot: round=1/3 case=12/36 ffn fp32 saved
+pilot: round=1/3 case=13/36 linear fp16 saved
+pilot: round=1/3 case=13/36 linear fp32 saved
+pilot: round=1/3 case=14/36 ffn fp16 saved
+pilot: round=1/3 case=14/36 ffn fp32 saved
+pilot: round=1/3 case=15/36 linear fp16 saved
+pilot: round=1/3 case=15/36 linear fp32 saved
+pilot: round=1/3 case=16/36 ffn fp16 saved
+pilot: round=1/3 case=16/36 ffn fp32 saved
+pilot: round=1/3 case=17/36 linear fp16 saved
+pilot: round=1/3 case=17/36 linear fp32 saved
+pilot: round=1/3 case=18/36 ffn fp16 saved
+pilot: round=1/3 case=18/36 ffn fp32 saved
+pilot: round=1/3 case=19/36 conv1 fp16 saved
+pilot: round=1/3 case=19/36 conv1 fp32 saved
+pilot: round=1/3 case=20/36 conv3 fp16 saved
+pilot: round=1/3 case=20/36 conv3 fp32 saved
+pilot: round=1/3 case=21/36 conv1 fp16 saved
+pilot: round=1/3 case=21/36 conv1 fp32 saved
+pilot: round=1/3 case=22/36 conv3 fp16 saved
+FAIL: Correctness failed; inspect correctness/lf_ce6440e85a4add93_fp32_r0_before.json
+Traceback (most recent call last):
+  File "/home/eu/gemm-research/layer_full_20261108_v2/compare.py", line 539, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/eu/gemm-research/layer_full_20261108_v2/compare.py", line 526, in main
+    worker(out,config,cases,frozen,loaded)
+  File "/home/eu/gemm-research/layer_full_20261108_v2/compare.py", line 371, in worker
+    raise RuntimeError('Correctness failed; inspect '+before)
+RuntimeError: Correctness failed; inspect correctness/lf_ce6440e85a4add93_fp32_r0_before.json

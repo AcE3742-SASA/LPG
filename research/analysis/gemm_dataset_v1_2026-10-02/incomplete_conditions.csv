@@ -1,0 +1,25 @@
+phase,split,group,shape,dtype,mode,task_ids,accepted_rounds,role
+controls,development,,"[4096, 4095, 72]",fp32,allocate,"[""9bd4a090908eeb4185b38e68"", ""e4a790078d38eb15cd3a68f5"", ""eb21a000487c01caa75edd85""]",0,development
+controls,development,,"[4096, 4095, 72]",fp32,graph,"[""a560209d15d1bf1b3aa5e3df"", ""404d9e0557379e0cd02b4539"", ""85ab7c1deea732eb4ac2a345""]",0,development
+controls,development,,"[4096, 4095, 72]",fp32,prealloc,"[""86e44dfadf8fa93b6ade5cf6"", ""cb16a2ec601a7182b2a31552"", ""afdde530ebc5258cd2143335""]",0,development
+controls,development,,"[4096, 4096, 72]",fp32,allocate,"[""eaed79b6eca0294550c79de8"", ""5a809da8b424427ade944c29"", ""8cd743f3e995197a78a66000""]",0,development
+controls,development,,"[4096, 4096, 72]",fp32,graph,"[""b6b0b20145452d369c9f31f9"", ""4d02d4f74627ba62c93cd10d"", ""9129aab8ac9206385de94439""]",0,development
+controls,development,,"[4096, 4096, 72]",fp32,prealloc,"[""13a219adfa380871dc50d51e"", ""4394806266de4ed8cdf1b374"", ""acdcc13f144fabdf87849df6""]",0,development
+main,development,,"[4096, 4095, 72]",fp32,allocate,"[""39efcb679de15fd2471fe6ca"", ""1b777f71e2f68247999a8415"", ""38d29baed75731054fc5f1b5""]",0,development
+main,development,,"[4096, 4095, 72]",fp32,graph,"[""2b2fa8e15019b76f5824f45a"", ""9f049bdb96163bd005784f3c"", ""97643a9bebad822522e3f4b8""]",0,development
+main,development,,"[4096, 4095, 72]",fp32,prealloc,"[""f7882e54e4b676e14cf60cb0"", ""c3397bf836e542ab959b4606"", ""5a9c894867faa28c5d3d1784""]",0,development
+main,development,,"[4096, 4096, 72]",fp32,allocate,"[""03c3a66c5be520625be753fe"", ""3901270736b24356e9d15ab1"", ""fda15d013006c93c229f4d1b""]",2,development
+main,development,,"[4096, 4096, 72]",fp32,graph,"[""2cdff50dbe47ce96b12cb6df"", ""19a3eecab5f6442a75bc73e8"", ""1fcdf141a596ad199373206e""]",2,development
+main,development,,"[4096, 4096, 72]",fp32,prealloc,"[""2b51d6f5be47c2b82ead9f67"", ""4f1cec86b6377f85511e84d0"", ""a1be77dda93553e9e345e9e0""]",2,development
+main,legacy_train,,"[2704, 3720, 72]",fp32,allocate,"[""5734358f61ae9ca1c8b31ea2"", ""f0c1772dac23bf79ddb9469e"", ""4cc2afac0382579e4b42b7f8""]",2,train_candidate_before_C_reservation
+main,legacy_train,,"[2704, 3720, 72]",fp32,graph,"[""a39b9888e89a2d9eacfd2239"", ""d8668b3d9ba780df46cdefa1"", ""9d3e369e574f6643642f4aaf""]",2,train_candidate_before_C_reservation
+main,legacy_train,,"[2704, 3720, 72]",fp32,prealloc,"[""b83babbac7ea1c9e9cd296a3"", ""2907e0afae8f8af559b46947"", ""023c1d71b6d654b57a20c360""]",2,train_candidate_before_C_reservation
+main,legacy_train,,"[4096, 2049, 64]",fp32,allocate,"[""f86a5fcc2ab6350223b1973c"", ""029767cb699ff71c55c41abf"", ""11d46585f38c0aad00b326d3""]",0,train_candidate_before_C_reservation
+main,legacy_train,,"[4096, 2049, 64]",fp32,graph,"[""b0fe2b44be9aaaec5b8175b7"", ""c34e8d6ee0d3f967a090039a"", ""5505f1616b3e01aba8e73182""]",0,train_candidate_before_C_reservation
+main,legacy_train,,"[4096, 2049, 64]",fp32,prealloc,"[""28237cb341e02068d3ca6136"", ""1c78497e29bfdf1dc5b5bd46"", ""ac61e1d54b8d442477184f2b""]",0,train_candidate_before_C_reservation
+main,legacy_train,,"[4096, 4088, 72]",fp32,allocate,"[""9e9399c87d0a6cb29a5b6f85"", ""b0298cf1d9be5157f1808a5d"", ""ec9082951e28858edd32c450""]",0,train_candidate_before_C_reservation
+main,legacy_train,,"[4096, 4088, 72]",fp32,graph,"[""3d20f946ba176fb35c397282"", ""37f95e24017491e770c9a6b6"", ""ba153a922fb0c1ea37aa036b""]",0,train_candidate_before_C_reservation
+main,legacy_train,,"[4096, 4088, 72]",fp32,prealloc,"[""dc7fe71809aaaa7199f469fe"", ""b842dba40640586a9ada979f"", ""80fc053a3df4627b5ba0dbe8""]",0,train_candidate_before_C_reservation
+main,legacy_validation,,"[2056, 4095, 72]",fp32,allocate,"[""85c71254dd0156b00e281861"", ""c245a1de568597eb40120d7b"", ""587e909ea2646dad52b43c2f""]",2,validation
+main,legacy_validation,,"[2056, 4095, 72]",fp32,graph,"[""b767704a992ecf8dae19362f"", ""f9a9c93d2b87e3a89532ad18"", ""fc4d5baf11012db06ac819d6""]",2,validation
+main,legacy_validation,,"[2056, 4095, 72]",fp32,prealloc,"[""4d6c54e6f1d7cf600c9ec949"", ""857f3d5b07db758334450a65"", ""a0cbf9f8e89acbba9c3520d1""]",2,validation

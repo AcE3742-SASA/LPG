@@ -1,0 +1,12 @@
+{
+  "actual_fits": 432,
+  "configurations": 576,
+  "convergence_warning_fits": 0,
+  "frozen_inputs_unchanged": true,
+  "locked_test_opened": false,
+  "prediction_failures": 0,
+  "saved_full_models": 144,
+  "time": "2026-11-05T19:50:10.529701+00:00",
+  "total_fit_seconds": 4552.06145938742,
+  "wall_seconds": 4578.554443374975
+}

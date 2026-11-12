@@ -1,0 +1,86 @@
+[
+  {
+    "path": "scripts/asplos/data/predictor/MLP_WAVE/LINEAR/model.pth",
+    "git_blob_sha1": "427a3a2a131fd19c6453acbe9e5f206ada39c3c9",
+    "bytes": 6326708,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/predictor/MLP_WAVE/LINEAR/model.pth",
+    "sha256": "7899401a0f35dc34d6f2d3f6142d084a0d696264e9c60ad841158da2bb2623b3"
+  },
+  {
+    "path": "scripts/asplos/data/predictor/MLP_WAVE/BMM/config.json",
+    "git_blob_sha1": "536ef8c93b57561930e337227f3ffec606c6f33d",
+    "bytes": 455,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/predictor/MLP_WAVE/BMM/config.json",
+    "sha256": "3484eb114557516ea06497e75a6661a2d55c2c366472aa33affc68935bea9ae4"
+  },
+  {
+    "path": "scripts/asplos/data/predictor/MLP_WAVE/BMM/model.pth",
+    "git_blob_sha1": "27aa06fbb15762bf4cb2897d2f55c3ee20fd92f2",
+    "bytes": 6326708,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/predictor/MLP_WAVE/BMM/model.pth",
+    "sha256": "4804d10295e7f7baadb718386715a85337748ed5f6c567618028b4de8b652a96"
+  },
+  {
+    "path": "scripts/asplos/data/predictor/MLP_WAVE/VEC/model.pth",
+    "git_blob_sha1": "1c69cfc213a07f2523c59792edffa68d493be808",
+    "bytes": 6326708,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/predictor/MLP_WAVE/VEC/model.pth",
+    "sha256": "7be10e8aa521d93b854e78feb27d5ea0e1f8a46ac7e98d10932afd77e338e8d4"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/train/linear.csv",
+    "git_blob_sha1": "b6ca81a612c10cfa907ac88559cc6ee74a5e1110",
+    "bytes": 5529676,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/linear.csv",
+    "sha256": "399de01a7860e8d8a3a69bf6c29c454dbd9a91c08cbe482da4acdb1ede46ef1a"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/train/bmm.csv",
+    "git_blob_sha1": "84f19145911e447a04786b181a4d03ac3dc3eece",
+    "bytes": 12951354,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/bmm.csv",
+    "sha256": "d3ca0ab24cb620e9a0825f29ef42e71865094c13d1553ced16d7e475f8931305"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/train/collect/gelu.csv",
+    "git_blob_sha1": "e05b767059a716e63c0df325bdea34130a1f417c",
+    "bytes": 4785959,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/collect/gelu.csv",
+    "sha256": "2eef09c44a741e335d34734d774a6ee571556686b462fe9f135112729270291d"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/train/device_configs/NVIDIA_A100-PCIE-40GB.json",
+    "git_blob_sha1": "a260def73e6bd11d43fed07142f4daceca24c9a3",
+    "bytes": 177,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/device_configs/NVIDIA_A100-PCIE-40GB.json",
+    "sha256": "0b0c13b0693c0a14a008c6658d597f4d4d14f634f2ad037191b4394e24a46c15"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/train/device_configs/Tesla_P100-PCIE-16GB.json",
+    "git_blob_sha1": "c248b7fca06e61aab85c4c9e0acea6050b67a61f",
+    "bytes": 172,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/device_configs/Tesla_P100-PCIE-16GB.json",
+    "sha256": "3de42b11ac062af2b6cdeccbd4c66e1656e430c75ae8565187d8e73914133729"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/train/device_configs/Tesla_P4.json",
+    "git_blob_sha1": "352db6d7e22af547978d0eeb28eed356eaf798d8",
+    "bytes": 159,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/device_configs/Tesla_P4.json",
+    "sha256": "ae37b2de866fd4db160d807d9d66e6e514321067305f64d11508c2529a53edf1"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/train/device_configs/Tesla_T4.json",
+    "git_blob_sha1": "85a7402506ce57c77ecc3391d5788ac402e402d6",
+    "bytes": 160,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/device_configs/Tesla_T4.json",
+    "sha256": "9371ddb7e3210fbad173da00e1a12790957853c866a18083a32317d1e7e42c0a"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/train/device_configs/Tesla_V100-PCIE-32GB.json",
+    "git_blob_sha1": "5366dffd4e1e497f0ad15f183d3e1383163668c3",
+    "bytes": 173,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/device_configs/Tesla_V100-PCIE-32GB.json",
+    "sha256": "8c5a4c8ca4243e4b2c94a79f30544af1bc1ffdf6728fd8bbf162d8722ed67c5f"
+  }
+]

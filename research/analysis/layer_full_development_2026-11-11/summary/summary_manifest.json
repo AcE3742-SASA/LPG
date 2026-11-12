@@ -1,0 +1,11 @@
+{
+  "source_selection_sha256": "beed9b4314c3f258f0fcd6f86d19b15d271fac2d1abe705875aa50a94e99cbd4",
+  "output_hashes": {
+    "convergence_warnings.csv": "f0fbaa893a41b7b68bd89ed5b6cb75508fb0e6d6896bb2f4897acb32c0256c68",
+    "matched_prior_direct.csv": "03c3bc3b33eee1831fdb039b8c8ec7035d07d59695c388f10cbbac50ad9c2d4b",
+    "matched_prior_direct_wins.csv": "e0498a0cf9e64de21e7a351ab2175b30bf6136cd3379e36d6dbf4ce34379648b",
+    "selected_comparisons.csv": "7695f4cb756b2fdc05bf4e2ad05f251cb8bed6d91378d1f334c650e55396a684",
+    "validation_implementation_ratios.csv": "659c24ae3c74715dbf4cb191e960c906eac1719cfb36f4f7816816ac9945700e",
+    "validation_summary.json": "78d34a9cad111f226343a5a3b3211aa1b1eb22beae7b62d239c540417715b73b"
+  }
+}

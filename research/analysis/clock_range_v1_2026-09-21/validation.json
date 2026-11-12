@@ -1,0 +1,43 @@
+{
+  "status": "LOCAL_PASS_GPU_NOT_RUN",
+  "local_python": "3.14.3",
+  "gpu_run": false,
+  "full_sweep": "HOLD",
+  "stages_mhz": [
+    780,
+    810,
+    840,
+    870,
+    900,
+    960,
+    1050,
+    1200,
+    780
+  ],
+  "memory_mhz": 6801,
+  "existing_power_limit_w": 70,
+  "expected_measurements": 540,
+  "expected_blocks": 3780,
+  "expected_mode_triplets": 180,
+  "unique_tests": 10,
+  "test_log": "clock_range_tests.log",
+  "syntax": "Python AST and bash -n passed for release and dependencies",
+  "original_files_unchanged": 56,
+  "dependency_files": 42,
+  "archive": {
+    "name": "clock_range_2026-09-21_v1.zip",
+    "sha256": "b497dbb7f0973a45c983389cb00680deeb6f38b591b3a549bc80773f78cebd67",
+    "files": 7,
+    "crc_and_source_bytes": "PASS"
+  },
+  "package_sha256": {
+    "README.md": "7292945cb64e8632351c020d5644ac6ca09342c716598649341f94c5cf0d2351",
+    "analyze_lower.py": "773fbee3674afd28e1a324a5a06c96d757dd16907328126d9ad041adc40f28f7",
+    "dependency_hashes.json": "59f6706ed5b5ab98e1890372073cd6f5652c06126ec0bfec10083ce74c4c70a1",
+    "launch.sh": "be58411cfb2253167f83a1d8f384d30f840b699b6b172de4ec96e251a09af4c5",
+    "lower.py": "503a75ad45dc24c2f0706b2feab11360a171d13b60159571571b0c4d64eb88fa",
+    "protocol.json": "4adac2ee673e3b25b7e158aa3accbb856742a3890fc744995e25a699216c95dd",
+    "test_lower.py": "e63ca236df78af763a8bde7ccc65a7f0a5154a913d80d8502cefc05e7f30cdd9"
+  },
+  "extracted_release_preflight": "PASS"
+}

@@ -1,0 +1,252 @@
+{
+  "summary": {
+    "gate": "REVIEW",
+    "expected": 108,
+    "recorded": 108,
+    "missing": 0,
+    "timed_blocks": 756,
+    "mode_triplets": 36,
+    "counts": {
+      "PASS": 106,
+      "REVIEW": 2
+    },
+    "correctness_scopes": {
+      "sampled": 72,
+      "full": 36
+    },
+    "stage_timing_and_sampled_clocks": {
+      "s0_780_before": true,
+      "s1_750": true,
+      "s2_780_after": false
+    },
+    "repeat_780_time_pass": true,
+    "counter_anomaly_blocks": 49,
+    "historical_counter_issue": "UNRESOLVED; per-stage and per-block observations retained",
+    "restoration": "COMMANDS_ACCEPTED",
+    "flags": [
+      "s0_780_before:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s0_780_before:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s0_780_before:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample",
+      "s1_750:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s1_750:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s1_750:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample",
+      "s2_780_after:c0_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s2_780_after:c0_graph_r0:observed_mismatch:clocks.sm",
+      "s2_780_after:c0_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s2_780_after:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s2_780_after:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s2_780_after:worker_observed_active:clocks_event_reasons.sw_power_cap",
+      "s2_780_after:worker_observed_mismatch:clocks.sm"
+    ],
+    "full_sweep": "HOLD",
+    "selected_clock_mhz": null,
+    "reference_clock_mhz": 780,
+    "validated_for_full": false,
+    "interpretation": "Screened conditions only. Review before a broader pilot. Mode ratios are not causal overhead estimates."
+  },
+  "stages": [
+    {
+      "stage": "s0_780_before",
+      "sm_mhz": 780,
+      "samples": 6136,
+      "span_s": 322.005,
+      "measurements": 36,
+      "review_measurements": 0,
+      "timing_and_sampled_clocks_pass": true,
+      "worker_sm_mhz": [
+        780.0
+      ],
+      "worker_mismatch_samples": 0,
+      "timed_samples": 470,
+      "timed_sm_mhz": [
+        780.0
+      ],
+      "timed_mismatch_samples": 0,
+      "timed_power_cap_samples": 0,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.03711306127727661,
+      "max_abs_drift_pct": 0.057957527681159346,
+      "max_round_range_pct": 0.678815565539024,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        21.05,
+        70.01
+      ],
+      "temperature_c": [
+        40.0,
+        66.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 273983458,
+      "counter_anomaly_blocks": 16,
+      "cadence": {
+        "samples": 6136,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.059999942779541016,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      },
+      "worker_sm_counts": {
+        "780.0": 6136
+      }
+    },
+    {
+      "stage": "s1_750",
+      "sm_mhz": 750,
+      "samples": 6139,
+      "span_s": 322.108,
+      "measurements": 36,
+      "review_measurements": 0,
+      "timing_and_sampled_clocks_pass": true,
+      "worker_sm_mhz": [
+        750.0
+      ],
+      "worker_mismatch_samples": 0,
+      "timed_samples": 470,
+      "timed_sm_mhz": [
+        750.0
+      ],
+      "timed_mismatch_samples": 0,
+      "timed_power_cap_samples": 0,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.03735377187399568,
+      "max_abs_drift_pct": 0.0460886608767596,
+      "max_round_range_pct": 0.7143648816737351,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        22.53,
+        70.31
+      ],
+      "temperature_c": [
+        53.0,
+        68.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 273667103,
+      "counter_anomaly_blocks": 13,
+      "cadence": {
+        "samples": 6139,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.05900001525878906,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      },
+      "worker_sm_counts": {
+        "750.0": 6139
+      }
+    },
+    {
+      "stage": "s2_780_after",
+      "sm_mhz": 780,
+      "samples": 6137,
+      "span_s": 321.987,
+      "measurements": 36,
+      "review_measurements": 2,
+      "timing_and_sampled_clocks_pass": false,
+      "worker_sm_mhz": [
+        765.0,
+        780.0
+      ],
+      "worker_mismatch_samples": 10,
+      "timed_samples": 468,
+      "timed_sm_mhz": [
+        765.0,
+        780.0
+      ],
+      "timed_mismatch_samples": 5,
+      "timed_power_cap_samples": 27,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.04120537429230794,
+      "max_abs_drift_pct": 0.055027149808330525,
+      "max_round_range_pct": 0.7096070822845416,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        22.67,
+        70.32
+      ],
+      "temperature_c": [
+        53.0,
+        68.0
+      ],
+      "power_cap_active_samples": 114,
+      "power_cap_counter_delta_us": 273764961,
+      "counter_anomaly_blocks": 20,
+      "cadence": {
+        "samples": 6137,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.05900001525878906,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      },
+      "worker_sm_counts": {
+        "780.0": 6127,
+        "765.0": 10
+      }
+    }
+  ],
+  "total_samples": 18412,
+  "clock_counts": {
+    "780.0": 12263,
+    "750.0": 6139,
+    "765.0": 10
+  },
+  "power_cap_samples": 114,
+  "incident_sample_first_kst": "2026/09/21 14:48:57.019",
+  "incident_sample_last_kst": "2026/09/21 14:49:03.959",
+  "incident_sample_span_s": 6.94,
+  "incident_timed_blocks": 14,
+  "max_iqr_pct": 0.04120537429230794,
+  "max_abs_drift_pct": 0.057957527681159346,
+  "max_round_range_pct": 0.7143648816737351,
+  "max_abs_repeat780_change_pct": 0.38124721150779584,
+  "matched750_latency_change_pct": {
+    "minimum": -0.15140108175821787,
+    "median": -0.0941210904467138,
+    "maximum": -0.04058558444488547,
+    "condition_modes": 18
+  },
+  "same_problem_cross_run_change_pct": {
+    "minimum": 2.0230857724213402,
+    "maximum": 2.4685167603145874
+  },
+  "limitations": [
+    "Three diagnostic shapes; 750 MHz full-sweep validity not established.",
+    "Order, temperature and process state are not independently randomized.",
+    "Sample counts and first-to-last span are not throttled duration or duty cycle.",
+    "Original 200-shape workload history not replayed; previous raw result remains unchanged.",
+    "Counter interpretation unresolved; REVIEW preserved separately from instantaneous reason/clock evidence."
+  ]
+}

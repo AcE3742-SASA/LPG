@@ -1,0 +1,51 @@
+{
+  "input": {
+    "shape": [
+      8,
+      303,
+      20,
+      12
+    ],
+    "stride": [
+      72720,
+      240,
+      12,
+      1
+    ],
+    "dtype": "torch.float32",
+    "sha256": "4e2f93af17822df3b0c184889a37431e66ad673aeba72a1114fded85bc7461c4"
+  },
+  "weights": [
+    {
+      "shape": [
+        463,
+        303,
+        3,
+        3
+      ],
+      "stride": [
+        2727,
+        9,
+        3,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "452625a31d2ac7b9d36196cfb280e76c72f4cc94e04864315917a0bb731c1e82"
+    }
+  ],
+  "prepared": [
+    {
+      "shape": [
+        2727,
+        463
+      ],
+      "stride": [
+        463,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "2dab34a4c43c465bddd94bd368e07ae5af2320afcdeedfea54640e96314534af"
+    }
+  ],
+  "seed": 1079309840
+}

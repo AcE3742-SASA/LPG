@@ -1,0 +1,25 @@
+{
+  "script_sha256": "28e0ab3e200843063b54fb249c1af1b36ec9e5e1b9e88769bd52e20b559d2b35",
+  "bash_syntax": "PASS",
+  "offline_cases": 10,
+  "offline_result": "PASS",
+  "regression_input": "raw_v2_failure/fp32_simt.before.csv",
+  "regression_input_values": [
+    210,
+    405,
+    70
+  ],
+  "cases": [
+    "ok_with_archived_idle_clocks",
+    "verify",
+    "clock",
+    "exit",
+    "busy",
+    "lock",
+    "power",
+    "smclock",
+    "setfail",
+    "monitor"
+  ],
+  "gpu_execution": "not performed"
+}

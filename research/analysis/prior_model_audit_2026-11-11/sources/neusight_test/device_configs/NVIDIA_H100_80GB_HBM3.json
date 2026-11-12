@@ -1,0 +1,10 @@
+{
+    "Device":"NVIDIA H100 80GB HBM3",
+    "Dev_Mem":80,
+    "Mem_Bw":3430,
+    "Num_Sm":132,
+    "Core_Per_SM":128,
+    "Freq":1980,
+    "SingleFLOPs":66908,
+    "L2Cache":50
+}

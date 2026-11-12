@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-04",
+  "files": {
+    "README.md": "fc4cb9c55cbcb82a75a2430ae58e50c67dc80a1312eb616300944c94b234eb81",
+    "components.py": "24fc045955f92dcfafbc46bac35f541966b6edacc819d3e8223445c344f697d2",
+    "costs.py": "d19db5a51dba4f600214607e6b625a7c710322f4cf666682aa888627e4834dfc",
+    "data.py": "141ad21917d802d8adc2267e76e03a6aa7ee1d3d8b8356620f15299080952e74",
+    "gemm_final.py": "ad25dfafcf36f20180b9f02a20fba5daa35fb2dd36911a4d1e91ca3ee642f2bd",
+    "pipeline.py": "5593e493e85dfdac9f53fb8d8f575515470a98be684c240f26c1318dd4f9f04d",
+    "report.py": "8a6babaf1c150e2d3c4b15721cf703ea957c82acfda7057b110b1c7088a3992e",
+    "test_components.py": "8d0ff9925a6ee42ad388e3d750af5a5a98e4ed7c69c4c10c0e3458bef43ece67",
+    "test_costs.py": "7df7a1f637e7317d2d7a56320dee9db1d45ea2e5de77cf1b2633ae29b7efa551",
+    "test_data.py": "97cccf224b88026074f9757694d1b07708a9f7c350936cb61b4813397ff07e66",
+    "test_gemm_final.py": "209dbc5f38e83e8db845b995e468528fac4c8457117c575529eef08462be119a",
+    "test_pipeline.py": "f7f7633a1bd802cb90daef6687231c15a313dd005c8a4457066b718f4400bb74",
+    "test_report.py": "82b6981f3399940ace9785c589b4a8431d314c04c6d41621d1f57d34ec1f5886"
+  },
+  "gemm_development_replay_exact": true,
+  "gemm_prepared_model_envelopes": 60,
+  "gemm_replay_fit_seconds": 0.7325275840703398,
+  "gemm_selection_sha256": "2f26937b0ada8114536a4a7b8263e0787b1b3bee40687ed31993c9f172583fbb",
+  "known_limits": [
+    "Actual expanded campaign not yet available",
+    "Existing GEMM source total collection wall is unknown",
+    "Sensor quality reuses hashed original analyzer verdicts"
+  ],
+  "layer_budgets": [
+    5,
+    10,
+    20,
+    30,
+    50,
+    100,
+    200
+  ],
+  "layer_real_training_started": false,
+  "layer_seeds": [
+    20261104,
+    20261105,
+    20261106
+  ],
+  "layer_source_models": 24,
+  "original_collection_release_unchanged": true,
+  "prepared_protocol_sha256": "7763c13d51ac05107e90c6e67dde9805933b086702f52a2ad83bdf3ac0ddcd0e",
+  "real_sealed_evaluation_started": false,
+  "status": "PREPARED_VALIDATED",
+  "synthetic_chart_visually_inspected": true,
+  "test_command": "analysis/integrated_rq14_2026-10-28/.venv/bin/python -B -m unittest discover -s analysis/layer_full_fit_2026-11-04 -p 'test_*.py' -v",
+  "test_scope": "Synthetic loader, all learners, component sum, pipeline round-trip and evaluation guard, cost accounting, report figures, GEMM formulas and final access guard",
+  "tests_passed": 22
+}

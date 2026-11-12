@@ -1,0 +1,231 @@
+{
+  "admission": "FAIL",
+  "reasons": [
+    "both_not_verified",
+    "all_active_clock_samples_off_target"
+  ],
+  "archive_sha256": "714346ac831b780629ce9c9fa8535d54a955ca1b413e558b4dee606585fd86d6",
+  "files": {
+    "fp16_tensor.gemm.csv": {
+      "bytes": 814,
+      "sha256": "1227d1757dd6a69d946d47ba211d8898326e769f51f1402b71f2d08b9ec982a1"
+    },
+    "clocks.csv": {
+      "bytes": 2010,
+      "sha256": "bb08c50b37a5680a19d5c891426c033a09d27da5affca6a039d810c9f637ee9f"
+    },
+    "runner.sh": {
+      "bytes": 4655,
+      "sha256": "b79c395bca37c0c054de24cee177820ebbcfe6ddf76402393180ce4b3c49074e"
+    },
+    "fp32_simt.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp16_tensor.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt.command.txt": {
+      "bytes": 642,
+      "sha256": "f59c37f7b4691e3972b35316e7a0756366b4a298ac21f84e056b80b1f8435a1e"
+    },
+    "fp32_simt.gemm.csv": {
+      "bytes": 789,
+      "sha256": "af122e93891e6781896f2b051f71461043d93d659d1574d36db43ca4e5356000"
+    },
+    "before.csv": {
+      "bytes": 204,
+      "sha256": "a30320bb931836e2aa3f2ac8ecb638073e63c66a7dd197e7620c4fe4f740d36d"
+    },
+    "fp32_simt.log": {
+      "bytes": 1348,
+      "sha256": "f6281e139bd814b05f97a862094e858f022e7098c06f184a2fa1214edaf1a934"
+    },
+    "device_after.txt": {
+      "bytes": 15488,
+      "sha256": "a672d916c02bed9cb299542733b19c82175d67cde39c728c8be055f5ab9f8bea"
+    },
+    "runner.exit_code": {
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "fp16_tensor.command.txt": {
+      "bytes": 666,
+      "sha256": "10a0b7a3923b87a0b43e486fa5e1d2311fa59888f58fda721d7dcd71a3136718"
+    },
+    "binary.sha256": {
+      "bytes": 121,
+      "sha256": "d7b9ba19881c827e006d09cf5303706af438354c04af42520392e00857a48936"
+    },
+    "device_before.txt": {
+      "bytes": 15480,
+      "sha256": "78a4e73b1673441c77d01ef3984f88e00d0d60f6bc2037d8603fbfedba296c1a"
+    },
+    "source_status.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "processes_before.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "timeline.tsv": {
+      "bytes": 208,
+      "sha256": "77bcf5559555ee230509f9472703da82cbf2f7886de736e586a33fe472eca470"
+    },
+    "commit.txt": {
+      "bytes": 41,
+      "sha256": "0d7844fbd3c67babea66bbc967e68779c05d97186ec8c4cbbd38e6c4853395a2"
+    },
+    "monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor.log": {
+      "bytes": 1375,
+      "sha256": "3c1528d6a49b2fa36b5c077cb140384c071c363f49ef7703bc3aa5ee444552c7"
+    }
+  },
+  "results": {
+    "fp32_simt": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_256x128_8x5_tn_align1",
+        "Disposition": "not_verified",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:row",
+        "B": "f32:column",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "5",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "96.1279",
+        "GB/s": "7.80211",
+        "GFLOPs": "11439.4"
+      },
+      "tflops_2mnk": 11.438007360776632,
+      "fully_busy_sm_MHz": [
+        1455.0,
+        1470.0
+      ]
+    },
+    "fp16_tensor": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_tn_align8",
+        "Disposition": "not_verified",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:row",
+        "B": "f16:column",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "3",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "16",
+        "min_cc": "80",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "16.5912",
+        "GB/s": "22.6023",
+        "GFLOPs": "66278.8"
+      },
+      "tflops_2mnk": 66.27077172091228,
+      "fully_busy_sm_MHz": [
+        1380.0
+      ]
+    }
+  },
+  "clock_samples": 26,
+  "active_samples": 22,
+  "fully_busy_samples": 15,
+  "active_clock_mismatches": 22,
+  "active_sm_MHz": [
+    1380.0,
+    1410.0,
+    1455.0,
+    1470.0,
+    1530.0,
+    2295.0
+  ],
+  "active_memory_MHz": [
+    6801.0
+  ],
+  "power_limit_W": [
+    70.0
+  ],
+  "max_power_W": 69.46,
+  "max_temperature_C": 50.0
+}

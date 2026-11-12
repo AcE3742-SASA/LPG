@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "6ad9d533af9ffaf3ce49733e3fb69df53d1da2328cedd4bab59a9f287ca70e44",
+  "files": 29,
+  "manifest_all_match": true,
+  "runner_matches_v1": true,
+  "status": "PREFLIGHT_FAIL",
+  "measured_runs": 0,
+  "expected_runs": 306,
+  "clock_setting_commands_reached": false,
+  "cause": "Untracked existing BabelStream build directory was treated as modified source",
+  "source_status": "?? build-cuda-sm89/\n"
+}

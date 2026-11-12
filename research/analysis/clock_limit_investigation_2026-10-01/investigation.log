@@ -1,0 +1,220 @@
+{
+  "validation": "PASS",
+  "selected_non_holdout_tasks": 144,
+  "comparisons_of_same_51_tasks": [
+    {
+      "run": "original",
+      "tasks": 51,
+      "direct_cap": 50,
+      "direct_clock": 24,
+      "sm_min": 690.0,
+      "power_median_of_task_medians": 69.16,
+      "temperature_median_of_task_medians": 65.0
+    },
+    {
+      "run": "v1",
+      "tasks": 51,
+      "direct_cap": 33,
+      "direct_clock": 10,
+      "sm_min": 690.0,
+      "power_median_of_task_medians": 68.78,
+      "temperature_median_of_task_medians": 60.0
+    },
+    {
+      "run": "v3",
+      "tasks": 51,
+      "direct_cap": 48,
+      "direct_clock": 25,
+      "sm_min": 675.0,
+      "power_median_of_task_medians": 69.21,
+      "temperature_median_of_task_medians": 64.0
+    },
+    {
+      "run": "v4",
+      "tasks": 51,
+      "direct_cap": 51,
+      "direct_clock": 51,
+      "sm_min": 645.0,
+      "power_median_of_task_medians": 69.94,
+      "temperature_median_of_task_medians": 72.0
+    }
+  ],
+  "isolated": {
+    "duration_s": 200.97000002861023,
+    "samples": 3777,
+    "clocks.sm": {
+      "min": 615.0,
+      "median": 675.0,
+      "max": 720.0
+    },
+    "power.draw": {
+      "min": 39.16,
+      "median": 69.81,
+      "max": 70.34
+    },
+    "temperature.gpu": {
+      "min": 61.0,
+      "median": 72.0,
+      "max": 73.0
+    },
+    "utilization.gpu": {
+      "min": 15.0,
+      "median": 100.0,
+      "max": 100.0
+    },
+    "cap_samples": 3718,
+    "clock_mismatch_samples": 3410,
+    "reason_masks": {
+      "0x0": 59,
+      "0x4": 3718
+    },
+    "first_cap": {
+      "utc": "2026-10-01T07:29:53.867000+00:00",
+      "power.draw": 69.86,
+      "temperature.gpu": 65.0,
+      "clocks.sm": 720.0
+    },
+    "first_clock_drop": {
+      "utc": "2026-10-01T07:29:54.346000+00:00",
+      "power.draw": 69.96,
+      "temperature.gpu": 65.0,
+      "clocks.sm": 705.0
+    },
+    "first_task_id": "03c3a66c5be520625be753fe",
+    "first_task_start_utc": "2026-10-01T07:29:52.442982+00:00",
+    "first_task_timing_start_utc": "2026-10-01T07:29:55.632965+00:00",
+    "first_cap_seconds_after_task_start": 1.424018144607544,
+    "quarters": [
+      {
+        "start_s": 0,
+        "end_s": 50,
+        "samples": 941,
+        "clocks.sm": {
+          "min": 660.0,
+          "median": 705.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 39.16,
+          "median": 69.92,
+          "max": 70.06
+        },
+        "temperature.gpu": {
+          "min": 61.0,
+          "median": 69.0,
+          "max": 71.0
+        },
+        "utilization.gpu": {
+          "min": 15.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 901,
+        "clock_mismatch_samples": 621,
+        "reason_masks": {
+          "0x0": 40,
+          "0x4": 901
+        }
+      },
+      {
+        "start_s": 50,
+        "end_s": 100,
+        "samples": 939,
+        "clocks.sm": {
+          "min": 630.0,
+          "median": 675.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 68.69,
+          "median": 69.77,
+          "max": 70.34
+        },
+        "temperature.gpu": {
+          "min": 71.0,
+          "median": 72.0,
+          "max": 72.0
+        },
+        "utilization.gpu": {
+          "min": 74.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 930,
+        "clock_mismatch_samples": 921,
+        "reason_masks": {
+          "0x4": 930,
+          "0x0": 9
+        }
+      },
+      {
+        "start_s": 100,
+        "end_s": 150,
+        "samples": 939,
+        "clocks.sm": {
+          "min": 630.0,
+          "median": 675.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 68.74,
+          "median": 69.82,
+          "max": 70.11
+        },
+        "temperature.gpu": {
+          "min": 71.0,
+          "median": 73.0,
+          "max": 73.0
+        },
+        "utilization.gpu": {
+          "min": 74.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 939,
+        "clock_mismatch_samples": 930,
+        "reason_masks": {
+          "0x4": 939
+        }
+      },
+      {
+        "start_s": 150,
+        "end_s": 200,
+        "samples": 939,
+        "clocks.sm": {
+          "min": 615.0,
+          "median": 660.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 68.85,
+          "median": 69.72,
+          "max": 70.15
+        },
+        "temperature.gpu": {
+          "min": 73.0,
+          "median": 73.0,
+          "max": 73.0
+        },
+        "utilization.gpu": {
+          "min": 74.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 929,
+        "clock_mismatch_samples": 919,
+        "reason_masks": {
+          "0x4": 929,
+          "0x0": 10
+        }
+      }
+    ],
+    "compute_process_snapshots_checked": 52
+  },
+  "holdout_latencies_disclosed": false,
+  "notes": [
+    "Sample counts are not duration fractions.",
+    "Clock, power and reason fields can have different sensor update rates.",
+    "Existing artifacts are opened read-only; no GPU calls or configuration changes."
+  ]
+}

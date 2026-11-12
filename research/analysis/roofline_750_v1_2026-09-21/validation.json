@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "archive": "roofline_750_full_2026-09-21_v1.tar.gz",
+  "archive_sha256": "6de6a97c4f6142f89c9ab8b35a2a1e0c10439ce061b266a00afac914f8ee0c30",
+  "files": {
+    "run.sh": "a0142c01d06cb81089a924828205c8dbce3db14a5fb6dd8a9af4e6b9295aabc2",
+    "roofline.py": "0c20a7d9d8a928175b6035d98fe0e95073b8fb2fca7247d222d310d724332cb7",
+    "kernels.json": "fc25c9a96063759e7e85aba3a76137ba1b6925038bcf3b36d7d79da2177fdc97",
+    "README.md": "bb5b95cd8775dbdc7e34836f97f86934fb942e2659a5ac3aabe5fa989d37b137"
+  },
+  "bash_syntax": "PASS",
+  "python_syntax": "PASS",
+  "archive_byte_check": "PASS",
+  "previous_750_comparison_unchanged": true,
+  "full_plan_runs": 306,
+  "warmup_runs": 51,
+  "measured_runs": 255,
+  "measured_gemm_invocations": 240,
+  "measured_babelstream_invocations": 15,
+  "offline_cases": [
+    "ok",
+    "reason_review",
+    "sm_clock_mismatch",
+    "memory_clock_mismatch",
+    "not_verified",
+    "wrong_layout",
+    "babel_validation_failure",
+    "profiler_exit",
+    "gpu_busy",
+    "gpu_lock_busy",
+    "clock_set_failure",
+    "unsupported_telemetry",
+    "monitor_error",
+    "termination_signal"
+  ],
+  "aggregation_checks": [
+    "five_rounds",
+    "warmup_excluded",
+    "repeat_variation_review",
+    "incomplete_result_no_ceiling"
+  ],
+  "test_command": "python3 -B analysis/roofline_750_v1_2026-09-21/test_roofline.py",
+  "gpu_executed": false,
+  "remote_settings_changed": false,
+  "runtime_estimate": "Roughly 1-2 hours; 16384 cubed reference verification may extend beyond 2 hours."
+}

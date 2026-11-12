@@ -1,0 +1,9 @@
+phase,split,total_measurements,accepted_measurements,quarantined_measurements,total_unique_MNK,accepted_unique_MNK,complete_conditions,complete_fp16_shapes,complete_fp32_shapes,role
+boundary,boundary_diagnostic,1350,1350,0,73,73,450,73,73,boundary_diagnostic
+compute_reference,calibration,54,54,0,3,3,18,3,3,calibration
+controls,development,3942,3924,18,219,219,1308,219,217,development
+main,development,3942,3930,12,219,219,1308,219,217,development
+main,fresh_holdout,18000,18000,0,1000,1000,6000,1000,1000,locked_final_test
+main,legacy_test_explored,12924,12924,0,718,718,4308,718,718,explored_diagnostic
+main,legacy_train,60264,60243,21,3348,3348,20079,3348,3345,train_candidate_before_C_reservation
+main,legacy_validation,12906,12903,3,717,717,4299,717,716,validation

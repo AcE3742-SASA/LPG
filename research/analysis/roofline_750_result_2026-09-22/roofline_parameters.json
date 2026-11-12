@@ -1,0 +1,13 @@
+{
+  "sm_MHz": 750,
+  "memory_MHz": 6801,
+  "power_limit_W": 70,
+  "fp32_TFLOP_s": 7.049676630527438,
+  "fp16_tensor_fp32_accum_TFLOP_s": 40.25911391619639,
+  "bandwidth_GB_s": 262.98,
+  "fp32_ridge_FLOP_per_byte": 26.806892655439338,
+  "fp16_ridge_FLOP_per_byte": 153.0881204509711,
+  "formula": "P_TFLOP_s(I) = min(P_compute_TFLOP_s, B_GB_s * I_FLOP_per_byte / 1000)",
+  "aggregation": "Maximum of five-run medians among tested kernel/size groups; round 0 excluded",
+  "archive_sha256": "916a77abbe9a52be93c289430398c446bce548e1d2fea7f27ee0e20bf1b8fb3b"
+}

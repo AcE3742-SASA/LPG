@@ -1,0 +1,35 @@
+test_counter_only_and_timing_review_resume_allowed_but_missing_telemetry_rejected (__main__.SubsetChecks.test_counter_only_and_timing_review_resume_allowed_but_missing_telemetry_rejected) ... ok
+test_coverage_inputs_splits_mode_order_and_holdout (__main__.SubsetChecks.test_coverage_inputs_splits_mode_order_and_holdout) ... ok
+test_launcher_uses_current_terminal_and_preserves_exit_and_arguments (__main__.SubsetChecks.test_launcher_uses_current_terminal_and_preserves_exit_and_arguments) ... ok
+test_minimal_changes_and_reused_measurement_cleanup (__main__.SubsetChecks.test_minimal_changes_and_reused_measurement_cleanup) ... ok
+test_rejected_check_prevents_gpu_commands (__main__.SubsetChecks.test_rejected_check_prevents_gpu_commands) ... ok
+test_review_bridge_rejects_errors_and_unreviewed_digest (__main__.SubsetChecks.test_review_bridge_rejects_errors_and_unreviewed_digest) ... ok
+test_selection_reproducible_independent_of_order_or_results (__main__.SubsetChecks.test_selection_reproducible_independent_of_order_or_results) ... ok
+test_sensor_review_blocks_resume_before_controller_or_worker_gpu_calls (__main__.SubsetChecks.test_sensor_review_blocks_resume_before_controller_or_worker_gpu_calls) ... ok
+test_single_round_is_not_reported_as_zero_between_round_variation (__main__.SubsetChecks.test_single_round_is_not_reported_as_zero_between_round_variation) ... ok
+test_subset_analysis_preserves_missing_and_resume (__main__.SubsetChecks.test_subset_analysis_preserves_missing_and_resume) ... ok
+test_denominator_or_accuracy_corruption_fails (__main__.ReusedChecks.test_denominator_or_accuracy_corruption_fails) ... ok
+test_resume_preserves_attempts_and_graph_choices (__main__.ReusedChecks.test_resume_preserves_attempts_and_graph_choices) ... ok
+test_manifest_change_and_output_lock_rejected (__main__.ReusedChecks.test_manifest_change_and_output_lock_rejected) ... ok
+test_worker_process_exit_and_failure_logged (__main__.ReusedChecks.test_worker_process_exit_and_failure_logged) ... ok
+test_failed_credentials_stop_child_before_return (__main__.ReusedChecks.test_failed_credentials_stop_child_before_return) ... ok
+test_controller_restores_both_clocks_on_worker_failure (__main__.ReusedChecks.test_controller_restores_both_clocks_on_worker_failure) ... Worker log: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpo9ghzbl_/run/launches/20260921_151523_71c1a0/worker_0.log
+RESTORE: COMMANDS ACCEPTED
+ok
+test_preflight_power_mismatch_changes_no_clocks (__main__.ReusedChecks.test_preflight_power_mismatch_changes_no_clocks) ... ok
+test_worker_resume_collects_only_pending_tasks (__main__.ReusedChecks.test_worker_resume_collects_only_pending_tasks) ... Preheating 180 seconds
+[1/60] check [1888, 832, 632] fp32 allocate r0: PASS (1000.00s)
+[2/60] check [1888, 832, 632] fp32 prealloc r0: PASS (1000.00s)
+[3/60] check [1888, 832, 632] fp32 graph r0: PASS (1000.00s)
+Preheating 180 seconds
+[4/60] check [3216, 520, 776] fp32 allocate r0: PASS (1000.00s)
+[5/60] check [3216, 520, 776] fp32 prealloc r0: PASS (1000.00s)
+[6/60] check [3216, 520, 776] fp32 graph r0: PASS (1000.00s)
+ok
+test_failed_measurement_without_seed_exports_as_fail (__main__.ReusedChecks.test_failed_measurement_without_seed_exports_as_fail) ... ok
+test_timing_review_is_retained_without_discarding_collection (__main__.ReusedChecks.test_timing_review_is_retained_without_discarding_collection) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 5.057s
+
+OK

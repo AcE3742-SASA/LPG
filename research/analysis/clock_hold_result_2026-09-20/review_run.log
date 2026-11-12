@@ -1,0 +1,274 @@
+{
+  "summary": {
+    "gate": "REVIEW",
+    "expected": 8,
+    "recorded": 8,
+    "missing": 0,
+    "counts": {
+      "REVIEW": 4,
+      "PASS": 4
+    },
+    "timed_blocks": 56,
+    "flags": [
+      "c0_prealloc_r0:block_3:no_inside_clock_sample",
+      "c0_prealloc_r1:block_1:no_inside_clock_sample",
+      "c1_prealloc_r0:block_5:no_inside_clock_sample",
+      "c1_prealloc_r1:block_2:no_inside_clock_sample"
+    ],
+    "target": {
+      "clocks.sm": 900.0,
+      "clocks.mem": 6801.0,
+      "power.limit": 70.0
+    },
+    "full_sweep": "HOLD",
+    "interpretation": "NOT_REVIEWED",
+    "restoration": "COMMANDS_ACCEPTED"
+  },
+  "verified_sources": {
+    "source": 5,
+    "audit_source": 9,
+    "baseline_source": 14
+  },
+  "recomputed_outputs_byte_identical": [
+    "measurement_summary.json",
+    "analysis.json",
+    "clock_windows.json",
+    "report.md"
+  ],
+  "environment_executable": "/home/eu/miniconda3/envs/ai_env/bin/python",
+  "cadence": {
+    "samples": 2067,
+    "requested_interval_ms": 100,
+    "observed_interval_seconds_median": 0.10199999809265137,
+    "observed_interval_seconds_max": 0.11399984359741211,
+    "unavailable_fields": [],
+    "sensor_resolution_verified": false
+  },
+  "full_telemetry": {
+    "samples": 2067,
+    "ranges": {
+      "clocks.sm": [
+        900.0,
+        900.0
+      ],
+      "clocks.mem": [
+        6801.0,
+        6801.0
+      ],
+      "power.draw": [
+        21.32,
+        61.93
+      ],
+      "power.limit": [
+        70.0,
+        70.0
+      ],
+      "temperature.gpu": [
+        40.0,
+        68.0
+      ]
+    },
+    "active_reason_counts": {
+      "clocks_event_reasons.sw_power_cap": 0,
+      "clocks_event_reasons.sw_thermal_slowdown": 0,
+      "clocks_event_reasons.hw_thermal_slowdown": 0
+    },
+    "counter_first_to_last_us": {
+      "clocks_event_reasons_counters.sw_power_cap": 210790582,
+      "clocks_event_reasons_counters.sw_thermal_slowdown": 0,
+      "clocks_event_reasons_counters.hw_thermal_slowdown": 0
+    },
+    "sample_span_s": 211.562
+  },
+  "timed_inside": {
+    "samples": 52,
+    "ranges": {
+      "clocks.sm": [
+        900.0,
+        900.0
+      ],
+      "clocks.mem": [
+        6801.0,
+        6801.0
+      ],
+      "power.draw": [
+        46.01,
+        61.87
+      ],
+      "power.limit": [
+        70.0,
+        70.0
+      ],
+      "temperature.gpu": [
+        65.0,
+        67.0
+      ]
+    },
+    "active_reason_counts": {
+      "clocks_event_reasons.sw_power_cap": 0,
+      "clocks_event_reasons.sw_thermal_slowdown": 0,
+      "clocks_event_reasons.hw_thermal_slowdown": 0
+    },
+    "counter_first_to_last_us": {
+      "clocks_event_reasons_counters.sw_power_cap": 27950740,
+      "clocks_event_reasons_counters.sw_thermal_slowdown": 0,
+      "clocks_event_reasons_counters.hw_thermal_slowdown": 0
+    },
+    "sample_span_s": 27.751
+  },
+  "gaps": [
+    {
+      "task_id": "c0_prealloc_r0",
+      "block_index_zero_based": 3,
+      "block_ms": 100.032,
+      "poll_gap_ms": 102.0,
+      "before_to_start_ms": 1.092,
+      "end_to_after_ms": 0.876,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    },
+    {
+      "task_id": "c1_prealloc_r0",
+      "block_index_zero_based": 5,
+      "block_ms": 90.49300000000001,
+      "poll_gap_ms": 102.0,
+      "before_to_start_ms": 9.189,
+      "end_to_after_ms": 2.318,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    },
+    {
+      "task_id": "c1_prealloc_r1",
+      "block_index_zero_based": 2,
+      "block_ms": 94.369,
+      "poll_gap_ms": 102.0,
+      "before_to_start_ms": 1.815,
+      "end_to_after_ms": 5.816,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    },
+    {
+      "task_id": "c0_prealloc_r1",
+      "block_index_zero_based": 1,
+      "block_ms": 93.384,
+      "poll_gap_ms": 102.0,
+      "before_to_start_ms": 7.464,
+      "end_to_after_ms": 1.1520000000000001,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    }
+  ],
+  "max_iqr_pct": 0.034181543958641654,
+  "max_abs_drift_pct": 0.3428116366604088,
+  "rounds": [
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "mode": "prealloc",
+      "round_us": [
+        89.60825738941041,
+        89.47565182972046
+      ],
+      "relative_range": 0.0014809321537390652
+    },
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "mode": "graph",
+      "round_us": [
+        87.81241055192618,
+        87.8088852454876
+      ],
+      "relative_range": 4.014668520202936e-05
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "mode": "prealloc",
+      "round_us": [
+        44.74454628843464,
+        44.751878481436044
+      ],
+      "relative_range": 0.00016385443374429876
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "mode": "graph",
+      "round_us": [
+        43.41551073554422,
+        43.402885904117504
+      ],
+      "relative_range": 0.00029083309333878044
+    }
+  ],
+  "start_to_end_counter_delta_us": {
+    "SW Power Capping": 211013085,
+    "SW Thermal Slowdown": 0,
+    "HW Thermal Slowdown": 0
+  },
+  "post_restore_observed_clocks": {
+    "Graphics": 2160,
+    "SM": 2160,
+    "Memory": 7001
+  },
+  "telemetry_process_exit_code": 0,
+  "telemetry_capture_s": 211.6994,
+  "correctness_scope": "256 sampled output elements per measurement; finite_all recorded true",
+  "power_counter_steps": {
+    "positive_updates": 423,
+    "min_positive_us": 17598,
+    "max_us": 599811
+  },
+  "manual_review": {
+    "timing_stability": "Within-run block and two-round checks pass; no independent-session reproducibility claim.",
+    "recorded_clocks": "All 2067 recorded samples match 900/6801 MHz; not continuous observation.",
+    "unresolved": [
+      "Four timed blocks have no inside clock sample.",
+      "Power-cap counter increases by 210.790582 s while all instantaneous power-cap samples are inactive."
+    ],
+    "counter_definition": "https://docs.nvidia.com/deploy/nvidia-smi/#clock-event-reasons-counters",
+    "conclusion": "Stable timing under requested clocks observed; absence of power capping and causal isolation unproven.",
+    "full_sweep": "HOLD"
+  }
+}

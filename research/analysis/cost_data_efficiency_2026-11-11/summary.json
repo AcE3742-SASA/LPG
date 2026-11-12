@@ -1,0 +1,72 @@
+{
+  "selected_allocate_source_train_labels": 22996,
+  "selected_allocate_source_validation_labels": 3222,
+  "selected_allocate_source_total_labels": 26218,
+  "selected_allocate_source_raw_records": 78654,
+  "full_six_condition_source_labels": 78654,
+  "gemm_recorded_worker_seconds": 1175272.7490627952,
+  "gemm_all_session_records": 302142,
+  "gemm_allocate_train_validation_retained_task_seconds": 326145.8406652331,
+  "layer_development_controlled_seconds": 110925.09255807754,
+  "layer_development_completed_records": 26982,
+  "layer_failure_inclusive_allocated_seconds_per_label": 12.333232439190297,
+  "observed_like_for_like_time_break_even": "UNKNOWN: narrow direct/reuse collections not executed; timing scopes differ",
+  "boundary": "Historical GEMM worker total includes fresh_holdout, diagnostics, replaced records and preheat. Allocate task sum includes rejected/partial conditions and omits shared worker overhead. Proportional layer unit allocates failed attempts and shared setup to completed labels. Labels are heterogeneous, so time scenarios are assumptions rather than measured savings.",
+  "layer_cpu": {
+    "model_fit_seconds": 715.3581625714432,
+    "prediction_seconds": 9.126975197345018,
+    "scope": "Recorded CPU calls; serialization and other overhead remain in wall time; separate from GPU collection wall",
+    "wall_seconds": 789.3983812920051
+  },
+  "gemm_cpu": [
+    {
+      "stage": "legacy_search",
+      "wall_seconds": 1946.4158155419864,
+      "fit_seconds": 1919.6332658305182,
+      "scope": "All recorded search fits; not six-weight recipe"
+    },
+    {
+      "stage": "expansion_search",
+      "wall_seconds": 4578.554443374975,
+      "fit_seconds": 4552.06145938742,
+      "scope": "All recorded search fits; not six-weight recipe"
+    },
+    {
+      "stage": "selected_six_prior_fit_recipe",
+      "wall_seconds": null,
+      "fit_seconds": 84.66975104180165,
+      "scope": "Subset of expansion_search; do not add twice"
+    }
+  ],
+  "selected_layer_labels": {
+    "aggregated_labels": 5994,
+    "by_implementation": {
+      "decomposed": 3591,
+      "input_pack": 2400,
+      "mm": 2400,
+      "output_pack": 2400,
+      "standard": 5991,
+      "unfold": 1200
+    },
+    "round_records": 17982,
+    "train_round_records": 15588,
+    "validation_round_records": 2394
+  },
+  "full_development_labels": {
+    "aggregated_labels": 8994,
+    "by_implementation": {
+      "decomposed": 5997,
+      "gelu": 1500,
+      "gemm1": 1500,
+      "gemm2": 1500,
+      "input_pack": 2997,
+      "mm": 2997,
+      "output_pack": 2997,
+      "standard": 5997,
+      "unfold": 1497
+    },
+    "round_records": 26982,
+    "train_round_records": 21600,
+    "validation_round_records": 5382
+  }
+}

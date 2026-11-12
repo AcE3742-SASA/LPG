@@ -1,0 +1,229 @@
+{
+  "check_cases": [
+    {
+      "dtype": "fp16",
+      "shape": [
+        64,
+        64,
+        111
+      ]
+    },
+    {
+      "dtype": "fp32",
+      "shape": [
+        64,
+        64,
+        111
+      ]
+    },
+    {
+      "dtype": "fp16",
+      "shape": [
+        64,
+        64,
+        2696
+      ]
+    },
+    {
+      "dtype": "fp32",
+      "shape": [
+        64,
+        64,
+        2696
+      ]
+    },
+    {
+      "dtype": "fp16",
+      "shape": [
+        216,
+        1616,
+        1624
+      ]
+    },
+    {
+      "dtype": "fp32",
+      "shape": [
+        216,
+        1616,
+        1624
+      ]
+    },
+    {
+      "dtype": "fp16",
+      "shape": [
+        64,
+        2240,
+        3967
+      ]
+    },
+    {
+      "dtype": "fp32",
+      "shape": [
+        64,
+        2240,
+        3967
+      ]
+    }
+  ],
+  "check_rounds": 2,
+  "check_worker_limits": [
+    24,
+    null
+  ],
+  "check_worker_timeout_s": 2400,
+  "collection_policy": "flag_clock_and_sw_power_cap_continue_v1",
+  "excluded_auxiliary": [
+    "pressure",
+    "bandwidth",
+    "chain",
+    "profile"
+  ],
+  "expansion_version": "gemm_expand_20261028_v1",
+  "expected_expansion_measurements": 180000,
+  "expected_expansion_shapes": 10000,
+  "fallback_sm_mhz": null,
+  "full_rounds": 3,
+  "full_worker_timeout_s": 1209600,
+  "interval_ms": 50,
+  "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+  "memory_mhz": 6801,
+  "minimum_free_disk_gib": 50,
+  "mode_order": [
+    [
+      "allocate",
+      "prealloc",
+      "graph"
+    ],
+    [
+      "prealloc",
+      "graph",
+      "allocate"
+    ],
+    [
+      "graph",
+      "allocate",
+      "prealloc"
+    ]
+  ],
+  "power_limit_w": 70,
+  "purpose": "full_GEMM_three_mode_remeasurement_at_reviewed_720MHz",
+  "reference_780_pilot": {
+    "conditions": [],
+    "meaning": "Historical 780 pilot, descriptive comparison only; not an admission threshold or a new timing target",
+    "zip_sha256": "ccbd191f121e8663843477cce70a1247a9f0386aba4935788d3d083151be3bc8"
+  },
+  "requested_sm_mhz": 720,
+  "reviewed_200_shape_result": {
+    "archive_directory": "abstract_200_720_recovery_20260921",
+    "manifest_sha256": "a5823add2e9ded8049f12ba2e7a13479f77756b078b917c4762c1d314b594b98",
+    "results_digest": "47f0024b6bd637793e5f036fcbdb6d7243d3c745258820e15e55712b1fd6debb",
+    "zip_sha256": "71e19cf727a8ec7fd0caddbac9a21fd3c1d7ae23583c735d772071293c2488da"
+  },
+  "reviewed_graph_cases": [
+    {
+      "correctness_points": 256,
+      "correctness_scope": "sampled",
+      "dtype": "fp32",
+      "graph_gemms_per_replay": 5,
+      "input_seed": 1456857178,
+      "shape": [
+        3128,
+        680,
+        488
+      ]
+    },
+    {
+      "correctness_points": 256,
+      "correctness_scope": "sampled",
+      "dtype": "fp16",
+      "graph_gemms_per_replay": 20,
+      "input_seed": 2682971897,
+      "shape": [
+        3128,
+        680,
+        488
+      ]
+    },
+    {
+      "correctness_points": 256,
+      "correctness_scope": "sampled",
+      "dtype": "fp32",
+      "graph_gemms_per_replay": 1,
+      "input_seed": 3255611920,
+      "shape": [
+        4096,
+        4096,
+        4096
+      ]
+    },
+    {
+      "correctness_points": 256,
+      "correctness_scope": "sampled",
+      "dtype": "fp16",
+      "graph_gemms_per_replay": 1,
+      "input_seed": 2125276676,
+      "shape": [
+        4096,
+        4096,
+        4096
+      ]
+    },
+    {
+      "correctness_points": 4096,
+      "correctness_scope": "full",
+      "dtype": "fp32",
+      "graph_gemms_per_replay": 64,
+      "input_seed": 1791591957,
+      "shape": [
+        64,
+        64,
+        64
+      ]
+    },
+    {
+      "correctness_points": 4096,
+      "correctness_scope": "full",
+      "dtype": "fp16",
+      "graph_gemms_per_replay": 64,
+      "input_seed": 3194529987,
+      "shape": [
+        64,
+        64,
+        64
+      ]
+    },
+    {
+      "correctness_points": 256,
+      "correctness_scope": "sampled",
+      "dtype": "fp32",
+      "graph_gemms_per_replay": 8,
+      "input_seed": 3229917233,
+      "shape": [
+        2329,
+        3998,
+        66
+      ]
+    },
+    {
+      "correctness_points": 256,
+      "correctness_scope": "sampled",
+      "dtype": "fp16",
+      "graph_gemms_per_replay": 14,
+      "input_seed": 4277984267,
+      "shape": [
+        2329,
+        3998,
+        66
+      ]
+    }
+  ],
+  "scope": [
+    "main",
+    "controls",
+    "boundary",
+    "compute_reference"
+  ],
+  "segment_tasks": 120,
+  "sm_mhz": 720,
+  "version": 1
+}

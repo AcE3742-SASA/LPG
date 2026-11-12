@@ -1,0 +1,61 @@
+{
+  "raw_gate_unchanged": "FAIL",
+  "counts": {
+    "PASS": 243,
+    "REVIEW": 3,
+    "FAIL": 1
+  },
+  "recorded": 247,
+  "missing": 6,
+  "verified_measurement_rows": 246,
+  "between_round_flags": 15,
+  "phases": {
+    "bandwidth": {
+      "count": 2,
+      "review": 0,
+      "iqr_median_percent": 0.20937993857351755,
+      "iqr_p95_percent": 0.33394929203743307
+    },
+    "compute_reference": {
+      "count": 8,
+      "review": 0,
+      "iqr_median_percent": 0.14058358553351588,
+      "iqr_p95_percent": 0.8183682021433492
+    },
+    "main": {
+      "count": 96,
+      "review": 1,
+      "iqr_median_percent": 0.19649430796544648,
+      "iqr_p95_percent": 2.0644234432508046
+    },
+    "controls": {
+      "count": 128,
+      "review": 2,
+      "iqr_median_percent": 0.23036845996737923,
+      "iqr_p95_percent": 2.746167415146571
+    },
+    "chain": {
+      "count": 12,
+      "review": 0,
+      "iqr_median_percent": 0.1551117055158576,
+      "iqr_p95_percent": 1.4572584129728767
+    }
+  },
+  "profile_exit_code": 0,
+  "profile_report": "capture.ncu-repz",
+  "profile_kernel": "void Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(Params)",
+  "profile_csv_columns": 696,
+  "profile_reclassified_by_new_checker": true,
+  "elapsed_seconds": 645.4891659499999,
+  "iqr_median_percent": 0.207911497593557,
+  "iqr_p95_percent": 2.116736806924621,
+  "telemetry_temperature_min_max_C": [
+    36,
+    75
+  ],
+  "checks": [
+    "SQLite integrity; DB/JSONL equality; task IDs/order; source hashes",
+    "summary digest; 7-block statistics; throughput; saved correctness checks",
+    "round flags; paired chain arithmetic; NCU output evidence"
+  ]
+}

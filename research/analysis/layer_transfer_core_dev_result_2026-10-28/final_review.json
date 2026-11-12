@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archive_sha256": "5e32c060c2cd477c5675e1048b065b373df878bf9cbb20099c137cac86a3ec0f",
+  "raw_files_unchanged": 2255,
+  "frozen_dependencies_unchanged": true,
+  "old_full_sha256": "ee136851b7dc018a5cb61e7bdf42cdededd63fa1df5ebe5716857a2cc411a81d",
+  "locked_test_opened": false,
+  "figures_visually_checked": [
+    "residual_learning_curve.png",
+    "direct_learning_curve.png",
+    "implementation_ratios.png"
+  ],
+  "validation_scope": "10 layer groups per layer/dtype, three seeds; development selection only",
+  "source_python_syntax_and_ascii_print_literals": "PASS",
+  "context_and_report_links": "PASS",
+  "vault_regression": "PASS",
+  "vault_integrity_before_after_equal": true
+}

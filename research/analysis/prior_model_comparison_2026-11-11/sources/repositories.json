@@ -1,0 +1,218 @@
+[
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/README.md",
+    "local": "sources/neusight/README.md"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/LICENSE",
+    "local": "sources/neusight/LICENSE"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "neusight/Model/meta.py",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/neusight/Model/meta.py",
+    "local": "sources/neusight/neusight/Model/meta.py"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "neusight/Model/mlp_wave_mm.py",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/neusight/Model/mlp_wave_mm.py",
+    "local": "sources/neusight/neusight/Model/mlp_wave_mm.py"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "neusight/Model/mlp_wave.py",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/neusight/Model/mlp_wave.py",
+    "local": "sources/neusight/neusight/Model/mlp_wave.py"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "neusight/Model/mlp_wave_vec.py",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/neusight/Model/mlp_wave_vec.py",
+    "local": "sources/neusight/neusight/Model/mlp_wave_vec.py"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "neusight/Model/model.py",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/neusight/Model/model.py",
+    "local": "sources/neusight/neusight/Model/model.py"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "neusight/Dataset/dataset.py",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/neusight/Dataset/dataset.py",
+    "local": "sources/neusight/neusight/Dataset/dataset.py"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "scripts/asplos/data/predictor/MLP_WAVE/LINEAR/config.json",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/predictor/MLP_WAVE/LINEAR/config.json",
+    "local": "sources/neusight/scripts/asplos/data/predictor/MLP_WAVE/LINEAR/config.json"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "scripts/asplos/data/predictor/MLP_WAVE/VEC/config.json",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/predictor/MLP_WAVE/VEC/config.json",
+    "local": "sources/neusight/scripts/asplos/data/predictor/MLP_WAVE/VEC/config.json"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "neusight/Dataset/collect.py",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/neusight/Dataset/collect.py",
+    "local": "sources/neusight/neusight/Dataset/collect.py"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "scripts/asplos/data/dataset/train/device_configs/Tesla_T4.json",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/device_configs/Tesla_T4.json",
+    "local": "sources/neusight/scripts/asplos/data/dataset/train/device_configs/Tesla_T4.json"
+  },
+  {
+    "name": "neusight",
+    "repo": "scai-tech/NeuSight",
+    "commit": "6945927d9afcca2b9daf021f8395e53edc5b4eef",
+    "path": "scripts/asplos/data/dataset/train/device_configs/Tesla_V100-PCIE-32GB.json",
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/train/device_configs/Tesla_V100-PCIE-32GB.json",
+    "local": "sources/neusight/scripts/asplos/data/dataset/train/device_configs/Tesla_V100-PCIE-32GB.json"
+  },
+  {
+    "name": "neuralpower",
+    "repo": "enyac-group/NeuralPower",
+    "commit": "d9e28fd05f5c96cffe4691adb50be5ff2f813d27",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/enyac-group/NeuralPower/d9e28fd05f5c96cffe4691adb50be5ff2f813d27/README.md",
+    "local": "sources/neuralpower/README.md"
+  },
+  {
+    "name": "neuralpower",
+    "repo": "enyac-group/NeuralPower",
+    "commit": "d9e28fd05f5c96cffe4691adb50be5ff2f813d27",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/enyac-group/NeuralPower/d9e28fd05f5c96cffe4691adb50be5ff2f813d27/LICENSE",
+    "local": "sources/neuralpower/LICENSE"
+  },
+  {
+    "name": "neuralpower",
+    "repo": "enyac-group/NeuralPower",
+    "commit": "d9e28fd05f5c96cffe4691adb50be5ff2f813d27",
+    "path": "parser_raw_data.py",
+    "url": "https://raw.githubusercontent.com/enyac-group/NeuralPower/d9e28fd05f5c96cffe4691adb50be5ff2f813d27/parser_raw_data.py",
+    "local": "sources/neuralpower/parser_raw_data.py"
+  },
+  {
+    "name": "neuralpower",
+    "repo": "enyac-group/NeuralPower",
+    "commit": "d9e28fd05f5c96cffe4691adb50be5ff2f813d27",
+    "path": "predict_runtime_power.py",
+    "url": "https://raw.githubusercontent.com/enyac-group/NeuralPower/d9e28fd05f5c96cffe4691adb50be5ff2f813d27/predict_runtime_power.py",
+    "local": "sources/neuralpower/predict_runtime_power.py"
+  },
+  {
+    "name": "neuralpower",
+    "repo": "enyac-group/NeuralPower",
+    "commit": "d9e28fd05f5c96cffe4691adb50be5ff2f813d27",
+    "path": "model_training/poly_fc_training.m",
+    "url": "https://raw.githubusercontent.com/enyac-group/NeuralPower/d9e28fd05f5c96cffe4691adb50be5ff2f813d27/model_training/poly_fc_training.m",
+    "local": "sources/neuralpower/model_training/poly_fc_training.m"
+  },
+  {
+    "name": "neuralpower",
+    "repo": "enyac-group/NeuralPower",
+    "commit": "d9e28fd05f5c96cffe4691adb50be5ff2f813d27",
+    "path": "model_training/poly_conv_training.m",
+    "url": "https://raw.githubusercontent.com/enyac-group/NeuralPower/d9e28fd05f5c96cffe4691adb50be5ff2f813d27/model_training/poly_conv_training.m",
+    "local": "sources/neuralpower/model_training/poly_conv_training.m"
+  },
+  {
+    "name": "paleo",
+    "repo": "TalwalkarLab/paleo",
+    "commit": "984bbf5d2942f28b8599db4374c0ad788efe0f6e",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/TalwalkarLab/paleo/984bbf5d2942f28b8599db4374c0ad788efe0f6e/README.md",
+    "local": "sources/paleo/README.md"
+  },
+  {
+    "name": "paleo",
+    "repo": "TalwalkarLab/paleo",
+    "commit": "984bbf5d2942f28b8599db4374c0ad788efe0f6e",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/TalwalkarLab/paleo/984bbf5d2942f28b8599db4374c0ad788efe0f6e/LICENSE",
+    "local": "sources/paleo/LICENSE"
+  },
+  {
+    "name": "paleo",
+    "repo": "TalwalkarLab/paleo",
+    "commit": "984bbf5d2942f28b8599db4374c0ad788efe0f6e",
+    "path": "paleo/device.py",
+    "url": "https://raw.githubusercontent.com/TalwalkarLab/paleo/984bbf5d2942f28b8599db4374c0ad788efe0f6e/paleo/device.py",
+    "local": "sources/paleo/paleo/device.py"
+  },
+  {
+    "name": "paleo",
+    "repo": "TalwalkarLab/paleo",
+    "commit": "984bbf5d2942f28b8599db4374c0ad788efe0f6e",
+    "path": "paleo/profilers/base.py",
+    "url": "https://raw.githubusercontent.com/TalwalkarLab/paleo/984bbf5d2942f28b8599db4374c0ad788efe0f6e/paleo/profilers/base.py",
+    "local": "sources/paleo/paleo/profilers/base.py"
+  },
+  {
+    "name": "paleo",
+    "repo": "TalwalkarLab/paleo",
+    "commit": "984bbf5d2942f28b8599db4374c0ad788efe0f6e",
+    "path": "paleo/profilers/flops_profiler.py",
+    "url": "https://raw.githubusercontent.com/TalwalkarLab/paleo/984bbf5d2942f28b8599db4374c0ad788efe0f6e/paleo/profilers/flops_profiler.py",
+    "local": "sources/paleo/paleo/profilers/flops_profiler.py"
+  },
+  {
+    "name": "paleo",
+    "repo": "TalwalkarLab/paleo",
+    "commit": "984bbf5d2942f28b8599db4374c0ad788efe0f6e",
+    "path": "paleo/layers/base.py",
+    "url": "https://raw.githubusercontent.com/TalwalkarLab/paleo/984bbf5d2942f28b8599db4374c0ad788efe0f6e/paleo/layers/base.py",
+    "local": "sources/paleo/paleo/layers/base.py"
+  },
+  {
+    "name": "paleo",
+    "repo": "TalwalkarLab/paleo",
+    "commit": "984bbf5d2942f28b8599db4374c0ad788efe0f6e",
+    "path": "paleo/layers/core.py",
+    "url": "https://raw.githubusercontent.com/TalwalkarLab/paleo/984bbf5d2942f28b8599db4374c0ad788efe0f6e/paleo/layers/core.py",
+    "local": "sources/paleo/paleo/layers/core.py"
+  },
+  {
+    "name": "paleo",
+    "repo": "TalwalkarLab/paleo",
+    "commit": "984bbf5d2942f28b8599db4374c0ad788efe0f6e",
+    "path": "paleo/layers/conv.py",
+    "url": "https://raw.githubusercontent.com/TalwalkarLab/paleo/984bbf5d2942f28b8599db4374c0ad788efe0f6e/paleo/layers/conv.py",
+    "local": "sources/paleo/paleo/layers/conv.py"
+  }
+]

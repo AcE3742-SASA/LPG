@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "new_tests": 7,
+  "reused_tests": 10,
+  "total_tests": 17,
+  "ast": "PASS",
+  "bash_syntax": "PASS",
+  "source_unchanged": {
+    "clock_audit": 9,
+    "v6": 14
+  },
+  "archive": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/clock_hold_2026-09-20_v1.zip",
+  "archive_sha256": "ad55ecd94f3e05c4aff9508c38a0ddd6de5e223b4fce3a16894aaf9b21854bd1",
+  "zip_files": 5,
+  "package_hashes": {
+    "README.md": "8a5f93b063cbeb43bcfdc3563fd7eb2054db30e8715b4e9981ddac61a634b7a1",
+    "dependency_hashes.json": "0303825888d53e7da8dbe9996b76dba5b50387170229dae784cd069f1085cb4d",
+    "hold.py": "b0e8210bc9cb8a777925efa7ddaefab255e7b8baffafa005cf3fca1bf9457bde",
+    "launch.sh": "620d3cad11721bb5ab241a579d58f7156fb9a74315601be36aa1eaf39c0f9149",
+    "test_hold.py": "79b23bb53af618038dcefcaa8dcfc2b22d44e83ebc93093e0844a8542a09828a"
+  },
+  "gpu_run_performed": false,
+  "expected_measurements": 8,
+  "expected_timed_blocks": 56,
+  "full_sweep": "HOLD"
+}

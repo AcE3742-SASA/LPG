@@ -1,0 +1,176 @@
+--- fixed_pilot_v1/README.md
++++ fixed_pilot_780_v1/README.md
+@@ -1,20 +1,20 @@
+-# 고정 클럭 파일럿
++# 780 MHz 고정 클럭 파일럿
+ 
+-기존 v6 파일럿의 192측정을 코어 900 MHz·메모리 6801 MHz·조회 간격 50 ms에서 다시 수행한다. 전력 한도는 기존 70 W인지 검사하며 변경하지 않는다. 최종 클럭 선정과 full 실행은 하지 않는다.
++기존 v6 파일럿의 192측정을 코어 780 MHz·메모리 6801 MHz·조회 간격 50 ms에서 다시 수행한다. 전력 한도는 기존 70 W인지 검사하며 변경하지 않는다. 사용자가 코어 780 MHz를 선택했다. 이 파일럿에서 더 넓은 조건의 유지를 확인하며 full은 결과 검토 후 결정한다.
+ 
+ ## 설치와 실행
+ 
+-이 폴더를 GPU 컴퓨터의 `/home/eu/gemm-research/scripts/fixed_pilot_v1/`에 둔다. 앞서 사용한 `gpu_sweep_v6`, `clock_audit_v1`, `clock_hold_v1`, `clock_steps_v1`이 같은 scripts 폴더에 있어야 한다. 이 네 폴더의 35파일 해시를 먼저 검사하며 기존 설치나 패키지를 수정하지 않는다.
++`fixed_pilot_780_2026-09-20_v1.zip`을 GPU 컴퓨터의 `/home/eu/gemm-research/scripts/`에 풀면 `fixed_pilot_780_v1/` 폴더가 생긴다. ZIP에는 새 폴더의 7파일만 들어 있다. 앞서 사용한 `gpu_sweep_v6`, `clock_audit_v1`, `clock_hold_v1`, `clock_steps_v1`이 같은 scripts 폴더에 있어야 한다. 이 네 폴더의 35파일 해시를 먼저 검사하며 기존 설치나 패키지를 수정하지 않는다. 의존 파일이 없거나 해시가 다르면 GPU 설정 전에 중단하므로 `source_check.log`를 확인한다.
+ 
+ ```bash
+-bash /home/eu/gemm-research/scripts/fixed_pilot_v1/launch.sh
++bash /home/eu/gemm-research/scripts/fixed_pilot_780_v1/launch.sh
+ ```
+ 
+ 시작 시 sudo 암호를 요청할 수 있다. 클럭 설정·해제만 sudo를 사용한다. 기존 checked runner가 `ai_env`를 활성화하므로 위 명령 전체에 sudo를 붙이지 않는다. GPU에서 다른 실험과 동시에 실행하지 않는다.
+ 
+-처음에 `DEPENDENCY CHECK: PASS; 192 measurements / 1344 blocks / 96 pairs`가 나오고, 이후 `FIXED PILOT: 180 s preheat + 192 measurements`와 `worker.log` 경로가 표시된다. worker.log에는 `[현재/192]` 진행 상황이 저장된다. 예상 15~25분이며 이전 파일럿의 측정별 소요 시간 합계 약 751초와 예열 180초를 기준으로 잡았다. GPU에서 아직 검증하지 않은 계획용 추정이다. worker 제한 시간은 40분이다.
++처음에 `DEPENDENCY CHECK: PASS; 192 measurements / 1344 blocks / 96 pairs`가 나오고, 이후 `FIXED PILOT: 180 s preheat + 192 measurements`와 `worker.log` 경로가 표시된다. worker.log에는 `[현재/192]` 진행 상황이 저장된다. 예상 15~25분이며 이전 파일럿의 측정별 소요 시간 합계 약 751초와 예열 180초를 기준으로 잡았다. 780 MHz의 192측정 전체 실행 시간은 아직 검증하지 않은 계획용 추정이다. worker 제한 시간은 40분이다.
+ 
+-끝나면 `RESTORE: COMMANDS ACCEPTED`, `FIXED PILOT: PASS/REVIEW`, `RESULT_ZIP=...`를 확인한다. 생성된 ZIP을 전달하면 된다. 초기 검사나 수집이 실패해도 가능한 로그를 ZIP으로 묶는다. exit 2는 수집을 마치고 검토할 사항이 남았다는 뜻이다. `RESTORE: FAILED`는 해제 실패이므로 출력된 수동 해제 명령과 restore.json을 확인한다.
++끝나면 `RESTORE: COMMANDS ACCEPTED`, `FIXED PILOT: PASS/REVIEW`, `RESULT_ZIP=...`를 확인한다. 결과는 `/home/eu/gemm-research/scripts/fixed_pilot_780_v1/runs/fixed_pilot_780_<실행 시각>_<고유값>.zip`과 같은 위치의 `.zip.sha256`에 남는다. 생성된 ZIP을 전달하면 된다. 초기 검사나 수집이 실패해도 가능한 로그를 ZIP으로 묶는다. exit 2는 수집을 마치고 검토할 사항이 남았다는 뜻이다. `RESTORE: FAILED`는 해제 실패이므로 출력된 수동 해제 명령과 restore.json을 확인한다.
+ 
+ ## 같은 조건으로 유지한 항목
+ 
+@@ -26,7 +26,7 @@
+ 
+ ## 클럭과 결과 판정
+ 
+-대상 GPU UUID·다른 계산 프로세스·기존 70 W를 검사하고 공유 GPU 잠금을 획득한 상태에서 900/6801 MHz를 설정한다. 기존 허용된 데스크톱 프로세스는 기록에 남긴다. 기존 sudo 승인은 실행 중 45초마다 비대화식으로 갱신한다. 정상 완료·오류·처리 가능한 중단에서 worker가 종료된 뒤 같은 GPU 잠금 안에서 `-rgc`와 `-rmc`를 각각 시도한다. 두 명령은 기본 설정으로 되돌리며 실행 전 수동 잠금을 복원하는 것은 아니다. 진입 검사 실패 시 기존 클럭 설정은 건드리지 않는다. 전원 차단·SIGKILL에서는 해제 코드를 실행할 수 없다.
++대상 GPU UUID·다른 계산 프로세스·기존 70 W를 검사하고 공유 GPU 잠금을 획득한 상태에서 780/6801 MHz를 설정한다. 기존 허용된 데스크톱 프로세스는 기록에 남긴다. 기존 sudo 승인은 실행 중 45초마다 비대화식으로 갱신한다. 정상 완료·오류·처리 가능한 중단에서 worker가 종료된 뒤 같은 GPU 잠금 안에서 `-rgc`와 `-rmc`를 각각 시도한다. 두 명령은 기본 설정으로 되돌리며 실행 전 수동 잠금을 복원하는 것은 아니다. 진입 검사 실패 시 기존 클럭 설정은 건드리지 않는다. 전원 차단·SIGKILL에서는 해제 코드를 실행할 수 없다.
+ 
+ 각 블록의 호스트 경계 내부 표본으로 코어·메모리·전력 한도와 제한 사유를 확인한다. 내부 표본이 없으면 REVIEW로 남기고 이웃 표본으로 채우지 않는다. 예열 등을 포함한 worker 전체 표본의 클럭 불일치·제한 활성도 별도로 기록한다. 50 ms 요청은 센서 갱신 주기나 연속 관측의 보증이 아니다.
+ 
+@@ -45,3 +45,5 @@
+ 중간에 실패한 실행은 원본 그대로 보존하고 새 실행 폴더를 만든다. 같은 결과 디렉터리에 재개하거나 기존 v6 full 승인 자료로 넘기는 경로는 제공하지 않는다.
+ 
+ 로컬 검사는 `python3 -B test_fixed.py`로 실행한다. 합성 데이터·가짜 GPU 명령을 사용하므로 실제 GPU 성능이나 클럭 유지를 검증하지는 않는다.
++
++780 MHz 선택은 사용자 결정이며, 세 후보 중 통계적으로 가장 우수한 값으로 판정했다는 뜻은 아니다. 앞선 10형상/dtype 진단의 관측 유지·작은 블록 변동을 바탕으로 더 넓은 48형상/dtype 조합을 확인한다. summary의 selected_clock_mhz는 780이고 validated_for_full은 false다. 누적 카운터 해석 문제와 약 100 ms 평균이 단발 GEMM 스파이크를 가릴 수 있는 한계는 그대로 남는다.
+--- fixed_pilot_v1/analyze_pilot.py
++++ fixed_pilot_780_v1/analyze_pilot.py
+@@ -107,7 +107,8 @@
+         correctness_scopes=dict(Counter(r['correctness']['scope'] for r in measurements)),
+         timing_and_sampled_clocks_pass=not clock_timing_flags, flags=flags,
+         restoration='COMMANDS_ACCEPTED' if restore['commands_accepted'] else 'FAILED',
+-        target=target, polling_ms=config['interval_ms'], full_sweep='HOLD', selected_clock_mhz=None,
++        target=target, polling_ms=config['interval_ms'], full_sweep='HOLD', selected_clock_mhz=config['sm_mhz'],
++        clock_selection='USER_SELECTED', validated_for_full=False,
+         interpretation='HUMAN_REVIEW_REQUIRED; counter issue is retained separately, not waived')
+     suite.atomic_json(out/'analysis.json', dict(summary=summary, measurements=measurements, rounds=rounds, telemetry=info,
+         limitations=['Same-process rounds are not independent sessions.',
+@@ -124,7 +125,7 @@
+         f"Measurements {len(measurements)}/192; blocks {len(windows)}/1344; pairs {len(paired)}/96.",
+         'Timing and sampled clocks: '+('PASS' if summary['timing_and_sampled_clocks_pass'] else 'REVIEW'),
+         'Correctness scopes: '+str(summary['correctness_scopes']), '',
+-        '900/6801 MHz requested; 70 W existing limit; 50 ms polling. No final clock selected.',
++        '780/6801 MHz user-selected; 70 W existing limit; 50 ms polling. Full validation pending.',
+         'Counter inconsistency remains unresolved. No conversion to a short-window throttling fraction.',
+         '', 'Flags:'] + ['- '+f for f in flags]
+     (out/'report.md').write_text('\n'.join(lines)+'\n')
+--- fixed_pilot_v1/fixed.py
++++ fixed_pilot_780_v1/fixed.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Run the unchanged 192-task v6 pilot worker at requested 900/6801 MHz."""
++"""Run the unchanged 192-task v6 pilot worker at requested 780/6801 MHz."""
+ import argparse
+ import contextlib
+ import copy
+@@ -73,9 +73,10 @@
+ 
+ def make_manifest(out, loaded):
+     _, _, _, _, _, baseline, suite, config, tasks = loaded
+-    manifest = dict(kind='fixed_pilot_v1', config=config, baseline=baseline, cases=tasks,
++    manifest = dict(kind='fixed_pilot_780_v1', config=config, baseline=baseline, cases=tasks,
+         source_hashes=own_hashes(), dependency_hashes=read(HERE/'dependency_hashes.json'),
+         started_utc=suite.now(), expected_measurements=len(tasks), full_sweep='HOLD',
++        selected_clock_mhz=config['sm_mhz'], clock_selection='USER_SELECTED',
+         new_automatic_core_load_control=False, restore_to='default clocks, not prior manual locks')
+     suite.atomic_json(out/'manifest.json', manifest)
+     for folder, source, hashes in [('source', HERE, manifest['source_hashes']),
+@@ -111,8 +112,9 @@
+             steps.snapshot(suite, out, smi, gpu, 'gpu_before_settings')
+             with steps.Credentials(suite, out) as credentials:
+                 try:
+-                    steps.require_clock(hold, suite, out, smi, gpu, 'set_memory', '-lmc', '6801,6801')
+-                    steps.require_clock(hold, suite, out, smi, gpu, 'set_graphics', '-lgc', '900,900')
++                    memory, core = str(config['memory_mhz']), str(config['sm_mhz'])
++                    steps.require_clock(hold, suite, out, smi, gpu, 'set_memory', '-lmc', memory+','+memory)
++                    steps.require_clock(hold, suite, out, smi, gpu, 'set_graphics', '-lgc', core+','+core)
+                     status['collection'] = 'RUNNING'
+                     hold.progress('FIXED PILOT: 180 s preheat + 192 measurements; progress: '+str(out/'worker.log'))
+                     command = [sys.executable, '-u', '-B', str(HERE/'fixed.py'), 'worker', '--output', str(out)]
+@@ -174,7 +176,7 @@
+     else:
+         loaded = load()
+         if args.action == 'verify':
+-            print('DEPENDENCY CHECK: PASS; 192 measurements / 1344 blocks / 96 pairs; clocks 900/6801 MHz')
++            print('DEPENDENCY CHECK: PASS; 192 measurements / 1344 blocks / 96 pairs; clocks 780/6801 MHz')
+         elif args.action == 'worker':
+             with configured_worker(loaded):
+                 loaded[2].worker(argparse.Namespace(suite=HERE.parent/'gpu_sweep_v6',
+--- fixed_pilot_v1/launch.sh
++++ fixed_pilot_780_v1/launch.sh
+@@ -3,7 +3,7 @@
+ here="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+ suite="$here/../gpu_sweep_v6"
+ mkdir -p "$here/runs"
+-out="$(mktemp -d "$here/runs/fixed_pilot_$(date +%Y%m%d_%H%M%S)_XXXXXX")"
++out="$(mktemp -d "$here/runs/fixed_pilot_780_$(date +%Y%m%d_%H%M%S)_XXXXXX")"
+ echo "PILOT_DIR=$out"
+ finish() {
+   code=$?
+--- fixed_pilot_v1/protocol.json
++++ fixed_pilot_780_v1/protocol.json
+@@ -1,6 +1,6 @@
+ {
+   "version": 1,
+-  "sm_mhz": 900,
++  "sm_mhz": 780,
+   "memory_mhz": 6801,
+   "power_limit_w": 70,
+   "interval_ms": 50,
+@@ -594,5 +594,7 @@
+   },
+   "full_sweep": "HOLD",
+   "auto_select_final_clock": false,
+-  "interpretation": "Same v6 pilot task order, operands and saved Graph batches; fixed clocks and 50 ms sampling. Counter inconsistency remains unresolved."
++  "interpretation": "Same v6 pilot task order, operands and saved Graph batches; fixed clocks and 50 ms sampling. Counter inconsistency remains unresolved.",
++  "clock_selection": "USER_SELECTED",
++  "validated_for_full": false
+ }
+--- fixed_pilot_v1/test_fixed.py
++++ fixed_pilot_780_v1/test_fixed.py
+@@ -26,7 +26,7 @@
+ 
+ def fixture(out, growth=False):
+     directory = out/'pilot'
+-    fixture_phase(directory, 900, 50, growth)
++    fixture_phase(directory, config['sm_mhz'], config['interval_ms'], growth)
+     hold.save(directory/'environment.json', dict(baseline['environment_signature'], nvidia_smi=q_result()))
+     start = datetime(2026,9,20,tzinfo=timezone.utc)
+     def block(ms, ops, index=0):
+@@ -76,7 +76,9 @@
+                 self.assertEqual(result['correctness_scopes'],{'sampled':176,'full':16})
+                 self.assertEqual(result['counts'],{'PASS':192})
+                 self.assertEqual(result['full_sweep'],'HOLD')
+-                self.assertIsNone(result['selected_clock_mhz'])
++                self.assertEqual(result['selected_clock_mhz'],780)
++                self.assertEqual(result['clock_selection'],'USER_SELECTED')
++                self.assertFalse(result['validated_for_full'])
+                 if growth:self.assertTrue(any('increase_without_active_sample' in f for f in result['flags']))
+ 
+     def test_incorrect_clocks_active_reason_or_missing_inside_sample_cannot_pass(self):
+@@ -177,12 +179,15 @@
+                     self.assertTrue((out/'reset_graphics.json').exists() and (out/'reset_memory.json').exists())
+                     self.assertEqual(status['restoration'],'FAILED' if outcome=='restore_error' else 'COMMANDS_ACCEPTED')
+                 self.assertFalse(any('-pl' in c for c in commands))
++                if outcome in ['pass','review']:
++                    self.assertEqual([c[-1] for c in commands if '-lgc' in c],['780,780'])
++                    self.assertEqual([c[-1] for c in commands if '-lmc' in c],['6801,6801'])
+                 if outcome not in ['pass','review']:
+                     self.assertEqual(fixed.read(out/'summary.json')['gate'],'FAIL')
+ 
+     def test_launcher_preserves_review_and_waits_for_cleanup_before_packaging(self):
+         with tempfile.TemporaryDirectory() as temp:
+-            root=Path(temp);package=root/'fixed_pilot_v1';package.mkdir();bins=root/'bin';bins.mkdir()
++            root=Path(temp);package=root/'fixed_pilot_780_v1';package.mkdir();bins=root/'bin';bins.mkdir()
+             for name in ['fixed.py','launch.sh']:shutil.copy2(fixed.HERE/name,package/name)
+             suite_dir=root/'gpu_sweep_v6';suite_dir.mkdir()
+             (suite_dir/'run_research_checked.sh').write_text('#!/bin/bash\n"$@"\n')

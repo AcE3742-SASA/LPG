@@ -1,0 +1,32 @@
+[
+  {
+    "suite": "fixed_pilot_780_v1/test_fixed.py",
+    "exit_code": 0,
+    "tests": 8,
+    "log": "fixed_pilot_780_v1_tests.log"
+  },
+  {
+    "suite": "clock_steps_v1/test_steps.py",
+    "exit_code": 1,
+    "tests": 10,
+    "log": "clock_steps_v1_tests.log"
+  },
+  {
+    "suite": "clock_hold_v1/test_hold.py",
+    "exit_code": 0,
+    "tests": 17,
+    "log": "clock_hold_v1_tests.log"
+  },
+  {
+    "suite": "clock_audit_v1/test_clock_audit.py",
+    "exit_code": 0,
+    "tests": 10,
+    "log": "clock_audit_v1_tests.log"
+  },
+  {
+    "suite": "gpu_sweep_v6/test_v6.py",
+    "exit_code": 0,
+    "tests": 10,
+    "log": "gpu_sweep_v6_tests.log"
+  }
+]

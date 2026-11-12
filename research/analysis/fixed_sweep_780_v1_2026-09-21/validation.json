@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "zip": "/Users/studyhard/Claude/자율연구/fixed_sweep_780_2026-09-21_v1.zip",
+  "zip_sha256": "f5e228b4c97c751c3f1fbc5d177d87b7f246dbf32f85b50539abc8dc03614d98",
+  "zip_files": 7,
+  "zip_bytes": 27400,
+  "source_hashes": {
+    "README.md": "d341c8016699344ac69458964294280f7d4795f7cb0c7fcb75f153a39c4cf3a3",
+    "analyze_sweep.py": "1167c5373c9237d7a2a0f440073fb2ca13a74a4eaefb2a9a7f3e5012dd1dd96b",
+    "dependency_hashes.json": "2eb2b02ab97cbfea35a1b9d0daf9fc5e854ae591dce7f92135300d56a8d495e3",
+    "launch.sh": "50d55c7aebcdc258e39472d6e77ffff23056ec5913b6f03c8eceda1e26db0ba9",
+    "protocol.json": "afe7afcc0b2c6f87439c8378fcea7767e4c94dff5a6141306438af00ef073110",
+    "run.py": "055d00bebad7bbf34a2f9f73513e95cf5ec01c1ea578059598f1760636161eb7",
+    "test_sweep.py": "4eab47367ba40062999cf933a15016284e5b37a6135dec08397c84bd2f036463"
+  },
+  "frozen_dependencies_verified": 42,
+  "tests_passed": 14,
+  "extracted_zip_tests_passed": 14,
+  "offline_old_gpu_data_replay": "60 measurements / 420 blocks / 20 triplets pass; not a new GPU run",
+  "check_measurements": 60,
+  "full_measurements": 113382,
+  "full_phases": {
+    "compute_reference": 54,
+    "main": 108036,
+    "controls": 3942,
+    "boundary": 1350
+  },
+  "legacy_shape_dtype_conditions": 10000,
+  "legacy_mode_round_tasks": 90000,
+  "legacy_missing": 0,
+  "planned_blocks": 793674,
+  "planned_triplets": 37794,
+  "minimum_target_hours": 116.53150000000001,
+  "historical_reference_hours": 124.0115625,
+  "runtime": "GPU check pending; no GPU execution on Mac",
+  "gpu_clock_power_mutations": "none during local validation"
+}

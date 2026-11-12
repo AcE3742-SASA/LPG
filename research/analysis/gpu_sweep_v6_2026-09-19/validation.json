@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "gpu_executed": false,
+  "unit_tests": 33,
+  "bash_syntax": "PASS",
+  "python_ast": "PASS",
+  "v5_baseline_hashes_unchanged": {
+    "full.py": "f0b29e6b91a1b0231dd844c93f94c3996b0b45dc3727d8728d04842a20f4e233",
+    "measure.py": "e61ddb63ae17d8e60862ba3ecd2b13eaf26a71a21c01b6dcb8a3dcf9503ca1c4",
+    "pilot.py": "d1d196a5dcd24d168914a5f14daba55f38b636963f834f19e31a7e06967651ac",
+    "plan.py": "ef0ce5c0ccf894b7338f6ea822991e6e960831c718388dffa5269f36bd744b81",
+    "profiling.py": "20f723fcefcdf814d45811684e80e384e49b48604b79597224ac97a0a0b77654",
+    "report.py": "95769f20a05144b51cb007d6f014e8752ed951d728b7822ab00e48fabbae071f",
+    "suite.py": "9236f2531640d9c8d42483ead5453748ecc0f7cbc12cd87f458a315c737c310a",
+    "test_suite.py": "0d7f11e85518b6b9836ee4513eb4b7d0ccba8011bf53551fe000f260cf7969b0",
+    "launch.sh": "f743f5cf3345e19f8126fbcda4a1a0df9926ae2cb042a683a8e0ed7e420bafa2",
+    "run_research_checked.sh": "640538b8f9fc7e640dbc09120ae2989d2e2d842720239a6020d766802c586048",
+    "inputs/legacy_shapes.csv": "325ea0bd2b6c8b0bc8af6f941d5578dd9d5db58a8d7fa9f961f605943c22bbab",
+    "inputs/provenance.json": "c78f12efacf05a1daa7578f3b525052aaadf57383ac74df0ba3ef50bb9abdc75",
+    "inputs/review_shapes.csv": "ece950163d193923f1a69d6e76c122cb419ae63b287d14cdd6e8e9bfa7466f3b"
+  },
+  "unchanged_measure_nodes": [
+    "Timer",
+    "check_mm",
+    "make_gemm",
+    "configure",
+    "measure_chain",
+    "measure_bandwidth"
+  ],
+  "v6_code_hashes": {
+    "full.py": "f0b29e6b91a1b0231dd844c93f94c3996b0b45dc3727d8728d04842a20f4e233",
+    "measure.py": "1e28f9e6b18ece3cf3322bf00d51549898e65f3cb14dca592eae6c8bf583e2e6",
+    "pilot.py": "d1d196a5dcd24d168914a5f14daba55f38b636963f834f19e31a7e06967651ac",
+    "plan.py": "2bded90cf494e25cb391b88703205e95b86b4173fe7760d0aea8706833347281",
+    "profiling.py": "20f723fcefcdf814d45811684e80e384e49b48604b79597224ac97a0a0b77654",
+    "report.py": "8f39b1a516b7605aab409073e304b57e5d03f05abb92ea91c6b3ff47e1e2568f",
+    "suite.py": "be77e6ab47bdf139e7b0aab6300877173a2a66dc63934f59a71573bee9a7f07f",
+    "test_suite.py": "ef542f07ab616a55957b3e5ebc540c09d1d2f8d9796a77f907e0ea9771cd5383",
+    "test_v6.py": "c89c1e4a6699b8c23b3beae7ac78dbd151b8c8d9461a9b918716577ae563f7ad",
+    "launch.sh": "91f632ea6530e3b55650221f4d9c4baa4c928c1194bbcae8b8f69abdddde2762",
+    "run_research_checked.sh": "aa1f6462e801f14af5b8f67afd3680179949d802601d46402d381b32001b7b78",
+    "inputs/legacy_shapes.csv": "325ea0bd2b6c8b0bc8af6f941d5578dd9d5db58a8d7fa9f961f605943c22bbab",
+    "inputs/provenance.json": "c78f12efacf05a1daa7578f3b525052aaadf57383ac74df0ba3ef50bb9abdc75",
+    "inputs/review_shapes.csv": "ece950163d193923f1a69d6e76c122cb419ae63b287d14cdd6e8e9bfa7466f3b"
+  },
+  "plans": {
+    "pilot": {
+      "tasks": 192,
+      "task_digest": "7ffe5fb92450b1b6534d1b955f8a9b59512f5a188c42708b51990121d8fe7038",
+      "phases": {
+        "main": 192
+      },
+      "paired_expected": 96,
+      "splits": {
+        "development": 219,
+        "legacy_train": 3348,
+        "legacy_test_explored": 718,
+        "legacy_validation": 717,
+        "fresh_holdout": 1000
+      }
+    },
+    "full": {
+      "tasks": 78952,
+      "task_digest": "49d12dc49ea8348bd267c115e988573a64cd903ec0dda9371d69c23e0651de20",
+      "phases": {
+        "bandwidth": 9,
+        "compute_reference": 18,
+        "main": 72024,
+        "controls": 5256,
+        "boundary": 900,
+        "chain": 702,
+        "profile": 43
+      },
+      "paired_expected": 37776,
+      "splits": {
+        "development": 219,
+        "legacy_train": 3348,
+        "legacy_test_explored": 718,
+        "legacy_validation": 717,
+        "fresh_holdout": 1000
+      }
+    }
+  },
+  "synthetic_pilot": {
+    "recorded": 192,
+    "pairs": 96,
+    "full_pilot_gate": "PASS",
+    "matching_full_graph_tasks_reusing_choice": 306
+  }
+}

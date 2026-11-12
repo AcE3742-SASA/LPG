@@ -1,0 +1,29 @@
+test_analysis_and_reviewed_full_admission (test_sweep.SweepChecks.test_analysis_and_reviewed_full_admission) ... ok
+test_clock_mismatch_cannot_enter_full (test_sweep.SweepChecks.test_clock_mismatch_cannot_enter_full) ... ok
+test_controller_restores_both_clocks_on_worker_failure (test_sweep.SweepChecks.test_controller_restores_both_clocks_on_worker_failure) ... Worker log: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpw_7vw5r6/run/launches/20260921_031814_a13295/worker_0.log
+RESTORE: COMMANDS ACCEPTED
+ok
+test_denominator_or_accuracy_corruption_fails (test_sweep.SweepChecks.test_denominator_or_accuracy_corruption_fails) ... ok
+test_failed_credentials_stop_child_before_return (test_sweep.SweepChecks.test_failed_credentials_stop_child_before_return) ... ok
+test_failed_measurement_without_seed_exports_as_fail (test_sweep.SweepChecks.test_failed_measurement_without_seed_exports_as_fail) ... ok
+test_full_coverage_modes_rounds_and_no_new_auxiliary (test_sweep.SweepChecks.test_full_coverage_modes_rounds_and_no_new_auxiliary) ... ok
+test_incomplete_and_same_process_check_rejected (test_sweep.SweepChecks.test_incomplete_and_same_process_check_rejected) ... ok
+test_manifest_change_and_output_lock_rejected (test_sweep.SweepChecks.test_manifest_change_and_output_lock_rejected) ... ok
+test_preflight_power_mismatch_changes_no_clocks (test_sweep.SweepChecks.test_preflight_power_mismatch_changes_no_clocks) ... ok
+test_resume_preserves_attempts_and_graph_choices (test_sweep.SweepChecks.test_resume_preserves_attempts_and_graph_choices) ... ok
+test_timing_review_is_retained_without_discarding_collection (test_sweep.SweepChecks.test_timing_review_is_retained_without_discarding_collection) ... ok
+test_worker_process_exit_and_failure_logged (test_sweep.SweepChecks.test_worker_process_exit_and_failure_logged) ... ok
+test_worker_resume_collects_only_pending_tasks (test_sweep.SweepChecks.test_worker_resume_collects_only_pending_tasks) ... Preheating 180 seconds
+[1/60] check [1888, 832, 632] fp32 allocate r0: PASS (1000.00s)
+[2/60] check [1888, 832, 632] fp32 prealloc r0: PASS (1000.00s)
+[3/60] check [1888, 832, 632] fp32 graph r0: PASS (1000.00s)
+Preheating 180 seconds
+[4/60] check [3216, 520, 776] fp32 allocate r0: PASS (1000.00s)
+[5/60] check [3216, 520, 776] fp32 prealloc r0: PASS (1000.00s)
+[6/60] check [3216, 520, 776] fp32 graph r0: PASS (1000.00s)
+ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 3.247s
+
+OK

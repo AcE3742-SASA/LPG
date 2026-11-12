@@ -1,0 +1,27 @@
+{
+  "total_samples": 18412,
+  "clock_counts": {
+    "780.0": 12263,
+    "750.0": 6139,
+    "765.0": 10
+  },
+  "power_cap_samples": 114,
+  "incident_sample_first_kst": "2026/09/21 14:48:57.019",
+  "incident_sample_last_kst": "2026/09/21 14:49:03.959",
+  "incident_sample_span_s": 6.94,
+  "incident_timed_blocks": 14,
+  "max_iqr_pct": 0.04120537429230794,
+  "max_abs_drift_pct": 0.057957527681159346,
+  "max_round_range_pct": 0.7143648816737351,
+  "max_abs_repeat780_change_pct": 0.38124721150779584,
+  "matched750_latency_change_pct": {
+    "minimum": -0.15140108175821787,
+    "median": -0.0941210904467138,
+    "maximum": -0.04058558444488547,
+    "condition_modes": 18
+  },
+  "same_problem_cross_run_change_pct": {
+    "minimum": 2.0230857724213402,
+    "maximum": 2.4685167603145874
+  }
+}

@@ -1,0 +1,465 @@
+--- clock_lower_v1/README.md
++++ clock_range_v1/README.md
+@@ -1,83 +1,55 @@
+-# 낮은 코어 클럭 후보와 세 실행 방식 진단
++# 780–1200 MHz 코어 클럭 비교
+ 
+-900 MHz 고정 파일럿에서 드러난 FP32 조건을 포함해 750/780/810 MHz 후보를 비교한다. 메모리는 6801 MHz로 설정하고 기존 전력 한도 70 W는 확인만 한다. 이번 결과는 후보를 검토하기 위한 자료이며 최종 클럭을 자동 선정하거나 10,000조건 본수집을 시작하지 않는다.
++현재 780 MHz 파일럿이 끝난 뒤 대표 10형상/dtype 조합으로 여덟 코어 후보를 비교한다. 메모리 6801 MHz와 기존 전력 한도 70 W를 유지한다. 마지막에 780 MHz를 다시 측정해 앞뒤 시간 변화를 확인한다. 사용자는 다른 그래픽 작업을 현재 780 파일럿 시작 전에 모두 껐다고 밝혔다. 이는 사용자 확인 사항이며, 이번 실행이 그래픽 작업 유무의 인과 효과를 분리하는 실험은 아니다.
+ 
+ ## 실행
+ 
+-ZIP의 `clock_lower_v1` 폴더를 Ubuntu `/home/eu/gemm-research/scripts/`에 둔다. 기존 `gpu_sweep_v6`, `clock_audit_v1`, `clock_hold_v1`, `clock_steps_v1`, `fixed_pilot_v1`은 같은 상위 폴더에 그대로 있어야 한다. 42개 의존 파일의 hash가 다르면 측정 전에 중단한다. 기존 설치를 다시 할 필요는 없다.
++현재 실행의 클럭이나 소스를 바꾸지 않는다. 현재 파일럿이 끝나고 `RESTORE: COMMANDS ACCEPTED`와 `RESULT_ZIP=...`가 나온 뒤 이 비교를 실행한다.
+ 
+-다음 한 명령을 일반 사용자 eu로 실행한다.
++`clock_range_2026-09-21_v1.zip`을 Ubuntu `/home/eu/gemm-research/scripts/`에 풀어 `clock_range_v1/` 폴더를 둔다. 새 폴더의 7파일만 배포한다. 기존 `gpu_sweep_v6`, `clock_audit_v1`, `clock_hold_v1`, `clock_steps_v1`, `fixed_pilot_v1`은 그대로 필요하다. 기존 42파일의 의존 hash가 다르면 설정 전에 중단한다. 기존 설치를 다시 하지 않는다.
+ 
+ ```bash
+-bash /home/eu/gemm-research/scripts/clock_lower_v1/launch.sh
++bash /home/eu/gemm-research/scripts/clock_range_v1/launch.sh
+ ```
+ 
+-처음 `DEPENDENCY CHECK: PASS`가 출력되고 sudo 비밀번호를 요청할 수 있다. 측정은 기존 checked runner가 `ai_env`를 활성화한 뒤 일반 사용자로 실행한다. sudo는 클럭 설정·해제에 사용하며 실행 중 기존 승인을 비대화식으로 갱신한다.
++위 명령은 일반 사용자 eu로 실행한다. 기존 checked runner가 `ai_env`를 활성화한다. 클럭 설정·해제에만 sudo를 사용하며 처음 암호를 요청할 수 있다. 실행 중 그래픽 작업을 다시 시작하거나 다른 GPU 실험을 겹쳐 실행하지 않는다. 현재 파일럿과 공유하는 GPU 잠금이 겹친 실행을 거부한다.
+ 
+-예상 시간은 약 30분, 계획 범위는 25~35분이다. 단계별 180초 예열과 약 60×4초 측정으로 네 단계 합계 약 28분을 예상한 값이며 실제 실행 시간은 달라질 수 있다. 단계별 worker 제한은 20분이다. 네 단계는 순차 실행한다.
++시작 시 `DEPENDENCY CHECK: PASS; 9 stages / 540 measurements / 3780 blocks / 180 mode triplets`를 확인한다. 각 단계 로그에는 `[현재/60]` 진행 상황이 남는다. 예상 60~75분은 이전 네 단계 실측 27분 50초를 기준으로 잡은 계획값이다. 이번 아홉 단계의 실제 시간은 아직 확인하지 않았으며 각 worker 제한은 기존 20분이다.
+ 
+-```text
+-STAGE 1/4: s0_750_before
+-STAGE 2/4: s1_780
+-STAGE 3/4: s2_810
+-STAGE 4/4: s3_750_after
+-RESTORE: COMMANDS ACCEPTED
+-LOWER CLOCKS: PASS 또는 REVIEW; full remains HOLD
+-RESULT_ZIP=.../clock_lower_날짜_시간_식별자.zip
+-```
++## 순서와 범위
+ 
+-REVIEW는 수집 실패와 구분한다. exit 0은 자동 검토 표식 없음, exit 2는 REVIEW, exit 1은 실행·검증·복원 실패다. 중단 시에도 가능한 범위에서 복원과 결과 압축을 수행한다. 결과 ZIP 전체를 확인해야 후보를 판단할 수 있다. 기존 fixed_pilot 결과는 이번 ZIP에서 변경하지 않는다.
++| 단계 | 코어 요청 MHz | 역할 |
++|---|---:|---|
++| s0_780_before | 780 | 시작 기준 |
++| s1_810 | 810 | 낮은 후보 |
++| s2_840 | 840 | 낮은 후보 |
++| s3_870 | 870 | 900 아래 후보 |
++| s4_900 | 900 | 과거 일부 FP32에서 미유지된 후보 재확인 |
++| s5_960 | 960 | 900 위 후보 |
++| s6_1050 | 1050 | 900 위 후보 |
++| s7_1200 | 1200 | 900 위 후보 |
++| s8_780_after | 780 | 마지막 기준 재측정 |
+ 
+-## 측정 구성
++각 단계는 기존 `clock_lower_v1`의 10형상/dtype × allocate/prealloc/Graph × 두 round, 60측정이다. 전체 540측정, 3780블록, 180개 세 방식 묶음이다. 전체 출력 정확성 검사 108측정, 256원소 표본 검사 432측정으로 구성한다.
+ 
+-| 순서 | 코어 요청 | 메모리 요청 | 조회 간격 |
+-|---|---:|---:|---:|
+-| 처음 | 750 MHz | 6801 MHz | 50 ms |
+-| 두 번째 | 780 MHz | 6801 MHz | 50 ms |
+-| 세 번째 | 810 MHz | 6801 MHz | 50 ms |
+-| 마지막 재측정 | 750 MHz | 6801 MHz | 50 ms |
++기존 900 MHz에서 REVIEW였던 FP32 네 조건 `(1888,832,632)`, `(3216,520,776)`, `(1016,2048,504)`, `(1999,646,425)`, 기존 대조 `(1888,832,632)` FP16과 `(392,2776,80)` FP32, 4096³과 64³ 각각 FP16/FP32를 사용한다. 전체 24형상 파일럿이나 새로운 holdout 조건은 열지 않는다.
+ 
+-750은 이전 worker 전체 최저 관측값 810 MHz보다 여유를 둔 후보이고 780/810으로 위쪽 범위를 비교한다. 세 값은 사용자가 제공한 지원 목록에 있다. 설정 수락과 부하 중 유지는 아직 GPU에서 검증하지 않았고, 실제로 내려간 클럭을 다음 유지 가능 클럭의 증거로 사용하지 않는다. 825 MHz 이상은 이번 범위 밖이며 가장 높은 유지 가능 클럭을 찾는 실험이라고 주장하지 않는다.
++입력 seed, 저장된 Graph 묶음, v6 Timer와 정확성 함수, 단계별 새 프로세스와 180초 예열, 조건별 3000 event ms 안정화, 100 ms 목표 7블록, IQR·drift·round 차이 5%, 50 ms telemetry를 유지한다. 방식 시작 위치를 형상별 순환하고 두 번째 round에서 형상·방식 순서를 뒤집는다. allocate도 기존 캐싱 할당자를 쓰며 방식 차이를 순수 할당 비용이나 CPU 대기로 해석하지 않는다.
+ 
+-각 단계는 아래 10형상/dtype 조합을 출력 할당·prealloc·Graph, 두 round씩 측정한다. 총 240측정·1680블록·세 방식 비교 80묶음이다. 10개 조합은 기존에 관측한 개발 조건이며 새 holdout을 열지 않는다.
++## 결과 판정
+ 
+-| M,N,K | dtype | 선택 이유 | Graph당 GEMM |
+-|---|---|---|---:|
+-| 1888,832,632 | FP32 | 900 MHz 파일럿에서 REVIEW | 9 |
+-| 3216,520,776 | FP32 | 900 MHz 파일럿에서 REVIEW | 4 |
+-| 1016,2048,504 | FP32 | 900 MHz 파일럿에서 REVIEW | 6 |
+-| 1999,646,425 | FP32 | 900 MHz 파일럿에서 REVIEW | 8 |
+-| 1888,832,632 | FP16 | 기존 집중 진단 | 29 |
+-| 392,2776,80 | FP32 | 기존 집중 진단 | 56 |
+-| 4096,4096,4096 | FP16 | 기존 큰 GEMM 대조 | 1 |
+-| 4096,4096,4096 | FP32 | 기존 큰 GEMM 대조 | 1 |
+-| 64,64,64 | FP16 | 작은 GEMM의 실행 방식 비교 | 64 |
+-| 64,64,64 | FP32 | 작은 GEMM의 실행 방식 비교 | 64 |
++종료 시 `RESTORE: COMMANDS ACCEPTED`, `CLOCK RANGE: PASS/REVIEW/FAIL`, `RESULT_ZIP=...`를 확인한다. 초기 검사나 worker 실패는 traceback과 `EXPERIMENT: FAIL`로 끝날 수 있으며 가능한 로그를 ZIP에 보존한다. 결과는 `/home/eu/gemm-research/scripts/clock_range_v1/runs/clock_range_<실행 시각>_<고유값>.zip`과 `.zip.sha256`에 남는다. exit 0은 자동 검토 표식 없음, 2는 REVIEW, 1은 실행·검증·해제 실패이며 처리 가능한 중단은 130이다.
+ 
+-`allocate`는 기존 v6의 `torch.mm(A,B)` 호출이고 `prealloc`은 `torch.mm(A,B,out=C)`, `graph`는 같은 prealloc 호출을 고정 묶음으로 캡처한 replay다. 입력 seed는 형상·dtype에만 의존해 방식·round·단계 간 동일하다. Graph 묶음과 정확성 범위는 기존 fixed_pilot의 저장 설정과 일치시킨다. 매 단계 프로세스는 새로 시작하지만 같은 단계 안에서 세 방식은 같은 프로세스에서 실행된다. 형상별로 세 방식의 시작 위치를 순환시키고 다음 round에서 형상·방식 순서를 모두 뒤집는다.
++목표 클럭과 다른 표본, 순간 전력·열 제한, 내부 표본 누락, 시간 변동을 REVIEW로 보존한다. 높은 클럭의 REVIEW를 숨기거나 낮은 클럭의 성능으로 바꿔 적지 않는다. 수집 자체가 성공하면 다음 후보를 계속 측정한다. 설정 거부·worker 오류·정확성 실패는 후속 부하를 중단한다. 이때 완료된 단계 원자료와 실패 요약을 남기며 전체 비교가 완료됐다고 표시하지 않는다.
+ 
+-PyTorch는 캐싱 할당자를 사용하므로 allocate를 매 호출 새 cudaMalloc 실험이라고 부르지 않는다. 캐시를 강제로 비우거나 새 할당자를 설치하지 않는다. 기존 함수가 워밍업 후 결과 텐서를 교체하는 동작을 그대로 사용한다. [PyTorch 메모리 관리 문서](https://docs.pytorch.org/docs/2.14/notes/cuda.html#memory-management).
++요청 클럭은 유지가 검증된 값이 아니다. 설정 성공과 실제 부하 중 유지를 나눠 확인한다. NVIDIA도 전력 제한이 요청 클럭보다 실제 클럭을 낮출 수 있다고 설명한다. [NVIDIA nvidia-smi 문서](https://docs.nvidia.com/deploy/nvidia-smi/).
+ 
+-입력 생성은 시간 측정 밖에 있고 allocate의 출력 생성 호출은 event 블록 안에 있다. CUDA event 블록에는 노출된 제출 간격이 포함될 수 있다. 두 방식의 차이는 순수 할당 비용이나 CPU 제출 대기로 인과 분해하지 않는다. `paired_metrics.csv`에는 세 시간을 별도 열로 보존한다. 이번 대표 조건 결과만으로 기존 10,000조건의 allocate 전수 수집을 자동 생략하지 않는다.
++누적 카운터의 과거 불일치는 미해결로 남기고 시간/관측 클럭 판정과 따로 기록한다. 순간 비활성 중 증가, 표본 간격보다 큰 누적 증가량을 제한 시간 비율로 환산하지 않는다. 약 100 ms 묶음 평균은 단일 GEMM 지연 스파이크의 부재를 증명하지 않는다. 그래픽 작업 종료만으로 이전 900 MHz 미유지 원인이 해결됐다고 판단하지 않는다.
+ 
+-## 기준과 기록
++`report.md`와 `summary.json`은 단계별 판정, `measurements.csv`와 `review_queue.csv`는 측정별 검토, `paired_metrics.csv`는 세 방식의 시간을 담는다. `repeat_780.csv`는 시작/마지막 780의 두 round 중앙값을 비교한다. 차이 5% 초과는 REVIEW다. 원자료는 단계별 디렉터리, 전체 분석 근거는 `analysis.json`과 `clock_windows.json`에 있다.
+ 
+-기존 v6 Timer·GEMM·정확성 함수, 프로세스별 180초 예열, 조건별 3000 event ms 안정화, 약 100 ms 블록 7개, 상대 IQR·drift·round 차이 5%를 그대로 쓴다. 전체 출력 비교는 48측정, 256원소 표본 비교는 192측정이다. 출력 할당 경로에도 동일한 정확성 검사를 적용한다.
++공유 GPU 잠금 안에서 worker 종료 후 두 클럭 고정 해제를 각각 시도한다. `RESTORE: FAILED`이면 `restore.json`과 출력된 수동 해제 명령을 확인한다. 기본 자동 클럭으로 해제하며 이전 수동 고정을 재적용하지 않는다. 사전 진입 실패는 기존 설정을 건드리지 않는다. 전원 차단·SIGKILL은 종료 처리가 불가능할 수 있다.
+ 
+-실제 worker 전체 표본과 timed 호스트 경계 내부 표본을 나눠 검사한다. 요청 코어·메모리·전력 한도와 다르거나 순간 전력/열 제한이 관측되면 클럭/시간 검토 표식을 남긴다. 내부 표본 없는 블록, 관측 누락, 느린 조회 간격도 보존한다. 50 ms 요청은 연속 관측이나 센서 해상도를 보증하지 않는다.
++780 MHz는 비교 기준이다. 이번 비교의 `selected_clock_mhz`는 새 후보를 아직 선택하지 않았다는 뜻으로 null이며 `validated_for_full=false`, `full_sweep=HOLD`다. 결과 검토 뒤 유지되는 후보의 전체 192측정 파일럿을 판단한다. 이번 ZIP은 새 Nsight 캡처나 본수집을 실행하지 않는다. 시간 변화에는 단계 순서·프로세스·시간대 효과가 남으며 두 round는 독립 세션이 아니다.
+ 
+-NVIDIA는 SW Power Cap을 전력 소비 때문에 요청 클럭 아래로 낮추는 상태로 설명한다. 따라서 설정 명령의 성공만으로 목표 유지가 증명되지는 않으며 부하 중 관측을 따로 판정한다. [NVIDIA nvidia-smi 문서](https://docs.nvidia.com/deploy/nvidia-smi/).
+-
+-누적 전력/열 카운터는 별도 기록한다. 전체 단계에서 순간 비활성인데 누적값이 증가하는 경우 외에, 블록 내부 표본 사이에서도 비활성 중 증가·관측 간격보다 큰 증가량을 보존한다. 이런 표식은 시간/관측 클럭 판정과 따로 표시하며 제한 시간 비율로 환산하지 않는다. 과거 카운터 문제는 미해결로 남긴다. 이번에 자동 표식이 없다고 과거 문제까지 해결된 것으로 처리하지 않는다.
+-
+-`repeat_750.csv`는 처음과 마지막 750 MHz 단계의 방식별 round 중앙값을 비교하며 5%를 넘으면 REVIEW다. 다른 후보와의 차이 및 앞뒤 차이에는 프로세스·순서·시간대 효과가 포함되고 순수 클럭 효과나 독립 세션 재현성으로 해석하지 않는다.
+-
+-원본·manifest·모든 소스 hash·환경·프로세스·블록·텔레메트리·복원·종료 코드와 분석을 ZIP에 보존한다. `analysis.json`과 `clock_windows.json`이 전체 근거이고, `measurements.csv`, `review_queue.csv`, `paired_metrics.csv`, `repeat_750.csv`, `report.md`로 요약한다. 설정·worker 실패에서는 완료된 단계 원자료와 FAIL 요약을 보존하고 자동 분석·후속 부하는 중단한다.
+-
+-## 종료와 범위
+-
+-대상 UUID, 공유 GPU 잠금, 다른 GPU 작업, 70 W 검사를 통과한 뒤 클럭을 설정한다. 설정 실패·worker 오류·처리 가능한 중단·정상 종료에서 worker 종료를 확인하고 잠금을 유지한 채 코어와 메모리 고정 해제를 각각 시도한다. 복원은 기존 수동값으로 되돌리는 것이 아니라 기본 자동 클럭으로 해제한다. 사전 진입 실패라면 기존 설정을 건드리지 않는다. 전원 차단이나 SIGKILL에서는 종료 처리가 실행되지 않을 수 있다.
+-
+-이번 진단에는 새 Nsight 캡처, 자동 코어 GEMM 대조, 유휴 카운터 반복 진단, 학습, 전체 24형상 재검증, 10,000조건 본수집이 없다. 결과를 먼저 검토하고 유지 가능한 후보가 있으면 그 후보로 전체 파일럿을 준비한다. PASS여도 `selected_clock_mhz=null`, `full_sweep=HOLD`다.
+-
+-로컬 검증은 합성 데이터·가짜 명령으로 수행한다. 실제 GPU에서 후보 클럭 유지, 출력 할당 경로의 지연, 정확성 검사가 통과하는지는 이번 실행 결과로 확인해야 한다.
++로컬 검사는 `python3 -B test_lower.py`로 실행한다. 합성 데이터와 가짜 GPU 명령을 사용하므로 실제 GPU 검증을 대신하지 않는다.
+--- clock_lower_v1/analyze_lower.py
++++ clock_range_v1/analyze_lower.py
+@@ -141,40 +141,44 @@
+             after_over_before_minus_one=b/a-1,relative_range=spread,
+             review=spread>baseline['protocol']['between_round_limit']))
+         if repeats[-1]['review']:
+-            flags.append(f"repeat_750/{row['shape']}/{row['dtype']}/{row['mode']}:range_above_5pct")
++            flags.append(f"repeat_780/{row['shape']}/{row['dtype']}/{row['mode']}:range_above_5pct")
+     restored = lower.read(out/'restore.json')['commands_accepted']
+     if not restored:
+         flags.append('restoration_failed')
+-    if len(measurements) != 240 or len(windows) != 1680 or len(paired) != 80:
++    expected = len(lower.cases(config))*len(config['stages'])
++    expected_blocks = expected*baseline['protocol']['blocks']
++    expected_triplets = expected//len(config['modes'])
++    if (len(measurements),len(windows),len(paired)) != (expected,expected_blocks,expected_triplets):
+         raise ValueError('Incomplete result cardinality')
+     summary = dict(gate='FAIL' if not restored else ('REVIEW' if flags else 'PASS'),
+-        expected=240,recorded=len(measurements),missing=240-len(measurements),timed_blocks=len(windows),
++        expected=expected,recorded=len(measurements),missing=expected-len(measurements),timed_blocks=len(windows),
+         mode_triplets=len(paired),counts=dict(Counter(r['status'] for r in measurements)),
+         correctness_scopes=dict(Counter(r['correctness']['scope'] for r in measurements)),
+         stage_timing_and_sampled_clocks={r['stage']['name']:r['timing_and_sampled_clocks_pass'] for r in stages},
+-        repeat_750_time_pass=not any(r['review'] for r in repeats),
++        repeat_780_time_pass=not any(r['review'] for r in repeats),
+         counter_anomaly_blocks=len({(a['stage'],a['task_id'],a['block']) for a in anomalies}),
+         historical_counter_issue='UNRESOLVED; per-stage and per-block observations retained',
+         restoration='COMMANDS_ACCEPTED' if restored else 'FAILED',flags=sorted(set(flags)),
+-        full_sweep='HOLD',selected_clock_mhz=None,
++        full_sweep='HOLD',selected_clock_mhz=None,reference_clock_mhz=config['reference_clock_mhz'],
++        validated_for_full=False,
+         interpretation='Screened conditions only. Review before a broader pilot. Mode ratios are not causal overhead estimates.')
+     suite.atomic_json(out/'analysis.json',dict(summary=summary,stages=stages,measurements=measurements,
+-                                             repeat_750=repeats,counter_anomalies=anomalies))
++                                             repeat_780=repeats,counter_anomalies=anomalies))
+     suite.atomic_json(out/'clock_windows.json',windows)
+     flat = [dict(**r['task'],**{k:v for k,v in r.items() if k!='task'}) for r in measurements]
+     csv_write(out/'measurements.csv',flat)
+     csv_write(out/'review_queue.csv',[r for r in flat if r['status']!='PASS' or r['between_round_review']])
+     csv_write(out/'paired_metrics.csv',paired)
+-    csv_write(out/'repeat_750.csv',repeats)
+-    lines = ['# Lower clock screening','',f"Overall: {summary['gate']}; full remains HOLD.",
+-             '240 measurements, 1680 blocks, 80 matched three-mode groups expected.',
+-             'No final clock selected. Counter interpretation remains unresolved.','',
++    csv_write(out/'repeat_780.csv',repeats)
++    lines = ['# Core clock candidate comparison','',f"Overall: {summary['gate']}; full remains HOLD.",
++             f'{expected} measurements, {expected_blocks} blocks, {expected_triplets} matched three-mode groups expected.',
++             '780 MHz reference; no replacement clock selected. Counter interpretation remains unresolved.','',
+              '| Stage | Timing and sampled clocks | Max IQR % | Max drift % | Max round range % |',
+              '|---|---|---:|---:|---:|']
+     for s in stages:
+         lines.append(f"| {s['stage']['name']} | {'PASS' if s['timing_and_sampled_clocks_pass'] else 'REVIEW'} | "
+                      f"{100*s['max_relative_iqr']:.4f} | {100*s['max_abs_drift']:.4f} | {100*s['max_between_round_range']:.4f} |")
+-    lines += ['', '750 MHz before/after timing: '+('PASS' if summary['repeat_750_time_pass'] else 'REVIEW'),
++    lines += ['', '780 MHz before/after timing: '+('PASS' if summary['repeat_780_time_pass'] else 'REVIEW'),
+               'Sampling is not continuous verification. Host envelopes are not exact GPU event boundaries.',
+               'Allocate uses the existing caching allocator; it does not force a fresh cudaMalloc per call.',
+               'Separate processes and order effects remain. No mode is automatically omitted from full collection.','',
+--- clock_lower_v1/launch.sh
++++ clock_range_v1/launch.sh
+@@ -3,8 +3,8 @@
+ here="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+ suite="$here/../gpu_sweep_v6"
+ mkdir -p "$here/runs"
+-out="$(mktemp -d "$here/runs/clock_lower_$(date +%Y%m%d_%H%M%S)_XXXXXX")"
+-echo "LOWER_DIR=$out"
++out="$(mktemp -d "$here/runs/clock_range_$(date +%Y%m%d_%H%M%S)_XXXXXX")"
++echo "CLOCK_RANGE_DIR=$out"
+ finish() {
+   code=$?
+   trap - EXIT
+--- clock_lower_v1/lower.py
++++ clock_range_v1/lower.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Screen 750/780/810 MHz with the existing v6 allocate/prealloc/Graph worker."""
++"""Screen 780 through 1200 MHz with the existing v6 allocate/prealloc/Graph worker."""
+ import argparse
+ import contextlib
+ import copy
+@@ -40,7 +40,7 @@
+             modes = config['modes'][offset:] + config['modes'][:offset]
+             for mode in (reversed(modes) if rd else modes):
+                 tasks.append(dict(id=f'c{index}_{mode}_r{rd}', kind='gemm', shape=spec['shape'],
+-                    dtype=spec['dtype'], mode=mode, round=rd, phase='clock_lower', split='diagnostic_only'))
++                    dtype=spec['dtype'], mode=mode, round=rd, phase='clock_range', split='diagnostic_only'))
+     return tasks
+ 
+ 
+@@ -60,9 +60,13 @@
+         raise RuntimeError('Condition coverage changed')
+     if config['memory_mhz'] != 6801 or config['power_limit_w'] != 70:
+         raise RuntimeError('Memory or power protocol changed')
+-    expected_stages = [('s0_750_before',750),('s1_780',780),('s2_810',810),('s3_750_after',750)]
++    expected_stages = [('s0_780_before',780),('s1_810',810),('s2_840',840),
++                       ('s3_870',870),('s4_900',900),('s5_960',960),
++                       ('s6_1050',1050),('s7_1200',1200),('s8_780_after',780)]
+     if config['stages'] != [dict(name=n,sm_mhz=c,interval_ms=50) for n,c in expected_stages]:
+         raise RuntimeError('Candidate schedule changed')
++    if config['reference_clock_mhz'] != 780:
++        raise RuntimeError('Reference clock changed')
+     for spec in config['fixed_cases']:
+         if spec not in previous['fixed_cases']:
+             raise RuntimeError('Pinned seed, Graph batch or correctness scope changed')
+@@ -86,9 +90,11 @@
+ 
+ def make_manifest(out, loaded):
+     _, _, _, _, _, baseline, suite, config = loaded
+-    manifest = dict(kind='clock_lower_v1', config=config, baseline=baseline, cases=cases(config),
++    expected = len(cases(config))*len(config['stages'])
++    manifest = dict(kind='clock_range_v1', config=config, baseline=baseline, cases=cases(config),
+         source_hashes=own_hashes(), dependency_hashes=read(HERE/'dependency_hashes.json'),
+-        expected_measurements=240, expected_blocks=1680, expected_mode_triplets=80,
++        expected_measurements=expected, expected_blocks=expected*baseline['protocol']['blocks'],
++        expected_mode_triplets=expected//len(config['modes']), reference_clock_mhz=config['reference_clock_mhz'],
+         started_utc=suite.now(), full_sweep='HOLD', selected_clock_mhz=None,
+         new_automatic_core_load_control=False, new_profiler_capture=False,
+         restore_to='default clocks, not any pre-existing manual locks')
+@@ -135,12 +141,12 @@
+                         steps.require_clock(hold, suite, out, smi, gpu, name+'_memory', '-lmc', '6801,6801')
+                         value = str(stage['sm_mhz'])
+                         steps.require_clock(hold, suite, out, smi, gpu, name+'_core', '-lgc', value+','+value)
+-                        hold.progress(f"STAGE {index+1}/4: {name}; 180 s preheat + 60 measurements; {out/(name+'.log')}")
++                        hold.progress(f"STAGE {index+1}/{len(config['stages'])}: {name}; 180 s preheat + 60 measurements; {out/(name+'.log')}")
+                         command = [sys.executable, '-u', '-B', str(HERE/'lower.py'), 'worker',
+                                    '--output', str(out), '--stage', name]
+                         audit.run_logged(command, out, name, timeout=config['worker_timeout_s'])
+                         credentials.check()
+-                        suite.atomic_json(out/'progress.json', dict(stage_completed=index+1, total_stages=4))
++                        suite.atomic_json(out/'progress.json', dict(stage_completed=index+1, total_stages=len(config['stages'])))
+                     status['collection'] = 'COMPLETE'
+                 finally:
+                     # Worker termination is handled by run_logged before both resets under this lock.
+@@ -155,7 +161,7 @@
+                 raise RuntimeError('Source changed while running')
+             load()
+             suite.atomic_json(out/'summary.json', result)
+-            hold.progress('LOWER CLOCKS: '+result['gate']+'; full remains HOLD')
++            hold.progress('CLOCK RANGE: '+result['gate']+'; full remains HOLD')
+             return {'PASS':0, 'REVIEW':2, 'FAIL':1}[result['gate']]
+     except BaseException as error:
+         status.update(collection='FAILED_OR_INTERRUPTED', error=str(error))
+@@ -197,7 +203,10 @@
+     else:
+         loaded = load()
+         if args.action == 'verify':
+-            print('DEPENDENCY CHECK: PASS; 4 stages / 240 measurements / 1680 blocks / 80 mode triplets')
++            config = loaded[-1]
++            expected = len(cases(config))*len(config['stages'])
++            print(f"DEPENDENCY CHECK: PASS; {len(config['stages'])} stages / {expected} measurements / "
++                  f"{expected*loaded[5]['protocol']['blocks']} blocks / {expected//len(config['modes'])} mode triplets")
+         elif args.action == 'worker':
+             if args.stage not in {s['name'] for s in loaded[-1]['stages']}:
+                 raise ValueError('Unknown stage')
+--- clock_lower_v1/protocol.json
++++ clock_range_v1/protocol.json
+@@ -11,23 +11,48 @@
+   "rounds": 2,
+   "stages": [
+     {
+-      "name": "s0_750_before",
+-      "sm_mhz": 750,
+-      "interval_ms": 50
+-    },
+-    {
+-      "name": "s1_780",
++      "name": "s0_780_before",
+       "sm_mhz": 780,
+       "interval_ms": 50
+     },
+     {
+-      "name": "s2_810",
++      "name": "s1_810",
+       "sm_mhz": 810,
+       "interval_ms": 50
+     },
+     {
+-      "name": "s3_750_after",
+-      "sm_mhz": 750,
++      "name": "s2_840",
++      "sm_mhz": 840,
++      "interval_ms": 50
++    },
++    {
++      "name": "s3_870",
++      "sm_mhz": 870,
++      "interval_ms": 50
++    },
++    {
++      "name": "s4_900",
++      "sm_mhz": 900,
++      "interval_ms": 50
++    },
++    {
++      "name": "s5_960",
++      "sm_mhz": 960,
++      "interval_ms": 50
++    },
++    {
++      "name": "s6_1050",
++      "sm_mhz": 1050,
++      "interval_ms": 50
++    },
++    {
++      "name": "s7_1200",
++      "sm_mhz": 1200,
++      "interval_ms": 50
++    },
++    {
++      "name": "s8_780_after",
++      "sm_mhz": 780,
+       "interval_ms": 50
+     }
+   ],
+@@ -153,8 +178,10 @@
+       "graph_gemms_per_replay": 64
+     }
+   ],
+-  "purpose": "Screen lower common clock candidates across three execution modes. No final clock selection or full sweep.",
++  "purpose": "Compare higher core-clock candidates against a 780 MHz reference with the same ten conditions and three modes. Full sweep remains on hold.",
+   "mode_order": "Rotate allocate/prealloc/graph by case index; reverse both cases and mode order in round 1.",
+   "unchanged": "v6 Timer, preheat 180 s, settle 3000 event ms, 100 ms targets, 7 blocks, 5 percent gates, input seeds and pinned Graph batches",
+-  "counter_policy": "Preserve phase and block-level inconsistencies separately; never convert counter deltas or sample counts to throttled time fractions."
++  "counter_policy": "Preserve phase and block-level inconsistencies separately; never convert counter deltas or sample counts to throttled time fractions.",
++  "reference_clock_mhz": 780,
++  "background_workload_context": "User reported other graphics tasks closed before starting the preceding 780 MHz pilot; this is not a live verification or a controlled graphics-on/off comparison."
+ }
+--- clock_lower_v1/test_lower.py
++++ clock_range_v1/test_lower.py
+@@ -1,5 +1,6 @@
+ """CPU-only checks of admission, result integrity, mode coverage and cleanup."""
+ import contextlib
++import copy
+ from datetime import datetime, timedelta, timezone
+ import os
+ from pathlib import Path
+@@ -53,6 +54,22 @@
+ 
+ 
+ class LowerTests(unittest.TestCase):
++    def test_candidate_schedule_and_reference_cannot_silently_change(self):
++        original_read = lower.read
++        for variant in ('candidate', 'missing_return', 'reference'):
++            with self.subTest(variant=variant):
++                altered = copy.deepcopy(config)
++                if variant == 'candidate':
++                    altered['stages'][5]['sm_mhz'] = 945
++                elif variant == 'missing_return':
++                    altered['stages'].pop()
++                else:
++                    altered['reference_clock_mhz'] = 900
++                def changed(path):
++                    return altered if path == lower.HERE/'protocol.json' else original_read(path)
++                with patch.object(lower, 'read', changed), self.assertRaises(RuntimeError):
++                    lower.load()
++
+     def test_three_modes_same_inputs_batches_and_balanced_reverse_order(self):
+         tasks = lower.cases(config)
+         self.assertEqual(len(tasks),60)
+@@ -75,11 +92,13 @@
+                 out=Path(temp);fixture(out,growth)
+                 result=analyze_lower.analyze(out,LOADED)
+                 self.assertEqual(result['gate'],'REVIEW' if growth else 'PASS')
+-                self.assertEqual((result['recorded'],result['timed_blocks'],result['mode_triplets']),(240,1680,80))
+-                self.assertEqual(result['correctness_scopes'],{'sampled':192,'full':48})
++                self.assertEqual((result['recorded'],result['timed_blocks'],result['mode_triplets']),(540,3780,180))
++                self.assertEqual(result['correctness_scopes'],{'sampled':432,'full':108})
+                 self.assertTrue(all(result['stage_timing_and_sampled_clocks'].values()))
+-                self.assertEqual(result['counter_anomaly_blocks'],1680 if growth else 0)
++                self.assertEqual(result['counter_anomaly_blocks'],3780 if growth else 0)
+                 self.assertIsNone(result['selected_clock_mhz'])
++                self.assertEqual(result['reference_clock_mhz'],780)
++                self.assertFalse(result['validated_for_full'])
+                 self.assertEqual(result['full_sweep'],'HOLD')
+ 
+     def test_block_counter_issue_not_hidden_by_active_sample_elsewhere(self):
+@@ -144,7 +163,7 @@
+                 if variant=='round':self.assertFalse(result['stage_timing_and_sampled_clocks'][stage['name']])
+                 else:
+                     self.assertTrue(all(result['stage_timing_and_sampled_clocks'].values()))
+-                    self.assertFalse(result['repeat_750_time_pass'])
++                    self.assertFalse(result['repeat_780_time_pass'])
+ 
+     def test_source_manifest_and_dependency_tampering_rejected(self):
+         with tempfile.TemporaryDirectory() as temp:
+@@ -158,7 +177,8 @@
+         with patch.object(lower,'read',changed),self.assertRaisesRegex(RuntimeError,'Dependency changed'):lower.load()
+ 
+     def test_run_restores_under_lock_on_success_failure_and_interrupt(self):
+-        for outcome in ('success','setup_error','worker_error','interrupt','restore_error','wrong_power','wrong_gpu'):
++        for outcome in ('success','clock_review','setup_error','worker_error','later_worker_error',
++                        'interrupt','restore_error','wrong_power','wrong_gpu'):
+             with self.subTest(outcome=outcome),tempfile.TemporaryDirectory() as temp:
+                 out=Path(temp);locked=[];commands=[]
+                 @contextlib.contextmanager
+@@ -176,19 +196,42 @@
+                     return q_result(code=1 if fail else 0)
+                 def worker(cmd,directory,name,timeout):
+                     if outcome=='worker_error':raise RuntimeError('worker failed')
++                    if outcome=='later_worker_error' and name=='s5_960':raise RuntimeError('later worker failed')
+                     if outcome=='interrupt':raise KeyboardInterrupt
+                     fixture_stage(out,next(s for s in config['stages'] if s['name']==name))
++                    if outcome=='clock_review' and name=='s4_900':
++                        path=out/name/'telemetry.csv';lines=[]
++                        for line in path.read_text().splitlines():
++                            fields=line.split(',');fields[5]='885';lines.append(','.join(fields))
++                        path.write_text('\n'.join(lines)+'\n')
+                 credentials=SimpleNamespace(failed=False,check=lambda:None)
+                 with patch.object(suite,'lock',lock),patch.object(suite,'command_text',command),\
+                      patch.object(audit,'check_processes'),patch.object(audit,'run_logged',worker),\
+                      patch.object(lower.shutil,'which',return_value='/nvidia-smi'),\
+                      patch.object(steps,'Credentials',return_value=contextlib.nullcontext(credentials)):
+                     args=SimpleNamespace(output=out)
+-                    if outcome in ('success','restore_error'):self.assertEqual(lower.run(args),0 if outcome=='success' else 1)
++                    if outcome in ('success','clock_review','restore_error'):
++                        self.assertEqual(lower.run(args),{'success':0,'clock_review':2,'restore_error':1}[outcome])
+                     elif outcome=='interrupt':
+                         with self.assertRaises(KeyboardInterrupt):lower.run(args)
+                     else:
+                         with self.assertRaises(RuntimeError):lower.run(args)
++                if outcome in ('success','clock_review','restore_error'):
++                    self.assertEqual([c[-1] for c in commands if '-lgc' in c],
++                                     [f'{clock},{clock}' for clock in [780,810,840,870,900,960,1050,1200,780]])
++                    self.assertEqual([c[-1] for c in commands if '-lmc' in c],['6801,6801']*9)
++                    self.assertEqual(lower.read(out/'progress.json')['total_stages'],9)
++                if outcome=='clock_review':
++                    result=lower.read(out/'summary.json')
++                    self.assertEqual(result['recorded'],540)
++                    self.assertFalse(result['stage_timing_and_sampled_clocks']['s4_900'])
++                    self.assertTrue(result['stage_timing_and_sampled_clocks']['s8_780_after'])
++                if outcome=='later_worker_error':
++                    self.assertEqual(lower.read(out/'progress.json')['stage_completed'],5)
++                    self.assertTrue((out/'s4_900/results.json').exists())
++                    self.assertFalse((out/'s6_1050').exists())
++                    self.assertEqual(lower.read(out/'summary.json')['gate'],'FAIL')
++                self.assertFalse(any('-pl' in c for c in commands))
+                 status=lower.read(out/'status.json')
+                 if outcome in ('wrong_power','wrong_gpu'):
+                     self.assertEqual(status['restoration'],'NOT_ATTEMPTED')
+@@ -200,7 +243,7 @@
+ 
+     def test_launcher_preserves_review_exit_and_waits_for_cleanup(self):
+         with tempfile.TemporaryDirectory() as temp:
+-            root=Path(temp);pkg=root/'clock_lower_v1';pkg.mkdir();bins=root/'bin';bins.mkdir()
++            root=Path(temp);pkg=root/'clock_range_v1';pkg.mkdir();bins=root/'bin';bins.mkdir()
+             for name in ('lower.py','launch.sh'):shutil.copy2(lower.HERE/name,pkg/name)
+             sd=root/'gpu_sweep_v6';sd.mkdir();(sd/'run_research_checked.sh').write_text('#!/bin/bash\n"$@"\n')
+             stubs={'sudo':'#!/bin/sh\nexit 0\n',

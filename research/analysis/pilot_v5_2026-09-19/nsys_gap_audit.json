@@ -1,0 +1,84 @@
+{
+  "scope": "Separate profiler worker: batch 64, four 1024-to-1024 FP16 GEMMs; NOT the actual seven-block Timer.run measurement. Profiled values only.",
+  "method": "Union of recorded CUPTI_ACTIVITY_KIND_KERNEL [start,end] intervals; denominator last kernel end minus first kernel start. Excludes leading/trailing event boundaries. No attribution to CPU stalls, competing work or profiler overhead is established.",
+  "results": [
+    {
+      "source": "raw/pilot_v5/profiles/965835af81aed1c335ddebe4/attempt-001/capture.sqlite",
+      "sha256": "6053cc3e9f3c3280bc867034b7e281d6df569f427464e0bce5a51f028294ee83",
+      "mode": "graph",
+      "task": {
+        "kind": "profile",
+        "tool": "nsys",
+        "batch": 64,
+        "widths": [
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "split": "profile_only",
+        "id": "965835af81aed1c335ddebe4"
+      },
+      "kernel_count": 4800,
+      "span_ns": 30859646,
+      "kernel_union_ns": 30645492,
+      "inter_kernel_gap_ns": 214154,
+      "gap_fraction": 0.006939612981950603
+    },
+    {
+      "source": "raw/pilot_v5/profiles/d9fe395024645378768a7c22/attempt-001/capture.sqlite",
+      "sha256": "e75e890e88721d8ea7b6cfdd5b2ac6356f9c16fd06ff0ddcb6e999c54d107646",
+      "mode": "prealloc",
+      "task": {
+        "kind": "profile",
+        "tool": "nsys",
+        "batch": 64,
+        "widths": [
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "split": "profile_only",
+        "id": "d9fe395024645378768a7c22"
+      },
+      "kernel_count": 80,
+      "span_ns": 587108,
+      "kernel_union_ns": 523524,
+      "inter_kernel_gap_ns": 63584,
+      "gap_fraction": 0.10830034678457796
+    },
+    {
+      "source": "raw/pilot_v5/profiles/db5f23ffe960028c4d02a7fc/attempt-001/capture.sqlite",
+      "sha256": "9db05bcbdd0a73b560ea733514f062048dd438f4e0f913fed400eaf536640324",
+      "mode": "sync_each",
+      "task": {
+        "kind": "profile",
+        "tool": "nsys",
+        "batch": 64,
+        "widths": [
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "dtype": "fp16",
+        "mode": "sync_each",
+        "split": "profile_only",
+        "id": "db5f23ffe960028c4d02a7fc"
+      },
+      "kernel_count": 80,
+      "span_ns": 1222506,
+      "kernel_union_ns": 530789,
+      "inter_kernel_gap_ns": 691717,
+      "gap_fraction": 0.5658188998663402
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "reference": "GridSearchCV(StandardScaler + Lasso)",
+  "folds": 10,
+  "group_pairs_kept_together": true,
+  "selected_alpha": 0.01316267933299336,
+  "max_cv_mse_difference": 1.326177622233693e-05
+}

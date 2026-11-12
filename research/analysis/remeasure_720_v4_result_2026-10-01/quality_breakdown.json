@@ -1,0 +1,214 @@
+{
+  "quality_status_counts": {
+    "PASS": 113331,
+    "REVIEW": 51
+  },
+  "segments": 947,
+  "imported_status_counts": {
+    "PASS": 111582
+  },
+  "remeasured_status_counts": {
+    "PASS": 1749,
+    "REVIEW": 51
+  },
+  "group_status_counts": [
+    {
+      "group": "other",
+      "status": "PASS",
+      "count": 1749
+    },
+    {
+      "group": "isolated_fp32",
+      "status": "REVIEW",
+      "count": 51
+    }
+  ],
+  "new_segments": [
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00000",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00001",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00002",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00003",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00004",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00005",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00006",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00007",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00008",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00009",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00010",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00011",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00012",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00013",
+      "group": "other",
+      "tasks": 120,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00014",
+      "group": "other",
+      "tasks": 69,
+      "flags": []
+    },
+    {
+      "segment": "sessions/20261001_143341_57d18ef1/segment_00015",
+      "group": "isolated_fp32",
+      "tasks": 51,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ]
+    }
+  ],
+  "new_ranges": {
+    "clocks.sm": [
+      615.0,
+      720.0
+    ],
+    "clocks.mem": [
+      6801.0,
+      6801.0
+    ],
+    "power.limit": [
+      70.0,
+      70.0
+    ],
+    "power.draw": [
+      21.1,
+      70.34
+    ],
+    "temperature.gpu": [
+      40.0,
+      73.0
+    ]
+  },
+  "new_telemetry_samples": 136685,
+  "new_max_sample_gap_seconds": 0.07499980926513672,
+  "new_counter_active_samples": {
+    "clocks_event_reasons_counters.sw_power_cap": 3718,
+    "clocks_event_reasons_counters.sw_thermal_slowdown": 0,
+    "clocks_event_reasons_counters.hw_thermal_slowdown": 0
+  },
+  "new_counter_anomaly_blocks": 1068,
+  "direct_tasks": 51,
+  "direct_flags": {
+    "observed_active:clocks_event_reasons.sw_power_cap": 51,
+    "observed_mismatch:clocks.sm": 51
+  },
+  "between_round_groups": 3,
+  "between_round_tasks": 9,
+  "additional_between_round_tasks": 3,
+  "resolved_previous_review": 1749,
+  "newly_reviewed_imported_tasks": [
+    {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        2049,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "split": "legacy_train",
+      "mode": "allocate",
+      "id": "029767cb699ff71c55c41abf"
+    },
+    {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        2049,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "split": "legacy_train",
+      "mode": "prealloc",
+      "id": "1c78497e29bfdf1dc5b5bd46"
+    },
+    {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        2049,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "split": "legacy_train",
+      "mode": "graph",
+      "id": "c34e8d6ee0d3f967a090039a"
+    }
+  ],
+  "final_review_tasks": 54,
+  "accepted_measurements": 113328,
+  "fresh_holdout_review": 0,
+  "holdout_latencies_disclosed": false
+}

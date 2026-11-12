@@ -1,0 +1,59 @@
+{
+  "augmented_train_shapes": 11498,
+  "common_conditions": 54288,
+  "common_raw_records": 162864,
+  "common_shape_counts": {
+    "expansion_train": 8153,
+    "expansion_validation": 895
+  },
+  "eligible_raw_records": 173959,
+  "held_review_raw_records": 6041,
+  "legacy_train_shapes": 3345,
+  "legacy_validation_shapes": 716,
+  "locked_test_opened": false,
+  "planned_raw_records": 180000,
+  "planned_shapes": 10000,
+  "quality": "REVIEW",
+  "split_counts": [
+    {
+      "count": 156625,
+      "measure": "accepted_raw_records",
+      "split": "expansion_train"
+    },
+    {
+      "count": 8153,
+      "measure": "common_shapes",
+      "split": "expansion_train"
+    },
+    {
+      "count": 48941,
+      "measure": "complete_conditions",
+      "split": "expansion_train"
+    },
+    {
+      "count": 9000,
+      "measure": "planned_shapes",
+      "split": "expansion_train"
+    },
+    {
+      "count": 17334,
+      "measure": "accepted_raw_records",
+      "split": "expansion_validation"
+    },
+    {
+      "count": 895,
+      "measure": "common_shapes",
+      "split": "expansion_validation"
+    },
+    {
+      "count": 5370,
+      "measure": "complete_conditions",
+      "split": "expansion_validation"
+    },
+    {
+      "count": 1000,
+      "measure": "planned_shapes",
+      "split": "expansion_validation"
+    }
+  ]
+}

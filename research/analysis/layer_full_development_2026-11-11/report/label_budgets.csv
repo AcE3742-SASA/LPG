@@ -1,0 +1,7 @@
+budget,seed,aggregated_labels,by_implementation,round_records,train_round_records,validation_round_records
+selected_recipe_label_budget,20261104,5994,"{""decomposed"": 3591, ""input_pack"": 2400, ""mm"": 2400, ""output_pack"": 2400, ""standard"": 5991, ""unfold"": 1200}",17982,15588,2394
+selected_recipe_label_budget,20261105,5994,"{""decomposed"": 3591, ""input_pack"": 2400, ""mm"": 2400, ""output_pack"": 2400, ""standard"": 5991, ""unfold"": 1200}",17982,15588,2394
+selected_recipe_label_budget,20261106,5994,"{""decomposed"": 3591, ""input_pack"": 2400, ""mm"": 2400, ""output_pack"": 2400, ""standard"": 5991, ""unfold"": 1200}",17982,15588,2394
+selected_recipe_label_budget,all_seed_union,5994,"{""decomposed"": 3591, ""input_pack"": 2400, ""mm"": 2400, ""output_pack"": 2400, ""standard"": 5991, ""unfold"": 1200}",17982,15588,2394
+all_protocol_access_label_budget,shared,8994,"{""decomposed"": 5997, ""gelu"": 1500, ""gemm1"": 1500, ""gemm2"": 1500, ""input_pack"": 2997, ""mm"": 2997, ""output_pack"": 2997, ""standard"": 5997, ""unfold"": 1497}",26982,21600,5382
+all_protocol_access_label_budget,all_seed_union,8994,"{""decomposed"": 5997, ""gelu"": 1500, ""gemm1"": 1500, ""gemm2"": 1500, ""input_pack"": 2997, ""mm"": 2997, ""output_pack"": 2997, ""standard"": 5997, ""unfold"": 1497}",26982,21600,5382

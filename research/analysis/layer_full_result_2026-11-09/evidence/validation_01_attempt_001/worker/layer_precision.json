@@ -1,0 +1,12 @@
+{
+  "conv": {
+    "fp32_precision": "ieee"
+  },
+  "enabled": true,
+  "benchmark": true,
+  "deterministic": false,
+  "benchmark_limit": 10,
+  "cudnn_version": 92400,
+  "autocast": false,
+  "execution": "inference_mode ordinary allocation, no compile/Graph"
+}

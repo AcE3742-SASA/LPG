@@ -1,0 +1,64 @@
+{
+  "status": "GEMM_BASELINES_FIXED_BEFORE_FIT",
+  "source_protocol_sha256": "4eba0953fc21bc080bca5d7595d7bf9524bfeb9debd10a0544c7dc0d8551d120",
+  "training_shapes": 11498,
+  "validation_shapes": 1611,
+  "test_shapes": 1000,
+  "seeds": [
+    20261028,
+    20261029,
+    20261030
+  ],
+  "methods": [
+    "neuralpower_fc_port",
+    "neuralpower_original_floor",
+    "paleo_empirical",
+    "neusight_bmm_clock",
+    "neusight_bmm_empirical",
+    "neusight_linear_clock",
+    "neusight_linear_empirical"
+  ],
+  "neuralpower_scope": "Public FC runtime feature map retrained for each unbatched GEMM dtype/mode; full training budget fixed in advance",
+  "selection": "Training-only grouped CV selects lasso penalty; no choice based on test or validation scores",
+  "profiles": {
+    "upstream": "Unmodified public model forward code and pretrained FP32 weights",
+    "tile_lookup": "Unscaled Euclidean nearest metadata row over author features; batch result checked against upstream MetaTable",
+    "clock_profile": {
+      "Num_Sm": 48,
+      "SingleFLOPs": 8847.36,
+      "Dev_Mem": 20,
+      "Mem_Bw": 272.04,
+      "L2Cache": 40
+    },
+    "empirical_profile": {
+      "Num_Sm": 48,
+      "SingleFLOPs": 6140,
+      "Dev_Mem": 20,
+      "Mem_Bw": 262.3,
+      "L2Cache": 40
+    },
+    "hardware_evidence": [
+      "analysis/cutlass_inventory_2026-09-21/raw/help.txt",
+      "analysis/power_shape_diag_v1_result_2026-10-02/ncu_metrics.json",
+      "clock_audit_v1/baseline_v6.json"
+    ],
+    "adaptations": [
+      "CPU inference under PyTorch 2.15",
+      "batch nearest-neighbor tile lookup without global cache writes",
+      "new GPU with fixed clock",
+      "bias-trained LINEAR predictor applied to bias-free layers",
+      "FFN sums LINEAR+GELU+LINEAR"
+    ],
+    "unsupported": [
+      "FP16 weights",
+      "native cuDNN convolutions"
+    ]
+  },
+  "adaptations": "BMM B=1 and bias-trained LINEAR are separately labelled proxies for torch.mm; Graph and preallocation change runtime boundaries.",
+  "input_hashes": {
+    "analysis/gemm_expansion_result_2026-11-06/compare_expansion.py": "534afa995a941f83702f9b560ab4bc830153df97bef28c8e7a2defcd155031c4",
+    "analysis/gemm_expansion_result_2026-11-06/fit_v1/frozen_protocol.json": "4eba0953fc21bc080bca5d7595d7bf9524bfeb9debd10a0544c7dc0d8551d120",
+    "analysis/gemm_expansion_result_2026-11-06/fit_v1/adopted_conditions.csv": "3f649ed8b2999435c9d3c28940a7c0c1eede06981c5c72168cac3f265999b1d9"
+  },
+  "original_test_previously_disclosed": true
+}

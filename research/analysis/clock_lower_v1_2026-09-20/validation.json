@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "test_counts": {
+    "reused_steps_tests.log": 10,
+    "reused_v6_tests.log": 10,
+    "reused_fixed_tests.log": 8,
+    "new_tests.log": 9,
+    "reused_audit_tests.log": 10
+  },
+  "total_tests": 47,
+  "unchanged_dependencies": 42,
+  "expected_measurements": 240,
+  "expected_blocks": 1680,
+  "mode_triplets": 80,
+  "unique_tasks_per_stage": 60,
+  "pinned_cases_verified_against_uploaded_fixed_pilot": 10,
+  "archive": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/clock_lower_2026-09-20_v1.zip",
+  "zip_sha256": "e74b87a32535b5a0596642c5d97e0f4d6f29e3640fd6e9ba93acd48b5b1f5fb1",
+  "zip_bytes": 20567,
+  "zip_files": 7,
+  "zip_crc_and_byte_match": true,
+  "source_hashes": {
+    "README.md": "b521017e7b3c2cfdbe33781ed09f45bd3f1d4da78a079d94a00c39b3c462597b",
+    "analyze_lower.py": "e07ccf4e76c0a6199071411e6984a68cf0acbb3f6b74391d307fd5a3e2b3ad35",
+    "dependency_hashes.json": "59f6706ed5b5ab98e1890372073cd6f5652c06126ec0bfec10083ce74c4c70a1",
+    "launch.sh": "3e4f1f0a9d3e7a6adaea440969af3338676632d43b277b301a4c549b07f2c67a",
+    "lower.py": "a4329d3878065183723bad265ae1b0e23bbbc5a10d1a3e333c25ee3295dcd4ab",
+    "protocol.json": "04928b8aeea56f8f1c209175a5aec75e58ff91f075f8b402c06c346bd525694b",
+    "test_lower.py": "e060c6bb01b5e8cf8ad43cb6a2bf76113b77eeff080cf13d3b0dfb5756370197"
+  },
+  "gpu_execution": "NOT_RUN",
+  "full_sweep": "HOLD",
+  "selected_clock_mhz": null
+}

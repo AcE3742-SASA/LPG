@@ -1,0 +1,373 @@
+{
+  "verification": "PASS",
+  "stages": [
+    {
+      "stage": "s0_900_100_before",
+      "target_sm": 900,
+      "polling_ms": 100,
+      "statuses": {
+        "PASS": 14,
+        "REVIEW": 2
+      },
+      "max_iqr_pct": 0.037639883934410416,
+      "max_abs_drift_pct": 0.04056823243775543,
+      "max_round_range_pct": 0.18384039761379778,
+      "timed_inside_samples": 110,
+      "blocks_without_sample": 2,
+      "timed_ranges": {
+        "clocks.sm": [
+          900.0,
+          900.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.draw": [
+          46.45,
+          66.6
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "temperature.gpu": [
+          64.0,
+          68.0
+        ]
+      },
+      "timed_active_counts": {
+        "clocks_event_reasons.sw_power_cap": 0,
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      }
+    },
+    {
+      "stage": "s1_900_50_before",
+      "target_sm": 900,
+      "polling_ms": 50,
+      "statuses": {
+        "PASS": 16
+      },
+      "max_iqr_pct": 0.024519105404435425,
+      "max_abs_drift_pct": 0.03471728608940705,
+      "max_round_range_pct": 0.11879527578383942,
+      "timed_inside_samples": 216,
+      "blocks_without_sample": 0,
+      "timed_ranges": {
+        "clocks.sm": [
+          900.0,
+          900.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.draw": [
+          49.83,
+          66.73
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "temperature.gpu": [
+          66.0,
+          69.0
+        ]
+      },
+      "timed_active_counts": {
+        "clocks_event_reasons.sw_power_cap": 0,
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      }
+    },
+    {
+      "stage": "s2_1050_50",
+      "target_sm": 1050,
+      "polling_ms": 50,
+      "statuses": {
+        "PASS": 12,
+        "REVIEW": 4
+      },
+      "max_iqr_pct": 0.06353360325072233,
+      "max_abs_drift_pct": 0.335817854966322,
+      "max_round_range_pct": 0.07929504402186607,
+      "timed_inside_samples": 214,
+      "blocks_without_sample": 0,
+      "timed_ranges": {
+        "clocks.sm": [
+          945.0,
+          1050.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.draw": [
+          51.29,
+          69.22
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "temperature.gpu": [
+          68.0,
+          72.0
+        ]
+      },
+      "timed_active_counts": {
+        "clocks_event_reasons.sw_power_cap": 53,
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      }
+    },
+    {
+      "stage": "s3_1200_50",
+      "target_sm": 1200,
+      "polling_ms": 50,
+      "statuses": {
+        "PASS": 6,
+        "REVIEW": 10
+      },
+      "max_iqr_pct": 3.881693860006689,
+      "max_abs_drift_pct": 4.847118936285163,
+      "max_round_range_pct": 2.992995193700212,
+      "timed_inside_samples": 213,
+      "blocks_without_sample": 0,
+      "timed_ranges": {
+        "clocks.sm": [
+          930.0,
+          1200.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.draw": [
+          55.54,
+          70.06
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "temperature.gpu": [
+          69.0,
+          73.0
+        ]
+      },
+      "timed_active_counts": {
+        "clocks_event_reasons.sw_power_cap": 132,
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      }
+    },
+    {
+      "stage": "s4_1350_50",
+      "target_sm": 1350,
+      "polling_ms": 50,
+      "statuses": {
+        "REVIEW": 14,
+        "PASS": 2
+      },
+      "max_iqr_pct": 1.5907148165957872,
+      "max_abs_drift_pct": 2.5735639609181917,
+      "max_round_range_pct": 9.869664031135489,
+      "timed_inside_samples": 214,
+      "blocks_without_sample": 0,
+      "timed_ranges": {
+        "clocks.sm": [
+          930.0,
+          1350.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.draw": [
+          64.84,
+          70.06
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "temperature.gpu": [
+          72.0,
+          74.0
+        ]
+      },
+      "timed_active_counts": {
+        "clocks_event_reasons.sw_power_cap": 186,
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      }
+    },
+    {
+      "stage": "s5_900_50_after",
+      "target_sm": 900,
+      "polling_ms": 50,
+      "statuses": {
+        "PASS": 16
+      },
+      "max_iqr_pct": 0.041864978090201975,
+      "max_abs_drift_pct": 0.3956604834092108,
+      "max_round_range_pct": 0.13622839889312766,
+      "timed_inside_samples": 213,
+      "blocks_without_sample": 0,
+      "timed_ranges": {
+        "clocks.sm": [
+          900.0,
+          900.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.draw": [
+          46.96,
+          66.96
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "temperature.gpu": [
+          66.0,
+          70.0
+        ]
+      },
+      "timed_active_counts": {
+        "clocks_event_reasons.sw_power_cap": 0,
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      }
+    },
+    {
+      "stage": "s6_900_100_after",
+      "target_sm": 900,
+      "polling_ms": 100,
+      "statuses": {
+        "PASS": 13,
+        "REVIEW": 3
+      },
+      "max_iqr_pct": 0.10764320462547346,
+      "max_abs_drift_pct": 0.16346221595945892,
+      "max_round_range_pct": 0.0668573642792811,
+      "timed_inside_samples": 109,
+      "blocks_without_sample": 3,
+      "timed_ranges": {
+        "clocks.sm": [
+          900.0,
+          900.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.draw": [
+          46.8,
+          66.83
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "temperature.gpu": [
+          66.0,
+          69.0
+        ]
+      },
+      "timed_active_counts": {
+        "clocks_event_reasons.sw_power_cap": 0,
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      }
+    }
+  ],
+  "missing_windows": [
+    {
+      "stage": "s0_900_100_before",
+      "task_id": "c3_prealloc_r1",
+      "block": 4,
+      "host_envelope_ms": 102.525,
+      "surrounding_poll_gap_ms": 103.0,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    },
+    {
+      "stage": "s0_900_100_before",
+      "task_id": "c0_prealloc_r1",
+      "block": 1,
+      "host_envelope_ms": 96.461,
+      "surrounding_poll_gap_ms": 102.0,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    },
+    {
+      "stage": "s6_900_100_after",
+      "task_id": "c1_prealloc_r0",
+      "block": 2,
+      "host_envelope_ms": 92.986,
+      "surrounding_poll_gap_ms": 103.0,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    },
+    {
+      "stage": "s6_900_100_after",
+      "task_id": "c1_prealloc_r1",
+      "block": 1,
+      "host_envelope_ms": 92.985,
+      "surrounding_poll_gap_ms": 102.0,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    },
+    {
+      "stage": "s6_900_100_after",
+      "task_id": "c0_prealloc_r1",
+      "block": 0,
+      "host_envelope_ms": 93.066,
+      "surrounding_poll_gap_ms": 102.0,
+      "before_sm_mem": [
+        900.0,
+        6801.0
+      ],
+      "after_sm_mem": [
+        900.0,
+        6801.0
+      ]
+    }
+  ],
+  "duration_s": 1885.0,
+  "post_restore_clocks": {
+    "Graphics": 210,
+    "SM": 210,
+    "Memory": 405
+  }
+}

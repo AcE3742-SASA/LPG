@@ -1,0 +1,154 @@
+{
+  "raw_gate_unchanged": "FAIL",
+  "recorded": 253,
+  "missing": 0,
+  "counts": {
+    "PASS": 244,
+    "REVIEW": 8,
+    "FAIL": 1
+  },
+  "verified_measurement_rows": 246,
+  "between_round_flags": 9,
+  "max_between_round_percent": 25.996069308022495,
+  "iqr_median_percent": 0.15711691667255295,
+  "iqr_p95_percent": 2.6735490514211477,
+  "phases": {
+    "bandwidth": {
+      "count": 2,
+      "review": 0
+    },
+    "compute_reference": {
+      "count": 8,
+      "review": 0
+    },
+    "main": {
+      "count": 96,
+      "review": 5
+    },
+    "controls": {
+      "count": 128,
+      "review": 3
+    },
+    "chain": {
+      "count": 12,
+      "review": 0
+    }
+  },
+  "profiles": [
+    {
+      "id": "d33956ec84c213c5c04bdbff",
+      "tool": "ncu",
+      "mode": "prealloc",
+      "saved_status": "PASS",
+      "exit_code": 0,
+      "kernel_metrics_present": true
+    },
+    {
+      "id": "8201ceebe4fc80675af00aea",
+      "tool": "ncu",
+      "mode": "prealloc",
+      "saved_status": "PASS",
+      "exit_code": 0,
+      "kernel_metrics_present": true
+    },
+    {
+      "id": "3fc1c69fe6b4e937dbf9ecbd",
+      "tool": "ncu",
+      "mode": "prealloc",
+      "saved_status": "PASS",
+      "exit_code": 0,
+      "kernel_metrics_present": true
+    },
+    {
+      "id": "e4a7a96dc493507cbe55623b",
+      "tool": "ncu",
+      "mode": "prealloc",
+      "saved_status": "PASS",
+      "exit_code": 0,
+      "kernel_metrics_present": true
+    },
+    {
+      "id": "d9fe395024645378768a7c22",
+      "tool": "nsys",
+      "mode": "prealloc",
+      "saved_status": "PASS",
+      "exit_code": 0,
+      "kernel_csv_passes_v5_checker": true,
+      "CUPTI_ACTIVITY_KIND_KERNEL": 80,
+      "CUPTI_ACTIVITY_KIND_GRAPH_TRACE": 0
+    },
+    {
+      "id": "db5f23ffe960028c4d02a7fc",
+      "tool": "nsys",
+      "mode": "sync_each",
+      "saved_status": "PASS",
+      "exit_code": 0,
+      "kernel_csv_passes_v5_checker": true,
+      "CUPTI_ACTIVITY_KIND_KERNEL": 80,
+      "CUPTI_ACTIVITY_KIND_GRAPH_TRACE": 0
+    },
+    {
+      "id": "965835af81aed1c335ddebe4",
+      "tool": "nsys",
+      "mode": "graph",
+      "saved_status": "FAIL",
+      "exit_code": 0,
+      "kernel_csv_passes_v5_checker": false,
+      "CUPTI_ACTIVITY_KIND_KERNEL": 0,
+      "CUPTI_ACTIVITY_KIND_GRAPH_TRACE": 21,
+      "positive_time_graph_records": 20
+    }
+  ],
+  "source_hash_count": 13,
+  "protocol": {
+    "version": 2,
+    "seed": 20260919,
+    "blocks": 7,
+    "settle_ms": 750.0,
+    "block_ms": 100.0,
+    "preheat_seconds": 180,
+    "max_repeats": 100000,
+    "graph_nodes_max": 64,
+    "pressure_mib": 256,
+    "pressure_samples": 32,
+    "relative_iqr_limit": 0.05,
+    "drift_limit": 0.05,
+    "between_round_limit": 0.05,
+    "sample_side": 16,
+    "tolerances": {
+      "fp32": [
+        2e-05,
+        0.0002
+      ],
+      "fp16": [
+        0.001,
+        0.005
+      ]
+    },
+    "expected_gpu": "RTX 4000 SFF Ada",
+    "expected_capability": [
+      8,
+      9
+    ]
+  },
+  "session": {
+    "state": "STOPPED",
+    "elapsed_seconds": 849.7072957139999,
+    "new_records": 253
+  },
+  "before_after_counter_delta_seconds": {
+    "SW Power Capping": 312.048444,
+    "SW Thermal Slowdown": 0.0,
+    "HW Thermal Slowdown": 0.0
+  },
+  "telemetry_temperature_min_max_C": [
+    33,
+    74
+  ],
+  "checks": [
+    "ZIP/extracted hashes; SQLite integrity and empty WAL; DB/JSONL equality",
+    "manifest/task IDs/order; v4 distribution and source hashes; result digest",
+    "7-block statistics and flags; FLOP/s and copy GB/s; saved correctness",
+    "round flags; paired chain arithmetic; NCU metrics and NSYS SQLite evidence"
+  ]
+}

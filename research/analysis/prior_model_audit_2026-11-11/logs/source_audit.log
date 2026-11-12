@@ -1,0 +1,9 @@
+PASS: source feature, mapping and unit checks {'status': 'PASS', 'v1_files_unchanged': 483, 'neuralpower_cases': 750, 'original_prediction_comparisons': 3000, 'max_relative_difference': np.float64(6.148272661845336e-16), 'gemmify_dimension_mappings': 750, 'paleo_unit_precision_comparisons': 500, 'interpretation': 'Numerical feature, mapping and unit checks; author training-data scores are a separate requirement'}
+/Users/studyhard/Claude/자율연구/analysis/prior_model_comparison_2026-11-11/sources/neusight/neusight/Dataset/dataset.py:61: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+  p = re.compile('sgemm_(\d+)+x(\d+)')
+/Users/studyhard/Claude/자율연구/analysis/prior_model_comparison_2026-11-11/sources/neusight/neusight/Dataset/dataset.py:69: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+  p = re.compile('tilesize(\d+)+x(\d+)')
+PASS: public operator data scored LINEAR 8254 rows
+PASS: public operator data scored BMM 13461 rows
+PASS: public operator data scored VEC 368 rows
+PASS: public NeuSight source-domain evaluation saved

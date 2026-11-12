@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "raw_files": 72,
+  "zip_sha256": "7ad5434466570a40a2cce60455669f1a3d9f0c4a814085c0ffa5f015b597cfec",
+  "verified_sources": {
+    "source": 5,
+    "audit_source": 9,
+    "baseline_source": 14
+  },
+  "reproduced_files": [
+    "measurement_summary.json",
+    "analysis.json",
+    "clock_windows.json",
+    "report.md"
+  ],
+  "raw_unchanged": true
+}

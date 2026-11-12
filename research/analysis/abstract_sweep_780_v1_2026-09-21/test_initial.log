@@ -1,0 +1,32 @@
+test_coverage_inputs_splits_mode_order_and_holdout (__main__.SubsetChecks.test_coverage_inputs_splits_mode_order_and_holdout) ... ok
+test_launcher_uses_current_terminal_and_preserves_exit_and_arguments (__main__.SubsetChecks.test_launcher_uses_current_terminal_and_preserves_exit_and_arguments) ... ok
+test_measurement_worker_controller_and_analyzer_unchanged (__main__.SubsetChecks.test_measurement_worker_controller_and_analyzer_unchanged) ... ok
+test_rejected_check_prevents_gpu_commands (__main__.SubsetChecks.test_rejected_check_prevents_gpu_commands) ... ok
+test_review_bridge_rejects_errors_and_unreviewed_digest (__main__.SubsetChecks.test_review_bridge_rejects_errors_and_unreviewed_digest) ... ok
+test_selection_reproducible_independent_of_order_or_results (__main__.SubsetChecks.test_selection_reproducible_independent_of_order_or_results) ... ok
+test_subset_analysis_preserves_missing_and_resume (__main__.SubsetChecks.test_subset_analysis_preserves_missing_and_resume) ... ok
+test_denominator_or_accuracy_corruption_fails (verified_base_checks.SweepChecks.test_denominator_or_accuracy_corruption_fails) ... ok
+test_resume_preserves_attempts_and_graph_choices (verified_base_checks.SweepChecks.test_resume_preserves_attempts_and_graph_choices) ... ok
+test_manifest_change_and_output_lock_rejected (verified_base_checks.SweepChecks.test_manifest_change_and_output_lock_rejected) ... ok
+test_worker_process_exit_and_failure_logged (verified_base_checks.SweepChecks.test_worker_process_exit_and_failure_logged) ... ok
+test_failed_credentials_stop_child_before_return (verified_base_checks.SweepChecks.test_failed_credentials_stop_child_before_return) ... ok
+test_controller_restores_both_clocks_on_worker_failure (verified_base_checks.SweepChecks.test_controller_restores_both_clocks_on_worker_failure) ... Worker log: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmp6cdy66_8/run/launches/20260921_044437_b9cb00/worker_0.log
+RESTORE: COMMANDS ACCEPTED
+ok
+test_preflight_power_mismatch_changes_no_clocks (verified_base_checks.SweepChecks.test_preflight_power_mismatch_changes_no_clocks) ... ok
+test_worker_resume_collects_only_pending_tasks (verified_base_checks.SweepChecks.test_worker_resume_collects_only_pending_tasks) ... Preheating 180 seconds
+[1/60] check [1888, 832, 632] fp32 allocate r0: PASS (1000.00s)
+[2/60] check [1888, 832, 632] fp32 prealloc r0: PASS (1000.00s)
+[3/60] check [1888, 832, 632] fp32 graph r0: PASS (1000.00s)
+Preheating 180 seconds
+[4/60] check [3216, 520, 776] fp32 allocate r0: PASS (1000.00s)
+[5/60] check [3216, 520, 776] fp32 prealloc r0: PASS (1000.00s)
+[6/60] check [3216, 520, 776] fp32 graph r0: PASS (1000.00s)
+ok
+test_failed_measurement_without_seed_exports_as_fail (verified_base_checks.SweepChecks.test_failed_measurement_without_seed_exports_as_fail) ... ok
+test_timing_review_is_retained_without_discarding_collection (verified_base_checks.SweepChecks.test_timing_review_is_retained_without_discarding_collection) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 5.231s
+
+OK

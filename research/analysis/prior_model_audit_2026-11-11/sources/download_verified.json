@@ -1,0 +1,98 @@
+[
+  {
+    "path": "scripts/asplos/data/dataset/test/bmm.csv",
+    "sha": "b0868e4de57dff5f2b97183487a5041bea76cefa",
+    "size": 2612152,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/bmm.csv",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/bmm.csv",
+    "sha256": "04b8bb17c64eeab83bf5f74c88b727808994ecf436b995bea2c015c6065a6206"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100-PCIE-40GB.json",
+    "sha": "a260def73e6bd11d43fed07142f4daceca24c9a3",
+    "size": 177,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100-PCIE-40GB.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/NVIDIA_A100-PCIE-40GB.json",
+    "sha256": "0b0c13b0693c0a14a008c6658d597f4d4d14f634f2ad037191b4394e24a46c15"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100-SXM4-40GB.json",
+    "sha": "41cadbe6af087b5d9a45f7f5c622403231f5e196",
+    "size": 177,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100-SXM4-40GB.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/NVIDIA_A100-SXM4-40GB.json",
+    "sha256": "422c44815a787305b945191c0c439543592837b5ea78ee1eda62b5b09902d705"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100_80GB_PCIe.json",
+    "sha": "a11c5d3a23082fc91620b3e1ee4db602c339b67b",
+    "size": 177,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100_80GB_PCIe.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/NVIDIA_A100_80GB_PCIe.json",
+    "sha256": "769bb5c6b16b0238e62bdcb2730634e75a8b05168f924a8950ba564deccee80c"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_H100_80GB_HBM3.json",
+    "sha": "6e673ad261a5ffb9693c0f896bf214202e052972",
+    "size": 178,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_H100_80GB_HBM3.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/NVIDIA_H100_80GB_HBM3.json",
+    "sha256": "dc8a865aef7cdaf2368bbc770883e2489c253ef99d4fb166dfdbcf7f09b3870b"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_L4.json",
+    "sha": "48db54e1c914cdfdb669080938e661c2b8dc0177",
+    "size": 164,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_L4.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/NVIDIA_L4.json",
+    "sha256": "820727dd9ae175e5961919aecd1eb74045624a46478de6cfc86d3d07f39d36c1"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/Tesla_P100-PCIE-16GB.json",
+    "sha": "c248b7fca06e61aab85c4c9e0acea6050b67a61f",
+    "size": 172,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/Tesla_P100-PCIE-16GB.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/Tesla_P100-PCIE-16GB.json",
+    "sha256": "3de42b11ac062af2b6cdeccbd4c66e1656e430c75ae8565187d8e73914133729"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/Tesla_P4.json",
+    "sha": "352db6d7e22af547978d0eeb28eed356eaf798d8",
+    "size": 159,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/Tesla_P4.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/Tesla_P4.json",
+    "sha256": "ae37b2de866fd4db160d807d9d66e6e514321067305f64d11508c2529a53edf1"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/Tesla_T4.json",
+    "sha": "85a7402506ce57c77ecc3391d5788ac402e402d6",
+    "size": 160,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/Tesla_T4.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/Tesla_T4.json",
+    "sha256": "9371ddb7e3210fbad173da00e1a12790957853c866a18083a32317d1e7e42c0a"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/Tesla_V100-PCIE-32GB.json",
+    "sha": "5366dffd4e1e497f0ad15f183d3e1383163668c3",
+    "size": 173,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/Tesla_V100-PCIE-32GB.json",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/device_configs/Tesla_V100-PCIE-32GB.json",
+    "sha256": "8c5a4c8ca4243e4b2c94a79f30544af1bc1ffdf6728fd8bbf162d8722ed67c5f"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/linear.csv",
+    "sha": "3e33f875b28455fdca57d4cb00f5c8fe34022c82",
+    "size": 1508473,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/linear.csv",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/linear.csv",
+    "sha256": "8fd84cd9036300b897efb8ae6955bce6854358dcfa8659b8f178ac88748708fd"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/vec.csv",
+    "sha": "86ef9bbc2bc5b203901d2847ac3ed835b2177a47",
+    "size": 2420406,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/vec.csv",
+    "local": "analysis/prior_model_audit_2026-11-11/sources/neusight_test/vec.csv",
+    "sha256": "522ccadf53c25ca48c996fdc3e495d378f6b94ee58fffc9cf8cd23b0e10058bf"
+  }
+]

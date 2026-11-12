@@ -1,0 +1,38 @@
+{
+  "zip_name": "recover_720_2026-09-21_v1.zip",
+  "zip_sha256": "eaed9b70451a4cfb32b15fe0ce963701594473e0f04102597e0cf6df10eea117",
+  "files": {
+    "README.md": "93460ce596b1c44feff6ee964b01967e930873e6d4f6754955b921baa96a2734",
+    "launch.sh": "3301b80a4cdaa534c181ca125ad9b33e26d08a05a53c77c6bf8bda0c7537305c",
+    "prepare.py": "8b4a29e1696a29a7e6c718b7dc05fd2d9cfc4b92791e235390d91e51742f4aa1",
+    "progress.py": "64b148fdf0f0a53c4b4540b6874ecfa44bbc67e4cb612de91cf92c66e16cbe93",
+    "test_recovery.py": "5147a7e6e4fa59deeecd24de5706091a3a1c57541dfb4096b4e61071fb55e1de"
+  },
+  "source_files": 9,
+  "dependencies": 74,
+  "gpu_execution": false,
+  "tests": {
+    "status": "PASS",
+    "gpu_execution": false,
+    "checks": [
+      "exact clean 1680 import, same 1920 pending tasks, original history retained",
+      "repeat preparation is idempotent and does not duplicate records",
+      "wrong archive, unrelated/partial output and invalid receipt rejected",
+      "changed imported evidence and original dirty-run resume remain blocked",
+      "progress starts at 46.7 percent and shows saved totals through completion",
+      "wrapper delegates full run, preserves REVIEW exit 2 and stops its monitor",
+      "Ctrl+C reaches the existing launcher cleanup and retains exit 130"
+    ]
+  },
+  "raw_files_verified": {
+    "abstract_200_720_result_2026-09-21": 2020,
+    "check_720_repeat_result_2026-09-21": 195
+  },
+  "syntax": "PASS",
+  "imported_measurements": 1680,
+  "new_measurements": 1920,
+  "progress_interval_seconds": 20,
+  "starting_percent": 46.666666666666664,
+  "archive_crc": "PASS",
+  "preservation_note": "All final raw hashes match original manifests. Two SQLite sidecar files removed by a local inspection connection were restored byte-for-byte from the untouched original ZIP; database hash unchanged."
+}

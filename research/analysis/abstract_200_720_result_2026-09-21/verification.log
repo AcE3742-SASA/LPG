@@ -1,0 +1,50 @@
+{
+  "verification": "PASS",
+  "raw_files": 2020,
+  "source_files_verified": 9,
+  "dependencies_verified": 74,
+  "reproduced_identical_outputs": 28,
+  "core_counts": {
+    "720.0": 136907
+  },
+  "memory_counts": {
+    "6801.0": 136906,
+    "6800.0": 1
+  },
+  "affected_blocks": [
+    {
+      "seq": 1777,
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        4096,
+        256
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "split": "legacy_train",
+      "mode": "prealloc",
+      "id": "fe81bf96cb2658c4a0558744",
+      "block_phase": "timed",
+      "block": 4,
+      "latency_ms": 0.1776203217826608,
+      "median_ms": 0.17760702918964807,
+      "block_vs_median_pct": 0.0074842719195222784,
+      "relative_iqr": 0.00014746354516397627,
+      "first_last_drift": 0.00010462480624536755,
+      "start_kst": "2026-09-21T21:35:07.808664+09:00",
+      "end_kst": "2026-09-21T21:35:07.906559+09:00",
+      "status": "REVIEW",
+      "flags": "['observed_mismatch:clocks.mem']"
+    }
+  ],
+  "recovery_proposal": {
+    "retain_clean_segment_records": 1680,
+    "remeasure_flagged_segment_records": 120,
+    "collect_missing_records": 1800,
+    "total_pending": 1920,
+    "implemented": false,
+    "note": "Preserve original failed run. New import/continuation requires a separate reviewed recovery step. No result or gate has been changed."
+  }
+}

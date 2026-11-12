@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "sm_mhz": 720,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "interval_ms": 50,
+  "segment_tasks": 120,
+  "check_rounds": 2,
+  "full_rounds": 3,
+  "check_worker_limits": [
+    24,
+    null
+  ],
+  "full_worker_timeout_s": 1209600,
+  "check_worker_timeout_s": 2400,
+  "minimum_free_disk_gib": 20,
+  "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+  "mode_order": [
+    [
+      "allocate",
+      "prealloc",
+      "graph"
+    ],
+    [
+      "prealloc",
+      "graph",
+      "allocate"
+    ],
+    [
+      "graph",
+      "allocate",
+      "prealloc"
+    ]
+  ],
+  "scope": [
+    "main",
+    "controls",
+    "boundary",
+    "compute_reference"
+  ],
+  "excluded_auxiliary": [
+    "pressure",
+    "bandwidth",
+    "chain",
+    "profile"
+  ],
+  "check_cases": [
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16"
+    }
+  ],
+  "reference_780_pilot": {
+    "zip_sha256": "ccbd191f121e8663843477cce70a1247a9f0386aba4935788d3d083151be3bc8",
+    "conditions": [
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 6.112675986968952
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 4.513185399455661
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 16.021237588787628
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 13.155428301386472
+      },
+      {
+        "shape": [
+          392,
+          2776,
+          80
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 47.973689554676945
+      },
+      {
+        "shape": [
+          392,
+          2776,
+          80
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 46.56668198414337
+      },
+      {
+        "shape": [
+          1016,
+          2048,
+          504
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 354.90351143215355
+      },
+      {
+        "shape": [
+          1016,
+          2048,
+          504
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 354.1686613790814
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 95.14404137239687
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 93.55141887682571
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 372.84938554118446
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 372.04368026168254
+      },
+      {
+        "shape": [
+          1999,
+          646,
+          425
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 244.4005941428117
+      },
+      {
+        "shape": [
+          1999,
+          646,
+          425
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 243.48184695610632
+      },
+      {
+        "shape": [
+          3216,
+          520,
+          776
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 529.9312539686046
+      },
+      {
+        "shape": [
+          3216,
+          520,
+          776
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 528.9919972419739
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 3597.7509362357005
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 3595.7576206752233
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 18238.805135091145
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 18237.44010925293
+      }
+    ],
+    "meaning": "Historical 780 pilot, descriptive comparison only; not an admission threshold or a new timing target"
+  },
+  "purpose": "full_GEMM_three_mode_remeasurement_at_reviewed_720MHz",
+  "reviewed_graph_cases": [
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "input_seed": 1456857178,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 5
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp16",
+      "input_seed": 2682971897,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 20
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "input_seed": 3255611920,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "input_seed": 2125276676,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "input_seed": 1791591957,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "input_seed": 3194529987,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp32",
+      "input_seed": 3229917233,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 8
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp16",
+      "input_seed": 4277984267,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 14
+    }
+  ],
+  "requested_sm_mhz": 720,
+  "fallback_sm_mhz": null,
+  "reviewed_200_shape_result": {
+    "zip_sha256": "71e19cf727a8ec7fd0caddbac9a21fd3c1d7ae23583c735d772071293c2488da",
+    "archive_directory": "abstract_200_720_recovery_20260921",
+    "manifest_sha256": "a5823add2e9ded8049f12ba2e7a13479f77756b078b917c4762c1d314b594b98",
+    "results_digest": "47f0024b6bd637793e5f036fcbdb6d7243d3c745258820e15e55712b1fd6debb"
+  },
+  "collection_policy": "flag_clock_and_sw_power_cap_continue_v1"
+}

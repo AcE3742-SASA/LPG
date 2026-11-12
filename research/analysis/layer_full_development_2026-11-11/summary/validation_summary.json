@@ -1,0 +1,6191 @@
+{
+  "source_run": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/analysis/layer_full_fit_2026-11-10_v5/prepared_layer_full",
+  "selection_freeze_sha256": "beed9b4314c3f258f0fcd6f86d19b15d271fac2d1abe705875aa50a94e99cbd4",
+  "original_selection_unchanged": true,
+  "sealed_test_status": "NOT_OPENED",
+  "interpretation": {
+    "best_prior_family": "Display-only minimum among four already frozen method selections; no new model selection.",
+    "matched_pairs": "Same target, layer, dtype, learner and planned k; average MAPE over the same three seeds. Negative delta favors prior.",
+    "p90": "Mean of seed-specific p90 values; seed ranges are descriptive, not confidence intervals.",
+    "label_budget": "Planned k, retained groups and consumed labels are distinct. Recipe budgets are retrospective."
+  },
+  "counts": {
+    "aggregate_configurations": 2304,
+    "seed_configurations": 6912,
+    "validation_prediction_rows": 344736,
+    "failed_aggregate_configurations": 0,
+    "failed_seed_configurations": 0,
+    "failed_prediction_rows": 0,
+    "convergence_warning_diagnostic_entries": 147,
+    "convergence_warning_count": 155
+  },
+  "selected_comparisons": [
+    {
+      "view": "overall",
+      "target": "decomposed",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 6.396767927449415,
+      "mean_p90_pct": 12.761925262946406,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 600.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 6.26316494826262,
+      "seed_mape_max_pct": 6.6199324877159516,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 6.26316494826262,
+          "p90_pct": 13.043777793735078,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 6.307206346369676,
+          "p90_pct": 12.87975212410032,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 6.6199324877159516,
+          "p90_pct": 12.362245871003823,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "decomposed",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 8.028063951377922,
+      "mean_p90_pct": 15.929499711955978,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 7.850443961787977,
+      "seed_mape_max_pct": 8.241513685378424,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 7.992234206967364,
+          "p90_pct": 16.200595610529902,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 7.850443961787977,
+          "p90_pct": 15.628494693466848,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 8.241513685378424,
+          "p90_pct": 15.95940883187119,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "decomposed",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 6.396767927449415,
+      "mean_p90_pct": 12.761925262946406,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 600.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 6.26316494826262,
+      "seed_mape_max_pct": 6.6199324877159516,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 6.26316494826262,
+          "p90_pct": 13.043777793735078,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 6.307206346369676,
+          "p90_pct": 12.87975212410032,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 6.6199324877159516,
+          "p90_pct": 12.362245871003823,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "decomposed",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 7.875619932697141,
+      "mean_p90_pct": 16.434365495856337,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 7.532445165810871,
+      "seed_mape_max_pct": 8.489398980800546,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 7.532445165810871,
+          "p90_pct": 17.82769909606572,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 8.489398980800546,
+          "p90_pct": 17.056040711556737,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.605015651480004,
+          "p90_pct": 14.419356679946551,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "decomposed",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 10.91352526084892,
+      "mean_p90_pct": 22.614288396294057,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 600.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 10.796158802703353,
+      "seed_mape_max_pct": 11.016120404492764,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 11.016120404492764,
+          "p90_pct": 22.419681888787053,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 10.928296575350641,
+          "p90_pct": 23.97758494651185,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 10.796158802703353,
+          "p90_pct": 21.445598353583268,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "decomposed",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 15.78719033349879,
+      "mean_p90_pct": 32.90872937574704,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 15.188367913243756,
+      "seed_mape_max_pct": 16.790784769832864,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 15.188367913243756,
+          "p90_pct": 37.747954468666286,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 15.382418317419743,
+          "p90_pct": 23.588194562086354,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 16.790784769832864,
+          "p90_pct": 37.390039096488486,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "decomposed",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 10.91352526084892,
+      "mean_p90_pct": 22.614288396294057,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 600.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 10.796158802703353,
+      "seed_mape_max_pct": 11.016120404492764,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 11.016120404492764,
+          "p90_pct": 22.419681888787053,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 10.928296575350641,
+          "p90_pct": 23.97758494651185,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 10.796158802703353,
+          "p90_pct": 21.445598353583268,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "decomposed",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 11.721928272048885,
+      "mean_p90_pct": 20.360908498253213,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 11.40608338755669,
+      "seed_mape_max_pct": 11.956768831817117,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 11.956768831817117,
+          "p90_pct": 18.524080059347767,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 11.802932596772848,
+          "p90_pct": 17.982294960028504,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 11.40608338755669,
+          "p90_pct": 24.576350475383368,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "decomposed",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 6.06201427850592,
+      "mean_p90_pct": 11.619555691667756,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 800.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 5.467529151509805,
+      "seed_mape_max_pct": 7.059668330163435,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 5.658845353844523,
+          "p90_pct": 10.671841659890893,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 5.467529151509805,
+          "p90_pct": 10.809443167742455,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.059668330163435,
+          "p90_pct": 13.377382247369926,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "decomposed",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 7.282943572515165,
+      "mean_p90_pct": 16.01114419354877,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 6.249097772547745,
+      "seed_mape_max_pct": 7.942512668977781,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 6.249097772547745,
+          "p90_pct": 13.45029072604618,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 7.65722027601997,
+          "p90_pct": 18.71853397977795,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.942512668977781,
+          "p90_pct": 15.864607874822175,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "decomposed",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 6.06201427850592,
+      "mean_p90_pct": 11.619555691667756,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 800.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 5.467529151509805,
+      "seed_mape_max_pct": 7.059668330163435,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 5.658845353844523,
+          "p90_pct": 10.671841659890893,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 5.467529151509805,
+          "p90_pct": 10.809443167742455,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.059668330163435,
+          "p90_pct": 13.377382247369926,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "decomposed",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "prior_direct",
+      "k": 200,
+      "mean_mape_pct": 6.834758516310505,
+      "mean_p90_pct": 12.241407324039777,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 5.981320719071816,
+      "seed_mape_max_pct": 8.32549381390051,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 5.981320719071816,
+          "p90_pct": 10.746096589210856,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 6.19746101595919,
+          "p90_pct": 11.871236152366036,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 8.32549381390051,
+          "p90_pct": 14.106889230542441,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "decomposed",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 3.931495110343974,
+      "mean_p90_pct": 9.484003018124199,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 800.0,
+      "validation_groups": 49,
+      "failures": 0,
+      "seed_mape_min_pct": 3.8902698049319144,
+      "seed_mape_max_pct": 3.963520950287868,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 3.8902698049319144,
+          "p90_pct": 9.347086849312376,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 3.940694575812139,
+          "p90_pct": 9.198950949114792,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 3.963520950287868,
+          "p90_pct": 9.90597125594543,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "decomposed",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 6.781489678497858,
+      "mean_p90_pct": 13.609967035023635,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 49,
+      "failures": 0,
+      "seed_mape_min_pct": 6.144951888913247,
+      "seed_mape_max_pct": 7.593740816016886,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 6.605776330563441,
+          "p90_pct": 11.325723613522065,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 6.144951888913247,
+          "p90_pct": 12.70926243696098,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.593740816016886,
+          "p90_pct": 16.79491505458786,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "decomposed",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 3.931495110343974,
+      "mean_p90_pct": 9.484003018124199,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 800.0,
+      "validation_groups": 49,
+      "failures": 0,
+      "seed_mape_min_pct": 3.8902698049319144,
+      "seed_mape_max_pct": 3.963520950287868,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 3.8902698049319144,
+          "p90_pct": 9.347086849312376,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 3.940694575812139,
+          "p90_pct": 9.198950949114792,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 3.963520950287868,
+          "p90_pct": 9.90597125594543,
+          "actual_train_groups": 200,
+          "actual_train_labels": 800
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "decomposed",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 5.24792167623207,
+      "mean_p90_pct": 11.517209268050841,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 49,
+      "failures": 0,
+      "seed_mape_min_pct": 4.554273140671438,
+      "seed_mape_max_pct": 5.767579471559457,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 5.421912416465314,
+          "p90_pct": 11.479850252033673,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 4.554273140671438,
+          "p90_pct": 11.111819179793207,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 5.767579471559457,
+          "p90_pct": 11.959958372325646,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "ridge",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 8.631409411517867,
+      "mean_p90_pct": 19.473603891334154,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.37605438175581,
+      "seed_mape_max_pct": 8.794789421855693,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.794789421855693,
+          "p90_pct": 19.122647413536296,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 8.723384430942092,
+          "p90_pct": 21.446928687773447,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 8.37605438175581,
+          "p90_pct": 17.851235572692715,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 100,
+      "mean_mape_pct": 10.843321789455922,
+      "mean_p90_pct": 21.294080364614015,
+      "mean_actual_train_groups": 100.0,
+      "mean_actual_train_labels": 100.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.925366510600828,
+      "seed_mape_max_pct": 11.820971843065822,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 11.783627014701121,
+          "p90_pct": 21.76884916729642,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 11.820971843065822,
+          "p90_pct": 24.728781040223208,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 8.925366510600828,
+          "p90_pct": 17.38461088632242,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 10.239751445838058,
+      "mean_p90_pct": 25.33286283164495,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 600.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.737717319086036,
+      "seed_mape_max_pct": 11.643635943441168,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.737717319086036,
+          "p90_pct": 21.32148566182057,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 11.643635943441168,
+          "p90_pct": 28.102062827116004,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 10.337901074986968,
+          "p90_pct": 26.575040005998275,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        }
+      ],
+      "search_convergence_warnings": 5,
+      "selected_refit_convergence_warnings": 5
+    },
+    {
+      "view": "best_prior_family",
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "ridge",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 8.631409411517867,
+      "mean_p90_pct": 19.473603891334154,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.37605438175581,
+      "seed_mape_max_pct": 8.794789421855693,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.794789421855693,
+          "p90_pct": 19.122647413536296,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 8.723384430942092,
+          "p90_pct": 21.446928687773447,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 8.37605438175581,
+          "p90_pct": 17.851235572692715,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 4.753071906083709,
+      "mean_p90_pct": 12.234611004939746,
+      "mean_actual_train_groups": 198.0,
+      "mean_actual_train_labels": 198.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 4.700843314069917,
+      "seed_mape_max_pct": 4.814477296070189,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 4.700843314069917,
+          "p90_pct": 11.833024580200476,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 4.743895108111021,
+          "p90_pct": 12.244118583724891,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 4.814477296070189,
+          "p90_pct": 12.626689850893873,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 7.698160355930017,
+      "mean_p90_pct": 14.593949737027154,
+      "mean_actual_train_groups": 198.0,
+      "mean_actual_train_labels": 198.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 6.524196506916985,
+      "seed_mape_max_pct": 8.446034397688562,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.446034397688562,
+          "p90_pct": 16.140551995275736,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 8.124250163184502,
+          "p90_pct": 16.391490068649492,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 6.524196506916985,
+          "p90_pct": 11.249807147156234,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 7.6728038051782335,
+      "mean_p90_pct": 15.418908168368853,
+      "mean_actual_train_groups": 198.0,
+      "mean_actual_train_labels": 594.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 7.121491792661569,
+      "seed_mape_max_pct": 8.271055856576186,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.271055856576186,
+          "p90_pct": 17.094251658494986,
+          "actual_train_groups": 198,
+          "actual_train_labels": 594
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 7.121491792661569,
+          "p90_pct": 14.354154854792753,
+          "actual_train_groups": 198,
+          "actual_train_labels": 594
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.625863766296945,
+          "p90_pct": 14.808317991818818,
+          "actual_train_groups": 198,
+          "actual_train_labels": 594
+        }
+      ],
+      "search_convergence_warnings": 4,
+      "selected_refit_convergence_warnings": 4
+    },
+    {
+      "view": "best_prior_family",
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 4.753071906083709,
+      "mean_p90_pct": 12.234611004939746,
+      "mean_actual_train_groups": 198.0,
+      "mean_actual_train_labels": 198.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 4.700843314069917,
+      "seed_mape_max_pct": 4.814477296070189,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 4.700843314069917,
+          "p90_pct": 11.833024580200476,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 4.743895108111021,
+          "p90_pct": 12.244118583724891,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 4.814477296070189,
+          "p90_pct": 12.626689850893873,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 11.051000513043851,
+      "mean_p90_pct": 25.359596774570928,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 10.74429418482588,
+      "seed_mape_max_pct": 11.260320248686103,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 11.260320248686103,
+          "p90_pct": 22.355787313754544,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 10.74429418482588,
+          "p90_pct": 29.032078682785105,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 11.148387105619566,
+          "p90_pct": 24.690924327173136,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 50,
+      "mean_mape_pct": 14.687107208019446,
+      "mean_p90_pct": 31.028271288052792,
+      "mean_actual_train_groups": 50.0,
+      "mean_actual_train_labels": 50.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 12.651309084229027,
+      "seed_mape_max_pct": 17.348975657224297,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 17.348975657224297,
+          "p90_pct": 37.576446291164736,
+          "actual_train_groups": 50,
+          "actual_train_labels": 50
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 14.061036882605016,
+          "p90_pct": 31.659988687363043,
+          "actual_train_groups": 50,
+          "actual_train_labels": 50
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 12.651309084229027,
+          "p90_pct": 23.848378885630595,
+          "actual_train_groups": 50,
+          "actual_train_labels": 50
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 13.52900251520109,
+      "mean_p90_pct": 30.099267439222473,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 11.913310163131793,
+      "seed_mape_max_pct": 14.790880988730878,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 11.913310163131793,
+          "p90_pct": 26.06756949851386,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 13.882816393740601,
+          "p90_pct": 29.177746072008,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 14.790880988730878,
+          "p90_pct": 35.05248674714557,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 3,
+      "selected_refit_convergence_warnings": 3
+    },
+    {
+      "view": "best_prior_family",
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 11.051000513043851,
+      "mean_p90_pct": 25.359596774570928,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 10.74429418482588,
+      "seed_mape_max_pct": 11.260320248686103,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 11.260320248686103,
+          "p90_pct": 22.355787313754544,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 10.74429418482588,
+          "p90_pct": 29.032078682785105,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 11.148387105619566,
+          "p90_pct": 24.690924327173136,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 6.438728866288904,
+      "mean_p90_pct": 13.601875501640158,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 6.258491555863801,
+      "seed_mape_max_pct": 6.543749188678063,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 6.258491555863801,
+          "p90_pct": 13.073052070252395,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 6.543749188678063,
+          "p90_pct": 13.292412996500696,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 6.513945854324847,
+          "p90_pct": 14.440161438167385,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 9.714075413057474,
+      "mean_p90_pct": 21.565787252748056,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 9.622458834501476,
+      "seed_mape_max_pct": 9.797042895711035,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 9.722724508959914,
+          "p90_pct": 20.737059491376424,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.622458834501476,
+          "p90_pct": 21.798286888274042,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.797042895711035,
+          "p90_pct": 22.16201537859371,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 9.81933834737886,
+      "mean_p90_pct": 20.33498509416453,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 9.479286972517635,
+      "seed_mape_max_pct": 10.041274375796936,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 9.937453693822007,
+          "p90_pct": 20.220275294006292,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.479286972517635,
+          "p90_pct": 18.0117950598467,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 10.041274375796936,
+          "p90_pct": 22.7728849286406,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 6.438728866288904,
+      "mean_p90_pct": 13.601875501640158,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 6.258491555863801,
+      "seed_mape_max_pct": 6.543749188678063,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 6.258491555863801,
+          "p90_pct": 13.073052070252395,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 6.543749188678063,
+          "p90_pct": 13.292412996500696,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 6.513945854324847,
+          "p90_pct": 14.440161438167385,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "standard",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 9.809663052408814,
+      "mean_p90_pct": 22.714070246899833,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 9.318190786012664,
+      "seed_mape_max_pct": 10.487971616122628,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 10.487971616122628,
+          "p90_pct": 26.793845899277933,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.622826755091149,
+          "p90_pct": 20.237994166150365,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.318190786012664,
+          "p90_pct": 21.1103706752712,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "standard",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 11.898239952618857,
+      "mean_p90_pct": 22.169075783236547,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 11.727762516106583,
+      "seed_mape_max_pct": 12.160870156834331,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 12.160870156834331,
+          "p90_pct": 23.87984437450066,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 11.806087184915656,
+          "p90_pct": 20.577469929155473,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 11.727762516106583,
+          "p90_pct": 22.049913046053504,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "standard",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "component_sum",
+      "k": 5,
+      "mean_mape_pct": 177.2652519518391,
+      "mean_p90_pct": 307.71560177735824,
+      "mean_actual_train_groups": 5.0,
+      "mean_actual_train_labels": 15.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 155.90121867142912,
+      "seed_mape_max_pct": 190.29459555122304,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 185.59994163286518,
+          "p90_pct": 289.9320737146885,
+          "actual_train_groups": 5,
+          "actual_train_labels": 15
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 190.29459555122304,
+          "p90_pct": 268.545818091104,
+          "actual_train_groups": 5,
+          "actual_train_labels": 15
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 155.90121867142912,
+          "p90_pct": 364.6689135262823,
+          "actual_train_groups": 5,
+          "actual_train_labels": 15
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "standard",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 9.809663052408814,
+      "mean_p90_pct": 22.714070246899833,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 9.318190786012664,
+      "seed_mape_max_pct": 10.487971616122628,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 10.487971616122628,
+          "p90_pct": 26.793845899277933,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.622826755091149,
+          "p90_pct": 20.237994166150365,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.318190786012664,
+          "p90_pct": 21.1103706752712,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "standard",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "prior_direct",
+      "k": 200,
+      "mean_mape_pct": 7.455388293537344,
+      "mean_p90_pct": 14.375867693622125,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 7.4020833312071055,
+      "seed_mape_max_pct": 7.486324862022023,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 7.486324862022023,
+          "p90_pct": 15.165275333060501,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 7.4020833312071055,
+          "p90_pct": 13.621653269906359,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.477756687382904,
+          "p90_pct": 14.340674477899512,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "standard",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 7.916759187671384,
+      "mean_p90_pct": 15.3697070625116,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 7.906696153510609,
+      "seed_mape_max_pct": 7.934336594481634,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 7.906696153510609,
+          "p90_pct": 15.516568700856185,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 7.909244815021908,
+          "p90_pct": 14.882585043070609,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.934336594481634,
+          "p90_pct": 15.709967443607997,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "standard",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "component_sum",
+      "k": 10,
+      "mean_mape_pct": 114.85456820591897,
+      "mean_p90_pct": 218.75697293405037,
+      "mean_actual_train_groups": 10.0,
+      "mean_actual_train_labels": 30.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 91.21991967527393,
+      "seed_mape_max_pct": 151.78198673727766,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 91.21991967527393,
+          "p90_pct": 181.0219625110501,
+          "actual_train_groups": 10,
+          "actual_train_labels": 30
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 101.56179820520536,
+          "p90_pct": 194.18683182086843,
+          "actual_train_groups": 10,
+          "actual_train_labels": 30
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 151.78198673727766,
+          "p90_pct": 281.0621244702325,
+          "actual_train_groups": 10,
+          "actual_train_labels": 30
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "standard",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "prior_direct",
+      "k": 200,
+      "mean_mape_pct": 7.455388293537344,
+      "mean_p90_pct": 14.375867693622125,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 7.4020833312071055,
+      "seed_mape_max_pct": 7.486324862022023,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 7.486324862022023,
+          "p90_pct": 15.165275333060501,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 7.4020833312071055,
+          "p90_pct": 13.621653269906359,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.477756687382904,
+          "p90_pct": 14.340674477899512,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "standard",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 9.03646031338551,
+      "mean_p90_pct": 18.49505169004604,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.661867118493015,
+      "seed_mape_max_pct": 9.23589079358528,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.661867118493015,
+          "p90_pct": 17.67960074707266,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.23589079358528,
+          "p90_pct": 18.520146396108206,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.21162302807823,
+          "p90_pct": 19.28540792695726,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "standard",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 9.03646031338551,
+      "mean_p90_pct": 18.49505169004604,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.661867118493015,
+      "seed_mape_max_pct": 9.23589079358528,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.661867118493015,
+          "p90_pct": 17.67960074707266,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.23589079358528,
+          "p90_pct": 18.520146396108206,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.21162302807823,
+          "p90_pct": 19.28540792695726,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "standard",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "component_sum",
+      "k": 5,
+      "mean_mape_pct": 85.51327904870472,
+      "mean_p90_pct": 178.63641591704118,
+      "mean_actual_train_groups": 5.0,
+      "mean_actual_train_labels": 20.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 74.79070568703811,
+      "seed_mape_max_pct": 102.3474735197311,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 102.3474735197311,
+          "p90_pct": 251.1964155547037,
+          "actual_train_groups": 5,
+          "actual_train_labels": 20
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 79.40165793934496,
+          "p90_pct": 188.52177477276908,
+          "actual_train_groups": 5,
+          "actual_train_labels": 20
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 74.79070568703811,
+          "p90_pct": 96.19105742365079,
+          "actual_train_groups": 5,
+          "actual_train_labels": 20
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "standard",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 9.289978379752672,
+      "mean_p90_pct": 17.607430380790024,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.939053834176436,
+      "seed_mape_max_pct": 9.6884536583484,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.939053834176436,
+          "p90_pct": 16.413007173209454,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.6884536583484,
+          "p90_pct": 19.728752867544365,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.24242764673318,
+          "p90_pct": 16.680531101616257,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "standard",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 16.38774123562644,
+      "mean_p90_pct": 38.36297474641628,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 49,
+      "failures": 0,
+      "seed_mape_min_pct": 16.308210183948407,
+      "seed_mape_max_pct": 16.453052798079945,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 16.453052798079945,
+          "p90_pct": 38.68524635614257,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 16.401960724850976,
+          "p90_pct": 39.0105663766497,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 16.308210183948407,
+          "p90_pct": 37.39311150645657,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "standard",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 16.92780439133276,
+      "mean_p90_pct": 35.399680076453784,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 49,
+      "failures": 0,
+      "seed_mape_min_pct": 16.823951560951116,
+      "seed_mape_max_pct": 17.1144918088356,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 17.1144918088356,
+          "p90_pct": 34.37764928748066,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 16.823951560951116,
+          "p90_pct": 33.17676863060803,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 16.844969804211576,
+          "p90_pct": 38.64462231127266,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "standard",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "component_sum",
+      "k": 5,
+      "mean_mape_pct": 111.32274576686738,
+      "mean_p90_pct": 215.36518335252356,
+      "mean_actual_train_groups": 5.0,
+      "mean_actual_train_labels": 20.0,
+      "validation_groups": 49,
+      "failures": 0,
+      "seed_mape_min_pct": 84.02103163630053,
+      "seed_mape_max_pct": 129.71615427443314,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 129.71615427443314,
+          "p90_pct": 281.01971365211654,
+          "actual_train_groups": 5,
+          "actual_train_labels": 20
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 120.23105138986851,
+          "p90_pct": 252.36924965440554,
+          "actual_train_groups": 5,
+          "actual_train_labels": 20
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 84.02103163630053,
+          "p90_pct": 112.70658675104855,
+          "actual_train_groups": 5,
+          "actual_train_labels": 20
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "standard",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 16.38774123562644,
+      "mean_p90_pct": 38.36297474641628,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 49,
+      "failures": 0,
+      "seed_mape_min_pct": 16.308210183948407,
+      "seed_mape_max_pct": 16.453052798079945,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 16.453052798079945,
+          "p90_pct": 38.68524635614257,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 16.401960724850976,
+          "p90_pct": 39.0105663766497,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 16.308210183948407,
+          "p90_pct": 37.39311150645657,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 8.43228279436624,
+      "mean_p90_pct": 18.849690594907774,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.053343855289215,
+      "seed_mape_max_pct": 8.706207633320808,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.706207633320808,
+          "p90_pct": 20.02157358904838,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 8.5372968944887,
+          "p90_pct": 18.906925649616216,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 8.053343855289215,
+          "p90_pct": 17.620572546058728,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 10.577454108449203,
+      "mean_p90_pct": 21.44694075244843,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 9.338540137818258,
+      "seed_mape_max_pct": 11.756312784231051,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 11.756312784231051,
+          "p90_pct": 23.01264327448112,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 10.637509403298303,
+          "p90_pct": 20.905010567977662,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.338540137818258,
+          "p90_pct": 20.423168414886515,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 11.78998801659327,
+      "mean_p90_pct": 25.567563319840758,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 600.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 10.268988500927886,
+      "seed_mape_max_pct": 12.92621659305642,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 10.268988500927886,
+          "p90_pct": 20.820341083839896,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 12.92621659305642,
+          "p90_pct": 28.473405397136496,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 12.1747589557955,
+          "p90_pct": 27.40894347854588,
+          "actual_train_groups": 200,
+          "actual_train_labels": 600
+        }
+      ],
+      "search_convergence_warnings": 5,
+      "selected_refit_convergence_warnings": 5
+    },
+    {
+      "view": "best_prior_family",
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 8.43228279436624,
+      "mean_p90_pct": 18.849690594907774,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 8.053343855289215,
+      "seed_mape_max_pct": 8.706207633320808,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.706207633320808,
+          "p90_pct": 20.02157358904838,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 8.5372968944887,
+          "p90_pct": 18.906925649616216,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 8.053343855289215,
+          "p90_pct": 17.620572546058728,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 5.220037502779161,
+      "mean_p90_pct": 12.399797382660148,
+      "mean_actual_train_groups": 198.0,
+      "mean_actual_train_labels": 198.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 5.184833409695176,
+      "seed_mape_max_pct": 5.244176872393651,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 5.184833409695176,
+          "p90_pct": 12.437364025302877,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 5.231102226248656,
+          "p90_pct": 12.471696476228825,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 5.244176872393651,
+          "p90_pct": 12.290331646448745,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "k": 200,
+      "mean_mape_pct": 7.847517762250225,
+      "mean_p90_pct": 17.014625287076928,
+      "mean_actual_train_groups": 198.0,
+      "mean_actual_train_labels": 198.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 7.656947347029478,
+      "seed_mape_max_pct": 8.050756689028002,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 8.050756689028002,
+          "p90_pct": 16.697472511710597,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 7.656947347029478,
+          "p90_pct": 17.032712267482992,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 7.834849250693196,
+          "p90_pct": 17.31369108203719,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 7.985228383573812,
+      "mean_p90_pct": 15.461078397013003,
+      "mean_actual_train_groups": 198.0,
+      "mean_actual_train_labels": 594.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 7.855695027971319,
+      "seed_mape_max_pct": 8.208255279992171,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 7.891734842757946,
+          "p90_pct": 15.394960479489313,
+          "actual_train_groups": 198,
+          "actual_train_labels": 594
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 7.855695027971319,
+          "p90_pct": 14.957456949276951,
+          "actual_train_groups": 198,
+          "actual_train_labels": 594
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 8.208255279992171,
+          "p90_pct": 16.030817762272743,
+          "actual_train_groups": 198,
+          "actual_train_labels": 594
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 5.220037502779161,
+      "mean_p90_pct": 12.399797382660148,
+      "mean_actual_train_groups": 198.0,
+      "mean_actual_train_labels": 198.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 5.184833409695176,
+      "seed_mape_max_pct": 5.244176872393651,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 5.184833409695176,
+          "p90_pct": 12.437364025302877,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 5.231102226248656,
+          "p90_pct": 12.471696476228825,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 5.244176872393651,
+          "p90_pct": 12.290331646448745,
+          "actual_train_groups": 198,
+          "actual_train_labels": 198
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 10.435767228356063,
+      "mean_p90_pct": 20.244609342713336,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 10.07889462895963,
+      "seed_mape_max_pct": 10.916679805277239,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 10.916679805277239,
+          "p90_pct": 21.851275719300496,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 10.07889462895963,
+          "p90_pct": 19.04557425528954,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 10.311727250831321,
+          "p90_pct": 19.836978053549963,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 100,
+      "mean_mape_pct": 13.38116968840621,
+      "mean_p90_pct": 26.915612384689936,
+      "mean_actual_train_groups": 100.0,
+      "mean_actual_train_labels": 100.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 12.514254078121938,
+      "seed_mape_max_pct": 14.115457322729599,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 14.115457322729599,
+          "p90_pct": 29.990323123366856,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 13.513797664367091,
+          "p90_pct": 27.756291137303453,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 12.514254078121938,
+          "p90_pct": 23.0002228933995,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 14.381577240867786,
+      "mean_p90_pct": 29.031218161321885,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 12.881483197707452,
+      "seed_mape_max_pct": 16.145139251095287,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 12.881483197707452,
+          "p90_pct": 25.30212676731949,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 14.11810927380062,
+          "p90_pct": 27.72478522969658,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 16.145139251095287,
+          "p90_pct": 34.06674248694957,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 3,
+      "selected_refit_convergence_warnings": 3
+    },
+    {
+      "view": "best_prior_family",
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 10.435767228356063,
+      "mean_p90_pct": 20.244609342713336,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 10.07889462895963,
+      "seed_mape_max_pct": 10.916679805277239,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 10.916679805277239,
+          "p90_pct": 21.851275719300496,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 10.07889462895963,
+          "p90_pct": 19.04557425528954,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 10.311727250831321,
+          "p90_pct": 19.836978053549963,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "overall",
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "ridge",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 6.211543809909912,
+      "mean_p90_pct": 13.826754123721882,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 6.168553293880394,
+      "seed_mape_max_pct": 6.2777488749450026,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 6.168553293880394,
+          "p90_pct": 13.992062333102313,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 6.2777488749450026,
+          "p90_pct": 13.997590701445862,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 6.188329260904341,
+          "p90_pct": 13.490609336617466,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "direct",
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 100,
+      "mean_mape_pct": 9.692585310530283,
+      "mean_p90_pct": 23.762781542160422,
+      "mean_actual_train_groups": 100.0,
+      "mean_actual_train_labels": 100.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 9.040487677893887,
+      "seed_mape_max_pct": 10.952593060007803,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 10.952593060007803,
+          "p90_pct": 29.492789825380207,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.040487677893887,
+          "p90_pct": 20.381414888488006,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.084675193689158,
+          "p90_pct": 21.414139912613052,
+          "actual_train_groups": 100,
+          "actual_train_labels": 100
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "component_sum",
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "component_sum",
+      "k": 200,
+      "mean_mape_pct": 9.398899727913351,
+      "mean_p90_pct": 20.142667870379306,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 9.184603215920843,
+      "seed_mape_max_pct": 9.67818477120118,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 9.333911196618027,
+          "p90_pct": 19.83736111638178,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 9.184603215920843,
+          "p90_pct": 19.367066693287395,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 9.67818477120118,
+          "p90_pct": 21.223575801468748,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    },
+    {
+      "view": "best_prior_family",
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "ridge",
+      "method": "residual",
+      "k": 200,
+      "mean_mape_pct": 6.211543809909912,
+      "mean_p90_pct": 13.826754123721882,
+      "mean_actual_train_groups": 200.0,
+      "mean_actual_train_labels": 200.0,
+      "validation_groups": 50,
+      "failures": 0,
+      "seed_mape_min_pct": 6.168553293880394,
+      "seed_mape_max_pct": 6.2777488749450026,
+      "seed_metrics": [
+        {
+          "seed": 20261104,
+          "mape_pct": 6.168553293880394,
+          "p90_pct": 13.992062333102313,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261105,
+          "mape_pct": 6.2777488749450026,
+          "p90_pct": 13.997590701445862,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        },
+        {
+          "seed": 20261106,
+          "mape_pct": 6.188329260904341,
+          "p90_pct": 13.490609336617466,
+          "actual_train_groups": 200,
+          "actual_train_labels": 200
+        }
+      ],
+      "search_convergence_warnings": 0,
+      "selected_refit_convergence_warnings": 0
+    }
+  ],
+  "matched_prior_direct_wins": [
+    {
+      "target": "decomposed",
+      "method": "zero",
+      "matched_configurations": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "mean_prior_minus_direct_pp": null
+    },
+    {
+      "target": "decomposed",
+      "method": "constant_ratio",
+      "matched_configurations": 224,
+      "wins": 142,
+      "ties": 0,
+      "losses": 82,
+      "mean_prior_minus_direct_pp": -4.882284147985826
+    },
+    {
+      "target": "decomposed",
+      "method": "prior_direct",
+      "matched_configurations": 224,
+      "wins": 158,
+      "ties": 0,
+      "losses": 66,
+      "mean_prior_minus_direct_pp": -2.9027223868182017
+    },
+    {
+      "target": "decomposed",
+      "method": "residual",
+      "matched_configurations": 224,
+      "wins": 198,
+      "ties": 0,
+      "losses": 26,
+      "mean_prior_minus_direct_pp": -11.489938243247567
+    },
+    {
+      "target": "standard",
+      "method": "zero",
+      "matched_configurations": 0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 0,
+      "mean_prior_minus_direct_pp": null
+    },
+    {
+      "target": "standard",
+      "method": "constant_ratio",
+      "matched_configurations": 224,
+      "wins": 176,
+      "ties": 0,
+      "losses": 48,
+      "mean_prior_minus_direct_pp": -10.413949030968208
+    },
+    {
+      "target": "standard",
+      "method": "prior_direct",
+      "matched_configurations": 224,
+      "wins": 178,
+      "ties": 0,
+      "losses": 46,
+      "mean_prior_minus_direct_pp": -3.121886354683885
+    },
+    {
+      "target": "standard",
+      "method": "residual",
+      "matched_configurations": 224,
+      "wins": 196,
+      "ties": 0,
+      "losses": 28,
+      "mean_prior_minus_direct_pp": -12.396307279974453
+    }
+  ],
+  "skipped_matched_pairs": [
+    {
+      "method": "zero",
+      "reason": "no_same_k_direct",
+      "count": 64
+    }
+  ],
+  "validation_implementation_ratios": [
+    {
+      "split": "validation",
+      "layer": "conv1",
+      "dtype": "fp16",
+      "groups": 50,
+      "decomposed_over_standard_median": 2.9824916639785357,
+      "decomposed_over_standard_min": 1.2191080028084058,
+      "decomposed_over_standard_max": 7.870132296458615,
+      "component_sum_over_decomposed_median": 0.999385138376617,
+      "component_sum_over_decomposed_min": 0.9841560583278377,
+      "component_sum_over_decomposed_max": 1.0144069123205677
+    },
+    {
+      "split": "validation",
+      "layer": "conv1",
+      "dtype": "fp32",
+      "groups": 50,
+      "decomposed_over_standard_median": 2.12027330409384,
+      "decomposed_over_standard_min": 1.0618397926874408,
+      "decomposed_over_standard_max": 8.566875593931321,
+      "component_sum_over_decomposed_median": 1.0008618845797033,
+      "component_sum_over_decomposed_min": 0.9885195114819548,
+      "component_sum_over_decomposed_max": 1.016693402724344
+    },
+    {
+      "split": "validation",
+      "layer": "conv3",
+      "dtype": "fp16",
+      "groups": 50,
+      "decomposed_over_standard_median": 2.084106362869273,
+      "decomposed_over_standard_min": 0.6328972346195917,
+      "decomposed_over_standard_max": 7.37833006076784,
+      "component_sum_over_decomposed_median": 0.9997190341674573,
+      "component_sum_over_decomposed_min": 0.9943937158342907,
+      "component_sum_over_decomposed_max": 1.018443499021915
+    },
+    {
+      "split": "validation",
+      "layer": "conv3",
+      "dtype": "fp32",
+      "groups": 49,
+      "decomposed_over_standard_median": 2.0199837971480448,
+      "decomposed_over_standard_min": 0.9012427259422029,
+      "decomposed_over_standard_max": 7.973047639099957,
+      "component_sum_over_decomposed_median": 0.9997805312408578,
+      "component_sum_over_decomposed_min": 0.9867375485986143,
+      "component_sum_over_decomposed_max": 1.0134580313478154
+    },
+    {
+      "split": "validation",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "groups": 50,
+      "decomposed_over_standard_median": 0.9810334967513952,
+      "decomposed_over_standard_min": 0.8615305811149973,
+      "decomposed_over_standard_max": 1.1104906849110734,
+      "component_sum_over_decomposed_median": 0.9983594549013239,
+      "component_sum_over_decomposed_min": 0.972387545985925,
+      "component_sum_over_decomposed_max": 1.0068951807962676
+    },
+    {
+      "split": "validation",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "groups": 50,
+      "decomposed_over_standard_median": 0.9670598362017224,
+      "decomposed_over_standard_min": 0.9045069032720635,
+      "decomposed_over_standard_max": 1.1133909777335482,
+      "component_sum_over_decomposed_median": 0.9999092443139017,
+      "component_sum_over_decomposed_min": 0.9925609700925011,
+      "component_sum_over_decomposed_max": 1.010319957252612
+    },
+    {
+      "split": "validation",
+      "layer": "linear",
+      "dtype": "fp16",
+      "groups": 50,
+      "decomposed_over_standard_median": 0.9611048047625459,
+      "decomposed_over_standard_min": 0.7967057150175735,
+      "decomposed_over_standard_max": 1.232290148877932,
+      "component_sum_over_decomposed_median": 1.0,
+      "component_sum_over_decomposed_min": 1.0,
+      "component_sum_over_decomposed_max": 1.0
+    },
+    {
+      "split": "validation",
+      "layer": "linear",
+      "dtype": "fp32",
+      "groups": 50,
+      "decomposed_over_standard_median": 0.9626835743799182,
+      "decomposed_over_standard_min": 0.8242011168107727,
+      "decomposed_over_standard_max": 1.2696909717001295,
+      "component_sum_over_decomposed_median": 1.0,
+      "component_sum_over_decomposed_min": 1.0,
+      "component_sum_over_decomposed_max": 1.0
+    }
+  ],
+  "convergence_warnings": [
+    {
+      "target": "shared",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.00043816063078077087,
+          "fit_seconds": 0.5989251671126112,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006129498348898806,
+          "fit_seconds": 1.0853483750252053,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 50,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0001815337326483032,
+          "fit_seconds": 0.566305625019595,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0008868729929319321,
+          "fit_seconds": 1.0883685000007972,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006477218324027726,
+          "fit_seconds": 1.095085124950856,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0005105776104164065,
+          "fit_seconds": 1.5418935830239207,
+          "implementation": "decomposed",
+          "parameter_count": 5761,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0003507765089569015,
+          "fit_seconds": 1.6988235419848934,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 50,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 50,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.00044068212346687406,
+          "fit_seconds": 0.5686545000644401,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 577,
+          "final_scaled_loss": 0.0002850712996290827,
+          "fit_seconds": 0.11654058296699077,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 0,
+          "epochs": 2334,
+          "final_scaled_loss": 0.00023053529853939538,
+          "fit_seconds": 0.5917299170978367,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 2,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006257018496594038,
+          "fit_seconds": 1.3112126670312136,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2319,
+          "final_scaled_loss": 0.0007931003766762649,
+          "fit_seconds": 1.0614770000101998,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.000504484954180415,
+          "fit_seconds": 1.0884631660301238,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 50,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.00016060107778477064,
+          "fit_seconds": 0.5459549170918763,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 524,
+          "final_scaled_loss": 0.0005535621682047818,
+          "fit_seconds": 0.09798708301968873,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 0,
+          "epochs": 1646,
+          "final_scaled_loss": 0.00016342256167008109,
+          "fit_seconds": 0.304367708042264,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 2,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0007974395631803879,
+          "fit_seconds": 1.0702000838937238,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2618,
+          "final_scaled_loss": 0.0004970051929476166,
+          "fit_seconds": 0.930813500075601,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0009372551195092682,
+          "fit_seconds": 1.092485958011821,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 0,
+          "epochs": 1808,
+          "final_scaled_loss": 0.0012196670236466413,
+          "fit_seconds": 0.6388137920293957,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.000321720990921286,
+          "fit_seconds": 1.0596337089082226,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 0,
+          "epochs": 2955,
+          "final_scaled_loss": 0.0005657572505262169,
+          "fit_seconds": 1.0317237919662148,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 2,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0004972722113222584,
+          "fit_seconds": 1.0464259170694277,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2335,
+          "final_scaled_loss": 0.00014912798291690974,
+          "fit_seconds": 0.8107608749996871,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.00045633317953801456,
+          "fit_seconds": 1.0564767909236252,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 50,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 50,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 0,
+          "epochs": 2856,
+          "final_scaled_loss": 0.00033306782173280543,
+          "fit_seconds": 1.0334408750059083,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 1697,
+          "final_scaled_loss": 0.0001846759582159196,
+          "fit_seconds": 0.6028215829282999,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0005741069209108568,
+          "fit_seconds": 1.052328290999867,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "prior_direct",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "shared",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 0,
+          "epochs": 1764,
+          "final_scaled_loss": 0.00043600652047022417,
+          "fit_seconds": 0.6227176249958575,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2115,
+          "final_scaled_loss": 0.00012008744139242129,
+          "fit_seconds": 0.739165083039552,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0002992560545145558,
+          "fit_seconds": 1.0578299999469891,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261104,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 100,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261105,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp64",
+      "method": "residual",
+      "k": 200,
+      "seed": 20261106,
+      "phase": null,
+      "epochs": 3000,
+      "convergence_warnings": 1,
+      "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet.",
+      "components": null
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006129498348898806,
+          "fit_seconds": 1.0572729170089588,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261105,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0008868729929319321,
+          "fit_seconds": 1.0544966669986024,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006477218324027726,
+          "fit_seconds": 1.048275125096552,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 2,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006257018496594038,
+          "fit_seconds": 1.138660791912116,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2319,
+          "final_scaled_loss": 0.0007931003766762649,
+          "fit_seconds": 0.8116621250519529,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.000504484954180415,
+          "fit_seconds": 1.060465291957371,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261105,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 2,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0007974395631803879,
+          "fit_seconds": 1.0441893329843879,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2618,
+          "final_scaled_loss": 0.0004970051929476166,
+          "fit_seconds": 0.9115005410276353,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0009372551195092682,
+          "fit_seconds": 1.0504542909329757,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "standard",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 0,
+          "epochs": 1808,
+          "final_scaled_loss": 0.0012196670236466413,
+          "fit_seconds": 0.6331923749530688,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.000321720990921286,
+          "fit_seconds": 1.0481615000171587,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 0,
+          "epochs": 2955,
+          "final_scaled_loss": 0.0005657572505262169,
+          "fit_seconds": 1.0324296249309555,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006129498348898806,
+          "fit_seconds": 1.0528611249756068,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261105,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0008868729929319321,
+          "fit_seconds": 1.065084332949482,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "linear",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006477218324027726,
+          "fit_seconds": 1.056129917036742,
+          "implementation": "decomposed",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 2,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0006257018496594038,
+          "fit_seconds": 1.0497214159695432,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2319,
+          "final_scaled_loss": 0.0007931003766762649,
+          "fit_seconds": 0.8184476250316948,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.000504484954180415,
+          "fit_seconds": 1.0508110829396173,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261105,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 2,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0007974395631803879,
+          "fit_seconds": 1.043045667000115,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2618,
+          "final_scaled_loss": 0.0004970051929476166,
+          "fit_seconds": 0.9396403750870377,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0009372551195092682,
+          "fit_seconds": 1.0678651250200346,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp16",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 0,
+          "epochs": 1808,
+          "final_scaled_loss": 0.0012196670236466413,
+          "fit_seconds": 0.6403474169783294,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.000321720990921286,
+          "fit_seconds": 1.056733459001407,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 0,
+          "epochs": 2955,
+          "final_scaled_loss": 0.0005657572505262169,
+          "fit_seconds": 1.03672566707246,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261104,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 2,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0004972722113222584,
+          "fit_seconds": 1.04476404201705,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2335,
+          "final_scaled_loss": 0.00014912798291690974,
+          "fit_seconds": 0.8200684590265155,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.00045633317953801456,
+          "fit_seconds": 1.0703364999499172,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261105,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 0,
+          "epochs": 2856,
+          "final_scaled_loss": 0.00033306782173280543,
+          "fit_seconds": 1.0435070840176195,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 1697,
+          "final_scaled_loss": 0.0001846759582159196,
+          "fit_seconds": 0.631821040995419,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0005741069209108568,
+          "fit_seconds": 1.1805817499989644,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    },
+    {
+      "target": "decomposed",
+      "layer": "ffn",
+      "dtype": "fp32",
+      "learner": "mlp32",
+      "method": "component_sum",
+      "k": 200,
+      "seed": 20261106,
+      "phase": "selected_refit",
+      "epochs": null,
+      "convergence_warnings": 1,
+      "warning_messages": null,
+      "components": [
+        {
+          "component": "gemm1",
+          "convergence_warnings": 0,
+          "epochs": 1764,
+          "final_scaled_loss": 0.00043600652047022417,
+          "fit_seconds": 0.6925285829929635,
+          "implementation": "gemm1",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gelu",
+          "convergence_warnings": 0,
+          "epochs": 2115,
+          "final_scaled_loss": 0.00012008744139242129,
+          "fit_seconds": 0.8307819160399958,
+          "implementation": "gelu",
+          "parameter_count": 1857,
+          "warning_messages": ""
+        },
+        {
+          "component": "gemm2",
+          "convergence_warnings": 1,
+          "epochs": 3000,
+          "final_scaled_loss": 0.0002992560545145558,
+          "fit_seconds": 1.210228250012733,
+          "implementation": "gemm2",
+          "parameter_count": 1857,
+          "warning_messages": "Stochastic Optimizer: Maximum iterations (3000) reached and the optimization hasn't converged yet."
+        }
+      ]
+    }
+  ],
+  "failed_configurations": [],
+  "costs": {
+    "all_protocol_access_label_budget": {
+      "all_seed_union": {
+        "aggregated_labels": 8994,
+        "by_implementation": {
+          "decomposed": 5997,
+          "gelu": 1500,
+          "gemm1": 1500,
+          "gemm2": 1500,
+          "input_pack": 2997,
+          "mm": 2997,
+          "output_pack": 2997,
+          "standard": 5997,
+          "unfold": 1497
+        },
+        "round_records": 26982,
+        "train_round_records": 21600,
+        "validation_round_records": 5382
+      },
+      "per_seed": {
+        "shared": {
+          "aggregated_labels": 8994,
+          "by_implementation": {
+            "decomposed": 5997,
+            "gelu": 1500,
+            "gemm1": 1500,
+            "gemm2": 1500,
+            "input_pack": 2997,
+            "mm": 2997,
+            "output_pack": 2997,
+            "standard": 5997,
+            "unfold": 1497
+          },
+          "round_records": 26982,
+          "train_round_records": 21600,
+          "validation_round_records": 5382
+        }
+      },
+      "rounds_per_label": 3,
+      "scope": "Retrospective distinct labels; not measured collection time saved"
+    },
+    "break_even": {
+      "assumption": "Each future task has the same measured direct/reuse preparation cost and comparable accuracy",
+      "common_source": null,
+      "direct_per_task": null,
+      "first_nonloss_task_count": null,
+      "first_saving_task_count": null,
+      "reason": "Missing measured common source or comparable per-task preparation costs",
+      "reuse_per_task": null,
+      "status": "UNKNOWN"
+    },
+    "collection": {
+      "all_attempts": {
+        "attempts": 33,
+        "missing_ledgers": [],
+        "observed_controlled_wall_seconds": 133109.17767499853,
+        "recorded_measurements": 32666,
+        "scope": "All attempts, including incomplete attempts; shared setup already included",
+        "unverified_ledgers": [],
+        "verified_complete_attempt_sum_seconds": 133109.17767499853
+      },
+      "attempt_details": [
+        {
+          "attempt": "train_01_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4395.235203695949,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_01",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_02_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4388.909862447996,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_02",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_03_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4385.430534133222,
+          "expected": 1080,
+          "gate": "REVIEW",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_03",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_04_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4391.200092638377,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_04",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_05_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4392.73162518302,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_05",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_06_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4384.105362503789,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_06",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_07_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4393.635011448991,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_07",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_08_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4392.509225266054,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_08",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_09_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4388.624081523158,
+          "expected": 1080,
+          "gate": "REVIEW",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_09",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_10_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4392.170136026572,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_10",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_11_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4388.837394217029,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_11",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_12_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4389.5508648273535,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_12",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_13_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4388.754573836923,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_13",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_14_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4393.9237720971,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_14",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_15_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4386.341491219588,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_15",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_16_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4391.165846937336,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_16",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_17_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4389.154009200633,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_17",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_18_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4384.342656529043,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_18",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_19_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4394.2401204421185,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_19",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "train_20_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4386.7577816392295,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "train_20",
+          "recorded": 1080,
+          "split": "train"
+        },
+        {
+          "attempt": "validation_01_attempt_001",
+          "collection": "INCOMPLETE",
+          "controlled_collection_wall_seconds": 1242.31676061498,
+          "expected": 1080,
+          "gate": "FAIL",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "validation_01",
+          "recorded": 272,
+          "split": "validation"
+        },
+        {
+          "attempt": "validation_01_attempt_002",
+          "collection": "INCOMPLETE",
+          "controlled_collection_wall_seconds": 2.4797347709536552,
+          "expected": 1080,
+          "gate": "FAIL",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "validation_01",
+          "recorded": 0,
+          "split": "validation"
+        },
+        {
+          "attempt": "validation_01_attempt_003",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4318.741710560862,
+          "expected": 1062,
+          "gate": "REVIEW",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "validation_01",
+          "recorded": 1062,
+          "split": "validation"
+        },
+        {
+          "attempt": "validation_02_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4393.097841278184,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "validation_02",
+          "recorded": 1080,
+          "split": "validation"
+        },
+        {
+          "attempt": "validation_03_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4392.201134190895,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "validation_03",
+          "recorded": 1080,
+          "split": "validation"
+        },
+        {
+          "attempt": "validation_04_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4385.987915161997,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "validation_04",
+          "recorded": 1080,
+          "split": "validation"
+        },
+        {
+          "attempt": "validation_05_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4392.647815686185,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "validation_05",
+          "recorded": 1080,
+          "split": "validation"
+        },
+        {
+          "attempt": "test_01_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4389.997102629859,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "test_01",
+          "recorded": 1080,
+          "split": "test"
+        },
+        {
+          "attempt": "test_02_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4390.420253827237,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "test_02",
+          "recorded": 1080,
+          "split": "test"
+        },
+        {
+          "attempt": "test_03_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4397.46509399591,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "test_03",
+          "recorded": 1080,
+          "split": "test"
+        },
+        {
+          "attempt": "test_04_attempt_001",
+          "collection": "INCOMPLETE",
+          "controlled_collection_wall_seconds": 300.9262970178388,
+          "expected": 1080,
+          "gate": "FAIL",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "test_04",
+          "recorded": 30,
+          "split": "test"
+        },
+        {
+          "attempt": "test_04_attempt_002",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4314.334292871412,
+          "expected": 1062,
+          "gate": "REVIEW",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "test_04",
+          "recorded": 1062,
+          "split": "test"
+        },
+        {
+          "attempt": "test_05_attempt_001",
+          "collection": "COMPLETE",
+          "controlled_collection_wall_seconds": 4390.942076578736,
+          "expected": 1080,
+          "gate": "PASS",
+          "integrity": "checked",
+          "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+          "phase": "test_05",
+          "recorded": 1080,
+          "split": "test"
+        }
+      ],
+      "by_split": {
+        "test": {
+          "attempts": 6,
+          "missing_ledgers": [],
+          "observed_controlled_wall_seconds": 22184.085116920993,
+          "recorded_measurements": 5412,
+          "scope": "All attempts, including incomplete attempts; shared setup already included",
+          "unverified_ledgers": [],
+          "verified_complete_attempt_sum_seconds": 22184.085116920993
+        },
+        "train": {
+          "attempts": 20,
+          "missing_ledgers": [],
+          "observed_controlled_wall_seconds": 87797.61964581348,
+          "recorded_measurements": 21600,
+          "scope": "All attempts, including incomplete attempts; shared setup already included",
+          "unverified_ledgers": [],
+          "verified_complete_attempt_sum_seconds": 87797.61964581348
+        },
+        "validation": {
+          "attempts": 7,
+          "missing_ledgers": [],
+          "observed_controlled_wall_seconds": 23127.472912264057,
+          "recorded_measurements": 5654,
+          "scope": "All attempts, including incomplete attempts; shared setup already included",
+          "unverified_ledgers": [],
+          "verified_complete_attempt_sum_seconds": 23127.472912264057
+        }
+      },
+      "campaign_elapsed_wall_seconds": null,
+      "excluded_costs": [
+        "checked-wrapper setup",
+        "archive packaging",
+        "campaign idle gaps"
+      ],
+      "missing_phase_attempts": [],
+      "scope": "Controlled collection, clock setup/reset and analysis; never raw timing labels"
+    },
+    "common_source_cost": null,
+    "fitting": {
+      "model_fit_seconds": 715.3581625714432,
+      "prediction_seconds": 9.126975197345018,
+      "scope": "Recorded CPU calls; serialization and other overhead remain in wall time; separate from GPU collection wall",
+      "wall_seconds": 789.3983812920051
+    },
+    "interpretation": "Selected recipe budgets and full search access are separate; bundled collection cost remains observed",
+    "selected_recipe_label_budget": {
+      "all_seed_union": {
+        "aggregated_labels": 5994,
+        "by_implementation": {
+          "decomposed": 3591,
+          "input_pack": 2400,
+          "mm": 2400,
+          "output_pack": 2400,
+          "standard": 5991,
+          "unfold": 1200
+        },
+        "round_records": 17982,
+        "train_round_records": 15588,
+        "validation_round_records": 2394
+      },
+      "per_seed": {
+        "20261104": {
+          "aggregated_labels": 5994,
+          "by_implementation": {
+            "decomposed": 3591,
+            "input_pack": 2400,
+            "mm": 2400,
+            "output_pack": 2400,
+            "standard": 5991,
+            "unfold": 1200
+          },
+          "round_records": 17982,
+          "train_round_records": 15588,
+          "validation_round_records": 2394
+        },
+        "20261105": {
+          "aggregated_labels": 5994,
+          "by_implementation": {
+            "decomposed": 3591,
+            "input_pack": 2400,
+            "mm": 2400,
+            "output_pack": 2400,
+            "standard": 5991,
+            "unfold": 1200
+          },
+          "round_records": 17982,
+          "train_round_records": 15588,
+          "validation_round_records": 2394
+        },
+        "20261106": {
+          "aggregated_labels": 5994,
+          "by_implementation": {
+            "decomposed": 3591,
+            "input_pack": 2400,
+            "mm": 2400,
+            "output_pack": 2400,
+            "standard": 5991,
+            "unfold": 1200
+          },
+          "round_records": 17982,
+          "train_round_records": 15588,
+          "validation_round_records": 2394
+        }
+      },
+      "rounds_per_label": 3,
+      "scope": "Retrospective distinct labels; not measured collection time saved"
+    },
+    "total_preparation_saving_seconds": null
+  }
+}

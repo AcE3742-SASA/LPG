@@ -1,0 +1,598 @@
+{
+  "version": 1,
+  "sm_mhz": 900,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "interval_ms": 50,
+  "worker_timeout_s": 2400,
+  "expected_measurements": 192,
+  "expected_blocks": 1344,
+  "expected_pairs": 96,
+  "task_plan_sha256": "7ffe5fb92450b1b6534d1b955f8a9b59512f5a188c42708b51990121d8fe7038",
+  "fixed_cases": [
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp32",
+      "input_seed": 2630334041,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 9
+    },
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "input_seed": 2241190505,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 29
+    },
+    {
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp32",
+      "input_seed": 2190210363,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 4
+    },
+    {
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp16",
+      "input_seed": 2316386415,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 24
+    },
+    {
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp32",
+      "input_seed": 1914615645,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp16",
+      "input_seed": 3903891513,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp32",
+      "input_seed": 3241199743,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 14
+    },
+    {
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp16",
+      "input_seed": 2525163057,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 42
+    },
+    {
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp32",
+      "input_seed": 2201536732,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 25
+    },
+    {
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp16",
+      "input_seed": 3469243108,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp32",
+      "input_seed": 1964717430,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp16",
+      "input_seed": 424557050,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp32",
+      "input_seed": 2487590733,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 6
+    },
+    {
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp16",
+      "input_seed": 469355500,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 32
+    },
+    {
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp32",
+      "input_seed": 1523035443,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp16",
+      "input_seed": 4188583947,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp32",
+      "input_seed": 2431593506,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 2
+    },
+    {
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp16",
+      "input_seed": 1795316824,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 6
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "input_seed": 1791591957,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "input_seed": 3194529987,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp32",
+      "input_seed": 610257914,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 8
+    },
+    {
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp16",
+      "input_seed": 4084434406,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 45
+    },
+    {
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp32",
+      "input_seed": 3163418681,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 42
+    },
+    {
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp16",
+      "input_seed": 2131587226,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "input_seed": 3255611920,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "input_seed": 2125276676,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp32",
+      "input_seed": 798326656,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 25
+    },
+    {
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp16",
+      "input_seed": 1818883417,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp32",
+      "input_seed": 314440676,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 31
+    },
+    {
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp16",
+      "input_seed": 4007167115,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp32",
+      "input_seed": 3247441487,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp16",
+      "input_seed": 941851428,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "input_seed": 2364661171,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "input_seed": 3931490644,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp32",
+      "input_seed": 1909936817,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 13
+    },
+    {
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp16",
+      "input_seed": 686028716,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 55
+    },
+    {
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp32",
+      "input_seed": 3695724775,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp16",
+      "input_seed": 834964367,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp32",
+      "input_seed": 3584234923,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp16",
+      "input_seed": 4219249947,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp32",
+      "input_seed": 540431768,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 7
+    },
+    {
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp16",
+      "input_seed": 4122548583,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 33
+    },
+    {
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp32",
+      "input_seed": 1922512596,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp16",
+      "input_seed": 1327830198,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp32",
+      "input_seed": 3932067130,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 48
+    },
+    {
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp16",
+      "input_seed": 859884973,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "input_seed": 2739574071,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 56
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp16",
+      "input_seed": 2168004327,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 64
+    }
+  ],
+  "provenance": {
+    "archive": "pilot_v6_20260920_112624_b5ed79.zip",
+    "sha256": "082d6f113aabf70391f79984673c50b988aa2e89ddca518c85d5bc6cefce9e4b",
+    "raw_attempts_sha256": "8e04812c4fc772af74ff4b32c16ad73490a562026a5b8797ba452f9d5a205018"
+  },
+  "full_sweep": "HOLD",
+  "auto_select_final_clock": false,
+  "interpretation": "Same v6 pilot task order, operands and saved Graph batches; fixed clocks and 50 ms sampling. Counter inconsistency remains unresolved."
+}

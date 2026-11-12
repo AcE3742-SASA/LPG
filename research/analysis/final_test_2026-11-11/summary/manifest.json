@@ -1,0 +1,15 @@
+{
+  "artifacts": {
+    "final_mape.pdf": "8c82e4b2ce556642351a42a8644010dc04e8507b1a3dc5b096d12846d8cd682c",
+    "final_mape.png": "19487dbef36a41584daca94845b1a5ba66dea00c98677b4bf78a6fef3e0aa478",
+    "gemm_expanded.csv": "dfde09e907f51b52beed30775b7abc5ae048a40dda75fbf08b23f20b0bc30240",
+    "gemm_legacy_and_transfer.csv": "ab42c0bec53a12ccd5710d5f30bfaf60ceb32b519b62fef947b10914df4ac266",
+    "gemm_non_near_sensitivity.csv": "8aca79312c641dc944432d436706e11e43a7b6723a0cfa99c82bd768d1fcb5a3",
+    "layers.csv": "07265bd4035ec9169e9ddb4f8f37947d26e98d4afe2266272cf038857447b7e3",
+    "paired_group_bootstrap.csv": "78a9c9295def06297149dcc5557973938664d85ba29436bd55c6bac51ef3e8cb"
+  },
+  "created_utc": "2026-11-11T03:00:17.321978+00:00",
+  "script_sha256": "b0acc5eb9a59700fa53d01b61e97941e01deefd7b389799727fb2c08accf686f",
+  "selection_changed": false,
+  "source_verification_sha256": "94f6c43244becfe0f69059b68d820d0794d21ab7bb587e2b7603795279b91505"
+}

@@ -1,0 +1,85 @@
+{
+  "elapsed_snapshot_s": 3760.0,
+  "snapshot_times": [
+    "Mon Sep 21 01:12:22 2026",
+    "Mon Sep 21 02:15:02 2026"
+  ],
+  "total_samples": 71573,
+  "total_sample_spans_s": 3745.094,
+  "max_iqr_pct": 1.7532754974864668,
+  "max_abs_drift_pct": 3.153345084610331,
+  "max_round_range_pct": 21.412553602052608,
+  "max_abs_repeat780_change_pct": 0.06471444197337917,
+  "worst_repeat780": {
+    "shape": [
+      1999,
+      646,
+      425
+    ],
+    "dtype": "fp32",
+    "mode": "allocate",
+    "before_us": 249.01428481164055,
+    "after_us": 249.1754330164904,
+    "after_over_before_minus_one": 0.0006471444197337917,
+    "relative_range": 0.0006469350895171684,
+    "review": false
+  },
+  "max_abs_840_vs_780_change_pct": 2.7949628157316497,
+  "max_abs_allocate_vs_prealloc_at840_pct": 0.11658962773539727,
+  "max_abs_allocate_vs_prealloc_all_stages_pct": 11.330443879890007,
+  "max_abs_host_event_block_difference_pct": 0.029797581351398428,
+  "correctness_scopes": {
+    "sampled": 432,
+    "full": 108
+  },
+  "post_restore_clocks": {
+    "Graphics": 1560,
+    "SM": 1560,
+    "Memory": 7001
+  },
+  "cross_run_780": {
+    "s0_780_before": {
+      "min_change_pct": 1.6224966806616337,
+      "median_change_pct": 1.901009955874955,
+      "max_change_pct": 2.167307049996592,
+      "worst": {
+        "stage": "s0_780_before",
+        "shape": "(64, 64, 64)",
+        "dtype": "fp32",
+        "mode": "graph",
+        "fixed780_us": 13.155428301386472,
+        "range780_us": 13.440546826419666,
+        "change_pct": 2.167307049996592
+      }
+    },
+    "s8_780_after": {
+      "min_change_pct": 1.6157791664876076,
+      "median_change_pct": 1.9254479633314059,
+      "max_change_pct": 2.1580268839316297,
+      "worst": {
+        "stage": "s8_780_after",
+        "shape": "(64, 64, 64)",
+        "dtype": "fp32",
+        "mode": "graph",
+        "fixed780_us": 13.155428301386472,
+        "range780_us": 13.439325980826741,
+        "change_pct": 2.1580268839316297
+      }
+    }
+  },
+  "matched_clock_change_pct": {
+    "810_vs_780": {
+      "minimum": -0.4545650532559953,
+      "median": -0.055461423303765356,
+      "maximum": 0.01431305754107104,
+      "matched_condition_modes": 30
+    },
+    "840_vs_780": {
+      "minimum": -2.7949628157316497,
+      "median": -1.6275037033873951,
+      "maximum": -0.42136227236712065,
+      "matched_condition_modes": 30
+    }
+  },
+  "review_queue_count": 101
+}

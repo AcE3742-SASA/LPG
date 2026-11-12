@@ -1,0 +1,7 @@
+dtype,mode,baseline,reference,groups,baseline_minus_reference_mape_pp,ci95_low_pp,ci95_high_pp,resamples
+fp16,allocate,neuralpower_fold_scaled,ours_selected,1000,18.744359057532318,17.15473253664956,20.4224047667287,5000
+fp16,prealloc,neuralpower_fold_scaled,ours_selected,1000,18.941189119564253,17.358384332085148,20.58486993784159,5000
+fp16,graph,neuralpower_fold_scaled,ours_selected,1000,20.164770154134356,18.40148409164867,21.954959247172365,5000
+fp32,allocate,neuralpower_fold_scaled,ours_selected,1000,12.802111052243944,11.671421584222907,13.937581494956822,5000
+fp32,prealloc,neuralpower_fold_scaled,ours_selected,1000,12.788764415689391,11.65827238260434,13.92249226792571,5000
+fp32,graph,neuralpower_fold_scaled,ours_selected,1000,13.385541275844307,12.203115692288225,14.573696917080131,5000

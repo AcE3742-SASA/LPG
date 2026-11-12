@@ -1,0 +1,38 @@
+[
+  {
+    "figure": "figure1_roofline_89mm",
+    "width_mm": 89,
+    "height_mm": 80,
+    "min_font_pt": 10.0,
+    "text_bounds": "PASS",
+    "source_values": "unchanged",
+    "png_dpi": 600
+  },
+  {
+    "figure": "figure2_scaling_89mm",
+    "width_mm": 89,
+    "height_mm": 180,
+    "min_font_pt": 10.0,
+    "text_bounds": "PASS",
+    "source_values": "unchanged",
+    "png_dpi": 600
+  },
+  {
+    "figure": "figure1_roofline_182mm",
+    "width_mm": 182,
+    "height_mm": 92,
+    "min_font_pt": 10.0,
+    "text_bounds": "PASS",
+    "source_values": "unchanged",
+    "png_dpi": 600
+  },
+  {
+    "figure": "figure2_scaling_182mm",
+    "width_mm": 182,
+    "height_mm": 80,
+    "min_font_pt": 10.0,
+    "text_bounds": "PASS",
+    "source_values": "unchanged",
+    "png_dpi": 600
+  }
+]

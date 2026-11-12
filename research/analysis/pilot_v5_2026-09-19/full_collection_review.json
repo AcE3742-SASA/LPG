@@ -1,0 +1,8 @@
+{
+  "pilot_directory": "/home/eu/gemm-research/scripts/gpu_sweep/runs/pilot_v5",
+  "pilot_digest": "4182341333ac0bc9f436e42a2297415307753138ee88d4d1ca00b838299a9877",
+  "pilot_gate": "REVIEW",
+  "review_note": "v5: 253/253, FAIL 0, correctness 246/246, profilers 7/7. Retain main FP16 (3216,520,776) and pressure REVIEW flags; collect three-round full data with unchanged 5% limits; review quality before model fitting.",
+  "timestamp": "2026-09-19T08:02:12.415126+00:00",
+  "verification_scope": "Local gate check using copied metadata and saved GPU environment; full launcher rechecks the live GPU environment."
+}

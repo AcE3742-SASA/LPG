@@ -1,0 +1,101 @@
+target,layer,dtype,method,k,train_labels_per_model,seeds,groups,mape_pct,p90_pct,validation_mape_pct,recipe,local_source_cost
+standard,linear,fp16,ours_direct,100,100.0,3,50,14.475110525540535,33.91568728312519,13.38116968840621,mlp64/direct,none
+standard,linear,fp16,ours_overall,200,200.0,3,50,11.018568525786213,21.25454083913215,10.435767228356063,rf/residual,shared GEMM source; separate ledger
+decomposed,linear,fp16,ours_direct,50,50.0,3,50,14.517649536600867,34.150788161271336,14.687107208019446,mlp64/direct,none
+decomposed,linear,fp16,ours_overall,200,200.0,3,50,11.124757896359812,20.734422655512123,11.051000513043851,rf/residual,shared GEMM source; separate ledger
+standard,linear,fp32,ours_direct,100,100.0,3,50,9.656218423046955,20.957071787488015,9.692585310530283,mlp64/direct,none
+standard,linear,fp32,ours_overall,200,200.0,3,50,6.706656899061014,15.329267677557564,6.211543809909912,ridge/residual,shared GEMM source; separate ledger
+decomposed,linear,fp32,ours_direct,200,200.0,3,50,9.180970670541942,19.85451518616834,9.714075413057474,rf/direct,none
+decomposed,linear,fp32,ours_overall,200,200.0,3,50,6.684569880494755,14.31403254444031,6.438728866288904,rf/residual,shared GEMM source; separate ledger
+standard,ffn,fp16,ours_direct,200,200.0,3,50,9.9701383904855,22.06076647698139,10.577454108449203,mlp64/direct,none
+standard,ffn,fp16,ours_overall,200,200.0,3,50,8.469460656480756,16.27682569010118,8.43228279436624,rf/residual,shared GEMM source; separate ledger
+decomposed,ffn,fp16,ours_direct,100,100.0,3,50,11.609422809295008,27.280784750696384,10.843321789455922,mlp64/direct,none
+decomposed,ffn,fp16,ours_overall,200,200.0,3,50,8.998945076859838,19.015759155864885,8.631409411517867,ridge/residual,shared GEMM source; separate ledger
+standard,ffn,fp32,ours_direct,200,198.0,3,50,8.228366623414656,17.745845835747144,7.847517762250225,rf/direct,none
+standard,ffn,fp32,ours_overall,200,198.0,3,50,5.393820447044437,11.447407596704425,5.220037502779161,rf/residual,shared GEMM source; separate ledger
+decomposed,ffn,fp32,ours_direct,200,198.0,3,50,8.083923876787503,17.43471304473426,7.698160355930017,mlp64/direct,none
+decomposed,ffn,fp32,ours_overall,200,198.0,3,50,5.5930971895215364,11.035909427911957,4.753071906083709,rf/residual,shared GEMM source; separate ledger
+standard,conv1,fp16,ours_direct,200,200.0,3,50,14.164209748227846,30.377827962123643,11.898239952618857,mlp64/direct,none
+standard,conv1,fp16,ours_overall,200,200.0,3,50,10.710206301793246,22.193862211678503,9.809663052408814,rf/residual,shared GEMM source; separate ledger
+decomposed,conv1,fp16,ours_direct,200,200.0,3,50,9.21056754603994,18.194571456687992,8.028063951377922,rf/direct,none
+decomposed,conv1,fp16,ours_overall,200,600.0,3,50,6.91324112154209,14.21789535071383,6.396767927449415,rf/component_sum,none
+standard,conv1,fp32,ours_direct,200,200.0,3,50,9.289585597801908,15.1476465310993,7.916759187671384,rf/direct,none
+standard,conv1,fp32,ours_overall,200,200.0,3,50,8.8163995712004,15.702747136943959,7.455388293537344,rf/prior_direct,shared GEMM source; separate ledger
+decomposed,conv1,fp32,ours_direct,200,200.0,3,50,18.65358172618814,34.62287442673199,15.78719033349879,mlp64/direct,none
+decomposed,conv1,fp32,ours_overall,200,600.0,3,50,9.791064010903883,23.152419249837656,10.91352526084892,rf/component_sum,none
+standard,conv3,fp16,ours_direct,200,200.0,3,50,11.803990366584928,23.736785624001083,9.03646031338551,mlp64/direct,none
+standard,conv3,fp16,ours_overall,200,200.0,3,50,11.803990366584928,23.736785624001083,9.03646031338551,mlp64/direct,none
+decomposed,conv3,fp16,ours_direct,200,200.0,3,50,7.199850886074461,15.801427240378835,7.282943572515165,mlp64/direct,none
+decomposed,conv3,fp16,ours_overall,200,800.0,3,50,6.666056423028484,13.626891903624688,6.06201427850592,mlp64/component_sum,none
+standard,conv3,fp32,ours_direct,200,200.0,3,49,18.701711689912656,36.84211723228377,16.92780439133276,mlp64/direct,none
+standard,conv3,fp32,ours_overall,200,200.0,3,49,14.482027964771719,27.522894886386517,16.38774123562644,rf/residual,shared GEMM source; separate ledger
+decomposed,conv3,fp32,ours_direct,200,200.0,3,49,8.827627258262117,17.13169305196904,6.781489678497858,mlp64/direct,none
+decomposed,conv3,fp32,ours_overall,200,800.0,3,49,5.640681227254139,11.320352740501026,3.931495110343974,rf/component_sum,none
+standard,conv1,fp16,gemmify_dt,10,30.0,3,50,127.93133052916038,232.66598893286377,128.50812886883196,gemmify_dt,none
+standard,linear,fp16,gemmify_dt,10,30.0,3,50,75.56266794210059,189.08377543408585,81.84869193010739,gemmify_dt,none
+standard,linear,fp16,neuralpower,20,20.0,3,50,40.5108257781772,86.77094717997274,39.04168729333639,neuralpower,none
+standard,conv3,fp16,neuralpower,30,60.0,3,50,26.395532206897357,47.36245303370788,27.832851877005677,neuralpower,none
+standard,conv1,fp16,neuralpower_original_floor,30,60.0,3,50,648.1210634327983,1315.217332267997,657.8934886303472,neuralpower_original_floor,none
+standard,conv3,fp16,neuralpower_original_floor,50,100.0,3,50,79.4774218442604,223.01467150015046,84.59091055912693,neuralpower_original_floor,none
+standard,linear,fp16,neuralpower_original_floor,200,200.0,3,50,290.4336545178774,669.6845986201885,311.38391216738063,neuralpower_original_floor,none
+standard,conv1,fp16,neuralpower,200,400.0,3,50,26.832795423050147,53.82986271204829,34.176459471112345,neuralpower,none
+standard,conv3,fp16,gemmify_dt,200,600.0,3,50,51.038419000372635,87.54454003181615,47.32100108821388,gemmify_dt,none
+standard,conv1,fp16,gemmify_capacity,200,600.0,3,50,20.552209621263057,46.65424418934875,32.07125789205505,gemmify_capacity,none
+standard,conv3,fp16,gemmify_capacity,200,600.0,3,50,30.846339174830064,60.66222557013125,39.3665371509817,gemmify_capacity,none
+standard,linear,fp16,gemmify_capacity,200,600.0,3,50,41.45591384849218,103.18748891639501,57.712711977849665,gemmify_capacity,none
+decomposed,linear,fp16,gemmify_dt,5,15.0,3,50,190.20677852946133,559.8004649350136,194.2322075694864,gemmify_dt,none
+decomposed,linear,fp16,neuralpower,20,20.0,3,50,38.51830058281502,75.74156602769877,36.03936274855168,neuralpower,none
+decomposed,conv1,fp16,gemmify_dt,50,150.0,3,50,116.6924331847071,220.93753441145205,119.51064184620161,gemmify_dt,none
+decomposed,conv3,fp16,gemmify_dt,50,150.0,3,50,57.18448068357077,103.63767009761204,48.077735917079416,gemmify_dt,none
+decomposed,linear,fp16,neuralpower_original_floor,200,200.0,3,50,284.40176054685884,612.2516476109236,316.5760116400754,neuralpower_original_floor,none
+decomposed,conv1,fp16,neuralpower,200,400.0,3,50,13.719802032491552,30.08897777995215,16.443720212272268,neuralpower,none
+decomposed,conv3,fp16,neuralpower,200,400.0,3,50,9.648372119716091,20.771218808417512,10.717283136455114,neuralpower,none
+decomposed,conv1,fp16,neuralpower_original_floor,200,400.0,3,50,175.41934152961713,344.7200129632811,175.82187537712946,neuralpower_original_floor,none
+decomposed,conv3,fp16,neuralpower_original_floor,200,400.0,3,50,35.02289161222334,111.51374198042924,24.716496661557,neuralpower_original_floor,none
+decomposed,conv1,fp16,gemmify_capacity,200,600.0,3,50,27.115391362372876,56.0642545908643,33.90852761238182,gemmify_capacity,none
+decomposed,conv3,fp16,gemmify_capacity,200,600.0,3,50,28.638201628874626,54.760727537892336,32.695589251547396,gemmify_capacity,none
+decomposed,linear,fp16,gemmify_capacity,200,600.0,3,50,83.90023846179987,201.16014551947646,66.68067924625346,gemmify_capacity,none
+standard,conv1,fp32,gemmify_dt,5,15.0,3,50,139.9895196859592,256.2941630334545,130.93238896374194,gemmify_dt,none
+standard,linear,fp32,gemmify_dt,10,30.0,3,50,114.13997128948994,208.00495534584664,82.85991869555984,gemmify_dt,none
+standard,conv3,fp32,gemmify_dt,20,60.0,3,49,107.14954364314146,311.5804579123001,92.84651987903901,gemmify_dt,none
+standard,linear,fp32,neuralpower,30,30.0,3,50,11.895839406077743,31.22444802859738,11.757764591755027,neuralpower,none
+standard,conv3,fp32,gemmify_capacity,100,300.0,3,49,48.32008606023698,95.76494758126495,36.078956451535454,gemmify_capacity,none
+standard,linear,fp32,neuralpower_original_floor,200,200.0,3,50,103.96653117711934,219.8299434272319,118.83501104607376,neuralpower_original_floor,none
+standard,conv1,fp32,neuralpower,200,400.0,3,50,36.843438731240184,111.74684807470165,38.09435999917415,neuralpower,none
+standard,conv3,fp32,neuralpower,200,400.0,3,49,20.518467513455963,46.46620738868819,20.094904229898606,neuralpower,none
+standard,conv1,fp32,neuralpower_original_floor,200,400.0,3,50,331.10877433688034,919.7022525795132,343.26327481014505,neuralpower_original_floor,none
+standard,conv3,fp32,neuralpower_original_floor,200,400.0,3,49,73.19572587503926,196.5780646474251,80.13215445447729,neuralpower_original_floor,none
+standard,conv1,fp32,gemmify_capacity,200,600.0,3,50,27.04128935154041,70.41394970331528,30.008797770884453,gemmify_capacity,none
+standard,linear,fp32,gemmify_capacity,200,600.0,3,50,22.07255351510585,46.635475651599904,25.290725477353245,gemmify_capacity,none
+decomposed,linear,fp32,gemmify_dt,5,15.0,3,50,157.07102251953077,400.9531301062687,160.76717840508886,gemmify_dt,none
+decomposed,conv1,fp32,gemmify_dt,20,60.0,3,50,148.36744523425696,289.6028999798393,138.51096060648635,gemmify_dt,none
+decomposed,conv3,fp32,gemmify_dt,20,60.0,3,49,88.34549545643033,175.97264685213256,71.6864956116899,gemmify_dt,none
+decomposed,linear,fp32,neuralpower,30,30.0,3,50,13.975458300114326,32.97470938562441,13.848485041992197,neuralpower,none
+decomposed,conv1,fp32,gemmify_capacity,100,300.0,3,50,36.02048870531044,70.51854377949194,37.54722808095135,gemmify_capacity,none
+decomposed,linear,fp32,neuralpower_original_floor,200,200.0,3,50,112.65951902448988,254.5340609229044,130.02469803408755,neuralpower_original_floor,none
+decomposed,conv1,fp32,neuralpower,200,400.0,3,50,18.504108015272646,36.667846881220036,23.57267755375497,neuralpower,none
+decomposed,conv3,fp32,neuralpower,200,400.0,3,49,6.229784978600036,12.12306477410138,6.011209243985999,neuralpower,none
+decomposed,conv1,fp32,neuralpower_original_floor,200,400.0,3,50,116.32610202119469,258.4189462151086,105.55103387510172,neuralpower_original_floor,none
+decomposed,conv3,fp32,neuralpower_original_floor,200,400.0,3,49,22.562040792444538,68.63834752391635,13.78172782521487,neuralpower_original_floor,none
+decomposed,conv3,fp32,gemmify_capacity,200,600.0,3,49,33.2022210789733,63.800599559436925,39.90135176786779,gemmify_capacity,none
+decomposed,linear,fp32,gemmify_capacity,200,600.0,3,50,42.04274810270414,93.88587161460049,30.170261202325023,gemmify_capacity,none
+standard,conv1,fp16,paleo_empirical,0,0.0,1,50,67.76125884819841,92.4636938734853,66.01098425651435,paleo_empirical,existing hardware calibration
+standard,conv3,fp16,paleo_empirical,0,0.0,1,50,75.97504030721797,96.69712877441427,77.67129801908054,paleo_empirical,existing hardware calibration
+standard,linear,fp16,paleo_empirical,0,0.0,1,50,52.62759971803921,80.13146415541677,53.88032934038623,paleo_empirical,existing hardware calibration
+decomposed,conv1,fp16,paleo_empirical,0,0.0,1,50,89.64124499883395,98.06155732002551,89.69836597712343,paleo_empirical,existing hardware calibration
+decomposed,conv3,fp16,paleo_empirical,0,0.0,1,50,87.22857231829026,98.32403900330502,88.48072914029488,paleo_empirical,existing hardware calibration
+decomposed,linear,fp16,paleo_empirical,0,0.0,1,50,50.81100610119655,80.24982658430561,51.9632082200252,paleo_empirical,existing hardware calibration
+standard,conv1,fp32,paleo_empirical,0,0.0,1,50,56.692033938412536,90.65441704303083,54.18088724547747,paleo_empirical,existing hardware calibration
+standard,conv3,fp32,paleo_empirical,0,0.0,1,49,46.262022438029064,89.30471903823437,44.92484985215149,paleo_empirical,existing hardware calibration
+standard,linear,fp32,paleo_empirical,0,0.0,1,50,31.716161179632703,62.208241721781,34.056346102281395,paleo_empirical,existing hardware calibration
+decomposed,conv1,fp32,paleo_empirical,0,0.0,1,50,75.93858074855608,97.0341380773971,77.60218047797102,paleo_empirical,existing hardware calibration
+decomposed,conv3,fp32,paleo_empirical,0,0.0,1,49,68.91195231453403,94.5930468761497,69.6173942536076,paleo_empirical,existing hardware calibration
+decomposed,linear,fp32,paleo_empirical,0,0.0,1,50,28.8763266835425,57.451108007945905,31.40312756723542,paleo_empirical,existing hardware calibration
+standard,linear,fp32,neusight_clock,0,0.0,1,50,34.70842580602222,65.86781424829705,37.97523574037672,neusight_clock,external/unknown
+standard,ffn,fp32,neusight_clock,0,0.0,1,50,44.393486207305514,107.84246457717487,41.824387065240984,neusight_clock,external/unknown
+standard,linear,fp32,neusight_empirical,0,0.0,1,50,53.48467506405502,93.75361984868601,53.088857789659066,neusight_empirical,external/unknown
+standard,ffn,fp32,neusight_empirical,0,0.0,1,50,56.37394067322557,111.95812644567224,57.480241806831394,neusight_empirical,external/unknown
+decomposed,linear,fp32,neusight_clock,0,0.0,1,50,39.284505459912374,75.08741586254605,42.62785746035592,neusight_clock,external/unknown
+decomposed,ffn,fp32,neusight_clock,0,0.0,1,50,49.00691597080326,116.87319341817224,45.58943158479338,neusight_clock,external/unknown
+decomposed,linear,fp32,neusight_empirical,0,0.0,1,50,60.97396841388137,111.62261735323047,61.06454344706689,neusight_empirical,external/unknown
+decomposed,ffn,fp32,neusight_empirical,0,0.0,1,50,63.8728225120451,126.60563734900074,63.436806434730045,neusight_empirical,external/unknown

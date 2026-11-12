@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "kind": "old_data_offline_replay_not_gpu_execution",
+  "summary": {
+    "gate": "REVIEW",
+    "size": "check",
+    "expected": 60,
+    "recorded": 60,
+    "missing": 0,
+    "attempts": 60,
+    "counts": {
+      "PASS": 60
+    },
+    "timed_blocks": 420,
+    "triplets_expected": 20,
+    "triplets_complete": 20,
+    "timing_and_sampled_clocks_pass": true,
+    "max_relative_iqr": 0.0007367669107816498,
+    "max_abs_drift": 0.0007166272956692349,
+    "max_between_round_range": 0.006896831054969464,
+    "between_round_flags": 0,
+    "clock_flags": [],
+    "counter_anomaly_blocks": 33,
+    "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+    "all_restorations_accepted": false,
+    "results_digest": "7df10ff41b32312aaca648e86fe2f5ecb1dbf612b2289787a123c3dcc3c0b862",
+    "task_wall_seconds_median": null,
+    "reference_change_abs_max_pct": 2.1642654501723424,
+    "full_sweep": "HOLD_PENDING_CHECK_REVIEW",
+    "sampling_note": "Host-envelope samples are not continuous/effective kernel clocks."
+  },
+  "source_hashes": {
+    "analysis/clock_range_result_2026-09-21/raw/clock_range_20260921_011219_0bnxY6/s0_780_before/telemetry.csv": "eba452e078c5d35115511c5ca4665ec6f5d3d035a57d52e4f8f0f35e0140c98c",
+    "analysis/clock_range_result_2026-09-21/raw/clock_range_20260921_011219_0bnxY6/s0_780_before/telemetry_metadata.json": "14be62b1a9e0f8e71d6b3cd1e8ca816889a5f01fbf89d73bd249370cc05042c0",
+    "analysis/clock_range_result_2026-09-21/raw/clock_range_20260921_011219_0bnxY6/s8_780_after/telemetry.csv": "2d4427768b803687f5f32f50fa4c8006e7f486e6b228efd8e2ac4c3af53c5822",
+    "analysis/clock_range_result_2026-09-21/raw/clock_range_20260921_011219_0bnxY6/s8_780_after/telemetry_metadata.json": "13b82396ab9bad35e0a02c861ed0b25c1a30d9bb6ff716f382b74e879bde6642"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "pdf_checks": [
+    {
+      "file": "figure1_roofline_89mm.pdf",
+      "dimensions_mm": [
+        88.99999999998971,
+        79.9999999999975
+      ],
+      "all_fonts_embedded": true,
+      "fonts": [
+        "/FXAIIW+DejaVuSans"
+      ],
+      "embedded_raster_images": 0,
+      "font_sizes_pt": [
+        7.0,
+        10.0
+      ],
+      "values_checked": true,
+      "sha256": "f13438a7f9c5286274bb44fd843a6488297b7513692d54db134b95e67f222f7e"
+    },
+    {
+      "file": "figure2_scaling_89mm.pdf",
+      "dimensions_mm": [
+        88.99999999998971,
+        179.99999999998553
+      ],
+      "all_fonts_embedded": true,
+      "fonts": [
+        "/GMHJPM+DejaVuSans"
+      ],
+      "embedded_raster_images": 0,
+      "font_sizes_pt": [
+        10.0
+      ],
+      "values_checked": true,
+      "sha256": "c0b5c0c1abe60d187f39b94c5cb91e69badaedde8c8bc0550c6a335a1d9f03ee"
+    },
+    {
+      "file": "figure1_roofline_182mm.pdf",
+      "dimensions_mm": [
+        181.99999999999164,
+        91.99999999999889
+      ],
+      "all_fonts_embedded": true,
+      "fonts": [
+        "/FXAIIW+DejaVuSans"
+      ],
+      "embedded_raster_images": 0,
+      "font_sizes_pt": [
+        7.0,
+        10.0
+      ],
+      "values_checked": true,
+      "sha256": "ddfb8e64f934f86e9a7040c06bdf0d0927a3c6c5db97f0828f6bde3f70c79847"
+    },
+    {
+      "file": "figure2_scaling_182mm.pdf",
+      "dimensions_mm": [
+        181.99999999999164,
+        79.9999999999975
+      ],
+      "all_fonts_embedded": true,
+      "fonts": [
+        "/GMHJPM+DejaVuSans"
+      ],
+      "embedded_raster_images": 0,
+      "font_sizes_pt": [
+        10.0
+      ],
+      "values_checked": true,
+      "sha256": "dd3028787d15e7145fdea1c0aef9cfa842f8dfada0f8541ec626a28216f78a8e"
+    }
+  ],
+  "proof_pages": 4,
+  "proof_paper": "A4",
+  "proof_scale": 1.0,
+  "typography": "Base labels 10 pt; logarithmic superscripts 7 pt",
+  "color_figures_visual_check": "PASS",
+  "grayscale_actual_size_proof_visual_check": "PASS",
+  "source_result_files_unchanged": true,
+  "captions_ko_en_values_checked": true
+}

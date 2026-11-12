@@ -1,0 +1,1834 @@
+{
+  "status": "COMPARISON_PASS_AT_780",
+  "target_sm_mhz": 780,
+  "target_memory_mhz": 6801,
+  "target_power_limit_W": 70,
+  "current_roofline_target_sm_mhz": 750,
+  "valid_for_750": false,
+  "final_compute_ceiling": false,
+  "independent_runs_per_kernel": 1,
+  "archive_sha256": "8e11151ffcad3c41282cbf6a8bf039160c506acb005c34736aead1a93ef7ef3d",
+  "files": {
+    "fp32_simt_01.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp16_tensor_04.check.json": {
+      "bytes": 1669,
+      "sha256": "6d6add4a9b2b51eb2b1d9f32902c1bdca5c18befcde197070fbfbf5c7f9a2f30"
+    },
+    "fp32_simt_08.log": {
+      "bytes": 1353,
+      "sha256": "c4a26ae8364a947c9762452e34f7318d44af73d7d184d8403cceec25f40c8aee"
+    },
+    "fp16_tensor_07.check.json": {
+      "bytes": 1675,
+      "sha256": "1b47a40a26240d8d109e06d39d6cde47c6b258f2d4b923fcd329233e7f4edab0"
+    },
+    "fp32_simt_02.check.json": {
+      "bytes": 1648,
+      "sha256": "70f30ff888ea41c79196c4d0c6199859cdde364a649f3ce9406783943d6dab73"
+    },
+    "fp32_simt_01.log": {
+      "bytes": 1359,
+      "sha256": "238adec00a6eff67bea1ba4d9a5729b6e060711782193dfc603485c88c90318b"
+    },
+    "fp32_simt_04.command.txt": {
+      "bytes": 651,
+      "sha256": "25849ba1546bd50fde38cc6d03852aba8f6151e1416b9d9c1aa0b14ab5adf17b"
+    },
+    "fp16_tensor_05.command.txt": {
+      "bytes": 681,
+      "sha256": "7b309478fe0beaa9f5cf069092c7ceb395a1a1db7cb3f11350963219fce912f1"
+    },
+    "fp32_simt_04.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_08.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "e47c8fb0e3acbea8c6af3dfc101575e4f245d7756415cab9e00c53818cbb99fa"
+    },
+    "fp16_tensor_08.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp16_tensor_02.log": {
+      "bytes": 1381,
+      "sha256": "127dd06f985d1e3cb90056a7e893ee0ac87dae1dbb71d9d1a8311bb56413d2bf"
+    },
+    "fp16_tensor_08.command.txt": {
+      "bytes": 675,
+      "sha256": "3fe2314e3a761031b7475caa74405a3317e6800c81111df4ea057249ae868dbf"
+    },
+    "fp32_simt_06.clocks.csv": {
+      "bytes": 2645,
+      "sha256": "f683f7d386685529779492773676a341b127e806995fc65c8803212860906d9e"
+    },
+    "fp32_simt_03.log": {
+      "bytes": 1356,
+      "sha256": "224caa73807cc5bc390fb74a0f5850f958055479f309545335fed33fa9caee0f"
+    },
+    "fp16_tensor_03.clocks.csv": {
+      "bytes": 3799,
+      "sha256": "358a5a37678ea3cef750867494a70535d1d0c73848550de2403816efc9f9427f"
+    },
+    "fp32_simt_05.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_04.log": {
+      "bytes": 1353,
+      "sha256": "07f66048a02743b78f7ec2707ac92d9bf3d968a00ebe68d82c3d1ea41a8b7957"
+    },
+    "fp16_tensor_02.command.txt": {
+      "bytes": 677,
+      "sha256": "98c855dc89528abb84e27cbd1202ebe3745f04778eb00c891eddc2f135a20960"
+    },
+    "fp16_tensor_07.log": {
+      "bytes": 1383,
+      "sha256": "69398dcc536258bb17ca2192992e52b8e4fd38d4614c080a59c9ca64f30b2e75"
+    },
+    "fp16_tensor_03.check.json": {
+      "bytes": 1673,
+      "sha256": "3e3283c77097d9aca69029095054397795cc0fef21d44f98bc013d7f94d7f6ab"
+    },
+    "fp16_tensor_06.check.json": {
+      "bytes": 1676,
+      "sha256": "394ad82ec7e0d057e447e47076acc305ea4936a02115d92944d267aded3bc6cb"
+    },
+    "fp32_simt_07.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_07.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp32_simt_07.check.json": {
+      "bytes": 1649,
+      "sha256": "9a5344525ff972deeee253f3d2b6b9c21536ade4ee7892f550dbbf252839fc49"
+    },
+    "fp16_tensor_01.check.json": {
+      "bytes": 1676,
+      "sha256": "1d08f91a7818df8483615fb9b17c6167ec23c50539e1f5d4acf20a0f28bdbc5c"
+    },
+    "fp16_tensor_05.clocks.csv": {
+      "bytes": 1639,
+      "sha256": "0ed9bb53a51f6b7d6bcf1f0546d30f32c91ac6ee1a4a5e7b5fc65310944c1756"
+    },
+    "fp16_tensor_06.gemm.csv": {
+      "bytes": 808,
+      "sha256": "a17fcb316f7fd7133ff26abdbc16d376c730ae1a5dd04a93b3550cd92610160a"
+    },
+    "fp32_simt_06.log": {
+      "bytes": 1356,
+      "sha256": "aeb321eb5857e9f7b9959f3b090088b6569bfe1cbda12e0e1992cb6e0d804f6e"
+    },
+    "fp16_tensor_05.check.json": {
+      "bytes": 1678,
+      "sha256": "3edafee9ca8fa8a4b74bd60925477d2d79484ef712c3af7fc415f1724924ede2"
+    },
+    "fp32_simt_08.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "41f8ad26a8ea53a3dd4928b1ad1d6c7e4b01bb00176cf662221504bde74ca5d9"
+    },
+    "fp16_tensor_03.log": {
+      "bytes": 1380,
+      "sha256": "9cf67f492a32e6760aff345347cb6a18528f6ecd1ba9f988eb9d42a6bf23322a"
+    },
+    "fp32_simt_01.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_02.check.json": {
+      "bytes": 1673,
+      "sha256": "425d27833a0b0902804e12d4393103dd580f9248bf6c5453dc32125070fb2696"
+    },
+    "fp32_simt_07.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "runner.sh": {
+      "bytes": 7485,
+      "sha256": "841895e71a83f35764f61667a1c34caa7164a71624bd68603f592bbd0abb70c2"
+    },
+    "fp16_tensor_07.clocks.csv": {
+      "bytes": 3727,
+      "sha256": "f38e8151e5f325d3f28aa17e26dea9f79992fab932a5f6f074cd3d9b82316338"
+    },
+    "fp16_tensor_01.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_03.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp16_tensor_01.command.txt": {
+      "bytes": 680,
+      "sha256": "deaf2902150389f152efecc4832d0636fb76794fef10587da21a0f55d386b6c7"
+    },
+    "fp32_simt_07.gemm.csv": {
+      "bytes": 783,
+      "sha256": "1973b6315d427d72167aeb0db33d803fe4da7efeb4534aa563791d5452dd1a63"
+    },
+    "fp16_tensor_03.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "bee5f48add0232a62409fac3a52a06c38b4b0f71d9211dda9df2360bcefbffa6"
+    },
+    "fp16_tensor_04.command.txt": {
+      "bytes": 674,
+      "sha256": "219b13d3cb0c21b843c23d0ee16dd2a4d89312025e4c35aa63a0aa1ff55c46f7"
+    },
+    "fp32_simt_08.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_04.check.json": {
+      "bytes": 1645,
+      "sha256": "c9f3b3e8f719942023349b4448c952fd9ef0bc1228216f5b33e27ef1604e977a"
+    },
+    "fp32_simt_08.clocks.csv": {
+      "bytes": 4589,
+      "sha256": "37780629b7f02f5304bebd3f5672724e6e0378dfc04925f4a6029660e96e76c5"
+    },
+    "fp32_simt_01.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "d906ba98a664edca5e80c43dcff288ff99b0761e18eca1960fce3e5f19225993"
+    },
+    "fp32_simt_04.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_05.gemm.csv": {
+      "bytes": 786,
+      "sha256": "13cadb3dc3cb569a836563d9deef42df0b3b3faeea38eea26cee223d5bc7b63d"
+    },
+    "fp32_simt_01.gemm.csv": {
+      "bytes": 786,
+      "sha256": "f09c7ebe3c5c8c85fa519de4143d767e40a5cd0e390b969acf52367b8a097b80"
+    },
+    "fp32_simt_03.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp16_tensor_08.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp16_tensor_05.gemm.csv": {
+      "bytes": 811,
+      "sha256": "62714aad4ec9a04cb23434bfeac38ca3181ce18e8046c4dc4552b7c084357e1d"
+    },
+    "fp16_tensor_04.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp32_simt_07.log": {
+      "bytes": 1356,
+      "sha256": "1f5abbfe16ddd3262a01df107f037174d691f6154dec964aafacd44e42a59767"
+    },
+    "fp16_tensor_02.clocks.csv": {
+      "bytes": 1567,
+      "sha256": "336223eb145de05693111447bbde26d6bf9bae5697ed156eb8e05029e4640113"
+    },
+    "fp32_simt_06.gemm.csv": {
+      "bytes": 783,
+      "sha256": "0327dfaf710d27d067cc1d89f8fe1e86d762508076803538f1f15bb5319898d4"
+    },
+    "fp32_simt_06.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp16_tensor_08.log": {
+      "bytes": 1380,
+      "sha256": "9422a60d5daf150f1d5bc13718a16d9ac51ebfe38f0426bbd9455cb63cebf28a"
+    },
+    "fp32_simt_04.clocks.csv": {
+      "bytes": 4588,
+      "sha256": "4b2981974c8192a86c83d9c45f2a73ead5aaffa931e4b90ed03b0641018155d2"
+    },
+    "fp16_tensor_03.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "runner.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_05.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "02a5fa9b3ed2e8a1a11e30b5a1de630a9e1408842c1150cd0b89174156cfcac0"
+    },
+    "fp32_simt_06.check.json": {
+      "bytes": 1648,
+      "sha256": "0595fc9fe6e68ab49d34420621cca58ce63cbb0d56f8fe50fd1410a396c80c4c"
+    },
+    "fp16_tensor_06.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_02.gemm.csv": {
+      "bytes": 783,
+      "sha256": "0de6c17501abb5599f2fe871021f93bd730593c33e1652f3a4ed3e4886503642"
+    },
+    "lock_mem.log": {
+      "bytes": 91,
+      "sha256": "400632ee782d4f79640506ec45d6266aae107cbd438bd04ddaf54d294cf2a449"
+    },
+    "fp32_simt_01.check.json": {
+      "bytes": 1650,
+      "sha256": "a8dfb8fd1776657cae2b63f4262541aa521cc59076dd0195eba3b94b5b44e034"
+    },
+    "fp32_simt_08.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_02.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp16_tensor_07.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "5959f6e5c2546909b880a2e83efc7cf98b88d33aa099f89bea51cff257898d47"
+    },
+    "fp16_tensor_07.command.txt": {
+      "bytes": 678,
+      "sha256": "9a0597857d80330b18df7f9c98f80321392f1eb97e978f6fff2c41f8f250948d"
+    },
+    "fp32_simt_07.command.txt": {
+      "bytes": 654,
+      "sha256": "6573bdbf4e49f74a2e2778acd557bf3bfd5400fec70d7f5f6e82aa47b7fedf76"
+    },
+    "fp32_simt_05.clocks.csv": {
+      "bytes": 2571,
+      "sha256": "d866b2d3cffaed1b56c5d67197aee4038b0ae59b5f85dea2cb65d122c03a0e01"
+    },
+    "fp16_tensor_04.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_03.check.json": {
+      "bytes": 1649,
+      "sha256": "810d7ec117bc73426aedd2d2056dabb783f00835981ba896a0fd047691128c88"
+    },
+    "fp32_simt_08.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_04.gemm.csv": {
+      "bytes": 780,
+      "sha256": "f04afce7b18eb00f304ffe13a8d500505806270d9e4fba606b2db79abf720e65"
+    },
+    "binary.sha256": {
+      "bytes": 121,
+      "sha256": "d7b9ba19881c827e006d09cf5303706af438354c04af42520392e00857a48936"
+    },
+    "fp16_tensor_06.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp32_simt_05.check.json": {
+      "bytes": 1652,
+      "sha256": "446b86c94d225419c88637c104c552de14b1810713d35ba66da4adcf6264ebd5"
+    },
+    "fp32_simt_05.log": {
+      "bytes": 1359,
+      "sha256": "b0a88a6ad492376488eff91e44756a12cdf053360a662a690072abdc96da5beb"
+    },
+    "fp16_tensor_01.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "f0b25d9afc6964835387d5fdc1d45e72270a84d225007fe3f56bf2456bd4a34b"
+    },
+    "fp16_tensor_05.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_02.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "device_before.txt": {
+      "bytes": 15481,
+      "sha256": "8c15f1efd572bf3408be4dde858cf8214b52a45793c1852bc4f15a3641655a6c"
+    },
+    "source_status.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_07.gemm.csv": {
+      "bytes": 808,
+      "sha256": "67cfbb71a00b39da389ba8fe068ab09baddd297ef3eb4ce7bd6753202b41550c"
+    },
+    "fp16_tensor_04.clocks.csv": {
+      "bytes": 3655,
+      "sha256": "0f1b3f0614193ca599308757df522c8a506cde6adf528f537b9d015b9bd2bc66"
+    },
+    "fp16_tensor_05.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "7f312b6ed37de9bcb53c4746950f3f48976ace3167ee18722e6a6d395ce0beb7"
+    },
+    "fp16_tensor_07.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_06.clocks.csv": {
+      "bytes": 1495,
+      "sha256": "7a3f497520aacd74405b50833102394b062bac6baff25b1d607b198dec4d271a"
+    },
+    "fp32_simt_01.clocks.csv": {
+      "bytes": 2571,
+      "sha256": "d03b5a90e16bc1f4bc4ff3a28aed9eceb128bf71977f5f731832f48cd847bed7"
+    },
+    "fp16_tensor_08.check.json": {
+      "bytes": 1672,
+      "sha256": "23b9667829cfe82f0a8d5c9ff2ed1d66ad5ccfdedb74109607b3701e15bacd4f"
+    },
+    "fp16_tensor_07.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_02.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_05.command.txt": {
+      "bytes": 657,
+      "sha256": "c2f06e033aef572b7e4539cad2bd5a5add00c018cfc7287b2b4e9a271bea47c5"
+    },
+    "fp32_simt_06.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_03.gemm.csv": {
+      "bytes": 805,
+      "sha256": "250249589fee39076542c9ffb316c8f920b6631088335ad84d9772038ad40816"
+    },
+    "fp32_simt_02.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp16_tensor_04.log": {
+      "bytes": 1376,
+      "sha256": "4db0f27a90d6e41ea22d4f78911e19a373eedf8ce0bc29525484b9a9d1fcd9b2"
+    },
+    "fp16_tensor_04.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_02.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp32_simt_02.command.txt": {
+      "bytes": 654,
+      "sha256": "e3c4a20af48889cbd1e0172f782b726a07b639666f4f843a0f4bebd0bb50e573"
+    },
+    "fp32_simt_06.command.txt": {
+      "bytes": 654,
+      "sha256": "ffb34517d34eb22e8f0c207909a64feff910dd3cbf694ddf1cacacc807e25fc9"
+    },
+    "fp16_tensor_05.log": {
+      "bytes": 1386,
+      "sha256": "11ef480fb26d8cb88b5bdae6ea4a1394d2911bbf5be51b429159bbb7ed945963"
+    },
+    "fp32_simt_06.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp16_tensor_01.clocks.csv": {
+      "bytes": 1708,
+      "sha256": "dc8b28881f2fcf22da6ecc67550a888740a2a49be42985a642cb7ce9548e587c"
+    },
+    "fp32_simt_03.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "cf0d84e172307439165055ba50e7ad5063c23c7adbd52bf74479cd1ad9f0c557"
+    },
+    "fp32_simt_02.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "6a5efb6291c8febc5003cb8189b700d3361b9937466681b71fcef1098553aaef"
+    },
+    "fp16_tensor_06.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "2e851e663445993f470f969a0bb31fd471c5e01878873d9811f3842579b0318d"
+    },
+    "fp32_simt_03.clocks.csv": {
+      "bytes": 4733,
+      "sha256": "65f6e0cd0d4989b48390c082be375e1fa54200d0fa4409820fbe9b1ed3672e65"
+    },
+    "fp32_simt_02.log": {
+      "bytes": 1356,
+      "sha256": "7eb5f5a91e82c8cae9422ee33fb075beb66c2dc681b163c7186bc496f5f1b871"
+    },
+    "fp32_simt_08.check.json": {
+      "bytes": 1645,
+      "sha256": "31a3c6eaa6986b7b622de1c74dedf576d1faf729563af9d3cd6c17d0af393ea6"
+    },
+    "fp16_tensor_01.log": {
+      "bytes": 1384,
+      "sha256": "3e43291e7dba8738257df3bea8ad87a9a712d659cdf46a9f83b0abaeaa468ea2"
+    },
+    "fp16_tensor_03.command.txt": {
+      "bytes": 677,
+      "sha256": "eff374a4d0f62f1dfafd456006e3a8dee4ae51ca874db2e83d892ba7b2051964"
+    },
+    "fp16_tensor_05.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_03.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_02.gemm.csv": {
+      "bytes": 806,
+      "sha256": "6d8347cce6da28ba1bc2ad1d784257f01eaa04805a68c9b366fa5575fdb809c2"
+    },
+    "fp16_tensor_03.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp32_simt_02.clocks.csv": {
+      "bytes": 2501,
+      "sha256": "a716362bfed252f55ebb0b65dcbd5ad64f804560e8cd44d687bbc17c6a3e9b54"
+    },
+    "fp32_simt_01.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_03.command.txt": {
+      "bytes": 654,
+      "sha256": "669fa15810ca37c32ebc683294ad91fe5c24b502242e27ccd1af8c98f00e97dc"
+    },
+    "fp16_tensor_06.log": {
+      "bytes": 1383,
+      "sha256": "11c7ddea05119d8e6d860dc77fafc17cb2c9f8ffccc16dda3776ec254c00fa1a"
+    },
+    "fp16_tensor_07.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_08.command.txt": {
+      "bytes": 651,
+      "sha256": "4013d0e5c813ece1c88d211d83ffa296f1543fe0ba56b3508ad4d69fc6e9f08a"
+    },
+    "fp16_tensor_01.gemm.csv": {
+      "bytes": 809,
+      "sha256": "59d182b884d09f341d66f76c7a11c011c266dda6f969f2d2962eca20276c10a2"
+    },
+    "fp16_tensor_08.clocks.csv": {
+      "bytes": 3583,
+      "sha256": "49adde53fd0fbc91987e91b9b3aec6c8721b7770ba3ce1e3e3154a3d3b1bc6fe"
+    },
+    "fp16_tensor_06.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_05.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_04.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp16_tensor_04.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "80d4f3597d3b45ff32c1a49079a8e7e9dd139ca6fe276bf7a7ef694111a89e7e"
+    },
+    "processes_before.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "timeline.tsv": {
+      "bytes": 1760,
+      "sha256": "efdd0ffbaee1af2326a463483cde33b0f27bc94caa2174a92ff4ac29cb9eb55e"
+    },
+    "fp16_tensor_02.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp32_simt_07.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "ff4621829bb26058cdc7cb44278659844fac229714786d164ab328fe1d8ed9e9"
+    },
+    "fp16_tensor_02.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "cb1c2c647f5bb9045e133ee07cf3368c90479ab486704bc6001d0c2425e39f8b"
+    },
+    "commit.txt": {
+      "bytes": 41,
+      "sha256": "0d7844fbd3c67babea66bbc967e68779c05d97186ec8c4cbbd38e6c4853395a2"
+    },
+    "fp16_tensor_06.command.txt": {
+      "bytes": 678,
+      "sha256": "7da2001c41dac34c9470285319db2d81f98b98e76842a6ed1609a934567ec798"
+    },
+    "fp16_tensor_05.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_07.clocks.csv": {
+      "bytes": 4805,
+      "sha256": "f64110e9a24b0386b66c46b78ee458f32c173a67ac740be109939c7d4aae7569"
+    },
+    "fp32_simt_05.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp16_tensor_08.monitor.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp32_simt_03.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp16_tensor_01.exit_code": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "fp32_simt_01.command.txt": {
+      "bytes": 657,
+      "sha256": "28256291a394a3a1acebe9e2bccbf41d565bd23ce35df9ca2d3839748d5832c1"
+    },
+    "lock_sm.log": {
+      "bytes": 86,
+      "sha256": "f4b9c33be9a098e63a6313e327f85faae24d2e2d9909d6eb573be58b5a965b3d"
+    },
+    "fp32_simt_06.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "136a8b4e180080274256995e6109a06c88f6cbab44d4a107ddb6690139229640"
+    },
+    "fp32_simt_03.gemm.csv": {
+      "bytes": 783,
+      "sha256": "1cb5020dcd8691b82b80f866965cc2a6550c817b90e101e4eb518a3b96c88dfb"
+    },
+    "fp32_simt_08.gemm.csv": {
+      "bytes": 780,
+      "sha256": "75827833a6853debba9489f65ba44b4430c59ffa7af9abb1e2dd79510b87ea08"
+    },
+    "fp16_tensor_08.gemm.csv": {
+      "bytes": 805,
+      "sha256": "d976de27961e7d88a720c81a408b9514a654930a43a70841635042d86fa2b74e"
+    },
+    "fp16_tensor_04.gemm.csv": {
+      "bytes": 801,
+      "sha256": "7da1a8f7862aff76fb4dfddce9ad74f12483a66e242387f2173572e8d70915cf"
+    },
+    "fp16_tensor_01.before.csv": {
+      "bytes": 17,
+      "sha256": "48018e8a91fbb39fc66702a81855b93a2300440cf5934ea19c615f8904a3ba0e"
+    },
+    "fp32_simt_04.device_after.txt": {
+      "bytes": 15485,
+      "sha256": "20f313d619e54008cfaaefbc41616c9a28d64befac38bc596088b4a8af990f6e"
+    }
+  },
+  "results": {
+    "fp32_simt_01": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_128x128_8x2_nn_align1",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:column",
+        "B": "f32:column",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "128",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "2",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "160.072",
+        "GB/s": "4.68538",
+        "GFLOPs": "6869.68"
+      },
+      "runtime_ms": 160.072,
+      "tflops_2mnk": 6.86885668809036,
+      "samples": 34,
+      "active_samples": 30,
+      "fully_busy_samples": 26,
+      "max_power_W": 46.35,
+      "temperature_range_C": [
+        40.0,
+        46.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.205,
+      "profiler_wall_s": 6.749102
+    },
+    "fp32_simt_02": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_128x128_8x2_nt_align1",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:column",
+        "B": "f32:row",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "128",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "2",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "159.576",
+        "GB/s": "4.69994",
+        "GFLOPs": "6891.03"
+      },
+      "runtime_ms": 159.576,
+      "tflops_2mnk": 6.890206721411741,
+      "samples": 33,
+      "active_samples": 29,
+      "fully_busy_samples": 27,
+      "max_power_W": 46.36,
+      "temperature_range_C": [
+        43.0,
+        47.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 6.580169
+    },
+    "fp32_simt_03": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_128x128_8x2_tn_align1",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:row",
+        "B": "f32:column",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "128",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "2",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "164.285",
+        "GB/s": "4.56524",
+        "GFLOPs": "6693.54"
+      },
+      "runtime_ms": 164.285,
+      "tflops_2mnk": 6.6927085721520525,
+      "samples": 64,
+      "active_samples": 60,
+      "fully_busy_samples": 58,
+      "max_power_W": 45.62,
+      "temperature_range_C": [
+        44.0,
+        48.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 12.793572
+    },
+    "fp32_simt_04": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_128x128_8x2_tt_align1",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:row",
+        "B": "f32:row",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "128",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "2",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "158.383",
+        "GB/s": "4.73537",
+        "GFLOPs": "6942.97"
+      },
+      "runtime_ms": 158.383,
+      "tflops_2mnk": 6.942106335755731,
+      "samples": 62,
+      "active_samples": 58,
+      "fully_busy_samples": 55,
+      "max_power_W": 44.98,
+      "temperature_range_C": [
+        45.0,
+        49.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 12.272276
+    },
+    "fp32_simt_05": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_256x128_8x5_nn_align1",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:column",
+        "B": "f32:column",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "5",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "160.532",
+        "GB/s": "4.67195",
+        "GFLOPs": "6849.99"
+      },
+      "runtime_ms": 160.532,
+      "tflops_2mnk": 6.8491741694864565,
+      "samples": 34,
+      "active_samples": 30,
+      "fully_busy_samples": 26,
+      "max_power_W": 47.06,
+      "temperature_range_C": [
+        46.0,
+        50.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 6.725911
+    },
+    "fp32_simt_06": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_256x128_8x5_nt_align1",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:column",
+        "B": "f32:row",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "5",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "170.184",
+        "GB/s": "4.40699",
+        "GFLOPs": "6461.51"
+      },
+      "runtime_ms": 170.184,
+      "tflops_2mnk": 6.460722675316129,
+      "samples": 35,
+      "active_samples": 31,
+      "fully_busy_samples": 29,
+      "max_power_W": 44.6,
+      "temperature_range_C": [
+        47.0,
+        50.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 6.842867
+    },
+    "fp32_simt_07": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_256x128_8x5_tn_align1",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:row",
+        "B": "f32:column",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "5",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "171.068",
+        "GB/s": "4.38423",
+        "GFLOPs": "6428.13"
+      },
+      "runtime_ms": 171.068,
+      "tflops_2mnk": 6.4273366601351505,
+      "samples": 65,
+      "active_samples": 61,
+      "fully_busy_samples": 59,
+      "max_power_W": 45.46,
+      "temperature_range_C": [
+        47.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 12.944075
+    },
+    "fp32_simt_08": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_simt_sgemm_256x128_8x5_tt_align1",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f32:row",
+        "B": "f32:row",
+        "C": "f32:column",
+        "D": "f32:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "simt",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "8",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "5",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "1",
+        "inst_n": "1",
+        "inst_k": "1",
+        "min_cc": "50",
+        "max_cc": "1024",
+        "Bytes": "805306368",
+        "Flops": "1099645845504",
+        "Flops/Byte": "1365",
+        "Runtime": "160.112",
+        "GB/s": "4.68422",
+        "GFLOPs": "6867.97"
+      },
+      "runtime_ms": 160.112,
+      "tflops_2mnk": 6.867140675127411,
+      "samples": 62,
+      "active_samples": 58,
+      "fully_busy_samples": 56,
+      "max_power_W": 46.6,
+      "temperature_range_C": [
+        47.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.205,
+      "profiler_wall_s": 12.319486
+    },
+    "fp16_tensor_01": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s1688gemm_f16_256x128_32x2_nn_align8",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:column",
+        "B": "f16:column",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "2",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "8",
+        "min_cc": "75",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "38.6099",
+        "GB/s": "9.71254",
+        "GFLOPs": "28480.9"
+      },
+      "runtime_ms": 38.6099,
+      "tflops_2mnk": 28.47745339345608,
+      "samples": 22,
+      "active_samples": 18,
+      "fully_busy_samples": 15,
+      "max_power_W": 42.71,
+      "temperature_range_C": [
+        48.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 4.256599
+    },
+    "fp16_tensor_02": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s1688gemm_f16_256x128_32x2_nt_align8",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:column",
+        "B": "f16:row",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "2",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "8",
+        "min_cc": "75",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "37.5996",
+        "GB/s": "9.97351",
+        "GFLOPs": "29246.2"
+      },
+      "runtime_ms": 37.5996,
+      "tflops_2mnk": 29.24264161788955,
+      "samples": 20,
+      "active_samples": 16,
+      "fully_busy_samples": 16,
+      "max_power_W": 42.83,
+      "temperature_range_C": [
+        48.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.205,
+      "profiler_wall_s": 3.966521
+    },
+    "fp16_tensor_03": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s1688gemm_f16_256x128_32x2_tn_align8",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:row",
+        "B": "f16:column",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "2",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "8",
+        "min_cc": "75",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "38.0124",
+        "GB/s": "9.8652",
+        "GFLOPs": "28928.6"
+      },
+      "runtime_ms": 38.0124,
+      "tflops_2mnk": 28.925077810819626,
+      "samples": 51,
+      "active_samples": 47,
+      "fully_busy_samples": 47,
+      "max_power_W": 43.11,
+      "temperature_range_C": [
+        48.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.207,
+      "profiler_wall_s": 10.1001
+    },
+    "fp16_tensor_04": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s1688gemm_f16_256x128_32x2_tt_align8",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:row",
+        "B": "f16:row",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "2",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "8",
+        "min_cc": "75",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "37.7379",
+        "GB/s": "9.93696",
+        "GFLOPs": "29139"
+      },
+      "runtime_ms": 37.7379,
+      "tflops_2mnk": 29.135474623018236,
+      "samples": 49,
+      "active_samples": 45,
+      "fully_busy_samples": 45,
+      "max_power_W": 42.78,
+      "temperature_range_C": [
+        48.0,
+        50.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 9.696085
+    },
+    "fp16_tensor_05": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_nn_align8",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:column",
+        "B": "f16:column",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "3",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "16",
+        "min_cc": "80",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "27.9797",
+        "GB/s": "13.4026",
+        "GFLOPs": "39301.6"
+      },
+      "runtime_ms": 27.9797,
+      "tflops_2mnk": 39.29676257343717,
+      "samples": 21,
+      "active_samples": 17,
+      "fully_busy_samples": 17,
+      "max_power_W": 47.86,
+      "temperature_range_C": [
+        48.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.205,
+      "profiler_wall_s": 4.107621
+    },
+    "fp16_tensor_06": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_nt_align8",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:column",
+        "B": "f16:row",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "3",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "16",
+        "min_cc": "80",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "27.9397",
+        "GB/s": "13.4218",
+        "GFLOPs": "39357.8"
+      },
+      "runtime_ms": 27.9397,
+      "tflops_2mnk": 39.353021964301696,
+      "samples": 19,
+      "active_samples": 15,
+      "fully_busy_samples": 15,
+      "max_power_W": 44.27,
+      "temperature_range_C": [
+        49.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 3.807871
+    },
+    "fp16_tensor_07": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_tn_align8",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:row",
+        "B": "f16:column",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "3",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "16",
+        "min_cc": "80",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "27.9898",
+        "GB/s": "13.3977",
+        "GFLOPs": "39287.3"
+      },
+      "runtime_ms": 27.9898,
+      "tflops_2mnk": 39.28258250419796,
+      "samples": 50,
+      "active_samples": 46,
+      "fully_busy_samples": 46,
+      "max_power_W": 47.54,
+      "temperature_range_C": [
+        49.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.206,
+      "profiler_wall_s": 9.918634
+    },
+    "fp16_tensor_08": {
+      "row": {
+        "Problem": "1",
+        "Provider": "CUTLASS",
+        "OperationKind": "gemm",
+        "Operation": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_tt_align8",
+        "Disposition": "passed",
+        "Status": "success",
+        "gemm_kind": "universal",
+        "m": "8192",
+        "n": "8192",
+        "k": "8192",
+        "A": "f16:row",
+        "B": "f16:row",
+        "C": "f16:column",
+        "D": "f16:column",
+        "alpha": "1",
+        "beta": "0",
+        "split_k_mode": "serial",
+        "split_k_slices": "1",
+        "batch_count": "1",
+        "raster_order": "heuristic",
+        "runtime_input_datatype_a": "invalid",
+        "runtime_input_datatype_b": "invalid",
+        "use_pdl": "false",
+        "enable_sm90_mixed_dtype_shuffle_test": "false",
+        "swizzle_size": "1",
+        "op_class": "tensorop",
+        "accum": "f32",
+        "cta_m": "256",
+        "cta_n": "128",
+        "cta_k": "32",
+        "cluster_m": "1",
+        "cluster_n": "1",
+        "cluster_k": "1",
+        "cluster_m_fallback": "1",
+        "cluster_n_fallback": "1",
+        "cluster_k_fallback": "1",
+        "stages": "3",
+        "warps_m": "4",
+        "warps_n": "2",
+        "warps_k": "1",
+        "inst_m": "16",
+        "inst_n": "8",
+        "inst_k": "16",
+        "min_cc": "80",
+        "max_cc": "1024",
+        "Bytes": "402653184",
+        "Flops": "1099645845504",
+        "Flops/Byte": "2731",
+        "Runtime": "28.0578",
+        "GB/s": "13.3653",
+        "GFLOPs": "39192.1"
+      },
+      "runtime_ms": 28.0578,
+      "tflops_2mnk": 39.18737847500517,
+      "samples": 48,
+      "active_samples": 44,
+      "fully_busy_samples": 44,
+      "max_power_W": 46.34,
+      "temperature_range_C": [
+        49.0,
+        51.0
+      ],
+      "all_sm_mhz": [
+        780.0
+      ],
+      "all_memory_mhz": [
+        6801.0
+      ],
+      "max_poll_gap_s": 0.205,
+      "profiler_wall_s": 9.528381
+    }
+  },
+  "best_observed_tags": {
+    "simt": "fp32_simt_04",
+    "tensorop": "fp16_tensor_06"
+  },
+  "sw_power_capping_counter_us": {
+    "device_before.txt": 1948475373,
+    "fp32_simt_01.device_after.txt": 1954672686,
+    "fp32_simt_02.device_after.txt": 1960670523,
+    "fp32_simt_03.device_after.txt": 1965209770,
+    "fp32_simt_04.device_after.txt": 1976505015,
+    "fp32_simt_05.device_after.txt": 1982663844,
+    "fp32_simt_06.device_after.txt": 1988962434,
+    "fp32_simt_07.device_after.txt": 1993440920,
+    "fp32_simt_08.device_after.txt": 2004837667,
+    "fp16_tensor_01.device_after.txt": 2008557015,
+    "fp16_tensor_02.device_after.txt": 2011954549,
+    "fp16_tensor_03.device_after.txt": 2013633907,
+    "fp16_tensor_04.device_after.txt": 2015292881,
+    "fp16_tensor_05.device_after.txt": 2018850541,
+    "fp16_tensor_06.device_after.txt": 2022128418,
+    "fp16_tensor_07.device_after.txt": 2023627301,
+    "fp16_tensor_08.device_after.txt": 2025146620
+  },
+  "sw_power_capping_counter_delta_us": 76671247,
+  "totals": {
+    "samples": 669,
+    "active_samples": 605,
+    "fully_busy_samples": 581,
+    "max_power_W": 47.86,
+    "temperature_range_C": [
+      40.0,
+      51.0
+    ],
+    "wall_s": 136.824545
+  }
+}

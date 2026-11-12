@@ -1,0 +1,10 @@
+{
+    "Device":"Tesla P100-PCIE-16GB",
+    "Dev_Mem":16,
+    "Mem_Bw":732,
+    "Num_Sm":56,
+    "Core_Per_SM":64,
+    "Freq":1380,
+    "SingleFLOPs":9519,
+    "L2Cache":4
+}

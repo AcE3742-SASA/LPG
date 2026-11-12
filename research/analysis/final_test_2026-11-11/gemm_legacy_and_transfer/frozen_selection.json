@@ -1,0 +1,5953 @@
+{
+  "baselines": "RQ1 same learner/n with opposite target; RQ4 fixed allocate source without adaptation.",
+  "condition_index": "analysis/gemm_dataset_v1_2026-10-02/main_complete_locked_index.csv",
+  "created_utc": "2026-11-04T05:57:43.623962+00:00",
+  "expected_shapes": 1000,
+  "inputs": {
+    "analysis/gemm_dataset_v1_2026-10-02/accepted_locked_index.csv": "730e37d96d7d9d2529926c4e174fa54fea92e8d3f11d8c08dc44803c05ed777f",
+    "analysis/gemm_dataset_v1_2026-10-02/main_complete_locked_index.csv": "b7757ea832fbc6bc6b3f05a2eca7f626b5b5178405fbd4adea5f4f55526684fd",
+    "analysis/gemm_dataset_v1_2026-10-02/main_complete_unlocked_conditions.csv": "de7be30f318c036185f8da0ab53ef78205a1a63d5c2df8cf900ccc54e767b65f",
+    "analysis/gemm_dataset_v1_2026-10-02/summary.json": "a296542e29ac37047cfeefcd38c2573c01a9baff71a1dda0a2dcef84abf3038a",
+    "analysis/integrated_rq14_2026-10-28/requirements.txt": "ab80abb920cd0589621526fcc8c36ab5e171eedab3e138121c902fc75e23de04",
+    "analysis/integrated_rq14_2026-10-28/run_rq14.py": "3fc0233e6d70476dd1abd2e514197a6938fcdb334d9c2807620ba568b894c43c",
+    "analysis/integrated_rq14_2026-10-28/runs/v2/frozen_protocol.json": "d0bf41e1f41a55e0fd7c9d1574549792ea306c1d2ab3c0dcab0b20a938ab0050",
+    "analysis/layer_full_fit_2026-11-04/components.py": "24fc045955f92dcfafbc46bac35f541966b6edacc819d3e8223445c344f697d2",
+    "analysis/layer_full_fit_2026-11-04/gemm_final.py": "ad25dfafcf36f20180b9f02a20fba5daa35fb2dd36911a4d1e91ca3ee642f2bd",
+    "analysis/layer_spec_v1_2026-10-02/gemm_internal_roles.json": "6f88cbd71d5de3744fee5199dfb93c201824e37c69fa1833937f1e69b2cfaa6b",
+    "analysis/learner_comparison_2026-10-28/compare_learners.py": "a6db2935a75ab5dcfc4dfb55e00d40b3abfff32e2cb52050230d11b3dc7d7f0f",
+    "analysis/learner_comparison_2026-10-28/runs/v1/accuracy_first_selection_validation_only.csv": "9228b859f40836b6a131079ccd233eff0a98aa2534946b38ea654e44677a707f",
+    "analysis/learner_comparison_2026-10-28/runs/v1/aggregate_metrics.csv": "091f4fbdfa3f60e0ada3225f41e5b4d5a47d60de50fd924401eb6d4798f03512",
+    "analysis/learner_comparison_2026-10-28/runs/v1/frozen_protocol.json": "33945abf994363715b60263a35fa80ebacd5f00fa489fae4adaac3fc22a9bad4",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_direct_2652_20261028.joblib": "d8c23cc579da6e7b8e163ad6e1a69167e51efd135cd78e59022b970dd061bdf3",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_direct_2652_20261029.joblib": "b7020a10bf27012ecb3aeac448b8c190db2a3252c3923af385480bae31f51cda",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_direct_2652_20261030.joblib": "a433aa81a93d2c338161d9ffe501a118c526f7af805437e756c7d5f7a1578e77",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_direct_3345_20261028.joblib": "e20d46b53690caff0ebd426168feb6a87b2459a0b47349a89011bad05a1d518c",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_direct_3345_20261029.joblib": "5e4448f1ada9c5cffc88b23e9fb5e2011e01d465c5fac6606803bd79ceab90b9",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_direct_3345_20261030.joblib": "90009fe25c33c0ed3e05133e41724cc37770c005f00e71c90c6439adf9ca3d12",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_normalized_3345_20261028.joblib": "6ed4c687663aa5eb23d3e491ba9f127bb2a70effb806993304c7d9c7cdf624fd",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_normalized_3345_20261029.joblib": "3a59377a7881838dc224032801e86cd641a7a55a9b868d09039deb62925ba08e",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_allocate_normalized_3345_20261030.joblib": "53e2b91d9c16d4990204cd8e21922528336a25fe4cdb852a1dd492f7d829f83d",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_graph_direct_3345_20261028.joblib": "e105621834b2d37e8c168ce42a6c12f58f71979b51b83896ee02b4d9ba5bd00a",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_graph_direct_3345_20261029.joblib": "16e69eb9576c98304b12709b9a2c972ad409a049b6e7dde0306a49dac4cd8480",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_graph_direct_3345_20261030.joblib": "5dcc8b0a310ca5c53fd53ec7cdb2160a4acbe7981770c3139570386f012d1abd",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_graph_normalized_3345_20261028.joblib": "fcaac4ba3ace2af1fc403dd57ffb24cab89e90f724ec27ed89959d8fb8db17ae",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_graph_normalized_3345_20261029.joblib": "52aaa469bf80978a83e49a4d8a16839ef654f78dc7dd7442c2c3797e793c9f18",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_graph_normalized_3345_20261030.joblib": "ffb51ae5914253ef2d6e78d9c7e48983b9e96a62f3602ca320953cc2db9658bc",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_prealloc_direct_3345_20261028.joblib": "cba56e6e3e3400540fec6d8427864dfaa84ed93279bc40babbe5bd460fd46cda",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_prealloc_direct_3345_20261029.joblib": "fb6f81bfa85a724534d0352e2f409d49211944646455e145c7340999dee610a8",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_prealloc_direct_3345_20261030.joblib": "39b93804f082202e9295c745dc18d09dd32ac51f75339c6a10709166facef193",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_prealloc_normalized_3345_20261028.joblib": "969c4847438ba4721bfaf5d8076e7cebd3d575201f5989a2b1c262c2a0596cd5",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_prealloc_normalized_3345_20261029.joblib": "3d9e386339fbb9f1c6633d67f3be158c3c29804307375786deed99564254a3cd",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp16_prealloc_normalized_3345_20261030.joblib": "d0d58dd5790f0107b3b8d51c1f6f457b71a94b616010e7e711ad2eff049e1877",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_direct_3345_20261028.joblib": "963102611ad4d3ddd340610474185efbc4c29883b7fa061ccd08ba455da59061",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_direct_3345_20261029.joblib": "e210b3ba9ed95002790753a4d9080c3fbd7e5c9d2a492a48c4327e03303f4847",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_direct_3345_20261030.joblib": "75c883cc47dad535990ca4c27da508da817e7fa5874920f40e10b92e32272356",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_normalized_2652_20261028.joblib": "1d326d7e50891f57f1b30e3c619ca6680c7e6826b3cd37db62052f9313fe7b11",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_normalized_2652_20261029.joblib": "9937f545158b429b3f5b459ded88245dc465746644b297042e973c016207039b",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_normalized_2652_20261030.joblib": "d73bd99e05974c166304f5383bc82602bda8ff5a74dc8098eeeaea5caaa90435",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_normalized_3345_20261028.joblib": "053fe89142b4fa6e845d7ddeca384ea81f8290cb2fa6b827799f56dfae8f858e",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_normalized_3345_20261029.joblib": "8f0c4295b403986e93a2cc669a7e9db110d629bb6c5945bbb9dc288da0d08755",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_allocate_normalized_3345_20261030.joblib": "544e13cd4935fa4d52bf097592bd50167b704c799d5dfcbf3d180e03f145f983",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_graph_direct_3345_20261028.joblib": "ea034ff587ee848a2565d0ff0719217b6ffa37ec71289bbed54ec3b6b2ba8ae7",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_graph_direct_3345_20261029.joblib": "ceb17aff9bd9128c8ec271a4dc10e7326d88e79a61aa2371cb1252bdc49c5c99",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_graph_direct_3345_20261030.joblib": "b61930546ba0867293cc6a79cbbc89a061186b6a0ded939db40d6a36bb7d9628",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_graph_normalized_3345_20261028.joblib": "cf1467162af3fcf96bf314975c7eb599d9046b8005d38caed1a9afd37bf86faa",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_graph_normalized_3345_20261029.joblib": "d54a4116d7f1b1ed318a73497623bea4e41ab33dd8e938ec9a1b4e8a44519569",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_graph_normalized_3345_20261030.joblib": "433b6364a3156fede0f8a1bb7fe7918c52ea8f657a96bbee255f2a45035fcaae",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_prealloc_direct_3345_20261028.joblib": "dd970ceb7de5fc1ab58eedf52b4b5a40f44e1fdebdbd42ed179eae142b4bf66c",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_prealloc_direct_3345_20261029.joblib": "1b1e01448dd697fc9a170bf1181a77ea7fc92cf3cf7ff6cdd1f4bf993ebf77f2",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_prealloc_direct_3345_20261030.joblib": "3bad38b3c769c933afdf380e6e98b4f09d592a6bce51998afba3f5669ebd4cc0",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_prealloc_normalized_3345_20261028.joblib": "1f6733ad91a13f15bae60dc44f9e4b8e82bb29e2d50d50636502ebe7a4f610c3",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_prealloc_normalized_3345_20261029.joblib": "5740aaf6309de0ce96f362193916843e559cba4683f23e2551902390cc227596",
+    "analysis/learner_comparison_2026-10-28/runs/v1/models/rq1_rf_fp32_prealloc_normalized_3345_20261030.joblib": "49c90c241a121dffa8a32bf6542fcf8365f7dc62ab1435ee9e0b2673d9f70eaf",
+    "analysis/learner_comparison_2026-10-28/runs/v1/source_selection_before_target_access.json": "baec314d78642659efcb812b1b024dfb7481576f6a2df7a0c022ada0bc45257b",
+    "analysis/learner_comparison_2026-10-28/runs/v1/validation_predictions.csv": "692f07ccaa1ba9081fcb16d182907faa055c56da88d8e2443b6e593ee674279a"
+  },
+  "measurement_index": "analysis/gemm_dataset_v1_2026-10-02/accepted_locked_index.csv",
+  "models": [
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp16_allocate_selected_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "e904e84f56af2275368f87778e018b89f6b428935804a80d96c2ebb4b8cc793e",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp16_allocate_baseline_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "64b8d49ebd8c30674dd69a62223d2a0d4652758d325e104a41ab1bdde8770caf",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp16_allocate_selected_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "d86331615a7279f24a5768805402e5ed85f7c63c3b66a3e6eae4847cb7dd858f",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp16_allocate_baseline_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "6059bfab399d6ffd8ae910887d8301921c21ade8f746bd056eca00d0fda5cabb",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp16_allocate_selected_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "9f65e5075c8fce5a3c000cc86b25d5d19a5a517c32ed8a474d25576fcf3f9ad3",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp16_allocate_baseline_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "ee82a296d2a63a1467952d492a164b3b02fa19f200ea8a52b531dde2ccdb4591",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp16_prealloc_selected_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "989157be5b4846b2383d548bd758667712b2a7c2d5a357cd56cea7fa089871ef",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp16_prealloc_baseline_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "ded84958c54829d85e228c3bb692563af06060be7481b120f34472fb2d791a39",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp16_prealloc_selected_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "a2041789560ac8092c2873883ee539ae43aa7d311909eae2d141529eecf39499",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp16_prealloc_baseline_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "2d187fecc618d60823ebf2e2fcb42417493836dd4aec2d2965db9cd6e01bd8e9",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp16_prealloc_selected_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "6aeb4932ef063f133ec6954d2775882e393da7e9b261e89247d7a9fbde1e0a30",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp16_prealloc_baseline_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "998eea0ef9361ba047560087989dc7af316217fc5563dba86dbf5fa52c50c71f",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp16_graph_selected_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "8948f8c4835504cea7f0a313625306b459eb21d8a04cbdb0f088ac8ca6af0f11",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp16_graph_baseline_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "b48207e3b50ff283f68bc8bae203b35a756e7ee5ec4d7b9c37f75dd8809e869a",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp16_graph_selected_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "efe9ffd10c88675e6a4ffc54bca6a377afff7370e08df40a763f5b90d5ab880e",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp16_graph_baseline_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "009d361f5ef57c8d5ca6dc751c6b269fe45bd70b01993a28280d0168394431de",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp16_graph_selected_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "fc36bbe2cb6eccf00df467daa0dec032fab2310f7c3b39e9f9885f25625c3bd7",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp16_graph_baseline_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "77b9c5c0610331ba05586206d16cb042be85e0f790accf77e5696f3003b4f5f1",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp32_allocate_selected_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "6a78b063991ae7e11af5bb17e215d9480ba0676eccd97a76de94a3ea780537ab",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp32_allocate_baseline_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "3f0c94fb42e2414732c13e45e0547a2029231274ee947973edd23e3fe63c38ed",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp32_allocate_selected_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "6b230a27d287834b6baad921987d4f262bac1f4c7cc1f8474e86cdc7df43a68a",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp32_allocate_baseline_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "781a2eef56fda0eb5902ac514612ea8a6a51e3ae2cc074a590c1cf0e6dcb3a67",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp32_allocate_selected_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "e9ab860558c1d97f4f280ea062c5971280cf8c0180e812041932eb996c70bd7f",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "allocate",
+      "n": 3345,
+      "path": "models/RQ1_fp32_allocate_baseline_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "5a4b82e99539736ff2739ec85b704602aa3c00bbbed251a78e170677eb624271",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp32_prealloc_selected_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "c2404e32d3038dda8501a194ae57b2c435d8cb9003ea925d5694f9269a9eca30",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp32_prealloc_baseline_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "e6bae66f44a40379460b0480050cf18719cedb34e532c034079ea9c3f1928840",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp32_prealloc_selected_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "70df28064cdf5d10a8e9958785eaa1839f34d528f1c6f7fc6bc3f33efe9c45aa",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp32_prealloc_baseline_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "be7ac0f6afd30c30ed5907eaf37f80823bf2a034e5a0c98cf3898940159c4306",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp32_prealloc_selected_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "325c565bd3bb57f73c6613c1145e95e8ee951f74009fb9bea405d98faf17e7fe",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "prealloc",
+      "n": 3345,
+      "path": "models/RQ1_fp32_prealloc_baseline_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "81b06b51a0504d9bfcec5c04d0211d7fc0d421ecd7f24d635912e2423477ad4b",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp32_graph_selected_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "ee400ded874076b363fb35bd5c208be72b0eaec3a29da13ffa071a36caa6fc14",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp32_graph_baseline_20261028.joblib",
+      "rq": "RQ1",
+      "seed": 20261028,
+      "sha256": "bd3c7fa8c93b14215a7251ece75d1d03bef075aac9745dfba038958d155cafc2",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp32_graph_selected_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "208d6b43fa12ac4b193727e4f95e464fd44b2454216869ef9f0aa40ee99bca7f",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp32_graph_baseline_20261029.joblib",
+      "rq": "RQ1",
+      "seed": 20261029,
+      "sha256": "106619a81cc6e1bfb2d071ee422d95362e4cc911e2dfdbb6cd4e252c58f30930",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "normalized",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp32_graph_selected_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "6e3ba098baeb880b2ddbe4b50c30d576edbd56402a64164c16a18e5301d47c30",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "direct",
+      "mode": "graph",
+      "n": 3345,
+      "path": "models/RQ1_fp32_graph_baseline_20261030.joblib",
+      "rq": "RQ1",
+      "seed": 20261030,
+      "sha256": "4cd6c802cafe4d579ca63277c5b06fd067c0cfa37f0c635dc4659d615fc7f984",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "constant_ratio",
+      "mode": "prealloc",
+      "n": 100,
+      "path": "models/RQ4_fp16_prealloc_selected_20261028.joblib",
+      "rq": "RQ4",
+      "seed": 20261028,
+      "sha256": "1766b8833d0ee7c78f2eb2951f97054c17f715dc4bb0e17b7167313a0c522e40",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "prealloc",
+      "n": 0,
+      "path": "models/RQ4_fp16_prealloc_baseline_20261028.joblib",
+      "rq": "RQ4",
+      "seed": 20261028,
+      "sha256": "e06afc2291bd0ec42b63fd8aa4d991032d3a39d4b1d213f78b913c704c074c55",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "constant_ratio",
+      "mode": "prealloc",
+      "n": 100,
+      "path": "models/RQ4_fp16_prealloc_selected_20261029.joblib",
+      "rq": "RQ4",
+      "seed": 20261029,
+      "sha256": "86467bec57ee76bd46b7e27efc4313ecaae71cea7f1f32972c1e1c78ff0cc470",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "prealloc",
+      "n": 0,
+      "path": "models/RQ4_fp16_prealloc_baseline_20261029.joblib",
+      "rq": "RQ4",
+      "seed": 20261029,
+      "sha256": "0cc6b9a02cdacb8b46b2754c6c62f536cfcd080ac81bc28d37695accf6fd78cc",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "constant_ratio",
+      "mode": "prealloc",
+      "n": 100,
+      "path": "models/RQ4_fp16_prealloc_selected_20261030.joblib",
+      "rq": "RQ4",
+      "seed": 20261030,
+      "sha256": "b69b3e951b471fb43f710d78e949213c064884c36116ef70c8a72269397b0ee8",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "prealloc",
+      "n": 0,
+      "path": "models/RQ4_fp16_prealloc_baseline_20261030.joblib",
+      "rq": "RQ4",
+      "seed": 20261030,
+      "sha256": "dc4021e9f7a62fd221f7407f5539f9777f3231907af816c7164c792e4d195d77",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "graph",
+      "n": 300,
+      "path": "models/RQ4_fp16_graph_selected_20261028.joblib",
+      "rq": "RQ4",
+      "seed": 20261028,
+      "sha256": "212b4f2812cf2df77c05b38e333694a57decf7f35c7c2dc44c529bf823bee7bf",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "graph",
+      "n": 0,
+      "path": "models/RQ4_fp16_graph_baseline_20261028.joblib",
+      "rq": "RQ4",
+      "seed": 20261028,
+      "sha256": "4e54617845f018f3044cf2cb4e070451248aff5606a0fefb39c24cacaa1b40b6",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "graph",
+      "n": 300,
+      "path": "models/RQ4_fp16_graph_selected_20261029.joblib",
+      "rq": "RQ4",
+      "seed": 20261029,
+      "sha256": "19de50689e73b11c358c3be2570cf1eb5e2bed371fb58122e7e8281b41f712f0",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "graph",
+      "n": 0,
+      "path": "models/RQ4_fp16_graph_baseline_20261029.joblib",
+      "rq": "RQ4",
+      "seed": 20261029,
+      "sha256": "3e7002ca31c0fb64e65fd42854f662f71b955101ece11c08e6529fe08abb9994",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "graph",
+      "n": 300,
+      "path": "models/RQ4_fp16_graph_selected_20261030.joblib",
+      "rq": "RQ4",
+      "seed": 20261030,
+      "sha256": "a03e59e3360e71751434610006f8ab00dbe0f4cd531748ee60ab0656c4017d01",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp16",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "graph",
+      "n": 0,
+      "path": "models/RQ4_fp16_graph_baseline_20261030.joblib",
+      "rq": "RQ4",
+      "seed": 20261030,
+      "sha256": "5c2b03e171a9eff5aa8f106db5242aa43b2b1a70033dbf6ad703a8a121619aea",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "prealloc",
+      "n": 100,
+      "path": "models/RQ4_fp32_prealloc_selected_20261028.joblib",
+      "rq": "RQ4",
+      "seed": 20261028,
+      "sha256": "9c944bb6ad8f4e4d75a984fe2038c7db2e5b689c6ee19b1b2c2daf658e166d94",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "prealloc",
+      "n": 0,
+      "path": "models/RQ4_fp32_prealloc_baseline_20261028.joblib",
+      "rq": "RQ4",
+      "seed": 20261028,
+      "sha256": "8354e874774fd2554bf4cb1e42d9addd561e87ebf9690918ec1d3a03bfea5fc2",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "prealloc",
+      "n": 100,
+      "path": "models/RQ4_fp32_prealloc_selected_20261029.joblib",
+      "rq": "RQ4",
+      "seed": 20261029,
+      "sha256": "8582cfc12e0a761cc17ca2fe16417646b7fb58578742acd9f9fccda268c279b8",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "prealloc",
+      "n": 0,
+      "path": "models/RQ4_fp32_prealloc_baseline_20261029.joblib",
+      "rq": "RQ4",
+      "seed": 20261029,
+      "sha256": "e2cdb8c19703f4c4822a5f1480b3772d8c1c8d387373c8d1df6a7f87f3bde3bc",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "prealloc",
+      "n": 100,
+      "path": "models/RQ4_fp32_prealloc_selected_20261030.joblib",
+      "rq": "RQ4",
+      "seed": 20261030,
+      "sha256": "c9f98c14ea4fa997bea007463dd9bbbbcb9491ff5b6ad8998a72ebcd8d99c15b",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "prealloc",
+      "n": 0,
+      "path": "models/RQ4_fp32_prealloc_baseline_20261030.joblib",
+      "rq": "RQ4",
+      "seed": 20261030,
+      "sha256": "1cc375a8e23b691fd5641a97c96e15523866d747d5d8d95393eedc290d566b57",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "graph",
+      "n": 100,
+      "path": "models/RQ4_fp32_graph_selected_20261028.joblib",
+      "rq": "RQ4",
+      "seed": 20261028,
+      "sha256": "a49cde84afe5f3969fd5c32e5357f8c4ee64be50a8109eda15b450fb2158840d",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "graph",
+      "n": 0,
+      "path": "models/RQ4_fp32_graph_baseline_20261028.joblib",
+      "rq": "RQ4",
+      "seed": 20261028,
+      "sha256": "c796c4a10e8aeac6b13a6719e78ea38f942450530e1ff9a66c5475279c7e8c13",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "graph",
+      "n": 100,
+      "path": "models/RQ4_fp32_graph_selected_20261029.joblib",
+      "rq": "RQ4",
+      "seed": 20261029,
+      "sha256": "8fc6fd582412d65fbad843003ce58d619c234512393457c31c273c90c6b5d33c",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "graph",
+      "n": 0,
+      "path": "models/RQ4_fp32_graph_baseline_20261029.joblib",
+      "rq": "RQ4",
+      "seed": 20261029,
+      "sha256": "2ae144b8eeae9b7d5f233ae25406f1fd7e986439744c74c822ed59cd77944a88",
+      "variant": "baseline"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "residual",
+      "mode": "graph",
+      "n": 100,
+      "path": "models/RQ4_fp32_graph_selected_20261030.joblib",
+      "rq": "RQ4",
+      "seed": 20261030,
+      "sha256": "d7ad2961a5b4f241504987914ab9c173163bfd992a72c89d48e0ce028c942059",
+      "variant": "selected"
+    },
+    {
+      "dtype": "fp32",
+      "learner": "rf",
+      "method": "zero",
+      "mode": "graph",
+      "n": 0,
+      "path": "models/RQ4_fp32_graph_baseline_20261030.joblib",
+      "rq": "RQ4",
+      "seed": 20261030,
+      "sha256": "5a5a9ce6a4533aa59e1fba60bea30137ffa63b8b1ea45ec1cabcd205b4aa1edf",
+      "variant": "baseline"
+    }
+  ],
+  "paired_bootstrap": "1000 shape resamples per seed; seeds are not independent shape samples.",
+  "raw_database": "analysis/remeasure_720_v4_result_2026-10-01/recomputed/full_720_remeasure3_20261001/results.sqlite3",
+  "raw_database_sha256": "6a2db7e55ea1f19dcd7d54240c00b823b48c40888ff04a3a449d2e265323361b",
+  "sealed_times_read": false,
+  "seeds": [
+    20261028,
+    20261029,
+    20261030
+  ],
+  "selected": [
+    {
+      "dtype": "fp16",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "16.822529899518738",
+      "mean_mape_pct": "11.381588652022728",
+      "mean_p90_pct": "24.51260504758371",
+      "method": "direct",
+      "mode": "allocate",
+      "n": 3345,
+      "rq": "RQ1",
+      "sd_mae_us": "0.06273550322299203",
+      "sd_mape_pct": "0.0565590246075636",
+      "sd_p90_pct": "0.8540980420014426"
+    },
+    {
+      "dtype": "fp16",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "16.852526654927658",
+      "mean_mape_pct": "11.391713631647791",
+      "mean_p90_pct": "24.56659314892258",
+      "method": "direct",
+      "mode": "prealloc",
+      "n": 3345,
+      "rq": "RQ1",
+      "sd_mae_us": "0.1791964881088924",
+      "sd_mape_pct": "0.0647015706188699",
+      "sd_p90_pct": "0.8908136748558161"
+    },
+    {
+      "dtype": "fp16",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "16.94160641731472",
+      "mean_mape_pct": "11.945039009942315",
+      "mean_p90_pct": "25.257342882465654",
+      "method": "direct",
+      "mode": "graph",
+      "n": 3345,
+      "rq": "RQ1",
+      "sd_mae_us": "0.1926904532331322",
+      "sd_mape_pct": "0.038790085184684985",
+      "sd_p90_pct": "0.3798106407840629"
+    },
+    {
+      "dtype": "fp32",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "20.46402160883198",
+      "mean_mape_pct": "7.0422490899093555",
+      "mean_p90_pct": "15.09474575567335",
+      "method": "normalized",
+      "mode": "allocate",
+      "n": 3345,
+      "rq": "RQ1",
+      "sd_mae_us": "0.3318761018078004",
+      "sd_mape_pct": "0.04820190628511605",
+      "sd_p90_pct": "0.07261657314182975"
+    },
+    {
+      "dtype": "fp32",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "20.44704772732178",
+      "mean_mape_pct": "7.0433900850647175",
+      "mean_p90_pct": "15.141708176277128",
+      "method": "normalized",
+      "mode": "prealloc",
+      "n": 3345,
+      "rq": "RQ1",
+      "sd_mae_us": "0.3272757161547178",
+      "sd_mape_pct": "0.052340752467861205",
+      "sd_p90_pct": "0.051854549118762396"
+    },
+    {
+      "dtype": "fp32",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "20.40277053145488",
+      "mean_mape_pct": "7.3232288884633805",
+      "mean_p90_pct": "15.643498105350659",
+      "method": "normalized",
+      "mode": "graph",
+      "n": 3345,
+      "rq": "RQ1",
+      "sd_mae_us": "0.3865508276799393",
+      "sd_mape_pct": "0.03665070352581464",
+      "sd_p90_pct": "0.254104686699999"
+    },
+    {
+      "dtype": "fp16",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "9.71675960880673",
+      "mean_mape_pct": "9.136633834294354",
+      "mean_p90_pct": "18.30874586604385",
+      "method": "constant_ratio",
+      "mode": "prealloc",
+      "n": 100,
+      "rq": "RQ4",
+      "sd_mae_us": "0.5505025261984849",
+      "sd_mape_pct": "0.38496863563415",
+      "sd_p90_pct": "1.4193239972990808"
+    },
+    {
+      "dtype": "fp16",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "12.027049608955151",
+      "mean_mape_pct": "10.530909567511223",
+      "mean_p90_pct": "20.685969022962578",
+      "method": "residual",
+      "mode": "graph",
+      "n": 300,
+      "rq": "RQ4",
+      "sd_mae_us": "1.3114311142540271",
+      "sd_mape_pct": "0.8163643362196379",
+      "sd_p90_pct": "0.3654183176632724"
+    },
+    {
+      "dtype": "fp32",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "17.580991882854914",
+      "mean_mape_pct": "8.54343145385977",
+      "mean_p90_pct": "15.157591816940199",
+      "method": "residual",
+      "mode": "prealloc",
+      "n": 100,
+      "rq": "RQ4",
+      "sd_mae_us": "3.5095279049042087",
+      "sd_mape_pct": "0.6009133420535008",
+      "sd_p90_pct": "1.2189628253554654"
+    },
+    {
+      "dtype": "fp32",
+      "failures": "0",
+      "learner": "rf",
+      "mean_mae_us": "17.046059565722505",
+      "mean_mape_pct": "9.551544275455461",
+      "mean_p90_pct": "17.377857372344884",
+      "method": "residual",
+      "mode": "graph",
+      "n": 100,
+      "rq": "RQ4",
+      "sd_mae_us": "3.296498686280526",
+      "sd_mape_pct": "0.7492540703571616",
+      "sd_p90_pct": "3.308677966568635"
+    }
+  ],
+  "shapes": [
+    [
+      64,
+      80,
+      472
+    ],
+    [
+      64,
+      80,
+      3216
+    ],
+    [
+      64,
+      120,
+      616
+    ],
+    [
+      64,
+      168,
+      2320
+    ],
+    [
+      64,
+      888,
+      4040
+    ],
+    [
+      64,
+      1378,
+      177
+    ],
+    [
+      65,
+      311,
+      65
+    ],
+    [
+      65,
+      714,
+      1213
+    ],
+    [
+      67,
+      619,
+      142
+    ],
+    [
+      68,
+      95,
+      1886
+    ],
+    [
+      68,
+      4055,
+      71
+    ],
+    [
+      69,
+      141,
+      423
+    ],
+    [
+      69,
+      233,
+      1723
+    ],
+    [
+      69,
+      426,
+      1580
+    ],
+    [
+      69,
+      1763,
+      3951
+    ],
+    [
+      72,
+      96,
+      128
+    ],
+    [
+      72,
+      96,
+      280
+    ],
+    [
+      72,
+      128,
+      1392
+    ],
+    [
+      72,
+      152,
+      272
+    ],
+    [
+      72,
+      152,
+      320
+    ],
+    [
+      72,
+      166,
+      2434
+    ],
+    [
+      72,
+      176,
+      1800
+    ],
+    [
+      72,
+      256,
+      1080
+    ],
+    [
+      72,
+      296,
+      224
+    ],
+    [
+      72,
+      312,
+      864
+    ],
+    [
+      72,
+      400,
+      80
+    ],
+    [
+      72,
+      568,
+      664
+    ],
+    [
+      72,
+      1280,
+      856
+    ],
+    [
+      72,
+      1472,
+      2672
+    ],
+    [
+      72,
+      1536,
+      304
+    ],
+    [
+      72,
+      3072,
+      832
+    ],
+    [
+      73,
+      184,
+      710
+    ],
+    [
+      73,
+      721,
+      642
+    ],
+    [
+      74,
+      88,
+      308
+    ],
+    [
+      75,
+      117,
+      111
+    ],
+    [
+      75,
+      2269,
+      835
+    ],
+    [
+      76,
+      81,
+      67
+    ],
+    [
+      76,
+      166,
+      85
+    ],
+    [
+      77,
+      215,
+      888
+    ],
+    [
+      77,
+      2387,
+      1251
+    ],
+    [
+      78,
+      949,
+      2083
+    ],
+    [
+      78,
+      1847,
+      114
+    ],
+    [
+      79,
+      199,
+      2540
+    ],
+    [
+      80,
+      88,
+      3408
+    ],
+    [
+      80,
+      123,
+      197
+    ],
+    [
+      80,
+      184,
+      1072
+    ],
+    [
+      80,
+      248,
+      3264
+    ],
+    [
+      80,
+      256,
+      1152
+    ],
+    [
+      80,
+      280,
+      600
+    ],
+    [
+      80,
+      504,
+      4032
+    ],
+    [
+      80,
+      526,
+      773
+    ],
+    [
+      80,
+      904,
+      552
+    ],
+    [
+      80,
+      1008,
+      776
+    ],
+    [
+      80,
+      1056,
+      104
+    ],
+    [
+      80,
+      2192,
+      160
+    ],
+    [
+      80,
+      2768,
+      696
+    ],
+    [
+      80,
+      2896,
+      328
+    ],
+    [
+      80,
+      3707,
+      1841
+    ],
+    [
+      80,
+      4042,
+      361
+    ],
+    [
+      81,
+      761,
+      3369
+    ],
+    [
+      81,
+      1149,
+      723
+    ],
+    [
+      81,
+      1983,
+      954
+    ],
+    [
+      82,
+      3365,
+      822
+    ],
+    [
+      83,
+      424,
+      154
+    ],
+    [
+      83,
+      2639,
+      393
+    ],
+    [
+      84,
+      343,
+      129
+    ],
+    [
+      88,
+      96,
+      952
+    ],
+    [
+      88,
+      104,
+      80
+    ],
+    [
+      88,
+      176,
+      1136
+    ],
+    [
+      88,
+      256,
+      712
+    ],
+    [
+      88,
+      336,
+      232
+    ],
+    [
+      88,
+      999,
+      117
+    ],
+    [
+      88,
+      1864,
+      256
+    ],
+    [
+      88,
+      3744,
+      320
+    ],
+    [
+      89,
+      263,
+      542
+    ],
+    [
+      90,
+      89,
+      224
+    ],
+    [
+      91,
+      114,
+      71
+    ],
+    [
+      91,
+      1680,
+      689
+    ],
+    [
+      91,
+      3042,
+      215
+    ],
+    [
+      92,
+      113,
+      153
+    ],
+    [
+      92,
+      838,
+      87
+    ],
+    [
+      92,
+      1176,
+      420
+    ],
+    [
+      93,
+      1239,
+      721
+    ],
+    [
+      94,
+      109,
+      231
+    ],
+    [
+      94,
+      2004,
+      124
+    ],
+    [
+      95,
+      685,
+      248
+    ],
+    [
+      95,
+      839,
+      704
+    ],
+    [
+      95,
+      893,
+      1659
+    ],
+    [
+      95,
+      1105,
+      1473
+    ],
+    [
+      96,
+      72,
+      104
+    ],
+    [
+      96,
+      72,
+      1968
+    ],
+    [
+      96,
+      88,
+      376
+    ],
+    [
+      96,
+      96,
+      568
+    ],
+    [
+      96,
+      120,
+      2416
+    ],
+    [
+      96,
+      136,
+      184
+    ],
+    [
+      96,
+      168,
+      648
+    ],
+    [
+      96,
+      544,
+      304
+    ],
+    [
+      96,
+      840,
+      1352
+    ],
+    [
+      96,
+      880,
+      1160
+    ],
+    [
+      97,
+      1478,
+      1356
+    ],
+    [
+      98,
+      114,
+      121
+    ],
+    [
+      98,
+      211,
+      216
+    ],
+    [
+      99,
+      126,
+      1386
+    ],
+    [
+      99,
+      2823,
+      1248
+    ],
+    [
+      100,
+      127,
+      212
+    ],
+    [
+      101,
+      168,
+      2840
+    ],
+    [
+      102,
+      267,
+      188
+    ],
+    [
+      102,
+      1892,
+      800
+    ],
+    [
+      103,
+      247,
+      460
+    ],
+    [
+      103,
+      334,
+      296
+    ],
+    [
+      104,
+      128,
+      464
+    ],
+    [
+      104,
+      160,
+      392
+    ],
+    [
+      104,
+      216,
+      240
+    ],
+    [
+      104,
+      312,
+      1280
+    ],
+    [
+      104,
+      376,
+      152
+    ],
+    [
+      104,
+      752,
+      3488
+    ],
+    [
+      104,
+      1160,
+      944
+    ],
+    [
+      104,
+      1344,
+      232
+    ],
+    [
+      104,
+      3264,
+      552
+    ],
+    [
+      106,
+      142,
+      186
+    ],
+    [
+      109,
+      2928,
+      83
+    ],
+    [
+      110,
+      339,
+      1101
+    ],
+    [
+      111,
+      770,
+      375
+    ],
+    [
+      111,
+      1357,
+      2199
+    ],
+    [
+      112,
+      88,
+      3064
+    ],
+    [
+      112,
+      128,
+      2408
+    ],
+    [
+      112,
+      216,
+      616
+    ],
+    [
+      112,
+      336,
+      2968
+    ],
+    [
+      112,
+      368,
+      3136
+    ],
+    [
+      112,
+      480,
+      512
+    ],
+    [
+      112,
+      576,
+      1128
+    ],
+    [
+      112,
+      688,
+      1448
+    ],
+    [
+      112,
+      704,
+      120
+    ],
+    [
+      112,
+      1504,
+      360
+    ],
+    [
+      112,
+      1696,
+      1152
+    ],
+    [
+      112,
+      2920,
+      112
+    ],
+    [
+      112,
+      3376,
+      168
+    ],
+    [
+      113,
+      921,
+      67
+    ],
+    [
+      115,
+      353,
+      507
+    ],
+    [
+      116,
+      668,
+      325
+    ],
+    [
+      117,
+      260,
+      2631
+    ],
+    [
+      118,
+      1321,
+      193
+    ],
+    [
+      118,
+      3138,
+      82
+    ],
+    [
+      119,
+      119,
+      1021
+    ],
+    [
+      119,
+      240,
+      2641
+    ],
+    [
+      119,
+      1972,
+      3424
+    ],
+    [
+      120,
+      160,
+      128
+    ],
+    [
+      120,
+      312,
+      488
+    ],
+    [
+      120,
+      440,
+      144
+    ],
+    [
+      120,
+      928,
+      3096
+    ],
+    [
+      120,
+      1696,
+      768
+    ],
+    [
+      120,
+      1904,
+      1320
+    ],
+    [
+      120,
+      2185,
+      528
+    ],
+    [
+      120,
+      3864,
+      472
+    ],
+    [
+      120,
+      4032,
+      1792
+    ],
+    [
+      122,
+      280,
+      286
+    ],
+    [
+      122,
+      1731,
+      65
+    ],
+    [
+      126,
+      74,
+      1412
+    ],
+    [
+      126,
+      2621,
+      142
+    ],
+    [
+      128,
+      168,
+      448
+    ],
+    [
+      128,
+      232,
+      1032
+    ],
+    [
+      128,
+      248,
+      1992
+    ],
+    [
+      128,
+      432,
+      176
+    ],
+    [
+      128,
+      688,
+      176
+    ],
+    [
+      128,
+      760,
+      96
+    ],
+    [
+      128,
+      1352,
+      120
+    ],
+    [
+      128,
+      3074,
+      278
+    ],
+    [
+      130,
+      173,
+      527
+    ],
+    [
+      130,
+      719,
+      129
+    ],
+    [
+      131,
+      3820,
+      319
+    ],
+    [
+      133,
+      3861,
+      174
+    ],
+    [
+      136,
+      288,
+      400
+    ],
+    [
+      136,
+      304,
+      3912
+    ],
+    [
+      136,
+      1024,
+      792
+    ],
+    [
+      136,
+      1056,
+      208
+    ],
+    [
+      136,
+      2096,
+      2584
+    ],
+    [
+      136,
+      2432,
+      104
+    ],
+    [
+      138,
+      115,
+      3507
+    ],
+    [
+      139,
+      189,
+      3962
+    ],
+    [
+      139,
+      386,
+      270
+    ],
+    [
+      139,
+      394,
+      100
+    ],
+    [
+      141,
+      438,
+      2555
+    ],
+    [
+      141,
+      910,
+      376
+    ],
+    [
+      142,
+      525,
+      401
+    ],
+    [
+      144,
+      160,
+      2216
+    ],
+    [
+      144,
+      176,
+      168
+    ],
+    [
+      144,
+      312,
+      192
+    ],
+    [
+      144,
+      432,
+      264
+    ],
+    [
+      144,
+      712,
+      1048
+    ],
+    [
+      144,
+      1008,
+      72
+    ],
+    [
+      144,
+      2016,
+      464
+    ],
+    [
+      144,
+      2536,
+      2384
+    ],
+    [
+      144,
+      2736,
+      968
+    ],
+    [
+      147,
+      416,
+      355
+    ],
+    [
+      149,
+      185,
+      784
+    ],
+    [
+      149,
+      189,
+      1187
+    ],
+    [
+      150,
+      120,
+      2651
+    ],
+    [
+      150,
+      357,
+      228
+    ],
+    [
+      151,
+      514,
+      175
+    ],
+    [
+      152,
+      480,
+      2336
+    ],
+    [
+      152,
+      1248,
+      592
+    ],
+    [
+      153,
+      161,
+      1895
+    ],
+    [
+      154,
+      568,
+      1602
+    ],
+    [
+      155,
+      389,
+      1731
+    ],
+    [
+      156,
+      606,
+      652
+    ],
+    [
+      158,
+      157,
+      69
+    ],
+    [
+      158,
+      530,
+      938
+    ],
+    [
+      159,
+      105,
+      1120
+    ],
+    [
+      159,
+      669,
+      339
+    ],
+    [
+      159,
+      949,
+      109
+    ],
+    [
+      159,
+      3574,
+      163
+    ],
+    [
+      160,
+      128,
+      568
+    ],
+    [
+      160,
+      169,
+      278
+    ],
+    [
+      160,
+      288,
+      200
+    ],
+    [
+      160,
+      328,
+      136
+    ],
+    [
+      160,
+      504,
+      816
+    ],
+    [
+      160,
+      527,
+      3882
+    ],
+    [
+      160,
+      528,
+      200
+    ],
+    [
+      160,
+      3440,
+      600
+    ],
+    [
+      161,
+      69,
+      503
+    ],
+    [
+      161,
+      69,
+      2559
+    ],
+    [
+      163,
+      3863,
+      422
+    ],
+    [
+      164,
+      2876,
+      71
+    ],
+    [
+      165,
+      66,
+      1527
+    ],
+    [
+      167,
+      801,
+      394
+    ],
+    [
+      167,
+      2254,
+      1416
+    ],
+    [
+      168,
+      584,
+      624
+    ],
+    [
+      168,
+      1696,
+      640
+    ],
+    [
+      168,
+      2584,
+      416
+    ],
+    [
+      169,
+      243,
+      2964
+    ],
+    [
+      171,
+      179,
+      1570
+    ],
+    [
+      171,
+      269,
+      1236
+    ],
+    [
+      171,
+      1024,
+      2179
+    ],
+    [
+      172,
+      111,
+      91
+    ],
+    [
+      174,
+      106,
+      88
+    ],
+    [
+      176,
+      64,
+      160
+    ],
+    [
+      176,
+      112,
+      1168
+    ],
+    [
+      176,
+      136,
+      88
+    ],
+    [
+      176,
+      208,
+      72
+    ],
+    [
+      176,
+      280,
+      168
+    ],
+    [
+      176,
+      1224,
+      368
+    ],
+    [
+      176,
+      1658,
+      3436
+    ],
+    [
+      178,
+      325,
+      1284
+    ],
+    [
+      178,
+      609,
+      2400
+    ],
+    [
+      179,
+      137,
+      1482
+    ],
+    [
+      180,
+      2742,
+      560
+    ],
+    [
+      182,
+      2016,
+      325
+    ],
+    [
+      182,
+      2364,
+      2009
+    ],
+    [
+      183,
+      3035,
+      875
+    ],
+    [
+      184,
+      96,
+      104
+    ],
+    [
+      184,
+      118,
+      739
+    ],
+    [
+      184,
+      520,
+      72
+    ],
+    [
+      184,
+      688,
+      80
+    ],
+    [
+      184,
+      856,
+      232
+    ],
+    [
+      184,
+      902,
+      942
+    ],
+    [
+      184,
+      1096,
+      1248
+    ],
+    [
+      184,
+      1944,
+      200
+    ],
+    [
+      184,
+      2784,
+      248
+    ],
+    [
+      184,
+      3728,
+      80
+    ],
+    [
+      187,
+      3637,
+      470
+    ],
+    [
+      189,
+      110,
+      92
+    ],
+    [
+      190,
+      141,
+      1055
+    ],
+    [
+      190,
+      941,
+      150
+    ],
+    [
+      192,
+      144,
+      288
+    ],
+    [
+      192,
+      184,
+      360
+    ],
+    [
+      192,
+      480,
+      928
+    ],
+    [
+      192,
+      1880,
+      456
+    ],
+    [
+      192,
+      3032,
+      128
+    ],
+    [
+      193,
+      271,
+      631
+    ],
+    [
+      193,
+      1430,
+      85
+    ],
+    [
+      195,
+      269,
+      1061
+    ],
+    [
+      195,
+      2288,
+      509
+    ],
+    [
+      197,
+      220,
+      74
+    ],
+    [
+      198,
+      140,
+      342
+    ],
+    [
+      200,
+      72,
+      176
+    ],
+    [
+      200,
+      160,
+      4064
+    ],
+    [
+      200,
+      368,
+      496
+    ],
+    [
+      200,
+      1192,
+      496
+    ],
+    [
+      200,
+      1288,
+      144
+    ],
+    [
+      200,
+      1336,
+      464
+    ],
+    [
+      201,
+      266,
+      84
+    ],
+    [
+      201,
+      581,
+      1758
+    ],
+    [
+      201,
+      3819,
+      3446
+    ],
+    [
+      202,
+      619,
+      1116
+    ],
+    [
+      203,
+      1443,
+      151
+    ],
+    [
+      205,
+      2409,
+      1804
+    ],
+    [
+      207,
+      713,
+      3006
+    ],
+    [
+      207,
+      2008,
+      574
+    ],
+    [
+      208,
+      175,
+      1387
+    ],
+    [
+      208,
+      1976,
+      96
+    ],
+    [
+      208,
+      2144,
+      600
+    ],
+    [
+      208,
+      2176,
+      2304
+    ],
+    [
+      208,
+      2248,
+      928
+    ],
+    [
+      208,
+      2995,
+      624
+    ],
+    [
+      209,
+      94,
+      1291
+    ],
+    [
+      209,
+      730,
+      553
+    ],
+    [
+      212,
+      2063,
+      1393
+    ],
+    [
+      216,
+      152,
+      352
+    ],
+    [
+      216,
+      304,
+      80
+    ],
+    [
+      216,
+      3144,
+      952
+    ],
+    [
+      218,
+      1912,
+      847
+    ],
+    [
+      220,
+      1248,
+      220
+    ],
+    [
+      224,
+      68,
+      247
+    ],
+    [
+      224,
+      224,
+      1096
+    ],
+    [
+      224,
+      416,
+      3480
+    ],
+    [
+      224,
+      768,
+      272
+    ],
+    [
+      224,
+      1392,
+      136
+    ],
+    [
+      224,
+      2808,
+      96
+    ],
+    [
+      225,
+      2498,
+      200
+    ],
+    [
+      230,
+      1244,
+      613
+    ],
+    [
+      230,
+      3344,
+      391
+    ],
+    [
+      231,
+      181,
+      162
+    ],
+    [
+      232,
+      328,
+      1296
+    ],
+    [
+      232,
+      400,
+      3760
+    ],
+    [
+      232,
+      752,
+      144
+    ],
+    [
+      232,
+      1160,
+      104
+    ],
+    [
+      232,
+      1312,
+      680
+    ],
+    [
+      232,
+      2240,
+      64
+    ],
+    [
+      234,
+      492,
+      844
+    ],
+    [
+      236,
+      2630,
+      352
+    ],
+    [
+      237,
+      187,
+      475
+    ],
+    [
+      238,
+      131,
+      316
+    ],
+    [
+      240,
+      80,
+      96
+    ],
+    [
+      240,
+      208,
+      688
+    ],
+    [
+      243,
+      145,
+      381
+    ],
+    [
+      243,
+      829,
+      185
+    ],
+    [
+      245,
+      68,
+      3140
+    ],
+    [
+      246,
+      70,
+      3694
+    ],
+    [
+      247,
+      269,
+      1467
+    ],
+    [
+      248,
+      352,
+      304
+    ],
+    [
+      249,
+      89,
+      110
+    ],
+    [
+      249,
+      1381,
+      551
+    ],
+    [
+      251,
+      156,
+      154
+    ],
+    [
+      252,
+      3405,
+      1006
+    ],
+    [
+      252,
+      3719,
+      1287
+    ],
+    [
+      253,
+      203,
+      73
+    ],
+    [
+      256,
+      400,
+      80
+    ],
+    [
+      256,
+      704,
+      544
+    ],
+    [
+      256,
+      3336,
+      2288
+    ],
+    [
+      257,
+      226,
+      259
+    ],
+    [
+      258,
+      130,
+      221
+    ],
+    [
+      261,
+      1513,
+      799
+    ],
+    [
+      262,
+      118,
+      82
+    ],
+    [
+      263,
+      476,
+      79
+    ],
+    [
+      264,
+      248,
+      168
+    ],
+    [
+      264,
+      312,
+      496
+    ],
+    [
+      265,
+      107,
+      418
+    ],
+    [
+      267,
+      355,
+      89
+    ],
+    [
+      272,
+      96,
+      103
+    ],
+    [
+      272,
+      2336,
+      80
+    ],
+    [
+      273,
+      124,
+      1361
+    ],
+    [
+      277,
+      150,
+      307
+    ],
+    [
+      280,
+      528,
+      368
+    ],
+    [
+      280,
+      1000,
+      2520
+    ],
+    [
+      280,
+      1504,
+      424
+    ],
+    [
+      282,
+      124,
+      242
+    ],
+    [
+      285,
+      3785,
+      3607
+    ],
+    [
+      287,
+      412,
+      2266
+    ],
+    [
+      287,
+      1866,
+      68
+    ],
+    [
+      288,
+      80,
+      1456
+    ],
+    [
+      288,
+      208,
+      2360
+    ],
+    [
+      288,
+      387,
+      810
+    ],
+    [
+      288,
+      536,
+      2224
+    ],
+    [
+      288,
+      552,
+      96
+    ],
+    [
+      290,
+      241,
+      139
+    ],
+    [
+      290,
+      3396,
+      2851
+    ],
+    [
+      296,
+      848,
+      112
+    ],
+    [
+      296,
+      992,
+      3824
+    ],
+    [
+      299,
+      73,
+      137
+    ],
+    [
+      300,
+      195,
+      486
+    ],
+    [
+      304,
+      1144,
+      2040
+    ],
+    [
+      304,
+      1288,
+      256
+    ],
+    [
+      304,
+      3536,
+      200
+    ],
+    [
+      304,
+      3632,
+      352
+    ],
+    [
+      310,
+      756,
+      88
+    ],
+    [
+      312,
+      432,
+      112
+    ],
+    [
+      313,
+      1905,
+      127
+    ],
+    [
+      314,
+      2177,
+      425
+    ],
+    [
+      315,
+      209,
+      144
+    ],
+    [
+      319,
+      574,
+      223
+    ],
+    [
+      320,
+      172,
+      218
+    ],
+    [
+      320,
+      424,
+      80
+    ],
+    [
+      321,
+      175,
+      432
+    ],
+    [
+      321,
+      2610,
+      239
+    ],
+    [
+      327,
+      363,
+      180
+    ],
+    [
+      328,
+      248,
+      536
+    ],
+    [
+      328,
+      496,
+      296
+    ],
+    [
+      328,
+      784,
+      656
+    ],
+    [
+      328,
+      1480,
+      2704
+    ],
+    [
+      331,
+      496,
+      1762
+    ],
+    [
+      331,
+      1360,
+      135
+    ],
+    [
+      336,
+      208,
+      120
+    ],
+    [
+      336,
+      288,
+      376
+    ],
+    [
+      336,
+      336,
+      184
+    ],
+    [
+      336,
+      1888,
+      88
+    ],
+    [
+      336,
+      2848,
+      112
+    ],
+    [
+      339,
+      500,
+      1950
+    ],
+    [
+      340,
+      83,
+      814
+    ],
+    [
+      342,
+      276,
+      2462
+    ],
+    [
+      342,
+      845,
+      1174
+    ],
+    [
+      343,
+      1890,
+      2303
+    ],
+    [
+      344,
+      224,
+      1568
+    ],
+    [
+      344,
+      264,
+      3240
+    ],
+    [
+      344,
+      352,
+      440
+    ],
+    [
+      349,
+      101,
+      1087
+    ],
+    [
+      349,
+      1045,
+      979
+    ],
+    [
+      350,
+      263,
+      818
+    ],
+    [
+      358,
+      377,
+      2577
+    ],
+    [
+      358,
+      1027,
+      483
+    ],
+    [
+      360,
+      328,
+      1464
+    ],
+    [
+      360,
+      616,
+      253
+    ],
+    [
+      360,
+      1720,
+      616
+    ],
+    [
+      360,
+      1872,
+      1792
+    ],
+    [
+      360,
+      2512,
+      160
+    ],
+    [
+      360,
+      3528,
+      2728
+    ],
+    [
+      365,
+      355,
+      349
+    ],
+    [
+      366,
+      261,
+      70
+    ],
+    [
+      368,
+      112,
+      208
+    ],
+    [
+      368,
+      1232,
+      2800
+    ],
+    [
+      368,
+      3709,
+      81
+    ],
+    [
+      370,
+      96,
+      3224
+    ],
+    [
+      370,
+      2866,
+      1873
+    ],
+    [
+      373,
+      346,
+      1117
+    ],
+    [
+      375,
+      97,
+      157
+    ],
+    [
+      375,
+      121,
+      1052
+    ],
+    [
+      375,
+      2138,
+      65
+    ],
+    [
+      376,
+      616,
+      104
+    ],
+    [
+      376,
+      632,
+      192
+    ],
+    [
+      380,
+      2315,
+      3954
+    ],
+    [
+      382,
+      1497,
+      1674
+    ],
+    [
+      383,
+      130,
+      180
+    ],
+    [
+      384,
+      88,
+      1312
+    ],
+    [
+      384,
+      561,
+      476
+    ],
+    [
+      391,
+      1944,
+      813
+    ],
+    [
+      393,
+      940,
+      114
+    ],
+    [
+      400,
+      360,
+      104
+    ],
+    [
+      400,
+      664,
+      296
+    ],
+    [
+      403,
+      118,
+      720
+    ],
+    [
+      404,
+      65,
+      377
+    ],
+    [
+      407,
+      737,
+      689
+    ],
+    [
+      408,
+      64,
+      144
+    ],
+    [
+      408,
+      1280,
+      120
+    ],
+    [
+      408,
+      2192,
+      272
+    ],
+    [
+      408,
+      2264,
+      2440
+    ],
+    [
+      408,
+      3504,
+      1384
+    ],
+    [
+      409,
+      708,
+      473
+    ],
+    [
+      415,
+      3120,
+      73
+    ],
+    [
+      416,
+      112,
+      160
+    ],
+    [
+      416,
+      192,
+      392
+    ],
+    [
+      416,
+      376,
+      440
+    ],
+    [
+      416,
+      2408,
+      296
+    ],
+    [
+      416,
+      3192,
+      80
+    ],
+    [
+      418,
+      349,
+      178
+    ],
+    [
+      418,
+      419,
+      3768
+    ],
+    [
+      424,
+      872,
+      256
+    ],
+    [
+      424,
+      1672,
+      1592
+    ],
+    [
+      426,
+      219,
+      139
+    ],
+    [
+      428,
+      3074,
+      432
+    ],
+    [
+      429,
+      757,
+      1351
+    ],
+    [
+      432,
+      72,
+      368
+    ],
+    [
+      432,
+      224,
+      3528
+    ],
+    [
+      432,
+      2464,
+      1240
+    ],
+    [
+      435,
+      893,
+      3983
+    ],
+    [
+      440,
+      90,
+      1192
+    ],
+    [
+      440,
+      704,
+      576
+    ],
+    [
+      440,
+      1504,
+      1504
+    ],
+    [
+      440,
+      2552,
+      712
+    ],
+    [
+      441,
+      799,
+      245
+    ],
+    [
+      444,
+      96,
+      2183
+    ],
+    [
+      448,
+      416,
+      1088
+    ],
+    [
+      448,
+      680,
+      344
+    ],
+    [
+      456,
+      96,
+      240
+    ],
+    [
+      456,
+      416,
+      136
+    ],
+    [
+      456,
+      1048,
+      2104
+    ],
+    [
+      459,
+      113,
+      441
+    ],
+    [
+      459,
+      305,
+      1068
+    ],
+    [
+      460,
+      3191,
+      475
+    ],
+    [
+      464,
+      64,
+      144
+    ],
+    [
+      464,
+      88,
+      72
+    ],
+    [
+      464,
+      96,
+      1016
+    ],
+    [
+      464,
+      360,
+      104
+    ],
+    [
+      467,
+      127,
+      108
+    ],
+    [
+      469,
+      866,
+      710
+    ],
+    [
+      477,
+      119,
+      243
+    ],
+    [
+      477,
+      128,
+      178
+    ],
+    [
+      480,
+      235,
+      627
+    ],
+    [
+      480,
+      1128,
+      480
+    ],
+    [
+      488,
+      928,
+      112
+    ],
+    [
+      488,
+      1608,
+      312
+    ],
+    [
+      490,
+      1327,
+      195
+    ],
+    [
+      492,
+      424,
+      3584
+    ],
+    [
+      499,
+      101,
+      1165
+    ],
+    [
+      502,
+      1642,
+      2976
+    ],
+    [
+      503,
+      1096,
+      143
+    ],
+    [
+      504,
+      272,
+      3360
+    ],
+    [
+      504,
+      792,
+      1656
+    ],
+    [
+      504,
+      2248,
+      152
+    ],
+    [
+      511,
+      2609,
+      66
+    ],
+    [
+      512,
+      1600,
+      352
+    ],
+    [
+      512,
+      2211,
+      188
+    ],
+    [
+      512,
+      3840,
+      1536
+    ],
+    [
+      520,
+      1248,
+      3480
+    ],
+    [
+      520,
+      2192,
+      1192
+    ],
+    [
+      521,
+      65,
+      387
+    ],
+    [
+      523,
+      94,
+      2857
+    ],
+    [
+      527,
+      460,
+      937
+    ],
+    [
+      528,
+      64,
+      336
+    ],
+    [
+      528,
+      112,
+      128
+    ],
+    [
+      528,
+      1040,
+      1192
+    ],
+    [
+      529,
+      409,
+      3018
+    ],
+    [
+      529,
+      2111,
+      863
+    ],
+    [
+      537,
+      2664,
+      1581
+    ],
+    [
+      544,
+      1760,
+      128
+    ],
+    [
+      544,
+      2208,
+      1544
+    ],
+    [
+      544,
+      2488,
+      136
+    ],
+    [
+      552,
+      2200,
+      136
+    ],
+    [
+      560,
+      484,
+      311
+    ],
+    [
+      560,
+      1520,
+      88
+    ],
+    [
+      560,
+      1760,
+      176
+    ],
+    [
+      566,
+      192,
+      115
+    ],
+    [
+      566,
+      314,
+      3146
+    ],
+    [
+      566,
+      1562,
+      83
+    ],
+    [
+      568,
+      80,
+      216
+    ],
+    [
+      576,
+      882,
+      174
+    ],
+    [
+      576,
+      2928,
+      1664
+    ],
+    [
+      579,
+      1774,
+      3387
+    ],
+    [
+      582,
+      2183,
+      216
+    ],
+    [
+      583,
+      130,
+      2059
+    ],
+    [
+      595,
+      544,
+      265
+    ],
+    [
+      600,
+      1472,
+      3312
+    ],
+    [
+      604,
+      730,
+      2979
+    ],
+    [
+      604,
+      839,
+      840
+    ],
+    [
+      616,
+      368,
+      376
+    ],
+    [
+      616,
+      936,
+      192
+    ],
+    [
+      619,
+      2116,
+      1387
+    ],
+    [
+      624,
+      64,
+      312
+    ],
+    [
+      627,
+      3829,
+      2805
+    ],
+    [
+      632,
+      136,
+      216
+    ],
+    [
+      632,
+      3520,
+      1456
+    ],
+    [
+      636,
+      1508,
+      1849
+    ],
+    [
+      640,
+      1024,
+      152
+    ],
+    [
+      640,
+      1584,
+      2144
+    ],
+    [
+      648,
+      160,
+      3680
+    ],
+    [
+      648,
+      1256,
+      80
+    ],
+    [
+      649,
+      125,
+      107
+    ],
+    [
+      650,
+      3517,
+      677
+    ],
+    [
+      651,
+      321,
+      624
+    ],
+    [
+      651,
+      2642,
+      492
+    ],
+    [
+      652,
+      381,
+      952
+    ],
+    [
+      656,
+      936,
+      456
+    ],
+    [
+      664,
+      128,
+      232
+    ],
+    [
+      667,
+      197,
+      1611
+    ],
+    [
+      672,
+      64,
+      784
+    ],
+    [
+      672,
+      1376,
+      2400
+    ],
+    [
+      680,
+      88,
+      200
+    ],
+    [
+      680,
+      775,
+      686
+    ],
+    [
+      680,
+      2400,
+      912
+    ],
+    [
+      688,
+      64,
+      1749
+    ],
+    [
+      688,
+      3536,
+      856
+    ],
+    [
+      689,
+      127,
+      1693
+    ],
+    [
+      695,
+      451,
+      67
+    ],
+    [
+      699,
+      66,
+      443
+    ],
+    [
+      704,
+      1632,
+      112
+    ],
+    [
+      712,
+      576,
+      616
+    ],
+    [
+      712,
+      1528,
+      2456
+    ],
+    [
+      713,
+      176,
+      1217
+    ],
+    [
+      718,
+      1066,
+      1421
+    ],
+    [
+      720,
+      152,
+      96
+    ],
+    [
+      720,
+      528,
+      288
+    ],
+    [
+      727,
+      79,
+      137
+    ],
+    [
+      728,
+      161,
+      410
+    ],
+    [
+      728,
+      1928,
+      160
+    ],
+    [
+      736,
+      176,
+      80
+    ],
+    [
+      736,
+      224,
+      3448
+    ],
+    [
+      739,
+      573,
+      865
+    ],
+    [
+      740,
+      1378,
+      413
+    ],
+    [
+      741,
+      108,
+      109
+    ],
+    [
+      743,
+      265,
+      475
+    ],
+    [
+      744,
+      112,
+      64
+    ],
+    [
+      744,
+      224,
+      80
+    ],
+    [
+      744,
+      408,
+      1576
+    ],
+    [
+      745,
+      1625,
+      996
+    ],
+    [
+      746,
+      1630,
+      236
+    ],
+    [
+      747,
+      93,
+      3744
+    ],
+    [
+      752,
+      2032,
+      480
+    ],
+    [
+      758,
+      1739,
+      1517
+    ],
+    [
+      760,
+      120,
+      1088
+    ],
+    [
+      760,
+      880,
+      216
+    ],
+    [
+      763,
+      2902,
+      232
+    ],
+    [
+      770,
+      383,
+      1499
+    ],
+    [
+      772,
+      74,
+      64
+    ],
+    [
+      774,
+      75,
+      665
+    ],
+    [
+      776,
+      184,
+      80
+    ],
+    [
+      784,
+      128,
+      144
+    ],
+    [
+      784,
+      784,
+      144
+    ],
+    [
+      792,
+      2264,
+      3760
+    ],
+    [
+      798,
+      2060,
+      128
+    ],
+    [
+      800,
+      107,
+      1798
+    ],
+    [
+      804,
+      910,
+      600
+    ],
+    [
+      808,
+      80,
+      288
+    ],
+    [
+      808,
+      258,
+      2786
+    ],
+    [
+      815,
+      2239,
+      116
+    ],
+    [
+      816,
+      176,
+      1080
+    ],
+    [
+      816,
+      2072,
+      272
+    ],
+    [
+      824,
+      784,
+      768
+    ],
+    [
+      848,
+      112,
+      736
+    ],
+    [
+      848,
+      2416,
+      3952
+    ],
+    [
+      848,
+      3776,
+      120
+    ],
+    [
+      856,
+      712,
+      152
+    ],
+    [
+      872,
+      200,
+      440
+    ],
+    [
+      872,
+      1120,
+      128
+    ],
+    [
+      884,
+      354,
+      509
+    ],
+    [
+      888,
+      2312,
+      1712
+    ],
+    [
+      896,
+      160,
+      680
+    ],
+    [
+      920,
+      400,
+      112
+    ],
+    [
+      920,
+      768,
+      440
+    ],
+    [
+      928,
+      216,
+      2344
+    ],
+    [
+      935,
+      1534,
+      114
+    ],
+    [
+      936,
+      64,
+      248
+    ],
+    [
+      936,
+      496,
+      384
+    ],
+    [
+      940,
+      576,
+      269
+    ],
+    [
+      944,
+      376,
+      136
+    ],
+    [
+      945,
+      215,
+      1109
+    ],
+    [
+      952,
+      800,
+      520
+    ],
+    [
+      952,
+      2216,
+      112
+    ],
+    [
+      955,
+      221,
+      1478
+    ],
+    [
+      960,
+      1208,
+      424
+    ],
+    [
+      960,
+      2248,
+      2264
+    ],
+    [
+      965,
+      588,
+      1427
+    ],
+    [
+      968,
+      896,
+      3776
+    ],
+    [
+      972,
+      684,
+      279
+    ],
+    [
+      974,
+      88,
+      1542
+    ],
+    [
+      976,
+      80,
+      3176
+    ],
+    [
+      976,
+      174,
+      102
+    ],
+    [
+      977,
+      385,
+      122
+    ],
+    [
+      992,
+      128,
+      3200
+    ],
+    [
+      992,
+      560,
+      952
+    ],
+    [
+      999,
+      206,
+      1250
+    ],
+    [
+      1008,
+      431,
+      3043
+    ],
+    [
+      1012,
+      590,
+      271
+    ],
+    [
+      1016,
+      88,
+      2376
+    ],
+    [
+      1016,
+      120,
+      2088
+    ],
+    [
+      1024,
+      224,
+      1264
+    ],
+    [
+      1024,
+      352,
+      2464
+    ],
+    [
+      1032,
+      120,
+      272
+    ],
+    [
+      1040,
+      3166,
+      2341
+    ],
+    [
+      1043,
+      850,
+      108
+    ],
+    [
+      1048,
+      136,
+      760
+    ],
+    [
+      1049,
+      326,
+      2575
+    ],
+    [
+      1053,
+      568,
+      900
+    ],
+    [
+      1060,
+      74,
+      604
+    ],
+    [
+      1064,
+      144,
+      224
+    ],
+    [
+      1064,
+      216,
+      944
+    ],
+    [
+      1064,
+      240,
+      1248
+    ],
+    [
+      1064,
+      272,
+      744
+    ],
+    [
+      1072,
+      752,
+      344
+    ],
+    [
+      1081,
+      3287,
+      939
+    ],
+    [
+      1096,
+      832,
+      328
+    ],
+    [
+      1096,
+      3824,
+      592
+    ],
+    [
+      1098,
+      91,
+      95
+    ],
+    [
+      1104,
+      488,
+      232
+    ],
+    [
+      1111,
+      141,
+      4034
+    ],
+    [
+      1112,
+      288,
+      120
+    ],
+    [
+      1113,
+      142,
+      421
+    ],
+    [
+      1114,
+      133,
+      979
+    ],
+    [
+      1118,
+      188,
+      119
+    ],
+    [
+      1120,
+      71,
+      82
+    ],
+    [
+      1120,
+      1120,
+      968
+    ],
+    [
+      1125,
+      189,
+      1047
+    ],
+    [
+      1125,
+      2674,
+      173
+    ],
+    [
+      1128,
+      197,
+      306
+    ],
+    [
+      1128,
+      2552,
+      120
+    ],
+    [
+      1128,
+      3736,
+      112
+    ],
+    [
+      1140,
+      622,
+      219
+    ],
+    [
+      1144,
+      168,
+      128
+    ],
+    [
+      1144,
+      1048,
+      392
+    ],
+    [
+      1144,
+      1136,
+      200
+    ],
+    [
+      1152,
+      128,
+      96
+    ],
+    [
+      1160,
+      4008,
+      760
+    ],
+    [
+      1167,
+      2589,
+      3975
+    ],
+    [
+      1168,
+      392,
+      448
+    ],
+    [
+      1168,
+      1728,
+      3728
+    ],
+    [
+      1176,
+      80,
+      2832
+    ],
+    [
+      1176,
+      1216,
+      1704
+    ],
+    [
+      1183,
+      369,
+      459
+    ],
+    [
+      1184,
+      88,
+      880
+    ],
+    [
+      1184,
+      168,
+      544
+    ],
+    [
+      1184,
+      984,
+      1136
+    ],
+    [
+      1184,
+      1160,
+      552
+    ],
+    [
+      1186,
+      96,
+      2218
+    ],
+    [
+      1192,
+      2600,
+      120
+    ],
+    [
+      1200,
+      208,
+      96
+    ],
+    [
+      1207,
+      791,
+      260
+    ],
+    [
+      1219,
+      3928,
+      155
+    ],
+    [
+      1224,
+      112,
+      168
+    ],
+    [
+      1232,
+      1048,
+      1448
+    ],
+    [
+      1240,
+      168,
+      1128
+    ],
+    [
+      1241,
+      110,
+      4025
+    ],
+    [
+      1243,
+      2576,
+      80
+    ],
+    [
+      1245,
+      374,
+      919
+    ],
+    [
+      1247,
+      72,
+      1315
+    ],
+    [
+      1248,
+      1344,
+      1808
+    ],
+    [
+      1248,
+      2680,
+      152
+    ],
+    [
+      1264,
+      478,
+      1546
+    ],
+    [
+      1272,
+      96,
+      2664
+    ],
+    [
+      1277,
+      532,
+      230
+    ],
+    [
+      1278,
+      2031,
+      677
+    ],
+    [
+      1286,
+      1185,
+      1347
+    ],
+    [
+      1290,
+      808,
+      965
+    ],
+    [
+      1290,
+      3742,
+      3907
+    ],
+    [
+      1296,
+      1576,
+      440
+    ],
+    [
+      1304,
+      108,
+      3291
+    ],
+    [
+      1304,
+      480,
+      72
+    ],
+    [
+      1304,
+      1503,
+      3320
+    ],
+    [
+      1304,
+      2768,
+      368
+    ],
+    [
+      1320,
+      144,
+      784
+    ],
+    [
+      1320,
+      192,
+      120
+    ],
+    [
+      1320,
+      2048,
+      1440
+    ],
+    [
+      1332,
+      493,
+      122
+    ],
+    [
+      1344,
+      256,
+      3688
+    ],
+    [
+      1344,
+      302,
+      1175
+    ],
+    [
+      1348,
+      181,
+      1560
+    ],
+    [
+      1352,
+      3264,
+      536
+    ],
+    [
+      1357,
+      285,
+      1005
+    ],
+    [
+      1368,
+      168,
+      72
+    ],
+    [
+      1392,
+      360,
+      160
+    ],
+    [
+      1400,
+      192,
+      728
+    ],
+    [
+      1416,
+      1584,
+      1696
+    ],
+    [
+      1424,
+      80,
+      1984
+    ],
+    [
+      1424,
+      96,
+      88
+    ],
+    [
+      1424,
+      168,
+      3664
+    ],
+    [
+      1424,
+      192,
+      96
+    ],
+    [
+      1424,
+      1502,
+      121
+    ],
+    [
+      1424,
+      1696,
+      176
+    ],
+    [
+      1432,
+      296,
+      344
+    ],
+    [
+      1436,
+      67,
+      103
+    ],
+    [
+      1437,
+      272,
+      2597
+    ],
+    [
+      1440,
+      1952,
+      64
+    ],
+    [
+      1441,
+      362,
+      545
+    ],
+    [
+      1448,
+      2064,
+      80
+    ],
+    [
+      1456,
+      3160,
+      2440
+    ],
+    [
+      1459,
+      411,
+      89
+    ],
+    [
+      1465,
+      922,
+      738
+    ],
+    [
+      1470,
+      3158,
+      1928
+    ],
+    [
+      1472,
+      64,
+      504
+    ],
+    [
+      1472,
+      2280,
+      792
+    ],
+    [
+      1474,
+      518,
+      150
+    ],
+    [
+      1476,
+      2563,
+      2716
+    ],
+    [
+      1494,
+      1102,
+      1438
+    ],
+    [
+      1496,
+      208,
+      672
+    ],
+    [
+      1504,
+      1000,
+      2784
+    ],
+    [
+      1514,
+      408,
+      466
+    ],
+    [
+      1528,
+      272,
+      1536
+    ],
+    [
+      1550,
+      1359,
+      4010
+    ],
+    [
+      1552,
+      712,
+      1680
+    ],
+    [
+      1562,
+      972,
+      1010
+    ],
+    [
+      1568,
+      184,
+      1920
+    ],
+    [
+      1572,
+      222,
+      262
+    ],
+    [
+      1572,
+      222,
+      862
+    ],
+    [
+      1576,
+      256,
+      3136
+    ],
+    [
+      1576,
+      632,
+      3064
+    ],
+    [
+      1584,
+      120,
+      3173
+    ],
+    [
+      1584,
+      560,
+      768
+    ],
+    [
+      1584,
+      2123,
+      1065
+    ],
+    [
+      1590,
+      109,
+      377
+    ],
+    [
+      1592,
+      80,
+      2352
+    ],
+    [
+      1597,
+      739,
+      1144
+    ],
+    [
+      1600,
+      2944,
+      704
+    ],
+    [
+      1603,
+      3189,
+      1230
+    ],
+    [
+      1617,
+      1963,
+      3387
+    ],
+    [
+      1622,
+      607,
+      2069
+    ],
+    [
+      1632,
+      1144,
+      3256
+    ],
+    [
+      1646,
+      1234,
+      571
+    ],
+    [
+      1648,
+      96,
+      224
+    ],
+    [
+      1669,
+      3106,
+      1736
+    ],
+    [
+      1672,
+      416,
+      96
+    ],
+    [
+      1688,
+      1136,
+      976
+    ],
+    [
+      1695,
+      278,
+      153
+    ],
+    [
+      1696,
+      448,
+      72
+    ],
+    [
+      1747,
+      65,
+      1220
+    ],
+    [
+      1755,
+      1202,
+      771
+    ],
+    [
+      1760,
+      104,
+      3568
+    ],
+    [
+      1767,
+      2122,
+      104
+    ],
+    [
+      1776,
+      656,
+      1264
+    ],
+    [
+      1783,
+      325,
+      77
+    ],
+    [
+      1784,
+      136,
+      344
+    ],
+    [
+      1798,
+      302,
+      486
+    ],
+    [
+      1800,
+      96,
+      232
+    ],
+    [
+      1826,
+      1537,
+      159
+    ],
+    [
+      1828,
+      140,
+      281
+    ],
+    [
+      1841,
+      81,
+      207
+    ],
+    [
+      1856,
+      128,
+      2544
+    ],
+    [
+      1862,
+      1185,
+      266
+    ],
+    [
+      1864,
+      744,
+      320
+    ],
+    [
+      1868,
+      329,
+      264
+    ],
+    [
+      1880,
+      352,
+      112
+    ],
+    [
+      1888,
+      3392,
+      1520
+    ],
+    [
+      1897,
+      139,
+      259
+    ],
+    [
+      1901,
+      3259,
+      886
+    ],
+    [
+      1903,
+      143,
+      2930
+    ],
+    [
+      1904,
+      288,
+      744
+    ],
+    [
+      1912,
+      2810,
+      204
+    ],
+    [
+      1920,
+      536,
+      336
+    ],
+    [
+      1920,
+      544,
+      336
+    ],
+    [
+      1935,
+      320,
+      157
+    ],
+    [
+      1943,
+      715,
+      2505
+    ],
+    [
+      1952,
+      152,
+      144
+    ],
+    [
+      1952,
+      784,
+      312
+    ],
+    [
+      1970,
+      821,
+      955
+    ],
+    [
+      1991,
+      64,
+      132
+    ],
+    [
+      1993,
+      795,
+      938
+    ],
+    [
+      2005,
+      752,
+      131
+    ],
+    [
+      2012,
+      2098,
+      104
+    ],
+    [
+      2024,
+      624,
+      256
+    ],
+    [
+      2032,
+      2576,
+      1576
+    ],
+    [
+      2049,
+      978,
+      124
+    ],
+    [
+      2056,
+      112,
+      2960
+    ],
+    [
+      2064,
+      424,
+      144
+    ],
+    [
+      2072,
+      720,
+      80
+    ],
+    [
+      2077,
+      2194,
+      2522
+    ],
+    [
+      2079,
+      393,
+      369
+    ],
+    [
+      2079,
+      3399,
+      188
+    ],
+    [
+      2104,
+      1968,
+      560
+    ],
+    [
+      2105,
+      185,
+      652
+    ],
+    [
+      2111,
+      1150,
+      2273
+    ],
+    [
+      2112,
+      1400,
+      80
+    ],
+    [
+      2112,
+      2280,
+      1208
+    ],
+    [
+      2121,
+      84,
+      1639
+    ],
+    [
+      2127,
+      106,
+      176
+    ],
+    [
+      2128,
+      360,
+      912
+    ],
+    [
+      2144,
+      1816,
+      768
+    ],
+    [
+      2149,
+      407,
+      225
+    ],
+    [
+      2170,
+      197,
+      1462
+    ],
+    [
+      2173,
+      150,
+      284
+    ],
+    [
+      2174,
+      926,
+      3622
+    ],
+    [
+      2177,
+      2142,
+      1495
+    ],
+    [
+      2189,
+      93,
+      893
+    ],
+    [
+      2200,
+      112,
+      174
+    ],
+    [
+      2207,
+      203,
+      71
+    ],
+    [
+      2224,
+      152,
+      144
+    ],
+    [
+      2224,
+      2440,
+      3424
+    ],
+    [
+      2244,
+      266,
+      106
+    ],
+    [
+      2264,
+      312,
+      80
+    ],
+    [
+      2288,
+      80,
+      200
+    ],
+    [
+      2288,
+      240,
+      64
+    ],
+    [
+      2288,
+      3256,
+      208
+    ],
+    [
+      2289,
+      1245,
+      1633
+    ],
+    [
+      2289,
+      2192,
+      1101
+    ],
+    [
+      2296,
+      88,
+      600
+    ],
+    [
+      2312,
+      96,
+      3544
+    ],
+    [
+      2316,
+      280,
+      3892
+    ],
+    [
+      2320,
+      368,
+      224
+    ],
+    [
+      2332,
+      738,
+      1026
+    ],
+    [
+      2336,
+      264,
+      96
+    ],
+    [
+      2344,
+      96,
+      224
+    ],
+    [
+      2352,
+      2768,
+      1664
+    ],
+    [
+      2360,
+      944,
+      1920
+    ],
+    [
+      2365,
+      2859,
+      428
+    ],
+    [
+      2368,
+      96,
+      1392
+    ],
+    [
+      2368,
+      672,
+      608
+    ],
+    [
+      2385,
+      75,
+      138
+    ],
+    [
+      2388,
+      103,
+      1381
+    ],
+    [
+      2392,
+      2185,
+      207
+    ],
+    [
+      2394,
+      604,
+      1165
+    ],
+    [
+      2408,
+      1112,
+      568
+    ],
+    [
+      2408,
+      1792,
+      1648
+    ],
+    [
+      2418,
+      258,
+      220
+    ],
+    [
+      2424,
+      904,
+      4016
+    ],
+    [
+      2424,
+      2712,
+      992
+    ],
+    [
+      2450,
+      88,
+      110
+    ],
+    [
+      2456,
+      128,
+      128
+    ],
+    [
+      2472,
+      384,
+      64
+    ],
+    [
+      2496,
+      112,
+      360
+    ],
+    [
+      2519,
+      68,
+      260
+    ],
+    [
+      2520,
+      464,
+      80
+    ],
+    [
+      2536,
+      88,
+      120
+    ],
+    [
+      2536,
+      112,
+      1136
+    ],
+    [
+      2544,
+      616,
+      888
+    ],
+    [
+      2544,
+      1192,
+      2600
+    ],
+    [
+      2549,
+      2831,
+      1230
+    ],
+    [
+      2560,
+      2144,
+      440
+    ],
+    [
+      2616,
+      464,
+      144
+    ],
+    [
+      2622,
+      1409,
+      107
+    ],
+    [
+      2624,
+      272,
+      144
+    ],
+    [
+      2636,
+      584,
+      169
+    ],
+    [
+      2640,
+      144,
+      2064
+    ],
+    [
+      2640,
+      3928,
+      1120
+    ],
+    [
+      2648,
+      512,
+      2248
+    ],
+    [
+      2662,
+      3500,
+      89
+    ],
+    [
+      2664,
+      3998,
+      129
+    ],
+    [
+      2672,
+      880,
+      1328
+    ],
+    [
+      2672,
+      2832,
+      96
+    ],
+    [
+      2683,
+      570,
+      2594
+    ],
+    [
+      2696,
+      80,
+      872
+    ],
+    [
+      2728,
+      1904,
+      992
+    ],
+    [
+      2730,
+      147,
+      75
+    ],
+    [
+      2742,
+      2504,
+      1137
+    ],
+    [
+      2765,
+      1668,
+      2203
+    ],
+    [
+      2768,
+      1648,
+      856
+    ],
+    [
+      2775,
+      196,
+      2185
+    ],
+    [
+      2789,
+      571,
+      146
+    ],
+    [
+      2794,
+      730,
+      507
+    ],
+    [
+      2800,
+      80,
+      2640
+    ],
+    [
+      2816,
+      2160,
+      96
+    ],
+    [
+      2823,
+      864,
+      1045
+    ],
+    [
+      2832,
+      152,
+      3504
+    ],
+    [
+      2832,
+      3256,
+      552
+    ],
+    [
+      2846,
+      164,
+      763
+    ],
+    [
+      2864,
+      864,
+      2680
+    ],
+    [
+      2869,
+      432,
+      80
+    ],
+    [
+      2897,
+      184,
+      283
+    ],
+    [
+      2898,
+      104,
+      150
+    ],
+    [
+      2904,
+      288,
+      1456
+    ],
+    [
+      2904,
+      784,
+      392
+    ],
+    [
+      2912,
+      1056,
+      448
+    ],
+    [
+      2928,
+      152,
+      2048
+    ],
+    [
+      2936,
+      752,
+      344
+    ],
+    [
+      2952,
+      1712,
+      1072
+    ],
+    [
+      2960,
+      280,
+      3744
+    ],
+    [
+      2960,
+      381,
+      711
+    ],
+    [
+      2960,
+      3808,
+      1832
+    ],
+    [
+      2961,
+      1423,
+      457
+    ],
+    [
+      2997,
+      105,
+      845
+    ],
+    [
+      3000,
+      344,
+      432
+    ],
+    [
+      3044,
+      449,
+      350
+    ],
+    [
+      3069,
+      1189,
+      3951
+    ],
+    [
+      3078,
+      541,
+      106
+    ],
+    [
+      3096,
+      104,
+      1144
+    ],
+    [
+      3112,
+      896,
+      104
+    ],
+    [
+      3128,
+      264,
+      744
+    ],
+    [
+      3144,
+      2232,
+      3120
+    ],
+    [
+      3162,
+      66,
+      1227
+    ],
+    [
+      3190,
+      67,
+      205
+    ],
+    [
+      3213,
+      259,
+      76
+    ],
+    [
+      3216,
+      280,
+      424
+    ],
+    [
+      3224,
+      288,
+      824
+    ],
+    [
+      3230,
+      3706,
+      99
+    ],
+    [
+      3249,
+      1163,
+      540
+    ],
+    [
+      3261,
+      2774,
+      188
+    ],
+    [
+      3296,
+      400,
+      912
+    ],
+    [
+      3312,
+      120,
+      784
+    ],
+    [
+      3320,
+      1144,
+      1880
+    ],
+    [
+      3328,
+      1664,
+      168
+    ],
+    [
+      3344,
+      306,
+      293
+    ],
+    [
+      3384,
+      2256,
+      704
+    ],
+    [
+      3408,
+      2964,
+      1734
+    ],
+    [
+      3416,
+      680,
+      272
+    ],
+    [
+      3424,
+      2168,
+      328
+    ],
+    [
+      3432,
+      576,
+      384
+    ],
+    [
+      3474,
+      790,
+      991
+    ],
+    [
+      3480,
+      128,
+      1440
+    ],
+    [
+      3487,
+      95,
+      616
+    ],
+    [
+      3504,
+      2432,
+      112
+    ],
+    [
+      3519,
+      523,
+      141
+    ],
+    [
+      3520,
+      248,
+      768
+    ],
+    [
+      3520,
+      296,
+      176
+    ],
+    [
+      3520,
+      1501,
+      1675
+    ],
+    [
+      3568,
+      3880,
+      112
+    ],
+    [
+      3572,
+      86,
+      2356
+    ],
+    [
+      3600,
+      88,
+      1024
+    ],
+    [
+      3608,
+      96,
+      584
+    ],
+    [
+      3616,
+      160,
+      624
+    ],
+    [
+      3656,
+      473,
+      583
+    ],
+    [
+      3697,
+      1712,
+      203
+    ],
+    [
+      3704,
+      920,
+      424
+    ],
+    [
+      3710,
+      1357,
+      97
+    ],
+    [
+      3720,
+      112,
+      352
+    ],
+    [
+      3728,
+      312,
+      128
+    ],
+    [
+      3740,
+      322,
+      900
+    ],
+    [
+      3765,
+      3522,
+      264
+    ],
+    [
+      3776,
+      272,
+      368
+    ],
+    [
+      3780,
+      328,
+      97
+    ],
+    [
+      3783,
+      497,
+      2243
+    ],
+    [
+      3784,
+      2712,
+      376
+    ],
+    [
+      3792,
+      3942,
+      353
+    ],
+    [
+      3798,
+      981,
+      501
+    ],
+    [
+      3816,
+      384,
+      416
+    ],
+    [
+      3829,
+      1521,
+      321
+    ],
+    [
+      3834,
+      2114,
+      233
+    ],
+    [
+      3836,
+      90,
+      2378
+    ],
+    [
+      3845,
+      474,
+      98
+    ],
+    [
+      3863,
+      2152,
+      129
+    ],
+    [
+      3864,
+      136,
+      144
+    ],
+    [
+      3872,
+      236,
+      137
+    ],
+    [
+      3880,
+      394,
+      229
+    ],
+    [
+      3880,
+      1088,
+      312
+    ],
+    [
+      3895,
+      3954,
+      127
+    ],
+    [
+      3904,
+      128,
+      1944
+    ],
+    [
+      3904,
+      896,
+      168
+    ],
+    [
+      3931,
+      2286,
+      190
+    ],
+    [
+      3944,
+      1672,
+      304
+    ],
+    [
+      3953,
+      220,
+      130
+    ],
+    [
+      3967,
+      2329,
+      302
+    ],
+    [
+      4000,
+      120,
+      608
+    ],
+    [
+      4008,
+      147,
+      348
+    ],
+    [
+      4016,
+      1904,
+      240
+    ],
+    [
+      4048,
+      96,
+      1504
+    ],
+    [
+      4048,
+      560,
+      856
+    ],
+    [
+      4072,
+      387,
+      976
+    ],
+    [
+      4087,
+      89,
+      68
+    ]
+  ],
+  "version": "gemm_final_v1"
+}

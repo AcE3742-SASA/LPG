@@ -1,0 +1,8 @@
+stage,session,source,state,new_records,elapsed_seconds,ended_utc
+legacy,20260922_164905_0c1d46ab,analysis/remeasure_720_v4_result_2026-10-01/recomputed/full_720_remeasure3_20261001/sessions/20260922_164905_0c1d46ab/session.json,STOPPED,0,11.489635450001515,2026-09-22T07:49:16.919503+00:00
+legacy,20260922_165030_e89635b2,analysis/remeasure_720_v4_result_2026-10-01/recomputed/full_720_remeasure3_20261001/sessions/20260922_165030_e89635b2/session.json,STOPPED,779,3213.3369753929983,2026-09-22T08:44:03.801554+00:00
+legacy,20260922_175658_0cf7c114,analysis/remeasure_720_v4_result_2026-10-01/recomputed/full_720_remeasure3_20261001/sessions/20260922_175658_0cf7c114/session.json,FINISHED,112603,437389.940093798,2026-09-27T10:26:48.809815+00:00
+legacy,20260930_144016_61da8183,analysis/remeasure_720_v4_result_2026-10-01/recomputed/full_720_remeasure3_20261001/sessions/20260930_144016_61da8183/session.json,FINISHED,5160,20217.87172758195,2026-09-30T11:17:14.180356+00:00
+legacy,20260930_212559_7d09687f,analysis/remeasure_720_v4_result_2026-10-01/recomputed/full_720_remeasure3_20261001/sessions/20260930_212559_7d09687f/session.json,FINISHED,1800,7166.400435637001,2026-09-30T14:25:25.408187+00:00
+legacy,20261001_143341_57d18ef1,analysis/remeasure_720_v4_result_2026-10-01/recomputed/full_720_remeasure3_20261001/sessions/20261001_143341_57d18ef1/session.json,FINISHED,1800,7171.702976273002,2026-10-01T07:33:13.306804+00:00
+expansion,20261028_154646_29b609ad,analysis/gemm_expansion_result_2026-11-06/raw/expansion_10000/sessions/20261028_154646_29b609ad/session.json,FINISHED,180000,700102.0072186622,2026-11-05T09:15:08.062452+00:00

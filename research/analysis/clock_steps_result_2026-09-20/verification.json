@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "raw_files": 430,
+  "archive_sha256": "24e6a5c2c8698e289de4a66f9cb2d64654ee4f604a242a7bc5df6aa5e34d4e45",
+  "raw_unchanged": true,
+  "sources_verified": 7,
+  "dependencies_verified": 28,
+  "reproduced_outputs_byte_equal": [
+    "analysis.json",
+    "clock_windows.json",
+    "report.md"
+  ],
+  "summary_equal": true,
+  "worker_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "final_exit_code": 2,
+  "environment_executable": "/home/eu/miniconda3/envs/ai_env/bin/python",
+  "correctness": "All 112 stored 256-element sampled comparisons passed; full numerical validation not claimed.",
+  "clock_set_and_reset_commands_verified": true
+}

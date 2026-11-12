@@ -1,0 +1,31 @@
+{
+  "archive": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/analysis/remeasure_720_v4_result_2026-10-01/full_720_remeasure3_20261001_20261001_163605_88321a.zip",
+  "sha256": "319c8480f15fd5f310bd0c211b326104ed341276b76e214bec688b673ecdc5c4",
+  "source_sha256": "319c8480f15fd5f310bd0c211b326104ed341276b76e214bec688b673ecdc5c4",
+  "entries": 119336,
+  "expanded_bytes": 8125640071,
+  "zip_crc": "PASS",
+  "safe_paths": "PASS",
+  "source_files": 10,
+  "dependency_files": 100,
+  "local_code_matches_archive": true,
+  "original_export_sha256": {
+    "between_round.json": "da775ec60c86d067f430467b6f01d09e7130b592ae7ca740224ab8692bba2bc8",
+    "blocks.csv": "1919fb660e7ce45247093ad3a15433e9440f307d59ae3744176f02bceb34be54",
+    "blocks_fresh_holdout_LOCKED.csv": "da44eacdedcb98030b4f3aff0d2445f69d19a57e358cdc10fc8abaebc688570e",
+    "clock_selection_20261001_142936_b3fd3f.json": "cb9e1b401469b4ebe0344c984e7ae6e777218f30a608a3a8853df0e61efb887e",
+    "fresh_holdout_LOCKED.csv": "609a48f9a3af909f02b2326fc3aac780aec9568b8af526f61624f8594ae3b1ef",
+    "manifest.json": "96d66f7c465fa198aec36402b6a7ee5f9647d9486df0fb5c5fca64b8a0b2e9b7",
+    "metrics.csv": "a6799b89028a81b0fe453ec243a627321a82db04af487349c78b41834a31ac37",
+    "progress.json": "77ff374899473c3fd412a8076290e1b8252dab6c92011e58eb6fd1d49fd0bbbf",
+    "recovery_provenance.json": "5bdbe64c93732f4dc816aa9f77e4d1a5cdf94e450407c3eb9850653af4be69f6",
+    "remeasure_tasks.json": "a121ac8a8c5ceac6fee939a6315315b9b6b37ecc6a3de36f93518d819d10687b",
+    "report.md": "8aed44e82b78aca522b1fc3258ecc3bc7ec9663bffa756543227432b2658dd8e",
+    "review_fresh_holdout_LOCKED.csv": "eaf1e558e23679558c912a7475ddecfe6cec03e1a98680f011d603416506b9f1",
+    "review_queue.csv": "17a64a21236c88d02d01269f28933dda41ab25257029f66cb5a27f3e8bf13d9d",
+    "shape_splits.csv": "9c0a2ddc0059d3d1c741a9504e409dd2c3c5e605efde36501bd67aa7b8f4b5b6",
+    "summary.json": "ba2260aecd4b41a8e850d8c743fd1ebf793173d6cd7bddbdabdac1b81eda74ce",
+    "triplets.csv": "7fa2d12c3f4358324f58d3ec1dd395d064b09ce90c3d37affeaf3c0bc1a0917c",
+    "triplets_fresh_holdout_LOCKED.csv": "7204a6cae843799dc8e056969a28ba876d03e894d5bb2fc7106c87f5f87acfad"
+  }
+}

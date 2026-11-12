@@ -1,0 +1,13 @@
+target,dtype,seed,training_pool_labels,exact_same_training_keys
+standard,fp16,20261104,600,True
+standard,fp16,20261105,600,True
+standard,fp16,20261106,600,True
+standard,fp32,20261104,600,True
+standard,fp32,20261105,600,True
+standard,fp32,20261106,600,True
+decomposed,fp16,20261104,600,True
+decomposed,fp16,20261105,600,True
+decomposed,fp16,20261106,600,True
+decomposed,fp32,20261104,600,True
+decomposed,fp32,20261105,600,True
+decomposed,fp32,20261106,600,True

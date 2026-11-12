@@ -1,0 +1,2 @@
+PASS: manifest, development-only scope and 314 embedded code hashes
+PASS: archive preserved and all entries extracted with CRC validation

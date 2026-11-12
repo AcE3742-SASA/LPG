@@ -1,0 +1,2182 @@
+{
+  "version": 1,
+  "seed": 20260921,
+  "count": 200,
+  "candidates": 5002,
+  "strata": [
+    {
+      "stratum": "0/compact/aligned8/other",
+      "available": 91,
+      "selected": 7
+    },
+    {
+      "stratum": "3/elongated/unaligned8/other",
+      "available": 101,
+      "selected": 7
+    },
+    {
+      "stratum": "2/compact/aligned8/other",
+      "available": 137,
+      "selected": 7
+    },
+    {
+      "stratum": "3/elongated/aligned8/other",
+      "available": 81,
+      "selected": 7
+    },
+    {
+      "stratum": "1/elongated/unaligned8/other",
+      "available": 568,
+      "selected": 7
+    },
+    {
+      "stratum": "1/compact/aligned8/other",
+      "available": 149,
+      "selected": 7
+    },
+    {
+      "stratum": "2/elongated/aligned8/near_power2",
+      "available": 154,
+      "selected": 7
+    },
+    {
+      "stratum": "0/elongated/aligned8/near_power2",
+      "available": 53,
+      "selected": 7
+    },
+    {
+      "stratum": "0/elongated/unaligned8/near_power2",
+      "available": 65,
+      "selected": 6
+    },
+    {
+      "stratum": "1/elongated/aligned8/near_power2",
+      "available": 206,
+      "selected": 6
+    },
+    {
+      "stratum": "1/compact/aligned8/near_power2",
+      "available": 29,
+      "selected": 6
+    },
+    {
+      "stratum": "2/compact/unaligned8/other",
+      "available": 171,
+      "selected": 6
+    },
+    {
+      "stratum": "0/compact/aligned8/near_power2",
+      "available": 47,
+      "selected": 6
+    },
+    {
+      "stratum": "0/compact/unaligned8/other",
+      "available": 93,
+      "selected": 6
+    },
+    {
+      "stratum": "3/compact/unaligned8/near_power2",
+      "available": 37,
+      "selected": 6
+    },
+    {
+      "stratum": "2/compact/unaligned8/near_power2",
+      "available": 36,
+      "selected": 6
+    },
+    {
+      "stratum": "2/compact/aligned8/near_power2",
+      "available": 23,
+      "selected": 6
+    },
+    {
+      "stratum": "1/elongated/unaligned8/near_power2",
+      "available": 278,
+      "selected": 6
+    },
+    {
+      "stratum": "3/elongated/unaligned8/near_power2",
+      "available": 49,
+      "selected": 6
+    },
+    {
+      "stratum": "2/elongated/aligned8/other",
+      "available": 592,
+      "selected": 6
+    },
+    {
+      "stratum": "3/elongated/aligned8/near_power2",
+      "available": 19,
+      "selected": 6
+    },
+    {
+      "stratum": "2/elongated/unaligned8/near_power2",
+      "available": 258,
+      "selected": 6
+    },
+    {
+      "stratum": "3/compact/aligned8/near_power2",
+      "available": 15,
+      "selected": 6
+    },
+    {
+      "stratum": "3/compact/unaligned8/other",
+      "available": 93,
+      "selected": 6
+    },
+    {
+      "stratum": "1/compact/unaligned8/near_power2",
+      "available": 38,
+      "selected": 6
+    },
+    {
+      "stratum": "0/elongated/aligned8/other",
+      "available": 54,
+      "selected": 6
+    },
+    {
+      "stratum": "0/compact/unaligned8/near_power2",
+      "available": 54,
+      "selected": 6
+    },
+    {
+      "stratum": "0/elongated/unaligned8/other",
+      "available": 75,
+      "selected": 6
+    },
+    {
+      "stratum": "1/elongated/aligned8/other",
+      "available": 555,
+      "selected": 6
+    },
+    {
+      "stratum": "2/elongated/unaligned8/other",
+      "available": 646,
+      "selected": 6
+    },
+    {
+      "stratum": "3/compact/aligned8/other",
+      "available": 90,
+      "selected": 6
+    },
+    {
+      "stratum": "1/compact/unaligned8/other",
+      "available": 145,
+      "selected": 6
+    }
+  ],
+  "selection_rule": "10 geometric anchors plus SHA256-ranked geometry strata; no latency/status inputs",
+  "size_bands_flops": [
+    16777216,
+    268435456,
+    4294967296
+  ],
+  "aspect_threshold": 4,
+  "alignment_multiple": 8,
+  "power2_boundary_distance": 1,
+  "fresh_holdout_excluded": true,
+  "previous_legacy_results_already_explored": true,
+  "purpose": "descriptive subset; not an untouched prediction test set",
+  "shapes": [
+    {
+      "shape": [
+        72,
+        88,
+        272
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        216,
+        120,
+        152
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "0/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        168,
+        184,
+        96
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        80,
+        112,
+        72
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        144,
+        232,
+        136
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        264,
+        264,
+        120
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        72,
+        208,
+        96
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        927,
+        2265,
+        3902
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3988,
+        711,
+        1859
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        386,
+        4041,
+        3832
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1721,
+        4031,
+        518
+      ],
+      "split": "legacy_validation",
+      "stratum": "3/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3543,
+        2169,
+        563
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2389,
+        407,
+        2438
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "3/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1521,
+        871,
+        3995
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1112,
+        376,
+        1152
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1032,
+        408,
+        1064
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        568,
+        920,
+        280
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        936,
+        1040,
+        328
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        752,
+        664,
+        2472
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1408,
+        680,
+        448
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1144,
+        784,
+        576
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2496,
+        2312,
+        432
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2064,
+        784,
+        3288
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3504,
+        432,
+        1896
+      ],
+      "split": "legacy_validation",
+      "stratum": "3/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1688,
+        528,
+        3192
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "3/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3208,
+        392,
+        2784
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3320,
+        192,
+        4048
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        648,
+        2208,
+        3728
+      ],
+      "split": "legacy_validation",
+      "stratum": "3/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        145,
+        1097,
+        312
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        407,
+        142,
+        782
+      ],
+      "split": "legacy_validation",
+      "stratum": "1/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        86,
+        1097,
+        251
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        114,
+        999,
+        121
+      ],
+      "split": "legacy_validation",
+      "stratum": "1/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        493,
+        120,
+        210
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        910,
+        343,
+        105
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "1/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        74,
+        359,
+        1782
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "1/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        808,
+        424,
+        208
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        240,
+        472,
+        152
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        224,
+        480,
+        816
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        912,
+        344,
+        280
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "1/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        272,
+        312,
+        568
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        288,
+        320,
+        808
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "1/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        880,
+        480,
+        304
+      ],
+      "split": "legacy_validation",
+      "stratum": "1/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2048,
+        1032,
+        248
+      ],
+      "split": "legacy_validation",
+      "stratum": "2/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1584,
+        2032,
+        64
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2048,
+        256,
+        504
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4096,
+        72,
+        2048
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2664,
+        128,
+        616
+      ],
+      "split": "legacy_validation",
+      "stratum": "2/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        136,
+        4096,
+        504
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2616,
+        176,
+        512
+      ],
+      "split": "development",
+      "stratum": "2/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        208,
+        296,
+        64
+      ],
+      "split": "legacy_validation",
+      "stratum": "0/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1016,
+        64,
+        128
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        112,
+        1152,
+        64
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "0/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        72,
+        256,
+        64
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        80,
+        304
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        496,
+        120,
+        64
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        128,
+        256
+      ],
+      "split": "legacy_validation",
+      "stratum": "0/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        279,
+        65,
+        334
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        1024,
+        65
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        255,
+        513
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        256,
+        65,
+        64
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        256,
+        127,
+        64
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        72,
+        511
+      ],
+      "split": "legacy_validation",
+      "stratum": "0/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "split": "development",
+      "stratum": "1/elongated/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "split": "development",
+      "stratum": "1/elongated/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "split": "development",
+      "stratum": "1/elongated/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        2056,
+        128,
+        64
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "1/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        200,
+        3088,
+        128
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2056,
+        248,
+        128
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "split": "development",
+      "stratum": "1/compact/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        256,
+        584,
+        352
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "1/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        248,
+        512,
+        192
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        304,
+        128,
+        304
+      ],
+      "split": "legacy_validation",
+      "stratum": "1/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        256,
+        248,
+        136
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        512,
+        504,
+        512
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        836,
+        1251,
+        907
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        617,
+        509,
+        1221
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        776,
+        505,
+        523
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        521,
+        1214,
+        623
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1095,
+        873,
+        1334
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        749,
+        461,
+        609
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "split": "development",
+      "stratum": "0/compact/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "split": "development",
+      "stratum": "0/compact/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        216,
+        64,
+        152
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        160,
+        88
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "0/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        128,
+        304,
+        80
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        88,
+        256,
+        80
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        124,
+        234,
+        137
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        110,
+        105,
+        332
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        145,
+        67,
+        91
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "0/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        69,
+        90,
+        161
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        107,
+        78,
+        75
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        134,
+        122,
+        70
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2049,
+        2048,
+        4096
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4096,
+        2056,
+        4095
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4096,
+        2047,
+        4096
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2049,
+        1024,
+        2048
+      ],
+      "split": "development",
+      "stratum": "3/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1023,
+        2056,
+        2040
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2845,
+        1413,
+        2047
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "3/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2048,
+        1025,
+        1023
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1032,
+        1024,
+        1025
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        553,
+        1023,
+        273
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2047,
+        513,
+        1016
+      ],
+      "split": "legacy_validation",
+      "stratum": "2/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1023,
+        512,
+        1025
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2047,
+        1016,
+        512
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "split": "development",
+      "stratum": "2/compact/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "split": "development",
+      "stratum": "2/compact/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        880,
+        896,
+        256
+      ],
+      "split": "legacy_train",
+      "stratum": "2/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        680,
+        464,
+        512
+      ],
+      "split": "development",
+      "stratum": "2/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        296,
+        1064,
+        1024
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        768,
+        544,
+        512
+      ],
+      "split": "development",
+      "stratum": "2/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        256,
+        4095,
+        64
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        257,
+        65,
+        1023
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        255,
+        64,
+        1032
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "1/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        72,
+        2049,
+        257
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        504,
+        1023,
+        72
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4095,
+        64,
+        511
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4096,
+        257,
+        2049
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4095,
+        136,
+        4096
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4095,
+        4088,
+        264
+      ],
+      "split": "development",
+      "stratum": "3/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2049,
+        513,
+        4088
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "3/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2048,
+        4095,
+        512
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1023,
+        4096,
+        2040
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2448,
+        624,
+        608
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        408,
+        216,
+        2656
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "split": "development",
+      "stratum": "2/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1216,
+        4008,
+        320
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        104,
+        3320,
+        3984
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        248,
+        960,
+        1696
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4096,
+        504,
+        4096
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1024,
+        1032,
+        4096
+      ],
+      "split": "legacy_validation",
+      "stratum": "3/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        504,
+        4096,
+        2048
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        4096,
+        256,
+        2048
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "3/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2048,
+        4096,
+        256
+      ],
+      "split": "legacy_train",
+      "stratum": "3/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2056,
+        512,
+        4088
+      ],
+      "split": "legacy_validation",
+      "stratum": "3/elongated/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        257,
+        2047,
+        512
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        255,
+        2049,
+        1024
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        257,
+        1024,
+        2040
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1023,
+        2049,
+        127
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        255,
+        520,
+        4096
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        136,
+        504,
+        2047
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "split": "development",
+      "stratum": "3/compact/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "split": "development",
+      "stratum": "3/compact/aligned8/near_power2",
+      "anchor": true
+    },
+    {
+      "shape": [
+        1024,
+        4088,
+        1024
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2048,
+        2048,
+        1024
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2040,
+        2056,
+        1024
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2048,
+        1032,
+        4088
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/aligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3210,
+        2863,
+        2686
+      ],
+      "split": "legacy_validation",
+      "stratum": "3/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2189,
+        1863,
+        3677
+      ],
+      "split": "legacy_validation",
+      "stratum": "3/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1986,
+        1312,
+        1713
+      ],
+      "split": "development",
+      "stratum": "3/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1646,
+        2404,
+        3255
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2143,
+        2217,
+        3355
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2293,
+        2486,
+        2943
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        511,
+        255,
+        129
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1016,
+        255,
+        511
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        512,
+        511,
+        248
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1016,
+        256,
+        513
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        257,
+        257,
+        1023
+      ],
+      "split": "legacy_validation",
+      "stratum": "1/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        255,
+        257,
+        264
+      ],
+      "split": "legacy_validation",
+      "stratum": "1/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        112,
+        568,
+        80
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        592,
+        80,
+        88
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        312,
+        72,
+        296
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        120,
+        88,
+        624
+      ],
+      "split": "legacy_validation",
+      "stratum": "0/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        72,
+        80,
+        1160
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "0/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        176,
+        80,
+        480
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        255,
+        248,
+        128
+      ],
+      "split": "legacy_validation",
+      "stratum": "0/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        255,
+        65,
+        64
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        256,
+        257,
+        72
+      ],
+      "split": "legacy_validation",
+      "stratum": "0/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        129,
+        387,
+        142
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        64,
+        129,
+        120
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        128,
+        129,
+        136
+      ],
+      "split": "legacy_train",
+      "stratum": "0/compact/unaligned8/near_power2",
+      "anchor": false
+    },
+    {
+      "shape": [
+        477,
+        142,
+        69
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        84,
+        100,
+        521
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        678,
+        75,
+        100
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        327,
+        158,
+        77
+      ],
+      "split": "legacy_validation",
+      "stratum": "0/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        71,
+        483,
+        169
+      ],
+      "split": "legacy_validation",
+      "stratum": "0/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1168,
+        67,
+        93
+      ],
+      "split": "legacy_train",
+      "stratum": "0/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        520,
+        224,
+        80
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        104,
+        1352,
+        336
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        280,
+        112,
+        752
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        72,
+        784,
+        920
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        824,
+        176,
+        368
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3648,
+        344,
+        72
+      ],
+      "split": "legacy_train",
+      "stratum": "1/elongated/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        702,
+        1515,
+        166
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "2/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1987,
+        1846,
+        230
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        223,
+        643,
+        2860
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2154,
+        402,
+        306
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        219,
+        757,
+        1161
+      ],
+      "split": "legacy_train",
+      "stratum": "2/elongated/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        2616,
+        2704,
+        1664
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3232,
+        2072,
+        896
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        3320,
+        1104,
+        2592
+      ],
+      "split": "development",
+      "stratum": "3/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1616,
+        3752,
+        1432
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1952,
+        1232,
+        2120
+      ],
+      "split": "legacy_train",
+      "stratum": "3/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        1224,
+        3648,
+        3376
+      ],
+      "split": "legacy_validation",
+      "stratum": "3/compact/aligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        845,
+        235,
+        412
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        143,
+        414,
+        241
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        238,
+        703,
+        219
+      ],
+      "split": "legacy_test_explored",
+      "stratum": "1/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        274,
+        213,
+        172
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        244,
+        445,
+        498
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/other",
+      "anchor": false
+    },
+    {
+      "shape": [
+        200,
+        597,
+        363
+      ],
+      "split": "legacy_train",
+      "stratum": "1/compact/unaligned8/other",
+      "anchor": false
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+STAGE 2/7: s1_900_50_before (180 s preheat + 16 measurements)
+STAGE 3/7: s2_1050_50 (180 s preheat + 16 measurements)
+STAGE 4/7: s3_1200_50 (180 s preheat + 16 measurements)
+STAGE 5/7: s4_1350_50 (180 s preheat + 16 measurements)
+STAGE 6/7: s5_900_50_after (180 s preheat + 16 measurements)
+STAGE 7/7: s6_900_100_after (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+CLOCK STEPS: PASS; full remains HOLD
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+STAGE 2/7: s1_900_50_before (180 s preheat + 16 measurements)
+STAGE 3/7: s2_1050_50 (180 s preheat + 16 measurements)
+STAGE 4/7: s3_1200_50 (180 s preheat + 16 measurements)
+STAGE 5/7: s4_1350_50 (180 s preheat + 16 measurements)
+STAGE 6/7: s5_900_50_after (180 s preheat + 16 measurements)
+STAGE 7/7: s6_900_100_after (180 s preheat + 16 measurements)
+RESTORE: FAILED; inspect restore.json
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rgc
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rmc
+CLOCK STEPS: FAIL; full remains HOLD
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+test_clock_memory_cap_and_missing_samples_do_not_pass (test_steps.StepsTests.test_clock_memory_cap_and_missing_samples_do_not_pass) ... ok
+test_complete_synthetic_summary_and_polling_orientation (test_steps.StepsTests.test_complete_synthetic_summary_and_polling_orientation) ... ok
+test_corrupt_denominator_seed_graph_correctness_and_missing_rows_rejected (test_steps.StepsTests.test_corrupt_denominator_seed_graph_correctness_and_missing_rows_rejected) ... ok
+test_credentials_noninteractive_failure_and_thread_shutdown (test_steps.StepsTests.test_credentials_noninteractive_failure_and_thread_shutdown) ... ok
+test_inactive_counter_growth_remains_review_without_rejecting_clock_match (test_steps.StepsTests.test_inactive_counter_growth_remains_review_without_rejecting_clock_match) ... ok
+test_launch_preserves_review_exit_and_packages_closed_logs (test_steps.StepsTests.test_launch_preserves_review_exit_and_packages_closed_logs) ... ok
+test_manifest_tamper_and_changed_dependency_are_rejected (test_steps.StepsTests.test_manifest_tamper_and_changed_dependency_are_rejected) ... ok
+test_plan_preserves_inputs_batches_and_adapter_restores (test_steps.StepsTests.test_plan_preserves_inputs_batches_and_adapter_restores) ... ok
+test_round_variation_is_review_even_when_each_round_stable (test_steps.StepsTests.test_round_variation_is_review_even_when_each_round_stable) ... ok
+test_run_restores_under_lock_after_setup_worker_interrupt_and_success (test_steps.StepsTests.test_run_restores_under_lock_after_setup_worker_interrupt_and_success) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 4.669s
+
+OK

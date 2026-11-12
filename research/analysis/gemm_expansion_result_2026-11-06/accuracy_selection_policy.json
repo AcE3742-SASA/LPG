@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-11-05T18:50:55.621391+00:00",
+  "origin": "User preference: reduce error as far as the fixed data budget allows.",
+  "status": "Secondary derivation recorded during primary fitting; primary prelabel protocol retained.",
+  "scope": "Only the same four already frozen data sizes, learners and target representations.",
+  "selection": "Per dtype/mode, minimum pooled validation mean MAPE over three seeds, then p90, then training n, learner and target.",
+  "primary_full_endpoint_comparison_retained": true,
+  "artifacts": "Reuse trusted baseline/full weights. If an intermediate size wins, replay that fixed configuration and require exact stored validation predictions before saving weights.",
+  "locked_test_opened": false
+}

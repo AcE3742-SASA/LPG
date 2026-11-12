@@ -1,0 +1,32 @@
+{
+  "commands_accepted": true,
+  "commands": {
+    "graphics": {
+      "command": [
+        "sudo",
+        "-n",
+        "/usr/bin/nvidia-smi",
+        "-i",
+        "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a",
+        "-rgc"
+      ],
+      "exit_code": 0,
+      "stdout": "All done.\n",
+      "stderr": ""
+    },
+    "memory": {
+      "command": [
+        "sudo",
+        "-n",
+        "/usr/bin/nvidia-smi",
+        "-i",
+        "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a",
+        "-rmc"
+      ],
+      "exit_code": 0,
+      "stdout": "All done.\n",
+      "stderr": ""
+    }
+  },
+  "note": "Reset command acceptance; not proof of a specific idle clock."
+}

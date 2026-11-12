@@ -1,0 +1,252 @@
+{
+  "quality_status_counts": {
+    "PASS": 111582,
+    "REVIEW": 1800
+  },
+  "segments": 946,
+  "segment_counts": {
+    "imported": 903,
+    "new": 43
+  },
+  "flagged_segments": [
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00000",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00001",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00002",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00007",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00008",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00009",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00024",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00025",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00026",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00027",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00028",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00029",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00038",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00039",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_144016_61da8183/segment_00042",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    }
+  ],
+  "flags_by_segment": {
+    "worker_active:clocks_event_reasons.sw_power_cap": 14,
+    "worker_mismatch:clocks.sm": 4,
+    "worker_mismatch:clocks.mem": 1
+  },
+  "new_flags_by_segment": {
+    "worker_active:clocks_event_reasons.sw_power_cap": 14,
+    "worker_mismatch:clocks.sm": 4,
+    "worker_mismatch:clocks.mem": 1
+  },
+  "new_ranges": {
+    "clocks.sm": [
+      690.0,
+      720.0
+    ],
+    "clocks.mem": [
+      6800.0,
+      6801.0
+    ],
+    "power.limit": [
+      70.0,
+      70.0
+    ],
+    "power.draw": [
+      20.87,
+      69.76
+    ],
+    "temperature.gpu": [
+      38.0,
+      67.0
+    ]
+  },
+  "telemetry_samples": {
+    "imported": 8017217,
+    "new": 385185
+  },
+  "new_max_sample_gap_seconds": 0.07499980926513672,
+  "new_counter_active_samples": {
+    "clocks_event_reasons_counters.sw_power_cap": 2139,
+    "clocks_event_reasons_counters.sw_thermal_slowdown": 0,
+    "clocks_event_reasons_counters.hw_thermal_slowdown": 0
+  },
+  "new_counter_anomaly_blocks": 2959,
+  "imported_status_counts": {
+    "PASS": 108222
+  },
+  "remeasured_status_counts": {
+    "REVIEW": 1800,
+    "PASS": 3360
+  },
+  "resolved_review": 3360,
+  "remaining_review": 1800,
+  "remaining_general_review": 1543,
+  "remaining_fresh_holdout_review": 257,
+  "new_split_status_counts": [
+    {
+      "split": "development",
+      "status": "PASS",
+      "count": 138
+    },
+    {
+      "split": "development",
+      "status": "REVIEW",
+      "count": 550
+    },
+    {
+      "split": "fresh_holdout",
+      "status": "PASS",
+      "count": 541
+    },
+    {
+      "split": "fresh_holdout",
+      "status": "REVIEW",
+      "count": 257
+    },
+    {
+      "split": "legacy_test_explored",
+      "status": "PASS",
+      "count": 469
+    },
+    {
+      "split": "legacy_test_explored",
+      "status": "REVIEW",
+      "count": 145
+    },
+    {
+      "split": "legacy_train",
+      "status": "PASS",
+      "count": 1854
+    },
+    {
+      "split": "legacy_train",
+      "status": "REVIEW",
+      "count": 699
+    },
+    {
+      "split": "legacy_validation",
+      "status": "PASS",
+      "count": 358
+    },
+    {
+      "split": "legacy_validation",
+      "status": "REVIEW",
+      "count": 149
+    }
+  ],
+  "new_sessions": {
+    "20260930_144016_61da8183": {
+      "state": "FINISHED",
+      "new_records": 5160,
+      "elapsed_seconds": 20217.87172758195,
+      "ended_utc": "2026-09-30T11:17:14.180356+00:00"
+    }
+  },
+  "holdout_latencies_disclosed": false
+}

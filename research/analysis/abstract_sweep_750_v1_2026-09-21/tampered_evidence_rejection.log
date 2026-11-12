@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json,sys;from pathlib import Path;sys.path.insert(0,sys.argv[1]);import run;print(json.dumps(run.check_admission(Path(sys.argv[2]),(run.HERE/'review_note.md').read_text(),run.load())))
+                                                                                                        ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/750 deployment hp0djbkw/abstract_sweep_750_v1/run.py", line 169, in check_admission
+    raise RuntimeError('Reviewed 750 MHz check rejected: '+result.stderr[-3000:])
+RuntimeError: Reviewed 750 MHz check rejected: Traceback (most recent call last):
+  File "/private/var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/750 deployment hp0djbkw/abstract_sweep_750_v1/check_750.py", line 58, in <module>
+    print(json.dumps(inspect(Path(sys.argv[1]).resolve())))
+                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/750 deployment hp0djbkw/abstract_sweep_750_v1/check_750.py", line 21, in inspect
+    raise RuntimeError('Not the reviewed 750 MHz evidence; preserve and inspect it')
+RuntimeError: Not the reviewed 750 MHz evidence; preserve and inspect it
+

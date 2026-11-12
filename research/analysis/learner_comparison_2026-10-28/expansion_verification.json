@@ -1,0 +1,17 @@
+{
+  "admission_reviewed_measurements": 3600,
+  "manifest_resume_equal": true,
+  "complete_source_snapshot_files": 223,
+  "standalone_snapshot_verify": {
+    "status": "PASS",
+    "size": "full",
+    "tasks": 180000,
+    "phases": {
+      "main": 180000
+    },
+    "triplets": 60000,
+    "task_digest": "7aa99822f3701aea50ee7dea2ea85197cb7ffb546b1e4a4368b13a121bb0582d"
+  },
+  "gpu_executed": false,
+  "locked_test_opened": false
+}

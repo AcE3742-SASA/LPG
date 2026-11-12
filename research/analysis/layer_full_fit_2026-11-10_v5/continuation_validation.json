@@ -1,0 +1,523 @@
+{
+  "status": "PASS",
+  "client_date": "2026-11-10",
+  "scope": "Real v2 train labels and three actual failure public costs; eight v4 completed archives represented by synthetic metadata fixtures",
+  "frozen_protocol_version": 5,
+  "frozen_protocol_sha256": "4dabf3939473f70cf56d0905c9f86346049cbe1afd8b193bc23048dec6311790",
+  "package_release_sha256": "28181653daf006a78b293581a724bb8fbcb86fad527127dc6cd1b3efe995dca6",
+  "train": {
+    "raw_records": 21600,
+    "batches": 20,
+    "accepted_conditions": 7198,
+    "excluded_conditions": [
+      {
+        "case_id": "lf_1df050dd847f7ac8",
+        "layer": "ffn",
+        "dtype": "fp32",
+        "implementation": "gelu",
+        "status": "REVIEW",
+        "reasons": [
+          "between_round_range"
+        ]
+      },
+      {
+        "case_id": "lf_40b5206c5b6879dd",
+        "layer": "ffn",
+        "dtype": "fp32",
+        "implementation": "gelu",
+        "status": "REVIEW",
+        "reasons": [
+          "between_round_range"
+        ]
+      }
+    ],
+    "archive_sha256": {
+      "train_01": "25f205e0695c8a3d0fa649ab3cd8678249d4cc7ecabde22dde1d1659ee783667",
+      "train_02": "4e836ef1a4c0d9e9492283b1534befc2e61e1d5bcfe0d1516e219c170d682a54",
+      "train_03": "b104d70b53b005033b074bf5bc4b73ff28678ae220377b9249579cde57e63846",
+      "train_04": "5bf32dd0143a459cf48c6f4de992f78e7945d2d8f55cc9114a2fb036c456d30c",
+      "train_05": "bbcb4fb02f64e1bb8c3e07a8ae4e1ebb03fca1ef81e6d53562107e6066de20c3",
+      "train_06": "47951b6729a9da7419d31d05a5936fcd56f7916fb208ed84b49550a4bfc61522",
+      "train_07": "04599791c5be9b346ccd38184fbf91661af4af87f68b827fb383fb08e352bf24",
+      "train_08": "46fc112595dcd3419af7520a39be5b5fe2be4b882d0ff1540cf282c0e2b2bb72",
+      "train_09": "79be3b35d1e9db67e784900d239ef80d66bcb3a1628ed12d35b3dec861605774",
+      "train_10": "26fb8e1025cc8b9a98f32b79ffe5eed344f25e7fcacc2fbc770bf12367db6888",
+      "train_11": "eef77ded7586c5ac6abbba70658e4fc9a5b646536c8cc5a914c65be2d7a6c38b",
+      "train_12": "c61595bdf65373670e76fb60d20f08d581cd5b978922c11e8b29ee307d04b37c",
+      "train_13": "2ac12be5816d5125b4893803d27ac987192864e8820e7eaf119841c0bf33f11f",
+      "train_14": "90dc676f6a42de2666e7ff966515ce8afc334f00dca62c30ba30598e61dafc54",
+      "train_15": "875daa4003695098961386eb98eb0c32fa12d4d683bd9719c6924fc60ba215ad",
+      "train_16": "761281809e1d9a72e243625f028bcb13b1e6caeff65bc7286e8a4978861d73e0",
+      "train_17": "617bd9d88e7422b0c9fa3897f225ad3240429402a0a92c27dcad17665651f6a2",
+      "train_18": "24fe20b1de52f534ac83a5b453496f5dbfeb4336741b80e22e1ce67a80f8c9c9",
+      "train_19": "0d52204d0f79641b21d675334f16a22c5a17cb60d895ccbd427039cd302d12d1",
+      "train_20": "63831e6fab8371cc17f24db6b3daf90465e29e265cf23d98cbeb680281995eb5"
+    }
+  },
+  "shared_gemm_weights_verified": {
+    "analysis/gemm_expansion_result_2026-11-06/fit_v1/models/mlp32_fp16_allocate_normalized_20261028.joblib": "9b3b0ce4a4cebb339b210498fd4fbff962b5099564d3296396ef160d4de9cb50",
+    "analysis/gemm_expansion_result_2026-11-06/fit_v1/models/mlp32_fp16_allocate_normalized_20261029.joblib": "ded1bd85af3b5b8c694256901d67db85680f4acb2fe0b24ba7feea1286534543",
+    "analysis/gemm_expansion_result_2026-11-06/fit_v1/models/mlp32_fp16_allocate_normalized_20261030.joblib": "082cf51d2589b4784d6f0040505e34b0c4d7135fc83522bbb6254046119ba16c",
+    "analysis/gemm_expansion_result_2026-11-06/fit_v1/models/rf_fp32_allocate_normalized_20261028.joblib": "df2415db1f43c0625a9b7c94fdf2bb4a3ea4081930ed7a4d702d79ae61ab4aa1",
+    "analysis/gemm_expansion_result_2026-11-06/fit_v1/models/rf_fp32_allocate_normalized_20261029.joblib": "cc7eb9a8f683e63f01f4bae50ee3e917e3e371e82a0360234152bd32f955146f",
+    "analysis/gemm_expansion_result_2026-11-06/fit_v1/models/rf_fp32_allocate_normalized_20261030.joblib": "950835dd2cd0379487c376c96af49adee3aa2791bfd5d8eed0f35ccfaf1b9e17"
+  },
+  "correctness_exclusions": [
+    {
+      "case_id": "lf_ce6440e85a4add93",
+      "dtype": "fp32",
+      "evidence": "regression/lf_ce6440e85a4add93_fp32_v3_failure.json",
+      "evidence_sha256": "fc711c99edc5b611ce00ef25ddcb2e071c583ce5b656909ac63cdb223c77483b",
+      "phase": "validation_01",
+      "reason": "standard_output_exceeds_original_fp64_tolerance"
+    },
+    {
+      "case_id": "lf_dfce839bd3ca0ef5",
+      "dtype": "fp32",
+      "evidence": "regression/lf_dfce839bd3ca0ef5_fp32_v4_failure.json",
+      "evidence_sha256": "94d739b09c30018b17cacd32e12b2b3d5931f0fb53fccd4aedaecf6dd074ba39",
+      "phase": "test_04",
+      "reason": "standard_output_exceeds_original_fp64_tolerance"
+    }
+  ],
+  "costs": {
+    "scope": "Controlled collection, clock setup/reset and analysis; never raw timing labels",
+    "excluded_costs": [
+      "checked-wrapper setup",
+      "archive packaging",
+      "campaign idle gaps"
+    ],
+    "campaign_elapsed_wall_seconds": null,
+    "missing_phase_attempts": [
+      "test_05"
+    ],
+    "by_split": {
+      "train": {
+        "attempts": 20,
+        "observed_controlled_wall_seconds": 87797.61964581348,
+        "verified_complete_attempt_sum_seconds": 87797.61964581348,
+        "missing_ledgers": [],
+        "unverified_ledgers": [],
+        "recorded_measurements": 21600,
+        "scope": "All attempts, including incomplete attempts; shared setup already included"
+      },
+      "validation": {
+        "attempts": 7,
+        "observed_controlled_wall_seconds": 1244.7964953859337,
+        "verified_complete_attempt_sum_seconds": null,
+        "missing_ledgers": [
+          "validation_01_attempt_003",
+          "validation_02_attempt_001",
+          "validation_03_attempt_001",
+          "validation_04_attempt_001",
+          "validation_05_attempt_001"
+        ],
+        "unverified_ledgers": [],
+        "recorded_measurements": 272,
+        "scope": "All attempts, including incomplete attempts; shared setup already included"
+      },
+      "test": {
+        "attempts": 4,
+        "observed_controlled_wall_seconds": 300.9262970178388,
+        "verified_complete_attempt_sum_seconds": null,
+        "missing_ledgers": [
+          "test_01_attempt_001",
+          "test_02_attempt_001",
+          "test_03_attempt_001"
+        ],
+        "unverified_ledgers": [],
+        "recorded_measurements": 30,
+        "scope": "All attempts, including incomplete attempts; shared setup already included"
+      }
+    },
+    "all_attempts": {
+      "attempts": 31,
+      "observed_controlled_wall_seconds": 89343.34243821725,
+      "verified_complete_attempt_sum_seconds": null,
+      "missing_ledgers": [
+        "validation_01_attempt_003",
+        "validation_02_attempt_001",
+        "validation_03_attempt_001",
+        "validation_04_attempt_001",
+        "validation_05_attempt_001",
+        "test_01_attempt_001",
+        "test_02_attempt_001",
+        "test_03_attempt_001"
+      ],
+      "unverified_ledgers": [],
+      "recorded_measurements": 21902,
+      "scope": "All attempts, including incomplete attempts; shared setup already included"
+    },
+    "attempt_details": [
+      {
+        "phase": "train_01",
+        "split": "train",
+        "attempt": "train_01_attempt_001",
+        "controlled_collection_wall_seconds": 4395.235203695949,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_02",
+        "split": "train",
+        "attempt": "train_02_attempt_001",
+        "controlled_collection_wall_seconds": 4388.909862447996,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_03",
+        "split": "train",
+        "attempt": "train_03_attempt_001",
+        "controlled_collection_wall_seconds": 4385.430534133222,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "REVIEW",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_04",
+        "split": "train",
+        "attempt": "train_04_attempt_001",
+        "controlled_collection_wall_seconds": 4391.200092638377,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_05",
+        "split": "train",
+        "attempt": "train_05_attempt_001",
+        "controlled_collection_wall_seconds": 4392.73162518302,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_06",
+        "split": "train",
+        "attempt": "train_06_attempt_001",
+        "controlled_collection_wall_seconds": 4384.105362503789,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_07",
+        "split": "train",
+        "attempt": "train_07_attempt_001",
+        "controlled_collection_wall_seconds": 4393.635011448991,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_08",
+        "split": "train",
+        "attempt": "train_08_attempt_001",
+        "controlled_collection_wall_seconds": 4392.509225266054,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_09",
+        "split": "train",
+        "attempt": "train_09_attempt_001",
+        "controlled_collection_wall_seconds": 4388.624081523158,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "REVIEW",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_10",
+        "split": "train",
+        "attempt": "train_10_attempt_001",
+        "controlled_collection_wall_seconds": 4392.170136026572,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_11",
+        "split": "train",
+        "attempt": "train_11_attempt_001",
+        "controlled_collection_wall_seconds": 4388.837394217029,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_12",
+        "split": "train",
+        "attempt": "train_12_attempt_001",
+        "controlled_collection_wall_seconds": 4389.5508648273535,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_13",
+        "split": "train",
+        "attempt": "train_13_attempt_001",
+        "controlled_collection_wall_seconds": 4388.754573836923,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_14",
+        "split": "train",
+        "attempt": "train_14_attempt_001",
+        "controlled_collection_wall_seconds": 4393.9237720971,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_15",
+        "split": "train",
+        "attempt": "train_15_attempt_001",
+        "controlled_collection_wall_seconds": 4386.341491219588,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_16",
+        "split": "train",
+        "attempt": "train_16_attempt_001",
+        "controlled_collection_wall_seconds": 4391.165846937336,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_17",
+        "split": "train",
+        "attempt": "train_17_attempt_001",
+        "controlled_collection_wall_seconds": 4389.154009200633,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_18",
+        "split": "train",
+        "attempt": "train_18_attempt_001",
+        "controlled_collection_wall_seconds": 4384.342656529043,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_19",
+        "split": "train",
+        "attempt": "train_19_attempt_001",
+        "controlled_collection_wall_seconds": 4394.2401204421185,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "train_20",
+        "split": "train",
+        "attempt": "train_20_attempt_001",
+        "controlled_collection_wall_seconds": 4386.7577816392295,
+        "recorded": 1080,
+        "expected": 1080,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "validation_01",
+        "split": "validation",
+        "attempt": "validation_01_attempt_001",
+        "controlled_collection_wall_seconds": 1242.31676061498,
+        "recorded": 272,
+        "expected": 1080,
+        "collection": "INCOMPLETE",
+        "gate": "FAIL",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "validation_01",
+        "split": "validation",
+        "attempt": "validation_01_attempt_002",
+        "controlled_collection_wall_seconds": 2.4797347709536552,
+        "recorded": 0,
+        "expected": 1080,
+        "collection": "INCOMPLETE",
+        "gate": "FAIL",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      },
+      {
+        "phase": "validation_01",
+        "split": "validation",
+        "attempt": "validation_01_attempt_003",
+        "controlled_collection_wall_seconds": null,
+        "recorded": null,
+        "expected": null,
+        "collection": "COMPLETE",
+        "gate": "REVIEW",
+        "integrity": "unavailable"
+      },
+      {
+        "phase": "validation_02",
+        "split": "validation",
+        "attempt": "validation_02_attempt_001",
+        "controlled_collection_wall_seconds": null,
+        "recorded": null,
+        "expected": null,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "unavailable"
+      },
+      {
+        "phase": "validation_03",
+        "split": "validation",
+        "attempt": "validation_03_attempt_001",
+        "controlled_collection_wall_seconds": null,
+        "recorded": null,
+        "expected": null,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "unavailable"
+      },
+      {
+        "phase": "validation_04",
+        "split": "validation",
+        "attempt": "validation_04_attempt_001",
+        "controlled_collection_wall_seconds": null,
+        "recorded": null,
+        "expected": null,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "unavailable"
+      },
+      {
+        "phase": "validation_05",
+        "split": "validation",
+        "attempt": "validation_05_attempt_001",
+        "controlled_collection_wall_seconds": null,
+        "recorded": null,
+        "expected": null,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "unavailable"
+      },
+      {
+        "phase": "test_01",
+        "split": "test",
+        "attempt": "test_01_attempt_001",
+        "controlled_collection_wall_seconds": null,
+        "recorded": null,
+        "expected": null,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "unavailable"
+      },
+      {
+        "phase": "test_02",
+        "split": "test",
+        "attempt": "test_02_attempt_001",
+        "controlled_collection_wall_seconds": null,
+        "recorded": null,
+        "expected": null,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "unavailable"
+      },
+      {
+        "phase": "test_03",
+        "split": "test",
+        "attempt": "test_03_attempt_001",
+        "controlled_collection_wall_seconds": null,
+        "recorded": null,
+        "expected": null,
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "integrity": "unavailable"
+      },
+      {
+        "phase": "test_04",
+        "split": "test",
+        "attempt": "test_04_attempt_001",
+        "controlled_collection_wall_seconds": 300.9262970178388,
+        "recorded": 30,
+        "expected": 1080,
+        "collection": "INCOMPLETE",
+        "gate": "FAIL",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate"
+      }
+    ]
+  },
+  "actual_eight_completed_v4_archives_supplied": false,
+  "actual_training_executed": false,
+  "sealed_test_labels_opened": false,
+  "gpu_executed": false,
+  "elapsed_seconds": 12.489046833012253
+}

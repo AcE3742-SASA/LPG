@@ -1,0 +1,240 @@
+{
+  "format_version": 1,
+  "repository": "AcE3742-SASA/LPG",
+  "release_tag": "v1.0.0",
+  "chunk_size": 268435456,
+  "files_manifest": {
+    "path": "manifests/files.jsonl.gz",
+    "sha256": "59e267d2923630bc50615fa39f914fe02f291adf193cc21ec97d834cadc7e04b",
+    "size": 29894511
+  },
+  "packs": [
+    {
+      "name": "research-0001.tar.gz",
+      "sha256": "1bbe0cbdc97dc4cd9707d7d7fc3acaf5f44c2565a5e3f06c5bc25cc562e27e43",
+      "size": 456465760,
+      "objects": 2787
+    },
+    {
+      "name": "research-0002.tar.gz",
+      "sha256": "d819883dd884b83b2b848cdcf8b4a98074e139dc0fe19d89ba76abdb31e7312a",
+      "size": 492207552,
+      "objects": 44
+    },
+    {
+      "name": "research-0003.tar.gz",
+      "sha256": "e57c5fcfc30a771e1b2e437f0be52275bbaac5d96d74df673ce81da0715312a0",
+      "size": 181334654,
+      "objects": 4
+    },
+    {
+      "name": "research-0004.tar.gz",
+      "sha256": "27804f97ea63d8a1d5fc1924f2096e64464af88739c16283dbe8aa805e0c7a4a",
+      "size": 167225253,
+      "objects": 6
+    },
+    {
+      "name": "research-0005.tar.gz",
+      "sha256": "29c64a2915f7cf7977f64fdc2567c5a557d0c521501e93c779aae86d086f61ab",
+      "size": 175810773,
+      "objects": 4
+    },
+    {
+      "name": "research-0006.tar.gz",
+      "sha256": "65bfa2cb18607fba9e7d23126bfbdef722a5d4a81028d5f9deab9fbe177c6ad0",
+      "size": 77876564,
+      "objects": 1704
+    },
+    {
+      "name": "research-0007.tar.gz",
+      "sha256": "f20c993566ba115156260700296532d18ab45e8114072619aa38c023db38ec85",
+      "size": 39363843,
+      "objects": 2039
+    },
+    {
+      "name": "research-0008.tar.gz",
+      "sha256": "0d70078cb974a006b3e48b6b1b1d78cb69b03e4667a6c3dc993a4adf51937089",
+      "size": 566092377,
+      "objects": 364
+    },
+    {
+      "name": "research-0009.tar.gz",
+      "sha256": "31194fbd41e1ade714195660a0baede057d57bb1fcac4650f5352bc51ca7423e",
+      "size": 622246536,
+      "objects": 186
+    },
+    {
+      "name": "research-0010.tar.gz",
+      "sha256": "1667751745fe0f5229361ad3ee1167e66d6597ecc2fd7658a8159ff4c6ce4d89",
+      "size": 188670184,
+      "objects": 19
+    },
+    {
+      "name": "research-0011.tar.gz",
+      "sha256": "0e0ee318366e543dcdfa20b8e3b5048a230acea8b6b71352145fa1d31d0c9463",
+      "size": 182190606,
+      "objects": 4
+    },
+    {
+      "name": "research-0012.tar.gz",
+      "sha256": "bda7a8f1809eb3ca8d1e93ac5f66d83dd1afe42fd708534b42adae1a6484f39b",
+      "size": 181585372,
+      "objects": 4
+    },
+    {
+      "name": "research-0013.tar.gz",
+      "sha256": "3ed5d3d35562475c8f5dbb4b0d6b0bfb91e46d898ea4f9e9454fa1c15839e2ef",
+      "size": 167121595,
+      "objects": 6
+    },
+    {
+      "name": "research-0014.tar.gz",
+      "sha256": "6b2e99a87a23b529d89a197c455d9d6593555e5be9a4834337901d89ad47fa85",
+      "size": 176671439,
+      "objects": 4
+    },
+    {
+      "name": "research-0015.tar.gz",
+      "sha256": "06aee876d0d3a2c7824e1f722406292e46f92ab99df579441f0879752fa971c5",
+      "size": 176067353,
+      "objects": 4
+    },
+    {
+      "name": "research-0016.tar.gz",
+      "sha256": "5c551798618ff0c60322295fe8c853afba1436b866ced1df896d58022d55a5e8",
+      "size": 51499900,
+      "objects": 2040
+    },
+    {
+      "name": "research-0017.tar.gz",
+      "sha256": "0ac0175faeed4ddca33f6c789f9f53d0374b8f39ec75a2881a8819f768a44a17",
+      "size": 38824096,
+      "objects": 2029
+    },
+    {
+      "name": "research-0018.tar.gz",
+      "sha256": "82fa5c161777e8c6289fc722742c13d0b46803ea06c582d50aa6e0014f8e94c4",
+      "size": 38844092,
+      "objects": 2009
+    },
+    {
+      "name": "research-0019.tar.gz",
+      "sha256": "8aea36ee258f8708f0b0ec176c87f5d351cf21b85363005f0d0b9da849c088eb",
+      "size": 403960101,
+      "objects": 5334
+    },
+    {
+      "name": "research-0020.tar.gz",
+      "sha256": "cbc4b112d17f4f2d9d1d6ce221b8c019c217a34bb6832c29137492d2090aa11b",
+      "size": 251658718,
+      "objects": 1425
+    },
+    {
+      "name": "research-0021.tar.gz",
+      "sha256": "039653f75805bfe2a5021d0d254bd567898637752398a2bd231ea4a6fc1e4400",
+      "size": 181294825,
+      "objects": 4
+    },
+    {
+      "name": "research-0022.tar.gz",
+      "sha256": "ab55318add1955ef8978eab4a881071a7432987fb27c40605f0dc6e0ba504fd7",
+      "size": 156459395,
+      "objects": 8
+    },
+    {
+      "name": "research-0023.tar.gz",
+      "sha256": "77af6b0126075e441f4695b0867186b7eb972ea90270e818eeac0aa32ac758fa",
+      "size": 177579471,
+      "objects": 4
+    },
+    {
+      "name": "research-0024.tar.gz",
+      "sha256": "f5ad379c7328d51fbe4f7e36410886990090d322dbde3b6caa667c12c131feb5",
+      "size": 842345981,
+      "objects": 19
+    },
+    {
+      "name": "research-0025.tar.gz",
+      "sha256": "63e43ab617b71f8c6774614a9f202ed6114ff9ae98e7aef1013f457a6b440e32",
+      "size": 603372242,
+      "objects": 27
+    },
+    {
+      "name": "research-0026.tar.gz",
+      "sha256": "0a1f6389bbbceceaaef530be66782bcb8d2a66d508bcc1f3e55d21131dbb06ca",
+      "size": 177785624,
+      "objects": 4
+    },
+    {
+      "name": "research-0027.tar.gz",
+      "sha256": "7e8006a2ac280bce71358717f1b557a4e691c3cc02537538047f28d93f01ed4f",
+      "size": 144543023,
+      "objects": 335
+    },
+    {
+      "name": "research-0028.tar.gz",
+      "sha256": "c2d2b9223838db16c2070c1136fb591e1d5defed7279d0c7e26ac7d859ec4fe1",
+      "size": 182321664,
+      "objects": 29
+    },
+    {
+      "name": "research-0029.tar.gz",
+      "sha256": "bb16e03e17a54b2f628e2d4295765d62ccce6e99df753667420d190932601cbd",
+      "size": 1072928418,
+      "objects": 4
+    },
+    {
+      "name": "research-0030.tar.gz",
+      "sha256": "42d8f2a0b26c2ed3fd65c8f83d66ae14ca82ddce3d4f6397edabe4000ab8afc2",
+      "size": 908766414,
+      "objects": 9
+    },
+    {
+      "name": "research-0031.tar.gz",
+      "sha256": "afef8fd6ae78bc2f222826266b5aa3e2dade068748c3bf001a57e7dd58dc380b",
+      "size": 194339677,
+      "objects": 222
+    },
+    {
+      "name": "research-0032.tar.gz",
+      "sha256": "7c5fc27de32f87179e72901112e61a47335eb52b7120b87ff1a0f1dc94839135",
+      "size": 1072923616,
+      "objects": 4
+    },
+    {
+      "name": "research-0033.tar.gz",
+      "sha256": "9e2c082b4840754e7abf765aec1c3a8ff73011952a77f12dced91e86bd875123",
+      "size": 1074068614,
+      "objects": 4
+    },
+    {
+      "name": "research-0034.tar.gz",
+      "sha256": "2009efa4603511c50330543cab1768643937d6db986b12f81ca009cd898cd9e0",
+      "size": 589480665,
+      "objects": 27
+    },
+    {
+      "name": "research-0035.tar.gz",
+      "sha256": "e456366b54b6bbce9c091629986ce4174812af7a4c4dfe783cbfc6da7fd570be",
+      "size": 219372088,
+      "objects": 4085
+    },
+    {
+      "name": "research-0036.tar.gz",
+      "sha256": "9b4ebc08e70fbfb5420502a46543f3da09ea2c673c7818291e50fe23f0192cbc",
+      "size": 220252889,
+      "objects": 188
+    }
+  ],
+  "counts": {
+    "research_files": 1253340,
+    "research_bytes": 87470921715,
+    "git_files": 3770,
+    "git_bytes": 146659355,
+    "symlinks": 3,
+    "unique_objects": 24989,
+    "unique_bytes": 36730921504,
+    "release_bytes": 12453551374
+  },
+  "exclusions": {}
+}

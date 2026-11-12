@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "archive_sha256": "c3db83706fa49363bf44461fead65d9c8880b9b85104ac0c6e574b1f2fb1be14",
+  "files": {
+    "run.sh": "a0142c01d06cb81089a924828205c8dbce3db14a5fb6dd8a9af4e6b9295aabc2",
+    "roofline.py": "63ea286cf1b52b9df972e098a958a8a7e29d8ea6c5c83ea272d2886ca4f0435d",
+    "kernels.json": "fc25c9a96063759e7e85aba3a76137ba1b6925038bcf3b36d7d79da2177fdc97",
+    "README.md": "28a7d9fe883aa453ff5a5c36ddcea433d4bca5a23006ad47f12b84bb6d370d9a"
+  },
+  "target": [
+    720,
+    6801,
+    70
+  ],
+  "prior_750_v2_source_and_archive_unchanged": true,
+  "full_plan_and_all_306_commands_unchanged_except_target_and_version": true,
+  "offline_cases": 17,
+  "aggregation_checks": [
+    "five_round_statistics",
+    "exclude_warmup",
+    "variation_review",
+    "incomplete_candidates_rejected"
+  ],
+  "old_750_loaded_clock_rejected": true,
+  "bash_syntax": "PASS",
+  "python_syntax": "PASS",
+  "archive_byte_check": "PASS",
+  "gpu_executed": false,
+  "remote_settings_changed": false,
+  "test_command": "python3 -B analysis/roofline_720_v1_2026-09-22/test_roofline.py"
+}

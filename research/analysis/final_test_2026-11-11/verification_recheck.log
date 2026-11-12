@@ -1,0 +1,2 @@
+PASS: raw labels, frozen predictions, test metrics and original hashes verified
+{'gemm_expanded': 36000, 'gemm_legacy_and_transfer': 60000, 'layers': 16758}

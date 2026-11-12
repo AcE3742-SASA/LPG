@@ -1,0 +1,11 @@
+{
+  "/Users/studyhard/Claude/자율연구/analysis/cutlass_inventory_2026-09-21/raw/help.txt": "c5d4cb4f2e79cdd1c405ec911698411fd3839534c07288fc89545646511752b8",
+  "/Users/studyhard/Claude/자율연구/analysis/power_shape_diag_v1_result_2026-10-02/ncu_metrics.json": "9e04995962d8759f3223be7a60cfc6df0bd5c793e296b59a4e882b23406f2ebd",
+  "/Users/studyhard/Claude/자율연구/clock_audit_v1/baseline_v6.json": "8c10d1d70e091071e1bd2ce4b87d6e90a05d35f41c32595fd8066d5246a2180b",
+  "/Users/studyhard/Claude/자율연구/analysis/integrated_rq14_2026-10-28/run_rq14.py": "3fc0233e6d70476dd1abd2e514197a6938fcdb334d9c2807620ba568b894c43c",
+  "/Users/studyhard/Claude/자율연구/analysis/gemm_expansion_result_2026-11-06/compare_expansion.py": "534afa995a941f83702f9b560ab4bc830153df97bef28c8e7a2defcd155031c4",
+  "/Users/studyhard/Claude/자율연구/analysis/gemm_expansion_result_2026-11-06/fit_v1/frozen_protocol.json": "4eba0953fc21bc080bca5d7595d7bf9524bfeb9debd10a0544c7dc0d8551d120",
+  "/Users/studyhard/Claude/자율연구/analysis/gemm_expansion_result_2026-11-06/fit_v1/adopted_conditions.csv": "3f649ed8b2999435c9d3c28940a7c0c1eede06981c5c72168cac3f265999b1d9",
+  "/Users/studyhard/Claude/AcEVault/sources/GEMMify_AICAS2025_원문.pdf": "10bee8a8a1118cb3391a02e04a6bdd6834daaf5cb7b82853e0561b5a73be1692",
+  "/Users/studyhard/Claude/자율연구/analysis/final_test_2026-11-11/summary/layers.csv": "07265bd4035ec9169e9ddb4f8f37947d26e98d4afe2266272cf038857447b7e3"
+}

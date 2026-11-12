@@ -1,0 +1,85 @@
+{
+  "passed": false,
+  "full_pair_passed": false,
+  "pair_max_abs_error": 4.094839096069336e-05,
+  "reference": "CPU FP64 mathematical forward from actual rounded input/weights",
+  "reference_scope": "fixed sampled output points; full-output finite and pair checks",
+  "rows": [
+    0,
+    43,
+    536,
+    583,
+    960,
+    1073,
+    1132,
+    1219,
+    1237,
+    1358,
+    1431,
+    1457,
+    1547,
+    1699,
+    1725,
+    1919
+  ],
+  "columns": [
+    0,
+    18,
+    58,
+    70,
+    108,
+    172,
+    231,
+    258,
+    281,
+    318,
+    388,
+    394,
+    412,
+    446,
+    458,
+    462
+  ],
+  "atol": 2e-05,
+  "rtol": 0.0002,
+  "implementations": {
+    "standard": {
+      "passed": true,
+      "finite_all": true,
+      "points": 256,
+      "max_abs_error": 1.5363336764218083e-05,
+      "max_tolerance_ratio": 0.5179600825597337,
+      "output_shape": [
+        8,
+        463,
+        20,
+        12
+      ],
+      "output_stride": [
+        111120,
+        240,
+        12,
+        1
+      ]
+    },
+    "decomposed": {
+      "passed": true,
+      "finite_all": true,
+      "points": 256,
+      "max_abs_error": 5.766813282459538e-07,
+      "max_tolerance_ratio": 0.018907378233284915,
+      "output_shape": [
+        8,
+        463,
+        20,
+        12
+      ],
+      "output_stride": [
+        111120,
+        240,
+        12,
+        1
+      ]
+    }
+  }
+}

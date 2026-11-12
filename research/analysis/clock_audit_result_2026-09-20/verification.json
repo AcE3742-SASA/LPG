@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "recomputed_equal": {
+    "analysis.json": true,
+    "clock_windows.json": true,
+    "conditions.csv": true,
+    "report.md": true,
+    "summary.json": true
+  },
+  "source_files": 9,
+  "baseline_files": 14,
+  "environment_matches": 5,
+  "summary": {
+    "gate": "REVIEW",
+    "expected": 40,
+    "recorded": 40,
+    "missing": 0,
+    "counts": {
+      "PASS": 38,
+      "REVIEW": 2
+    },
+    "traced_blocks": 56,
+    "correctness_passed": 40,
+    "interpretation": "NOT_REVIEWED",
+    "flags": [
+      "(1888, 832, 632)/fp16/graph:dense_relative_range_above_5pct",
+      "(1888, 832, 632)/fp16/graph:nsys_relative_range_above_5pct",
+      "(1888, 832, 632)/fp16/graph:nsys_vs_dense_difference_above_5pct",
+      "(392, 2776, 80)/fp32/graph:dense_relative_range_above_5pct",
+      "(392, 2776, 80)/fp32/graph:sparse_relative_range_above_5pct",
+      "(392, 2776, 80)/fp32/prealloc:dense_relative_range_above_5pct",
+      "(392, 2776, 80)/fp32/prealloc:nsys_relative_range_above_5pct",
+      "c0_graph_r0:nsys_warning_or_diagnostics_unavailable",
+      "c0_graph_r1:nsys_warning_or_diagnostics_unavailable",
+      "c0_prealloc_r0:nsys_warning_or_diagnostics_unavailable",
+      "c0_prealloc_r1:nsys_warning_or_diagnostics_unavailable",
+      "c1_graph_r0:nsys_warning_or_diagnostics_unavailable",
+      "c1_graph_r1:nsys_warning_or_diagnostics_unavailable",
+      "c1_prealloc_r0:nsys_warning_or_diagnostics_unavailable",
+      "c1_prealloc_r1:nsys_warning_or_diagnostics_unavailable",
+      "sparse_after/c0_graph_r0:first_last_drift",
+      "sparse_before/c1_graph_r0:first_last_drift",
+      "sparse_before/c1_graph_r0:relative_iqr"
+    ]
+  },
+  "raw_files_unchanged": 183,
+  "review_crosschecks": "PASS",
+  "plot_visual_check": "PASS",
+  "gpu_run_performed_locally": false,
+  "full_sweep": "HOLD"
+}

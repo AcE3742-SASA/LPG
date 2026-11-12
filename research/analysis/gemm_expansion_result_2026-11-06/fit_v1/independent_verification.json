@@ -1,0 +1,10 @@
+{
+  "accuracy_selection_replay_fits": 0,
+  "frozen_inputs_unchanged": true,
+  "full_models_exact": 144,
+  "locked_test_opened": false,
+  "metrics_recomputed": 1728,
+  "old_endpoint_predictions_exact": 103104,
+  "status": "PASS",
+  "validation_prediction_rows": 927936
+}

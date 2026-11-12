@@ -1,0 +1,25 @@
+{
+  "package": "timing_audit_2026-09-19_v3.zip",
+  "sha256": "661bfb8541cc89d6614daa0fd2acd884a848c5385e1cd6a0b7d73fd4952093f1",
+  "file_hashes": {
+    "audit.py": "f6ab5e9bf1a0f0ea5684658abc024eee6e4fe1c27fb402f4f20d13139f3b4765",
+    "analyze.py": "d3b86dce4f41ac613e0e97e7be07292d80ebfe3b6bb4aa9a348906fda1e63e5d",
+    "test_audit.py": "0b750489682f717854aa8a3565508ab6f365023f19592d510b4d774ae3eaa26f",
+    "launch.sh": "b0c47112b155d9ceaf51eb644e2ae7c1fd7e8f00fc53e91a7dcc4d203cdbd339",
+    "baseline_v5.json": "b983c14d84c22886578095e340399469e17d1a9f46d761fa3da1cfc83ebd641c",
+    "README.md": "a6c3185b2ec9bf37cabdcef9549b0f8fd25d3352575d0ffd88bdf3e98bfc2a06"
+  },
+  "cpu_tests": 17,
+  "cpu_tests_passed": true,
+  "python_ast": "PASS",
+  "bash_syntax": "PASS",
+  "zip_integrity_and_file_content": "PASS",
+  "baseline_v5_files_unchanged": 13,
+  "original_v2_trace_regression": "7 blocks; all 56 memsets; 2 warnings retained; absent profiled preparation rejected",
+  "gpu_status": "NOT_RUN",
+  "estimated_minutes": [
+    10,
+    15
+  ],
+  "full_status": "ON_HOLD"
+}

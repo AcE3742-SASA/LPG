@@ -1,0 +1,21 @@
+{
+  "source_archive_sha256": "52351b316dd022a027a5e7f8bf7c1bc2a86daae5d4536325d4711c5c0b262f31",
+  "original_manifest_rechecked": true,
+  "figure_visual_check": "PASS",
+  "files": {
+    "comparison_750_720.csv": "b3ae37a21f6f94248bb093515e225df0250e44ef698d11b20215b248d4333093",
+    "audit.json": "0c5fdf601679702760bad375d0b08206bc9b7330586072f80be72dec4b40d82b",
+    "plot.py": "2a01553c72f9e6830eff2edf0fc14cb8394bd412b3bbb62caa68a6c6e1011310",
+    "roofline_720.pdf": "dc11cfa7e7afac8507691947a79dcb8ce6784c2d946ea8c06ab79544498d95e8",
+    "runs.csv": "0d8b4cbae9aa7e187600f931f1f0b4f013964ef86a5f3a68df57462b8db9e385",
+    "audit.py": "72d8747b2e3cfe40632b61810f07e8adb2ebb00a7764efacca263d8cd6a8d82f",
+    "roofline_720.png": "936ad3557bdffc60f32aef60f0bc327c665a8f95215f4124ef19c4b77a480983",
+    "report.md": "f61b69e4e2d6155a26140fe79a8fc8f31127d849d16ef2047c7a22fb72d9e1d7",
+    "roofline_720.svg": "5f1ae7a6d69bef7aa4fa8dcf47b84263e4984b4ea00bd4cf66d82e4f0104302c",
+    "roofline_parameters.json": "908569fe19efcd76ada07052b8b1589f87f64fa7418d7ccb58dba666d2e854f7",
+    "size_scaling_720.pdf": "6ba42d03c33c0d625c72c0815258edc53b6fd11b806d2cbd1ca2b40f8d33e1ce",
+    "size_scaling_720.png": "470a3017c031410ed37ba2b188e55e6825e34eb23412925317f93c86b3b6a373",
+    "size_scaling_720.svg": "876d888d9b5ddd98075d0aa2cc4dfd6ee3cc9f2a17a778d1f8215e66717578ed",
+    "roofline_curve.csv": "7b2ef4aa02334281d336484a426e5080aa5371f6e346361e739f8f7047960543"
+  }
+}

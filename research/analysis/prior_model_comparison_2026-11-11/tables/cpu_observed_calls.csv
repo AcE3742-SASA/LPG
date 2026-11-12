@@ -1,0 +1,3 @@
+scope,fit_calls,wall_seconds,fit_call_seconds,logged_prediction_seconds,convergence_warnings
+layers,336,87.77426379208919,76.00765245954972,0.3748418402392417,0
+gemm,18,13.820336041972041,1.9274924988858402,2.1143251248868182,0

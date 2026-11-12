@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "zip": "/Users/studyhard/Claude/자율연구/abstract_sweep_780_2026-09-21_v1.zip",
+  "zip_sha256": "80d322511acb6da934f66c9f3a198b17cedc38d3deaa83abffdfb3d9abfc25b2",
+  "zip_files": 10,
+  "source_hashes": {
+    "README.md": "e17f2296c27c854d51823671653efe14c87f0d1e22ed0f8f8cbf79d90b947640",
+    "analyze_sweep.py": "1167c5373c9237d7a2a0f440073fb2ca13a74a4eaefb2a9a7f3e5012dd1dd96b",
+    "dependency_hashes.json": "c9346db3d4f8a8814601da14b03968f871e01f21acfe01db6cebfc17a3be1781",
+    "launch.sh": "0a51e381daa4c9e9d045bf32be2915eb5e692e3326aa8fc27fecec8638d46fb0",
+    "protocol.json": "5cef8990affed336cfcc1dac067b173d7217e8691df488819d8205c1b9d54403",
+    "review_note.md": "c85889dbb331df499490a45300df65c4796c295b2855f8dfd78fe5adbd747128",
+    "run.py": "6813bcd8e28afdc8c96446ca3dee2c63f6b4cf99dd414c9e43ae7a57eb6528be",
+    "selection.json": "df97fbb6399097471de5461a2852b374e0781fbc901fd0bcc151bae3f3f2a93d",
+    "subset.py": "80ea3ad448af69b85455227c6c749991d44dc718235edc30f5c5beaf717c915b",
+    "test_subset.py": "a100c1f9e4f6a2003b9bba127a0cdf5d982f91045c9cbe5b1dcfeef88b7ffed4"
+  },
+  "frozen_dependencies_verified": 49,
+  "local_tests": 17,
+  "extracted_zip_tests": 17,
+  "actual_reviewed_check_bridge": "PASS; reanalysis of copy, no GPU execution",
+  "check_manifest_sha256": "63a8045cb9a3d90a92a534aa31d06afbd17112421978c24f0822212c068d6d7c",
+  "check_results_digest": "a613a4d736b12407fd6c62960174c98b874cdb06bb011f228e958cf427286aa2",
+  "check_raw_files_unchanged": 171,
+  "shape_count": 200,
+  "shape_dtype_conditions": 400,
+  "measurements": 3600,
+  "blocks": 25200,
+  "triplets": 1200,
+  "rounds": 3,
+  "geometry_strata": 32,
+  "strata_quota_counts": {
+    "7": 8,
+    "6": 24
+  },
+  "selected_original_splits": {
+    "legacy_train": 130,
+    "legacy_test_explored": 27,
+    "legacy_validation": 25,
+    "development": 18
+  },
+  "fresh_holdout_selected": 0,
+  "task_digest": "1117bbb961aba4990da5d96f3365a2bcdfce498d77865e8d7433caeba2ad17a2",
+  "measurement_worker_controller_functions": "AST identical to fixed_sweep_780_v1",
+  "analyzer": "byte-identical to fixed_sweep_780_v1",
+  "full_113382_plan": "unchanged; subset outputs separate",
+  "new_gpu_measurements": 0
+}

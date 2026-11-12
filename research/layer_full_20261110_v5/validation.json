@@ -1,0 +1,71 @@
+{
+  "status": "LOCAL_VALIDATION_PASS",
+  "release": "layer_full_20261110_v5",
+  "runtime": "Python 3.13 / torch 2.15.0 CPU",
+  "checks": {
+    "full_selfcheck": "PASS: manifests, protection, analyzer, sealed access, recovery, archive and signal cleanup",
+    "numeric_cases": 16,
+    "cpu_worker_records_per_excluded_phase": 1062,
+    "excluded_phases": [
+      "validation_01",
+      "test_04"
+    ],
+    "health_records_per_phase": 108,
+    "known_fp16_records_retained_per_phase": 18,
+    "excluded_before_pair_creation": true,
+    "unexpected_correctness_failure_stops": true,
+    "conv_adjudicated_points": 1938,
+    "hidden_error_points_checked": 300,
+    "unchanged_numeric_cases": 8,
+    "legacy_fp16_ffn_regression": "PASS",
+    "inheritance_fixture": {
+      "real_archives": 23,
+      "synthetic_completed_v4_archives": 8,
+      "total_archives": 31
+    },
+    "completed_batches_preserved": 28,
+    "completed_batch_recollection_calls": 0,
+    "first_attempt": "test_04_attempt_002",
+    "interrupted_import_and_resume": "PASS: test_04 attempt002 interruption retained; retry003 then test05",
+    "final_measured_records": 32364,
+    "final_excluded_records": 36,
+    "final_planned_records": 32400,
+    "full_analysis_tests": 47,
+    "original_tolerances_unchanged": true,
+    "preserved_v2_v3_v4_files_sha256": 517,
+    "archive_protocol_summary_inventory_history_checksum_symlink_tamper_rejected": true,
+    "ascii_python_and_shell_syntax": "PASS"
+  },
+  "actual_gpu_evidence": {
+    "archive": "test_04_attempt_001_c1bc4101.zip",
+    "archive_sha256": "047d2e27fb52c38978cc8ff620907370ad2a81b1e90e97713eb5a2c78e1cfc7f",
+    "result_hashes_verified": 257,
+    "source_files_verified": 161,
+    "recorded": 30,
+    "case": "lf_dfce839bd3ca0ef5",
+    "dtype": "fp32",
+    "result": "STANDARD_FAIL_DECOMPOSED_PASS",
+    "checked_coordinates": 186,
+    "standard_failed_coordinates": 183,
+    "decomposed_failed_coordinates": 0,
+    "maximum_standard_tolerance_ratio": 2.0881282000588635,
+    "controlled_collection_wall_seconds": 300.9262970178388
+  },
+  "health_replacement": {
+    "phase": "test_04",
+    "conv3_case": "lf_bb6a106c15c571e5",
+    "policy": "First fully eligible case per layer; both dtypes; unchanged 108 health records"
+  },
+  "execution_limits": [
+    "Actual completed v4 archives8 were not supplied; checked on research PC before import.",
+    "v5 surrogate health and remaining collection require actual GPU execution.",
+    "Sealed timing and prediction values were not inspected."
+  ],
+  "v5_gpu_collection": "PENDING_RESEARCH_PC_EXECUTION",
+  "original_campaign": "full_20261108_105717_8tqhrkir",
+  "test_commands": [
+    "/private/tmp/layer-v3-numeric-20261110/bin/python -B layer_full_20261110_v5/selfcheck.py --numeric",
+    "python3 -B layer_full_20261110_v5/test_inheritance.py",
+    "analysis/integrated_rq14_2026-10-28/.venv/bin/python -B -m unittest discover -s analysis/layer_full_fit_2026-11-10_v5 -p test_*.py -v"
+  ]
+}

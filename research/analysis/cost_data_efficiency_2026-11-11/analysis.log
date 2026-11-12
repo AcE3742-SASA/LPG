@@ -1,0 +1,14 @@
+PASS: frozen model and final evaluation hashes
+PASS: layer budgets and all 33 collection ledgers
+PASS: GEMM session and task accounting
+Traceback (most recent call last):
+  File "/Users/studyhard/Claude/자율연구/analysis/cost_data_efficiency_2026-11-11/analyze.py", line 480, in <module>
+    main()
+    ~~~~^^
+  File "/Users/studyhard/Claude/자율연구/analysis/cost_data_efficiency_2026-11-11/analyze.py", line 461, in main
+    gemm_curves, cpu, source_cpu = gemm_curves_and_cpu()
+                                   ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/studyhard/Claude/자율연구/analysis/cost_data_efficiency_2026-11-11/analyze.py", line 305, in gemm_curves_and_cpu
+    assert len(curves) > 60 and any(r['cohort'] == 'pooled_1611' for r in curves)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

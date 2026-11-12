@@ -1,0 +1,415 @@
+{
+  "version": 1,
+  "sm_mhz": 750,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "interval_ms": 50,
+  "segment_tasks": 120,
+  "check_rounds": 2,
+  "full_rounds": 3,
+  "check_worker_limits": [
+    30,
+    null
+  ],
+  "full_worker_timeout_s": 1209600,
+  "check_worker_timeout_s": 2400,
+  "minimum_free_disk_gib": 20,
+  "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+  "mode_order": [
+    [
+      "allocate",
+      "prealloc",
+      "graph"
+    ],
+    [
+      "prealloc",
+      "graph",
+      "allocate"
+    ],
+    [
+      "graph",
+      "allocate",
+      "prealloc"
+    ]
+  ],
+  "scope": [
+    "main"
+  ],
+  "excluded_auxiliary": [
+    "pressure",
+    "bandwidth",
+    "chain",
+    "profile"
+  ],
+  "check_cases": [
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32"
+    }
+  ],
+  "reference_780_pilot": {
+    "zip_sha256": "ccbd191f121e8663843477cce70a1247a9f0386aba4935788d3d083151be3bc8",
+    "conditions": [
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 6.112675986968952
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 4.513185399455661
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 16.021237588787628
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 13.155428301386472
+      },
+      {
+        "shape": [
+          392,
+          2776,
+          80
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 47.973689554676945
+      },
+      {
+        "shape": [
+          392,
+          2776,
+          80
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 46.56668198414337
+      },
+      {
+        "shape": [
+          1016,
+          2048,
+          504
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 354.90351143215355
+      },
+      {
+        "shape": [
+          1016,
+          2048,
+          504
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 354.1686613790814
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 95.14404137239687
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 93.55141887682571
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 372.84938554118446
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 372.04368026168254
+      },
+      {
+        "shape": [
+          1999,
+          646,
+          425
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 244.4005941428117
+      },
+      {
+        "shape": [
+          1999,
+          646,
+          425
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 243.48184695610632
+      },
+      {
+        "shape": [
+          3216,
+          520,
+          776
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 529.9312539686046
+      },
+      {
+        "shape": [
+          3216,
+          520,
+          776
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 528.9919972419739
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 3597.7509362357005
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 3595.7576206752233
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 18238.805135091145
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 18237.44010925293
+      }
+    ],
+    "meaning": "Historical 780 pilot, descriptive comparison only; not a new timing target"
+  },
+  "purpose": "same_200_shapes_at_750_after_reviewed_clock_recheck",
+  "subset_shapes": 200,
+  "reviewed_check": {
+    "manifest_sha256": "fbb2fbd5ff847b79288ebb2ee418e52cf48aad6802d2a3a6f0df8c1d3b1bf88a",
+    "results_sha256": "3e6f19542022a33c430b70af9211f0623000a0a4b0c381ebad2de4c3eaf82f29",
+    "telemetry_sha256": "dd142d012ebb0041981d10b3d6974c5bbce201eaaf3d2c5acd0a09f4736fa6a8",
+    "stage": "s1_750",
+    "zip_sha256": "274e47dcaaed7aabd6312c931e91130d29ca853bc757bc89b1e66f4dea7b74ab"
+  },
+  "reviewed_graph_cases": [
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "input_seed": 1456857178,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 5
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp16",
+      "input_seed": 2682971897,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 20
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "input_seed": 3255611920,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "input_seed": 2125276676,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "input_seed": 1791591957,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "input_seed": 3194529987,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    }
+  ]
+}

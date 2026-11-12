@@ -1,0 +1,65 @@
+{
+  "artifact_hashes": {
+    "gemm_expanded/completed.json": "62bbc52911a05709eacca2683bd16e8bf0cb1482d0d2ce61d1fcbd8181dd73b8",
+    "gemm_expanded/frozen_selection.json": "87f48dca39ead494505e8c3d27698c3588f8b5defa4eaa505bfa352322de3373",
+    "gemm_expanded/metrics.csv": "dd60f954c6cbaf1b64fe0192573cc0afce752792307cd313102485be114772d8",
+    "gemm_expanded/paired_bootstrap.csv": "8525674221d68195f35cb65775612d5eb698e61c7406d4aa91582ba51fca7360",
+    "gemm_expanded/predictions.csv": "b12a801cc9ad53e0de9df2a6345e499b5079b5534a569af267d308b2a28c72c1",
+    "gemm_expanded/subgroup_metrics.csv": "25d5e58a570797c680a52e0f0fa4dcb88690f528285b59b1861d96c22edebc52",
+    "gemm_legacy_and_transfer/completed.json": "7c63e3f97f288af5f4eb6d277607d216929643ed412b50c5cbc5399cc6429d05",
+    "gemm_legacy_and_transfer/frozen_selection.json": "2f26937b0ada8114536a4a7b8263e0787b1b3bee40687ed31993c9f172583fbb",
+    "gemm_legacy_and_transfer/metrics.csv": "79dbd9c6ff02073ce289843cbb14a3ecdda830ebafdfb565be5f5d230551030d",
+    "gemm_legacy_and_transfer/paired_bootstrap.csv": "f22ca3526bd79ba0c09fc368d7b3072f0ec813a5816417345dd4ed5b0eca3266",
+    "gemm_legacy_and_transfer/predictions.csv": "eb7a628ce5d4f73543cafb4272f61667a211311de2d8717821d537bc2b5dde30",
+    "gemm_legacy_and_transfer/subgroup_metrics.csv": "38a6e0c3f3bbda5f173d280611cd49294f61ed25f141ff0ba2c9a0e138a9fd12",
+    "layers/evaluation_completed.json": "89d1e23d94d8d3037e95ba59166c4046cde5ea2f061cd4fae1061db4f15c3a77",
+    "layers/paired_bootstrap.csv": "9a2492237265c33c3f4e3dbfdeaa38f5e34306147cde4274e4dc16d17e1aa525",
+    "layers/paired_bootstrap.json": "3dba6452e48479241a38033f2ef483f856aebde4753db75f4c0ccd6c3ab3d3d6",
+    "layers/test_component_metrics.csv": "4e7255aea85d45b438540ea390fb8e907b55bfab1c266fcc52f91ac16498f368",
+    "layers/test_component_metrics.json": "9a8eb7eaf41a1c936610ab60cd465942e242c762c3b5e0dd0b9bde6b92307c48",
+    "layers/test_implementation_diagnostics.csv": "92e9234decfc05402450bc64e7ab2a3a9f70ba49952b9ed1bab4a95fa6744929",
+    "layers/test_implementation_diagnostics.json": "d9f5542016177c79d942fba8fd12377931bc7f3acc0fd77406b39b5f24761e2c",
+    "layers/test_metrics.csv": "e5e65ed99faab1a27de6aec310ba095a057d1422f79f33ca3851b6637dd7cd1c",
+    "layers/test_metrics.json": "77dd30de365db9f1bd67dc99f2d583efb332767d599c5077432ac8f885c80112",
+    "layers/test_predictions.csv": "ed85aea97cf1f8af4e1e6d269712ece71df1e0bc95ab798ab9db581f71ee298a",
+    "layers/test_predictions.json": "fb8a7f19bde24ae7ac11a7bc29afd817975de3b5aa90d7d991db48e807e60927",
+    "layers/test_quality_coverage.csv": "3afd655256404a2bf0bc741826d40e81dfc7f1c68a19a40f93a5c1d4c8307e52",
+    "layers/test_quality_coverage.json": "54b4e10f3faf3acf1c7740da15bb834b8cf6988aaa9bfa40ad738cf18f79a67a",
+    "layers/test_slices.csv": "25f032627b87fa32c83da36706ab87a336623e802c9d28c3eaa92ae3af3b6f54",
+    "layers/test_slices.json": "64ce4957f6492cbe4533f93e6a106824d1bc0f666a900592974081c75dea0645"
+  },
+  "fitting_performed": false,
+  "metrics_independently_recomputed": true,
+  "original_files_unchanged": 523,
+  "original_model_selection_unchanged": true,
+  "preflight_sha256": "ad2ff88ed1ffcb3e5d857d941d3e506c02e8ec1afb611b45e4c43fd959312b77",
+  "results": {
+    "gemm_expanded": {
+      "models": 36,
+      "predictions_reproduced": 36000,
+      "raw_conditions": 6000
+    },
+    "gemm_legacy_and_transfer": {
+      "models": 60,
+      "predictions_reproduced": 60000,
+      "raw_conditions": 6000
+    },
+    "layers": {
+      "correctness_excluded_conditions": 6,
+      "predictions_reproduced": 16758,
+      "raw_conditions": 1794,
+      "raw_measurements": 5382,
+      "scored_seed_recipes": 336,
+      "selected_recipes": 112,
+      "unique_weights": 288
+    }
+  },
+  "status": "PASS",
+  "test_suite": {
+    "scope": "Existing frozen v5 analysis tests; synthetic final-evaluation guards",
+    "status": "PASS",
+    "tests": 47
+  },
+  "verified_utc": "2026-11-11T02:58:55.796419+00:00",
+  "verifier_sha256": "9b6f06190e47c083bace4dcba48ca73ae9a56d6620abb1ef76d9b8e4ba9146b9"
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/studyhard/Claude/자율연구/analysis/final_test_2026-11-11/prepare_evaluation.py", line 180, in <module>
+    main()
+    ~~~~^^
+  File "/Users/studyhard/Claude/자율연구/analysis/final_test_2026-11-11/prepare_evaluation.py", line 109, in main
+    assert not near, 'Reserved test has a one-axis near overlap with development'
+           ^^^^^^^^
+AssertionError: Reserved test has a one-axis near overlap with development

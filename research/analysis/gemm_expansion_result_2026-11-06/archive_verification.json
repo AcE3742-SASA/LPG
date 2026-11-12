@@ -1,0 +1,36 @@
+{
+  "archive": "/Users/studyhard/Desktop/Transfer/expansion_10000_20261105_181927_9a759e.zip",
+  "dependency_hashes": 91,
+  "entries": 189361,
+  "expected_measurements": 180000,
+  "locked_test_opened": false,
+  "original_export_sha256": {
+    "between_round.json": "c03b4aa54a6245f0bd906002f7ff34ffd922a9eb8d21655f579f9a4f2bf12797",
+    "blocks.csv": "82719c51b11f78970a97bd950a54f9db825be8dbfb5c5254945b49a34394cbf7",
+    "blocks_fresh_holdout_LOCKED.csv": "6e2cb8bf5eec2af11d30368289c1b8d3d39f463cc8eef4c97dbe87037da8d091",
+    "clock_selection_20261028_154639_abd5eb.json": "cb9e1b401469b4ebe0344c984e7ae6e777218f30a608a3a8853df0e61efb887e",
+    "fresh_holdout_LOCKED.csv": "988526d634f1729878552a18eeb7937da8c3f667144fca8e20722d48dc25572d",
+    "manifest.json": "a5a6a447559423889e5de22a04ad8e5e809253791ff0ed5ed9b83b408f26d530",
+    "metrics.csv": "6e1596421b780f043369df4557645e4e02a544d33a257d656ba6f8ead19bb557",
+    "progress.json": "d61d8a066f7011449d9d622762ab471ef2c301409018912d9171e351a147522e",
+    "raw_attempts.jsonl": "c5b4fb6ec83016258e322e33b9a42a0d3edd3e26bb30b4cca357e1f775dcae82",
+    "remeasure_tasks.json": "6a9527dcf88ac155a0a4c8a14a334815fda1e7f17bd97ae9a2292604987ff4a9",
+    "report.md": "6ba89ab93804249382b37ea43516543cef08e4bd721c9d18a335bc7e6539f0de",
+    "review_fresh_holdout_LOCKED.csv": "eaf1e558e23679558c912a7475ddecfe6cec03e1a98680f011d603416506b9f1",
+    "review_queue.csv": "e54fe0b5a5001bad4b121650da000907538f6fc86e4db844fe6d390b7c81517d",
+    "shape_splits.csv": "1ea8d3f6dee0e721b5708c4cd1ce61202402c9400f04d5f70e85cbe028a79f9e",
+    "summary.json": "9f78e53ff9cf3a090414ac6f3fafac2261e37ca889c203ec63ff3f0e4851d873",
+    "triplets.csv": "6c954860f8d3f449909d0a350c21ed0d2dc281f4f40abdabc8bb205b45639188",
+    "triplets_fresh_holdout_LOCKED.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "preserved_archive": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/analysis/gemm_expansion_result_2026-11-06/expansion_10000_20261105_181927_9a759e.zip",
+  "raw_sqlite_sha256": "3a97790befcc291c07d460fab89ebe60f5f3f37393dc96bcecb702560dcdd204",
+  "sha256": "ec461b0f1d1eebc23ff34e362757385b84f09b79ecea1411674c6a21f85559d0",
+  "source_hashes": 223,
+  "splits": {
+    "expansion_train": 162000,
+    "expansion_validation": 18000
+  },
+  "uncompressed_bytes": 9648011073,
+  "zip_crc": "PASS"
+}

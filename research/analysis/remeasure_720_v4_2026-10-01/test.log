@@ -1,0 +1,103 @@
+test_only_exact_720_supported (frozen_v2_tests.Checks.test_only_exact_720_supported) ... ok
+test_only_clock_and_sw_power_cap_are_nonfatal (frozen_v2_tests.Checks.test_only_clock_and_sw_power_cap_are_nonfatal) ... ok
+test_worker_continues_after_clock_flag_and_resumes_but_stops_on_fatal (frozen_v2_tests.Checks.test_worker_continues_after_clock_flag_and_resumes_but_stops_on_fatal) ... Segment 0: group=other, tasks=3
+Preheating 180 seconds
+[1/48] check [2329, 3998, 66] fp32 allocate r0: PASS (1000.00s)
+[2/48] check [2329, 3998, 66] fp32 prealloc r0: PASS (1000.00s)
+[3/48] check [2329, 3998, 66] fp32 graph r0: PASS (1000.00s)
+FLAG: 3 measurements retained for review in segment_00000; continue=True
+Segment 1: group=other, tasks=3
+[4/48] check [2329, 3998, 66] fp16 allocate r0: PASS (1000.00s)
+[5/48] check [2329, 3998, 66] fp16 prealloc r0: PASS (1000.00s)
+[6/48] check [2329, 3998, 66] fp16 graph r0: PASS (1000.00s)
+Segment 0: group=other, tasks=3
+Preheating 180 seconds
+[7/48] check [3128, 680, 488] fp32 allocate r0: PASS (1000.00s)
+[8/48] check [3128, 680, 488] fp32 prealloc r0: PASS (1000.00s)
+[9/48] check [3128, 680, 488] fp32 graph r0: PASS (1000.00s)
+Segment 0: group=other, tasks=3
+Preheating 180 seconds
+[1/48] check [2329, 3998, 66] fp32 allocate r0: PASS (1000.00s)
+[2/48] check [2329, 3998, 66] fp32 prealloc r0: PASS (1000.00s)
+[3/48] check [2329, 3998, 66] fp32 graph r0: PASS (1000.00s)
+FLAG: 3 measurements retained for review in segment_00000; continue=False
+Segment 0: group=other, tasks=3
+Preheating 180 seconds
+[1/48] check [2329, 3998, 66] fp32 allocate r0: FAIL (1000.00s)
+FLAG: 1 measurements retained for review in segment_00000; continue=False
+ok
+test_controller_sets_720_and_restores_on_failure (frozen_v2_tests.Checks.test_controller_sets_720_and_restores_on_failure) ... Requested: 720 MHz; selected exact supported target: 720 MHz
+Worker log: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjv2nx275/run/launches/20261001_140021_ac481b/worker_0.log
+RESTORE: COMMANDS ACCEPTED
+ok
+test_denominator_or_accuracy_corruption_fails (frozen_v2_tests.Checks.test_denominator_or_accuracy_corruption_fails) ... ok
+test_worker_resume_collects_only_pending_tasks (frozen_v2_tests.Checks.test_worker_resume_collects_only_pending_tasks) ... Segment 0: group=other, tasks=3
+Preheating 180 seconds
+[1/48] check [2329, 3998, 66] fp32 allocate r0: PASS (1000.00s)
+[2/48] check [2329, 3998, 66] fp32 prealloc r0: PASS (1000.00s)
+[3/48] check [2329, 3998, 66] fp32 graph r0: PASS (1000.00s)
+Segment 0: group=other, tasks=3
+Preheating 180 seconds
+[4/48] check [2329, 3998, 66] fp16 allocate r0: PASS (1000.00s)
+[5/48] check [2329, 3998, 66] fp16 prealloc r0: PASS (1000.00s)
+[6/48] check [2329, 3998, 66] fp16 graph r0: PASS (1000.00s)
+ok
+test_manifest_change_and_output_lock_rejected (frozen_v2_tests.Checks.test_manifest_change_and_output_lock_rejected) ... ok
+test_full_coverage_modes_rounds_and_no_new_auxiliary (frozen_v2_tests.Checks.test_full_coverage_modes_rounds_and_no_new_auxiliary) ... ok
+test_worker_separates_groups_and_resumes (__main__.main.<locals>.GroupChecks.test_worker_separates_groups_and_resumes) ... Segment 0: group=other, tasks=6
+Preheating 180 seconds
+[1/9] check [2329, 3998, 66] fp16 allocate r0: PASS (1000.00s)
+[2/9] check [2329, 3998, 66] fp16 prealloc r0: PASS (1000.00s)
+[3/9] check [2329, 3998, 66] fp16 graph r0: PASS (1000.00s)
+[4/9] check [3128, 680, 488] fp32 allocate r0: PASS (1000.00s)
+[5/9] check [3128, 680, 488] fp32 prealloc r0: PASS (1000.00s)
+[6/9] check [3128, 680, 488] fp32 graph r0: PASS (1000.00s)
+Segment 1: group=isolated_fp32, tasks=1
+[7/9] check [2329, 3998, 66] fp32 allocate r0: PASS (1000.00s)
+FLAG: 1 measurements retained for review in segment_00001; continue=True
+Segment 0: group=isolated_fp32, tasks=2
+Preheating 180 seconds
+[8/9] check [2329, 3998, 66] fp32 prealloc r0: PASS (1000.00s)
+[9/9] check [2329, 3998, 66] fp32 graph r0: PASS (1000.00s)
+FLAG: 2 measurements retained for review in segment_00000; continue=True
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.481s
+
+OK
+CPU preparation: preserve original ZIP and import verified PASS records.
+REMEASUREMENT READY: imported=111582, pending=1800, output=/Users/studyhard/Claude/자율연구/analysis/remeasure_720_v4_2026-10-01/first_replay
+REMEASUREMENT READY: imported=111582, pending=1800, output=/Users/studyhard/Claude/자율연구/analysis/remeasure_720_v4_2026-10-01/first_replay
+CPU telemetry replay: all imported segments; no GPU execution.
+{
+  "status": "PASS",
+  "gpu_execution": false,
+  "existing_worker_checks": [
+    "test_only_exact_720_supported",
+    "test_only_clock_and_sw_power_cap_are_nonfatal",
+    "test_worker_continues_after_clock_flag_and_resumes_but_stops_on_fatal",
+    "test_controller_sets_720_and_restores_on_failure",
+    "test_denominator_or_accuracy_corruption_fails",
+    "test_worker_resume_collects_only_pending_tasks",
+    "test_manifest_change_and_output_lock_rejected",
+    "test_full_coverage_modes_rounds_and_no_new_auxiliary"
+  ],
+  "imported": 111582,
+  "pending": 1800,
+  "holdout_pending": 257,
+  "original_graph_choices": 12144,
+  "retained_extra_pinned_graph_choices": 14,
+  "trailing_seq_resume_checked": true,
+  "other_tasks": 1749,
+  "isolated_fp32_tasks": 51,
+  "collection_segments": 16,
+  "all_1801_resume_prefixes_checked": true,
+  "worker_group_isolation_checked": true,
+  "exact_pending_ids": true,
+  "idempotent_preparation": true,
+  "source_unchanged": true,
+  "active_locks_rejected": true,
+  "wrong_archive_and_unrelated_output_rejected": true,
+  "changed_evidence_rejected": true
+}

@@ -1,0 +1,31 @@
+.........STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+STAGE 2/7: s1_900_50_before (180 s preheat + 16 measurements)
+STAGE 3/7: s2_1050_50 (180 s preheat + 16 measurements)
+STAGE 4/7: s3_1200_50 (180 s preheat + 16 measurements)
+STAGE 5/7: s4_1350_50 (180 s preheat + 16 measurements)
+STAGE 6/7: s5_900_50_after (180 s preheat + 16 measurements)
+STAGE 7/7: s6_900_100_after (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+CLOCK STEPS: PASS; full remains HOLD
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+STAGE 2/7: s1_900_50_before (180 s preheat + 16 measurements)
+STAGE 3/7: s2_1050_50 (180 s preheat + 16 measurements)
+STAGE 4/7: s3_1200_50 (180 s preheat + 16 measurements)
+STAGE 5/7: s4_1350_50 (180 s preheat + 16 measurements)
+STAGE 6/7: s5_900_50_after (180 s preheat + 16 measurements)
+STAGE 7/7: s6_900_100_after (180 s preheat + 16 measurements)
+RESTORE: FAILED; inspect restore.json
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rgc
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rmc
+CLOCK STEPS: FAIL; full remains HOLD
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+.
+----------------------------------------------------------------------
+Ran 10 tests in 3.461s
+
+OK

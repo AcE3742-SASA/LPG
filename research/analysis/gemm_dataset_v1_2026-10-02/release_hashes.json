@@ -1,0 +1,16 @@
+{
+  "README.md": "9365992d72d83c135816fa79faceedb02e51b14f7f0eb2a2f0c9ea3332a82a12",
+  "accepted_locked_index.csv": "730e37d96d7d9d2529926c4e174fa54fea92e8d3f11d8c08dc44803c05ed777f",
+  "accepted_unlocked_measurements.csv": "96e3b38d2c0a45fa7ab792ed7a5e494145a51532183265df7111f1f8f0433924",
+  "build_dataset.py": "6cade00c85d40f23db22a96dcbc1a43a40be7611bf0c653303a8269c496d1eb2",
+  "derived_hashes.json": "8ff71849d294c7894427c4122593e4241251b248eadbe058c6abaa84c0427948",
+  "incomplete_conditions.csv": "3c30783bf3aab4cf4453d4ba6e80ced6f63f9cd0cfc05d26fa8cbce459c95cfc",
+  "main_complete_locked_index.csv": "b7757ea832fbc6bc6b3f05a2eca7f626b5b5178405fbd4adea5f4f55526684fd",
+  "main_complete_unlocked_conditions.csv": "de7be30f318c036185f8da0ab53ef78205a1a63d5c2df8cf900ccc54e767b65f",
+  "measurement_index.csv": "53ee02d0485f944674ef783459a4202b1706760d07d02938a026a9e995ab72d7",
+  "quarantine_54.csv": "febed048ca580b69e91a7b6e29be15f37d57016a0d8615716fa6844839977d4c",
+  "shape_scope.csv": "3f1cd23e7f0397de65ee0cc7cab2638b857fb1d11edda9eae6a74bf740bb1a60",
+  "split_phase_counts.csv": "94cb7bca046e3227213afe4940220542014641c987b57bce8495147a10f234a3",
+  "summary.json": "a296542e29ac37047cfeefcd38c2573c01a9baff71a1dda0a2dcef84abf3038a",
+  "verification.log": "6ac08793b25ea027cb5d0fcb33c93877fa08ae32ade2a804e7a46c7e44d5e9f0"
+}

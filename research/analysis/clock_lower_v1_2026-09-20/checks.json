@@ -1,0 +1,106 @@
+{
+  "checks": [
+    {
+      "name": "new_tests",
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "clock_lower_v1",
+        "-p",
+        "test_lower.py",
+        "-v"
+      ]
+    },
+    {
+      "name": "reused_steps_tests",
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "clock_steps_v1",
+        "-p",
+        "test_steps.py",
+        "-v"
+      ]
+    },
+    {
+      "name": "reused_fixed_tests",
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "fixed_pilot_v1",
+        "-p",
+        "test_fixed.py",
+        "-v"
+      ]
+    },
+    {
+      "name": "reused_v6_tests",
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "gpu_sweep_v6",
+        "-p",
+        "test_v6.py",
+        "-v"
+      ]
+    },
+    {
+      "name": "reused_audit_tests",
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "clock_audit_v1",
+        "-p",
+        "test_clock_audit.py",
+        "-v"
+      ]
+    },
+    {
+      "name": "verify",
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "-B",
+        "clock_lower_v1/lower.py",
+        "verify"
+      ]
+    },
+    {
+      "name": "bash_syntax",
+      "exit_code": 0,
+      "command": [
+        "bash",
+        "-n",
+        "clock_lower_v1/launch.sh"
+      ]
+    }
+  ],
+  "ast": "PASS",
+  "unchanged_dependencies": 42,
+  "gpu_executed": false
+}

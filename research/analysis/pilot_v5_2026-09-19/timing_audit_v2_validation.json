@@ -1,0 +1,8 @@
+{
+  "checks": "12 CPU-only tests passed; AST and bash syntax passed; 13 v5 source hashes unchanged",
+  "gpu_execution": "NOT_RUN_FOR_V2",
+  "reported_v1_failure": "Pre-measurement process gate, exact GNOME portal path, exit 1",
+  "source": "timing_audit_v1_failure_report.txt",
+  "zip_sha256": "21f2f19601752bb015200178441b773b216ab4ffbf00755688c19008ad3bd1b3",
+  "file_count": 6
+}

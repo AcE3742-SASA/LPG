@@ -1,0 +1,149 @@
+{
+  "elapsed_snapshot_s": 936.0,
+  "snapshot_times": [
+    "Mon Sep 21 00:48:12 2026",
+    "Mon Sep 21 01:03:48 2026"
+  ],
+  "timed": {
+    "samples": 2564,
+    "ranges": {
+      "clocks.sm": [
+        780.0,
+        780.0
+      ],
+      "clocks.mem": [
+        6801.0,
+        6801.0
+      ],
+      "power.limit": [
+        70.0,
+        70.0
+      ],
+      "power.draw": [
+        23.73,
+        67.8
+      ],
+      "temperature.gpu": [
+        53.0,
+        68.0
+      ]
+    },
+    "sm_counts": {
+      "780.0": 2564
+    },
+    "active_counts": {
+      "clocks_event_reasons.sw_power_cap": 0,
+      "clocks_event_reasons.sw_thermal_slowdown": 0,
+      "clocks_event_reasons.hw_thermal_slowdown": 0
+    }
+  },
+  "worker": {
+    "samples": 17840,
+    "ranges": {
+      "clocks.sm": [
+        780.0,
+        780.0
+      ],
+      "clocks.mem": [
+        6801.0,
+        6801.0
+      ],
+      "power.limit": [
+        70.0,
+        70.0
+      ],
+      "power.draw": [
+        21.12,
+        67.82
+      ],
+      "temperature.gpu": [
+        35.0,
+        68.0
+      ]
+    },
+    "sm_counts": {
+      "780.0": 17840
+    },
+    "active_counts": {
+      "clocks_event_reasons.sw_power_cap": 0,
+      "clocks_event_reasons.sw_thermal_slowdown": 0,
+      "clocks_event_reasons.hw_thermal_slowdown": 0
+    }
+  },
+  "cadence": {
+    "samples": 17840,
+    "requested_interval_ms": 50,
+    "observed_interval_seconds_median": 0.05200004577636719,
+    "observed_interval_seconds_max": 0.06200003623962402,
+    "unavailable_fields": [],
+    "sensor_resolution_verified": false
+  },
+  "missing_inside_windows": 0,
+  "max_iqr_pct": 0.06220813089061119,
+  "max_abs_drift_pct": 0.06949858084179833,
+  "round_groups": 96,
+  "max_round_range_pct": 2.8430802513544737,
+  "worst_round": {
+    "shape": [
+      4096,
+      64,
+      64
+    ],
+    "dtype": "fp16",
+    "mode": "graph",
+    "round_us": [
+      7.52788407791064,
+      7.3168600831076365
+    ],
+    "relative_range": 0.028430802513544736
+  },
+  "review_cases": [],
+  "correctness_scopes": {
+    "sampled": 176,
+    "full": 16
+  },
+  "max_stored_correctness_tolerance_ratio": 0.08075721777628175,
+  "sm_mismatch_windows": 0,
+  "power_cap_active_windows": 0,
+  "process_snapshots": 194,
+  "other_logged_clients": {},
+  "counters": {
+    "clocks_event_reasons_counters.sw_power_cap": {
+      "first": 5799331254,
+      "last": 6562048674,
+      "delta_us": 762717420,
+      "decreases": 0,
+      "active_samples": 0,
+      "unknown_samples": 0
+    },
+    "clocks_event_reasons_counters.sw_thermal_slowdown": {
+      "first": 0,
+      "last": 0,
+      "delta_us": 0,
+      "decreases": 0,
+      "active_samples": 0,
+      "unknown_samples": 0
+    },
+    "clocks_event_reasons_counters.hw_thermal_slowdown": {
+      "first": 0,
+      "last": 0,
+      "delta_us": 0,
+      "decreases": 0,
+      "active_samples": 0,
+      "unknown_samples": 0
+    }
+  },
+  "post_restore_clocks": {
+    "Graphics": 1995,
+    "SM": 1995,
+    "Memory": 7001
+  },
+  "limits": [
+    "Host envelopes around timed CUDA event blocks; samples are not continuous observation.",
+    "Stored full or 256-element sampled correctness checks are not reexecuted on GPU.",
+    "Same-process rounds do not establish independent-session reproducibility.",
+    "No allocating torch.mm path, new Nsight capture, or matched automatic-core run.",
+    "780 MHz is user-selected; full remains HOLD pending review."
+  ]
+}
+Counter examples without active timed samples: 152

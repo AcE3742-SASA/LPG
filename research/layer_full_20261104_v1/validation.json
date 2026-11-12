@@ -1,0 +1,49 @@
+{
+  "batches": 30,
+  "checks": [
+    "deterministic static manifest regeneration",
+    "300 shapes per layer, 200/50/50 split, paired base-group isolation",
+    "16607 protected component shapes and exact/one-axis +/-8 exclusion",
+    "three-seed train-only nested subsets",
+    "original layers and dependencies byte preservation",
+    "public quality summaries omit layer latencies",
+    "clock drift, failed correctness, failed restoration, zero timing, missing record and component drift injections",
+    "sealed test collection/pack denied without explicit flag",
+    "interrupted batch retries to a fresh directory; complete batches skipped",
+    "completed REVIEW preserved and reported",
+    "ZIP SHA256 and archived metadata checked before skipping",
+    "changed completion metadata and corrupt archives rejected",
+    "actual result packaging round trip and CRC",
+    "termination propagates to test child/grandchild and waits for cleanup",
+    "16 CPU numeric cases across 4 layers, 2 dtypes and 2 alignments",
+    "108 CPU worker records with mocked CUDA controls; forward before component buffers; round-specific identities",
+    "Python AST and Bash syntax"
+  ],
+  "cpu_python": "3.13",
+  "cpu_torch": "2.15.0",
+  "date": "2026-11-04",
+  "existing_locked_times_read": false,
+  "gpu_collection_executed": false,
+  "numeric_cases": 16,
+  "observed_output": [
+    "NUMERIC PASS: 16 CPU cases, torch=2.15.0; GPU timing requires server pilot",
+    "WORKER PASS: 108 CPU forward/component calls with mocked CUDA timing and controls",
+    "SELF CHECK PASS: manifests, protection, 1080-record analyzer, sealed access, resume and archive integrity"
+  ],
+  "planned_measurements": 32400,
+  "prior_release_files_verified_unchanged": 135,
+  "quality_analyzer_synthetic_records": 1080,
+  "scope": "LOCAL_CPU_AND_SYNTHETIC",
+  "status": "PASS",
+  "tested_runtime_sha256": {
+    "build_manifest.py": "93a70bf7ba9559d7c21e6b0bca1870d47be72e8f30e367734d617860705b3629",
+    "collect_all.py": "9f16773381e0587ebf4c488722897d76e9ce660e74f4c8cb90bac3a839e30ded",
+    "compare.py": "6740054286494587f1aafdb714780f2f1c51f3db566627857ab5ccf1ac76e845",
+    "diagnostic.py": "98d0915908e3f873640837c480023f6a1cbccd00f0f3f262c8c9a09a4d44d3ab",
+    "launch.sh": "026b4239928252adb0b53d1b43f1f47cb125c5886ae017d3fe448efeb2ca19e1",
+    "layers.py": "5ec071b82569fc62e6b65913a8428b619dbc7ad612f8846d6a8bdac8b71166ff",
+    "run_research_checked.sh": "b219b1b78474662d33b308ab69bd28c02661a6a530b904eca99702800328b262",
+    "selfcheck.py": "68133a8fba5e3e817285303e732d9492b0447299298c9bdb429908519691a98c"
+  },
+  "worker_records_with_mocked_cuda": 108
+}

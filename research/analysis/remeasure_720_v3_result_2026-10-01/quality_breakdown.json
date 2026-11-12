@@ -1,0 +1,229 @@
+{
+  "quality_status_counts": {
+    "PASS": 111582,
+    "REVIEW": 1800
+  },
+  "segments": 946,
+  "segment_counts": {
+    "imported": 931,
+    "new": 15
+  },
+  "flagged_segments": [
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00000",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00001",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00002",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00003",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00004",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00005",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00006",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00007",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00008",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00009",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00010",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00011",
+      "records": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00012",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00013",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    },
+    {
+      "path": "sessions/20260930_212559_7d09687f/segment_00014",
+      "records": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "new_session": true
+    }
+  ],
+  "flags_by_segment": {
+    "worker_active:clocks_event_reasons.sw_power_cap": 15,
+    "worker_mismatch:clocks.sm": 9
+  },
+  "new_flags_by_segment": {
+    "worker_active:clocks_event_reasons.sw_power_cap": 15,
+    "worker_mismatch:clocks.sm": 9
+  },
+  "new_ranges": {
+    "clocks.sm": [
+      675.0,
+      720.0
+    ],
+    "clocks.mem": [
+      6801.0,
+      6801.0
+    ],
+    "power.limit": [
+      70.0,
+      70.0
+    ],
+    "power.draw": [
+      20.88,
+      69.77
+    ],
+    "temperature.gpu": [
+      39.0,
+      69.0
+    ]
+  },
+  "telemetry_samples": {
+    "imported": 8265873,
+    "new": 136507
+  },
+  "new_max_sample_gap_seconds": 0.07200002670288086,
+  "new_counter_active_samples": {
+    "clocks_event_reasons_counters.sw_power_cap": 3409,
+    "clocks_event_reasons_counters.sw_thermal_slowdown": 0,
+    "clocks_event_reasons_counters.hw_thermal_slowdown": 0
+  },
+  "new_counter_anomaly_blocks": 1067,
+  "imported_status_counts": {
+    "PASS": 111582
+  },
+  "remeasured_status_counts": {
+    "REVIEW": 1800
+  },
+  "resolved_review": 0,
+  "remaining_review": 1800,
+  "remaining_general_review": 1543,
+  "remaining_fresh_holdout_review": 257,
+  "new_split_status_counts": [
+    {
+      "split": "development",
+      "status": "REVIEW",
+      "count": 550
+    },
+    {
+      "split": "fresh_holdout",
+      "status": "REVIEW",
+      "count": 257
+    },
+    {
+      "split": "legacy_test_explored",
+      "status": "REVIEW",
+      "count": 145
+    },
+    {
+      "split": "legacy_train",
+      "status": "REVIEW",
+      "count": 699
+    },
+    {
+      "split": "legacy_validation",
+      "status": "REVIEW",
+      "count": 149
+    }
+  ],
+  "new_sessions": {
+    "20260930_212559_7d09687f": {
+      "state": "FINISHED",
+      "new_records": 1800,
+      "elapsed_seconds": 7166.400435637001,
+      "ended_utc": "2026-09-30T14:25:25.408187+00:00"
+    }
+  },
+  "holdout_latencies_disclosed": false
+}

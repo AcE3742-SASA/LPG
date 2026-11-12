@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "enumerated_layer_configurations": 2304,
+  "minimum_budget_queries": 768,
+  "portfolio_rows": 144,
+  "break_even_rows": 94,
+  "inputs_unchanged": 700,
+  "source_prior_train_shapes_per_seed": 11498,
+  "source_validation_shapes": 1611,
+  "test_metrics_read": false,
+  "refitting": false,
+  "report_links": "PASS"
+}

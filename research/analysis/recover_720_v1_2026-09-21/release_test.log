@@ -1,0 +1,15 @@
+RECOVERY READY: imported=1680, pending=1920, output=/private/var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/test-gemm720-recovery-w7071htu/recovered
+RECOVERY READY: imported=1680, pending=1920, output=/private/var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/test-gemm720-recovery-w7071htu/recovered
+{
+  "status": "PASS",
+  "gpu_execution": false,
+  "checks": [
+    "exact clean 1680 import, same 1920 pending tasks, original history retained",
+    "repeat preparation is idempotent and does not duplicate records",
+    "wrong archive, unrelated/partial output and invalid receipt rejected",
+    "changed imported evidence and original dirty-run resume remain blocked",
+    "progress starts at 46.7 percent and shows saved totals through completion",
+    "wrapper delegates full run, preserves REVIEW exit 2 and stops its monitor",
+    "Ctrl+C reaches the existing launcher cleanup and retains exit 130"
+  ]
+}

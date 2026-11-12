@@ -1,0 +1,12 @@
+{
+  "method": "Median pilot task wall seconds by kind/mode/tool. Chain time scales by seven blocks times (layers+1). Shape-dependent cost and interruptions are not modeled.",
+  "hours_by_kind": {
+    "bandwidth": 0.009659892683748695,
+    "gemm": 45.02368076030352,
+    "chain": 25.173841289349905,
+    "profile": 0.06853724602889338
+  },
+  "preheat_hours": 0.05,
+  "total_hours": 70.32571918836607,
+  "full_task_count": 42490
+}

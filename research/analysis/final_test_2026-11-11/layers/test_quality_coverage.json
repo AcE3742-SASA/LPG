@@ -1,0 +1,60 @@
+[
+  {
+    "dtype": "fp16",
+    "excluded_group_ids": [],
+    "layer": "linear",
+    "planned_groups": 50,
+    "retained_groups": 50
+  },
+  {
+    "dtype": "fp32",
+    "excluded_group_ids": [],
+    "layer": "linear",
+    "planned_groups": 50,
+    "retained_groups": 50
+  },
+  {
+    "dtype": "fp16",
+    "excluded_group_ids": [],
+    "layer": "ffn",
+    "planned_groups": 50,
+    "retained_groups": 50
+  },
+  {
+    "dtype": "fp32",
+    "excluded_group_ids": [],
+    "layer": "ffn",
+    "planned_groups": 50,
+    "retained_groups": 50
+  },
+  {
+    "dtype": "fp16",
+    "excluded_group_ids": [],
+    "layer": "conv1",
+    "planned_groups": 50,
+    "retained_groups": 50
+  },
+  {
+    "dtype": "fp32",
+    "excluded_group_ids": [],
+    "layer": "conv1",
+    "planned_groups": 50,
+    "retained_groups": 50
+  },
+  {
+    "dtype": "fp16",
+    "excluded_group_ids": [],
+    "layer": "conv3",
+    "planned_groups": 50,
+    "retained_groups": 50
+  },
+  {
+    "dtype": "fp32",
+    "excluded_group_ids": [
+      "lfg_de61c84e6afebc0e"
+    ],
+    "layer": "conv3",
+    "planned_groups": 50,
+    "retained_groups": 49
+  }
+]

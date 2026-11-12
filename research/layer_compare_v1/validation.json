@@ -1,0 +1,94 @@
+{
+  "checks": [
+    {
+      "check": "compare.py verify",
+      "result": "PASS",
+      "scope": "source hashes, frozen hierarchy, IDs, development coverage and reserved shape neighbours"
+    },
+    {
+      "check": "select_cases.py",
+      "result": "PASS",
+      "scope": "exact reproduction from metadata-only frozen exclusions and seed"
+    },
+    {
+      "check": "test_compare.py --cpu",
+      "dtype_cases": 18,
+      "result": "PASS",
+      "scope": "two paths; independent full CPU FP64 references; irregular Conv batch/padding/rectangle; four actual health shapes; injected weight errors",
+      "torch_version": "2.14.1"
+    },
+    {
+      "check": "test_compare.py analysis fixtures",
+      "result": "PASS",
+      "scope": "health PASS/REVIEW/FAIL; missing correctness; incomplete lifecycle; restoration failure; full 1920-record/320-comparison aggregate; failure cannot pass"
+    },
+    {
+      "check": "pack integration in temporary directories",
+      "result": "PASS",
+      "scope": "failure-result preservation, repeated unique archives, CRC, embedded and archive hashes, active-run flock rejection"
+    },
+    {
+      "check": "off-PC launch.sh",
+      "result": "PASS",
+      "scope": "rejected before output creation, privilege requests or GPU commands"
+    },
+    {
+      "check": "Python AST and bash -n",
+      "python_files": 59,
+      "result": "PASS",
+      "shell_files": 18
+    },
+    {
+      "check": "dependency hashes against preserved originals",
+      "result": "PASS",
+      "unchanged_files": 114
+    },
+    {
+      "check": "ASCII execution text",
+      "result": "PASS",
+      "scope": "new entrypoints and invoked frozen execution/telemetry functions; preserved legacy report strings remain in unused ancestors"
+    }
+  ],
+  "coverage": {
+    "conv1": 64,
+    "conv3": 64,
+    "dtypes": [
+      "fp16",
+      "fp32"
+    ],
+    "expected_measurements": 1920,
+    "ffn": 16,
+    "health_measurements": 48,
+    "implementations": 2,
+    "linear": 16,
+    "reserved_neighbour_axis_distance": 8,
+    "reserved_shapes": 2534,
+    "rounds": 3,
+    "shapes": 160
+  },
+  "date": "2026-10-06",
+  "execution": {
+    "existing_remote_installations_changed": false,
+    "gpu_executed": false,
+    "gpu_settings_changed": false,
+    "local_cpu_runtime": "temporary macOS arm64 PyTorch 2.14.1 under /private/tmp; no CUDA",
+    "ssh_attempted": false
+  },
+  "status": "LOCAL_STATIC_AND_CPU_PASS_GPU_NOT_RUN",
+  "timing_budget": {
+    "estimate_measured": false,
+    "nominal_settle_and_main_minutes": 118.4,
+    "preheat_minutes": 3,
+    "wall_hours_estimate": [
+      2,
+      3
+    ],
+    "worker_timeout_hours": 6
+  },
+  "unverified": [
+    "CUDA numerical checks on research PC",
+    "actual standard/decomposed GPU latency and extra allocated memory",
+    "GPU health gate, thermal/power/clock observations and actual clock reset command acceptance",
+    "whether the selected shapes represent real-network workloads or support predictor accuracy"
+  ]
+}

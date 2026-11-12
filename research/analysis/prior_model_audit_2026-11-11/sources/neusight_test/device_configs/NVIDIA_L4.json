@@ -1,0 +1,10 @@
+{
+    "Device":"NVIDIA L4",
+    "Dev_Mem":24,
+    "Mem_Bw":300,
+    "Num_Sm":60,
+    "Core_Per_SM":128,
+    "Freq":2040,
+    "SingleFLOPs":31334,
+    "L2Cache":48
+}

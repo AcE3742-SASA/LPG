@@ -1,0 +1,36 @@
+[
+  {
+    "timestamp": "2026-11-11T06:40:21.687939+00:00",
+    "split": "legacy_train",
+    "shapes": 3345,
+    "modes": [
+      "allocate",
+      "prealloc",
+      "graph"
+    ],
+    "conditions": 20070,
+    "shape_ids_sha256": "c3f0a31ab7ab52aa845e6c8fb2de39c725ccf98d6be14e0708ddd83cd7a1f63e"
+  },
+  {
+    "timestamp": "2026-11-11T06:40:21.763904+00:00",
+    "split": "legacy_validation",
+    "shapes": 716,
+    "modes": [
+      "allocate",
+      "prealloc",
+      "graph"
+    ],
+    "conditions": 4296,
+    "shape_ids_sha256": "5eb7aa6018de43c759fda080dc760cdffc03cbee8e3faff67d26f5c593856b5d"
+  },
+  {
+    "split": "expansion_train",
+    "shapes": 8153,
+    "conditions": 48918
+  },
+  {
+    "split": "expansion_validation",
+    "shapes": 895,
+    "conditions": 5370
+  }
+]

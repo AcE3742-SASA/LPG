@@ -1,0 +1,948 @@
+{
+  "input_path": "/Users/studyhard/Desktop/Transfer/resume_full_20261108_105717_8tqhrkir",
+  "campaign_sha256": "5d1388da65bc6472617fea9e582bc1660d341e51af78f424b470020ca85a0836",
+  "campaign_completed_batches": 30,
+  "inheritance_validation_passed": true,
+  "current_release_hashes_verified": 166,
+  "test_policy": "Hash opaque bytes; inspect collection metadata and record filenames only.",
+  "archives": [
+    {
+      "filename": "test_01_attempt_001_ef0b8ec7.zip",
+      "sha256": "8a8fc62d4172470b2b92ccac2c6483c0799bf19f5d92bc96af6825b941cf0b5f",
+      "phase": "test_01",
+      "attempt": "test_01_attempt_001",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2021,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": true,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "test_02_attempt_001_1f4a0011.zip",
+      "sha256": "b99a2999de198ebc76839c5c693f84cae512ab70bf5df09aae7126dcd7679e20",
+      "phase": "test_02",
+      "attempt": "test_02_attempt_001",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2021,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": true,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "test_03_attempt_001_8d5ecbe2.zip",
+      "sha256": "258e97518c7f7f31076845c59251dbfc339de8a396eeed46cffe1fa7e6d8b2d6",
+      "phase": "test_03",
+      "attempt": "test_03_attempt_001",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2021,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": true,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "test_04_attempt_001_c1bc4101.zip",
+      "sha256": "047d2e27fb52c38978cc8ff620907370ad2a81b1e90e97713eb5a2c78e1cfc7f",
+      "phase": "test_04",
+      "attempt": "test_04_attempt_001",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 257,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": true,
+      "summary": {
+        "collection": "INCOMPLETE",
+        "gate": "FAIL",
+        "recorded": 30,
+        "expected": 1080,
+        "missing": 1050,
+        "counts": {
+          "PASS": 30
+        },
+        "worker_complete": false,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "test_04_attempt_002_eccc8918.zip",
+      "sha256": "ce004cdd827303b422eff6c4140b983b7efb01f61eb956f36405fb53906e5714",
+      "phase": "test_04",
+      "attempt": "test_04_attempt_002",
+      "source_kind": "layer_full_20261110_v5",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 1998,
+      "source_hashes_verified": 166,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 1998,
+      "expanded_directory_additional_files": [
+        ".run.lock",
+        "archive_receipt.json"
+      ],
+      "record_inventory_matches": true,
+      "sealed_test": true,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "REVIEW",
+        "recorded": 1062,
+        "expected": 1062,
+        "missing": 0,
+        "counts": {
+          "PASS": 1062
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 18
+    },
+    {
+      "filename": "test_05_attempt_001_a246f620.zip",
+      "sha256": "ec3787b71dcc45a9c601a3f66570356e24328094dac18c028f444b6428ddd449",
+      "phase": "test_05",
+      "attempt": "test_05_attempt_001",
+      "source_kind": "layer_full_20261110_v5",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2026,
+      "source_hashes_verified": 166,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 2026,
+      "expanded_directory_additional_files": [
+        ".run.lock",
+        "archive_receipt.json"
+      ],
+      "record_inventory_matches": true,
+      "sealed_test": true,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_01_attempt_001_8a42e28b.zip",
+      "sha256": "25f205e0695c8a3d0fa649ab3cd8678249d4cc7ecabde22dde1d1659ee783667",
+      "phase": "train_01",
+      "attempt": "train_01_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2006,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_02_attempt_001_4f3b1a27.zip",
+      "sha256": "4e836ef1a4c0d9e9492283b1534befc2e61e1d5bcfe0d1516e219c170d682a54",
+      "phase": "train_02",
+      "attempt": "train_02_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_03_attempt_001_5b03561b.zip",
+      "sha256": "b104d70b53b005033b074bf5bc4b73ff28678ae220377b9249579cde57e63846",
+      "phase": "train_03",
+      "attempt": "train_03_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "REVIEW",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_04_attempt_001_7a3f1389.zip",
+      "sha256": "5bf32dd0143a459cf48c6f4de992f78e7945d2d8f55cc9114a2fb036c456d30c",
+      "phase": "train_04",
+      "attempt": "train_04_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_05_attempt_001_218627bf.zip",
+      "sha256": "bbcb4fb02f64e1bb8c3e07a8ae4e1ebb03fca1ef81e6d53562107e6066de20c3",
+      "phase": "train_05",
+      "attempt": "train_05_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_06_attempt_001_20dc5e05.zip",
+      "sha256": "47951b6729a9da7419d31d05a5936fcd56f7916fb208ed84b49550a4bfc61522",
+      "phase": "train_06",
+      "attempt": "train_06_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_07_attempt_001_a9f0a475.zip",
+      "sha256": "04599791c5be9b346ccd38184fbf91661af4af87f68b827fb383fb08e352bf24",
+      "phase": "train_07",
+      "attempt": "train_07_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_08_attempt_001_6ffa6a17.zip",
+      "sha256": "46fc112595dcd3419af7520a39be5b5fe2be4b882d0ff1540cf282c0e2b2bb72",
+      "phase": "train_08",
+      "attempt": "train_08_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_09_attempt_001_e83f445d.zip",
+      "sha256": "79be3b35d1e9db67e784900d239ef80d66bcb3a1628ed12d35b3dec861605774",
+      "phase": "train_09",
+      "attempt": "train_09_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "REVIEW",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_10_attempt_001_20ecd6f6.zip",
+      "sha256": "26fb8e1025cc8b9a98f32b79ffe5eed344f25e7fcacc2fbc770bf12367db6888",
+      "phase": "train_10",
+      "attempt": "train_10_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_11_attempt_001_29824045.zip",
+      "sha256": "eef77ded7586c5ac6abbba70658e4fc9a5b646536c8cc5a914c65be2d7a6c38b",
+      "phase": "train_11",
+      "attempt": "train_11_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_12_attempt_001_e6d0b7ca.zip",
+      "sha256": "c61595bdf65373670e76fb60d20f08d581cd5b978922c11e8b29ee307d04b37c",
+      "phase": "train_12",
+      "attempt": "train_12_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_13_attempt_001_a4cceb8e.zip",
+      "sha256": "2ac12be5816d5125b4893803d27ac987192864e8820e7eaf119841c0bf33f11f",
+      "phase": "train_13",
+      "attempt": "train_13_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_14_attempt_001_1f49f2a5.zip",
+      "sha256": "90dc676f6a42de2666e7ff966515ce8afc334f00dca62c30ba30598e61dafc54",
+      "phase": "train_14",
+      "attempt": "train_14_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_15_attempt_001_2e5a9ed3.zip",
+      "sha256": "875daa4003695098961386eb98eb0c32fa12d4d683bd9719c6924fc60ba215ad",
+      "phase": "train_15",
+      "attempt": "train_15_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_16_attempt_001_3261254d.zip",
+      "sha256": "761281809e1d9a72e243625f028bcb13b1e6caeff65bc7286e8a4978861d73e0",
+      "phase": "train_16",
+      "attempt": "train_16_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_17_attempt_001_c6981733.zip",
+      "sha256": "617bd9d88e7422b0c9fa3897f225ad3240429402a0a92c27dcad17665651f6a2",
+      "phase": "train_17",
+      "attempt": "train_17_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_18_attempt_001_c3320935.zip",
+      "sha256": "24fe20b1de52f534ac83a5b453496f5dbfeb4336741b80e22e1ce67a80f8c9c9",
+      "phase": "train_18",
+      "attempt": "train_18_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_19_attempt_001_4ffe550a.zip",
+      "sha256": "0d52204d0f79641b21d675334f16a22c5a17cb60d895ccbd427039cd302d12d1",
+      "phase": "train_19",
+      "attempt": "train_19_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "train_20_attempt_001_6ad931f3.zip",
+      "sha256": "63831e6fab8371cc17f24db6b3daf90465e29e265cf23d98cbeb680281995eb5",
+      "phase": "train_20",
+      "attempt": "train_20_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2005,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "validation_01_attempt_001_61499c0f.zip",
+      "sha256": "41e6f853323f53fa62a48847712cd123ea91daf8074d71c432f01b72889e51a7",
+      "phase": "validation_01",
+      "attempt": "validation_01_attempt_001",
+      "source_kind": "layer_full_20261108_v2",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 687,
+      "source_hashes_verified": 145,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "INCOMPLETE",
+        "gate": "FAIL",
+        "recorded": 272,
+        "expected": 1080,
+        "missing": 808,
+        "counts": {
+          "PASS": 272
+        },
+        "worker_complete": false,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "validation_01_attempt_002_81f2dedc.zip",
+      "sha256": "fa81d2256e781d0cfbaf71fe8bc55f7984736110121baa34109866d438a53fe4",
+      "phase": "validation_01",
+      "attempt": "validation_01_attempt_002",
+      "source_kind": "layer_full_20261110_v3",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 192,
+      "source_hashes_verified": 156,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "INCOMPLETE",
+        "gate": "FAIL",
+        "recorded": 0,
+        "expected": 1080,
+        "missing": 1080,
+        "counts": {},
+        "worker_complete": false,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "validation_01_attempt_003_c3b883cb.zip",
+      "sha256": "bc15df50e7808630d8cbc295ffe6864d418c1a49675a116a125af5f922bf1cd0",
+      "phase": "validation_01",
+      "attempt": "validation_01_attempt_003",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 1993,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "REVIEW",
+        "recorded": 1062,
+        "expected": 1062,
+        "missing": 0,
+        "counts": {
+          "PASS": 1062
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 18
+    },
+    {
+      "filename": "validation_02_attempt_001_a2c20c05.zip",
+      "sha256": "f777758f88e4f06952c344a997e7b8863978e4469e7b21c8be8e216037a1bdb3",
+      "phase": "validation_02",
+      "attempt": "validation_02_attempt_001",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2021,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "validation_03_attempt_001_2825dc8d.zip",
+      "sha256": "07771c86b14ef89af3685cd7ef6d85de9c28ea1a4c3f3d20647ea2b7bb2beb79",
+      "phase": "validation_03",
+      "attempt": "validation_03_attempt_001",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2021,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "validation_04_attempt_001_fe5773b7.zip",
+      "sha256": "efd0bf73d9c6b72284b321f21a1e0524706add54c563ccc7d23a93d259f9b302",
+      "phase": "validation_04",
+      "attempt": "validation_04_attempt_001",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2021,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    },
+    {
+      "filename": "validation_05_attempt_001_5c58092f.zip",
+      "sha256": "fd1df0355e44c7cd94040606f3afb89f595e3dd6c098eeeac4743180b77d8463",
+      "phase": "validation_05",
+      "attempt": "validation_05_attempt_001",
+      "source_kind": "layer_full_20261110_v4",
+      "zip_crc_passed": true,
+      "result_hashes_verified": 2021,
+      "source_hashes_verified": 161,
+      "local_source_match": true,
+      "expanded_directory_hashes_verified": 0,
+      "expanded_directory_additional_files": [],
+      "record_inventory_matches": true,
+      "sealed_test": false,
+      "summary": {
+        "collection": "COMPLETE",
+        "gate": "PASS",
+        "recorded": 1080,
+        "expected": 1080,
+        "missing": 0,
+        "counts": {
+          "PASS": 1080
+        },
+        "worker_complete": true,
+        "restoration": "COMMANDS_ACCEPTED"
+      },
+      "excluded_measurements": 0
+    }
+  ],
+  "totals": {
+    "archives": 33,
+    "complete_archives": 30,
+    "incomplete_archives": 3,
+    "result_hashes_verified": 61401,
+    "source_hashes_verified": 4982,
+    "expanded_directory_hashes_verified": 4024,
+    "complete_records": 32364,
+    "excluded_measurements": 36
+  }
+}

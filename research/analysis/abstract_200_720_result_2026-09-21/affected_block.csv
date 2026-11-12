@@ -1,0 +1,2 @@
+seq,kind,phase,shape,dtype,round,split,mode,id,block_phase,block,latency_ms,median_ms,block_vs_median_pct,relative_iqr,first_last_drift,start_kst,end_kst,status,flags
+1777,gemm,main,"[2048, 4096, 256]",fp16,1,legacy_train,prealloc,fe81bf96cb2658c4a0558744,timed,4,0.1776203217826608,0.17760702918964807,0.0074842719195222784,0.00014746354516397627,0.00010462480624536755,2026-09-21T21:35:07.808664+09:00,2026-09-21T21:35:07.906559+09:00,REVIEW,['observed_mismatch:clocks.mem']

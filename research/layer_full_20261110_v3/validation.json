@@ -1,0 +1,43 @@
+{
+  "status": "LOCAL_VALIDATION_PASS",
+  "release": "layer_full_20261110_v3",
+  "runtime": "Python 3.13 / torch 2.15.0 CPU",
+  "checks": {
+    "full_selfcheck": "PASS: manifest/protection/analyzer/sealed-access/recovery/archive/signal cleanup",
+    "numeric_cases": 16,
+    "cpu_worker_records": 108,
+    "conv_adjudicated_points": 1938,
+    "hidden_error_points_checked": 300,
+    "unchanged_numeric_cases": 8,
+    "nonfinite_shape_identity_shared_error_rejection": "PASS",
+    "isolated_probe_cli_boundaries": "PASS",
+    "legacy_fp16_ffn_regression": "PASS",
+    "real_archive_inheritance": "PASS: 21 pinned ZIPs, 20 train skipped, validation attempt002 starts",
+    "interrupted_import_and_resume": "PASS: original attempt001 preserved, interrupted002 retained, retry003 continues",
+    "train_recollection_calls": 0,
+    "inherited_review_batches": [
+      "train_03",
+      "train_09"
+    ],
+    "mixed_analysis_tests": 34,
+    "timed_worker_precision_memory_analyzer_components_ast_or_bytes_unchanged": true,
+    "non_reference_protocol_unchanged": true,
+    "preserved_v2_files_sha256": 161,
+    "ascii_python_and_shell_syntax": "PASS"
+  },
+  "gpu_probe": {
+    "status": "PENDING_RESEARCH_PC_EXECUTION",
+    "case": "lf_ce6440e85a4add93",
+    "dtype": "fp32",
+    "timing": "isolated subprocess before validation_01 worker",
+    "success": "same input/weight hashes and existing FP64 tolerances pass",
+    "failure": "preserve detailed JSON and stop if any independently checked output exceeds the original tolerance"
+  },
+  "original_campaign": "full_20261108_105717_8tqhrkir",
+  "test_commands": [
+    "/private/tmp/layer-v3-numeric-20261110/bin/python -B layer_full_20261110_v3/selfcheck.py --numeric",
+    "python3 -B layer_full_20261110_v3/test_inheritance.py analysis/layer_full_result_2026-11-09/raw",
+    "analysis/integrated_rq14_2026-10-28/.venv/bin/python -B -m unittest discover -s analysis/layer_full_fit_2026-11-10_v3 -p test_*.py -v"
+  ],
+  "note": "Local CPU and synthetic execution checks; actual CUDA acceptance is gated on the research PC."
+}

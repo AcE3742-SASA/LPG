@@ -1,0 +1,63 @@
+[
+  {
+    "dtype": "fp16",
+    "excluded_group_ids": [],
+    "layer": "linear",
+    "planned_groups": 250,
+    "retained_groups": 250
+  },
+  {
+    "dtype": "fp32",
+    "excluded_group_ids": [],
+    "layer": "linear",
+    "planned_groups": 250,
+    "retained_groups": 250
+  },
+  {
+    "dtype": "fp16",
+    "excluded_group_ids": [],
+    "layer": "ffn",
+    "planned_groups": 250,
+    "retained_groups": 250
+  },
+  {
+    "dtype": "fp32",
+    "excluded_group_ids": [
+      "lfg_5d946932365838fe",
+      "lfg_a463bc0e43c0d487"
+    ],
+    "layer": "ffn",
+    "planned_groups": 250,
+    "retained_groups": 248
+  },
+  {
+    "dtype": "fp16",
+    "excluded_group_ids": [],
+    "layer": "conv1",
+    "planned_groups": 250,
+    "retained_groups": 250
+  },
+  {
+    "dtype": "fp32",
+    "excluded_group_ids": [],
+    "layer": "conv1",
+    "planned_groups": 250,
+    "retained_groups": 250
+  },
+  {
+    "dtype": "fp16",
+    "excluded_group_ids": [],
+    "layer": "conv3",
+    "planned_groups": 250,
+    "retained_groups": 250
+  },
+  {
+    "dtype": "fp32",
+    "excluded_group_ids": [
+      "lfg_b9e9ba927cac0b77"
+    ],
+    "layer": "conv3",
+    "planned_groups": 250,
+    "retained_groups": 249
+  }
+]

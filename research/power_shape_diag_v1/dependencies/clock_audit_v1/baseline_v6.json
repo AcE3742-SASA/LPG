@@ -1,0 +1,119 @@
+{
+  "code_hashes": {
+    "full.py": "f0b29e6b91a1b0231dd844c93f94c3996b0b45dc3727d8728d04842a20f4e233",
+    "measure.py": "1e28f9e6b18ece3cf3322bf00d51549898e65f3cb14dca592eae6c8bf583e2e6",
+    "pilot.py": "d1d196a5dcd24d168914a5f14daba55f38b636963f834f19e31a7e06967651ac",
+    "plan.py": "2bded90cf494e25cb391b88703205e95b86b4173fe7760d0aea8706833347281",
+    "profiling.py": "20f723fcefcdf814d45811684e80e384e49b48604b79597224ac97a0a0b77654",
+    "report.py": "8f39b1a516b7605aab409073e304b57e5d03f05abb92ea91c6b3ff47e1e2568f",
+    "suite.py": "be77e6ab47bdf139e7b0aab6300877173a2a66dc63934f59a71573bee9a7f07f",
+    "test_suite.py": "ef542f07ab616a55957b3e5ebc540c09d1d2f8d9796a77f907e0ea9771cd5383",
+    "test_v6.py": "c89c1e4a6699b8c23b3beae7ac78dbd151b8c8d9461a9b918716577ae563f7ad",
+    "launch.sh": "91f632ea6530e3b55650221f4d9c4baa4c928c1194bbcae8b8f69abdddde2762",
+    "run_research_checked.sh": "aa1f6462e801f14af5b8f67afd3680179949d802601d46402d381b32001b7b78",
+    "inputs/legacy_shapes.csv": "325ea0bd2b6c8b0bc8af6f941d5578dd9d5db58a8d7fa9f961f605943c22bbab",
+    "inputs/provenance.json": "c78f12efacf05a1daa7578f3b525052aaadf57383ac74df0ba3ef50bb9abdc75",
+    "inputs/review_shapes.csv": "ece950163d193923f1a69d6e76c122cb419ae63b287d14cdd6e8e9bfa7466f3b"
+  },
+  "protocol": {
+    "version": 4,
+    "seed": 20260919,
+    "blocks": 7,
+    "settle_ms": 3000.0,
+    "block_ms": 100.0,
+    "preheat_seconds": 180,
+    "max_repeats": 100000,
+    "graph_nodes_max": 64,
+    "graph_target_replay_ms": 2.0,
+    "graph_batch_policy": "verified64_else_first_probe_then_reuse_per_shape_dtype",
+    "verified_graph64_cases": [
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp16"
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp32"
+      },
+      {
+        "shape": [
+          128,
+          128,
+          128
+        ],
+        "dtype": "fp16"
+      }
+    ],
+    "pressure_mib": 256,
+    "pressure_samples": 32,
+    "relative_iqr_limit": 0.05,
+    "drift_limit": 0.05,
+    "between_round_limit": 0.05,
+    "sample_side": 16,
+    "tolerances": {
+      "fp32": [
+        2e-05,
+        0.0002
+      ],
+      "fp16": [
+        0.001,
+        0.005
+      ]
+    },
+    "expected_gpu": "RTX 4000 SFF Ada",
+    "expected_capability": [
+      8,
+      9
+    ]
+  },
+  "environment_signature": {
+    "gpu_uuid": "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a",
+    "device_driver": "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a, NVIDIA RTX 4000 SFF Ada Generation, 615.71.09",
+    "torch": "2.14.0+cu132",
+    "cuda_runtime": "13.2",
+    "precision": {
+      "fp32_precision": "ieee",
+      "allow_fp16_reduced_precision_reduction": false,
+      "allow_fp16_accumulation": false
+    },
+    "environment": {
+      "CONDA_DEFAULT_ENV": "ai_env",
+      "CUDA_VISIBLE_DEVICES": null,
+      "CUDA_HOME": "/usr/local/cuda-13.4",
+      "CUBLAS_WORKSPACE_CONFIG": null,
+      "CUDA_LAUNCH_BLOCKING": null,
+      "NVIDIA_TF32_OVERRIDE": null
+    }
+  },
+  "pilot_zip_sha256": "082d6f113aabf70391f79984673c50b988aa2e89ddca518c85d5bc6cefce9e4b",
+  "fixed_cases": [
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "graph_gemms_per_replay": 29,
+      "input_seed": 2241190505
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "graph_gemms_per_replay": 56,
+      "input_seed": 2739574071
+    }
+  ]
+}

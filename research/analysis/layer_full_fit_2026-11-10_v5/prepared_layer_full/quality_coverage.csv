@@ -1,0 +1,9 @@
+layer,dtype,planned_groups,retained_groups,excluded_group_ids
+linear,fp16,250,250,[]
+linear,fp32,250,250,[]
+ffn,fp16,250,250,[]
+ffn,fp32,250,248,"['lfg_5d946932365838fe', 'lfg_a463bc0e43c0d487']"
+conv1,fp16,250,250,[]
+conv1,fp32,250,250,[]
+conv3,fp16,250,250,[]
+conv3,fp32,250,249,['lfg_b9e9ba927cac0b77']

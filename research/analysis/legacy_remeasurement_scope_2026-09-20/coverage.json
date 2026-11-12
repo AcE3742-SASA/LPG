@@ -1,0 +1,31 @@
+{
+  "legacy_rows": 10000,
+  "legacy_unique_shape_dtype": 10000,
+  "legacy_shapes": 5000,
+  "legacy_csv_sha256": "2e8274a588369de504a5d53e92bafd99750ab43f7af5b74e7b76463ce614180a",
+  "existing_v6_full_total_tasks": 78952,
+  "existing_v6_main_shape_dtype": 12004,
+  "legacy_keys_missing_from_main": 0,
+  "legacy_main_tasks": 60000,
+  "legacy_main_modes": {
+    "prealloc": 30000,
+    "graph": 30000
+  },
+  "legacy_main_rounds": {
+    "0": 20000,
+    "1": 20000,
+    "2": 20000
+  },
+  "allocation_legacy_shape_dtype_coverage": 434,
+  "allocation_legacy_missing": 9566,
+  "old_path": "torch.mm(a,b), allocating output each call",
+  "current_main_paths": [
+    "torch.mm(a,b,out=...)",
+    "CUDA Graph replay"
+  ],
+  "fixed_pilot_path": "fixed_pilot_v1; 192 measurements; actual GPU result pending",
+  "fixed_full_path": "NOT_IMPLEMENTED; original gpu_sweep_v6 full does not apply new clock controls",
+  "additional_allocation_scope": "USER_CLARIFICATION_PENDING",
+  "full_sweep": "HOLD",
+  "all_60000_legacy_mode_round_keys_verified": true
+}

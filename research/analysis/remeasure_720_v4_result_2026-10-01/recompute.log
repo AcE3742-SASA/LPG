@@ -1,0 +1,41 @@
+{
+  "gate": "REVIEW",
+  "size": "full",
+  "expected": 113382,
+  "recorded": 113382,
+  "missing": 0,
+  "collection_policy": "flag_clock_and_sw_power_cap_continue_v1",
+  "collection_complete": true,
+  "review_queue_tasks": 54,
+  "accepted_measurements": 113328,
+  "attempts": 113382,
+  "counts": {
+    "PASS": 113331,
+    "REVIEW": 51
+  },
+  "timed_blocks": 793674,
+  "triplets_expected": 37794,
+  "triplets_complete": 37794,
+  "timing_and_sampled_clocks_pass": false,
+  "max_relative_iqr": 0.022275854474207834,
+  "max_abs_drift": 0.046457195830954395,
+  "max_between_round_range": 0.06651199779426982,
+  "between_round_flags": 3,
+  "round_group_sizes": {
+    "3": 37794
+  },
+  "round_groups_complete": 37794,
+  "round_groups_expected": 37794,
+  "clock_flags": [
+    "sessions/20261001_143341_57d18ef1/segment_00015:worker_active:clocks_event_reasons.sw_power_cap",
+    "sessions/20261001_143341_57d18ef1/segment_00015:worker_mismatch:clocks.sm"
+  ],
+  "counter_anomaly_blocks": 65956,
+  "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+  "all_restorations_accepted": true,
+  "results_digest": "872aeeca5c0871871b55b66d31fd8147bc9174974c1a782d9f59890bf9796d43",
+  "task_wall_seconds_median": 3.8489831935003167,
+  "reference_change_abs_max_pct": null,
+  "full_sweep": "COLLECTION_ONLY",
+  "sampling_note": "Host-envelope samples are not continuous/effective kernel clocks."
+}

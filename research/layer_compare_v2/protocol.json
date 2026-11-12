@@ -1,0 +1,42 @@
+{
+  "dtypes": [
+    "fp16",
+    "fp32"
+  ],
+  "health_case_ids": [
+    "lc_046dc779d81ac689",
+    "lc_1cf7926d176de4ef",
+    "lc_bfe366430edac8c6",
+    "lc_b21750094c84b5d0"
+  ],
+  "interval_ms": 50,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "preheat_seconds": 180,
+  "rounds": 3,
+  "scope": "ordinary NCHW/2D standard nn versus explicit GEMM; development only; no Graph, compile or profiling",
+  "seed": 20261006,
+  "sm_mhz": 720,
+  "timing": {
+    "between_round_limit": 0.05,
+    "block_ms": 100.0,
+    "blocks": 7,
+    "drift_limit": 0.05,
+    "max_repeats": 100000,
+    "relative_iqr_limit": 0.05,
+    "settle_ms": 3000.0
+  },
+  "tolerance_policy": "fixed conservative pilot bounds; stop without automatic relaxation; GPU validation pending",
+  "tolerances": {
+    "fp16": [
+      0.001,
+      0.005
+    ],
+    "fp32": [
+      2e-05,
+      0.0002
+    ]
+  },
+  "version": "layer_compare_v2_20261006_timestamp_fix",
+  "worker_timeout_s": 21600
+}

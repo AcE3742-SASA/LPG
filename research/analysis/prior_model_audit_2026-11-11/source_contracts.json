@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "v1_files_unchanged": 483,
+  "neuralpower_cases": 750,
+  "original_prediction_comparisons": 3000,
+  "max_relative_difference": 6.148272661845336e-16,
+  "gemmify_dimension_mappings": 750,
+  "paleo_unit_precision_comparisons": 500,
+  "interpretation": "Numerical feature, mapping and unit checks; author training-data scores are a separate requirement"
+}

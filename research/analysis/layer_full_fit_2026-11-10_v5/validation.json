@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "client_date": "2026-11-10",
+  "tests_passed": 47,
+  "test_wall_seconds": 25.587,
+  "command": "MPLCONFIGDIR=/private/tmp/layer-full-report-mpl analysis/integrated_rq14_2026-10-28/.venv/bin/python -B -m unittest discover -s analysis/layer_full_fit_2026-11-10_v5 -p 'test_*.py' -v",
+  "checks": [
+    "Both fixed Conv3 FP32 exclusions preserve original FP64 tolerances and finite outputs",
+    "Six FAIL rows per exclusion have no fabricated time, record costs or labels; FP16 remains",
+    "Conv3 FP32 validation and test cohorts are each 49/50; FP16 remains 50/50",
+    "Test04 health case replaced by first eligible Conv3 case and exact manifest health checked",
+    "v2 train, v3 failure, eight v4 completed batch entries and v4 test04 failure retain source identity",
+    "v4 completed history cannot be changed; pinned ZIP shadow/rechecksumming rejected",
+    "Three actual failed-attempt public costs read without sealed timing labels",
+    "Original GEMM weights and development predictions replayed; synthetic fit/freeze/report tests",
+    "Sealed-test authorization and frozen-selection gates retained"
+  ],
+  "actual_training_executed": false,
+  "sealed_test_labels_opened": false,
+  "gpu_executed": false,
+  "real_train_integration": "PASS; continuation_validation.json",
+  "actual_eight_completed_v4_archives": "Not supplied locally; synthetic fixtures tested. Server importer verifies returned archives before reuse.",
+  "frozen_protocol_sha256": "4dabf3939473f70cf56d0905c9f86346049cbe1afd8b193bc23048dec6311790"
+}

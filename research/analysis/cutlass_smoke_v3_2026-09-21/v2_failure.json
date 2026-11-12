@@ -1,0 +1,54 @@
+{
+  "archive_sha256": "b5ba6eb3e3862c61fe007f0efc59c9eafc8eb72b709b007694c0d1a5b741181b",
+  "files": {
+    "runner.sh": {
+      "bytes": 5784,
+      "sha256": "0e96a77e8e295a672dafa5467789eb34e9205f28b8962755885e01cf8d99dbd6"
+    },
+    "runner.exit_code": {
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "lock_mem.log": {
+      "bytes": 91,
+      "sha256": "400632ee782d4f79640506ec45d6266aae107cbd438bd04ddaf54d294cf2a449"
+    },
+    "binary.sha256": {
+      "bytes": 121,
+      "sha256": "d7b9ba19881c827e006d09cf5303706af438354c04af42520392e00857a48936"
+    },
+    "device_before.txt": {
+      "bytes": 15480,
+      "sha256": "50e3b1dcf09ca851988c89e36c8afd1ede5125d9aab5848a4ea3c3bd7a14c4e6"
+    },
+    "source_status.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fp32_simt.before.csv": {
+      "bytes": 16,
+      "sha256": "aa6ba49726411bdc43bc566299709b6780fe92a0c6b4eed78d030160097170d6"
+    },
+    "processes_before.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "commit.txt": {
+      "bytes": 41,
+      "sha256": "0d7844fbd3c67babea66bbc967e68779c05d97186ec8c4cbbd38e6c4853395a2"
+    },
+    "lock_sm.log": {
+      "bytes": 86,
+      "sha256": "f4b9c33be9a098e63a6313e327f85faae24d2e2d9909d6eb573be58b5a965b3d"
+    }
+  },
+  "runner_exit_code": 1,
+  "observed_before": [
+    210,
+    405,
+    70
+  ],
+  "lock_commands_succeeded": true,
+  "profiler_started": false,
+  "reason": "v2 incorrectly required idle/preload clocks to equal target"
+}

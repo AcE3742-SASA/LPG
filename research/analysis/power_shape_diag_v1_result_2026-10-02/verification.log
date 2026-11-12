@@ -1,0 +1,157 @@
+{
+  "source_archive_sha256": "719cb872d36026494713637f447c79bd609fb4d40de064ca356476ac75246b29",
+  "raw_files": 718,
+  "source_files": 7,
+  "dependency_files": 110,
+  "summary_exact_reproduction": true,
+  "independent_timing_window_checks": 128,
+  "raw_preserved": true,
+  "collection": "COMPLETE",
+  "correctness_checks": 144,
+  "groups": [
+    {
+      "round": 1,
+      "k": 72,
+      "trials": 16,
+      "start_temperature_c": 34.0,
+      "power_w_median": 66.9225,
+      "power_instant_w_median": 66.95,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 51.5,
+      "latency_ms_median": 0.5004646976788838,
+      "intertrial_gap_ms_median": 27.358
+    },
+    {
+      "round": 1,
+      "k": 127,
+      "trials": 16,
+      "start_temperature_c": 51.0,
+      "power_w_median": 63.7,
+      "power_instant_w_median": 63.705,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 63.0,
+      "latency_ms_median": 0.8356700544597722,
+      "intertrial_gap_ms_median": 26.995
+    },
+    {
+      "round": 2,
+      "k": 72,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 69.14500000000001,
+      "power_instant_w_median": 69.17,
+      "timing_cap_trials": 16,
+      "timing_drop_trials": 6,
+      "minimum_sm_mhz": 705.0,
+      "temperature_median_c": 67.0,
+      "latency_ms_median": 0.500736007399152,
+      "intertrial_gap_ms_median": 26.591
+    },
+    {
+      "round": 2,
+      "k": 127,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 64.285,
+      "power_instant_w_median": 64.325,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 66.0,
+      "latency_ms_median": 0.8357185105145988,
+      "intertrial_gap_ms_median": 26.429000000000002
+    },
+    {
+      "round": 3,
+      "k": 72,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 69.19999999999999,
+      "power_instant_w_median": 69.18,
+      "timing_cap_trials": 16,
+      "timing_drop_trials": 6,
+      "minimum_sm_mhz": 705.0,
+      "temperature_median_c": 67.5,
+      "latency_ms_median": 0.50082288217479,
+      "intertrial_gap_ms_median": 26.483
+    },
+    {
+      "round": 3,
+      "k": 127,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 64.285,
+      "power_instant_w_median": 64.265,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 66.5,
+      "latency_ms_median": 0.8357705585027144,
+      "intertrial_gap_ms_median": 26.612000000000002
+    },
+    {
+      "round": 4,
+      "k": 72,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 69.26,
+      "power_instant_w_median": 69.245,
+      "timing_cap_trials": 16,
+      "timing_drop_trials": 7,
+      "minimum_sm_mhz": 705.0,
+      "temperature_median_c": 67.5,
+      "latency_ms_median": 0.5008079251451332,
+      "intertrial_gap_ms_median": 26.447
+    },
+    {
+      "round": 4,
+      "k": 127,
+      "trials": 16,
+      "start_temperature_c": 54.0,
+      "power_w_median": 64.465,
+      "power_instant_w_median": 64.52,
+      "timing_cap_trials": 0,
+      "timing_drop_trials": 0,
+      "minimum_sm_mhz": 720.0,
+      "temperature_median_c": 66.5,
+      "latency_ms_median": 0.8358440722449352,
+      "intertrial_gap_ms_median": 26.549
+    }
+  ],
+  "matched_rounds": [
+    2,
+    3,
+    4
+  ],
+  "matched": {
+    "72": {
+      "trials": 48,
+      "power_w_median": 69.19,
+      "cap_trials": 48,
+      "drop_trials": 19,
+      "min_sm_mhz": 705.0,
+      "latency_ms_median": 0.5008006848787007,
+      "timing_flags": 0
+    },
+    "127": {
+      "trials": 48,
+      "power_w_median": 64.39,
+      "cap_trials": 0,
+      "drop_trials": 0,
+      "min_sm_mhz": 720.0,
+      "latency_ms_median": 0.8357705585027144,
+      "timing_flags": 0
+    }
+  },
+  "paired_trial_power_delta_w": {
+    "median": 5.005000000000003,
+    "min": 4.180000000000007,
+    "max": 5.529999999999994
+  },
+  "ncu_selected_capture_count": 2,
+  "ncu_passes_per_capture": 10
+}

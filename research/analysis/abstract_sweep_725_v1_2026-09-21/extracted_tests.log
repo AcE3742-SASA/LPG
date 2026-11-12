@@ -1,0 +1,33 @@
+Requested: 725 MHz; selected exact supported target: 720 MHz
+Worker log: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpr_xp4zr_/new/launches/20260921_185539_bccb96/worker_0.log
+RESTORE: COMMANDS ACCEPTED
+Preheating 180 seconds
+[1/48] check [2329, 3998, 66] fp32 allocate r0: PASS (1000.00s)
+[2/48] check [2329, 3998, 66] fp32 prealloc r0: PASS (1000.00s)
+[3/48] check [2329, 3998, 66] fp32 graph r0: PASS (1000.00s)
+Preheating 180 seconds
+[4/48] check [2329, 3998, 66] fp16 allocate r0: PASS (1000.00s)
+[5/48] check [2329, 3998, 66] fp16 prealloc r0: PASS (1000.00s)
+[6/48] check [2329, 3998, 66] fp16 graph r0: PASS (1000.00s)
+test_exact_supported_selection (__main__.Checks.test_exact_supported_selection) ... ok
+test_plan_and_measurement_reuse (__main__.Checks.test_plan_and_measurement_reuse) ... ok
+test_reviewed_check_and_corruption (__main__.Checks.test_reviewed_check_and_corruption) ... ok
+test_incomplete_check_blocks_full_without_settings (__main__.Checks.test_incomplete_check_blocks_full_without_settings) ... ok
+test_720_evidence_requires_720_analysis_and_dirty_resume_stops (__main__.Checks.test_720_evidence_requires_720_analysis_and_dirty_resume_stops) ... ok
+test_controller_restores_selected_720_after_failure (__main__.Checks.test_controller_restores_selected_720_after_failure) ... ok
+test_launcher_keeps_current_terminal_and_packs (__main__.Checks.test_launcher_keeps_current_terminal_and_packs) ... ok
+test_denominator_or_accuracy_corruption_fails (__main__.Checks.test_denominator_or_accuracy_corruption_fails) ... ok
+test_resume_preserves_attempts_and_graph_choices (__main__.Checks.test_resume_preserves_attempts_and_graph_choices) ... ok
+test_manifest_change_and_output_lock_rejected (__main__.Checks.test_manifest_change_and_output_lock_rejected) ... ok
+test_worker_process_exit_and_failure_logged (__main__.Checks.test_worker_process_exit_and_failure_logged) ... ok
+test_failed_credentials_stop_child_before_return (__main__.Checks.test_failed_credentials_stop_child_before_return) ... ok
+test_worker_resume_collects_only_pending_tasks (__main__.Checks.test_worker_resume_collects_only_pending_tasks) ... ok
+test_failed_measurement_without_seed_exports_as_fail (__main__.Checks.test_failed_measurement_without_seed_exports_as_fail) ... ok
+test_timing_review_is_retained_without_discarding_collection (__main__.Checks.test_timing_review_is_retained_without_discarding_collection) ... ok
+test_coverage_inputs_splits_mode_order_and_holdout (previous_checks.SubsetChecks.test_coverage_inputs_splits_mode_order_and_holdout) ... ok
+test_selection_reproducible_independent_of_order_or_results (previous_checks.SubsetChecks.test_selection_reproducible_independent_of_order_or_results) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 4.959s
+
+OK

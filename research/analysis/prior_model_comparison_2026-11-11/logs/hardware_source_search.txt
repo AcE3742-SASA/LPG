@@ -1,0 +1,2 @@
+analysis/cutlass_inventory_2026-09-21/raw/help.txt:35:    [0] - NVIDIA RTX 4000 SFF Ada Generation - SM 8.9, 48 SMs @ 1560 MHz, L2 cache: 40 MB, Global Memory: 19 GB
+analysis/power_shape_diag_v1_result_2026-10-02/ncu_metrics.json:92:      "device__attribute_l2_cache_size": "41943040",

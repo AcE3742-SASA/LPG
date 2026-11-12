@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "selection_sha256": "a8ae2e11a3420e4b755a8690c83cf5930006380ba667b52fcc1ac9a51dd3a71b",
+  "test_rows": 6000,
+  "original_test_sha256": "b12a801cc9ad53e0de9df2a6345e499b5079b5534a569af267d308b2a28c72c1",
+  "model_selection_changed": false
+}

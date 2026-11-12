@@ -1,0 +1,13 @@
+target,layer,dtype,baseline,reference,groups,baseline_minus_reference_mape_pp,ci95_low_pp,ci95_high_pp,resamples
+standard,linear,fp16,neuralpower_fold_scaled,ours_overall,50,30.022359523815098,22.707573600944343,37.5549513702086,5000
+standard,conv3,fp16,neuralpower_fold_scaled,ours_overall,50,15.164779270486033,11.212282773658059,19.107459046816327,5000
+standard,conv1,fp16,neuralpower_fold_scaled,ours_overall,50,27.94851863951581,20.105789209343126,36.28726870523614,5000
+decomposed,linear,fp16,neuralpower_fold_scaled,ours_overall,50,27.893347336450383,21.151560576721923,34.86600130663588,5000
+decomposed,conv1,fp16,neuralpower_fold_scaled,ours_overall,50,9.424937189737399,5.361023065082813,13.800612889484457,5000
+decomposed,conv3,fp16,neuralpower_fold_scaled,ours_overall,50,3.5800525308494646,1.2777314263669137,6.1823914702248475,5000
+standard,linear,fp32,neuralpower_fold_scaled,ours_overall,50,4.962487227926962,2.206759281560577,8.006170519322458,5000
+standard,conv1,fp32,neuralpower_fold_scaled,ours_overall,50,28.70541300766736,17.27597482507959,41.380959676115715,5000
+standard,conv3,fp32,neuralpower_fold_scaled,ours_overall,49,5.982362492034651,0.9400793069229277,11.236242659383823,5000
+decomposed,conv1,fp32,neuralpower_fold_scaled,ours_overall,50,8.53060569096614,5.078866904872674,11.840083241488394,5000
+decomposed,linear,fp32,neuralpower_fold_scaled,ours_overall,50,4.170255247097007,1.453397107944635,7.151370989378272,5000
+decomposed,conv3,fp32,neuralpower_fold_scaled,ours_overall,49,0.6639696964575346,-0.9904793129203903,2.2951669290128294,5000

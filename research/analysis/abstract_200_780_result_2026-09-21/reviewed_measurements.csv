@@ -1,0 +1,4 @@
+seq,kind,phase,shape,dtype,round,split,mode,id,median_us,stored_status,analyzed_status,flags,incident_timed_blocks
+163,gemm,main,"[3128, 680, 488]",fp32,0,development,allocate,adad9afa9a82e9792d1e4527,415.01687955455617,PASS,REVIEW,"['observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm']",7
+164,gemm,main,"[3128, 680, 488]",fp32,0,development,prealloc,56426abd088d24885ae4652d,415.3112626973555,PASS,REVIEW,"['observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm']",7
+165,gemm,main,"[3128, 680, 488]",fp32,0,development,graph,de93051b069995f4ffdc07e7,413.16936259367026,PASS,REVIEW,"['observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm']",7

@@ -1,0 +1,116 @@
+{
+  "direct_tasks": 48,
+  "segment_only_tasks": 1752,
+  "current_direct_flags": {
+    "observed_active:clocks_event_reasons.sw_power_cap": 48,
+    "observed_mismatch:clocks.sm": 25
+  },
+  "directly_observed_shapes": [
+    {
+      "shape": [
+        2056,
+        4095,
+        72
+      ],
+      "dtype": "fp32",
+      "directly_flagged": [
+        9,
+        1,
+        2
+      ],
+      "power_flagged_all_three": 1,
+      "remaining_tasks": 3
+    },
+    {
+      "shape": [
+        2704,
+        3720,
+        72
+      ],
+      "dtype": "fp32",
+      "directly_flagged": [
+        6,
+        0,
+        2
+      ],
+      "power_flagged_all_three": 0,
+      "remaining_tasks": 3
+    },
+    {
+      "shape": [
+        4096,
+        2049,
+        64
+      ],
+      "dtype": "fp32",
+      "directly_flagged": [
+        7,
+        2,
+        5
+      ],
+      "power_flagged_all_three": 2,
+      "remaining_tasks": 6
+    },
+    {
+      "shape": [
+        4096,
+        4088,
+        72
+      ],
+      "dtype": "fp32",
+      "directly_flagged": [
+        9,
+        9,
+        9
+      ],
+      "power_flagged_all_three": 9,
+      "remaining_tasks": 9
+    },
+    {
+      "shape": [
+        4096,
+        4095,
+        72
+      ],
+      "dtype": "fp32",
+      "directly_flagged": [
+        18,
+        18,
+        18
+      ],
+      "power_flagged_all_three": 18,
+      "remaining_tasks": 18
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        72
+      ],
+      "dtype": "fp32",
+      "directly_flagged": [
+        17,
+        3,
+        12
+      ],
+      "power_flagged_all_three": 3,
+      "remaining_tasks": 12
+    }
+  ],
+  "repeated_power_tasks_all_three": 33,
+  "direct_counts_by_attempt": [
+    82,
+    34,
+    48
+  ],
+  "power_counts_by_attempt": [
+    78,
+    33,
+    48
+  ],
+  "proposed_isolated_tasks": 51,
+  "other_remaining_tasks": 1749,
+  "policy_changed": false,
+  "reclassified_as_pass": 0,
+  "holdout_latencies_disclosed": false
+}

@@ -1,0 +1,258 @@
+{
+  "evidence_verification": "PASS",
+  "collection_decision": "INCOMPLETE_CLOCK_VIOLATION_HOLD",
+  "zip_sha256": "f722419bea5b83b54894a4d0db8efdd9c680d63f6e2f1e25c14a7110c759ac20",
+  "raw_files": 357,
+  "own_sources_verified": 10,
+  "dependencies_verified": 49,
+  "identical_recomputed_outputs": 15,
+  "gpu_execution_on_mac": false,
+  "original_summary": {
+    "gate": "INCOMPLETE",
+    "size": "full",
+    "expected": 3600,
+    "recorded": 240,
+    "missing": 3360,
+    "attempts": 240,
+    "counts": {
+      "PASS": 237,
+      "REVIEW": 3
+    },
+    "timed_blocks": 1680,
+    "triplets_expected": 1200,
+    "triplets_complete": 80,
+    "timing_and_sampled_clocks_pass": false,
+    "max_relative_iqr": 0.0006742996269681788,
+    "max_abs_drift": 0.0023230850606530623,
+    "max_between_round_range": 0.0,
+    "between_round_flags": 0,
+    "clock_flags": [
+      "sessions/20260921_081159_226387f6/segment_00001:worker_active:clocks_event_reasons.sw_power_cap",
+      "sessions/20260921_081159_226387f6/segment_00001:worker_mismatch:clocks.sm"
+    ],
+    "counter_anomaly_blocks": 105,
+    "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+    "all_restorations_accepted": true,
+    "results_digest": "921fc71b7bca46d9f807f695b2a397139726c337824d1ddf0efefc4318ca86fe",
+    "task_wall_seconds_median": 3.884074331500017,
+    "reference_change_abs_max_pct": null,
+    "full_sweep": "COLLECTION_ONLY",
+    "sampling_note": "Host-envelope samples are not continuous/effective kernel clocks."
+  },
+  "recorded_shapes": 40,
+  "planned_shapes": 200,
+  "recorded_rounds": [
+    0
+  ],
+  "complete_three_round_conditions": 0,
+  "between_round_variation": null,
+  "between_round_note": "Original summary 0.0 comes from one value per condition; no between-round comparison is available.",
+  "correctness_scopes": {
+    "sampled": 234,
+    "full": 6
+  },
+  "recorded_correctness_passed": 240,
+  "raw_status_counts": {
+    "PASS": 240
+  },
+  "telemetry_samples": 21287,
+  "sampled_core_counts": {
+    "780.0": 21135,
+    "765.0": 152
+  },
+  "active_reason_counts": {
+    "clocks_event_reasons.sw_power_cap": 172,
+    "clocks_event_reasons.sw_thermal_slowdown": 0,
+    "clocks_event_reasons.hw_thermal_slowdown": 0
+  },
+  "ranges": {
+    "clocks.sm": [
+      765.0,
+      780.0
+    ],
+    "clocks.mem": [
+      6801.0,
+      6801.0
+    ],
+    "power.limit": [
+      70.0,
+      70.0
+    ],
+    "power.draw": [
+      21.0,
+      71.63
+    ],
+    "temperature.gpu": [
+      34.0,
+      67.0
+    ]
+  },
+  "anomaly_first_kst": "2026-09-21T08:25:32.874000+09:00",
+  "anomaly_last_kst": "2026-09-21T08:25:43.340000+09:00",
+  "anomaly_sample_span_seconds": 10.466,
+  "anomaly_note": "First-to-last anomalous sample span, not continuous throttling duration.",
+  "incident_shapes": [
+    [
+      3128,
+      680,
+      488
+    ]
+  ],
+  "incident_blocks_by_phase": {
+    "settle": 67,
+    "calibration": 3,
+    "timed": 21
+  },
+  "reviewed_measurements": [
+    {
+      "seq": 163,
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "split": "development",
+      "mode": "allocate",
+      "id": "adad9afa9a82e9792d1e4527",
+      "median_us": 415.01687955455617,
+      "stored_status": "PASS",
+      "analyzed_status": "REVIEW",
+      "flags": "['observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm']",
+      "incident_timed_blocks": 7
+    },
+    {
+      "seq": 164,
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "split": "development",
+      "mode": "prealloc",
+      "id": "56426abd088d24885ae4652d",
+      "median_us": 415.3112626973555,
+      "stored_status": "PASS",
+      "analyzed_status": "REVIEW",
+      "flags": "['observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm']",
+      "incident_timed_blocks": 7
+    },
+    {
+      "seq": 165,
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "split": "development",
+      "mode": "graph",
+      "id": "de93051b069995f4ffdc07e7",
+      "median_us": 413.16936259367026,
+      "stored_status": "PASS",
+      "analyzed_status": "REVIEW",
+      "flags": "['observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm']",
+      "incident_timed_blocks": 7
+    }
+  ],
+  "segments": [
+    {
+      "segment": "sessions/20260921_081159_226387f6/segment_00000",
+      "cadence": {
+        "samples": 12366,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.06200003623962402,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      },
+      "flags": [],
+      "ranges": {
+        "clocks.sm": [
+          780.0,
+          780.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          21.0,
+          68.5
+        ],
+        "temperature.gpu": [
+          34.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260921_081159_226387f6/segment_00001",
+      "cadence": {
+        "samples": 8921,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.05900001525878906,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      },
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          765.0,
+          780.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          24.32,
+          71.63
+        ],
+        "temperature.gpu": [
+          52.0,
+          67.0
+        ]
+      }
+    }
+  ],
+  "sessions": {
+    "20260921_081159_226387f6": {
+      "state": "ERROR",
+      "new_records": 240,
+      "elapsed_seconds": 1116.381898124,
+      "ended_utc": "2026-09-20T23:30:36.227299+00:00"
+    }
+  },
+  "exit_codes": {
+    "launcher/20260921_081153_dcn8X3/exit_code.txt": 1,
+    "launcher/20260921_081153_dcn8X3/tee_exit_code.txt": 0,
+    "launcher/20260921_081153_dcn8X3/checked/runs/20260921_081154_vDF3gQ/exit_code.txt": 1,
+    "launches/20260921_081158_830853/worker_0.exit_code.txt": 1
+  },
+  "restoration_commands_accepted": true,
+  "resume_note": "Original DB stores PASS for the three clock-flagged rows. Existing resume skips them; --retry-failed does not target these rows. Do not blindly resume or edit raw status.",
+  "analysis_scope": "Diagnosis only. No 200-shape aggregate, independent-round estimate, or new ceiling is claimed."
+}

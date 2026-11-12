@@ -1,0 +1,29 @@
+{
+  "evidence_verification": "PASS",
+  "raw_files": 1449,
+  "own_sources_verified": 11,
+  "dependencies_verified": 63,
+  "identical_recomputed_outputs": 24,
+  "core_counts": {
+    "750.0": 98510,
+    "735.0": 65
+  },
+  "active_reason_counts": {
+    "clocks_event_reasons.sw_power_cap": 149,
+    "clocks_event_reasons.sw_thermal_slowdown": 0,
+    "clocks_event_reasons.hw_thermal_slowdown": 0
+  },
+  "incident_blocks_by_phase": {
+    "settle": 60,
+    "calibration": 4,
+    "timed": 16
+  },
+  "incident_timed_blocks_by_mode": {
+    "allocate": 7,
+    "prealloc": 7,
+    "graph": 2
+  },
+  "pass_only_max_relative_iqr": 0.003724140500120768,
+  "pass_only_max_abs_drift": 0.00872134268543213,
+  "resume_guard": "Saved clock/telemetry/data problem: resume refused. Preserve this run; review it before using a fresh output directory."
+}

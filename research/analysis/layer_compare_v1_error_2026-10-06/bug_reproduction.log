@@ -1,0 +1,17 @@
+FAIL: fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "/Users/studyhard/Claude/자율연구/analysis/layer_compare_v1_error_2026-10-06/raw/layer_compare_20261006_141532_Fr6bq0/source/compare.py", line 428, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/studyhard/Claude/자율연구/analysis/layer_compare_v1_error_2026-10-06/raw/layer_compare_20261006_141532_Fr6bq0/source/compare.py", line 417, in main
+    result=analyze(out,config,cases,loaded)
+  File "/Users/studyhard/Claude/자율연구/analysis/layer_compare_v1_error_2026-10-06/raw/layer_compare_20261006_141532_Fr6bq0/source/compare.py", line 160, in analyze
+    problems = row['timing']['flags'] + sensor_flags(telemetry,rows,row['timing']['blocks'])
+                                        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studyhard/Claude/자율연구/analysis/layer_compare_v1_error_2026-10-06/raw/layer_compare_20261006_141532_Fr6bq0/source/compare.py", line 130, in sensor_flags
+    window = telemetry.window(rows, dt.datetime.fromisoformat(block['host_envelope_start_utc']),
+                              dt.datetime.fromisoformat(block['host_envelope_end_utc']))
+  File "/Users/studyhard/Claude/자율연구/analysis/layer_compare_v1_error_2026-10-06/raw/layer_compare_20261006_141532_Fr6bq0/source/dependencies/power_shape_diag_v1/dependencies/clock_audit_v1/telemetry.py", line 64, in window
+    start, end = dt.datetime.fromisoformat(start), dt.datetime.fromisoformat(end)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+TypeError: fromisoformat: argument must be str

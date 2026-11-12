@@ -1,0 +1,36 @@
+{
+  "status": "FROZEN",
+  "wall_seconds": 3.3727876249467954,
+  "files": {
+    "models.json": "b34296a45a7dda1079ded21aa823e9b1b68580f32f1f27718ac19f3884be8468",
+    "validation_predictions.json": "fbac33a461be4fc925067a23fb8ae5d4571fb4d22a08053f46ddcd0452a2be58",
+    "validation_metrics.json": "2db73f662ef63d51c2b97c907c567f9ce1dff1a14d94193902bd948258aa7f37",
+    "diagnostics.json": "80dd5ee6b9b51fd907e64ec10fb486319c6904cf3fc5338bff43433e17071d7d",
+    "models/fp32_prealloc_20261029.joblib": "198d2159f48a5912c17264400ecdbbc7f2f34b94b4be7831e3c3eff900a3891d",
+    "models/fp16_allocate_20261028.joblib": "d1154ac82b7d932bbd4a0a13b681f5c5d18d7a9ff25f2057f2643b54eb8c0612",
+    "models/fp32_allocate_20261030.joblib": "14ee001f2cf58c6d12d8f9e374c46e78c3bd2c24ddeadc2902fe31a7c201bc8e",
+    "models/fp16_graph_20261029.joblib": "f69b82b354ba11927b2841db64812fbaaf3126dfb724ace552ed2f2a49d9607a",
+    "models/fp16_prealloc_20261029.joblib": "2945b49249f3184270b28024c76a21baf6458a003664bd93a7aec021c5bc7501",
+    "models/fp32_graph_20261029.joblib": "851cd3080c41a71823b52741eed45720394e9cd5bb8cab65431d9c5efb515471",
+    "models/fp32_allocate_20261028.joblib": "dd48d12de91eb4ff0987026e5206fd5dded29446effa8dc5ff5907fd8c4638ac",
+    "models/fp16_allocate_20261030.joblib": "2d1b7468cc32431d6533a8e7fb92c3d8d93bd2d440efaaf8136ce72f60652578",
+    "models/fp16_prealloc_20261030.joblib": "9c74a6df62eb081a500ba54e763cffb8e1663fae51305c188d03974f04245026",
+    "models/fp16_graph_20261030.joblib": "c3220d01fc2b07e2cc4f885c16d256c402745b4fc8e4be3db92722586f122070",
+    "models/fp32_prealloc_20261028.joblib": "c40321aa027773d3df64c4c752a2543a3442b89747311a0461bede138e899719",
+    "models/fp32_graph_20261030.joblib": "295f2bd41b6d1d67f3526d12345490b4acf58a71aef227a5c817d60ea533981f",
+    "models/fp16_allocate_20261029.joblib": "ba0989c77dd28c6ad8c1c520c75c0c2210ed6e044d4a50d3e3dedd16b57c1621",
+    "models/fp32_graph_20261028.joblib": "4a6a81148dc94ee63ff83ecee95455d2b406b13e15fe40c0034ee546131b7ace",
+    "models/fp32_prealloc_20261030.joblib": "9ae387d62ac6cb826e8c3fe8661ffbaafe0485fa97205da335113314dd67029f",
+    "models/fp16_prealloc_20261028.joblib": "3cd0dcef242ac4b2d72718d0fe7fa362f6514a91a673eba44fe08298b0d9067c",
+    "models/fp16_graph_20261028.joblib": "b10f36da7238a7a58d17dc407375ec7ebd89f2152384daebc1b796dc85ae82b6",
+    "models/fp32_allocate_20261029.joblib": "5430e779dbad5cd713cefd38a53bb4073d2bbf6ed291d2cae99c442adbac9691"
+  },
+  "code": {
+    "/Users/studyhard/Claude/자율연구/analysis/prior_model_audit_2026-11-11/recheck.py": "963081ba170d3b58861cced8a005c0c8d8e6adfc0e21ce245d655849b6abca48",
+    "/Users/studyhard/Claude/자율연구/analysis/prior_model_audit_2026-11-11/protocol.json": "ea195671fb7c59e39885065f7b739fb363333cc89d9569abff1ddc9145d4eae0",
+    "/Users/studyhard/Claude/자율연구/analysis/prior_model_comparison_2026-11-11/adapters.py": "51cab41214d769737f3931b90d2176988b3d9350d8d04c354d38da35639497cc",
+    "/Users/studyhard/Claude/자율연구/analysis/prior_model_comparison_2026-11-11/compare.py": "07e222b42099c4b9cd35a4ca529b58c1455af111dbc23d4fe3bb785871aebbe5"
+  },
+  "original_test_previously_disclosed": true,
+  "new_test_scoring_started": false
+}

@@ -1,0 +1,58 @@
+{
+  "zip_name": "fixed_sweep_720_2026-09-22_v1.zip",
+  "zip_sha256": "82108c20afa3dcee1919898fb00a27692081aaf4fe91c9b23832e2f499301736",
+  "zip_bytes": 28717,
+  "package_files": {
+    "README.md": "0b241bfd28089597c5c87d628c220f4d5db2b6d4d8d1d7b2ad09b34eb7746d6d",
+    "analyze_sweep.py": "d59e4795c13d04b884c97a6708cc97c6b935f50a4b664e7ae8eec727e2cf9c44",
+    "dependency_hashes.json": "91fed241c8722f721eae42bcfe829f87cf964f9ae18f379b252b31c5c13945ad",
+    "launch.sh": "11068ad6c4a7581d9c739d7efc1cc5f44045964c2fbfb29a013b6f3cec51ebee",
+    "progress.py": "e08a756ce8b9f41f1f78ab4cef477f73488d2f6afe5c0b38e487e472fd3fbc7d",
+    "protocol.json": "5cce4ab57002374840a30c126325f768a5ba32d1932229d6172b7b33655ff6cb",
+    "run.py": "4e24f02daff1f6ef72f2300fa06b5009b14ab4fb8aea859cc9231a2271a43f37",
+    "test_sweep.py": "e8e47e9533c0c498ca2aee651cbeddd7ff45baecdc17011eb7a69a4a24aab67e"
+  },
+  "dependency_files": 83,
+  "gpu_execution": false,
+  "local_tests": 16,
+  "extracted_tests": 16,
+  "status": "PASS",
+  "raw_files_preserved": 3936,
+  "dependency_hashes_preserved": 83,
+  "tasks": 113382,
+  "blocks": 793674,
+  "triplets": 37794,
+  "task_digest": "7c30aca9dd4442b05612e81ce36fbe28f1f6c8137007f587e7f5fc13e547eeab",
+  "phase_counts": {
+    "compute_reference": 54,
+    "main": 108036,
+    "controls": 3942,
+    "boundary": 1350
+  },
+  "legacy_condition_remeasurements": 90000,
+  "fresh_holdout_shapes": 1000,
+  "selected_clock_mhz": 720,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "progress_interval_seconds": 20,
+  "analyzer_byte_identical": true,
+  "critical_runtime_functions_ast_identical": [
+    "worker",
+    "run_worker",
+    "cleanup_signals",
+    "pack",
+    "require_clean_resume",
+    "history",
+    "choices_and_done",
+    "pinned_choices"
+  ],
+  "admission_zip_sha256": "71e19cf727a8ec7fd0caddbac9a21fd3c1d7ae23583c735d772071293c2488da",
+  "estimated_days": [
+    5,
+    6
+  ],
+  "estimate_basis": "Extrapolation of completed 720 MHz 200-shape collection; not a full GPU runtime observation",
+  "remote_run_started": false,
+  "vault_regression": "PASS",
+  "vault_strict": "FAIL: one unrelated existing unlinked submission DOCX; no broken links or missing markers for this change"
+}

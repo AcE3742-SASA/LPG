@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "idle_seconds": 10,
+  "idle_interval_ms": 50,
+  "fixed_cases": [
+    {"shape": [1888, 832, 632], "dtype": "fp16", "graph_gemms_per_replay": 29, "input_seed": 2241190505},
+    {"shape": [392, 2776, 80], "dtype": "fp32", "graph_gemms_per_replay": 56, "input_seed": 2739574071},
+    {"shape": [4096, 4096, 4096], "dtype": "fp16", "graph_gemms_per_replay": 1, "input_seed": 2125276676},
+    {"shape": [4096, 4096, 4096], "dtype": "fp32", "graph_gemms_per_replay": 1, "input_seed": 3255611920}
+  ],
+  "case_provenance": "Existing diagnostic pair plus 4096^3 development anchors; all seeds and Graph batches copied from pilot_v6_20260920_112624_b5ed79.zip. No fresh holdout selection.",
+  "stages": [
+    {"name": "s0_900_100_before", "sm_mhz": 900, "interval_ms": 100},
+    {"name": "s1_900_50_before", "sm_mhz": 900, "interval_ms": 50},
+    {"name": "s2_1050_50", "sm_mhz": 1050, "interval_ms": 50},
+    {"name": "s3_1200_50", "sm_mhz": 1200, "interval_ms": 50},
+    {"name": "s4_1350_50", "sm_mhz": 1350, "interval_ms": 50},
+    {"name": "s5_900_50_after", "sm_mhz": 900, "interval_ms": 50},
+    {"name": "s6_900_100_after", "sm_mhz": 900, "interval_ms": 100}
+  ],
+  "polling_comparison": "50/100 ms changes at 900 MHz before and after the candidate sweep; ratios include process and time/order differences, not isolated observer overhead.",
+  "full_sweep": "HOLD",
+  "auto_select_final_clock": false
+}

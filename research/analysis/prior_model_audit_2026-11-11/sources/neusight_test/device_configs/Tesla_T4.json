@@ -1,0 +1,10 @@
+{
+    "Device":"Tesla T4",
+    "Dev_Mem":15,
+    "Mem_Bw":320,
+    "Num_Sm":40,
+    "Core_Per_SM":64,
+    "Freq":1590,
+    "SingleFLOPs":8141,
+    "L2Cache":4
+}

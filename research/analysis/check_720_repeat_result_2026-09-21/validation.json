@@ -1,0 +1,452 @@
+{
+  "verification": "PASS",
+  "decision": "CHECK_QUALITY_PASS_COUNTER_REVIEW_RETAINED",
+  "archive": {
+    "original": "/Users/studyhard/Desktop/Transfer/check_720_repeat_20260921_190318_20260921_192024_33cd01.zip",
+    "sha256": "902e463525941344e77c2b8fce3c40a65a80ed7fc64866965309af0d04605fd5",
+    "file_count": 195,
+    "zip_crc": "PASS"
+  },
+  "raw_files": 195,
+  "source_files_verified": 9,
+  "dependencies_verified": 74,
+  "reproduced_identical_outputs": 16,
+  "result": {
+    "gate": "REVIEW",
+    "size": "check",
+    "expected": 48,
+    "recorded": 48,
+    "missing": 0,
+    "attempts": 48,
+    "counts": {
+      "PASS": 48
+    },
+    "timed_blocks": 336,
+    "triplets_expected": 16,
+    "triplets_complete": 16,
+    "timing_and_sampled_clocks_pass": true,
+    "max_relative_iqr": 0.0006399872681556834,
+    "max_abs_drift": 0.00047128130501715557,
+    "max_between_round_range": 0.0021048340100945245,
+    "between_round_flags": 0,
+    "round_group_sizes": {
+      "2": 24
+    },
+    "round_groups_complete": 24,
+    "round_groups_expected": 24,
+    "clock_flags": [],
+    "counter_anomaly_blocks": 28,
+    "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+    "all_restorations_accepted": true,
+    "results_digest": "3982763b20f26335d987209f7b7d33d5ffefc297a9a027687c4dc9e6d85ec434",
+    "task_wall_seconds_median": 3.8844126730000426,
+    "reference_change_abs_max_pct": 17.19290263692381,
+    "full_sweep": "HOLD_PENDING_CHECK_REVIEW",
+    "sampling_note": "Host-envelope samples are not continuous/effective kernel clocks."
+  },
+  "correctness_scopes": {
+    "sampled": 36,
+    "full": 12
+  },
+  "max_tolerance_ratio": 0.0764718497669529,
+  "telemetry_samples": 10458,
+  "sessions": [
+    {
+      "session": {
+        "state": "FINISHED",
+        "new_records": 24,
+        "elapsed_seconds": 274.6811038310043,
+        "ended_utc": "2026-09-21T10:15:47.855106+00:00"
+      },
+      "cadence": {
+        "samples": 5230,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.0690000057220459,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      },
+      "quality": {
+        "clocks_event_reasons_counters.sw_power_cap": {
+          "delta_us": 250539567,
+          "decreases": 0,
+          "active_samples": 0,
+          "increase_without_active": true
+        },
+        "clocks_event_reasons_counters.sw_thermal_slowdown": {
+          "delta_us": 0,
+          "decreases": 0,
+          "active_samples": 0,
+          "increase_without_active": false
+        },
+        "clocks_event_reasons_counters.hw_thermal_slowdown": {
+          "delta_us": 0,
+          "decreases": 0,
+          "active_samples": 0,
+          "increase_without_active": false
+        }
+      }
+    },
+    {
+      "session": {
+        "state": "FINISHED",
+        "new_records": 24,
+        "elapsed_seconds": 274.4381747019943,
+        "ended_utc": "2026-09-21T10:20:23.786385+00:00"
+      },
+      "cadence": {
+        "samples": 5228,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.05900001525878906,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      },
+      "quality": {
+        "clocks_event_reasons_counters.sw_power_cap": {
+          "delta_us": 250032806,
+          "decreases": 0,
+          "active_samples": 0,
+          "increase_without_active": true
+        },
+        "clocks_event_reasons_counters.sw_thermal_slowdown": {
+          "delta_us": 0,
+          "decreases": 0,
+          "active_samples": 0,
+          "increase_without_active": false
+        },
+        "clocks_event_reasons_counters.hw_thermal_slowdown": {
+          "delta_us": 0,
+          "decreases": 0,
+          "active_samples": 0,
+          "increase_without_active": false
+        }
+      }
+    }
+  ],
+  "core_counts": {
+    "720.0": 10458
+  },
+  "memory_counts": {
+    "6801.0": 10458
+  },
+  "ranges": {
+    "power.draw": [
+      20.73,
+      67.27
+    ],
+    "temperature.gpu": [
+      32.0,
+      65.0
+    ]
+  },
+  "exit_codes": {
+    "launcher/20260921_191109_iEE2ga/exit_code.txt": 2,
+    "launcher/20260921_191109_iEE2ga/tee_exit_code.txt": 0,
+    "launcher/20260921_191109_iEE2ga/checked/runs/20260921_191109_Zal2Ul/exit_code.txt": 2,
+    "launches/20260921_191111_20d954/worker_0.exit_code.txt": 0,
+    "launches/20260921_191111_20d954/worker_1.exit_code.txt": 0
+  },
+  "admission": {
+    "check_directory": "/Users/studyhard/Claude/자율연구/analysis/check_720_repeat_result_2026-09-21/recomputed",
+    "manifest_sha256": "03ebb174eaefba6e7292838e7b0bbf894ff211e97d1e71b35f622b980b59fd23",
+    "results_digest": "3982763b20f26335d987209f7b7d33d5ffefc297a9a027687c4dc9e6d85ec434",
+    "check_gate": "REVIEW",
+    "review_note": "Offline review: all 48 check measurements, two workers, correctness within the configured scope, timing and sampled clocks verified; cumulative counter interpretation remains unresolved. This eligibility check does not start or authorize a GPU run.",
+    "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality"
+  },
+  "previous_720_comparison": [
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp32",
+      "mode": "allocate",
+      "previous_ms": 0.3213452607198478,
+      "current_ms": 0.3220179803208342,
+      "change_pct": 0.20934480237218
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp32",
+      "mode": "prealloc",
+      "previous_ms": 0.3213431618430398,
+      "current_ms": 0.3220262797029989,
+      "change_pct": 0.2125820434581982
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp32",
+      "mode": "graph",
+      "previous_ms": 0.31969599723815917,
+      "current_ms": 0.3204086132538624,
+      "change_pct": 0.22290426588367218
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp16",
+      "mode": "allocate",
+      "previous_ms": 0.16091299141402793,
+      "current_ms": 0.16106994836151228,
+      "change_pct": 0.09754150122067706
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp16",
+      "mode": "prealloc",
+      "previous_ms": 0.1609037558497852,
+      "current_ms": 0.16106005385886743,
+      "change_pct": 0.0971375765946414
+    },
+    {
+      "shape": [
+        2329,
+        3998,
+        66
+      ],
+      "dtype": "fp16",
+      "mode": "graph",
+      "previous_ms": 0.15947906251937624,
+      "current_ms": 0.15963753594292535,
+      "change_pct": 0.09936942257222636
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "mode": "allocate",
+      "previous_ms": 0.48578759735705807,
+      "current_ms": 0.4861745441937509,
+      "change_pct": 0.07965350264149684
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "mode": "prealloc",
+      "previous_ms": 0.48570567805592607,
+      "current_ms": 0.48606976168327687,
+      "change_pct": 0.07495972227626879
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "mode": "graph",
+      "previous_ms": 0.48389852614629836,
+      "current_ms": 0.48461287362234934,
+      "change_pct": 0.14762340396858864
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp16",
+      "mode": "allocate",
+      "previous_ms": 0.11710926857782598,
+      "current_ms": 0.11727963315369817,
+      "change_pct": 0.14547488677976173
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp16",
+      "mode": "prealloc",
+      "previous_ms": 0.11712339470185429,
+      "current_ms": 0.11724888277653164,
+      "change_pct": 0.10714176701998035
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp16",
+      "mode": "graph",
+      "previous_ms": 0.11554560227827593,
+      "current_ms": 0.11563229127363725,
+      "change_pct": 0.07502578518958636
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "mode": "allocate",
+      "previous_ms": 21.310464477539064,
+      "current_ms": 21.31599349975586,
+      "change_pct": 0.025945104212166115
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "mode": "prealloc",
+      "previous_ms": 21.309645080566405,
+      "current_ms": 21.31548156738281,
+      "change_pct": 0.027388944275430482
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "mode": "graph",
+      "previous_ms": 21.308006286621094,
+      "current_ms": 21.313331604003906,
+      "change_pct": 0.024992095981102302
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "mode": "allocate",
+      "previous_ms": 4.2125654220581055,
+      "current_ms": 4.215593973795572,
+      "change_pct": 0.07189328672756456
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "mode": "prealloc",
+      "previous_ms": 4.2124786376953125,
+      "current_ms": 4.215637365976969,
+      "change_pct": 0.07498502789760053
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "mode": "graph",
+      "previous_ms": 4.210816065470378,
+      "current_ms": 4.213972727457683,
+      "change_pct": 0.07496556340207405
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "mode": "allocate",
+      "previous_ms": 0.01789818533935984,
+      "current_ms": 0.018133690688688007,
+      "change_pct": 1.3158057359606623
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "mode": "prealloc",
+      "previous_ms": 0.0178944302236571,
+      "current_ms": 0.018144905265577313,
+      "change_pct": 1.3997374534399976
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "mode": "graph",
+      "previous_ms": 0.015072764112399174,
+      "current_ms": 0.015103384852409363,
+      "change_pct": 0.20315278459774877
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "mode": "allocate",
+      "previous_ms": 0.006684615564531208,
+      "current_ms": 0.006815111166694794,
+      "change_pct": 1.952178115612213
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "mode": "prealloc",
+      "previous_ms": 0.006687708753133726,
+      "current_ms": 0.006812885333393708,
+      "change_pct": 1.8717409038084387
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "mode": "graph",
+      "previous_ms": 0.005146661607345732,
+      "current_ms": 0.005165798182519067,
+      "change_pct": 0.37182501266492807
+    }
+  ],
+  "prior_change_abs_max_pct": 1.952178115612213,
+  "gpu_executions": 0,
+  "collection_code_or_threshold_changes": false,
+  "raw_hashes_unchanged": true
+}

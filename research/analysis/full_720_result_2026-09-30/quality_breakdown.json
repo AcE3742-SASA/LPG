@@ -1,0 +1,1333 @@
+{
+  "phases": {
+    "compute_reference": 54,
+    "main": 108036,
+    "controls": 3942,
+    "boundary": 1350
+  },
+  "shape_splits": {
+    "development": 219,
+    "legacy_train": 3348,
+    "legacy_test_explored": 718,
+    "legacy_validation": 717,
+    "fresh_holdout": 1000
+  },
+  "review_by_split": {
+    "legacy_test_explored": 614,
+    "legacy_train": 2553,
+    "development": 688,
+    "legacy_validation": 507,
+    "fresh_holdout": 798
+  },
+  "review_by_phase": {
+    "main": 4680,
+    "controls": 480
+  },
+  "review_by_mode": {
+    "graph": 1720,
+    "allocate": 1720,
+    "prealloc": 1720
+  },
+  "review_by_round": {
+    "0": 1200,
+    "1": 2280,
+    "2": 1680
+  },
+  "review_by_dtype": {
+    "fp16": 2580,
+    "fp32": 2580
+  },
+  "segments": 946,
+  "flagged_segments": 43,
+  "segment_flag_counts": {
+    "worker_active:clocks_event_reasons.sw_power_cap": 29,
+    "worker_mismatch:clocks.mem": 14,
+    "worker_mismatch:clocks.sm": 9
+  },
+  "quality_status_counts": {
+    "PASS": 108222,
+    "REVIEW": 5160
+  },
+  "telemetry_samples": 8398887,
+  "telemetry_ranges": {
+    "clocks.sm": [
+      690.0,
+      720.0
+    ],
+    "clocks.mem": [
+      6800.0,
+      6801.0
+    ],
+    "power.limit": [
+      70.0,
+      70.0
+    ],
+    "power.draw": [
+      20.91,
+      69.72
+    ],
+    "temperature.gpu": [
+      35.0,
+      70.0
+    ]
+  },
+  "max_telemetry_gap_seconds": 0.12100005149841309,
+  "review_segments": [
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00040",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.2,
+          69.13
+        ],
+        "temperature.gpu": [
+          54.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00049",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          26.65,
+          68.94
+        ],
+        "temperature.gpu": [
+          53.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00067",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          26.12,
+          69.01
+        ],
+        "temperature.gpu": [
+          52.0,
+          63.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00083",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.98,
+          58.04
+        ],
+        "temperature.gpu": [
+          54.0,
+          63.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00182",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.92,
+          68.53
+        ],
+        "temperature.gpu": [
+          54.0,
+          64.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00233",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          26.08,
+          68.49
+        ],
+        "temperature.gpu": [
+          53.0,
+          62.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00242",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          24.94,
+          55.52
+        ],
+        "temperature.gpu": [
+          54.0,
+          62.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00281",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          705.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          22.56,
+          69.66
+        ],
+        "temperature.gpu": [
+          52.0,
+          63.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00288",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          705.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.27,
+          69.64
+        ],
+        "temperature.gpu": [
+          54.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00303",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          705.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.43,
+          69.5
+        ],
+        "temperature.gpu": [
+          56.0,
+          68.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00337",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.94,
+          69.13
+        ],
+        "temperature.gpu": [
+          52.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00338",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          22.72,
+          69.06
+        ],
+        "temperature.gpu": [
+          55.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00367",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.18,
+          68.49
+        ],
+        "temperature.gpu": [
+          53.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00385",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          22.54,
+          62.91
+        ],
+        "temperature.gpu": [
+          52.0,
+          67.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00388",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.47,
+          68.82
+        ],
+        "temperature.gpu": [
+          54.0,
+          64.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00391",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          22.98,
+          63.36
+        ],
+        "temperature.gpu": [
+          54.0,
+          64.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00399",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          24.32,
+          69.2
+        ],
+        "temperature.gpu": [
+          55.0,
+          67.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00419",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          26.4,
+          61.18
+        ],
+        "temperature.gpu": [
+          55.0,
+          64.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00451",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.86,
+          69.01
+        ],
+        "temperature.gpu": [
+          52.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00462",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.71,
+          69.27
+        ],
+        "temperature.gpu": [
+          54.0,
+          67.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00468",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          26.42,
+          67.45
+        ],
+        "temperature.gpu": [
+          56.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00480",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.58,
+          56.09
+        ],
+        "temperature.gpu": [
+          52.0,
+          61.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00495",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          28.35,
+          62.31
+        ],
+        "temperature.gpu": [
+          55.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00502",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.02,
+          59.26
+        ],
+        "temperature.gpu": [
+          55.0,
+          64.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00542",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          690.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.99,
+          69.59
+        ],
+        "temperature.gpu": [
+          54.0,
+          67.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00548",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          705.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.88,
+          69.42
+        ],
+        "temperature.gpu": [
+          54.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00585",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.08,
+          68.83
+        ],
+        "temperature.gpu": [
+          55.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00609",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          28.66,
+          69.53
+        ],
+        "temperature.gpu": [
+          57.0,
+          68.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00613",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          690.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.66,
+          69.72
+        ],
+        "temperature.gpu": [
+          56.0,
+          70.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00639",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          24.49,
+          68.86
+        ],
+        "temperature.gpu": [
+          53.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00652",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.52,
+          68.62
+        ],
+        "temperature.gpu": [
+          55.0,
+          67.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00659",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          22.59,
+          63.99
+        ],
+        "temperature.gpu": [
+          53.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00660",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          22.73,
+          60.52
+        ],
+        "temperature.gpu": [
+          54.0,
+          64.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00676",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          26.08,
+          68.87
+        ],
+        "temperature.gpu": [
+          54.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00749",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          24.83,
+          64.37
+        ],
+        "temperature.gpu": [
+          54.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00753",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          24.97,
+          69.01
+        ],
+        "temperature.gpu": [
+          53.0,
+          66.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00856",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          26.47,
+          69.42
+        ],
+        "temperature.gpu": [
+          55.0,
+          69.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00865",
+      "tasks": 120,
+      "flags": [
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.66,
+          68.64
+        ],
+        "temperature.gpu": [
+          53.0,
+          63.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00885",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          705.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.74,
+          69.7
+        ],
+        "temperature.gpu": [
+          55.0,
+          67.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00899",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          705.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          24.27,
+          69.57
+        ],
+        "temperature.gpu": [
+          53.0,
+          64.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00913",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          24.05,
+          67.62
+        ],
+        "temperature.gpu": [
+          54.0,
+          65.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00917",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.mem"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          720.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6800.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          25.04,
+          58.64
+        ],
+        "temperature.gpu": [
+          55.0,
+          64.0
+        ]
+      }
+    },
+    {
+      "segment": "sessions/20260922_175658_0cf7c114/segment_00930",
+      "tasks": 120,
+      "flags": [
+        "worker_mismatch:clocks.sm",
+        "worker_active:clocks_event_reasons.sw_power_cap"
+      ],
+      "ranges": {
+        "clocks.sm": [
+          690.0,
+          720.0
+        ],
+        "clocks.mem": [
+          6801.0,
+          6801.0
+        ],
+        "power.limit": [
+          70.0,
+          70.0
+        ],
+        "power.draw": [
+          23.44,
+          69.42
+        ],
+        "temperature.gpu": [
+          55.0,
+          69.0
+        ]
+      }
+    }
+  ]
+}

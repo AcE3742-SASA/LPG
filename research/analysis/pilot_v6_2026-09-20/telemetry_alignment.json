@@ -1,0 +1,7852 @@
+[
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "5de1bfef8d3753b06d85cb27"
+    },
+    "window_start_utc": "2026-09-20T02:13:55.944105+00:00",
+    "window_end_utc": "2026-09-20T02:13:56.650976+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:13:56.640",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "840 MHz",
+        "power.draw [W]": "70.07 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:13:55.640",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "870 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:13:57.641",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "69.20 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "2d3deb2f9a1bff5791deaaa1"
+    },
+    "window_start_utc": "2026-09-20T02:13:59.985125+00:00",
+    "window_end_utc": "2026-09-20T02:14:00.682757+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:00.643",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "825 MHz",
+        "power.draw [W]": "70.16 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:13:59.642",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "70.03 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:01.643",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "66.06 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "77f57ce050afb8eb16287694"
+    },
+    "window_start_utc": "2026-09-20T02:14:03.999544+00:00",
+    "window_end_utc": "2026-09-20T02:14:04.756245+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:04.646",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "69.99 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:03.645",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "68.77 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:05.647",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "69.89 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "c27786f9f39b75dc72926c7f"
+    },
+    "window_start_utc": "2026-09-20T02:14:07.897062+00:00",
+    "window_end_utc": "2026-09-20T02:14:08.548534+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:07.648",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:08.649",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "68.25 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "2b300c79b3a4e23117c6bb95"
+    },
+    "window_start_utc": "2026-09-20T02:14:11.861220+00:00",
+    "window_end_utc": "2026-09-20T02:14:12.562900+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:11.651",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "69.20 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:12.652",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "69.13 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "0704b1ff2dde6a0aa1659de2"
+    },
+    "window_start_utc": "2026-09-20T02:14:15.826887+00:00",
+    "window_end_utc": "2026-09-20T02:14:16.524346+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:15.654",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "900 MHz",
+        "power.draw [W]": "69.17 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:16.654",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "69.20 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "0c965aafc31bfa92a13dc1ca"
+    },
+    "window_start_utc": "2026-09-20T02:14:19.730359+00:00",
+    "window_end_utc": "2026-09-20T02:14:20.430399+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:19.656",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "68.22 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:20.657",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1305 MHz",
+        "power.draw [W]": "67.50 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "b0f24aecc03eea9bbb2dc118"
+    },
+    "window_start_utc": "2026-09-20T02:14:23.571019+00:00",
+    "window_end_utc": "2026-09-20T02:14:24.282606+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:23.658",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "69.19 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:22.658",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1200 MHz",
+        "power.draw [W]": "69.11 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:24.659",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1830 MHz",
+        "power.draw [W]": "67.55 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "8a4e026ed104a2f57a95cd9b"
+    },
+    "window_start_utc": "2026-09-20T02:14:27.447862+00:00",
+    "window_end_utc": "2026-09-20T02:14:28.149488+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:27.660",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1830 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:26.660",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1845 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:28.661",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1770 MHz",
+        "power.draw [W]": "69.94 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "7f9ce4b4bb8036bc4acd75d0"
+    },
+    "window_start_utc": "2026-09-20T02:14:31.308513+00:00",
+    "window_end_utc": "2026-09-20T02:14:32.037697+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:31.662",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1755 MHz",
+        "power.draw [W]": "70.01 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:30.662",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1770 MHz",
+        "power.draw [W]": "69.91 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:32.663",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2115 MHz",
+        "power.draw [W]": "69.01 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "f7ef616121691b7442e4784d"
+    },
+    "window_start_utc": "2026-09-20T02:14:35.207667+00:00",
+    "window_end_utc": "2026-09-20T02:14:35.907839+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:35.664",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2100 MHz",
+        "power.draw [W]": "70.08 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:34.664",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2115 MHz",
+        "power.draw [W]": "70.05 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:36.664",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2055 MHz",
+        "power.draw [W]": "69.61 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "a6fa153af43b96bd041b1be8"
+    },
+    "window_start_utc": "2026-09-20T02:14:39.082026+00:00",
+    "window_end_utc": "2026-09-20T02:14:39.791890+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:39.666",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "2040 MHz",
+        "power.draw [W]": "69.97 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:38.665",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "2055 MHz",
+        "power.draw [W]": "69.29 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:40.666",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "69.40 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "6ef8ab39402915917154056b"
+    },
+    "window_start_utc": "2026-09-20T02:14:43.149269+00:00",
+    "window_end_utc": "2026-09-20T02:14:43.849314+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:43.668",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "975 MHz",
+        "power.draw [W]": "69.31 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:42.667",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "68.79 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:44.669",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "69.11 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "a21bd789a95d2804a3e9a4ed"
+    },
+    "window_start_utc": "2026-09-20T02:14:47.057273+00:00",
+    "window_end_utc": "2026-09-20T02:14:47.823308+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:47.671",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "960 MHz",
+        "power.draw [W]": "69.36 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:46.670",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "69.26 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:48.671",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "68.95 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "055d1dde144ef4c64452b438"
+    },
+    "window_start_utc": "2026-09-20T02:14:51.046258+00:00",
+    "window_end_utc": "2026-09-20T02:14:51.746276+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:14:51.673",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1020 MHz",
+        "power.draw [W]": "69.15 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:50.673",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "68.96 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:52.674",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1005 MHz",
+        "power.draw [W]": "68.81 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "2e44dda88d8305ff56445762"
+    },
+    "window_start_utc": "2026-09-20T02:14:54.873863+00:00",
+    "window_end_utc": "2026-09-20T02:14:55.623509+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:54.675",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1005 MHz",
+        "power.draw [W]": "69.01 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:55.676",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "69.01 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "1b13bb8e8bc9743d6a8cd1df"
+    },
+    "window_start_utc": "2026-09-20T02:14:58.808586+00:00",
+    "window_end_utc": "2026-09-20T02:14:59.504172+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:14:58.677",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "69.08 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:14:59.678",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "960 MHz",
+        "power.draw [W]": "69.29 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "0cb021586226a0ceb5dd3c0d"
+    },
+    "window_start_utc": "2026-09-20T02:15:02.774100+00:00",
+    "window_end_utc": "2026-09-20T02:15:03.469268+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:02.680",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.22 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:03.680",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.28 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "875e7179d00193dbf4ef1d2e"
+    },
+    "window_start_utc": "2026-09-20T02:15:06.649220+00:00",
+    "window_end_utc": "2026-09-20T02:15:07.349062+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:06.682",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1500 MHz",
+        "power.draw [W]": "69.01 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:05.681",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1500 MHz",
+        "power.draw [W]": "69.87 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:07.682",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1500 MHz",
+        "power.draw [W]": "68.59 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "3e38906dbdf6a727d459831a"
+    },
+    "window_start_utc": "2026-09-20T02:15:10.553343+00:00",
+    "window_end_utc": "2026-09-20T02:15:11.266694+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:10.684",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1470 MHz",
+        "power.draw [W]": "68.93 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:09.683",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1485 MHz",
+        "power.draw [W]": "68.97 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:11.684",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1695 MHz",
+        "power.draw [W]": "68.30 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "78b98d17aa3471171ef81dde"
+    },
+    "window_start_utc": "2026-09-20T02:15:14.396492+00:00",
+    "window_end_utc": "2026-09-20T02:15:15.097565+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:14.686",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1710 MHz",
+        "power.draw [W]": "70.07 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:13.685",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1650 MHz",
+        "power.draw [W]": "70.14 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:15.686",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1635 MHz",
+        "power.draw [W]": "69.94 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "f437424850cb4efe0bbd546f"
+    },
+    "window_start_utc": "2026-09-20T02:15:18.276803+00:00",
+    "window_end_utc": "2026-09-20T02:15:19.010055+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:18.688",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1635 MHz",
+        "power.draw [W]": "69.75 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:17.687",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1650 MHz",
+        "power.draw [W]": "69.36 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:19.688",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1875 MHz",
+        "power.draw [W]": "68.63 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "8caeab0c3f1904614805c150"
+    },
+    "window_start_utc": "2026-09-20T02:15:22.163433+00:00",
+    "window_end_utc": "2026-09-20T02:15:22.864630+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:22.690",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1860 MHz",
+        "power.draw [W]": "69.95 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:21.689",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1860 MHz",
+        "power.draw [W]": "69.92 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:23.690",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1725 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "63eb9cc7c78235765597a632"
+    },
+    "window_start_utc": "2026-09-20T02:15:26.026238+00:00",
+    "window_end_utc": "2026-09-20T02:15:26.779498+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:26.691",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1710 MHz",
+        "power.draw [W]": "68.94 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:25.691",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1710 MHz",
+        "power.draw [W]": "68.84 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:27.692",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "69.74 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "3c2c874ac76ece2bc58fd7bc"
+    },
+    "window_start_utc": "2026-09-20T02:15:30.156016+00:00",
+    "window_end_utc": "2026-09-20T02:15:30.856166+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:30.694",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "855 MHz",
+        "power.draw [W]": "69.18 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:29.693",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "69.14 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:31.694",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "900 MHz",
+        "power.draw [W]": "69.07 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "5d21b46496b6e205fe9fcce2"
+    },
+    "window_start_utc": "2026-09-20T02:15:34.060155+00:00",
+    "window_end_utc": "2026-09-20T02:15:34.760638+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:34.696",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "855 MHz",
+        "power.draw [W]": "69.32 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:33.695",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "900 MHz",
+        "power.draw [W]": "69.40 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:35.697",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1155 MHz",
+        "power.draw [W]": "68.31 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "b6a08b633650c12183515c93"
+    },
+    "window_start_utc": "2026-09-20T02:15:37.993299+00:00",
+    "window_end_utc": "2026-09-20T02:15:38.688999+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:37.698",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1155 MHz",
+        "power.draw [W]": "68.72 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:38.698",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1155 MHz",
+        "power.draw [W]": "68.91 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "1e3dbd2545f96a61614a49d6"
+    },
+    "window_start_utc": "2026-09-20T02:15:41.852037+00:00",
+    "window_end_utc": "2026-09-20T02:15:42.578271+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:41.700",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1125 MHz",
+        "power.draw [W]": "70.05 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:42.700",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1125 MHz",
+        "power.draw [W]": "70.00 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "8bb39bba577ca3efa2662522"
+    },
+    "window_start_utc": "2026-09-20T02:15:45.761184+00:00",
+    "window_end_utc": "2026-09-20T02:15:46.461242+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:45.702",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "69.96 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:46.702",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "69.72 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "55b174d0555c8bc1092852f9"
+    },
+    "window_start_utc": "2026-09-20T02:15:49.651849+00:00",
+    "window_end_utc": "2026-09-20T02:15:50.413197+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:49.704",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1725 MHz",
+        "power.draw [W]": "70.11 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:48.703",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1725 MHz",
+        "power.draw [W]": "70.06 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:50.704",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1860 MHz",
+        "power.draw [W]": "70.10 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "a013c74d298cc3afb18aaf3e"
+    },
+    "window_start_utc": "2026-09-20T02:15:53.602096+00:00",
+    "window_end_utc": "2026-09-20T02:15:54.299278+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:53.705",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2250 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:52.705",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2235 MHz",
+        "power.draw [W]": "70.04 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:54.706",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2175 MHz",
+        "power.draw [W]": "69.92 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "90394ee73dcc46e1b497260c"
+    },
+    "window_start_utc": "2026-09-20T02:15:57.458304+00:00",
+    "window_end_utc": "2026-09-20T02:15:58.188230+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:15:57.707",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2175 MHz",
+        "power.draw [W]": "69.76 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:15:56.707",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2175 MHz",
+        "power.draw [W]": "69.56 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:15:58.707",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1260 MHz",
+        "power.draw [W]": "69.79 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "7daa1d38875d24f77b3d08e6"
+    },
+    "window_start_utc": "2026-09-20T02:16:01.491930+00:00",
+    "window_end_utc": "2026-09-20T02:16:02.190355+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:01.710",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "68.99 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:00.709",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1260 MHz",
+        "power.draw [W]": "69.17 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:02.710",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1260 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "7811188059d35a1e471b6f10"
+    },
+    "window_start_utc": "2026-09-20T02:16:05.386888+00:00",
+    "window_end_utc": "2026-09-20T02:16:06.071869+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:05.712",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "69.72 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:04.711",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1260 MHz",
+        "power.draw [W]": "69.38 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:06.713",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "69.71 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "7f526a69be8005d4dc40eced"
+    },
+    "window_start_utc": "2026-09-20T02:16:09.225604+00:00",
+    "window_end_utc": "2026-09-20T02:16:09.950257+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:09.714",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1155 MHz",
+        "power.draw [W]": "69.97 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:08.714",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1170 MHz",
+        "power.draw [W]": "70.07 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:10.715",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "69.58 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "8ade13917437296c644e95d5"
+    },
+    "window_start_utc": "2026-09-20T02:16:13.173427+00:00",
+    "window_end_utc": "2026-09-20T02:16:13.920246+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:13.717",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1140 MHz",
+        "power.draw [W]": "68.80 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:12.716",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1170 MHz",
+        "power.draw [W]": "68.86 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:14.717",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "63.85 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "88b58ae4361239deb5ecf71d"
+    },
+    "window_start_utc": "2026-09-20T02:16:17.107747+00:00",
+    "window_end_utc": "2026-09-20T02:16:17.808004+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:17.719",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "61.04 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:16.718",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "61.22 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:18.719",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "62.42 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "0455c938ba4f3bc6a20cc699"
+    },
+    "window_start_utc": "2026-09-20T02:16:20.941573+00:00",
+    "window_end_utc": "2026-09-20T02:16:21.639766+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:20.720",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "64.17 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:21.721",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "64.16 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "302bc15e555729c752253317"
+    },
+    "window_start_utc": "2026-09-20T02:16:24.817099+00:00",
+    "window_end_utc": "2026-09-20T02:16:25.513956+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:24.722",
+        "temperature.gpu": "68",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "41.23 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:25.722",
+        "temperature.gpu": "67",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "41.06 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "8e26873f135839649b206a5e"
+    },
+    "window_start_utc": "2026-09-20T02:16:28.706952+00:00",
+    "window_end_utc": "2026-09-20T02:16:29.397312+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:28.724",
+        "temperature.gpu": "67",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "41.69 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:27.723",
+        "temperature.gpu": "67",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "41.72 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:29.724",
+        "temperature.gpu": "66",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "41.59 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "9f2ba43844533d6c1eb8bc48"
+    },
+    "window_start_utc": "2026-09-20T02:16:32.695434+00:00",
+    "window_end_utc": "2026-09-20T02:16:33.393924+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:32.726",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "840 MHz",
+        "power.draw [W]": "69.55 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:31.725",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "870 MHz",
+        "power.draw [W]": "69.31 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:33.726",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "900 MHz",
+        "power.draw [W]": "69.36 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "35f1059a7bf83f4f613ac08f"
+    },
+    "window_start_utc": "2026-09-20T02:16:36.548537+00:00",
+    "window_end_utc": "2026-09-20T02:16:37.266052+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:36.728",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "840 MHz",
+        "power.draw [W]": "69.49 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:35.728",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "855 MHz",
+        "power.draw [W]": "69.53 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:37.729",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1530 MHz",
+        "power.draw [W]": "67.59 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "d3dd88db2fa33eef0d6dc529"
+    },
+    "window_start_utc": "2026-09-20T02:16:40.487036+00:00",
+    "window_end_utc": "2026-09-20T02:16:41.187169+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:40.730",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1530 MHz",
+        "power.draw [W]": "68.72 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:39.730",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1530 MHz",
+        "power.draw [W]": "69.07 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:41.731",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1515 MHz",
+        "power.draw [W]": "69.29 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "ec68185b2821b7cdf7dc0488"
+    },
+    "window_start_utc": "2026-09-20T02:16:44.376560+00:00",
+    "window_end_utc": "2026-09-20T02:16:45.086493+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:44.732",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1515 MHz",
+        "power.draw [W]": "69.57 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:43.732",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1515 MHz",
+        "power.draw [W]": "69.88 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:45.733",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "69.73 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "08446603613d598361ba2b1d"
+    },
+    "window_start_utc": "2026-09-20T02:16:48.280109+00:00",
+    "window_end_utc": "2026-09-20T02:16:48.972127+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:48.734",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1410 MHz",
+        "power.draw [W]": "68.74 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:47.734",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "68.44 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:49.735",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "69.10 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "9237d72afc2903c62b493b80"
+    },
+    "window_start_utc": "2026-09-20T02:16:52.101217+00:00",
+    "window_end_utc": "2026-09-20T02:16:52.819819+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:16:52.736",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "68.58 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:51.736",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "68.77 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:53.737",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "68.15 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "80eb1733ba68bf896c23e0de"
+    },
+    "window_start_utc": "2026-09-20T02:16:55.990953+00:00",
+    "window_end_utc": "2026-09-20T02:16:56.691186+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:55.737",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "69.54 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:16:56.738",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "69.72 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "dec175a4d5f01475fcc7d6f6"
+    },
+    "window_start_utc": "2026-09-20T02:16:59.866748+00:00",
+    "window_end_utc": "2026-09-20T02:17:00.599172+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:16:59.739",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "68.75 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:00.740",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1590 MHz",
+        "power.draw [W]": "68.90 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "1b7f79e28ee335e6a6d38912"
+    },
+    "window_start_utc": "2026-09-20T02:17:03.961362+00:00",
+    "window_end_utc": "2026-09-20T02:17:04.670975+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:03.742",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "68.70 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:04.742",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "69.15 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "43cc3c7d9b255177bdec6857"
+    },
+    "window_start_utc": "2026-09-20T02:17:08.157658+00:00",
+    "window_end_utc": "2026-09-20T02:17:08.873079+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:08.745",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1200 MHz",
+        "power.draw [W]": "69.04 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:07.744",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "68.68 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:09.746",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "960 MHz",
+        "power.draw [W]": "69.92 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "65df600a985ec95866ecea51"
+    },
+    "window_start_utc": "2026-09-20T02:17:12.202513+00:00",
+    "window_end_utc": "2026-09-20T02:17:12.907402+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:12.747",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:11.747",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "975 MHz",
+        "power.draw [W]": "70.04 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:13.748",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "975 MHz",
+        "power.draw [W]": "69.92 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "e85d399975e7817d1c0a6c66"
+    },
+    "window_start_utc": "2026-09-20T02:17:16.090426+00:00",
+    "window_end_utc": "2026-09-20T02:17:16.814844+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:16.750",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.97 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:15.749",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "975 MHz",
+        "power.draw [W]": "70.06 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:17.751",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "68.61 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "2e87e4a2104eb785f8ed9e41"
+    },
+    "window_start_utc": "2026-09-20T02:17:20.051590+00:00",
+    "window_end_utc": "2026-09-20T02:17:20.748837+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:19.752",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "67.35 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:20.752",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "67.53 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "072c159202f5c63e5dd67030"
+    },
+    "window_start_utc": "2026-09-20T02:17:23.914684+00:00",
+    "window_end_utc": "2026-09-20T02:17:24.658814+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:23.754",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "67.95 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:24.754",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "68.22 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "1f7d474186569450893358cc"
+    },
+    "window_start_utc": "2026-09-20T02:17:27.838805+00:00",
+    "window_end_utc": "2026-09-20T02:17:28.539061+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:27.756",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1455 MHz",
+        "power.draw [W]": "67.49 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:28.756",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1455 MHz",
+        "power.draw [W]": "68.01 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "c7fac7fad8c842facce7575f"
+    },
+    "window_start_utc": "2026-09-20T02:17:31.753686+00:00",
+    "window_end_utc": "2026-09-20T02:17:32.468193+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:31.758",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "69.02 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:30.758",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "69.36 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:32.758",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "69.38 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "f449799699cda9bc05a82b0d"
+    },
+    "window_start_utc": "2026-09-20T02:17:35.647680+00:00",
+    "window_end_utc": "2026-09-20T02:17:36.352121+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:35.760",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "69.38 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:34.759",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "69.73 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:36.760",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "69.75 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "2439e10d9eaea8013823cf51"
+    },
+    "window_start_utc": "2026-09-20T02:17:39.548938+00:00",
+    "window_end_utc": "2026-09-20T02:17:40.252390+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:39.762",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:38.761",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "68.72 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:40.762",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1770 MHz",
+        "power.draw [W]": "68.87 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "0fc1989a952336daa14cde07"
+    },
+    "window_start_utc": "2026-09-20T02:17:43.452838+00:00",
+    "window_end_utc": "2026-09-20T02:17:44.153137+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:43.764",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1755 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:42.763",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1770 MHz",
+        "power.draw [W]": "69.90 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:44.764",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.88 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "6936a40cac3767ab7a2e7aee"
+    },
+    "window_start_utc": "2026-09-20T02:17:47.280060+00:00",
+    "window_end_utc": "2026-09-20T02:17:48.000469+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:47.766",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1725 MHz",
+        "power.draw [W]": "69.90 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:46.765",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1725 MHz",
+        "power.draw [W]": "69.86 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:48.766",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "64.47 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "690aea45f6421853a91f905b"
+    },
+    "window_start_utc": "2026-09-20T02:17:51.167965+00:00",
+    "window_end_utc": "2026-09-20T02:17:51.868249+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:17:51.767",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "57.21 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:50.767",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "57.37 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:52.768",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "59.25 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "fd9ee8cd82a682da29588470"
+    },
+    "window_start_utc": "2026-09-20T02:17:55.000695+00:00",
+    "window_end_utc": "2026-09-20T02:17:55.698596+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:54.769",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "61.76 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:55.769",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "61.74 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "0e4c159774ef22187c0d1e24"
+    },
+    "window_start_utc": "2026-09-20T02:17:58.900161+00:00",
+    "window_end_utc": "2026-09-20T02:17:59.599939+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:17:58.770",
+        "temperature.gpu": "68",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "45.79 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:17:59.771",
+        "temperature.gpu": "68",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "45.67 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "46ed70bae0d9a43efda2b1bd"
+    },
+    "window_start_utc": "2026-09-20T02:18:02.711703+00:00",
+    "window_end_utc": "2026-09-20T02:18:03.405722+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:02.772",
+        "temperature.gpu": "68",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "51.60 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:01.772",
+        "temperature.gpu": "68",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "51.70 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:03.772",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1725 MHz",
+        "power.draw [W]": "51.87 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "76a62c8f1d759cefec966223"
+    },
+    "window_start_utc": "2026-09-20T02:18:06.585835+00:00",
+    "window_end_utc": "2026-09-20T02:18:07.213694+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:06.774",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1665 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:05.773",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1665 MHz",
+        "power.draw [W]": "69.94 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:07.774",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1635 MHz",
+        "power.draw [W]": "69.97 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "f95d2b1bea09b2b8d87d7f24"
+    },
+    "window_start_utc": "2026-09-20T02:18:10.408354+00:00",
+    "window_end_utc": "2026-09-20T02:18:11.117671+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:10.776",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1650 MHz",
+        "power.draw [W]": "70.14 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:09.775",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1650 MHz",
+        "power.draw [W]": "70.03 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:11.776",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1875 MHz",
+        "power.draw [W]": "69.32 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "b3dcde8e889cd6a3dcef8e23"
+    },
+    "window_start_utc": "2026-09-20T02:18:14.286361+00:00",
+    "window_end_utc": "2026-09-20T02:18:14.989372+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:14.777",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1860 MHz",
+        "power.draw [W]": "69.83 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:13.777",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1890 MHz",
+        "power.draw [W]": "69.77 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:15.778",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1755 MHz",
+        "power.draw [W]": "69.99 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "73ac55a3405752e2466d1b89"
+    },
+    "window_start_utc": "2026-09-20T02:18:18.118580+00:00",
+    "window_end_utc": "2026-09-20T02:18:18.864555+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:18.779",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.95 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:17.779",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1755 MHz",
+        "power.draw [W]": "69.81 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:19.779",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "930 MHz",
+        "power.draw [W]": "69.83 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "90b06a177c652346feafd490"
+    },
+    "window_start_utc": "2026-09-20T02:18:22.212037+00:00",
+    "window_end_utc": "2026-09-20T02:18:22.907765+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:22.781",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "915 MHz",
+        "power.draw [W]": "68.93 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:21.781",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "930 MHz",
+        "power.draw [W]": "68.87 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:23.782",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "930 MHz",
+        "power.draw [W]": "68.79 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "62eaf6876158ec9bb8918311"
+    },
+    "window_start_utc": "2026-09-20T02:18:26.172362+00:00",
+    "window_end_utc": "2026-09-20T02:18:26.848640+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:26.784",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "915 MHz",
+        "power.draw [W]": "68.76 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:25.784",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "915 MHz",
+        "power.draw [W]": "68.98 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:27.785",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1590 MHz",
+        "power.draw [W]": "67.26 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "33004459d56d2c39345bad03"
+    },
+    "window_start_utc": "2026-09-20T02:18:30.045972+00:00",
+    "window_end_utc": "2026-09-20T02:18:30.746173+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:29.786",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1590 MHz",
+        "power.draw [W]": "69.10 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:30.786",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1575 MHz",
+        "power.draw [W]": "69.08 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "69ffaed3aad639bf422ac653"
+    },
+    "window_start_utc": "2026-09-20T02:18:33.886453+00:00",
+    "window_end_utc": "2026-09-20T02:18:34.604705+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:33.788",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1575 MHz",
+        "power.draw [W]": "69.33 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:34.788",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1575 MHz",
+        "power.draw [W]": "69.58 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "87078fef85d5f33b79776a16"
+    },
+    "window_start_utc": "2026-09-20T02:18:37.853644+00:00",
+    "window_end_utc": "2026-09-20T02:18:38.553792+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:37.790",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.36 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:38.790",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.60 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "af12292d47be88b1fbef3d83"
+    },
+    "window_start_utc": "2026-09-20T02:18:41.725352+00:00",
+    "window_end_utc": "2026-09-20T02:18:42.458159+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:41.792",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1545 MHz",
+        "power.draw [W]": "67.11 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:40.791",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1545 MHz",
+        "power.draw [W]": "68.57 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:42.792",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1545 MHz",
+        "power.draw [W]": "67.58 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "037bdc9fe2e27011dac3f9ad"
+    },
+    "window_start_utc": "2026-09-20T02:18:45.636035+00:00",
+    "window_end_utc": "2026-09-20T02:18:46.335153+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:45.794",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "69.83 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:44.793",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "68.79 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:46.794",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "68.94 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "4f3b8bba1e262a551516de9c"
+    },
+    "window_start_utc": "2026-09-20T02:18:49.492789+00:00",
+    "window_end_utc": "2026-09-20T02:18:50.197219+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:49.796",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1995 MHz",
+        "power.draw [W]": "69.01 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:48.795",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1995 MHz",
+        "power.draw [W]": "69.20 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:50.796",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "68.48 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "e91f26d1179b19284eda5430"
+    },
+    "window_start_utc": "2026-09-20T02:18:53.411982+00:00",
+    "window_end_utc": "2026-09-20T02:18:54.112252+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:53.797",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "69.29 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:52.797",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "69.47 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:54.798",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2190 MHz",
+        "power.draw [W]": "69.57 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "3d04f3fafc26d436542e0f73"
+    },
+    "window_start_utc": "2026-09-20T02:18:57.252469+00:00",
+    "window_end_utc": "2026-09-20T02:18:57.975266+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:18:57.799",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "2205 MHz",
+        "power.draw [W]": "69.74 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:18:56.798",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2205 MHz",
+        "power.draw [W]": "69.83 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:18:58.799",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "62.83 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "b098ca7ad7c7c96866475fa7"
+    },
+    "window_start_utc": "2026-09-20T02:19:01.193727+00:00",
+    "window_end_utc": "2026-09-20T02:19:01.893837+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:01.801",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "51.92 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:00.800",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "51.98 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:02.801",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "52.36 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "61428ed7d821eb8af8245eaa"
+    },
+    "window_start_utc": "2026-09-20T02:19:05.023247+00:00",
+    "window_end_utc": "2026-09-20T02:19:05.721844+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:04.802",
+        "temperature.gpu": "69",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "53.12 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:05.803",
+        "temperature.gpu": "69",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "52.98 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "2ac0dac8be81236ca69d82c3"
+    },
+    "window_start_utc": "2026-09-20T02:19:09.139354+00:00",
+    "window_end_utc": "2026-09-20T02:19:09.826853+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:09.805",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1050 MHz",
+        "power.draw [W]": "68.76 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:08.804",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "69.04 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:10.805",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "68.93 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "965a1c32704273e0ac233d5c"
+    },
+    "window_start_utc": "2026-09-20T02:19:12.961111+00:00",
+    "window_end_utc": "2026-09-20T02:19:13.695537+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:12.806",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "69.03 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:13.807",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1050 MHz",
+        "power.draw [W]": "68.81 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "1bcaa7e0ca6963116c8e673a"
+    },
+    "window_start_utc": "2026-09-20T02:19:16.951022+00:00",
+    "window_end_utc": "2026-09-20T02:19:17.654154+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:16.809",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1410 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:17.809",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "69.54 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "998a11d6405b4d14dd4673db"
+    },
+    "window_start_utc": "2026-09-20T02:19:20.829580+00:00",
+    "window_end_utc": "2026-09-20T02:19:21.557067+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:20.811",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "69.92 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:21.811",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "69.74 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "f4161ef7be0335c50d0ff0cb"
+    },
+    "window_start_utc": "2026-09-20T02:19:24.778383+00:00",
+    "window_end_utc": "2026-09-20T02:19:25.471956+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:24.813",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "69.80 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:23.812",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1770 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:25.813",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1785 MHz",
+        "power.draw [W]": "69.76 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "77587d402e285d4a952e9b6f"
+    },
+    "window_start_utc": "2026-09-20T02:19:28.682630+00:00",
+    "window_end_utc": "2026-09-20T02:19:29.395561+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:28.814",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1755 MHz",
+        "power.draw [W]": "69.80 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:27.814",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.95 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:29.815",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1965 MHz",
+        "power.draw [W]": "69.80 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "eaeab1f3a9cf0128bbaaa666"
+    },
+    "window_start_utc": "2026-09-20T02:19:32.646084+00:00",
+    "window_end_utc": "2026-09-20T02:19:33.346150+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:32.816",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2085 MHz",
+        "power.draw [W]": "69.67 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:31.816",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2085 MHz",
+        "power.draw [W]": "70.00 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:33.816",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "70.07 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "d5bb38c4c4dec0393939a1bc"
+    },
+    "window_start_utc": "2026-09-20T02:19:36.485732+00:00",
+    "window_end_utc": "2026-09-20T02:19:37.208006+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:36.818",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "68.34 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:35.817",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "68.79 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:37.818",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1470 MHz",
+        "power.draw [W]": "69.76 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "9214bf2b11699ff2543f9f19"
+    },
+    "window_start_utc": "2026-09-20T02:19:40.523056+00:00",
+    "window_end_utc": "2026-09-20T02:19:41.225433+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:40.820",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1470 MHz",
+        "power.draw [W]": "69.64 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:39.819",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1470 MHz",
+        "power.draw [W]": "67.79 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:41.820",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1440 MHz",
+        "power.draw [W]": "69.73 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "69355f9976190ec0784d2e61"
+    },
+    "window_start_utc": "2026-09-20T02:19:44.379180+00:00",
+    "window_end_utc": "2026-09-20T02:19:45.129636+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:44.822",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1440 MHz",
+        "power.draw [W]": "68.47 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:43.821",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1440 MHz",
+        "power.draw [W]": "68.02 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:45.822",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "67.68 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "00c76c5cc76dec9e47ab0e66"
+    },
+    "window_start_utc": "2026-09-20T02:19:48.344645+00:00",
+    "window_end_utc": "2026-09-20T02:19:49.043897+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:48.823",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "69.76 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:47.823",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "69.87 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:49.824",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1665 MHz",
+        "power.draw [W]": "69.83 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "605669c2f24fe9a97c7cb2ad"
+    },
+    "window_start_utc": "2026-09-20T02:19:52.227591+00:00",
+    "window_end_utc": "2026-09-20T02:19:52.937359+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:52.825",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1665 MHz",
+        "power.draw [W]": "69.91 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:51.825",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "69.81 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:53.826",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1110 MHz",
+        "power.draw [W]": "70.05 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "e741c9c7f216da8d8282b734"
+    },
+    "window_start_utc": "2026-09-20T02:19:56.122993+00:00",
+    "window_end_utc": "2026-09-20T02:19:56.885887+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:19:56.827",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1320 MHz",
+        "power.draw [W]": "68.32 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:55.827",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1080 MHz",
+        "power.draw [W]": "70.01 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:19:57.828",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1065 MHz",
+        "power.draw [W]": "68.59 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "6eedd35b12766b84fdaa47d9"
+    },
+    "window_start_utc": "2026-09-20T02:20:00.196030+00:00",
+    "window_end_utc": "2026-09-20T02:20:00.894087+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:00.830",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "69.35 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:19:59.829",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1065 MHz",
+        "power.draw [W]": "69.08 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:01.830",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1560 MHz",
+        "power.draw [W]": "67.83 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "231bcd4e8e90608e9c49e6a8"
+    },
+    "window_start_utc": "2026-09-20T02:20:04.072914+00:00",
+    "window_end_utc": "2026-09-20T02:20:04.772862+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:03.831",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.33 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:04.832",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.33 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp16",
+      "round": 0,
+      "mode": "graph",
+      "split": "development",
+      "id": "b58b3bec6fcb31d979f1d2a1"
+    },
+    "window_start_utc": "2026-09-20T02:20:07.950567+00:00",
+    "window_end_utc": "2026-09-20T02:20:08.692714+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:07.833",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1515 MHz",
+        "power.draw [W]": "68.08 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:08.834",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1545 MHz",
+        "power.draw [W]": "68.12 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "aa387ac2c8fce4cf2d6d74dc"
+    },
+    "window_start_utc": "2026-09-20T02:20:11.825489+00:00",
+    "window_end_utc": "2026-09-20T02:20:12.481201+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:11.835",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1650 MHz",
+        "power.draw [W]": "69.58 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:10.835",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1635 MHz",
+        "power.draw [W]": "69.38 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:12.835",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1635 MHz",
+        "power.draw [W]": "69.59 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "ebf99b073fcacdd8f77d860e"
+    },
+    "window_start_utc": "2026-09-20T02:20:15.637212+00:00",
+    "window_end_utc": "2026-09-20T02:20:16.279394+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:15.837",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "69.94 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:14.836",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "69.88 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:16.837",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1410 MHz",
+        "power.draw [W]": "70.36 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "7ef10ed8ffc18b267683e22d"
+    },
+    "window_start_utc": "2026-09-20T02:20:19.541659+00:00",
+    "window_end_utc": "2026-09-20T02:20:20.237886+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:19.839",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "68.49 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:18.838",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1440 MHz",
+        "power.draw [W]": "68.09 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:20.839",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1470 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        512,
+        512,
+        512
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "a691c4c0ca01a3b5c834b6d7"
+    },
+    "window_start_utc": "2026-09-20T02:20:23.353077+00:00",
+    "window_end_utc": "2026-09-20T02:20:24.028955+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:23.841",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1455 MHz",
+        "power.draw [W]": "68.20 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:22.840",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1455 MHz",
+        "power.draw [W]": "67.48 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:24.841",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1440 MHz",
+        "power.draw [W]": "68.04 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "c1e06eb58010ae99799163a5"
+    },
+    "window_start_utc": "2026-09-20T02:20:27.184715+00:00",
+    "window_end_utc": "2026-09-20T02:20:27.935708+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:27.843",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "69.13 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:26.842",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "69.56 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:28.843",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1455 MHz",
+        "power.draw [W]": "69.33 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "82ec015f11487f5325103d78"
+    },
+    "window_start_utc": "2026-09-20T02:20:31.137045+00:00",
+    "window_end_utc": "2026-09-20T02:20:31.837781+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:30.844",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1455 MHz",
+        "power.draw [W]": "67.85 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:31.845",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1455 MHz",
+        "power.draw [W]": "67.75 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "16c107b2586e7035c4e419ee"
+    },
+    "window_start_utc": "2026-09-20T02:20:35.172848+00:00",
+    "window_end_utc": "2026-09-20T02:20:35.875897+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:35.847",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "68.83 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:34.847",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1200 MHz",
+        "power.draw [W]": "67.85 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:36.848",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "67.86 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1313,
+        545,
+        249
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "055f82dfcb21f4aca789b11f"
+    },
+    "window_start_utc": "2026-09-20T02:20:39.056877+00:00",
+    "window_end_utc": "2026-09-20T02:20:39.753584+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:38.849",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "67.38 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:39.850",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "67.72 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "839f08dae7dd365253bf2b9a"
+    },
+    "window_start_utc": "2026-09-20T02:20:42.973828+00:00",
+    "window_end_utc": "2026-09-20T02:20:43.674262+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:42.851",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "53.20 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:43.851",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "53.22 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "138339b87adceddc88cde447"
+    },
+    "window_start_utc": "2026-09-20T02:20:46.867474+00:00",
+    "window_end_utc": "2026-09-20T02:20:47.567580+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:46.853",
+        "temperature.gpu": "69",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "51.66 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:47.853",
+        "temperature.gpu": "69",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "51.73 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "b34ee9d13b5ae59dfeeca6fb"
+    },
+    "window_start_utc": "2026-09-20T02:20:50.699114+00:00",
+    "window_end_utc": "2026-09-20T02:20:51.421220+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:50.854",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2205 MHz",
+        "power.draw [W]": "69.60 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:49.854",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2205 MHz",
+        "power.draw [W]": "69.66 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:51.855",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "69.51 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        65,
+        129,
+        257
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "5874a6098a9a54bf6ea5eff1"
+    },
+    "window_start_utc": "2026-09-20T02:20:54.646767+00:00",
+    "window_end_utc": "2026-09-20T02:20:55.346877+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:54.856",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "69.03 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:53.856",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "69.20 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:55.856",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1920 MHz",
+        "power.draw [W]": "69.47 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "45924288523f274a81d149f8"
+    },
+    "window_start_utc": "2026-09-20T02:20:58.584872+00:00",
+    "window_end_utc": "2026-09-20T02:20:59.284565+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:20:58.858",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1995 MHz",
+        "power.draw [W]": "68.98 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:20:57.857",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1995 MHz",
+        "power.draw [W]": "69.22 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:20:59.858",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2025 MHz",
+        "power.draw [W]": "69.17 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "76fdfe26981e2e6d742de01f"
+    },
+    "window_start_utc": "2026-09-20T02:21:02.483246+00:00",
+    "window_end_utc": "2026-09-20T02:21:03.180805+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:02.859",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "69.73 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:01.859",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2025 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:03.860",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1560 MHz",
+        "power.draw [W]": "69.74 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "7ca819c05c263bcda5b7e2c2"
+    },
+    "window_start_utc": "2026-09-20T02:21:06.492045+00:00",
+    "window_end_utc": "2026-09-20T02:21:07.201602+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:06.861",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1560 MHz",
+        "power.draw [W]": "69.70 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:05.861",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1560 MHz",
+        "power.draw [W]": "67.94 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:07.862",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "68.85 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        65,
+        264
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "f607d81d81577c74ddac5814"
+    },
+    "window_start_utc": "2026-09-20T02:21:10.438388+00:00",
+    "window_end_utc": "2026-09-20T02:21:11.138472+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:10.863",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.24 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:09.863",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.59 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:11.864",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "65.17 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "208e0cb2ebe982a96d044365"
+    },
+    "window_start_utc": "2026-09-20T02:21:14.330983+00:00",
+    "window_end_utc": "2026-09-20T02:21:15.030965+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:14.865",
+        "temperature.gpu": "69",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "51.74 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:13.865",
+        "temperature.gpu": "69",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "51.87 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:15.866",
+        "temperature.gpu": "68",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "49.40 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "757467c3e582af13afc735f3"
+    },
+    "window_start_utc": "2026-09-20T02:21:18.203893+00:00",
+    "window_end_utc": "2026-09-20T02:21:18.903774+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:18.867",
+        "temperature.gpu": "67",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "45.43 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:17.866",
+        "temperature.gpu": "67",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "45.54 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:19.867",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "53.26 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "313e6ca74e16a9e5c4745a2a"
+    },
+    "window_start_utc": "2026-09-20T02:21:22.039526+00:00",
+    "window_end_utc": "2026-09-20T02:21:22.738389+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:21.868",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "61.69 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:22.869",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "61.61 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "be04336398edb7cf10fdd0d9"
+    },
+    "window_start_utc": "2026-09-20T02:21:25.872685+00:00",
+    "window_end_utc": "2026-09-20T02:21:26.574170+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:25.870",
+        "temperature.gpu": "69",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "56.57 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:26.870",
+        "temperature.gpu": "69",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "56.69 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "4f37a9418d0411cdaf7ddbd1"
+    },
+    "window_start_utc": "2026-09-20T02:21:29.714218+00:00",
+    "window_end_utc": "2026-09-20T02:21:30.439983+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:29.872",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2190 MHz",
+        "power.draw [W]": "69.68 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:28.871",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2190 MHz",
+        "power.draw [W]": "69.45 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:30.872",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2190 MHz",
+        "power.draw [W]": "69.18 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "9454dc989f69ef37215ea1f8"
+    },
+    "window_start_utc": "2026-09-20T02:21:33.656129+00:00",
+    "window_end_utc": "2026-09-20T02:21:34.357169+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:33.874",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "69.74 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:32.873",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "70.00 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:34.874",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1725 MHz",
+        "power.draw [W]": "70.54 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "2aee4378852594a5b8a704f9"
+    },
+    "window_start_utc": "2026-09-20T02:21:37.640519+00:00",
+    "window_end_utc": "2026-09-20T02:21:38.343568+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:37.876",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "70.13 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:36.875",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "70.14 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:38.876",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1830 MHz",
+        "power.draw [W]": "69.83 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "9cc70908c664eefb598e7bf0"
+    },
+    "window_start_utc": "2026-09-20T02:21:41.568275+00:00",
+    "window_end_utc": "2026-09-20T02:21:42.267621+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:41.877",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:40.877",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "69.97 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:42.878",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1155 MHz",
+        "power.draw [W]": "70.21 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "6fe9f3bff03d02dbc8ed7de8"
+    },
+    "window_start_utc": "2026-09-20T02:21:45.529940+00:00",
+    "window_end_utc": "2026-09-20T02:21:46.227933+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:45.879",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "68.96 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:44.879",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1200 MHz",
+        "power.draw [W]": "68.79 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:46.880",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "69.01 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "9d3a0a2b5157d598d0341c74"
+    },
+    "window_start_utc": "2026-09-20T02:21:49.417222+00:00",
+    "window_end_utc": "2026-09-20T02:21:50.100835+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:49.881",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "69.08 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:48.881",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:50.882",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "915 MHz",
+        "power.draw [W]": "69.36 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "8f5f7d5ad4f562499f0f6af3"
+    },
+    "window_start_utc": "2026-09-20T02:21:53.483872+00:00",
+    "window_end_utc": "2026-09-20T02:21:54.180698+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:53.884",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "69.30 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:52.883",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "930 MHz",
+        "power.draw [W]": "68.97 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:54.884",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "915 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "e2a466b6ec09773b18478316"
+    },
+    "window_start_utc": "2026-09-20T02:21:57.309280+00:00",
+    "window_end_utc": "2026-09-20T02:21:57.990004+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:21:57.886",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "69.02 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:21:56.886",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "915 MHz",
+        "power.draw [W]": "68.90 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:21:58.887",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "960 MHz",
+        "power.draw [W]": "68.69 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "f13f468f10599b3c01c54eaa"
+    },
+    "window_start_utc": "2026-09-20T02:22:01.234388+00:00",
+    "window_end_utc": "2026-09-20T02:22:01.999592+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:01.889",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.31 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:00.888",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "960 MHz",
+        "power.draw [W]": "69.28 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:02.889",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "975 MHz",
+        "power.draw [W]": "69.31 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "a048d9ea6729f62527d59717"
+    },
+    "window_start_utc": "2026-09-20T02:22:05.212617+00:00",
+    "window_end_utc": "2026-09-20T02:22:05.978229+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:05.891",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.36 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:04.890",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "960 MHz",
+        "power.draw [W]": "69.35 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:06.892",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "68.96 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "149af0bb89f083add3233cbd"
+    },
+    "window_start_utc": "2026-09-20T02:22:09.216211+00:00",
+    "window_end_utc": "2026-09-20T02:22:09.934476+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:09.893",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1200 MHz",
+        "power.draw [W]": "69.24 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:08.893",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "69.04 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:10.894",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "c91e720d001a1bf927071f02"
+    },
+    "window_start_utc": "2026-09-20T02:22:13.110071+00:00",
+    "window_end_utc": "2026-09-20T02:22:13.828460+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:12.895",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "68.99 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:13.896",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1200 MHz",
+        "power.draw [W]": "69.07 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "672275c3004daf4a53cebea9"
+    },
+    "window_start_utc": "2026-09-20T02:22:17.005557+00:00",
+    "window_end_utc": "2026-09-20T02:22:17.647193+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:16.897",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1530 MHz",
+        "power.draw [W]": "69.74 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:17.898",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1515 MHz",
+        "power.draw [W]": "69.93 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "96dd95aee65aedf291fe7dd0"
+    },
+    "window_start_utc": "2026-09-20T02:22:20.783212+00:00",
+    "window_end_utc": "2026-09-20T02:22:21.464221+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:20.899",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1545 MHz",
+        "power.draw [W]": "68.97 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:19.899",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1530 MHz",
+        "power.draw [W]": "68.94 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:21.900",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1530 MHz",
+        "power.draw [W]": "68.38 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "9b5c2c0615772dd3d8b17a24"
+    },
+    "window_start_utc": "2026-09-20T02:22:24.802448+00:00",
+    "window_end_utc": "2026-09-20T02:22:25.504547+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:24.902",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "825 MHz",
+        "power.draw [W]": "69.83 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:23.901",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "765 MHz",
+        "power.draw [W]": "70.36 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:25.902",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "765 MHz",
+        "power.draw [W]": "70.29 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "ee1b64e72f9f0f71bee6aff0"
+    },
+    "window_start_utc": "2026-09-20T02:22:28.647003+00:00",
+    "window_end_utc": "2026-09-20T02:22:29.302316+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:28.904",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "825 MHz",
+        "power.draw [W]": "69.69 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:27.903",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "795 MHz",
+        "power.draw [W]": "70.15 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:29.904",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "1215 MHz",
+        "power.draw [W]": "69.03 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "68ad8fb6cb39bef9abfc185e"
+    },
+    "window_start_utc": "2026-09-20T02:22:32.493861+00:00",
+    "window_end_utc": "2026-09-20T02:22:33.197355+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:32.906",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "67.52 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:31.905",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "67.39 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:33.907",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "67.55 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "6e5d9e89facfd5e18b19625d"
+    },
+    "window_start_utc": "2026-09-20T02:22:36.396344+00:00",
+    "window_end_utc": "2026-09-20T02:22:37.070481+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:36.909",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1230 MHz",
+        "power.draw [W]": "68.29 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:35.908",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "66.91 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:37.909",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "68.40 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "45faf98888291b67072d6fc3"
+    },
+    "window_start_utc": "2026-09-20T02:22:40.341391+00:00",
+    "window_end_utc": "2026-09-20T02:22:41.040225+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:40.911",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "795 MHz",
+        "power.draw [W]": "70.28 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:39.910",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "870 MHz",
+        "power.draw [W]": "70.06 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:41.912",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "70.06 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "ca8d477a61538923305e226d"
+    },
+    "window_start_utc": "2026-09-20T02:22:44.145509+00:00",
+    "window_end_utc": "2026-09-20T02:22:44.819219+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:43.913",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "885 MHz",
+        "power.draw [W]": "70.06 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:44.914",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "810 MHz",
+        "power.draw [W]": "70.23 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "a48de77a5460182557c94d74"
+    },
+    "window_start_utc": "2026-09-20T02:22:48.072736+00:00",
+    "window_end_utc": "2026-09-20T02:22:48.757793+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:47.915",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1140 MHz",
+        "power.draw [W]": "70.06 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:48.916",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1125 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "f01e293447ba8c17eab85158"
+    },
+    "window_start_utc": "2026-09-20T02:22:51.941286+00:00",
+    "window_end_utc": "2026-09-20T02:22:52.626724+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:51.918",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1155 MHz",
+        "power.draw [W]": "70.08 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:52.918",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1140 MHz",
+        "power.draw [W]": "69.93 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "757c8066ca15c6cb78711484"
+    },
+    "window_start_utc": "2026-09-20T02:22:56.000164+00:00",
+    "window_end_utc": "2026-09-20T02:22:56.697739+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:55.920",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "870 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:22:56.921",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "855 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "54e572144a429b156758b656"
+    },
+    "window_start_utc": "2026-09-20T02:22:59.882359+00:00",
+    "window_end_utc": "2026-09-20T02:23:00.555216+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:22:59.923",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "900 MHz",
+        "power.draw [W]": "70.00 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:22:58.922",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "855 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:00.923",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "870 MHz",
+        "power.draw [W]": "70.01 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "767bcd86a0eecc09b3c1fa18"
+    },
+    "window_start_utc": "2026-09-20T02:23:03.792728+00:00",
+    "window_end_utc": "2026-09-20T02:23:04.501631+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:03.925",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1575 MHz",
+        "power.draw [W]": "69.36 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:02.924",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1575 MHz",
+        "power.draw [W]": "69.48 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:04.925",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1575 MHz",
+        "power.draw [W]": "69.63 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "cc7dd32dee153f751b89c765"
+    },
+    "window_start_utc": "2026-09-20T02:23:07.687829+00:00",
+    "window_end_utc": "2026-09-20T02:23:08.336375+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:07.927",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1575 MHz",
+        "power.draw [W]": "69.10 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:06.926",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1575 MHz",
+        "power.draw [W]": "69.17 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:08.927",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "915 MHz",
+        "power.draw [W]": "69.74 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "85b379088e92c7881e4c7151"
+    },
+    "window_start_utc": "2026-09-20T02:23:11.686481+00:00",
+    "window_end_utc": "2026-09-20T02:23:12.375843+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:11.929",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "900 MHz",
+        "power.draw [W]": "68.85 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:10.929",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "915 MHz",
+        "power.draw [W]": "68.84 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:12.930",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "68.66 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        768,
+        1723,
+        331
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "22b350f66515e40e47cbe910"
+    },
+    "window_start_utc": "2026-09-20T02:23:15.500968+00:00",
+    "window_end_utc": "2026-09-20T02:23:16.168472+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:15.931",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "900 MHz",
+        "power.draw [W]": "68.86 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:14.931",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "930 MHz",
+        "power.draw [W]": "68.84 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:16.932",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "2040 MHz",
+        "power.draw [W]": "65.45 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "c2a31c03f5491a9a856a2a26"
+    },
+    "window_start_utc": "2026-09-20T02:23:19.376532+00:00",
+    "window_end_utc": "2026-09-20T02:23:20.076786+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:19.933",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "2040 MHz",
+        "power.draw [W]": "69.05 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:18.933",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2055 MHz",
+        "power.draw [W]": "69.46 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:20.934",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2115 MHz",
+        "power.draw [W]": "69.43 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "fb48ebb40a1c2914e1c79f32"
+    },
+    "window_start_utc": "2026-09-20T02:23:23.235189+00:00",
+    "window_end_utc": "2026-09-20T02:23:23.937068+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:23.935",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2100 MHz",
+        "power.draw [W]": "70.06 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:22.935",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2115 MHz",
+        "power.draw [W]": "70.04 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:24.936",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "70.53 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "2c7825c759877989ea1270ba"
+    },
+    "window_start_utc": "2026-09-20T02:23:27.190967+00:00",
+    "window_end_utc": "2026-09-20T02:23:27.891410+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:26.937",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1755 MHz",
+        "power.draw [W]": "69.33 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:27.937",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.84 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        256,
+        256,
+        256
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "add536c09b29f3e23f7e5c60"
+    },
+    "window_start_utc": "2026-09-20T02:23:31.126051+00:00",
+    "window_end_utc": "2026-09-20T02:23:31.826608+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:30.939",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1830 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:31.939",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "69.99 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "6e484ef93e849bd50ef307e0"
+    },
+    "window_start_utc": "2026-09-20T02:23:35.040565+00:00",
+    "window_end_utc": "2026-09-20T02:23:35.740850+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:34.941",
+        "temperature.gpu": "68",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "41.92 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:35.941",
+        "temperature.gpu": "68",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "41.82 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "4547509f148f5aef996c5fa8"
+    },
+    "window_start_utc": "2026-09-20T02:23:38.889493+00:00",
+    "window_end_utc": "2026-09-20T02:23:39.588647+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:38.942",
+        "temperature.gpu": "67",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "40.72 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:37.942",
+        "temperature.gpu": "67",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "40.78 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:39.943",
+        "temperature.gpu": "66",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "40.70 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "a357b74766221af07d209850"
+    },
+    "window_start_utc": "2026-09-20T02:23:42.728088+00:00",
+    "window_end_utc": "2026-09-20T02:23:43.427604+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:42.944",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "63.15 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:41.944",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "63.31 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:43.945",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "63.35 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "feef581f328c0d23276d41a7"
+    },
+    "window_start_utc": "2026-09-20T02:23:46.646316+00:00",
+    "window_end_utc": "2026-09-20T02:23:47.346474+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:46.946",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "58.88 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:45.946",
+        "temperature.gpu": "70",
+        "clocks.current.sm [MHz]": "2280 MHz",
+        "power.draw [W]": "59.02 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:47.946",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "60.45 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "b38ea6aa7d4c05316dbf3db4"
+    },
+    "window_start_utc": "2026-09-20T02:23:50.598479+00:00",
+    "window_end_utc": "2026-09-20T02:23:51.297188+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:50.948",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1170 MHz",
+        "power.draw [W]": "69.76 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:49.948",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1170 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:51.949",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1185 MHz",
+        "power.draw [W]": "69.89 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "32a86fe531613be518924138"
+    },
+    "window_start_utc": "2026-09-20T02:23:54.422617+00:00",
+    "window_end_utc": "2026-09-20T02:23:55.098447+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:54.951",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1155 MHz",
+        "power.draw [W]": "69.81 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:53.950",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1170 MHz",
+        "power.draw [W]": "69.86 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:55.952",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1260 MHz",
+        "power.draw [W]": "69.50 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "c5ad9fca045d364b81e4508c"
+    },
+    "window_start_utc": "2026-09-20T02:23:58.294447+00:00",
+    "window_end_utc": "2026-09-20T02:23:58.959177+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:23:58.954",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "69.91 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:23:57.953",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1275 MHz",
+        "power.draw [W]": "69.71 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:23:59.954",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1275 MHz",
+        "power.draw [W]": "69.78 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "69faa5a7bcc567a9525d551b"
+    },
+    "window_start_utc": "2026-09-20T02:24:02.093409+00:00",
+    "window_end_utc": "2026-09-20T02:24:02.786837+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:01.955",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1275 MHz",
+        "power.draw [W]": "69.81 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:02.956",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1245 MHz",
+        "power.draw [W]": "70.04 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "32add6ef9724f65c667ba5c7"
+    },
+    "window_start_utc": "2026-09-20T02:24:06.073351+00:00",
+    "window_end_utc": "2026-09-20T02:24:06.776884+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:05.958",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1470 MHz",
+        "power.draw [W]": "69.37 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:06.959",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1470 MHz",
+        "power.draw [W]": "68.88 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "cd98974154dfd6e0d24ce29d"
+    },
+    "window_start_utc": "2026-09-20T02:24:10.005389+00:00",
+    "window_end_utc": "2026-09-20T02:24:10.708685+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:09.960",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1500 MHz",
+        "power.draw [W]": "68.79 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:10.961",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1485 MHz",
+        "power.draw [W]": "68.88 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "53fb03f93b2e99939594efa0"
+    },
+    "window_start_utc": "2026-09-20T02:24:13.979122+00:00",
+    "window_end_utc": "2026-09-20T02:24:14.674704+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:13.963",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "975 MHz",
+        "power.draw [W]": "69.26 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:14.963",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.33 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        549,
+        3639,
+        73
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "b933e2de22a778ebe1b459b2"
+    },
+    "window_start_utc": "2026-09-20T02:24:17.850122+00:00",
+    "window_end_utc": "2026-09-20T02:24:18.551009+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:24:17.966",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "69.12 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:16.966",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "960 MHz",
+        "power.draw [W]": "69.26 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:18.967",
+        "temperature.gpu": "71",
+        "clocks.current.sm [MHz]": "960 MHz",
+        "power.draw [W]": "69.29 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "8d1a9b540e3a64c17bbf7685"
+    },
+    "window_start_utc": "2026-09-20T02:24:21.764929+00:00",
+    "window_end_utc": "2026-09-20T02:24:22.467875+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:24:21.969",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1695 MHz",
+        "power.draw [W]": "68.74 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:20.968",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1710 MHz",
+        "power.draw [W]": "69.23 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:22.969",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1860 MHz",
+        "power.draw [W]": "68.86 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "7b722f60ea8cd7260ce0fd12"
+    },
+    "window_start_utc": "2026-09-20T02:24:25.656583+00:00",
+    "window_end_utc": "2026-09-20T02:24:26.356743+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:24:25.971",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1845 MHz",
+        "power.draw [W]": "69.88 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:24.970",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1860 MHz",
+        "power.draw [W]": "69.76 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:26.971",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.82 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "b43ba459da9e3d00a201e627"
+    },
+    "window_start_utc": "2026-09-20T02:24:29.612666+00:00",
+    "window_end_utc": "2026-09-20T02:24:30.314919+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:24:29.972",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "70.01 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:28.972",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1635 MHz",
+        "power.draw [W]": "69.63 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:30.973",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1665 MHz",
+        "power.draw [W]": "70.03 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        64,
+        4096,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "27fd5070a629e3dd4806a200"
+    },
+    "window_start_utc": "2026-09-20T02:24:33.547378+00:00",
+    "window_end_utc": "2026-09-20T02:24:34.245081+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:24:33.974",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "70.08 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:32.974",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "70.20 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:34.975",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "68.11 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "60779abcc18c307a65fd3f45"
+    },
+    "window_start_utc": "2026-09-20T02:24:37.504765+00:00",
+    "window_end_utc": "2026-09-20T02:24:38.206564+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:24:37.976",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "68.72 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:36.976",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2010 MHz",
+        "power.draw [W]": "68.58 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:38.977",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2085 MHz",
+        "power.draw [W]": "69.18 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "b7a8b83b8a614b23b9253d60"
+    },
+    "window_start_utc": "2026-09-20T02:24:41.358967+00:00",
+    "window_end_utc": "2026-09-20T02:24:42.060163+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:24:41.978",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2070 MHz",
+        "power.draw [W]": "69.90 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:40.978",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "2085 MHz",
+        "power.draw [W]": "69.77 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:42.979",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.77 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "cca9ca4541e85ff7c7733328"
+    },
+    "window_start_utc": "2026-09-20T02:24:45.389444+00:00",
+    "window_end_utc": "2026-09-20T02:24:46.090073+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:24:45.980",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.61 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:44.979",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.75 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:46.980",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "69.20 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        64,
+        264
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "8d5770d895a354cba7a27438"
+    },
+    "window_start_utc": "2026-09-20T02:24:49.276565+00:00",
+    "window_end_utc": "2026-09-20T02:24:49.976772+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:48.981",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "69.44 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:49.982",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1815 MHz",
+        "power.draw [W]": "69.73 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "37683441f5e3c1ad3879a4a6"
+    },
+    "window_start_utc": "2026-09-20T02:24:53.258456+00:00",
+    "window_end_utc": "2026-09-20T02:24:53.957078+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:52.983",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1590 MHz",
+        "power.draw [W]": "68.83 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:53.984",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1590 MHz",
+        "power.draw [W]": "69.00 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "1958d8873221226c5ae4ef0a"
+    },
+    "window_start_utc": "2026-09-20T02:24:57.097427+00:00",
+    "window_end_utc": "2026-09-20T02:24:57.798986+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:24:56.985",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "69.43 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:24:57.986",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "70.17 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "cb9fad8aa9beacfa50ab71f7"
+    },
+    "window_start_utc": "2026-09-20T02:25:01.152948+00:00",
+    "window_end_utc": "2026-09-20T02:25:01.855494+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:00.988",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "68.58 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:01.988",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1425 MHz",
+        "power.draw [W]": "68.69 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        256,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "9d5baf593f235673a9fb1ae8"
+    },
+    "window_start_utc": "2026-09-20T02:25:05.038803+00:00",
+    "window_end_utc": "2026-09-20T02:25:05.746712+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:04.990",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1410 MHz",
+        "power.draw [W]": "68.52 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:05.990",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "67.68 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "089b7eae2e0716151157a0f2"
+    },
+    "window_start_utc": "2026-09-20T02:25:08.954800+00:00",
+    "window_end_utc": "2026-09-20T02:25:09.663214+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:08.992",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1710 MHz",
+        "power.draw [W]": "69.91 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:07.991",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1725 MHz",
+        "power.draw [W]": "69.95 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:09.992",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1770 MHz",
+        "power.draw [W]": "69.75 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "8b7c200a5a552d3c3071ef46"
+    },
+    "window_start_utc": "2026-09-20T02:25:12.767413+00:00",
+    "window_end_utc": "2026-09-20T02:25:13.400722+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:12.994",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1755 MHz",
+        "power.draw [W]": "69.98 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:11.993",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1770 MHz",
+        "power.draw [W]": "69.88 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:13.994",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "69.95 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "35db39dc22bef9ade29448b7"
+    },
+    "window_start_utc": "2026-09-20T02:25:16.735635+00:00",
+    "window_end_utc": "2026-09-20T02:25:17.435037+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:16.996",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1350 MHz",
+        "power.draw [W]": "68.03 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:15.995",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "69.01 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:17.996",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "67.86 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        136,
+        257,
+        4096
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "ff1f2b005ac1135ecb88cbf4"
+    },
+    "window_start_utc": "2026-09-20T02:25:20.595638+00:00",
+    "window_end_utc": "2026-09-20T02:25:21.257827+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:20.998",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "69.90 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:19.997",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "69.39 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:21.998",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "68.88 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "333543271afc749a4f57255a"
+    },
+    "window_start_utc": "2026-09-20T02:25:24.383791+00:00",
+    "window_end_utc": "2026-09-20T02:25:25.100219+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:25.000",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1380 MHz",
+        "power.draw [W]": "69.93 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:23.999",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1410 MHz",
+        "power.draw [W]": "69.84 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:26.000",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1395 MHz",
+        "power.draw [W]": "69.94 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "888f9bc13e96ef0fa950753b"
+    },
+    "window_start_utc": "2026-09-20T02:25:28.229640+00:00",
+    "window_end_utc": "2026-09-20T02:25:28.906896+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:28.001",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1410 MHz",
+        "power.draw [W]": "69.77 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:29.002",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.66 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "13b6ea23825e4961029297df"
+    },
+    "window_start_utc": "2026-09-20T02:25:32.177621+00:00",
+    "window_end_utc": "2026-09-20T02:25:32.871909+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:32.004",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1020 MHz",
+        "power.draw [W]": "70.05 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:33.004",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1050 MHz",
+        "power.draw [W]": "69.70 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        1024,
+        1024,
+        1024
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "36e4e4cd0afaf235c61b648b"
+    },
+    "window_start_utc": "2026-09-20T02:25:36.047075+00:00",
+    "window_end_utc": "2026-09-20T02:25:36.718380+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:36.006",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "70.00 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:37.007",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "67.90 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "cc3643770099a77a9c6ff9a5"
+    },
+    "window_start_utc": "2026-09-20T02:25:39.939173+00:00",
+    "window_end_utc": "2026-09-20T02:25:40.644245+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:40.008",
+        "temperature.gpu": "75",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.57 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:39.008",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1740 MHz",
+        "power.draw [W]": "69.96 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:41.009",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1875 MHz",
+        "power.draw [W]": "69.12 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "d92efc7d1de7f986f789c81b"
+    },
+    "window_start_utc": "2026-09-20T02:25:43.809144+00:00",
+    "window_end_utc": "2026-09-20T02:25:44.508653+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:44.010",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1860 MHz",
+        "power.draw [W]": "69.84 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:43.010",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1875 MHz",
+        "power.draw [W]": "69.81 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:45.010",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "70.07 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "bb96c51cce8190a2f54f6312"
+    },
+    "window_start_utc": "2026-09-20T02:25:47.829466+00:00",
+    "window_end_utc": "2026-09-20T02:25:48.531253+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:48.012",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "70.10 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:47.011",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1635 MHz",
+        "power.draw [W]": "70.03 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:49.012",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1680 MHz",
+        "power.draw [W]": "70.11 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        4096,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "cd2e233264c92e899ea7f5b8"
+    },
+    "window_start_utc": "2026-09-20T02:25:51.787897+00:00",
+    "window_end_utc": "2026-09-20T02:25:52.484481+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:52.014",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1695 MHz",
+        "power.draw [W]": "70.01 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:51.013",
+        "temperature.gpu": "74",
+        "clocks.current.sm [MHz]": "1695 MHz",
+        "power.draw [W]": "70.14 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:53.014",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1485 MHz",
+        "power.draw [W]": "69.71 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "8eb12397f4891b0ed16ebf09"
+    },
+    "window_start_utc": "2026-09-20T02:25:55.745137+00:00",
+    "window_end_utc": "2026-09-20T02:25:56.436854+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:25:56.016",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1545 MHz",
+        "power.draw [W]": "68.21 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:55.015",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1500 MHz",
+        "power.draw [W]": "68.09 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:25:57.016",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1545 MHz",
+        "power.draw [W]": "68.20 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "aaf39fd54084e06daddb18ad"
+    },
+    "window_start_utc": "2026-09-20T02:25:59.692698+00:00",
+    "window_end_utc": "2026-09-20T02:26:00.393068+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:26:00.018",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.30 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:25:59.017",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1620 MHz",
+        "power.draw [W]": "69.18 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:26:01.018",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "69.80 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "4bffb6be22d124f86247da3b"
+    },
+    "window_start_utc": "2026-09-20T02:26:03.785682+00:00",
+    "window_end_utc": "2026-09-20T02:26:04.478569+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:26:04.020",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1020 MHz",
+        "power.draw [W]": "69.18 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:26:03.020",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "69.07 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:26:05.021",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1095 MHz",
+        "power.draw [W]": "68.92 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "a6af40251224392dcdf5a814"
+    },
+    "window_start_utc": "2026-09-20T02:26:07.729261+00:00",
+    "window_end_utc": "2026-09-20T02:26:08.429598+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:26:08.023",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1065 MHz",
+        "power.draw [W]": "69.18 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:26:07.022",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "1080 MHz",
+        "power.draw [W]": "69.14 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:26:09.023",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1020 MHz",
+        "power.draw [W]": "69.56 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "208099358419e5ab753c3043"
+    },
+    "window_start_utc": "2026-09-20T02:26:11.616369+00:00",
+    "window_end_utc": "2026-09-20T02:26:12.371916+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:26:12.025",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "70.01 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:26:11.025",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1005 MHz",
+        "power.draw [W]": "70.04 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:26:13.026",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1065 MHz",
+        "power.draw [W]": "70.01 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp16",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "6c4496016ed1bdfb39dcc1ce"
+    },
+    "window_start_utc": "2026-09-20T02:26:15.562090+00:00",
+    "window_end_utc": "2026-09-20T02:26:16.193290+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:26:16.028",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1035 MHz",
+        "power.draw [W]": "69.94 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:26:15.027",
+        "temperature.gpu": "72",
+        "clocks.current.sm [MHz]": "1065 MHz",
+        "power.draw [W]": "70.04 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:26:17.028",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "70.01 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "graph",
+      "split": "development",
+      "id": "64f184ab406bf2c72c7a4012"
+    },
+    "window_start_utc": "2026-09-20T02:26:19.448008+00:00",
+    "window_end_utc": "2026-09-20T02:26:20.142339+00:00",
+    "samples_inside_window": 1,
+    "inside": [
+      {
+        "timestamp": "2026/09/20 11:26:20.030",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.99 W"
+      }
+    ],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:26:19.030",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ],
+    "after": [
+      {
+        "timestamp": "2026/09/20 11:26:21.031",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "990 MHz",
+        "power.draw [W]": "70.02 W"
+      }
+    ]
+  },
+  {
+    "task": {
+      "kind": "gemm",
+      "phase": "main",
+      "shape": [
+        2968,
+        976,
+        160
+      ],
+      "dtype": "fp32",
+      "round": 1,
+      "mode": "prealloc",
+      "split": "development",
+      "id": "c933e643666287f44c7aea0c"
+    },
+    "window_start_utc": "2026-09-20T02:26:23.307738+00:00",
+    "window_end_utc": "2026-09-20T02:26:23.993718+00:00",
+    "samples_inside_window": 0,
+    "inside": [],
+    "before": [
+      {
+        "timestamp": "2026/09/20 11:26:23.032",
+        "temperature.gpu": "73",
+        "clocks.current.sm [MHz]": "945 MHz",
+        "power.draw [W]": "69.99 W"
+      }
+    ],
+    "after": []
+  }
+]

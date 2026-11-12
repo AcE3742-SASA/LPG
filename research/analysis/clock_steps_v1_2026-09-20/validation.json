@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "new_tests": 10,
+  "reused_tests": 17,
+  "total_tests": 27,
+  "ast": "PASS",
+  "bash_syntax": "PASS",
+  "existing_source_hashes_unchanged": 28,
+  "case_seed_and_graph_batch_provenance": "All four cases matched pilot_v6 raw records",
+  "expected_stages": 7,
+  "expected_measurements": 112,
+  "expected_timed_blocks": 784,
+  "expected_idle_phases": 16,
+  "synthetic_full_run": "112 measurements/784 blocks/16 idle phases; no final clock selected",
+  "cleanup_checks": [
+    "setup failure",
+    "worker failure",
+    "KeyboardInterrupt",
+    "partial reset failure",
+    "admission failure before mutation",
+    "noninteractive sudo refresh failure",
+    "refresh thread joined",
+    "real launcher process-group SIGINT packages after cleanup"
+  ],
+  "archive": "/Users/studyhard/Claude/자율연구/clock_steps_2026-09-20_v1.zip",
+  "archive_sha256": "38833d90ff165315463365eb397886f4b057ea4ad23f99b589fbb995e224155a",
+  "zip_files": 7,
+  "zip_crc": "PASS",
+  "zip_bytes_equal_local": true,
+  "package_hashes": {
+    "README.md": "821c14bb80efe5dae9a18a60338e91ab525f007d055bf6de5f9eb6d19429f8bf",
+    "analyze_steps.py": "b703de86e41201ef7c47edc2b229e27d55580fdc1e21a6e88498d17498c6f136",
+    "dependency_hashes.json": "315eb04ce8601e84e9992b67d06a78e64f3167775e8dedce2a5918d01ed1ea21",
+    "launch.sh": "b646c920cc983b952326a908eb219f166bbdb409b02f25399be45a21a52284b7",
+    "protocol.json": "23a07eac56bfb69a4eda2950ea6c056e788ed9434a41e3f5b32a7739b3e4f82d",
+    "steps.py": "8065e09f8ffba65e94ce5dda089e68100a9d7840a9efa015ac6cbc472b9c8d73",
+    "test_steps.py": "2a3648bc7309a15493cec4d815710db81df3bdfe0efd5a1a666e076f61ab0b85"
+  },
+  "gpu_execution": "NOT_RUN",
+  "candidate_clock_hold": "NOT_VERIFIED",
+  "full_sweep": "HOLD"
+}

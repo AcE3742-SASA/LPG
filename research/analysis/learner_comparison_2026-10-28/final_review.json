@@ -1,0 +1,16 @@
+{
+  "primary_configurations": 1920,
+  "regressor_fits": 1440,
+  "primary_invalid_predictions": 0,
+  "baseline_predictions_verified": 215208,
+  "endpoint_models_verified": 288,
+  "convergence_audit_fits": 16,
+  "remaining_audit_warnings": 0,
+  "figures_visually_inspected": [
+    "learning_curve_mape_pct.png",
+    "learning_curve_p90_pct.png"
+  ],
+  "new_gpu_collection_started": false,
+  "locked_tests_opened": false,
+  "vault_commit": "283164f"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "original_inputs_unchanged": 700,
+  "v1_artifacts_unchanged": 483,
+  "new_predictions_recomputed": 127338,
+  "models_reloaded": 222,
+  "validation_predictions_reproduced": 43350,
+  "public_neusight_predictions_recomputed": 22083,
+  "split_intersections": 0,
+  "interpretation": "Post hoc descriptive comparison; percentile intervals do not correct for multiple comparisons"
+}

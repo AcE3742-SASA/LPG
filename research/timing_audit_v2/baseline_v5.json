@@ -1,0 +1,67 @@
+{
+  "code_hashes": {
+    "full.py": "f0b29e6b91a1b0231dd844c93f94c3996b0b45dc3727d8728d04842a20f4e233",
+    "measure.py": "e61ddb63ae17d8e60862ba3ecd2b13eaf26a71a21c01b6dcb8a3dcf9503ca1c4",
+    "pilot.py": "d1d196a5dcd24d168914a5f14daba55f38b636963f834f19e31a7e06967651ac",
+    "plan.py": "ef0ce5c0ccf894b7338f6ea822991e6e960831c718388dffa5269f36bd744b81",
+    "profiling.py": "20f723fcefcdf814d45811684e80e384e49b48604b79597224ac97a0a0b77654",
+    "report.py": "95769f20a05144b51cb007d6f014e8752ed951d728b7822ab00e48fabbae071f",
+    "suite.py": "9236f2531640d9c8d42483ead5453748ecc0f7cbc12cd87f458a315c737c310a",
+    "test_suite.py": "0d7f11e85518b6b9836ee4513eb4b7d0ccba8011bf53551fe000f260cf7969b0",
+    "launch.sh": "f743f5cf3345e19f8126fbcda4a1a0df9926ae2cb042a683a8e0ed7e420bafa2",
+    "run_research_checked.sh": "640538b8f9fc7e640dbc09120ae2989d2e2d842720239a6020d766802c586048",
+    "inputs/legacy_shapes.csv": "325ea0bd2b6c8b0bc8af6f941d5578dd9d5db58a8d7fa9f961f605943c22bbab",
+    "inputs/provenance.json": "c78f12efacf05a1daa7578f3b525052aaadf57383ac74df0ba3ef50bb9abdc75",
+    "inputs/review_shapes.csv": "ece950163d193923f1a69d6e76c122cb419ae63b287d14cdd6e8e9bfa7466f3b"
+  },
+  "protocol": {
+    "version": 3,
+    "seed": 20260919,
+    "blocks": 7,
+    "settle_ms": 3000.0,
+    "block_ms": 100.0,
+    "preheat_seconds": 180,
+    "max_repeats": 100000,
+    "graph_nodes_max": 64,
+    "pressure_mib": 256,
+    "pressure_samples": 32,
+    "relative_iqr_limit": 0.05,
+    "drift_limit": 0.05,
+    "between_round_limit": 0.05,
+    "sample_side": 16,
+    "tolerances": {
+      "fp32": [
+        2e-05,
+        0.0002
+      ],
+      "fp16": [
+        0.001,
+        0.005
+      ]
+    },
+    "expected_gpu": "RTX 4000 SFF Ada",
+    "expected_capability": [
+      8,
+      9
+    ]
+  },
+  "environment_signature": {
+    "gpu_uuid": "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a",
+    "device_driver": "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a, NVIDIA RTX 4000 SFF Ada Generation, 615.71.09",
+    "torch": "2.14.0+cu132",
+    "cuda_runtime": "13.2",
+    "precision": {
+      "fp32_precision": "ieee",
+      "allow_fp16_reduced_precision_reduction": false,
+      "allow_fp16_accumulation": false
+    },
+    "environment": {
+      "CONDA_DEFAULT_ENV": "ai_env",
+      "CUDA_VISIBLE_DEVICES": null,
+      "CUDA_HOME": "/usr/local/cuda-13.4",
+      "CUBLAS_WORKSPACE_CONFIG": null,
+      "CUDA_LAUNCH_BLOCKING": null,
+      "NVIDIA_TF32_OVERRIDE": null
+    }
+  }
+}

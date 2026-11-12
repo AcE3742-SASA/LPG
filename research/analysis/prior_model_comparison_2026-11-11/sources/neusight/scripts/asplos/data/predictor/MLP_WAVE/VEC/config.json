@@ -1,0 +1,25 @@
+{
+    "architecture": "MLP_WAVE_VEC",
+    "name": "MLP_WAVE_VEC",
+    "act": "relu",
+    "arch": "MLP",
+    "dropout_rate": 0.0,
+    "num_layers": 8,
+    "hidden_size": 512,
+    "lr": 0.0005,
+    "train_batch": 64,
+    "val_batch": 4096,
+    "loss": "SMAPE",
+    "features": [
+        "B",
+        "H",
+        "Num_Sm",
+        "SingleFLOPs",
+        "Dev_Mem",
+        "Mem_Bw",
+        "L2Cache",
+        "MemPerO",
+        "OpsPerO"
+    ],
+    "use_cache": false
+}

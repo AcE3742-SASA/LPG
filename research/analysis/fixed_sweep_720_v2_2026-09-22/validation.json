@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "zip_name": "fixed_sweep_720_flag_continue_2026-09-22_v2.zip",
+  "zip_sha256": "737d47081bf18ab402c17d1ce24a04ae059334a482d84f511095686d485226f6",
+  "zip_bytes": 34470,
+  "package_files": {
+    "README.md": "250c8d8b1ecd33efa32df4f16ae9d14f3cd38323e9921dcf6e470eb0173ddf66",
+    "analyze_sweep.py": "af6da7e89da6f364de1d91baa3d96979572282c406c0f2ee896c2e984dfeb570",
+    "dependency_hashes.json": "8d41599dbea27f890e39fa02796ff203a865d9c605795deca32d78be4999d70e",
+    "launch.sh": "e01114966a215cce94f14da4b754a383cda9917814481a8c6d7eb280f6aae571",
+    "prepare.py": "45c79939e2b8fe393d65762cfa2ea5c5fbae3b02b63d45164bd9a19db664ebf9",
+    "progress.py": "8eab9eb526b146fa721dc1162c8a4a1b748dfbecb2906076743d9c33d2db138d",
+    "protocol.json": "d04f1a3d854f17da4018e1f808c59261b0f1bade058e07f4aaa17f9fbfa44c82",
+    "run.py": "6b96bfb41bc3d7762b41b2022079530f68a14488e78c94227290bfcca73062d9",
+    "test_sweep.py": "dab0c70e40ad84ca579a1e815d785746317411b2365edfb55444c346f41b1351"
+  },
+  "dependency_files": 91,
+  "raw_files_preserved": 3936,
+  "local_tests": 20,
+  "extracted_tests": 20,
+  "tasks": 113382,
+  "blocks": 793674,
+  "task_digest": "7c30aca9dd4442b05612e81ce36fbe28f1f6c8137007f587e7f5fc13e547eeab",
+  "gpu_execution": false,
+  "remote_application": false,
+  "source_v1_unchanged": true,
+  "collection_policy": "flag_clock_and_sw_power_cap_continue_v1",
+  "upgrade_test": {
+    "imported": 3,
+    "pending": 113379,
+    "flagged": 3,
+    "source_hashes_unchanged": true,
+    "active_source_refused": true,
+    "invalid_reset_refused": true,
+    "idempotent": true
+  },
+  "worker_test": {
+    "clock_flag_kept": true,
+    "next_segment_collected": true,
+    "resume_keeps_flag": true,
+    "missing_telemetry_stops": true,
+    "correctness_failure_stops": true
+  },
+  "vault_regression": "PASS",
+  "vault_strict": "FAIL: unrelated existing unlinked submission DOCX"
+}

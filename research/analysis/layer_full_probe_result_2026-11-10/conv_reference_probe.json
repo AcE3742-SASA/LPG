@@ -1,0 +1,233 @@
+{
+  "passed": false,
+  "case": {
+    "batch": 8,
+    "cin": 303,
+    "cout": 463,
+    "group_id": "lfg_b9e9ba927cac0b77",
+    "height": 20,
+    "id": "lf_ce6440e85a4add93",
+    "kernel": 3,
+    "layer": "conv3",
+    "selection_family": "lfg_b9e9ba927cac0b77",
+    "selection_reason": "unaligned_large_compact",
+    "split": "validation",
+    "width": 12
+  },
+  "input_identity_matched": true,
+  "input_identity": {
+    "input": {
+      "shape": [
+        8,
+        303,
+        20,
+        12
+      ],
+      "stride": [
+        72720,
+        240,
+        12,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "4e2f93af17822df3b0c184889a37431e66ad673aeba72a1114fded85bc7461c4"
+    },
+    "weights": [
+      {
+        "shape": [
+          463,
+          303,
+          3,
+          3
+        ],
+        "stride": [
+          2727,
+          9,
+          3,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "452625a31d2ac7b9d36196cfb280e76c72f4cc94e04864315917a0bb731c1e82"
+      }
+    ],
+    "prepared": [
+      {
+        "shape": [
+          2727,
+          463
+        ],
+        "stride": [
+          463,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "2dab34a4c43c465bddd94bd368e07ae5af2320afcdeedfea54640e96314534af"
+      }
+    ],
+    "seed": 1079309840
+  },
+  "full_pair_passed": false,
+  "pair_max_abs_error": 4.094839096069336e-05,
+  "reference": "CPU FP64 mathematical forward from actual rounded input/weights",
+  "reference_scope": "fixed sampled output points; full-output finite and pair checks",
+  "rows": [
+    0,
+    43,
+    536,
+    583,
+    960,
+    1073,
+    1132,
+    1219,
+    1237,
+    1358,
+    1431,
+    1457,
+    1547,
+    1699,
+    1725,
+    1919
+  ],
+  "columns": [
+    0,
+    18,
+    58,
+    70,
+    108,
+    172,
+    231,
+    258,
+    281,
+    318,
+    388,
+    394,
+    412,
+    446,
+    458,
+    462
+  ],
+  "atol": 2e-05,
+  "rtol": 0.0002,
+  "implementations": {
+    "standard": {
+      "passed": true,
+      "finite_all": true,
+      "points": 256,
+      "max_abs_error": 1.5363336764218083e-05,
+      "max_tolerance_ratio": 0.5179600825597337,
+      "output_shape": [
+        8,
+        463,
+        20,
+        12
+      ],
+      "output_stride": [
+        111120,
+        240,
+        12,
+        1
+      ]
+    },
+    "decomposed": {
+      "passed": true,
+      "finite_all": true,
+      "points": 256,
+      "max_abs_error": 5.766813282459538e-07,
+      "max_tolerance_ratio": 0.018907378233284915,
+      "output_shape": [
+        8,
+        463,
+        20,
+        12
+      ],
+      "output_stride": [
+        111120,
+        240,
+        12,
+        1
+      ]
+    }
+  },
+  "full_pair_adjudication": {
+    "passed": false,
+    "policy": "Both implementations must satisfy the original FP64 tolerance at every pair mismatch",
+    "mismatch_count": 2,
+    "checked_count": 2,
+    "coordinate_layout": "NCHW",
+    "coordinates": [
+      [
+        3,
+        97,
+        0,
+        4
+      ],
+      [
+        3,
+        301,
+        4,
+        0
+      ]
+    ],
+    "reference": [
+      -0.001819194584943215,
+      0.00204674916038039
+    ],
+    "atol": 2e-05,
+    "rtol": 0.0002,
+    "implementations": {
+      "standard": {
+        "passed": false,
+        "observed": [
+          -0.001844555139541626,
+          0.002069711685180664
+        ],
+        "max_abs_error": 2.536055459841091e-05,
+        "max_tolerance_ratio": 1.2453719901139924
+      },
+      "decomposed": {
+        "passed": true,
+        "observed": [
+          -0.0018192194402217865,
+          0.002046703128144145
+        ],
+        "max_abs_error": 4.6032236244997193e-08,
+        "max_tolerance_ratio": 0.0022554484402365063
+      }
+    }
+  },
+  "error": {
+    "type": "RuntimeError",
+    "message": "Conv regression probe failed; inspect conv_reference_probe.json"
+  },
+  "layer_precision": {
+    "conv": {
+      "fp32_precision": "ieee"
+    },
+    "enabled": true,
+    "benchmark": true,
+    "deterministic": false,
+    "benchmark_limit": 10,
+    "cudnn_version": 92400,
+    "autocast": false,
+    "execution": "inference_mode ordinary allocation, no compile/Graph"
+  },
+  "environment_signature": {
+    "gpu_uuid": "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a",
+    "device_driver": "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a, NVIDIA RTX 4000 SFF Ada Generation, 615.71.09",
+    "torch": "2.14.0+cu132",
+    "cuda_runtime": "13.2",
+    "precision": {
+      "fp32_precision": "ieee",
+      "allow_fp16_reduced_precision_reduction": false,
+      "allow_fp16_accumulation": false
+    },
+    "environment": {
+      "CONDA_DEFAULT_ENV": "ai_env",
+      "CUDA_VISIBLE_DEVICES": null,
+      "CUDA_HOME": "/usr/local/cuda-13.4",
+      "CUBLAS_WORKSPACE_CONFIG": null,
+      "CUDA_LAUNCH_BLOCKING": null,
+      "NVIDIA_TF32_OVERRIDE": null
+    }
+  }
+}

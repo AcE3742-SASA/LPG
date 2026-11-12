@@ -1,0 +1,74 @@
+[
+  {
+    "path": "scripts/asplos/data/dataset/test/bmm.csv",
+    "sha": "b0868e4de57dff5f2b97183487a5041bea76cefa",
+    "size": 2612152,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/bmm.csv"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100-PCIE-40GB.json",
+    "sha": "a260def73e6bd11d43fed07142f4daceca24c9a3",
+    "size": 177,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100-PCIE-40GB.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100-SXM4-40GB.json",
+    "sha": "41cadbe6af087b5d9a45f7f5c622403231f5e196",
+    "size": 177,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100-SXM4-40GB.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100_80GB_PCIe.json",
+    "sha": "a11c5d3a23082fc91620b3e1ee4db602c339b67b",
+    "size": 177,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_A100_80GB_PCIe.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_H100_80GB_HBM3.json",
+    "sha": "6e673ad261a5ffb9693c0f896bf214202e052972",
+    "size": 178,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_H100_80GB_HBM3.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/NVIDIA_L4.json",
+    "sha": "48db54e1c914cdfdb669080938e661c2b8dc0177",
+    "size": 164,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/NVIDIA_L4.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/Tesla_P100-PCIE-16GB.json",
+    "sha": "c248b7fca06e61aab85c4c9e0acea6050b67a61f",
+    "size": 172,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/Tesla_P100-PCIE-16GB.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/Tesla_P4.json",
+    "sha": "352db6d7e22af547978d0eeb28eed356eaf798d8",
+    "size": 159,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/Tesla_P4.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/Tesla_T4.json",
+    "sha": "85a7402506ce57c77ecc3391d5788ac402e402d6",
+    "size": 160,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/Tesla_T4.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/device_configs/Tesla_V100-PCIE-32GB.json",
+    "sha": "5366dffd4e1e497f0ad15f183d3e1383163668c3",
+    "size": 173,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/device_configs/Tesla_V100-PCIE-32GB.json"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/linear.csv",
+    "sha": "3e33f875b28455fdca57d4cb00f5c8fe34022c82",
+    "size": 1508473,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/linear.csv"
+  },
+  {
+    "path": "scripts/asplos/data/dataset/test/vec.csv",
+    "sha": "86ef9bbc2bc5b203901d2847ac3ed835b2177a47",
+    "size": 2420406,
+    "url": "https://raw.githubusercontent.com/scai-tech/NeuSight/6945927d9afcca2b9daf021f8395e53edc5b4eef/scripts/asplos/data/dataset/test/vec.csv"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "script_sha256": "3920c8acfef550f5db230e21524755cb6607a3f23a4a52f71aeaac00e24ae938",
+  "target_sm_mhz": 750,
+  "target_memory_mhz": 6801,
+  "target_power_limit_W": 70,
+  "bash_syntax": "PASS",
+  "offline_cases": [
+    "16_kernel_inventory_and_layout_match_at_750",
+    "first_verification_failure_stops",
+    "first_layout_mismatch_stops",
+    "loaded_old_780_rejected",
+    "loaded_wrong_memory_rejected"
+  ],
+  "result": "PASS",
+  "gpu_executed": false,
+  "remote_settings_changed": false,
+  "previous_780_script_sha256": "841895e71a83f35764f61667a1c34caa7164a71624bd68603f592bbd0abb70c2",
+  "previous_780_script_preserved": true,
+  "kernel_manifest_unchanged": true,
+  "bandwidth_at_750": "pending new BabelStream measurement",
+  "basis": "Existing comparison runner reused; SM target, output names and explicit target metadata updated."
+}

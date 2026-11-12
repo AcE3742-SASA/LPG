@@ -1,0 +1,10 @@
+{
+    "Device":"NVIDIA A100-PCIE-40GB",
+    "Dev_Mem":40,
+    "Mem_Bw":1555,
+    "Num_Sm":108,
+    "Core_Per_SM":64,
+    "Freq":1410,
+    "SingleFLOPs":19492,
+    "L2Cache":40
+}

@@ -1,0 +1,3 @@
+PASS: complete-round and quarantine checks
+PASS: derived dataset, source preservation and locked-test boundary
+Accepted measurements: 113328; quarantine: 54; main complete conditions: 35994

@@ -1,0 +1,13 @@
+{
+  "shell_syntax": "PASS",
+  "offline_cases": [
+    "success",
+    "not_verified",
+    "clock_mismatch",
+    "profiler_exit",
+    "busy_gpu"
+  ],
+  "cases_passed": 5,
+  "gpu_executed": false,
+  "runner_sha256": "b79c395bca37c0c054de24cee177820ebbcfe6ddf76402393180ce4b3c49074e"
+}

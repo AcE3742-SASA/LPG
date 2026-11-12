@@ -1,0 +1,140 @@
+{
+  "verification": "PASS",
+  "quality_gate": "REVIEW",
+  "recommendation": "HOLD_FULL_FOR_TARGETED_CLOCK_AND_TIMING_REVIEW",
+  "source_zip": "/Users/studyhard/Desktop/Downloads/Unsorted:Unsure/pilot_v6_20260920_112624_b5ed79.zip",
+  "zip_sha256": "082d6f113aabf70391f79984673c50b988aa2e89ddca518c85d5bc6cefce9e4b",
+  "raw_file_count": 45,
+  "source_hash_count": 14,
+  "environment_matches_v5": true,
+  "task_count": 192,
+  "timed_blocks": 1344,
+  "recorded_timed_gemm_operations": 11584209,
+  "counts": {
+    "PASS": 191,
+    "REVIEW": 1
+  },
+  "paired_complete": 96,
+  "saved_correctness": {
+    "sampled": 176,
+    "full": 16
+  },
+  "max_saved_tolerance_ratio": 0.08075721777628175,
+  "relative_iqr_max_percent": 1.9743174968824773,
+  "abs_drift_max_percent": 9.099526447708,
+  "between_round_groups": 96,
+  "stable_between_round_groups": 94,
+  "flagged_task_union_count": 4,
+  "flagged_conditions": [
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "mode": "graph",
+      "round0_us": 57.681614029743834,
+      "round1_us": 65.34006569241267,
+      "relative_range_percent": 12.4505724193742,
+      "review": true,
+      "ids": [
+        "c27786f9f39b75dc72926c7f",
+        "68ad8fb6cb39bef9abfc185e"
+      ]
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "mode": "prealloc",
+      "round0_us": 31.207633674691575,
+      "round1_us": 37.9649273083802,
+      "relative_range_percent": 19.537497347661596,
+      "review": true,
+      "ids": [
+        "e741c9c7f216da8d8282b734",
+        "a6af40251224392dcdf5a814"
+      ]
+    }
+  ],
+  "graph_batch_stable_shape_dtype_count": 48,
+  "graph_batch_min_max": [
+    1,
+    64
+  ],
+  "small_cases": [
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "prealloc_us": 4.045487172760893,
+      "graph_us": 1.7231057091623307,
+      "reduction_percent": 57.40671925091346,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "prealloc_us": 6.354826966952825,
+      "graph_us": 5.055118074574637,
+      "reduction_percent": 20.452309703113837,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        128,
+        128,
+        128
+      ],
+      "dtype": "fp16",
+      "prealloc_us": 4.052692339616843,
+      "graph_us": 1.8954782633480771,
+      "reduction_percent": 53.22915966704536,
+      "graph_gemms_per_replay": 64
+    }
+  ],
+  "session": {
+    "state": "FINISHED",
+    "elapsed_seconds": 931.86286226,
+    "new_records": 192
+  },
+  "exit_codes": {
+    "launcher/20260920_111047_9496.exit_code.txt": 2,
+    "launcher/20260920_111047_9496.tee_exit_code.txt": 0,
+    "checked/runs/20260920_111047_6ICpbR/exit_code.txt": 2,
+    "sessions/20260920_111052_83b2984f/exit_code.txt": 2
+  },
+  "telemetry_rows": 931,
+  "telemetry_interval_seconds_median": 1.001,
+  "clock_event_counter_delta_seconds": {
+    "SW Power Capping": 586.000224,
+    "SW Thermal Slowdown": 0.0,
+    "HW Thermal Slowdown": 0.0
+  },
+  "identical_regenerated_exports": [
+    "summary.json",
+    "raw_attempts.jsonl",
+    "metrics.csv",
+    "blocks.csv",
+    "paired_metrics.csv",
+    "paired_fresh_holdout_LOCKED.csv",
+    "fresh_holdout_LOCKED.csv",
+    "review_queue.csv",
+    "shape_splits.csv",
+    "report.html"
+  ],
+  "raw_preserved": true,
+  "benchmark_source_modified": false,
+  "gpu_rerun_performed": false
+}

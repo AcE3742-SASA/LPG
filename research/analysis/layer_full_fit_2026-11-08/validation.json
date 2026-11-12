@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-08",
+  "status": "PREPARED_VALIDATED",
+  "analysis_version": 2,
+  "source_policy": "Shared best expanded allocate GEMM prior across all layer learners",
+  "source_training_shapes": 11498,
+  "unique_source_models": 6,
+  "source_mapping_entries": 24,
+  "selected_sources": {
+    "fp16": "mlp32_normalized",
+    "fp32": "rf_normalized"
+  },
+  "tests_passed": 9,
+  "test_seconds": 13.984,
+  "test_command": "env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 analysis/integrated_rq14_2026-10-28/.venv/bin/python -B -m unittest discover -s analysis/layer_full_fit_2026-11-08 -p 'test_*.py' -v",
+  "gemm_development_predictions_exact": 9666,
+  "static_layer_predictions": 7200,
+  "source_train_validation_shapes": 13109,
+  "layer_source_exact_or_axis_within_8_overlaps": 0,
+  "original_artifacts_unchanged": 378,
+  "layer_real_training_started": false,
+  "real_sealed_evaluation_started": false,
+  "synthetic_training_and_evaluation_passed": true,
+  "source_syntax_and_terminal_literals": "PASS",
+  "protocol_sha256": "1dbc0dc8af55be55e198120ed48c7acbaeea6bc6d33383d5e3229eae5f7404e8",
+  "files": {
+    "README.md": "ede5bc9ed85e48e2d29a12126841ae05acb696e6fdcc4c34998a8b4e4fe72535",
+    "pipeline.py": "7c9048ad39210c12d2d7ec9ae7ecf57cdfe55039a47fd3e12fea66f0bb8c987e",
+    "preserved_artifact_hashes.json": "0ed62c430353e988ac2d6f2802ccd95e30c1ec2e9dd9ca3e7ed4e8b848c3ab2a",
+    "source_prediction_check.json": "477f197a945036e67250730385435666004da01d2a3cbb1ba9ef6e9638efa173",
+    "test_pipeline.py": "ada475f4347b6c8dcaea592824e4ccd0285b975f77e5bc247c7aa78040645fa4",
+    "test_sources.py": "0b2a95ef39fce27cdbcd5803aed2138c958f22f7cf06d020c748e304c2886dc7"
+  }
+}

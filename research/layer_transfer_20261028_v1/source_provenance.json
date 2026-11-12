@@ -1,0 +1,22 @@
+{
+  "dependencies_preserved_byte_for_byte": true,
+  "layers_preserved_byte_for_byte": true,
+  "metadata_only_sources": [
+    "old layer cases and protected shapes",
+    "old layer_spec groups and GEMM roles",
+    "remeasure v4 manifest shape_splits and nonmain task shapes"
+  ],
+  "new_code_scope": [
+    "phase-specific collection and locked release guard",
+    "time-free group selection",
+    "explicit data separation",
+    "Conv fixed-intermediate components",
+    "synthetic quality checks and cost ledger"
+  ],
+  "no_timing_sources_opened": true,
+  "source_compare_sha256": "17a895cb627f317293115353305da6e2d112a37b844b6d74bc7d34e47e96f7ed",
+  "source_layers_sha256": "5ec071b82569fc62e6b65913a8428b619dbc7ad612f8846d6a8bdac8b71166ff",
+  "source_package": "layer_compare_v2",
+  "source_wrapper_sha256": "ba3927dd241dfc6fafa0f0a5b8e5acb4fc22ca8038630c41e523ef4f94ede34d",
+  "wrapper_change": "default output root is this package; existing environment checks preserved"
+}

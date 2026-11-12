@@ -1,0 +1,37 @@
+{
+  "verification": "PASS",
+  "decision": "CHECK_QUALITY_PASS_COUNTER_REVIEW_RETAINED",
+  "raw_files": 195,
+  "source_files_verified": 9,
+  "dependencies_verified": 74,
+  "reproduced_identical_outputs": 16,
+  "correctness_scopes": {
+    "sampled": 36,
+    "full": 12
+  },
+  "telemetry_samples": 10458,
+  "core_counts": {
+    "720.0": 10458
+  },
+  "memory_counts": {
+    "6801.0": 10458
+  },
+  "ranges": {
+    "power.draw": [
+      20.73,
+      67.27
+    ],
+    "temperature.gpu": [
+      32.0,
+      65.0
+    ]
+  },
+  "prior_change_abs_max_pct": 1.952178115612213,
+  "exit_codes": {
+    "launcher/20260921_191109_iEE2ga/exit_code.txt": 2,
+    "launcher/20260921_191109_iEE2ga/tee_exit_code.txt": 0,
+    "launcher/20260921_191109_iEE2ga/checked/runs/20260921_191109_Zal2Ul/exit_code.txt": 2,
+    "launches/20260921_191111_20d954/worker_0.exit_code.txt": 0,
+    "launches/20260921_191111_20d954/worker_1.exit_code.txt": 0
+  }
+}

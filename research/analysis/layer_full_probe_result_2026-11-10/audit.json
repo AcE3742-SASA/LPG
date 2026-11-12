@@ -1,0 +1,7 @@
+{
+  "archive_sha256": "fa81d2256e781d0cfbaf71fe8bc55f7984736110121baa34109866d438a53fe4",
+  "result_hashes_verified": 192,
+  "source_files_verified": 156,
+  "recorded": 0,
+  "actual_failure": "standard FP32 Conv exceeds existing FP64 tolerance at 2 output coordinates"
+}

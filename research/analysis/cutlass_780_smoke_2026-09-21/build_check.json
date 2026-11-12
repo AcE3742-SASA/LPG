@@ -1,0 +1,13 @@
+{
+  "source": "cutlass_build_check.yx7T9I.txt",
+  "sha256": "116cf66789e3f9d248ff89556fbed2c1d57db0796d2dcbabfa7e801d9ed5b6c7",
+  "checks": {
+    "cmake_cublas_enabled": true,
+    "cuda_compile_define": true,
+    "cxx_compile_define": true,
+    "cublas_resolved": true,
+    "cublaslt_resolved": true,
+    "no_missing_library_in_report": true
+  },
+  "conclusion": "No cuBLAS build-disable or missing-link evidence. Runtime verification skip cause remains unconfirmed."
+}

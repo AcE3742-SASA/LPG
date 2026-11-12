@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "worker_timeout_s": 1200,
+  "modes": [
+    "allocate",
+    "prealloc",
+    "graph"
+  ],
+  "rounds": 2,
+  "stages": [
+    {
+      "name": "s0_780_before",
+      "sm_mhz": 780,
+      "interval_ms": 50
+    },
+    {
+      "name": "s1_750",
+      "sm_mhz": 750,
+      "interval_ms": 50
+    },
+    {
+      "name": "s2_780_after",
+      "sm_mhz": 780,
+      "interval_ms": 50
+    }
+  ],
+  "fixed_cases": [
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp32",
+      "input_seed": 1456857178,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 5
+    },
+    {
+      "shape": [
+        3128,
+        680,
+        488
+      ],
+      "dtype": "fp16",
+      "input_seed": 2682971897,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 20
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "input_seed": 3255611920,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "input_seed": 2125276676,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "input_seed": 1791591957,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "input_seed": 3194529987,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    }
+  ],
+  "purpose": "Recheck the observed 780 MHz power-cap/765 MHz incident and screen 750 MHz; no full-sweep admission.",
+  "mode_order": "Rotate allocate/prealloc/graph by case index; reverse both cases and mode order in round 1.",
+  "unchanged": "v6 Timer, preheat 180 s, settle 3000 event ms, 100 ms targets, 7 blocks, 5 percent gates, input seeds and pinned Graph batches",
+  "counter_policy": "Preserve phase and block-level inconsistencies separately; never convert counter deltas or sample counts to throttled time fractions.",
+  "reference_clock_mhz": 780,
+  "background_workload_context": "No new GPU execution verified on Mac. Controller checks competing GPU processes before each stage and worker checks before each task.",
+  "incident_reference": {
+    "zip_sha256": "f722419bea5b83b54894a4d0db8efdd9c680d63f6e2f1e25c14a7110c759ac20",
+    "shape": [
+      3128,
+      680,
+      488
+    ],
+    "failed_dtype": "fp32",
+    "recorded_round": 0,
+    "preserve_input_seeds_and_graph_nodes": true,
+    "full_load_history_replayed": false
+  }
+}

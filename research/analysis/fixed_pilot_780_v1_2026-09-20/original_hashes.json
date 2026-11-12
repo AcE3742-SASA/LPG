@@ -1,0 +1,9 @@
+{
+  "fixed_pilot_v1/fixed.py": "469d56361c9532c600918eac89e7a5d4765296dd27c25d5122f7c5ecf8f10465",
+  "fixed_pilot_v1/analyze_pilot.py": "d351bf8cf14a425c5c5eacdc0dd9a10614b9a0bb46cb6319b4b0b872a7a68f26",
+  "fixed_pilot_v1/test_fixed.py": "cb50d5bbf6ac86f4ce131aa38989756daaf1451033c60344907c986b5bdecf4a",
+  "fixed_pilot_v1/protocol.json": "68a3b2352d2b5aca1746781933783572d9505e4113d21f930748ece57c77b7c2",
+  "fixed_pilot_v1/dependency_hashes.json": "d70167fe0aae4cf6a7ec4b0e1b1fef2346cbff51efa00d7d04a9a64aa7052d71",
+  "fixed_pilot_v1/launch.sh": "d3ac794223534ec8c1f96509eaf2b708c8afe4153065a2dc2290ce8109ba979d",
+  "fixed_pilot_v1/README.md": "e2501a7526fc26258e58818aed9dc03ead57d9c0b41593bbb05b5e2e89c5a9a1"
+}

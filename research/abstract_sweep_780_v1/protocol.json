@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "sm_mhz": 780,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "interval_ms": 50,
+  "segment_tasks": 120,
+  "check_rounds": 2,
+  "full_rounds": 3,
+  "check_worker_limits": [
+    30,
+    null
+  ],
+  "full_worker_timeout_s": 1209600,
+  "check_worker_timeout_s": 2400,
+  "minimum_free_disk_gib": 20,
+  "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+  "mode_order": [
+    [
+      "allocate",
+      "prealloc",
+      "graph"
+    ],
+    [
+      "prealloc",
+      "graph",
+      "allocate"
+    ],
+    [
+      "graph",
+      "allocate",
+      "prealloc"
+    ]
+  ],
+  "scope": [
+    "main"
+  ],
+  "excluded_auxiliary": [
+    "pressure",
+    "bandwidth",
+    "chain",
+    "profile"
+  ],
+  "check_cases": [
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32"
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16"
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32"
+    }
+  ],
+  "reference_780_pilot": {
+    "zip_sha256": "ccbd191f121e8663843477cce70a1247a9f0386aba4935788d3d083151be3bc8",
+    "conditions": [
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 6.112675986968952
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 4.513185399455661
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 16.021237588787628
+      },
+      {
+        "shape": [
+          64,
+          64,
+          64
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 13.155428301386472
+      },
+      {
+        "shape": [
+          392,
+          2776,
+          80
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 47.973689554676945
+      },
+      {
+        "shape": [
+          392,
+          2776,
+          80
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 46.56668198414337
+      },
+      {
+        "shape": [
+          1016,
+          2048,
+          504
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 354.90351143215355
+      },
+      {
+        "shape": [
+          1016,
+          2048,
+          504
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 354.1686613790814
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 95.14404137239687
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 93.55141887682571
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 372.84938554118446
+      },
+      {
+        "shape": [
+          1888,
+          832,
+          632
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 372.04368026168254
+      },
+      {
+        "shape": [
+          1999,
+          646,
+          425
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 244.4005941428117
+      },
+      {
+        "shape": [
+          1999,
+          646,
+          425
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 243.48184695610632
+      },
+      {
+        "shape": [
+          3216,
+          520,
+          776
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 529.9312539686046
+      },
+      {
+        "shape": [
+          3216,
+          520,
+          776
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 528.9919972419739
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp16",
+        "mode": "prealloc",
+        "median_us": 3597.7509362357005
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp16",
+        "mode": "graph",
+        "median_us": 3595.7576206752233
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp32",
+        "mode": "prealloc",
+        "median_us": 18238.805135091145
+      },
+      {
+        "shape": [
+          4096,
+          4096,
+          4096
+        ],
+        "dtype": "fp32",
+        "mode": "graph",
+        "median_us": 18237.44010925293
+      }
+    ],
+    "meaning": "Historical 780 pilot, descriptive comparison only; not a new timing target"
+  },
+  "purpose": "abstract_subset_200_shapes",
+  "subset_shapes": 200,
+  "reviewed_check": {
+    "manifest_sha256": "63a8045cb9a3d90a92a534aa31d06afbd17112421978c24f0822212c068d6d7c",
+    "results_digest": "a613a4d736b12407fd6c62960174c98b874cdb06bb011f228e958cf427286aa2"
+  }
+}

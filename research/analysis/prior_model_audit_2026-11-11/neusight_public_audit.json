@@ -1,0 +1,228 @@
+{
+  "status": "EXECUTED",
+  "original_scalar_forward_checks": 66,
+  "rows": 22083,
+  "metrics": [
+    {
+      "operator": "LINEAR",
+      "device": "NVIDIA A100 80GB PCIe",
+      "device_seen_in_public_train": false,
+      "groups": 1040,
+      "failures": 0,
+      "mape_pct": 43.932701855977896,
+      "p90_pct": 92.81477121933854,
+      "rmspe_pct": 56.33678539416001
+    },
+    {
+      "operator": "LINEAR",
+      "device": "NVIDIA A100-PCIE-40GB",
+      "device_seen_in_public_train": true,
+      "groups": 1040,
+      "failures": 0,
+      "mape_pct": 5.110692363496453,
+      "p90_pct": 11.834222222674967,
+      "rmspe_pct": 7.0921392462606745
+    },
+    {
+      "operator": "LINEAR",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_seen_in_public_train": false,
+      "groups": 1040,
+      "failures": 0,
+      "mape_pct": 28.9964441704135,
+      "p90_pct": 87.45055558426617,
+      "rmspe_pct": 48.8378038275888
+    },
+    {
+      "operator": "LINEAR",
+      "device": "NVIDIA L4",
+      "device_seen_in_public_train": false,
+      "groups": 1040,
+      "failures": 0,
+      "mape_pct": 37.01266319036043,
+      "p90_pct": 49.310593058151255,
+      "rmspe_pct": 38.39431440724977
+    },
+    {
+      "operator": "LINEAR",
+      "device": "Tesla P100-PCIE-16GB",
+      "device_seen_in_public_train": true,
+      "groups": 1040,
+      "failures": 0,
+      "mape_pct": 14.473051487181909,
+      "p90_pct": 32.408831968789634,
+      "rmspe_pct": 20.338653593712422
+    },
+    {
+      "operator": "LINEAR",
+      "device": "Tesla P4",
+      "device_seen_in_public_train": true,
+      "groups": 974,
+      "failures": 0,
+      "mape_pct": 226.18230330983334,
+      "p90_pct": 378.76883940796677,
+      "rmspe_pct": 253.81883281598158
+    },
+    {
+      "operator": "LINEAR",
+      "device": "Tesla T4",
+      "device_seen_in_public_train": true,
+      "groups": 1040,
+      "failures": 0,
+      "mape_pct": 23.684036501550263,
+      "p90_pct": 45.590361277381795,
+      "rmspe_pct": 31.124010424117476
+    },
+    {
+      "operator": "LINEAR",
+      "device": "Tesla V100-PCIE-32GB",
+      "device_seen_in_public_train": true,
+      "groups": 1040,
+      "failures": 0,
+      "mape_pct": 12.037978015755446,
+      "p90_pct": 25.80809550906225,
+      "rmspe_pct": 19.092433603059167
+    },
+    {
+      "operator": "BMM",
+      "device": "NVIDIA A100 80GB PCIe",
+      "device_seen_in_public_train": false,
+      "groups": 2487,
+      "failures": 0,
+      "mape_pct": 2.9231289800625193,
+      "p90_pct": 7.265966142139612,
+      "rmspe_pct": 4.025063462414357
+    },
+    {
+      "operator": "BMM",
+      "device": "NVIDIA A100-PCIE-40GB",
+      "device_seen_in_public_train": true,
+      "groups": 2281,
+      "failures": 0,
+      "mape_pct": 5.6347117998383665,
+      "p90_pct": 12.1613908448867,
+      "rmspe_pct": 7.172857469235442
+    },
+    {
+      "operator": "BMM",
+      "device": "NVIDIA H100 80GB HBM3",
+      "device_seen_in_public_train": false,
+      "groups": 2477,
+      "failures": 0,
+      "mape_pct": 22.83180402830457,
+      "p90_pct": 72.26896182914034,
+      "rmspe_pct": 36.31195187639611
+    },
+    {
+      "operator": "BMM",
+      "device": "NVIDIA L4",
+      "device_seen_in_public_train": false,
+      "groups": 2092,
+      "failures": 0,
+      "mape_pct": 33.11872097145669,
+      "p90_pct": 68.73081507237376,
+      "rmspe_pct": 54.12669727648817
+    },
+    {
+      "operator": "BMM",
+      "device": "Tesla P100-PCIE-16GB",
+      "device_seen_in_public_train": true,
+      "groups": 2004,
+      "failures": 0,
+      "mape_pct": 4.983905558198019,
+      "p90_pct": 10.22267024446578,
+      "rmspe_pct": 6.777706430452145
+    },
+    {
+      "operator": "BMM",
+      "device": "Tesla P4",
+      "device_seen_in_public_train": true,
+      "groups": 72,
+      "failures": 0,
+      "mape_pct": 15.07874564977212,
+      "p90_pct": 25.809493591730817,
+      "rmspe_pct": 17.559622534205086
+    },
+    {
+      "operator": "BMM",
+      "device": "Tesla T4",
+      "device_seen_in_public_train": true,
+      "groups": 1976,
+      "failures": 0,
+      "mape_pct": 28.116104205490085,
+      "p90_pct": 60.610223797702716,
+      "rmspe_pct": 38.66302659282786
+    },
+    {
+      "operator": "BMM",
+      "device": "Tesla V100-PCIE-32GB",
+      "device_seen_in_public_train": true,
+      "groups": 72,
+      "failures": 0,
+      "mape_pct": 15.025088437837455,
+      "p90_pct": 35.486041378431494,
+      "rmspe_pct": 20.18887933290508
+    },
+    {
+      "operator": "VEC",
+      "device": "NVIDIA A100-PCIE-40GB",
+      "device_seen_in_public_train": true,
+      "groups": 65,
+      "failures": 0,
+      "mape_pct": 3.9235632124419872,
+      "p90_pct": 8.247340751613699,
+      "rmspe_pct": 4.918403952134748
+    },
+    {
+      "operator": "VEC",
+      "device": "NVIDIA L4",
+      "device_seen_in_public_train": false,
+      "groups": 63,
+      "failures": 0,
+      "mape_pct": 10.533299656845081,
+      "p90_pct": 11.928878655164656,
+      "rmspe_pct": 10.637726386758084
+    },
+    {
+      "operator": "VEC",
+      "device": "Tesla P100-PCIE-16GB",
+      "device_seen_in_public_train": true,
+      "groups": 61,
+      "failures": 0,
+      "mape_pct": 2.7577972306732317,
+      "p90_pct": 3.8505955874969966,
+      "rmspe_pct": 3.0193852116161595
+    },
+    {
+      "operator": "VEC",
+      "device": "Tesla P4",
+      "device_seen_in_public_train": true,
+      "groups": 54,
+      "failures": 0,
+      "mape_pct": 0.20286938181620634,
+      "p90_pct": 0.35235682995989337,
+      "rmspe_pct": 0.24388935865487268
+    },
+    {
+      "operator": "VEC",
+      "device": "Tesla T4",
+      "device_seen_in_public_train": true,
+      "groups": 61,
+      "failures": 0,
+      "mape_pct": 1.3410073172076313,
+      "p90_pct": 2.010709696846036,
+      "rmspe_pct": 1.516083199958351
+    },
+    {
+      "operator": "VEC",
+      "device": "Tesla V100-PCIE-32GB",
+      "device_seen_in_public_train": true,
+      "groups": 64,
+      "failures": 0,
+      "mape_pct": 1.1290192179480527,
+      "p90_pct": 1.7053579746256955,
+      "rmspe_pct": 1.441814457478398
+    }
+  ],
+  "scope": "Public operator measurements with authors device profiles and pretrained weights; independent of RTX target labels. This does not reproduce whole-network paper metrics."
+}

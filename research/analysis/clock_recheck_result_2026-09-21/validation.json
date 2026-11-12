@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "zip_sha256": "274e47dcaaed7aabd6312c931e91130d29ca853bc757bc89b1e66f4dea7b74ab",
+  "raw_files": 234,
+  "raw_unchanged": true,
+  "sources_verified": 7,
+  "dependencies_verified": 42,
+  "reproduced_outputs_byte_equal": [
+    "analysis.json",
+    "clock_windows.json",
+    "report.md",
+    "measurements.csv",
+    "paired_metrics.csv",
+    "review_queue.csv",
+    "repeat_780.csv"
+  ],
+  "summary_equal": true,
+  "worker_exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "expected_exits": {
+    "exit_code.txt": "2",
+    "tee_exit_code.txt": "0"
+  },
+  "unique_block_timestamps": 756,
+  "unique_stage_result_hashes": 3,
+  "correctness_records_passed": 108,
+  "new_gpu_executions": 0,
+  "measurement_count": 108,
+  "blocks": 756,
+  "triplets": 36,
+  "task_order_inputs_graph_denominators_statistics": "verified by unchanged analyzer and block arithmetic",
+  "clock_set_and_reset_commands_verified": true
+}

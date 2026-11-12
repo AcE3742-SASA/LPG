@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archive": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/clock_audit_2026-09-20_v1.zip",
+  "sha256": "72c4f47ee579e90cae200f3214d712ea8e09422635aba40b2ef5de273ed721ae",
+  "file_count": 9,
+  "bytes": 28808,
+  "files": {
+    "README.md": "cb1bc65d3e3ee137dada3574d4cd8ef93183cb06a95dbf15610da0cf5497f800",
+    "VALIDATION.md": "80e784f86f70c05fe2697e90c65e2f76f50cf87a1acc6df6d9122c0912d039a9",
+    "analyze.py": "5ae0767d83cf39c1fbb6899785466ed0a7254b6dadaf7c79775b5e9a0d34acd9",
+    "audit.py": "d41333bd3ab89789bbba8de439652deb96215a4c69b0947b8b30990b2c5b5866",
+    "baseline_v6.json": "8c10d1d70e091071e1bd2ce4b87d6e90a05d35f41c32595fd8066d5246a2180b",
+    "launch.sh": "5e92001da2c1c7844914e0dc9676349fbf2846a74ec5a15b0cc745968cc27801",
+    "telemetry.py": "22884f54fbb62548c4dba828e9be4948c271f3f2e413f21efd46a002ee6dc51e",
+    "test_clock_audit.py": "00d7d52a93cf4fb81c77d9a292f00710ed31aa714d44e2d0c8c047d38660b375",
+    "trace_tools.py": "c2045f134487f4c63871bfff5d6914515ff38ecff0d4bcbd5d6eacfc5d632481"
+  }
+}

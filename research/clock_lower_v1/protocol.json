@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "memory_mhz": 6801,
+  "power_limit_w": 70,
+  "worker_timeout_s": 1200,
+  "modes": [
+    "allocate",
+    "prealloc",
+    "graph"
+  ],
+  "rounds": 2,
+  "stages": [
+    {
+      "name": "s0_750_before",
+      "sm_mhz": 750,
+      "interval_ms": 50
+    },
+    {
+      "name": "s1_780",
+      "sm_mhz": 780,
+      "interval_ms": 50
+    },
+    {
+      "name": "s2_810",
+      "sm_mhz": 810,
+      "interval_ms": 50
+    },
+    {
+      "name": "s3_750_after",
+      "sm_mhz": 750,
+      "interval_ms": 50
+    }
+  ],
+  "fixed_cases": [
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp32",
+      "input_seed": 2630334041,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 9
+    },
+    {
+      "shape": [
+        3216,
+        520,
+        776
+      ],
+      "dtype": "fp32",
+      "input_seed": 2190210363,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 4
+    },
+    {
+      "shape": [
+        1016,
+        2048,
+        504
+      ],
+      "dtype": "fp32",
+      "input_seed": 2487590733,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 6
+    },
+    {
+      "shape": [
+        1999,
+        646,
+        425
+      ],
+      "dtype": "fp32",
+      "input_seed": 610257914,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 8
+    },
+    {
+      "shape": [
+        1888,
+        832,
+        632
+      ],
+      "dtype": "fp16",
+      "input_seed": 2241190505,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 29
+    },
+    {
+      "shape": [
+        392,
+        2776,
+        80
+      ],
+      "dtype": "fp32",
+      "input_seed": 2739574071,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 56
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp16",
+      "input_seed": 2125276676,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "dtype": "fp32",
+      "input_seed": 3255611920,
+      "correctness_scope": "sampled",
+      "correctness_points": 256,
+      "graph_gemms_per_replay": 1
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp16",
+      "input_seed": 3194529987,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    },
+    {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "dtype": "fp32",
+      "input_seed": 1791591957,
+      "correctness_scope": "full",
+      "correctness_points": 4096,
+      "graph_gemms_per_replay": 64
+    }
+  ],
+  "purpose": "Screen lower common clock candidates across three execution modes. No final clock selection or full sweep.",
+  "mode_order": "Rotate allocate/prealloc/graph by case index; reverse both cases and mode order in round 1.",
+  "unchanged": "v6 Timer, preheat 180 s, settle 3000 event ms, 100 ms targets, 7 blocks, 5 percent gates, input seeds and pinned Graph batches",
+  "counter_policy": "Preserve phase and block-level inconsistencies separately; never convert counter deltas or sample counts to throttled time fractions."
+}

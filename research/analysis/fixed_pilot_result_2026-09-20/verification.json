@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "zip_sha256": "b3ee800dbbbc68407de5a8aecbc55938e558a7abf71d8ff1e3aa9b23f5c3b3f5",
+  "raw_files": 274,
+  "raw_unchanged": true,
+  "sources_verified": 7,
+  "dependencies_verified": 35,
+  "reproduced_outputs_byte_equal": [
+    "analysis.json",
+    "clock_windows.json",
+    "report.md",
+    "measurements.csv",
+    "paired_metrics.csv",
+    "review_queue.csv"
+  ],
+  "summary_equal": true,
+  "expected_exits": {
+    "worker.exit_code.txt": "0",
+    "exit_code.txt": "2",
+    "tee_exit_code.txt": "0"
+  },
+  "checked_exit_code": 2,
+  "task_order_inputs_graph_denominators_timing_statistics_correctness_records": "verified by unchanged analyzer",
+  "environment_executable": "/home/eu/miniconda3/envs/ai_env/bin/python",
+  "clock_set_and_reset_commands_verified": true
+}

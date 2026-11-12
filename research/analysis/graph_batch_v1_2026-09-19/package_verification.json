@@ -1,0 +1,15 @@
+{
+  "archive": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/graph_batch_2026-09-19_v1.zip",
+  "sha256": "d9e40e2afbb2d6a8d3715a60e9d9206eda295bbdd7b71bf78905bdf7f6345a29",
+  "bytes": 20651,
+  "files": 7,
+  "tests_new": 9,
+  "tests_reused": 22,
+  "syntax": "PASS",
+  "source_v5_hashes_unchanged": 13,
+  "zip_byte_comparison": "PASS",
+  "gpu_execution": "PENDING",
+  "tasks": 48,
+  "measured_blocks": 336,
+  "profiler_enabled": false
+}

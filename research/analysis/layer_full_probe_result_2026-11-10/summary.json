@@ -1,0 +1,26 @@
+{
+  "gate": "FAIL",
+  "scope": "validation_01",
+  "collection": "INCOMPLETE",
+  "expected": 1080,
+  "recorded": 0,
+  "missing": 1080,
+  "counts": {},
+  "comparison_counts": {},
+  "restoration": "COMMANDS_ACCEPTED",
+  "execution_state": "FAILED_OR_INTERRUPTED",
+  "worker_complete": false,
+  "sensor_info": {
+    "samples": 36,
+    "requested_interval_ms": 50,
+    "observed_interval_seconds_median": 0.05299997329711914,
+    "observed_interval_seconds_max": 0.10300016403198242,
+    "unavailable_fields": [],
+    "sensor_resolution_verified": false
+  },
+  "comparisons": [],
+  "measurement_flags": {},
+  "component_round_review": [],
+  "interpretation": "Implementation-path gap; not prediction error or Delta_assembly.",
+  "explicit_values": "withheld under restricted_explicit; do not use for RQ3 selection"
+}

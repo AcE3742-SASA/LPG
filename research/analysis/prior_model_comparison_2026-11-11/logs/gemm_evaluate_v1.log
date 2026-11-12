@@ -1,0 +1,5 @@
+/Users/studyhard/Claude/자율연구/analysis/prior_model_comparison_2026-11-11/sources/neusight/neusight/Dataset/dataset.py:61: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+  p = re.compile('sgemm_(\d+)+x(\d+)')
+/Users/studyhard/Claude/자율연구/analysis/prior_model_comparison_2026-11-11/sources/neusight/neusight/Dataset/dataset.py:69: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+  p = re.compile('tilesize(\d+)+x(\d+)')
+PASS: GEMM test comparison complete

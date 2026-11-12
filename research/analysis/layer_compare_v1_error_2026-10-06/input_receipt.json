@@ -1,0 +1,13 @@
+{
+  "original_zip": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/layer_compare_20261006_141532_Fr6bq0_8c2c9fab.zip",
+  "original_zip_sha256": "5c270e075b4ee84e98d119968d7c6b5ca967f1494b31c8b41dd442a8dcd949b9",
+  "crc_pass": true,
+  "embedded_result_hashes": 267,
+  "source_files_matched_original_release": 127,
+  "records": 48,
+  "correctness_files": 48,
+  "stored_correctness_passed": 48,
+  "original_execution_state": "FAILED_OR_INTERRUPTED",
+  "original_restoration": "COMMANDS_ACCEPTED",
+  "gpu_rerun_performed": false
+}

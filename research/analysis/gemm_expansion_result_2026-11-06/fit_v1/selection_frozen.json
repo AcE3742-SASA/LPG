@@ -1,0 +1,11 @@
+{
+  "accuracy_first_sha256": "a1f80d93e677fc139490c0fff7abcfcb8f1cc5668c57a42ba98c5f308df48e61",
+  "accuracy_selection_policy_sha256": "55dd53746258048c5504bc44ba95d58b58b8f3094d46cff0493dc8567d480ab5",
+  "locked_test_opened": false,
+  "protocol_sha256": "4eba0953fc21bc080bca5d7595d7bf9524bfeb9debd10a0544c7dc0d8551d120",
+  "selected_baseline_model_count": 6,
+  "selected_full_model_count": 6,
+  "selected_sha256": "30df54d4d1c745a18f59069c972fc8dd7f1757ce72e4348e681d4891d44cdb7d",
+  "status": "DEVELOPMENT_SELECTION_FROZEN",
+  "time": "2026-11-05T19:50:18.722393+00:00"
+}

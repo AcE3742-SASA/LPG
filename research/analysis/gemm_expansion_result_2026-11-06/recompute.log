@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/studyhard/Claude/자율연구/analysis/gemm_expansion_result_2026-11-06/verify_expansion.py", line 137, in <module>
+    if __name__=='__main__':
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studyhard/Claude/자율연구/analysis/gemm_expansion_result_2026-11-06/verify_expansion.py", line 85, in recompute
+    require(result==read(RAW/'summary.json'),'Recomputed public summary differs')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studyhard/Claude/자율연구/analysis/gemm_expansion_result_2026-11-06/verify_expansion.py", line 30, in require
+    if not condition:raise ValueError(message)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Recomputed public summary differs

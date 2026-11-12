@@ -1,0 +1,3396 @@
+{
+  "raw_file_count": 157,
+  "baseline_hashes_checked": 13,
+  "diagnostic_sources_checked": 6,
+  "exit_codes": {
+    "exit_code.txt": 0,
+    "export_06.exit_code.txt": 0,
+    "export_02.exit_code.txt": 0,
+    "export_05.exit_code.txt": 0,
+    "export_01.exit_code.txt": 0,
+    "tee_exit_code.txt": 0,
+    "analysis.exit_code.txt": 0,
+    "export_00.exit_code.txt": 0,
+    "export_04.exit_code.txt": 0,
+    "export_03.exit_code.txt": 0,
+    "export_07.exit_code.txt": 0,
+    "plain_before.exit_code.txt": 0,
+    "source_check.exit_code.txt": 0,
+    "nsys.exit_code.txt": 0,
+    "plain_after.exit_code.txt": 0,
+    "checked/runs/20260919_175307_2zqjCE/exit_code.txt": 0
+  },
+  "trusted_analyzer_exact_reproduction": true,
+  "correctness_passes": 24,
+  "kernel_count": 1157198,
+  "traces": [
+    {
+      "file": "capture.1.sqlite",
+      "kernel_count": 170646,
+      "matched_block_count": 7,
+      "diagnostics": [
+        {
+          "timestamp": -186919650804,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Process was launched by the profiler, see /tmp/nvidia/nsight_systems/quadd_session_1028389/streams/pid_28403_stdout.log and stderr.log for program output",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": -186904676826,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Common injection library initialized successfully.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": -186204115480,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Buffers holding CUDA trace data will be flushed on CudaProfilerStop() call. See --flush-on-cudaprofilerstop to control this behavior.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": -186196191753,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Loaded CUPTI library: /usr/local/cuda-13.4/nsight-systems-2026.3.2/target-linux-x64/libcupti.so.13.4",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": -186056069929,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Enabling trace for device graph launch",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": -186056058758,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA injection initialized successfully.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 0,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has started.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 24967119,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling started due to cudaProfilerStart API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 27731692,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "NVTX injection initialized successfully.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 335399409,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all NVTX events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 335400832,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of NVTX events collected: \t7.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 335402936,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all CUDA events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 335403246,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of CUDA events collected: \t512051.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 1172980871,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has stopped.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 1173065822,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA hardware tracing is not supported on this system. A legacy (software instrumented) trace was collected instead.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 1173976986,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Number of CUPTI events produced: \t512135, CUPTI buffers: 50.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 2882843048,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of Debuginfod queries: 0 (successful queries: 0, timed out queries: 0).",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2882849771,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of used Debuginfod cached files: 0.",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2882850953,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Total time spent on all Debuginfod queries: 0 sec (successful queries: 0 sec).",
+          "globalPid": 281474976710656
+        }
+      ],
+      "memory_counts": {}
+    },
+    {
+      "file": "capture.2.sqlite",
+      "kernel_count": 199682,
+      "matched_block_count": 7,
+      "diagnostics": [
+        {
+          "timestamp": -3480941163,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling stopped due to cudaProfilerStop API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 0,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has started.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 24910837,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling started due to cudaProfilerStart API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 345251165,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all NVTX events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 345252688,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of NVTX events collected: \t7.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 345254431,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all CUDA events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 345254782,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of CUDA events collected: \t499317.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 900970907,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has stopped.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 901109954,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA hardware tracing is not supported on this system. A legacy (software instrumented) trace was collected instead.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 901976815,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Number of CUPTI events produced: \t499401, CUPTI buffers: 50.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 2712674777,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of Debuginfod queries: 0 (successful queries: 0, timed out queries: 0).",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2712680818,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of used Debuginfod cached files: 0.",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2712682011,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Total time spent on all Debuginfod queries: 0 sec (successful queries: 0 sec).",
+          "globalPid": 281474976710656
+        }
+      ],
+      "memory_counts": {}
+    },
+    {
+      "file": "capture.3.sqlite",
+      "kernel_count": 125650,
+      "matched_block_count": 7,
+      "diagnostics": [
+        {
+          "timestamp": -3432344501,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling stopped due to cudaProfilerStop API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 0,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has started.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 24447325,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling started due to cudaProfilerStart API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 244759048,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all NVTX events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 244760520,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of NVTX events collected: \t7.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 244762544,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all CUDA events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 244762885,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of CUDA events collected: \t377062.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 874758005,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has stopped.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 874871139,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA hardware tracing is not supported on this system. A legacy (software instrumented) trace was collected instead.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 875757406,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Number of CUPTI events produced: \t377140, CUPTI buffers: 50.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 2496112196,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of Debuginfod queries: 0 (successful queries: 0, timed out queries: 0).",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2496119099,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of used Debuginfod cached files: 0.",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2496120291,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Total time spent on all Debuginfod queries: 0 sec (successful queries: 0 sec).",
+          "globalPid": 281474976710656
+        }
+      ],
+      "memory_counts": {}
+    },
+    {
+      "file": "capture.4.sqlite",
+      "kernel_count": 8659,
+      "matched_block_count": 7,
+      "diagnostics": [
+        {
+          "timestamp": -3588177406,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling stopped due to cudaProfilerStop API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 0,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has started.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 25530606,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling started due to cudaProfilerStart API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 34152900,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all NVTX events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 34153912,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of NVTX events collected: \t7.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 34155665,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all CUDA events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 34155916,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of CUDA events collected: \t26089.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 721434765,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has stopped.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 721553524,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA hardware tracing is not supported on this system. A legacy (software instrumented) trace was collected instead.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 722387472,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Number of CUPTI events produced: \t27017, CUPTI buffers: 50.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 1824019229,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of Debuginfod queries: 0 (successful queries: 0, timed out queries: 0).",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 1824024920,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of used Debuginfod cached files: 0.",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 1824025902,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Total time spent on all Debuginfod queries: 0 sec (successful queries: 0 sec).",
+          "globalPid": 281474976710656
+        }
+      ],
+      "memory_counts": {}
+    },
+    {
+      "file": "capture.5.sqlite",
+      "kernel_count": 217,
+      "matched_block_count": 7,
+      "diagnostics": [
+        {
+          "timestamp": -3605352381,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling stopped due to cudaProfilerStop API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 0,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has started.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 18042709,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all NVTX events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 18043951,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of NVTX events collected: \t7.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 18045454,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all CUDA events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 18045755,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of CUDA events collected: \t763.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 25125791,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling started due to cudaProfilerStart API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 719815660,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has stopped.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 719943201,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA hardware tracing is not supported on this system. A legacy (software instrumented) trace was collected instead.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 720676679,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Number of CUPTI events produced: \t831, CUPTI buffers: 50.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 1765715449,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of Debuginfod queries: 0 (successful queries: 0, timed out queries: 0).",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 1765720859,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of used Debuginfod cached files: 0.",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 1765721911,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Total time spent on all Debuginfod queries: 0 sec (successful queries: 0 sec).",
+          "globalPid": 281474976710656
+        }
+      ],
+      "memory_counts": {}
+    },
+    {
+      "file": "capture.6.sqlite",
+      "kernel_count": 56,
+      "matched_block_count": 7,
+      "diagnostics": [
+        {
+          "timestamp": -3630010818,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling stopped due to cudaProfilerStop API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 0,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has started.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 18316427,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all NVTX events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 18317249,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of NVTX events collected: \t7.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 18318311,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all CUDA events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 18318581,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of CUDA events collected: \t392.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 25483785,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling started due to cudaProfilerStart API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 727796035,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has stopped.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 727871828,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA hardware tracing is not supported on this system. A legacy (software instrumented) trace was collected instead.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 728600928,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Number of CUPTI events produced: \t460, CUPTI buffers: 50.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 1768543773,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of Debuginfod queries: 0 (successful queries: 0, timed out queries: 0).",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 1768549534,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of used Debuginfod cached files: 0.",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 1768550606,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Total time spent on all Debuginfod queries: 0 sec (successful queries: 0 sec).",
+          "globalPid": 281474976710656
+        }
+      ],
+      "memory_counts": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 56
+      }
+    },
+    {
+      "file": "capture.7.sqlite",
+      "kernel_count": 376320,
+      "matched_block_count": 7,
+      "diagnostics": [
+        {
+          "timestamp": -3483229235,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling stopped due to cudaProfilerStop API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 0,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has started.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 24992989,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling started due to cudaProfilerStart API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 365156660,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all NVTX events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 365158303,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of NVTX events collected: \t7.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 365160037,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all CUDA events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 365160347,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of CUDA events collected: \t382312.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 743356836,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has stopped.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 743475806,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA hardware tracing is not supported on this system. A legacy (software instrumented) trace was collected instead.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 744353057,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Number of CUPTI events produced: \t384402, CUPTI buffers: 50.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 2607497351,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of Debuginfod queries: 0 (successful queries: 0, timed out queries: 0).",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2607503653,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of used Debuginfod cached files: 0.",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2607504675,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Total time spent on all Debuginfod queries: 0 sec (successful queries: 0 sec).",
+          "globalPid": 281474976710656
+        }
+      ],
+      "memory_counts": {}
+    },
+    {
+      "file": "capture.8.sqlite",
+      "kernel_count": 275968,
+      "matched_block_count": 7,
+      "diagnostics": [
+        {
+          "timestamp": -3490219236,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling stopped due to cudaProfilerStop API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 0,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has started.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 24699132,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Profiling started due to cudaProfilerStart API invoked in the application.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 274630965,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all NVTX events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 274632398,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of NVTX events collected: \t7.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 274634121,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 2,
+          "text": "Not all CUDA events might have been collected.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 274634451,
+          "timestampType": 2,
+          "source": 3,
+          "severity": 1,
+          "text": "Number of CUDA events collected: \t278236.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 768740749,
+          "timestampType": 1,
+          "source": 3,
+          "severity": 1,
+          "text": "Profiling has stopped.",
+          "globalPid": -144115188075855872
+        },
+        {
+          "timestamp": 768887296,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "CUDA hardware tracing is not supported on this system. A legacy (software instrumented) trace was collected instead.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 769746653,
+          "timestampType": 1,
+          "source": 1,
+          "severity": 1,
+          "text": "Number of CUPTI events produced: \t278720, CUPTI buffers: 50.",
+          "globalPid": 281951499976704
+        },
+        {
+          "timestamp": 2561400966,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of Debuginfod queries: 0 (successful queries: 0, timed out queries: 0).",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2561408470,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Number of used Debuginfod cached files: 0.",
+          "globalPid": 281474976710656
+        },
+        {
+          "timestamp": 2561409502,
+          "timestampType": 1,
+          "source": 2,
+          "severity": 1,
+          "text": "Total time spent on all Debuginfod queries: 0 sec (successful queries: 0 sec).",
+          "globalPid": 281474976710656
+        }
+      ],
+      "memory_counts": {}
+    }
+  ],
+  "boundaries": [
+    {
+      "pass": "plain_before",
+      "case": "c00",
+      "approx_prepare_to_first_block_ms": 0.02049900210998601,
+      "first_block_us": 3.968900215015247,
+      "last_block_us": 3.9795047975684374,
+      "median_us": 3.9739045327996805,
+      "first_last_drift": 0.0026719196701068585,
+      "flags": []
+    },
+    {
+      "pass": "plain_before",
+      "case": "c01",
+      "approx_prepare_to_first_block_ms": 0.01969499745523251,
+      "first_block_us": 6.322799703839426,
+      "last_block_us": 6.322477994005544,
+      "median_us": 6.3226077390509925,
+      "first_last_drift": -5.0880914934977215e-05,
+      "flags": []
+    },
+    {
+      "pass": "plain_before",
+      "case": "c02",
+      "approx_prepare_to_first_block_ms": 0.02151899896259124,
+      "first_block_us": 3.9615692267947806,
+      "last_block_us": 3.9513534074101684,
+      "median_us": 3.955270347442682,
+      "first_last_drift": -0.002578730497883459,
+      "flags": []
+    },
+    {
+      "pass": "plain_before",
+      "case": "c03",
+      "approx_prepare_to_first_block_ms": 0.026974000659066633,
+      "first_block_us": 80.21552757887741,
+      "last_block_us": 80.20506930772221,
+      "median_us": 80.20717565741624,
+      "first_last_drift": -0.00013037714107055594,
+      "flags": []
+    },
+    {
+      "pass": "plain_before",
+      "case": "c04",
+      "approx_prepare_to_first_block_ms": 0.02889999834215473,
+      "first_block_us": 3268.4097290039062,
+      "last_block_us": 3267.947289251512,
+      "median_us": 3267.947289251512,
+      "first_last_drift": -0.00014148769301796632,
+      "flags": []
+    },
+    {
+      "pass": "plain_before",
+      "case": "c05",
+      "approx_prepare_to_first_block_ms": 0.02797200004430067,
+      "first_block_us": 12825.85620880127,
+      "last_block_us": 12828.800201416016,
+      "median_us": 12825.85620880127,
+      "first_last_drift": 0.00022953575705346576,
+      "flags": []
+    },
+    {
+      "pass": "plain_before",
+      "case": "c06",
+      "approx_prepare_to_first_block_ms": 0.024550999912904103,
+      "first_block_us": 1.73188471741264,
+      "last_block_us": 1.73188471741264,
+      "median_us": 1.7318670078286045,
+      "first_last_drift": 0.0,
+      "flags": []
+    },
+    {
+      "pass": "plain_before",
+      "case": "c07",
+      "approx_prepare_to_first_block_ms": 0.02133499907469627,
+      "first_block_us": 5.05190952696075,
+      "last_block_us": 5.052168392440648,
+      "median_us": 5.052150646073918,
+      "first_last_drift": 5.1241115565648135e-05,
+      "flags": []
+    },
+    {
+      "pass": "nsys",
+      "case": "c00",
+      "approx_prepare_to_first_block_ms": 369.9059009998851,
+      "first_block_us": 6.642554349881297,
+      "last_block_us": 6.6844493588369245,
+      "median_us": 6.6844493588369245,
+      "first_last_drift": 0.0063070630286038536,
+      "flags": []
+    },
+    {
+      "pass": "nsys",
+      "case": "c01",
+      "approx_prepare_to_first_block_ms": 187.40921299994528,
+      "first_block_us": 8.651269633096506,
+      "last_block_us": 8.65612873846858,
+      "median_us": 8.65612873846858,
+      "first_last_drift": 0.0005616638456723418,
+      "flags": []
+    },
+    {
+      "pass": "nsys",
+      "case": "c02",
+      "approx_prepare_to_first_block_ms": 188.02359799737485,
+      "first_block_us": 6.615979292930667,
+      "last_block_us": 6.651614303376349,
+      "median_us": 6.651614303376349,
+      "first_last_drift": 0.005386203442891574,
+      "flags": []
+    },
+    {
+      "pass": "nsys",
+      "case": "c03",
+      "approx_prepare_to_first_block_ms": 188.17061399946385,
+      "first_block_us": 70.72421592767911,
+      "last_block_us": 81.34774999842108,
+      "median_us": 81.34451814495756,
+      "first_last_drift": 0.15021070126256816,
+      "flags": [
+        "first_last_drift"
+      ]
+    },
+    {
+      "pass": "nsys",
+      "case": "c04",
+      "approx_prepare_to_first_block_ms": 188.78425499874118,
+      "first_block_us": 2732.8444450132306,
+      "last_block_us": 3270.4908309444304,
+      "median_us": 3269.4256690240677,
+      "first_last_drift": 0.19673508564026465,
+      "flags": [
+        "first_last_drift"
+      ]
+    },
+    {
+      "pass": "nsys",
+      "case": "c05",
+      "approx_prepare_to_first_block_ms": 189.31470400225834,
+      "first_block_us": 11358.931541442871,
+      "last_block_us": 12753.064155578613,
+      "median_us": 12685.839653015137,
+      "first_last_drift": 0.12273448510973702,
+      "flags": [
+        "first_last_drift"
+      ]
+    },
+    {
+      "pass": "nsys",
+      "case": "c06",
+      "approx_prepare_to_first_block_ms": 188.6258230032816,
+      "first_block_us": 1.8823071604683284,
+      "last_block_us": 1.8760683990660167,
+      "median_us": 1.8760946534928822,
+      "first_last_drift": -0.003314422605054211,
+      "flags": []
+    },
+    {
+      "pass": "nsys",
+      "case": "c07",
+      "approx_prepare_to_first_block_ms": 188.18225600305783,
+      "first_block_us": 5.327850580215454,
+      "last_block_us": 5.316766051502971,
+      "median_us": 5.316766051502971,
+      "first_last_drift": -0.002080487908884827,
+      "flags": []
+    },
+    {
+      "pass": "plain_after",
+      "case": "c00",
+      "approx_prepare_to_first_block_ms": 0.0215819990495163,
+      "first_block_us": 4.080999005955507,
+      "last_block_us": 4.074440458220185,
+      "median_us": 4.0814998959443045,
+      "first_last_drift": -0.0016070936860680051,
+      "flags": []
+    },
+    {
+      "pass": "plain_after",
+      "case": "c01",
+      "approx_prepare_to_first_block_ms": 0.0218049970751224,
+      "first_block_us": 6.329822660848857,
+      "last_block_us": 6.3213512357960155,
+      "median_us": 6.3213550938969165,
+      "first_last_drift": -0.0013383352910086804,
+      "flags": []
+    },
+    {
+      "pass": "plain_after",
+      "case": "c02",
+      "approx_prepare_to_first_block_ms": 0.017898000815876003,
+      "first_block_us": 4.090463062319505,
+      "last_block_us": 4.085010101653388,
+      "median_us": 4.085219806869285,
+      "first_last_drift": -0.0013330912864971327,
+      "flags": []
+    },
+    {
+      "pass": "plain_after",
+      "case": "c03",
+      "approx_prepare_to_first_block_ms": 0.023299000092080746,
+      "first_block_us": 81.48078669130412,
+      "last_block_us": 80.86839065053104,
+      "median_us": 80.8616962308198,
+      "first_last_drift": -0.007515833678596985,
+      "flags": []
+    },
+    {
+      "pass": "plain_after",
+      "case": "c04",
+      "approx_prepare_to_first_block_ms": 0.02097999974247955,
+      "first_block_us": 3300.8928934733076,
+      "last_block_us": 3261.7398579915366,
+      "median_us": 3261.610666910807,
+      "first_last_drift": -0.011861346837150163,
+      "flags": []
+    },
+    {
+      "pass": "plain_after",
+      "case": "c05",
+      "approx_prepare_to_first_block_ms": 0.023454001156380855,
+      "first_block_us": 12890.368461608887,
+      "last_block_us": 12917.852401733398,
+      "median_us": 12915.712356567383,
+      "first_last_drift": 0.002132129908184282,
+      "flags": []
+    },
+    {
+      "pass": "plain_after",
+      "case": "c06",
+      "approx_prepare_to_first_block_ms": 0.01727699927869253,
+      "first_block_us": 1.7317766096533798,
+      "last_block_us": 1.7317882398279703,
+      "median_us": 1.7318314564994592,
+      "first_last_drift": 6.715747588620774e-06,
+      "flags": []
+    },
+    {
+      "pass": "plain_after",
+      "case": "c07",
+      "approx_prepare_to_first_block_ms": 0.01846999981464137,
+      "first_block_us": 5.052634427462581,
+      "last_block_us": 5.052305733887509,
+      "median_us": 5.052634427462581,
+      "first_last_drift": -6.50539000577178e-05,
+      "flags": []
+    }
+  ],
+  "blocks": [
+    {
+      "label": "audit/c00/block/0",
+      "gemm_calls": 24378,
+      "kernel_count": 24378,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 24378
+      },
+      "kernel_mean_per_gemm_us": 1.9899308803019116,
+      "first_16_kernel_us": [
+        2.208,
+        2.176,
+        1.984,
+        1.984,
+        1.984,
+        2.016,
+        1.984,
+        2.016,
+        1.984,
+        1.984,
+        1.984,
+        2.016,
+        2.016,
+        1.984,
+        1.984,
+        1.984
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cuKernelGetFunction": 24378,
+        "cuLaunchKernel": 24378,
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c00/block/1",
+      "gemm_calls": 24378,
+      "kernel_count": 24378,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 24378
+      },
+      "kernel_mean_per_gemm_us": 1.9897446057921078,
+      "first_16_kernel_us": [
+        1.984,
+        2.016,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        2.016,
+        1.984,
+        1.984,
+        1.984,
+        1.952,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cuKernelGetFunction": 24378,
+        "cuLaunchKernel": 24378,
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c00/block/2",
+      "gemm_calls": 24378,
+      "kernel_count": 24378,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 24378
+      },
+      "kernel_mean_per_gemm_us": 1.9901793010091067,
+      "first_16_kernel_us": [
+        2.016,
+        2.016,
+        1.984,
+        2.016,
+        1.984,
+        2.016,
+        1.984,
+        1.984,
+        2.016,
+        2.016,
+        1.984,
+        2.016,
+        2.016,
+        1.984,
+        1.984,
+        1.984
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cuKernelGetFunction": 24378,
+        "cuLaunchKernel": 24378,
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c00/block/3",
+      "gemm_calls": 24378,
+      "kernel_count": 24378,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 24378
+      },
+      "kernel_mean_per_gemm_us": 1.9902301665436049,
+      "first_16_kernel_us": [
+        1.984,
+        2.016,
+        2.016,
+        2.016,
+        1.984,
+        1.984,
+        1.984,
+        2.016,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cuKernelGetFunction": 24378,
+        "cuLaunchKernel": 24378,
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c00/block/4",
+      "gemm_calls": 24378,
+      "kernel_count": 24378,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 24378
+      },
+      "kernel_mean_per_gemm_us": 1.9898199606202314,
+      "first_16_kernel_us": [
+        1.984,
+        1.984,
+        1.984,
+        2.016,
+        1.984,
+        2.016,
+        1.952,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        2.016
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cuKernelGetFunction": 24378,
+        "cuLaunchKernel": 24378,
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c00/block/5",
+      "gemm_calls": 24378,
+      "kernel_count": 24378,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 24378
+      },
+      "kernel_mean_per_gemm_us": 1.9901654360488965,
+      "first_16_kernel_us": [
+        1.984,
+        2.016,
+        1.984,
+        2.016,
+        1.984,
+        1.984,
+        1.984,
+        2.016,
+        1.984,
+        1.984,
+        2.016,
+        1.984,
+        1.984,
+        2.016,
+        1.984,
+        1.984
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cuKernelGetFunction": 24378,
+        "cuLaunchKernel": 24378,
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c00/block/6",
+      "gemm_calls": 24378,
+      "kernel_count": 24378,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 24378
+      },
+      "kernel_mean_per_gemm_us": 1.989949667733202,
+      "first_16_kernel_us": [
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        2.016,
+        2.016,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984,
+        1.984
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cuKernelGetFunction": 24378,
+        "cuLaunchKernel": 24378,
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c01/block/0",
+      "gemm_calls": 14263,
+      "kernel_count": 28526,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 14263,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 14263
+      },
+      "kernel_mean_per_gemm_us": 5.482204935847998,
+      "first_16_kernel_us": [
+        3.36,
+        2.144,
+        3.328,
+        2.144,
+        3.36,
+        2.112,
+        3.36,
+        2.112,
+        3.36,
+        2.112,
+        3.328,
+        2.112,
+        3.328,
+        2.112,
+        3.328,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 14263,
+        "cudaLaunchKernelExC_v11060": 14263,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 14263
+      }
+    },
+    {
+      "label": "audit/c01/block/1",
+      "gemm_calls": 14263,
+      "kernel_count": 28526,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 14263,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 14263
+      },
+      "kernel_mean_per_gemm_us": 5.48371380494987,
+      "first_16_kernel_us": [
+        3.36,
+        2.112,
+        3.361,
+        2.144,
+        3.392,
+        2.112,
+        3.36,
+        2.144,
+        3.328,
+        2.144,
+        3.328,
+        2.112,
+        3.328,
+        2.144,
+        3.36,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 14263,
+        "cudaLaunchKernelExC_v11060": 14263,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 14263
+      }
+    },
+    {
+      "label": "audit/c01/block/2",
+      "gemm_calls": 14263,
+      "kernel_count": 28526,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 14263,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 14263
+      },
+      "kernel_mean_per_gemm_us": 5.482408469466452,
+      "first_16_kernel_us": [
+        3.36,
+        2.112,
+        3.328,
+        2.144,
+        3.328,
+        2.112,
+        3.328,
+        2.112,
+        3.328,
+        2.112,
+        3.36,
+        2.144,
+        3.36,
+        2.112,
+        3.36,
+        2.144
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 14263,
+        "cudaLaunchKernelExC_v11060": 14263,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 14263
+      }
+    },
+    {
+      "label": "audit/c01/block/3",
+      "gemm_calls": 14263,
+      "kernel_count": 28526,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 14263,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 14263
+      },
+      "kernel_mean_per_gemm_us": 5.482813643693473,
+      "first_16_kernel_us": [
+        3.36,
+        2.112,
+        3.36,
+        2.144,
+        3.36,
+        2.112,
+        3.328,
+        2.112,
+        3.36,
+        2.112,
+        3.36,
+        2.112,
+        3.36,
+        2.112,
+        3.328,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 14263,
+        "cudaLaunchKernelExC_v11060": 14263,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 14263
+      }
+    },
+    {
+      "label": "audit/c01/block/4",
+      "gemm_calls": 14263,
+      "kernel_count": 28526,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 14263,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 14263
+      },
+      "kernel_mean_per_gemm_us": 5.482603098927294,
+      "first_16_kernel_us": [
+        3.328,
+        2.144,
+        3.328,
+        2.112,
+        3.392,
+        2.144,
+        3.328,
+        2.144,
+        3.36,
+        2.112,
+        3.328,
+        2.112,
+        3.36,
+        2.112,
+        3.36,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 14263,
+        "cudaLaunchKernelExC_v11060": 14263,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 14263
+      }
+    },
+    {
+      "label": "audit/c01/block/5",
+      "gemm_calls": 14263,
+      "kernel_count": 28526,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 14263,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 14263
+      },
+      "kernel_mean_per_gemm_us": 5.482730281147024,
+      "first_16_kernel_us": [
+        3.36,
+        2.112,
+        3.36,
+        2.144,
+        3.36,
+        2.144,
+        3.36,
+        2.112,
+        3.328,
+        2.112,
+        3.36,
+        2.112,
+        3.328,
+        2.112,
+        3.36,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 14263,
+        "cudaLaunchKernelExC_v11060": 14263,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 14263
+      }
+    },
+    {
+      "label": "audit/c01/block/6",
+      "gemm_calls": 14263,
+      "kernel_count": 28526,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 14263,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 14263
+      },
+      "kernel_mean_per_gemm_us": 5.4824698170090445,
+      "first_16_kernel_us": [
+        3.36,
+        2.113,
+        3.328,
+        2.112,
+        3.36,
+        2.112,
+        3.36,
+        2.112,
+        3.36,
+        2.144,
+        3.36,
+        2.144,
+        3.36,
+        2.112,
+        3.36,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 14263,
+        "cudaLaunchKernelExC_v11060": 14263,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 14263
+      }
+    },
+    {
+      "label": "audit/c02/block/0",
+      "gemm_calls": 17950,
+      "kernel_count": 17950,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 17950
+      },
+      "kernel_mean_per_gemm_us": 2.129287075208914,
+      "first_16_kernel_us": [
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.144,
+        2.144,
+        2.144,
+        2.145,
+        2.112,
+        2.144,
+        2.144,
+        2.144,
+        2.144,
+        2.112,
+        2.144,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 17950,
+        "cuLaunchKernel": 17950
+      }
+    },
+    {
+      "label": "audit/c02/block/1",
+      "gemm_calls": 17950,
+      "kernel_count": 17950,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 17950
+      },
+      "kernel_mean_per_gemm_us": 2.129715710306407,
+      "first_16_kernel_us": [
+        2.112,
+        2.144,
+        2.144,
+        2.144,
+        2.113,
+        2.144,
+        2.144,
+        2.112,
+        2.112,
+        2.112,
+        2.112,
+        2.112,
+        2.144,
+        2.144,
+        2.144,
+        2.144
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 17950,
+        "cuLaunchKernel": 17950
+      }
+    },
+    {
+      "label": "audit/c02/block/2",
+      "gemm_calls": 17950,
+      "kernel_count": 17950,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 17950
+      },
+      "kernel_mean_per_gemm_us": 2.12938356545961,
+      "first_16_kernel_us": [
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.144,
+        2.144,
+        2.112,
+        2.144,
+        2.112,
+        2.112,
+        2.112,
+        2.144,
+        2.144,
+        2.144
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 17950,
+        "cuLaunchKernel": 17950
+      }
+    },
+    {
+      "label": "audit/c02/block/3",
+      "gemm_calls": 17950,
+      "kernel_count": 17950,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 17950
+      },
+      "kernel_mean_per_gemm_us": 2.12953782729805,
+      "first_16_kernel_us": [
+        2.144,
+        2.112,
+        2.112,
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.145,
+        2.112,
+        2.112,
+        2.144,
+        2.112,
+        2.112,
+        2.112,
+        2.112,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 17950,
+        "cuLaunchKernel": 17950
+      }
+    },
+    {
+      "label": "audit/c02/block/4",
+      "gemm_calls": 17950,
+      "kernel_count": 17950,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 17950
+      },
+      "kernel_mean_per_gemm_us": 2.1294122562674094,
+      "first_16_kernel_us": [
+        2.144,
+        2.112,
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.144,
+        2.144,
+        2.112,
+        2.112,
+        2.144,
+        2.144,
+        2.112,
+        2.145,
+        2.144,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 17950,
+        "cuLaunchKernel": 17950
+      }
+    },
+    {
+      "label": "audit/c02/block/5",
+      "gemm_calls": 17950,
+      "kernel_count": 17950,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 17950
+      },
+      "kernel_mean_per_gemm_us": 2.1293891922005574,
+      "first_16_kernel_us": [
+        2.144,
+        2.112,
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.144,
+        2.112,
+        2.112,
+        2.144,
+        2.113,
+        2.112
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 17950,
+        "cuLaunchKernel": 17950
+      }
+    },
+    {
+      "label": "audit/c02/block/6",
+      "gemm_calls": 17950,
+      "kernel_count": 17950,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 17950
+      },
+      "kernel_mean_per_gemm_us": 2.1294665181058496,
+      "first_16_kernel_us": [
+        2.112,
+        2.144,
+        2.144,
+        2.144,
+        2.144,
+        2.144,
+        2.144,
+        2.144,
+        2.112,
+        2.112,
+        2.112,
+        2.144,
+        2.112,
+        2.144,
+        2.112,
+        2.144
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 17950,
+        "cuLaunchKernel": 17950
+      }
+    },
+    {
+      "label": "audit/c03/block/0",
+      "gemm_calls": 1237,
+      "kernel_count": 1237,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 1237
+      },
+      "kernel_mean_per_gemm_us": 69.73027970897333,
+      "first_16_kernel_us": [
+        46.721,
+        52.768,
+        56.001,
+        57.984,
+        57.633,
+        58.144,
+        58.113,
+        59.904,
+        60.033,
+        58.496,
+        58.529,
+        59.393,
+        60.032,
+        59.105,
+        59.68,
+        59.553
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 1237,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 1237
+      }
+    },
+    {
+      "label": "audit/c03/block/1",
+      "gemm_calls": 1237,
+      "kernel_count": 1237,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 1237
+      },
+      "kernel_mean_per_gemm_us": 80.35854082457558,
+      "first_16_kernel_us": [
+        83.489,
+        79.776,
+        80.065,
+        80.961,
+        80.321,
+        80.16,
+        80.385,
+        80.545,
+        80.353,
+        80.48,
+        80.545,
+        80.481,
+        80.385,
+        80.384,
+        80.257,
+        80.481
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 1237,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 1237
+      }
+    },
+    {
+      "label": "audit/c03/block/2",
+      "gemm_calls": 1237,
+      "kernel_count": 1237,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 1237
+      },
+      "kernel_mean_per_gemm_us": 80.34653678253841,
+      "first_16_kernel_us": [
+        85.025,
+        80.001,
+        80.449,
+        80.384,
+        79.937,
+        80.385,
+        79.681,
+        80.512,
+        80.641,
+        80.705,
+        80.161,
+        80.416,
+        79.969,
+        79.905,
+        80.353,
+        80.608
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 1237,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 1237
+      }
+    },
+    {
+      "label": "audit/c03/block/3",
+      "gemm_calls": 1237,
+      "kernel_count": 1237,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 1237
+      },
+      "kernel_mean_per_gemm_us": 80.32299838318512,
+      "first_16_kernel_us": [
+        82.88,
+        78.913,
+        80.097,
+        79.937,
+        79.968,
+        80.705,
+        80.481,
+        80.321,
+        79.968,
+        80.225,
+        80.513,
+        80.065,
+        79.84,
+        80.161,
+        80.993,
+        79.713
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 1237,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 1237
+      }
+    },
+    {
+      "label": "audit/c03/block/4",
+      "gemm_calls": 1237,
+      "kernel_count": 1237,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 1237
+      },
+      "kernel_mean_per_gemm_us": 80.34100080840743,
+      "first_16_kernel_us": [
+        83.168,
+        79.937,
+        79.905,
+        80.033,
+        80.288,
+        80.385,
+        80.801,
+        80.449,
+        80.032,
+        80.609,
+        80.673,
+        80.481,
+        80.416,
+        80.417,
+        80.353,
+        80.033
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 1237,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 1237
+      }
+    },
+    {
+      "label": "audit/c03/block/5",
+      "gemm_calls": 1237,
+      "kernel_count": 1237,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 1237
+      },
+      "kernel_mean_per_gemm_us": 80.35536054971705,
+      "first_16_kernel_us": [
+        84.321,
+        79.552,
+        80.609,
+        80.961,
+        81.057,
+        80.64,
+        80.033,
+        80.609,
+        80.225,
+        80.576,
+        80.065,
+        80.129,
+        80.225,
+        80.64,
+        80.577,
+        80.257
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 1237,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 1237
+      }
+    },
+    {
+      "label": "audit/c03/block/6",
+      "gemm_calls": 1237,
+      "kernel_count": 1237,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 1237
+      },
+      "kernel_mean_per_gemm_us": 80.34227324171381,
+      "first_16_kernel_us": [
+        82.977,
+        79.681,
+        80.737,
+        80.256,
+        80.097,
+        80.321,
+        80.865,
+        80.224,
+        80.449,
+        80.385,
+        80.513,
+        81.121,
+        80.192,
+        80.161,
+        80.545,
+        80.577
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 1237,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 1237
+      }
+    },
+    {
+      "label": "audit/c04/block/0",
+      "gemm_calls": 31,
+      "kernel_count": 31,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 31
+      },
+      "kernel_mean_per_gemm_us": 2725.4407096774194,
+      "first_16_kernel_us": [
+        2129.236,
+        2129.652,
+        2131.636,
+        2138.964,
+        2132.628,
+        2139.412,
+        2131.732,
+        2143.924,
+        2139.7,
+        2133.652,
+        2134.708,
+        2143.22,
+        2143.924,
+        2134.868,
+        2140.788,
+        3178.333
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 31,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 31
+      }
+    },
+    {
+      "label": "audit/c04/block/1",
+      "gemm_calls": 31,
+      "kernel_count": 31,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 31
+      },
+      "kernel_mean_per_gemm_us": 3267.829225806451,
+      "first_16_kernel_us": [
+        3272.638,
+        3270.335,
+        3266.398,
+        3267.519,
+        3268.158,
+        3267.007,
+        3269.566,
+        3267.871,
+        3270.462,
+        3267.743,
+        3266.335,
+        3263.614,
+        3270.143,
+        3265.566,
+        3266.847,
+        3265.95
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 31,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 31
+      }
+    },
+    {
+      "label": "audit/c04/block/2",
+      "gemm_calls": 31,
+      "kernel_count": 31,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 31
+      },
+      "kernel_mean_per_gemm_us": 3267.0870322580645,
+      "first_16_kernel_us": [
+        3271.646,
+        3266.495,
+        3268.671,
+        3267.614,
+        3268.447,
+        3266.206,
+        3267.231,
+        3263.166,
+        3267.263,
+        3265.246,
+        3264.447,
+        3271.71,
+        3266.783,
+        3263.422,
+        3266.815,
+        3264.51
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 31,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 31
+      }
+    },
+    {
+      "label": "audit/c04/block/3",
+      "gemm_calls": 31,
+      "kernel_count": 31,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 31
+      },
+      "kernel_mean_per_gemm_us": 3267.6816451612904,
+      "first_16_kernel_us": [
+        3269.183,
+        3267.966,
+        3264.735,
+        3268.702,
+        3266.559,
+        3264.414,
+        3263.615,
+        3268.35,
+        3272.159,
+        3267.87,
+        3263.615,
+        3267.423,
+        3270.814,
+        3268.671,
+        3270.206,
+        3265.919
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 31,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 31
+      }
+    },
+    {
+      "label": "audit/c04/block/4",
+      "gemm_calls": 31,
+      "kernel_count": 31,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 31
+      },
+      "kernel_mean_per_gemm_us": 3268.078,
+      "first_16_kernel_us": [
+        3266.975,
+        3266.782,
+        3266.302,
+        3267.327,
+        3270.366,
+        3268.959,
+        3276.83,
+        3263.775,
+        3266.974,
+        3270.719,
+        3264.766,
+        3263.295,
+        3270.718,
+        3268.607,
+        3266.399,
+        3267.006
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 31,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 31
+      }
+    },
+    {
+      "label": "audit/c04/block/5",
+      "gemm_calls": 31,
+      "kernel_count": 31,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 31
+      },
+      "kernel_mean_per_gemm_us": 3267.8819032258066,
+      "first_16_kernel_us": [
+        3266.75,
+        3266.111,
+        3268.542,
+        3268.639,
+        3267.135,
+        3275.87,
+        3268.415,
+        3268.126,
+        3270.463,
+        3265.63,
+        3274.591,
+        3263.966,
+        3265.279,
+        3263.486,
+        3272.255,
+        3267.295
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 31,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 31
+      }
+    },
+    {
+      "label": "audit/c04/block/6",
+      "gemm_calls": 31,
+      "kernel_count": 31,
+      "kernel_names": {
+        "ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn": 31
+      },
+      "kernel_mean_per_gemm_us": 3268.8945483870966,
+      "first_16_kernel_us": [
+        3269.663,
+        3269.342,
+        3276.223,
+        3268.031,
+        3267.294,
+        3270.335,
+        3266.878,
+        3271.327,
+        3270.462,
+        3267.327,
+        3273.118,
+        3267.775,
+        3267.327,
+        3267.55,
+        3269.119,
+        3267.166
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaLaunchKernel_v7000": 31,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetName": 31
+      }
+    },
+    {
+      "label": "audit/c05/block/0",
+      "gemm_calls": 8,
+      "kernel_count": 8,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_256x128_8x4_nn_align1>(T1::Params)": 8
+      },
+      "kernel_mean_per_gemm_us": 11330.43775,
+      "first_16_kernel_us": [
+        9595.994,
+        9616.922,
+        9617.465,
+        11013.671,
+        12542.901,
+        12800.279,
+        12775.544,
+        12680.726
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 8
+      },
+      "memory_gpu_us": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 6.176
+      },
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaMemsetAsync_v3020": 8,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 8,
+        "cuLaunchKernel": 8
+      }
+    },
+    {
+      "label": "audit/c05/block/1",
+      "gemm_calls": 8,
+      "kernel_count": 8,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_256x128_8x4_nn_align1>(T1::Params)": 8
+      },
+      "kernel_mean_per_gemm_us": 12680.542375,
+      "first_16_kernel_us": [
+        12689.719,
+        12681.11,
+        12678.262,
+        12676.919,
+        12675.318,
+        12683.19,
+        12678.422,
+        12681.399
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 8
+      },
+      "memory_gpu_us": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 7.68
+      },
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaMemsetAsync_v3020": 8,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 8,
+        "cuLaunchKernel": 8
+      }
+    },
+    {
+      "label": "audit/c05/block/2",
+      "gemm_calls": 8,
+      "kernel_count": 8,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_256x128_8x4_nn_align1>(T1::Params)": 8
+      },
+      "kernel_mean_per_gemm_us": 12681.28625,
+      "first_16_kernel_us": [
+        12682.999,
+        12677.846,
+        12682.806,
+        12677.462,
+        12680.663,
+        12678.038,
+        12683.446,
+        12687.03
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 8
+      },
+      "memory_gpu_us": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 7.648
+      },
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaMemsetAsync_v3020": 8,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 8,
+        "cuLaunchKernel": 8
+      }
+    },
+    {
+      "label": "audit/c05/block/3",
+      "gemm_calls": 8,
+      "kernel_count": 8,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_256x128_8x4_nn_align1>(T1::Params)": 8
+      },
+      "kernel_mean_per_gemm_us": 12709.7905,
+      "first_16_kernel_us": [
+        12683.798,
+        12674.935,
+        12678.134,
+        12678.07,
+        12683.286,
+        12685.751,
+        12790.743,
+        12803.607
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 8
+      },
+      "memory_gpu_us": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 7.648
+      },
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaMemsetAsync_v3020": 8,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 8,
+        "cuLaunchKernel": 8
+      }
+    },
+    {
+      "label": "audit/c05/block/4",
+      "gemm_calls": 8,
+      "kernel_count": 8,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_256x128_8x4_nn_align1>(T1::Params)": 8
+      },
+      "kernel_mean_per_gemm_us": 12680.602125,
+      "first_16_kernel_us": [
+        12683.19,
+        12680.631,
+        12685.782,
+        12679.926,
+        12678.07,
+        12682.934,
+        12672.95,
+        12681.334
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 8
+      },
+      "memory_gpu_us": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 7.616
+      },
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaMemsetAsync_v3020": 8,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 8,
+        "cuLaunchKernel": 8
+      }
+    },
+    {
+      "label": "audit/c05/block/5",
+      "gemm_calls": 8,
+      "kernel_count": 8,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_256x128_8x4_nn_align1>(T1::Params)": 8
+      },
+      "kernel_mean_per_gemm_us": 12678.63425,
+      "first_16_kernel_us": [
+        12674.774,
+        12673.526,
+        12684.439,
+        12683.318,
+        12676.31,
+        12679.286,
+        12676.279,
+        12681.142
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 8
+      },
+      "memory_gpu_us": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 7.68
+      },
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaMemsetAsync_v3020": 8,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 8,
+        "cuLaunchKernel": 8
+      }
+    },
+    {
+      "label": "audit/c05/block/6",
+      "gemm_calls": 8,
+      "kernel_count": 8,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_256x128_8x4_nn_align1>(T1::Params)": 8
+      },
+      "kernel_mean_per_gemm_us": 12747.874875,
+      "first_16_kernel_us": [
+        12674.742,
+        12676.534,
+        12685.942,
+        12678.007,
+        12784.247,
+        12824.951,
+        12829.016,
+        12829.56
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 8
+      },
+      "memory_gpu_us": {
+        "CUPTI_ACTIVITY_KIND_MEMSET": 7.648
+      },
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaMemsetAsync_v3020": 8,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2,
+        "cuKernelGetFunction": 8,
+        "cuLaunchKernel": 8
+      }
+    },
+    {
+      "label": "audit/c06/block/0",
+      "gemm_calls": 53760,
+      "kernel_count": 53760,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 53760
+      },
+      "kernel_mean_per_gemm_us": 1.8109111607142856,
+      "first_16_kernel_us": [
+        2.144,
+        1.792,
+        2.112,
+        1.792,
+        1.792,
+        1.824,
+        1.792,
+        1.792,
+        1.76,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 840,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c06/block/1",
+      "gemm_calls": 53760,
+      "kernel_count": 53760,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 53760
+      },
+      "kernel_mean_per_gemm_us": 1.8078872767857141,
+      "first_16_kernel_us": [
+        2.688,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.824,
+        1.793,
+        1.792,
+        1.76,
+        1.792,
+        1.792,
+        1.792,
+        1.792
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 840,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c06/block/2",
+      "gemm_calls": 53760,
+      "kernel_count": 53760,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 53760
+      },
+      "kernel_mean_per_gemm_us": 1.8078236793154763,
+      "first_16_kernel_us": [
+        2.688,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.824,
+        1.792,
+        1.792,
+        1.824,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.76
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 840,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c06/block/3",
+      "gemm_calls": 53760,
+      "kernel_count": 53760,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 53760
+      },
+      "kernel_mean_per_gemm_us": 1.8078208147321428,
+      "first_16_kernel_us": [
+        2.72,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.76,
+        1.792,
+        1.792,
+        1.792,
+        1.792
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 840,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c06/block/4",
+      "gemm_calls": 53760,
+      "kernel_count": 53760,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 53760
+      },
+      "kernel_mean_per_gemm_us": 1.8078630208333335,
+      "first_16_kernel_us": [
+        2.688,
+        1.792,
+        1.824,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.824,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.792
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 840,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c06/block/5",
+      "gemm_calls": 53760,
+      "kernel_count": 53760,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 53760
+      },
+      "kernel_mean_per_gemm_us": 1.8078497953869048,
+      "first_16_kernel_us": [
+        2.688,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.824,
+        1.792,
+        1.792,
+        1.76,
+        1.792,
+        1.792,
+        1.824,
+        1.792,
+        1.792,
+        1.792,
+        1.792
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 840,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c06/block/6",
+      "gemm_calls": 53760,
+      "kernel_count": 53760,
+      "kernel_names": {
+        "void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align8>(T1::Params)": 53760
+      },
+      "kernel_mean_per_gemm_us": 1.8078636160714285,
+      "first_16_kernel_us": [
+        2.688,
+        1.792,
+        1.76,
+        1.792,
+        1.823,
+        1.824,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.824,
+        1.792,
+        1.792,
+        1.792,
+        1.792,
+        1.76
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 840,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c07/block/0",
+      "gemm_calls": 19712,
+      "kernel_count": 39424,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 19712,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 19712
+      },
+      "kernel_mean_per_gemm_us": 5.192772676542208,
+      "first_16_kernel_us": [
+        4.0,
+        2.72,
+        3.168,
+        2.048,
+        3.168,
+        2.016,
+        3.136,
+        2.08,
+        3.136,
+        2.048,
+        3.136,
+        2.08,
+        3.136,
+        2.048,
+        3.136,
+        2.048
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 308,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c07/block/1",
+      "gemm_calls": 19712,
+      "kernel_count": 39424,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 19712,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 19712
+      },
+      "kernel_mean_per_gemm_us": 5.192886008522727,
+      "first_16_kernel_us": [
+        4.481,
+        2.272,
+        3.168,
+        2.016,
+        3.168,
+        2.016,
+        3.136,
+        2.048,
+        3.136,
+        2.016,
+        3.168,
+        2.016,
+        3.136,
+        2.016,
+        3.136,
+        2.016
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 308,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c07/block/2",
+      "gemm_calls": 19712,
+      "kernel_count": 39424,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 19712,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 19712
+      },
+      "kernel_mean_per_gemm_us": 5.1930373376623375,
+      "first_16_kernel_us": [
+        4.48,
+        2.272,
+        3.136,
+        2.048,
+        3.168,
+        2.016,
+        3.136,
+        2.048,
+        3.136,
+        2.048,
+        3.136,
+        2.048,
+        3.136,
+        2.048,
+        3.136,
+        2.017
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 308,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c07/block/3",
+      "gemm_calls": 19712,
+      "kernel_count": 39424,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 19712,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 19712
+      },
+      "kernel_mean_per_gemm_us": 5.192828378652597,
+      "first_16_kernel_us": [
+        4.448,
+        2.272,
+        3.168,
+        2.048,
+        3.136,
+        2.016,
+        3.136,
+        2.048,
+        3.136,
+        2.016,
+        3.136,
+        2.016,
+        3.136,
+        2.048,
+        3.168,
+        2.016
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 308,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c07/block/4",
+      "gemm_calls": 19712,
+      "kernel_count": 39424,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 19712,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 19712
+      },
+      "kernel_mean_per_gemm_us": 5.193412337662338,
+      "first_16_kernel_us": [
+        4.48,
+        2.272,
+        3.168,
+        2.048,
+        3.168,
+        2.048,
+        3.136,
+        2.016,
+        3.136,
+        2.016,
+        3.136,
+        2.016,
+        3.136,
+        2.048,
+        3.136,
+        2.016
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 308,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c07/block/5",
+      "gemm_calls": 19712,
+      "kernel_count": 39424,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 19712,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 19712
+      },
+      "kernel_mean_per_gemm_us": 5.193101004464285,
+      "first_16_kernel_us": [
+        4.48,
+        2.272,
+        3.136,
+        2.016,
+        3.2,
+        2.048,
+        3.168,
+        2.048,
+        3.168,
+        2.048,
+        3.136,
+        2.016,
+        3.136,
+        1.984,
+        3.168,
+        2.048
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 308,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    },
+    {
+      "label": "audit/c07/block/6",
+      "gemm_calls": 19712,
+      "kernel_count": 39424,
+      "kernel_names": {
+        "ampere_sgemm_64x32_sliced1x4_nn": 19712,
+        "void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)": 19712
+      },
+      "kernel_mean_per_gemm_us": 5.19331544237013,
+      "first_16_kernel_us": [
+        4.48,
+        2.241,
+        3.168,
+        2.016,
+        3.168,
+        2.048,
+        3.136,
+        2.016,
+        3.168,
+        2.048,
+        3.136,
+        2.016,
+        3.136,
+        2.016,
+        3.168,
+        2.048
+      ],
+      "memory_counts_correlated_to_full_nvtx_range": {},
+      "memory_gpu_us": {},
+      "api_counts": {
+        "cudaEventCreateWithFlags_v3020": 2,
+        "cudaStreamIsCapturing_v10000": 4,
+        "cudaEventRecordWithFlags_v11010": 4,
+        "cudaEventSynchronize_v3020": 2,
+        "cudaGraphLaunch_v10000": 308,
+        "cudaEventQuery_v3020": 2,
+        "cudaEventDestroy_v3020": 2
+      }
+    }
+  ],
+  "boundary_caveat": "Timestamp starts before CUDA event initialization; host_wall_ms starts after initialization. Difference includes that setup, Python bookkeeping, and profiler activation; it is not a direct measurement of cudaProfilerStart duration.",
+  "decision": "REVIEW_REQUIRED; full remains on hold. Missing-event warnings retained despite exact expected target kernel counts."
+}

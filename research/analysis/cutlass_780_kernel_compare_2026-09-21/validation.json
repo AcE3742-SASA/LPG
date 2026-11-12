@@ -1,0 +1,12 @@
+{
+  "script_sha256": "841895e71a83f35764f61667a1c34caa7164a71624bd68603f592bbd0abb70c2",
+  "bash_syntax": "PASS",
+  "offline_cases": [
+    "16_kernel_inventory_and_layout_match",
+    "first_verification_failure_stops",
+    "first_layout_mismatch_stops"
+  ],
+  "result": "PASS",
+  "gpu_executed": false,
+  "basis": "v3 smoke execution validated on actual GPU; only kernel list and A/B layout parameters extended"
+}

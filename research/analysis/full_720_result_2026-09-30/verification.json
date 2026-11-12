@@ -1,0 +1,112 @@
+{
+  "validation": "PASS",
+  "summary_exact_match": true,
+  "export_byte_matches": {
+    "between_round.json": true,
+    "blocks.csv": true,
+    "blocks_fresh_holdout_LOCKED.csv": true,
+    "clock_selection_20260922_164900_9699a6.json": true,
+    "clock_selection_20260922_165026_e86ea7.json": true,
+    "clock_selection_20260922_175653_4f0883.json": true,
+    "fresh_holdout_LOCKED.csv": true,
+    "manifest.json": true,
+    "metrics.csv": true,
+    "progress.json": true,
+    "remeasure_tasks.json": true,
+    "report.md": true,
+    "review_fresh_holdout_LOCKED.csv": true,
+    "review_queue.csv": true,
+    "shape_splits.csv": true,
+    "summary.json": true,
+    "triplets.csv": true,
+    "triplets_fresh_holdout_LOCKED.csv": true
+  },
+  "sqlite_quick_check": "ok",
+  "recorded": 113382,
+  "duplicate_task_ids": 0,
+  "missing_task_ids": 0,
+  "correctness_passed": 113382,
+  "correctness_scopes": {
+    "sampled": 113238,
+    "full": 144
+  },
+  "raw_status_counts": {
+    "PASS": 113382
+  },
+  "sessions": {
+    "20260922_165030_e89635b2": 779,
+    "20260922_175658_0cf7c114": 112603
+  },
+  "final_status_counts": {
+    "PASS": 108222,
+    "REVIEW": 5160
+  },
+  "split_status_counts": [
+    {
+      "split": "boundary_diagnostic",
+      "status": "PASS",
+      "count": 1350
+    },
+    {
+      "split": "calibration",
+      "status": "PASS",
+      "count": 54
+    },
+    {
+      "split": "development",
+      "status": "PASS",
+      "count": 7196
+    },
+    {
+      "split": "development",
+      "status": "REVIEW",
+      "count": 688
+    },
+    {
+      "split": "fresh_holdout",
+      "status": "PASS",
+      "count": 17202
+    },
+    {
+      "split": "fresh_holdout",
+      "status": "REVIEW",
+      "count": 798
+    },
+    {
+      "split": "legacy_test_explored",
+      "status": "PASS",
+      "count": 12310
+    },
+    {
+      "split": "legacy_test_explored",
+      "status": "REVIEW",
+      "count": 614
+    },
+    {
+      "split": "legacy_train",
+      "status": "PASS",
+      "count": 57711
+    },
+    {
+      "split": "legacy_train",
+      "status": "REVIEW",
+      "count": 2553
+    },
+    {
+      "split": "legacy_validation",
+      "status": "PASS",
+      "count": 12399
+    },
+    {
+      "split": "legacy_validation",
+      "status": "REVIEW",
+      "count": 507
+    }
+  ],
+  "remeasure_tasks": 5160,
+  "remeasure_list_has_no_latency": true,
+  "telemetry_hashes_checked": 946,
+  "holdout_latencies_disclosed": false,
+  "experiment_gate": "REVIEW",
+  "archive_sha256": "f0b67545d8721ee417b69fb3e9784611bb6eb9f21854eb9a084af63afd2ae445"
+}

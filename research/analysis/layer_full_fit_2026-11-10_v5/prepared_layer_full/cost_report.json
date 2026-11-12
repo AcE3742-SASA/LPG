@@ -1,0 +1,569 @@
+{
+  "all_protocol_access_label_budget": {
+    "all_seed_union": {
+      "aggregated_labels": 8994,
+      "by_implementation": {
+        "decomposed": 5997,
+        "gelu": 1500,
+        "gemm1": 1500,
+        "gemm2": 1500,
+        "input_pack": 2997,
+        "mm": 2997,
+        "output_pack": 2997,
+        "standard": 5997,
+        "unfold": 1497
+      },
+      "round_records": 26982,
+      "train_round_records": 21600,
+      "validation_round_records": 5382
+    },
+    "per_seed": {
+      "shared": {
+        "aggregated_labels": 8994,
+        "by_implementation": {
+          "decomposed": 5997,
+          "gelu": 1500,
+          "gemm1": 1500,
+          "gemm2": 1500,
+          "input_pack": 2997,
+          "mm": 2997,
+          "output_pack": 2997,
+          "standard": 5997,
+          "unfold": 1497
+        },
+        "round_records": 26982,
+        "train_round_records": 21600,
+        "validation_round_records": 5382
+      }
+    },
+    "rounds_per_label": 3,
+    "scope": "Retrospective distinct labels; not measured collection time saved"
+  },
+  "break_even": {
+    "assumption": "Each future task has the same measured direct/reuse preparation cost and comparable accuracy",
+    "common_source": null,
+    "direct_per_task": null,
+    "first_nonloss_task_count": null,
+    "first_saving_task_count": null,
+    "reason": "Missing measured common source or comparable per-task preparation costs",
+    "reuse_per_task": null,
+    "status": "UNKNOWN"
+  },
+  "collection": {
+    "all_attempts": {
+      "attempts": 33,
+      "missing_ledgers": [],
+      "observed_controlled_wall_seconds": 133109.17767499853,
+      "recorded_measurements": 32666,
+      "scope": "All attempts, including incomplete attempts; shared setup already included",
+      "unverified_ledgers": [],
+      "verified_complete_attempt_sum_seconds": 133109.17767499853
+    },
+    "attempt_details": [
+      {
+        "attempt": "train_01_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4395.235203695949,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_01",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_02_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4388.909862447996,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_02",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_03_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4385.430534133222,
+        "expected": 1080,
+        "gate": "REVIEW",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_03",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_04_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4391.200092638377,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_04",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_05_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4392.73162518302,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_05",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_06_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4384.105362503789,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_06",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_07_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4393.635011448991,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_07",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_08_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4392.509225266054,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_08",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_09_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4388.624081523158,
+        "expected": 1080,
+        "gate": "REVIEW",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_09",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_10_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4392.170136026572,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_10",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_11_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4388.837394217029,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_11",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_12_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4389.5508648273535,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_12",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_13_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4388.754573836923,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_13",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_14_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4393.9237720971,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_14",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_15_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4386.341491219588,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_15",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_16_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4391.165846937336,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_16",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_17_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4389.154009200633,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_17",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_18_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4384.342656529043,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_18",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_19_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4394.2401204421185,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_19",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "train_20_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4386.7577816392295,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "train_20",
+        "recorded": 1080,
+        "split": "train"
+      },
+      {
+        "attempt": "validation_01_attempt_001",
+        "collection": "INCOMPLETE",
+        "controlled_collection_wall_seconds": 1242.31676061498,
+        "expected": 1080,
+        "gate": "FAIL",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "validation_01",
+        "recorded": 272,
+        "split": "validation"
+      },
+      {
+        "attempt": "validation_01_attempt_002",
+        "collection": "INCOMPLETE",
+        "controlled_collection_wall_seconds": 2.4797347709536552,
+        "expected": 1080,
+        "gate": "FAIL",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "validation_01",
+        "recorded": 0,
+        "split": "validation"
+      },
+      {
+        "attempt": "validation_01_attempt_003",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4318.741710560862,
+        "expected": 1062,
+        "gate": "REVIEW",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "validation_01",
+        "recorded": 1062,
+        "split": "validation"
+      },
+      {
+        "attempt": "validation_02_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4393.097841278184,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "validation_02",
+        "recorded": 1080,
+        "split": "validation"
+      },
+      {
+        "attempt": "validation_03_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4392.201134190895,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "validation_03",
+        "recorded": 1080,
+        "split": "validation"
+      },
+      {
+        "attempt": "validation_04_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4385.987915161997,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "validation_04",
+        "recorded": 1080,
+        "split": "validation"
+      },
+      {
+        "attempt": "validation_05_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4392.647815686185,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "validation_05",
+        "recorded": 1080,
+        "split": "validation"
+      },
+      {
+        "attempt": "test_01_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4389.997102629859,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "test_01",
+        "recorded": 1080,
+        "split": "test"
+      },
+      {
+        "attempt": "test_02_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4390.420253827237,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "test_02",
+        "recorded": 1080,
+        "split": "test"
+      },
+      {
+        "attempt": "test_03_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4397.46509399591,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "test_03",
+        "recorded": 1080,
+        "split": "test"
+      },
+      {
+        "attempt": "test_04_attempt_001",
+        "collection": "INCOMPLETE",
+        "controlled_collection_wall_seconds": 300.9262970178388,
+        "expected": 1080,
+        "gate": "FAIL",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "test_04",
+        "recorded": 30,
+        "split": "test"
+      },
+      {
+        "attempt": "test_04_attempt_002",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4314.334292871412,
+        "expected": 1062,
+        "gate": "REVIEW",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "test_04",
+        "recorded": 1062,
+        "split": "test"
+      },
+      {
+        "attempt": "test_05_attempt_001",
+        "collection": "COMPLETE",
+        "controlled_collection_wall_seconds": 4390.942076578736,
+        "expected": 1080,
+        "gate": "PASS",
+        "integrity": "checked",
+        "ledger_scope": "controlled collection, clock setup/reset and analysis; checked wrapper environment cost is separate",
+        "phase": "test_05",
+        "recorded": 1080,
+        "split": "test"
+      }
+    ],
+    "by_split": {
+      "test": {
+        "attempts": 6,
+        "missing_ledgers": [],
+        "observed_controlled_wall_seconds": 22184.085116920993,
+        "recorded_measurements": 5412,
+        "scope": "All attempts, including incomplete attempts; shared setup already included",
+        "unverified_ledgers": [],
+        "verified_complete_attempt_sum_seconds": 22184.085116920993
+      },
+      "train": {
+        "attempts": 20,
+        "missing_ledgers": [],
+        "observed_controlled_wall_seconds": 87797.61964581348,
+        "recorded_measurements": 21600,
+        "scope": "All attempts, including incomplete attempts; shared setup already included",
+        "unverified_ledgers": [],
+        "verified_complete_attempt_sum_seconds": 87797.61964581348
+      },
+      "validation": {
+        "attempts": 7,
+        "missing_ledgers": [],
+        "observed_controlled_wall_seconds": 23127.472912264057,
+        "recorded_measurements": 5654,
+        "scope": "All attempts, including incomplete attempts; shared setup already included",
+        "unverified_ledgers": [],
+        "verified_complete_attempt_sum_seconds": 23127.472912264057
+      }
+    },
+    "campaign_elapsed_wall_seconds": null,
+    "excluded_costs": [
+      "checked-wrapper setup",
+      "archive packaging",
+      "campaign idle gaps"
+    ],
+    "missing_phase_attempts": [],
+    "scope": "Controlled collection, clock setup/reset and analysis; never raw timing labels"
+  },
+  "common_source_cost": null,
+  "fitting": {
+    "model_fit_seconds": 715.3581625714432,
+    "prediction_seconds": 9.126975197345018,
+    "scope": "Recorded CPU calls; serialization and other overhead remain in wall time; separate from GPU collection wall",
+    "wall_seconds": 789.3983812920051
+  },
+  "interpretation": "Selected recipe budgets and full search access are separate; bundled collection cost remains observed",
+  "selected_recipe_label_budget": {
+    "all_seed_union": {
+      "aggregated_labels": 5994,
+      "by_implementation": {
+        "decomposed": 3591,
+        "input_pack": 2400,
+        "mm": 2400,
+        "output_pack": 2400,
+        "standard": 5991,
+        "unfold": 1200
+      },
+      "round_records": 17982,
+      "train_round_records": 15588,
+      "validation_round_records": 2394
+    },
+    "per_seed": {
+      "20261104": {
+        "aggregated_labels": 5994,
+        "by_implementation": {
+          "decomposed": 3591,
+          "input_pack": 2400,
+          "mm": 2400,
+          "output_pack": 2400,
+          "standard": 5991,
+          "unfold": 1200
+        },
+        "round_records": 17982,
+        "train_round_records": 15588,
+        "validation_round_records": 2394
+      },
+      "20261105": {
+        "aggregated_labels": 5994,
+        "by_implementation": {
+          "decomposed": 3591,
+          "input_pack": 2400,
+          "mm": 2400,
+          "output_pack": 2400,
+          "standard": 5991,
+          "unfold": 1200
+        },
+        "round_records": 17982,
+        "train_round_records": 15588,
+        "validation_round_records": 2394
+      },
+      "20261106": {
+        "aggregated_labels": 5994,
+        "by_implementation": {
+          "decomposed": 3591,
+          "input_pack": 2400,
+          "mm": 2400,
+          "output_pack": 2400,
+          "standard": 5991,
+          "unfold": 1200
+        },
+        "round_records": 17982,
+        "train_round_records": 15588,
+        "validation_round_records": 2394
+      }
+    },
+    "rounds_per_label": 3,
+    "scope": "Retrospective distinct labels; not measured collection time saved"
+  },
+  "total_preparation_saving_seconds": null
+}

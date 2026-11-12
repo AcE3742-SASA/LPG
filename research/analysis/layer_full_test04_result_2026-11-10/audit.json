@@ -1,0 +1,148 @@
+{
+  "archive": "test_04_attempt_001_c1bc4101.zip",
+  "archive_sha256": "047d2e27fb52c38978cc8ff620907370ad2a81b1e90e97713eb5a2c78e1cfc7f",
+  "archive_members": 258,
+  "result_hashes_verified": 257,
+  "source_files_verified": 161,
+  "campaign_sha256": "2de0ddd0d49e7946805358c7f8679be6e3677d239a5a4cf13ea1d159942a7d4d",
+  "campaign_completed_batches": 28,
+  "campaign_source_matches_v4": true,
+  "actual_failure": "Pre-timing Conv3 FP32 standard output exceeds original FP64 tolerance in health round0",
+  "case": {
+    "batch": 8,
+    "cin": 384,
+    "cout": 3024,
+    "group_id": "lfg_de61c84e6afebc0e",
+    "height": 20,
+    "id": "lf_dfce839bd3ca0ef5",
+    "kernel": 3,
+    "layer": "conv3",
+    "selection_family": "lfg_de61c84e6afebc0e",
+    "selection_reason": "aligned16_large_compact",
+    "split": "test_locked",
+    "width": 20
+  },
+  "dtype": "fp32",
+  "round": 0,
+  "recorded": 30,
+  "expected": 1080,
+  "restoration": "COMMANDS_ACCEPTED",
+  "worker_complete": false,
+  "evidence_sha256": "94d739b09c30018b17cacd32e12b2b3d5931f0fb53fccd4aedaecf6dd074ba39",
+  "pair_max_abs_error": 5.888938903808594e-05,
+  "original_atol": 2e-05,
+  "original_rtol": 0.0002,
+  "coordinates_checked": 186,
+  "coordinate_count_and_bounds_verified": true,
+  "computed": {
+    "standard": {
+      "failing_coordinates": 183,
+      "passing_coordinates": 3,
+      "max_abs_error": 4.788136813449473e-05,
+      "max_tolerance_ratio": 2.0881282000588635,
+      "worst_tolerance_coordinate": [
+        4,
+        2314,
+        16,
+        8
+      ],
+      "worst_reference": 9.39775693546141e-05,
+      "worst_observed": 0.00013577938079833984
+    },
+    "decomposed": {
+      "failing_coordinates": 0,
+      "passing_coordinates": 186,
+      "max_abs_error": 1.108987612963297e-06,
+      "max_tolerance_ratio": 0.05191963968658768,
+      "worst_tolerance_coordinate": [
+        3,
+        1012,
+        12,
+        4
+      ],
+      "worst_reference": -0.006798469679074048,
+      "worst_observed": -0.006799578666687012
+    }
+  },
+  "sampled_256_passed": {
+    "standard": true,
+    "decomposed": true
+  },
+  "full_output_finite": {
+    "standard": true,
+    "decomposed": true
+  },
+  "input_identity": {
+    "input": {
+      "shape": [
+        8,
+        384,
+        20,
+        20
+      ],
+      "stride": [
+        153600,
+        400,
+        20,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "1aa56fe4591427b89a4fb208734ba4fb59fa05df795836080fb4631e3991986e"
+    },
+    "weights": [
+      {
+        "shape": [
+          3024,
+          384,
+          3,
+          3
+        ],
+        "stride": [
+          3456,
+          9,
+          3,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "00718b28b5b0f47f9c0fc0bf85321ae26807509e83d943c3da325e83855e5345"
+      }
+    ],
+    "prepared": [
+      {
+        "shape": [
+          3456,
+          3024
+        ],
+        "stride": [
+          3024,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "c75a5b74d5a5df9189b54909f16489ae4e4b67a75149a3c7656e51ef3fcd8cd2"
+      }
+    ],
+    "seed": 3978143944
+  },
+  "input_metadata_seed_shapes_verified": true,
+  "proposed_health_surrogate": {
+    "batch": 1,
+    "cin": 16,
+    "cout": 2528,
+    "group_id": "lfg_d5cfcda0108eb44b",
+    "height": 40,
+    "id": "lf_bb6a106c15c571e5",
+    "kernel": 3,
+    "layer": "conv3",
+    "selection_family": "lfg_d5cfcda0108eb44b",
+    "selection_reason": "aligned16_large_elongated",
+    "split": "test_locked",
+    "width": 40
+  },
+  "proposed_health_surrogate_first_nonexcluded_conv3": true,
+  "limits": [
+    "FP64 reference values were independently compared with saved observed outputs; raw CUDA tensors were not regenerated.",
+    "ZIP bytes were hashed without inspecting sealed test timing or prediction values.",
+    "Campaign metadata reports28complete; priorbatcharchives were not supplied for independent result validation.",
+    "New health surrogate is selected from frozen cases; its actual GPU correctness and health gate remain to be run."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "Device":"NVIDIA A100 80GB PCIe",
+    "Dev_Mem":80,
+    "Mem_Bw":1935,
+    "Num_Sm":108,
+    "Core_Per_SM":64,
+    "Freq":1410,
+    "SingleFLOPs":19492,
+    "L2Cache":40
+}

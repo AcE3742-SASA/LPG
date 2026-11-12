@@ -1,0 +1,27 @@
+{
+  "actual_layer_fit_executed": false,
+  "code_sha256": {
+    "components.py": "24fc045955f92dcfafbc46bac35f541966b6edacc819d3e8223445c344f697d2",
+    "costs.py": "d19db5a51dba4f600214607e6b625a7c710322f4cf666682aa888627e4834dfc",
+    "data.py": "ee49912967b4355d6291858fb18f04a381d3993426d5494bb56a63aff2699a33",
+    "gemm_final.py": "ad25dfafcf36f20180b9f02a20fba5daa35fb2dd36911a4d1e91ca3ee642f2bd",
+    "pipeline.py": "44790e9fe5cb39985fa1cfe741ada70723a5d534a79755d3eed7f6fac954e9d0",
+    "report.py": "8a6babaf1c150e2d3c4b15721cf703ea957c82acfda7057b110b1c7088a3992e",
+    "test_components.py": "8d0ff9925a6ee42ad388e3d750af5a5a98e4ed7c69c4c10c0e3458bef43ece67",
+    "test_costs.py": "7df7a1f637e7317d2d7a56320dee9db1d45ea2e5de77cf1b2633ae29b7efa551",
+    "test_data.py": "dd2f427cc6fe3cd279753a11241c834bdbc536f763aa38a2751f8a568cd313e7",
+    "test_gemm_final.py": "209dbc5f38e83e8db845b995e468528fac4c8457117c575529eef08462be119a",
+    "test_pipeline.py": "ada475f4347b6c8dcaea592824e4ccd0285b975f77e5bc247c7aa78040645fa4",
+    "test_report.py": "82b6981f3399940ace9785c589b4a8431d314c04c6d41621d1f57d34ec1f5886",
+    "test_sources.py": "0b2a95ef39fce27cdbcd5803aed2138c958f22f7cf06d020c748e304c2886dc7"
+  },
+  "collector": "layer_full_20261108_v2",
+  "date": "2026-11-08",
+  "scope": "v2 source validation and latest selected expanded GEMM common prior; synthetic pipeline only",
+  "sealed_layer_measurements_opened": false,
+  "source_development_predictions_replayed": 9666,
+  "source_models": "FP16 MLP32, FP32 RF; 11498 shapes; shared per dtype and seed",
+  "status": "PREPARED_LOCAL_TESTS_PASS",
+  "tests_passed": 29,
+  "warnings": "Existing dependency tests emit sqlite ResourceWarning; assertions pass"
+}

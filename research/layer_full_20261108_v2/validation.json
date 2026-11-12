@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "cpu_numeric_cases": 16,
+    "diagnostic_py_byte_identical": "PASS",
+    "frozen_manifest_all_30_phases": "PASS",
+    "injected_shared_output_error_and_nan": "REJECTED",
+    "interrupt_resume_and_archive_integrity": "PASS",
+    "mocked_cuda_worker_calls": 108,
+    "original_dependency_hashes": "PASS",
+    "python_and_bash_syntax": "PASS",
+    "sealed_test_access_denial": "PASS",
+    "shape_and_split_protection": "PASS",
+    "signal_child_cleanup": "PASS outside macOS process sandbox",
+    "startup_probe_input_mismatch_and_failure_guards": "PASS",
+    "synthetic_1080_record_analyzer": "PASS",
+    "timed_forward_ast_unchanged": "PASS",
+    "unchanged_tolerances_and_timing": "PASS"
+  },
+  "cuda_regression": {
+    "action": "Exact failed CUDA input/weight hash check and revised correctness before train_01 preheat",
+    "report": "ffn_reference_probe.json",
+    "status": "NOT_RUN_LOCAL_NO_CUDA"
+  },
+  "date": "2026-11-08",
+  "local_limits": [
+    "No CUDA execution on this Mac",
+    "Original CUDA inputs are recorded by hash, not tensors; exact-input confirmation runs automatically on target GPU"
+  ],
+  "numeric_regression": {
+    "atol": 0.001,
+    "case": "same FFN dimensions with CPU fixture id rounding_regression_8",
+    "new_max_tolerance_ratio": 0.07403338865319269,
+    "old_max_tolerance_ratio": 1.056973632643946,
+    "rtol": 0.005,
+    "runtime": "Python 3.13 / torch 2.15.0 CPU"
+  },
+  "original_release_files_preserved": 138,
+  "previous_input_fixture_archive_sha256": "73a971ab3e6effde7ecfb081001531965ee37130ef1e0cc713e16497ad4fb6e7",
+  "runtime_source_sha256": {
+    "collect_all.py": "3bff2a085b039e2c117c76a1fc524048f149562852f6d45edfb2165e5bba8b28",
+    "compare.py": "a0ca2bd16b0d11eb60decc5f5cf63c123e94721590963815d8a9ca8585f29b5d",
+    "diagnostic.py": "98d0915908e3f873640837c480023f6a1cbccd00f0f3f262c8c9a09a4d44d3ab",
+    "ffn_probe.py": "9cb90019a1cf85d26beb5df4f0f844e87e4ae032f1019d8f5099590349a19489",
+    "launch.sh": "e3ae7f54b21fbb032e11df0c03fe1abb7cf22446eecee3eb124a7ad38a4b7b9f",
+    "layers.py": "8d53c6dec0930e5d1dd04e5437fb7dd625c1c15dc956d9481d87c07cd2d84645",
+    "selfcheck.py": "c768430431eaa71c21c77c847ce4ca853cb82bcf0fba26ac151ce51d8302ec88",
+    "test_ffn_reference.py": "f7d1db5236d05d7ba5afbd5be16cc2c8c9aec39bebce582ab7dbbe86cd4318e8"
+  },
+  "scope": "Fresh 30-batch collection from train_01; v1 results remain separate",
+  "source_reference": "https://docs.pytorch.org/docs/2.14/notes/numerical_accuracy.html",
+  "status": "LOCAL_PASS_CUDA_PROBE_REQUIRED",
+  "test_command": "/private/tmp/layer-full-numeric-20261104/bin/python -B layer_full_20261108_v2/selfcheck.py --numeric"
+}

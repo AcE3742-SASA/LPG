@@ -1,0 +1,41 @@
+{
+  "status": "GEMM_BASELINES_FROZEN",
+  "artifacts": {
+    "models.json": "9df22c14365ce21d9083b1a96500d1af84b5b9f2427d641f739280f9b3f770d3",
+    "validation_predictions.json": "31102a9d87ed030bac8970be7a849547054b431c83b37227d94dfe82681db48d",
+    "validation_metrics.json": "e98ff70af3ce00af577407e7f2298c660640f8ea305a0adf77d97312b28b52cf",
+    "validation_predictions.csv": "6ee965ee9a8aa27b84763873ca924abea46c55996e2279de3dc697d21023c08d",
+    "diagnostics.json": "5f806ec55517f9b26f29436bff0ea26cb45f1a6d04b13ef1a83222ce0a0b4e2c",
+    "validation_aggregate.csv": "4495f4e62fe3c86d1a4b7221aa816fbba93bf72c31845d48a94293e1191e5f69",
+    "label_access.json": "885201424c789faa0618f621f2f88861bb6ef46b12e89cb56092f8ea5bad30fb",
+    "protocol.json": "828808ea0bd948ccf1a89776f7c2e3437ad40eec50ff0f0fdd931107ef50d2e6",
+    "models.csv": "814d58d2f6fccd8b79e6aa1a0dd343f481be564bf1acc220100d1e9ee7141a0c",
+    "validation_metrics.csv": "d83da9fc15a36dddcd2eca95315640c8b796d01fbec2fffa30b2bea99827bac5",
+    "validation_aggregate.json": "d6f0583917e92c2164780b0aceb318137e2ae3a4de482c7daf4f7628d6f7c696",
+    "models/fp32_prealloc_20261029.joblib": "3229eefa9285c360d16f36d7ca876fce63c6a95b6aaf5caf065e17c92fdcfed2",
+    "models/fp16_allocate_20261028.joblib": "e3e96df78a067bbec6553a8c06cce972422bd795364f766ff3dd051967ab3ad5",
+    "models/fp32_allocate_20261030.joblib": "c7ba8657998a70ce57bc9e72c6e3afc55d2f1b9ac02eddf45cedc932fe56c309",
+    "models/fp16_graph_20261029.joblib": "0a76f0bf77d3f0f79c65d740bbb92c7cc20671271807e1f1d16ece56ac8698cc",
+    "models/fp16_prealloc_20261029.joblib": "f8e0083350bc2e2fc985a222add7feeea9f14f15908da9f8884f4b3e7dbf783a",
+    "models/fp32_graph_20261029.joblib": "9f03c427e1e989bf3cfa77d9e48fe37038ef386fdb780f894ae3a9df67b3dcce",
+    "models/fp32_allocate_20261028.joblib": "cd723519df649affdd6a80b3d4fc60dacac544b4342c63f41eeadcf6d2759d70",
+    "models/fp16_allocate_20261030.joblib": "39ee2d31f166821d7a1793433d5d127ce038b43172ff2beb02c424271d0466e7",
+    "models/fp16_prealloc_20261030.joblib": "2f2e1178165aba456bdb4b44fb07ca8c334a528e97c1d076a6599418397643fd",
+    "models/fp16_graph_20261030.joblib": "b40768a086d43bdde17861cd37c36fe4d3a0d58509c59f385f1a2854f78e7c20",
+    "models/fp32_prealloc_20261028.joblib": "fb1ddb3c6c700f16f479c0c728260ec66001188866921106355abc59044cb677",
+    "models/fp32_graph_20261030.joblib": "32dc374cde6e640567ffcbe90fab2dcdc4f8fc060dd2ff2c8f86017be59f85ac",
+    "models/fp16_allocate_20261029.joblib": "4964d82e0f6bc317b8264b66e4442e28e2d98dc352184c8db17c0379b47b8d6b",
+    "models/fp32_graph_20261028.joblib": "31669f077ac49c5b8334cf0adfff093107d0b67849271161b387db263cd23e44",
+    "models/fp32_prealloc_20261030.joblib": "39e7cf9bad9920b126ce78d2a316e02b46a58658b122e83df1c0374542cad7b1",
+    "models/fp16_prealloc_20261028.joblib": "11e7a9c914fcde3e69527286a431be29cda03acee98511b0289596d934a489f1",
+    "models/fp16_graph_20261028.joblib": "85645d42d191b72e82e133c74d5f9ce40f23e576e1943c91df5b8ffa06588c16",
+    "models/fp32_allocate_20261029.joblib": "2ecad560d2bd8d96a310f2ddd341c78b9c6b0f661ed042b3447472e68acc4246"
+  },
+  "code": {
+    "gemm_compare.py": "b93e164121b52d63b62240837ae071320f9120ab031b0647f5d690bfd9b2a4a4",
+    "adapters.py": "51cab41214d769737f3931b90d2176988b3d9350d8d04c354d38da35639497cc"
+  },
+  "wall_seconds": 13.820336041972041,
+  "test_labels_read": false,
+  "fit_calls": 18
+}

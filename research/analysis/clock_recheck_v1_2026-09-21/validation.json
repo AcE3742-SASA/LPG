@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "zip": "/Users/studyhard/Claude/자율연구/clock_recheck_2026-09-21_v1.zip",
+  "zip_sha256": "c8502ed789987db071e45dc52050826788c79e8355369ffc6e8ad547a81aae59",
+  "zip_files": 7,
+  "source_hashes": {
+    "README.md": "e5ba6ab005c98311ed3d3af079a54bf508070e813af65631b1aef7d013c7eb01",
+    "analyze_lower.py": "773fbee3674afd28e1a324a5a06c96d757dd16907328126d9ad041adc40f28f7",
+    "dependency_hashes.json": "59f6706ed5b5ab98e1890372073cd6f5652c06126ec0bfec10083ce74c4c70a1",
+    "launch.sh": "a1c70abdc8698979539ffc6418294620105d7afe3575ebf28074bb291849a08a",
+    "lower.py": "d1670737ccfb1999f9946f3808ad378715387b027e41ed07aa359e9a9dc82ed6",
+    "protocol.json": "0308a3482711ebde08869e485bab200ad03ce85ddd7f94ae40bbc04332c327d6",
+    "test_lower.py": "7b36c62381f6fd4f0f68485e1bdabc211c7f4a6d9af55d57977f43e7934f446a"
+  },
+  "unchanged_dependencies": 42,
+  "analyzer": "byte identical to clock_range_v1",
+  "controller_changed_functions": [
+    "cases",
+    "load",
+    "make_manifest",
+    "run"
+  ],
+  "measurement_worker": "unchanged clock_audit_v1.audit.worker and gpu_sweep_v6.measure.Timer",
+  "local_tests": 12,
+  "extracted_tests": 12,
+  "bash_syntax": "PASS",
+  "zip_crc_and_content": "PASS",
+  "incident_input_records_checked": 6,
+  "incident_zip_sha256": "f722419bea5b83b54894a4d0db8efdd9c680d63f6e2f1e25c14a7110c759ac20",
+  "raw_files_unchanged": 357,
+  "stages": [
+    {
+      "name": "s0_780_before",
+      "sm_mhz": 780,
+      "interval_ms": 50
+    },
+    {
+      "name": "s1_750",
+      "sm_mhz": 750,
+      "interval_ms": 50
+    },
+    {
+      "name": "s2_780_after",
+      "sm_mhz": 780,
+      "interval_ms": 50
+    }
+  ],
+  "shapes": 3,
+  "shape_dtype_conditions": 6,
+  "modes": [
+    "allocate",
+    "prealloc",
+    "graph"
+  ],
+  "rounds_per_stage": 2,
+  "measurements": 108,
+  "blocks": 756,
+  "mode_triplets": 36,
+  "correctness_full_measurements": 36,
+  "correctness_sampled_measurements": 72,
+  "new_gpu_measurements": 0,
+  "validated_for_full": false,
+  "full_sweep": "HOLD",
+  "selected_clock_mhz": null,
+  "full_load_history_replayed": false
+}

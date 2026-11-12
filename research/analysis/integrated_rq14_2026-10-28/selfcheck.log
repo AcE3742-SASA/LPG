@@ -1,0 +1,2 @@
+PASS: synthetic label-boundary, model-contract, nested-sampling and failure checks
+PASS: same-shape dtype/mode grouping and overlap guard

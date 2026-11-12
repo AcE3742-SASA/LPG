@@ -1,0 +1,37 @@
+[
+  {
+    "case_id": "lc_789c4e94ca271ccc",
+    "layer": "conv1",
+    "dtype": "fp16",
+    "selection_family": "conv_b4_s16_ci16_co32",
+    "selection_reason": "cout_neighbour",
+    "batch": 4,
+    "height": 16,
+    "width": 16,
+    "cin": 16,
+    "cout": 31,
+    "kernel": 1,
+    "rows": null,
+    "input_width": null,
+    "output_width": null,
+    "hidden_width": null,
+    "standard_ms": 0.007501124185302146,
+    "decomposed_ms": 0.026611973892224097,
+    "ratio": 3.5477314112954077,
+    "paired_ratios": [
+      3.7430548844672904,
+      3.5440466075209875,
+      3.5355710019255215
+    ],
+    "paired_ratio_median": 3.5440466075209875,
+    "difference_ms": 0.01911084970692195,
+    "between_round_relative_range": {
+      "standard": 0.05134517703563182,
+      "decomposed": 0.005408465463155552
+    },
+    "standard_extra_peak_bytes": 63488,
+    "decomposed_extra_peak_bytes": 159744,
+    "prepared_weight_bytes": 992,
+    "status": "REVIEW"
+  }
+]

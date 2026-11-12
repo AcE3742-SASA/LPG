@@ -1,0 +1,10 @@
+{
+    "Device":"Tesla V100-PCIE-32GB",
+    "Dev_Mem":32,
+    "Mem_Bw":900,
+    "Num_Sm":80,
+    "Core_Per_SM":64,
+    "Freq":1370,
+    "SingleFLOPs":14029,
+    "L2Cache":6
+}

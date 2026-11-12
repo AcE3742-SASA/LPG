@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "report_mape_cells_checked": 108,
+  "figures_visually_inspected": [
+    "layer_standard",
+    "layer_decomposed",
+    "gemm_test",
+    "learning_standard",
+    "learning_decomposed"
+  ],
+  "formats": [
+    "png",
+    "pdf"
+  ],
+  "gemmify_table_i_pdf_page_visually_verified": 4,
+  "local_links_checked": 37,
+  "original_hashes_rechecked": 700,
+  "additional_input_hashes_checked": 9
+}

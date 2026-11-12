@@ -1,0 +1,18 @@
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/studyhard/.cache/fontconfig
+	/Users/studyhard/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/studyhard/.cache/fontconfig
+	/Users/studyhard/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/studyhard/.cache/fontconfig
+	/Users/studyhard/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+PASS: immutable inputs, saved models, metrics, selections and split separation verified
+PASS: comparison tables, paired intervals and five figure pairs saved

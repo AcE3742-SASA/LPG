@@ -1,0 +1,448 @@
+{
+  "label_access": [
+    {
+      "conditions": 200,
+      "modes": [
+        "prealloc"
+      ],
+      "shape_ids_sha256": "81cc8cf1fb171e9cd09771b4bb5bef8eb95d69371b0c531b5685469c2aa7c2cb",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:41.052531+00:00"
+    },
+    {
+      "conditions": 200,
+      "modes": [
+        "prealloc"
+      ],
+      "shape_ids_sha256": "e7631a22660ee33f4a8f49b78c82abc1b1fdeecabb4fdfe476e11f8354d68e7c",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:41.200574+00:00"
+    },
+    {
+      "conditions": 200,
+      "modes": [
+        "prealloc"
+      ],
+      "shape_ids_sha256": "05d7ac6b602cbdb15167c584c366c66248775e0780f4bdcdefbccf71eb2cd5c0",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:41.345800+00:00"
+    },
+    {
+      "conditions": 600,
+      "modes": [
+        "graph"
+      ],
+      "shape_ids_sha256": "5dfba56a4167189a33f889f302b9d91320e6b0ea082dcc0e44e7f59799a7adf1",
+      "shapes": 300,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:41.488216+00:00"
+    },
+    {
+      "conditions": 600,
+      "modes": [
+        "graph"
+      ],
+      "shape_ids_sha256": "7b99743695185eab439b3360cd4cb8fc56bdd134fc1643d6a90450c00bdbeac0",
+      "shapes": 300,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:41.785198+00:00"
+    },
+    {
+      "conditions": 600,
+      "modes": [
+        "graph"
+      ],
+      "shape_ids_sha256": "201125e90f5b0ecbbac9b6ddac195049159aebeedcf9e88167b55d9b837e55d9",
+      "shapes": 300,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:42.072877+00:00"
+    },
+    {
+      "conditions": 200,
+      "modes": [
+        "prealloc"
+      ],
+      "shape_ids_sha256": "81cc8cf1fb171e9cd09771b4bb5bef8eb95d69371b0c531b5685469c2aa7c2cb",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:42.362903+00:00"
+    },
+    {
+      "conditions": 200,
+      "modes": [
+        "prealloc"
+      ],
+      "shape_ids_sha256": "e7631a22660ee33f4a8f49b78c82abc1b1fdeecabb4fdfe476e11f8354d68e7c",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:42.585091+00:00"
+    },
+    {
+      "conditions": 200,
+      "modes": [
+        "prealloc"
+      ],
+      "shape_ids_sha256": "05d7ac6b602cbdb15167c584c366c66248775e0780f4bdcdefbccf71eb2cd5c0",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:42.804385+00:00"
+    },
+    {
+      "conditions": 200,
+      "modes": [
+        "graph"
+      ],
+      "shape_ids_sha256": "81cc8cf1fb171e9cd09771b4bb5bef8eb95d69371b0c531b5685469c2aa7c2cb",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:43.026038+00:00"
+    },
+    {
+      "conditions": 200,
+      "modes": [
+        "graph"
+      ],
+      "shape_ids_sha256": "e7631a22660ee33f4a8f49b78c82abc1b1fdeecabb4fdfe476e11f8354d68e7c",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:43.254640+00:00"
+    },
+    {
+      "conditions": 200,
+      "modes": [
+        "graph"
+      ],
+      "shape_ids_sha256": "05d7ac6b602cbdb15167c584c366c66248775e0780f4bdcdefbccf71eb2cd5c0",
+      "shapes": 100,
+      "split": "legacy_train",
+      "timestamp": "2026-11-04T05:57:43.484504+00:00"
+    }
+  ],
+  "models": [
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_allocate_selected_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_allocate_baseline_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_allocate_selected_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_allocate_baseline_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_allocate_selected_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_allocate_baseline_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_prealloc_selected_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_prealloc_baseline_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_prealloc_selected_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_prealloc_baseline_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_prealloc_selected_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_prealloc_baseline_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_graph_selected_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_graph_baseline_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_graph_selected_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_graph_baseline_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_graph_selected_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp16_graph_baseline_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_allocate_selected_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_allocate_baseline_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_allocate_selected_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_allocate_baseline_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_allocate_selected_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_allocate_baseline_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_prealloc_selected_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_prealloc_baseline_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_prealloc_selected_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_prealloc_baseline_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_prealloc_selected_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_prealloc_baseline_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_graph_selected_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_graph_baseline_20261028.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_graph_selected_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_graph_baseline_20261029.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_graph_selected_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ1_fp32_graph_baseline_20261030.joblib",
+      "saved_weight_reused": true
+    },
+    {
+      "fit_seconds": 3.2540992833673954e-05,
+      "path": "models/RQ4_fp16_prealloc_selected_20261028.joblib"
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp16_prealloc_baseline_20261028.joblib"
+    },
+    {
+      "fit_seconds": 3.058405127376318e-05,
+      "path": "models/RQ4_fp16_prealloc_selected_20261029.joblib"
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp16_prealloc_baseline_20261029.joblib"
+    },
+    {
+      "fit_seconds": 1.7959042452275753e-05,
+      "path": "models/RQ4_fp16_prealloc_selected_20261030.joblib"
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp16_prealloc_baseline_20261030.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.12420829199254513,
+      "parameter_count": "",
+      "path": "models/RQ4_fp16_graph_selected_20261028.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp16_graph_baseline_20261028.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.12198366702068597,
+      "parameter_count": "",
+      "path": "models/RQ4_fp16_graph_selected_20261029.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp16_graph_baseline_20261029.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.12424908298999071,
+      "parameter_count": "",
+      "path": "models/RQ4_fp16_graph_selected_20261030.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp16_graph_baseline_20261030.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.06263054092414677,
+      "parameter_count": "",
+      "path": "models/RQ4_fp32_prealloc_selected_20261028.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp32_prealloc_baseline_20261028.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.05960320797748864,
+      "parameter_count": "",
+      "path": "models/RQ4_fp32_prealloc_selected_20261029.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp32_prealloc_baseline_20261029.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.06068404205143452,
+      "parameter_count": "",
+      "path": "models/RQ4_fp32_prealloc_selected_20261030.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp32_prealloc_baseline_20261030.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.06005874997936189,
+      "parameter_count": "",
+      "path": "models/RQ4_fp32_graph_selected_20261028.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp32_graph_baseline_20261028.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.0590856249909848,
+      "parameter_count": "",
+      "path": "models/RQ4_fp32_graph_selected_20261029.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp32_graph_baseline_20261029.joblib"
+    },
+    {
+      "convergence_warnings": 0,
+      "epochs": "",
+      "final_scaled_loss": "",
+      "fit_seconds": 0.05994329205714166,
+      "parameter_count": "",
+      "path": "models/RQ4_fp32_graph_selected_20261030.joblib",
+      "warning_messages": ""
+    },
+    {
+      "fit_seconds": 0.0,
+      "path": "models/RQ4_fp32_graph_baseline_20261030.joblib"
+    }
+  ],
+  "sealed_times_read": false
+}

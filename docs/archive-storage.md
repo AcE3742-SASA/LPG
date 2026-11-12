@@ -10,6 +10,8 @@ The snapshot includes raw measurements, derived tables, trained models, original
 
 
 
+The v1.0.0 snapshot contains 1,253,340 research files totaling 87,470,921,715 bytes, plus three symlinks. Git carries 3,770 of those files. The 36 release packs total 12,453,551,374 bytes.
+
 Three trace-directory symlinks use relative targets in this export. Their original absolute targets are recorded as `original_target`. Filenames are normalized to Unicode NFC for consistent checkouts; `original_path` records any change in Unicode representation. File contents keep their original bytes.
 
 Installed environments, bytecode caches, report drafts, and internal authoring records are outside this public snapshot. Pinned requirements and recorded environment versions remain with the research.

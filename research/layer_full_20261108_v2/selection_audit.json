@@ -1,0 +1,108 @@
+{
+  "attempts": {
+    "conv": 2274,
+    "core": 1011
+  },
+  "batch_count": 30,
+  "existing_splits_changed": false,
+  "expected_component_measurements": 18000,
+  "expected_forward_measurements": 14400,
+  "expected_measurements": {
+    "test_01": 1080,
+    "test_02": 1080,
+    "test_03": 1080,
+    "test_04": 1080,
+    "test_05": 1080,
+    "train_01": 1080,
+    "train_02": 1080,
+    "train_03": 1080,
+    "train_04": 1080,
+    "train_05": 1080,
+    "train_06": 1080,
+    "train_07": 1080,
+    "train_08": 1080,
+    "train_09": 1080,
+    "train_10": 1080,
+    "train_11": 1080,
+    "train_12": 1080,
+    "train_13": 1080,
+    "train_14": 1080,
+    "train_15": 1080,
+    "train_16": 1080,
+    "train_17": 1080,
+    "train_18": 1080,
+    "train_19": 1080,
+    "train_20": 1080,
+    "validation_01": 1080,
+    "validation_02": 1080,
+    "validation_03": 1080,
+    "validation_04": 1080,
+    "validation_05": 1080
+  },
+  "expected_time_blocks": 226800,
+  "expected_total_measurements": 32400,
+  "family_strata": {
+    "conv": {
+      "aligned16_large_compact": 25,
+      "aligned16_large_elongated": 25,
+      "aligned16_medium_compact": 25,
+      "aligned16_medium_elongated": 25,
+      "aligned16_small_compact": 25,
+      "aligned16_small_elongated": 25,
+      "unaligned_large_compact": 25,
+      "unaligned_large_elongated": 25,
+      "unaligned_medium_compact": 25,
+      "unaligned_medium_elongated": 25,
+      "unaligned_small_compact": 25,
+      "unaligned_small_elongated": 25
+    },
+    "core": {
+      "aligned16_large_compact": 25,
+      "aligned16_large_elongated": 25,
+      "aligned16_medium_compact": 25,
+      "aligned16_medium_elongated": 25,
+      "aligned16_small_compact": 25,
+      "aligned16_small_elongated": 25,
+      "unaligned_large_compact": 25,
+      "unaligned_large_elongated": 25,
+      "unaligned_medium_compact": 25,
+      "unaligned_medium_elongated": 25,
+      "unaligned_small_compact": 25,
+      "unaligned_small_elongated": 25
+    }
+  },
+  "gpu_collection_executed": false,
+  "groups": 600,
+  "layer_cases": 1200,
+  "linear_component_policy": "decomposed forward is the standalone GEMM; reuse the same record",
+  "per_layer_split_counts": {
+    "conv1": {
+      "test_locked": 50,
+      "train": 200,
+      "validation": 50
+    },
+    "conv3": {
+      "test_locked": 50,
+      "train": 200,
+      "validation": 50
+    },
+    "ffn": {
+      "test_locked": 50,
+      "train": 200,
+      "validation": 50
+    },
+    "linear": {
+      "test_locked": 50,
+      "train": 200,
+      "validation": 50
+    }
+  },
+  "protected_shape_count": 16607,
+  "protection": "All earlier GEMM and layer shapes, including the 10000-shape expansion; exact and one-axis +/-8; no cross-group component overlap",
+  "seed": 20261104,
+  "static_flop_boundaries": [
+    100000000,
+    1000000000
+  ],
+  "timing_values_used": false
+}

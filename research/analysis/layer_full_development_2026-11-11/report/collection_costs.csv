@@ -1,0 +1,5 @@
+split,attempts,missing_ledgers,observed_controlled_wall_seconds,recorded_measurements,scope,unverified_ledgers,verified_complete_attempt_sum_seconds
+test,6,[],22184.085116920993,5412,"All attempts, including incomplete attempts; shared setup already included",[],22184.085116920993
+train,20,[],87797.61964581348,21600,"All attempts, including incomplete attempts; shared setup already included",[],87797.61964581348
+validation,7,[],23127.472912264057,5654,"All attempts, including incomplete attempts; shared setup already included",[],23127.472912264057
+all_attempts,33,[],133109.17767499853,32666,"All attempts, including incomplete attempts; shared setup already included",[],133109.17767499853

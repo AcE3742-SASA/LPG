@@ -1,0 +1,65 @@
+{
+  "adjacency": "identical or one axis +/-8; same base anchor never split",
+  "alignment_by_split": {
+    "test_locked": {
+      "aligned16": 10,
+      "unaligned": 10
+    },
+    "train": {
+      "aligned16": 15,
+      "unaligned": 15
+    },
+    "validation": {
+      "aligned16": 5,
+      "unaligned": 5
+    }
+  },
+  "collection_executed": false,
+  "core_component_existing_roles": {
+    "A_train_candidate": 1,
+    "unseen_MNK": 119
+  },
+  "core_groups": 60,
+  "cross_group_neighbour_overlaps": 0,
+  "diagnostic_scope": "existing development only; 96 whole-path + 168 fixed-intermediate component records",
+  "expected_measurements": {
+    "conv_confirm": 240,
+    "conv_diagnostic": 264,
+    "core_dev": 960,
+    "core_locked": 480
+  },
+  "expected_time_blocks": {
+    "conv_confirm": 1680,
+    "conv_diagnostic": 1848,
+    "core_dev": 6720,
+    "core_locked": 3360
+  },
+  "group_splits": {
+    "test_locked": 20,
+    "train": 30,
+    "validation": 10
+  },
+  "locked_test_times_read": false,
+  "no_protected_ids_reassigned": true,
+  "protected_neighbour_overlaps": 0,
+  "protected_shapes": 2991,
+  "rejected": {
+    "core_cross_group_overlap_or_anchor": 172
+  },
+  "seed": 20261028,
+  "status": "STATIC_ONLY_NO_TIMING_LABELS_OR_GPU",
+  "work_by_split": {
+    "test_locked": {
+      "large": 10,
+      "small": 10
+    },
+    "train": {
+      "large": 16,
+      "small": 14
+    },
+    "validation": {
+      "large": 6,
+      "small": 4
+    }
+  }
+}

@@ -1,0 +1,50 @@
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+STAGE 2/7: s1_900_50_before (180 s preheat + 16 measurements)
+STAGE 3/7: s2_1050_50 (180 s preheat + 16 measurements)
+STAGE 4/7: s3_1200_50 (180 s preheat + 16 measurements)
+STAGE 5/7: s4_1350_50 (180 s preheat + 16 measurements)
+STAGE 6/7: s5_900_50_after (180 s preheat + 16 measurements)
+STAGE 7/7: s6_900_100_after (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+CLOCK STEPS: PASS; full remains HOLD
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/7: s0_900_100_before (180 s preheat + 16 measurements)
+STAGE 2/7: s1_900_50_before (180 s preheat + 16 measurements)
+STAGE 3/7: s2_1050_50 (180 s preheat + 16 measurements)
+STAGE 4/7: s3_1200_50 (180 s preheat + 16 measurements)
+STAGE 5/7: s4_1350_50 (180 s preheat + 16 measurements)
+STAGE 6/7: s5_900_50_after (180 s preheat + 16 measurements)
+STAGE 7/7: s6_900_100_after (180 s preheat + 16 measurements)
+RESTORE: FAILED; inspect restore.json
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rgc
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rmc
+CLOCK STEPS: FAIL; full remains HOLD
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+.....E....
+======================================================================
+ERROR: test_launch_preserves_review_exit_and_packages_closed_logs (__main__.StepsTests.test_launch_preserves_review_exit_and_packages_closed_logs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/gemm-780-release-tfep29_6/clock_steps_v1/test_steps.py", line 289, in test_launch_preserves_review_exit_and_packages_closed_logs
+    proc.communicate(timeout=5)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1220, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 2153, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1267, in _check_timeout
+    raise TimeoutExpired(
+    ...<2 lines>...
+            stderr=b''.join(stderr_seq) if stderr_seq else None)
+subprocess.TimeoutExpired: Command '['bash', '/var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpzfrhkdv7/clock_steps_v1/launch.sh']' timed out after 5 seconds
+
+----------------------------------------------------------------------
+Ran 10 tests in 9.693s
+
+FAILED (errors=1)

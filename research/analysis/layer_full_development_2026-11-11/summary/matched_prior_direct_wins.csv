@@ -1,0 +1,9 @@
+target,method,matched_configurations,wins,ties,losses,mean_prior_minus_direct_pp
+decomposed,zero,0,0,0,0,
+decomposed,constant_ratio,224,142,0,82,-4.882284147985826
+decomposed,prior_direct,224,158,0,66,-2.9027223868182017
+decomposed,residual,224,198,0,26,-11.489938243247567
+standard,zero,0,0,0,0,
+standard,constant_ratio,224,176,0,48,-10.413949030968208
+standard,prior_direct,224,178,0,46,-3.121886354683885
+standard,residual,224,196,0,28,-12.396307279974453

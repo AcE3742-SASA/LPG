@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-11-05T18:21:18.521749+00:00",
+  "version": "gemm_expansion_comparison_prelabel_v1",
+  "user_request": "Use the returned expansion results to compare the previously fixed RF, Ridge, MLP32 and MLP64 and the effect of additional shapes.",
+  "label_access": "No new timing labels parsed before this plan. Public collection and quality totals were inspected.",
+  "quality": "Exclude every remeasure_tasks task and require all 18 raw rounds of a shape to be eligible for the common six-condition cohort. Do not relax quality thresholds or relabel REVIEW.",
+  "validation": "Keep old complete 716 legacy validation shapes and separately report the accepted common expansion_validation cohort; no old or new test labels.",
+  "training": "Reuse complete legacy_train 3345; add deterministic nested 1000, 3000 and all eligible expansion_train shapes, provided the additional common cohort exceeds 3000.",
+  "order": "Existing per-seed A then C order; new shapes sorted by sha256 of gemm-expansion-20261106-SEED:MxNxK.",
+  "learners": [
+    "rf",
+    "ridge",
+    "mlp32",
+    "mlp64"
+  ],
+  "targets": [
+    "direct",
+    "normalized"
+  ],
+  "seeds": [
+    20261028,
+    20261029,
+    20261030
+  ],
+  "settings": "Unchanged compare_learners.fit, original 15 static features and empirical Roofline constants; no hyperparameter search, no validation-based epoch stopping.",
+  "primary": "Compare each fixed learner/target/condition before and after augmentation on both validation cohorts. Primary recommendation is the full augmented endpoint; choose learner/target by pooled old+new validation mean MAPE across seeds, then mean p90.",
+  "historical_baseline": "Reuse and checksum the 144 stored n=3345 original model envelopes; re-evaluate on the new validation cohort without refitting.",
+  "diagnostics": "Record train errors, subgroup errors, fit wall, epochs and all warnings. Any capped MLP fits receive a separate all-flagged max_iter=10000 audit; retain primary outputs.",
+  "locked_test_status": "CLOSED",
+  "inputs": {
+    "analysis/learner_comparison_2026-10-28/compare_learners.py": "a6db2935a75ab5dcfc4dfb55e00d40b3abfff32e2cb52050230d11b3dc7d7f0f",
+    "analysis/learner_comparison_2026-10-28/runs/v1/frozen_protocol.json": "33945abf994363715b60263a35fa80ebacd5f00fa489fae4adaac3fc22a9bad4",
+    "analysis/learner_comparison_2026-10-28/runs/v1/artifact_hashes_final.json": "6794ba7c38b6991ca6d4e84b1a2bd8809ac579795b2439c2a8a4babbd38ca8cd",
+    "analysis/integrated_rq14_2026-10-28/run_rq14.py": "3fc0233e6d70476dd1abd2e514197a6938fcdb334d9c2807620ba568b894c43c",
+    "analysis/integrated_rq14_2026-10-28/requirements.txt": "ab80abb920cd0589621526fcc8c36ab5e171eedab3e138121c902fc75e23de04",
+    "analysis/gemm_dataset_v1_2026-10-02/main_complete_unlocked_conditions.csv": "de7be30f318c036185f8da0ab53ef78205a1a63d5c2df8cf900ccc54e767b65f",
+    "gemm_expand_20261028_v1/release_hashes.json": "7d999d128da902a708add85fa045a92a5771f77c50f5e868c06f88867ee4a338"
+  }
+}

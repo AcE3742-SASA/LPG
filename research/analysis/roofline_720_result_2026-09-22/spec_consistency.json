@@ -1,0 +1,123 @@
+{
+  "calculation_verification": "PASS",
+  "assessment": "720_RANGE_CONSISTENT_CEILING_NOT_UNIVERSAL_750_TENSOR_REVIEW",
+  "official_sources": {
+    "datasheet": "https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/quadro-product-literature/proviz-rtx-4000-sff-ada-datasheet-2616456-web-1.pdf",
+    "professional_ada_architecture": "https://images.nvidia.com/aem-dam/en-zz/Solutions/technologies/NVIDIA-ADA-GPU-PROVIZ-Architecture-Whitepaper_1.1.pdf",
+    "nvidia_smi": "https://docs.nvidia.com/deploy/nvidia-smi/index.html"
+  },
+  "specification": {
+    "cuda_cores": 6144,
+    "tensor_cores": 192,
+    "fp32_boost_TFLOPs": 19.2,
+    "sparse_fp8_boost_TFLOPs": 306.8,
+    "memory_bandwidth_GBs": 280,
+    "memory_bus_bits": 160,
+    "power_limit_W": 70
+  },
+  "assumptions": {
+    "fp16_dense_flops_per_tensor_core_cycle": 256,
+    "scope": "Professional Ada throughput relation; 4000 SFF per-mode rate inferred, not separately specified in its datasheet",
+    "memory_reference": "280 GB/s times observed memory-clock ratio 6801/7001",
+    "clock_caveat": "Sampled clocks do not independently establish continuous effective execution frequency"
+  },
+  "roofline_runs": {
+    "720": {
+      "simt": {
+        "computed_peak_TFLOPs": 8.84736,
+        "measured_TFLOPs": 6.139907596769533,
+        "fraction_of_computed_peak": 0.6939818880173897,
+        "within_computed_peak": true,
+        "raw_five_run_recalculation": "PASS"
+      },
+      "tensorop": {
+        "computed_peak_TFLOPs": 35.38944,
+        "measured_TFLOPs": 35.01587569498772,
+        "fraction_of_computed_peak": 0.9894441871639597,
+        "within_computed_peak": true,
+        "raw_five_run_recalculation": "PASS"
+      },
+      "bandwidth": {
+        "adjusted_reference_GBs": 272.0011426939009,
+        "measured_GBs": 262.324,
+        "fraction_of_adjusted_reference": 0.964422418972
+      }
+    },
+    "750": {
+      "simt": {
+        "computed_peak_TFLOPs": 9.216,
+        "measured_TFLOPs": 7.049676630527438,
+        "fraction_of_computed_peak": 0.7649388704999391,
+        "within_computed_peak": true,
+        "raw_five_run_recalculation": "PASS"
+      },
+      "tensorop": {
+        "computed_peak_TFLOPs": 36.864,
+        "measured_TFLOPs": 40.25911391619639,
+        "fraction_of_computed_peak": 1.0920983592718205,
+        "within_computed_peak": false,
+        "raw_five_run_recalculation": "PASS"
+      },
+      "bandwidth": {
+        "adjusted_reference_GBs": 272.0011426939009,
+        "measured_GBs": 262.98,
+        "fraction_of_adjusted_reference": 0.9668341735459072
+      }
+    }
+  },
+  "gemm_200_shapes": {
+    "fp32": {
+      "maximum_TFLOPs": 6.447749583121796,
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "mode": "graph",
+      "fraction_of_computed_peak": 0.7287766727161318,
+      "fraction_of_CUTLASS_reference": 1.0501378858721313,
+      "combinations_above_CUTLASS_reference": 15,
+      "all_within_computed_peak": true
+    },
+    "fp16": {
+      "maximum_TFLOPs": 32.614058853728544,
+      "shape": [
+        4096,
+        4096,
+        4096
+      ],
+      "mode": "graph",
+      "fraction_of_computed_peak": 0.9215760083722303,
+      "fraction_of_CUTLASS_reference": 0.9314077745140333,
+      "combinations_above_CUTLASS_reference": 0,
+      "all_within_computed_peak": true
+    }
+  },
+  "input_sha256": {
+    "analysis/roofline_720_result_2026-09-22/roofline_parameters.json": "908569fe19efcd76ada07052b8b1589f87f64fa7418d7ccb58dba666d2e854f7",
+    "analysis/roofline_720_result_2026-09-22/recomputed/summary.csv": "2d2efe73be206532259768d01f6196c9e46c649080c75ddcfb5bf6bc0a6ed640",
+    "analysis/roofline_720_result_2026-09-22/raw/r1_fp32_simt_04_n16384.gemm.csv": "e766dc96dde2c887660bae988fcc284dbdbb7abbfb4df6e1f46d2b9a12860a9b",
+    "analysis/roofline_720_result_2026-09-22/raw/r2_fp32_simt_04_n16384.gemm.csv": "f179046e0ea863b54a7d8fcbcec4f8a73d30dac1e94b6fafaaaf30a17ff51767",
+    "analysis/roofline_720_result_2026-09-22/raw/r4_fp32_simt_04_n16384.gemm.csv": "a97af81c945ae0bd289d144966a5368765df216d2d9a0436d17c213dfedf5044",
+    "analysis/roofline_720_result_2026-09-22/raw/r5_fp32_simt_04_n16384.gemm.csv": "0f02a619310966d1d931d18dfbed41790cd245d590cd6a6b6a1141c1f71dba65",
+    "analysis/roofline_720_result_2026-09-22/raw/r3_fp32_simt_04_n16384.gemm.csv": "faa0a515709c8eaa6c6cb9eb81b448f834af0b39b98e5c179bc029953bb24164",
+    "analysis/roofline_720_result_2026-09-22/raw/r1_fp16_tensor_06_n16384.gemm.csv": "dc341af60c8daddb8c60e82589342fb7987f39d16819f6bcde006fd797a46e38",
+    "analysis/roofline_720_result_2026-09-22/raw/r5_fp16_tensor_06_n16384.gemm.csv": "38c4ad411e44c0b1595306380c8cdefc1320bea03ae27e235547f9f642029f67",
+    "analysis/roofline_720_result_2026-09-22/raw/r3_fp16_tensor_06_n16384.gemm.csv": "b415c85af8af64935a1e4c5e99a7286ee517c078f0ec86567a9754947598f4a1",
+    "analysis/roofline_720_result_2026-09-22/raw/r2_fp16_tensor_06_n16384.gemm.csv": "c01ce55c25f4680598796f047c5490cb3e454932ecc00473be2d4bbfa0b2b6a8",
+    "analysis/roofline_720_result_2026-09-22/raw/r4_fp16_tensor_06_n16384.gemm.csv": "75e6ad390ab0fc3e64fe1d6d40a0b76e34c9fa179ca1e12a082ffd444c37a83d",
+    "analysis/roofline_750_result_2026-09-22/roofline_parameters.json": "1891d673cd5c38de250b6ec7641c0439d4a0e7df17b3e23ed2dbfc50990a2571",
+    "analysis/roofline_750_result_2026-09-22/recomputed/summary.csv": "7be1ebfd422b2f8a4acebdcfef864fa4ff5dcacaebb39953e4f042ad85201ae4",
+    "analysis/roofline_750_result_2026-09-22/raw/r4_fp32_simt_02_n16384.gemm.csv": "f6a5d5d00cbc2ebfa814003eecc600822935a68a14dcfe20183e95526c84e525",
+    "analysis/roofline_750_result_2026-09-22/raw/r1_fp32_simt_02_n16384.gemm.csv": "3f57f051e74d0efc3f2e3ead8c782c1639c56843dc414b8d510f779ca9411fbb",
+    "analysis/roofline_750_result_2026-09-22/raw/r2_fp32_simt_02_n16384.gemm.csv": "2263e735f65af160e430a4703a8e21e966c4365335c8c33cdc7850016ef899d3",
+    "analysis/roofline_750_result_2026-09-22/raw/r3_fp32_simt_02_n16384.gemm.csv": "089c00fc33eba750b8901588c5868ff51600d0ef580a1861ba9ee30b6651ea7f",
+    "analysis/roofline_750_result_2026-09-22/raw/r5_fp32_simt_02_n16384.gemm.csv": "2e1c4122108c6d44d8df5b07e140db29882faa3cb0861e060695af6cf46c5f94",
+    "analysis/roofline_750_result_2026-09-22/raw/r1_fp16_tensor_06_n16384.gemm.csv": "caf8e1047ba38dd5ffe34274a4f5d7c06ce5c64131e2a0c8372f5e98a0d4a165",
+    "analysis/roofline_750_result_2026-09-22/raw/r5_fp16_tensor_06_n16384.gemm.csv": "a061105d1661c988a0dc3435c13229e8dfbcceb848f799606158bb6b69401ec3",
+    "analysis/roofline_750_result_2026-09-22/raw/r3_fp16_tensor_06_n16384.gemm.csv": "698036ac7ec13b335dfdc78c2aaed7abc469a1171d88b00787aad44b1e198a0e",
+    "analysis/roofline_750_result_2026-09-22/raw/r2_fp16_tensor_06_n16384.gemm.csv": "3fc2868d2339ca7afa2d810a8e3f53f5658570907d3ffafc1a6f10ed618c5236",
+    "analysis/roofline_750_result_2026-09-22/raw/r4_fp16_tensor_06_n16384.gemm.csv": "f9e8987f4b0f4cd56f8ae0b6ce0ab7dd141b9efd382055588745dfd88cd66815",
+    "analysis/abstract_200_720_recovery_result_2026-09-22/round_aggregates.csv": "857a2baca2dbf08a05ecd9d88d072b0621c1915e6a9536e4cc8723e2064b0986"
+  }
+}

@@ -1,0 +1,35 @@
+STAGE 1/4: s0_750_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjr5zvwvh/s0_750_before.log
+STAGE 2/4: s1_780; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjr5zvwvh/s1_780.log
+STAGE 3/4: s2_810; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjr5zvwvh/s2_810.log
+STAGE 4/4: s3_750_after; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjr5zvwvh/s3_750_after.log
+RESTORE: COMMANDS ACCEPTED
+LOWER CLOCKS: PASS; full remains HOLD
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/4: s0_750_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpn45kwavy/s0_750_before.log
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/4: s0_750_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmp9eptjf1h/s0_750_before.log
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/4: s0_750_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpxpjtgiuc/s0_750_before.log
+STAGE 2/4: s1_780; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpxpjtgiuc/s1_780.log
+STAGE 3/4: s2_810; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpxpjtgiuc/s2_810.log
+STAGE 4/4: s3_750_after; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpxpjtgiuc/s3_750_after.log
+RESTORE: FAILED; inspect restore.json
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rgc
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rmc
+LOWER CLOCKS: FAIL; full remains HOLD
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+test_bad_clocks_power_cap_unavailable_and_missing_samples_are_review (test_lower.LowerTests.test_bad_clocks_power_cap_unavailable_and_missing_samples_are_review) ... ok
+test_block_counter_issue_not_hidden_by_active_sample_elsewhere (test_lower.LowerTests.test_block_counter_issue_not_hidden_by_active_sample_elsewhere) ... ok
+test_complete_and_counter_only_review_have_separate_gates (test_lower.LowerTests.test_complete_and_counter_only_review_have_separate_gates) ... ok
+test_corrupted_results_and_incomplete_allocate_coverage_rejected (test_lower.LowerTests.test_corrupted_results_and_incomplete_allocate_coverage_rejected) ... ok
+test_launcher_preserves_review_exit_and_waits_for_cleanup (test_lower.LowerTests.test_launcher_preserves_review_exit_and_waits_for_cleanup) ... ok
+test_run_restores_under_lock_on_success_failure_and_interrupt (test_lower.LowerTests.test_run_restores_under_lock_on_success_failure_and_interrupt) ... ok
+test_source_manifest_and_dependency_tampering_rejected (test_lower.LowerTests.test_source_manifest_and_dependency_tampering_rejected) ... ok
+test_stable_blocks_cannot_hide_round_and_before_after_variation (test_lower.LowerTests.test_stable_blocks_cannot_hide_round_and_before_after_variation) ... ok
+test_three_modes_same_inputs_batches_and_balanced_reverse_order (test_lower.LowerTests.test_three_modes_same_inputs_batches_and_balanced_reverse_order) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 5.480s
+
+OK

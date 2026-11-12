@@ -1,0 +1,443 @@
+{
+  "validation": "PASS",
+  "comparison": "Same M,N; K=127 reference. Existing mixed-session evidence, not a controlled A/B experiment.",
+  "records": [
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "3fb5c922611f3d40091ccff6",
+        "kind": "gemm",
+        "mode": "allocate",
+        "phase": "main",
+        "round": 0,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 63.27,
+          "median": 63.31,
+          "max": 63.31
+        },
+        "temperature.gpu": {
+          "min": 60.0,
+          "median": 60.0,
+          "max": 60.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.8355925744321165
+    },
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "ef6a1146350275b207b1d00f",
+        "kind": "gemm",
+        "mode": "prealloc",
+        "phase": "main",
+        "round": 0,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 63.36,
+          "median": 63.36,
+          "max": 63.38
+        },
+        "temperature.gpu": {
+          "min": 61.0,
+          "median": 61.0,
+          "max": 61.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.8355498631795247
+    },
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "85b924e975313cbad39b0af8",
+        "kind": "gemm",
+        "mode": "graph",
+        "phase": "main",
+        "round": 0,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 63.41,
+          "median": 63.43,
+          "max": 63.47
+        },
+        "temperature.gpu": {
+          "min": 61.0,
+          "median": 61.0,
+          "max": 62.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.8344575881958007
+    },
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "d6f3de905742335e764c63ce",
+        "kind": "gemm",
+        "mode": "prealloc",
+        "phase": "main",
+        "round": 1,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 63.94,
+          "median": 63.94,
+          "max": 63.94
+        },
+        "temperature.gpu": {
+          "min": 65.0,
+          "median": 65.0,
+          "max": 65.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.8356181462605794
+    },
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "2847eff3c56e4e2579d4e9fd",
+        "kind": "gemm",
+        "mode": "graph",
+        "phase": "main",
+        "round": 1,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 63.97,
+          "median": 64.01,
+          "max": 64.01
+        },
+        "temperature.gpu": {
+          "min": 66.0,
+          "median": 66.0,
+          "max": 66.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.8346197128295898
+    },
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "a797cd0c84afcb1dae0e224d",
+        "kind": "gemm",
+        "mode": "allocate",
+        "phase": "main",
+        "round": 1,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 64.11,
+          "median": 64.11,
+          "max": 64.14
+        },
+        "temperature.gpu": {
+          "min": 66.0,
+          "median": 66.0,
+          "max": 66.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.8357205073038737
+    },
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "a1acae0b4fd25e93d32c73bb",
+        "kind": "gemm",
+        "mode": "graph",
+        "phase": "main",
+        "round": 2,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 63.13,
+          "median": 63.17,
+          "max": 63.17
+        },
+        "temperature.gpu": {
+          "min": 59.0,
+          "median": 60.0,
+          "max": 60.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.83461119333903
+    },
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "ba15c477e294646a8477bd85",
+        "kind": "gemm",
+        "mode": "allocate",
+        "phase": "main",
+        "round": 2,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 63.26,
+          "median": 63.26,
+          "max": 63.27
+        },
+        "temperature.gpu": {
+          "min": 61.0,
+          "median": 61.0,
+          "max": 61.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.8356778462727864
+    },
+    {
+      "task": {
+        "dtype": "fp32",
+        "id": "9c208cd7e8fd8e4a39353535",
+        "kind": "gemm",
+        "mode": "prealloc",
+        "phase": "main",
+        "round": 2,
+        "shape": [
+          4096,
+          4096,
+          127
+        ],
+        "split": "legacy_train"
+      },
+      "session": "20260922_175658_0cf7c114",
+      "quality": "PASS",
+      "flags": [],
+      "samples": {
+        "samples": 13,
+        "clocks.sm": {
+          "min": 720.0,
+          "median": 720.0,
+          "max": 720.0
+        },
+        "power.draw": {
+          "min": 63.42,
+          "median": 63.42,
+          "max": 63.48
+        },
+        "temperature.gpu": {
+          "min": 62.0,
+          "median": 62.0,
+          "max": 62.0
+        },
+        "utilization.gpu": {
+          "min": 100.0,
+          "median": 100.0,
+          "max": 100.0
+        },
+        "cap_samples": 0,
+        "clock_mismatch_samples": 0,
+        "reason_masks": {
+          "0x0": 13
+        }
+      },
+      "median_ms": 0.8357034683227539
+    }
+  ],
+  "power_median_of_task_medians": 63.42,
+  "temp_median_of_task_medians": 61.0,
+  "direct_power_tasks": 0,
+  "direct_clock_tasks": 0,
+  "holdout_latencies_disclosed": false
+}

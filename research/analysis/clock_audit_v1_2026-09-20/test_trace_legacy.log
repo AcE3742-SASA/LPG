@@ -1,0 +1,13 @@
+.RESULT_ZIP=/var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmp72exqmx2/run.zip
+..COLLECTION INTEGRITY: PASS_WITH_WARNINGS (1 conditions, 1 traced blocks)
+MEASUREMENT QUALITY: REVIEW REQUIRED
+NOTE: Desktop GPU clients retained in process log: ['11192, /usr/bin/ptyxis, 33 MiB']
+NOTE: GNOME portal retained in process log: ['6470, /usr/libexec/xdg-desktop-portal-gnome, 9 MiB']
+..........NOTE: GNOME portal retained in process log: ['510, /usr/libexec/xdg-desktop-portal-gnome, 24 MiB']
+NOTE: GNOME portal retained in process log: ['510, /usr/libexec/xdg-desktop-portal-gnome, 24 MiB']
+NOTE: GNOME portal retained in process log: ['510, /usr/libexec/xdg-desktop-portal-gnome, 24 MiB']
+.........
+----------------------------------------------------------------------
+Ran 22 tests in 0.324s
+
+OK

@@ -1,0 +1,15 @@
+{
+  "checks": "9 CPU-only tests passed; bash syntax and Python AST passed; all 13 v5 source hashes match uploaded pilot",
+  "gpu_execution": "NOT_RUN",
+  "full_v5": "User confirmed not started",
+  "zip_sha256": "ed5e0a8fb2c1d501510db45bd1129b03ed784bbee6f75a1e7cc60367502a6237",
+  "file_count": 6,
+  "files": {
+    "timing_audit_v1/README.md": "23cb1cd393db0d08f411991b00654fa756edc92a1556ee3bfb4b1835854f13da",
+    "timing_audit_v1/analyze.py": "083848ab15372277f32e782ef3d56943969b996674efd83c34ab0abe9f974688",
+    "timing_audit_v1/audit.py": "ac7b8c87791cc8b0e8798f0e6328d74ac8a9e5db479bbf3c207804c1b78b0cb7",
+    "timing_audit_v1/baseline_v5.json": "b983c14d84c22886578095e340399469e17d1a9f46d761fa3da1cfc83ebd641c",
+    "timing_audit_v1/launch.sh": "b0c47112b155d9ceaf51eb644e2ae7c1fd7e8f00fc53e91a7dcc4d203cdbd339",
+    "timing_audit_v1/test_audit.py": "6564551d67d7ded1ad8f4d60017f12d69ec48db1379d6e00ea24a2cb7b165aa6"
+  }
+}

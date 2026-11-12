@@ -1,0 +1,67 @@
+{
+  "input": {
+    "shape": [
+      143,
+      1631
+    ],
+    "stride": [
+      1631,
+      1
+    ],
+    "dtype": "torch.float16",
+    "sha256": "e1bee1014229ef819a700f2f825437aae0e421e7f64576d4db04c23a4b731f1b"
+  },
+  "weights": [
+    {
+      "shape": [
+        3263,
+        1631
+      ],
+      "stride": [
+        1631,
+        1
+      ],
+      "dtype": "torch.float16",
+      "sha256": "7225ea7dc34adfbc2d0498f2131b0fb94a9481a4648f658f9f32d1c9f748ff68"
+    },
+    {
+      "shape": [
+        1631,
+        3263
+      ],
+      "stride": [
+        3263,
+        1
+      ],
+      "dtype": "torch.float16",
+      "sha256": "24361caaae5091fb58f5179ed0aad3eeb129421e96813886cc187c67e3546d3c"
+    }
+  ],
+  "prepared": [
+    {
+      "shape": [
+        1631,
+        3263
+      ],
+      "stride": [
+        3263,
+        1
+      ],
+      "dtype": "torch.float16",
+      "sha256": "5aea3fabc9ba016435aa07e2e4eb3e007600d862a61760b030c5c5894b17bce8"
+    },
+    {
+      "shape": [
+        3263,
+        1631
+      ],
+      "stride": [
+        1631,
+        1
+      ],
+      "dtype": "torch.float16",
+      "sha256": "6fbf780af42111032ffbc62e165c6c54c2f7c4094586699e1d5a08a57e3f1d99"
+    }
+  ],
+  "seed": 3354422859
+}

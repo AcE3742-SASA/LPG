@@ -1,0 +1,8 @@
+750 MHz Roofline: REVIEW
+Completed valid runs: 0/306
+Round 0 excluded; medians of five separate process invocations within this session.
+Candidate ceilings (inspect raw results, size saturation and telemetry before adopting):
+simt: no eligible candidate
+tensorop: no eligible candidate
+bw: no eligible candidate
+Power-cap counter increments are retained separately; they do not prove timed-kernel throttling durations.

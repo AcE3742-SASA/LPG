@@ -1,0 +1,147 @@
+{
+  "verification": "PASS",
+  "decision": "INCOMPLETE_PREHEAT_MEMORY_SAMPLE_REVIEW_FULL_HOLD",
+  "zip_sha256": "1eb542db853db7010cd85e49cd269bf11bf11ec11cfbac981d620b73aa63bda6",
+  "raw_files": 160,
+  "source_files_verified": 9,
+  "dependencies_verified": 74,
+  "reproduced_identical_outputs": 15,
+  "gpu_execution_on_mac": false,
+  "result": {
+    "gate": "INCOMPLETE",
+    "size": "check",
+    "expected": 48,
+    "recorded": 24,
+    "missing": 24,
+    "attempts": 24,
+    "counts": {
+      "PASS": 24
+    },
+    "timed_blocks": 168,
+    "triplets_expected": 16,
+    "triplets_complete": 8,
+    "timing_and_sampled_clocks_pass": false,
+    "max_relative_iqr": 0.00019493330602481996,
+    "max_abs_drift": 0.000201567905524834,
+    "max_between_round_range": null,
+    "between_round_flags": 0,
+    "round_group_sizes": {
+      "1": 24
+    },
+    "round_groups_complete": 0,
+    "round_groups_expected": 24,
+    "clock_flags": [
+      "sessions/20260921_185843_20c7d112/segment_00000:worker_mismatch:clocks.mem"
+    ],
+    "counter_anomaly_blocks": 9,
+    "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+    "all_restorations_accepted": true,
+    "results_digest": "08defe9640fd8c0ceee53dbd86e8142c96041a64ced9f8fecb6092e961b69b73",
+    "task_wall_seconds_median": 3.880812507999508,
+    "reference_change_abs_max_pct": 17.105114128344855,
+    "full_sweep": "HOLD_PENDING_CHECK_REVIEW",
+    "sampling_note": "Host-envelope samples are not continuous/effective kernel clocks."
+  },
+  "requested_clock_mhz": 725,
+  "selected_clock_mhz": 720,
+  "supports_requested_725": false,
+  "supports_selected_720": true,
+  "supported_graphics_clocks_count": 194,
+  "supported_neighbors": [
+    765,
+    750,
+    735,
+    720,
+    705,
+    690
+  ],
+  "correctness_scopes": {
+    "sampled": 18,
+    "full": 6
+  },
+  "telemetry_samples": 5230,
+  "cadence": {
+    "samples": 5230,
+    "requested_interval_ms": 50,
+    "observed_interval_seconds_median": 0.05200004577636719,
+    "observed_interval_seconds_max": 0.06699991226196289,
+    "unavailable_fields": [],
+    "sensor_resolution_verified": false
+  },
+  "core_counts": {
+    "720.0": 5230
+  },
+  "memory_counts": {
+    "6801.0": 5229,
+    "6800.0": 1
+  },
+  "instantaneous_active_samples": {
+    "clocks_event_reasons.sw_power_cap": 0,
+    "clocks_event_reasons.sw_thermal_slowdown": 0,
+    "clocks_event_reasons.hw_thermal_slowdown": 0
+  },
+  "ranges": {
+    "clocks.sm": [
+      720.0,
+      720.0
+    ],
+    "clocks.mem": [
+      6800.0,
+      6801.0
+    ],
+    "power.limit": [
+      70.0,
+      70.0
+    ],
+    "power.draw": [
+      20.81,
+      67.11
+    ],
+    "temperature.gpu": [
+      32.0,
+      64.0
+    ]
+  },
+  "anomalous_memory_sample": {
+    "timestamp": "2026/09/21 19:00:02.976",
+    "uuid": "GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a",
+    "pstate": "P2",
+    "temperature.gpu": 51.0,
+    "utilization.gpu": 100.0,
+    "clocks.sm": 720.0,
+    "clocks.mem": 6800.0,
+    "power.draw": 44.93,
+    "power.limit": 70.0,
+    "clocks_event_reasons.active": 0,
+    "clocks_event_reasons.sw_power_cap": false,
+    "clocks_event_reasons.sw_thermal_slowdown": false,
+    "clocks_event_reasons.hw_thermal_slowdown": false,
+    "clocks_event_reasons_counters.sw_power_cap": 5420481159,
+    "clocks_event_reasons_counters.sw_thermal_slowdown": 0,
+    "clocks_event_reasons_counters.hw_thermal_slowdown": 0,
+    "utc": "2026-09-21T10:00:02.976000+00:00"
+  },
+  "anomaly_kst": "2026-09-21T19:00:02.976000+09:00",
+  "first_task_setup_kst": "2026-09-21T19:01:44.139989+09:00",
+  "seconds_before_first_task_setup": 101.163989,
+  "overlapping_task_setup_calibration_or_timed_blocks": 0,
+  "affected_timed_measurements": 0,
+  "session": {
+    "state": "ERROR",
+    "new_records": 24,
+    "elapsed_seconds": 274.48813710599643,
+    "ended_utc": "2026-09-21T10:03:18.312848+00:00"
+  },
+  "restoration_commands_accepted": true,
+  "rejections": {
+    "resume": "Saved clock/telemetry/data problem: resume refused. Preserve this run; review it before using a fresh output directory.",
+    "full_admission": "Saved clock/telemetry/data problem: resume refused. Preserve this run; review it before using a fresh output directory."
+  },
+  "exit_codes": {
+    "launcher/20260921_185833_bojXrA/exit_code.txt": 1,
+    "launcher/20260921_185833_bojXrA/tee_exit_code.txt": 0,
+    "launcher/20260921_185833_bojXrA/checked/runs/20260921_185839_28woll/exit_code.txt": 1,
+    "launches/20260921_185842_664e2c/worker_0.exit_code.txt": 1
+  },
+  "interpretation": "One 6800 MHz sample during preheating triggered the unchanged worker-wide exact-match gate; the cause of that 1 MHz reporting difference is not established. No power-cap/core-clock failure observed; round 1 remains missing."
+}

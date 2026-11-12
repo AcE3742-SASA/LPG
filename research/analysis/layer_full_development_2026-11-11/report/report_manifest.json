@@ -1,0 +1,21 @@
+{
+  "source_run": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/analysis/layer_full_fit_2026-11-10_v5/prepared_layer_full",
+  "selection_freeze_sha256": "beed9b4314c3f258f0fcd6f86d19b15d271fac2d1abe705875aa50a94e99cbd4",
+  "evaluation_source": null,
+  "output_hashes": {
+    "collection_costs.csv": "981461eb334c0a574a2a220708573df22b768b33667b2c0ab8950ca061a785f2",
+    "fitting_costs.csv": "7aa22bfbf8dc5491e50aed3bb55bdd043812ea3030f8d881aa85cc6a54dea2df",
+    "label_budgets.csv": "8e76fcf12939304be3780a67e9c8fdd5bf169ce9070f224503a3819bd33a6d35",
+    "learning_curves.csv": "15c6ff327a934e34a74d9157d2b88950ae77473eed32f80bfa846009611cca96",
+    "report.md": "7072eccf6eac0a2431270ed36b06d847786026a4df4585f742d59b8af35f9467",
+    "selected_summary.csv": "4fc86fa09905a227f1b0ee2d485802ad7c7cf4ca0323f1cd5d943f553c3e1e69",
+    "validation_decomposed_fp16.pdf": "894d5c0801826cdfeb0b13a3ec4d2131dfa941ee49ab41a89436b379d278aa50",
+    "validation_decomposed_fp16.png": "05a3a1aa6ec03233d91bb6c93f6818bbfed272b20d41cd4579db9324c3c16a8b",
+    "validation_decomposed_fp32.pdf": "8df6ac1dd01388e947af94aede2828c3346b76ebd7f81d6da3cec3bb1b52942d",
+    "validation_decomposed_fp32.png": "05af208b73f1b554534e9cfa274b6383de9578a81ee99ef8c69a88f414aa0dd4",
+    "validation_standard_fp16.pdf": "0e375f0762c5fae83c81b76ed8ce4ef0b700a252fde6ccd87815519b59814751",
+    "validation_standard_fp16.png": "1a5b314f50ac5ecd28272b5573fd5fe5dec12ccd34c8bc4bb1e37bc8fc43a397",
+    "validation_standard_fp32.pdf": "2e7be2d139f6ecf3973b48b1db378236d5e2273ff80f875fef91428834c0f818",
+    "validation_standard_fp32.png": "b2d071563769e19a389d4303ec3175ae33e6819f38cc0000ffeff0da7677ac2b"
+  }
+}

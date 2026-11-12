@@ -1,0 +1,6 @@
+pass_name,sample_span_s,sw_power_cap_s,sw_thermal_s,hw_thermal_s,thermal_active_samples,power_limits_w,memory_clocks_mhz
+sparse_before,211.439,210.600745,0.0,0.0,0,[70.0],[6801.0]
+dense_before,212.394,211.798711,0.0,0.0,0,[70.0],[6801.0]
+nsys,229.177,211.653158,0.0,0.0,0,[70.0],[6801.0]
+dense_after,212.153,211.282425,0.0,0.0,0,[70.0],[6801.0]
+sparse_after,212.422,211.581638,0.0,0.0,0,[70.0],[6801.0]

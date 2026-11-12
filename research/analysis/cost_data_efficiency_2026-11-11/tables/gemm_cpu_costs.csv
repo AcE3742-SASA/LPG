@@ -1,0 +1,4 @@
+stage,wall_seconds,fit_seconds,scope
+legacy_search,1946.4158155419864,1919.6332658305182,All recorded search fits; not six-weight recipe
+expansion_search,4578.554443374975,4552.06145938742,All recorded search fits; not six-weight recipe
+selected_six_prior_fit_recipe,,84.66975104180165,Subset of expansion_search; do not add twice

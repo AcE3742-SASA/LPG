@@ -1,0 +1,2 @@
+PASS: synthetic 480-standard loader, locked-before-list denial, private-read guard, round/quality rejection and prior/model contracts
+NO REAL LAYER FIT OR GPU RUN: locked test and explicit records remain closed

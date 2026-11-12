@@ -1,0 +1,24 @@
+{
+  "verification": "PASS",
+  "decision": "INCOMPLETE_PREHEAT_MEMORY_SAMPLE_REVIEW_FULL_HOLD",
+  "raw_files": 160,
+  "source_files_verified": 9,
+  "dependencies_verified": 74,
+  "reproduced_identical_outputs": 15,
+  "core_counts": {
+    "720.0": 5230
+  },
+  "memory_counts": {
+    "6801.0": 5229,
+    "6800.0": 1
+  },
+  "seconds_before_first_task_setup": 101.163989,
+  "correctness_scopes": {
+    "sampled": 18,
+    "full": 6
+  },
+  "rejections": {
+    "resume": "Saved clock/telemetry/data problem: resume refused. Preserve this run; review it before using a fresh output directory.",
+    "full_admission": "Saved clock/telemetry/data problem: resume refused. Preserve this run; review it before using a fresh output directory."
+  }
+}

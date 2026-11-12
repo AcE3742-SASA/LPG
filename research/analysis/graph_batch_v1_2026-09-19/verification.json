@@ -1,0 +1,84 @@
+{
+  "zip_sha256": "88a8b912c34c46f298970bebe7269d8407d9f8c84b071e9acad5629ae99da5d4",
+  "raw_files": 173,
+  "source_files": 7,
+  "baseline_files": 13,
+  "environments": 4,
+  "analysis_exact_match": true,
+  "exit_codes": {
+    "round_1.exit_code.txt": 0,
+    "round_2.exit_code.txt": 0,
+    "exit_code.txt": 0,
+    "tee_exit_code.txt": 0,
+    "source_check.exit_code.txt": 0,
+    "round_3.exit_code.txt": 0,
+    "round_0.exit_code.txt": 0,
+    "checked/runs/20260919_211455_T2ISmR/exit_code.txt": 0
+  },
+  "correctness_pass": 48,
+  "full_output_checks": 32,
+  "sampled_output_checks": 16,
+  "measured_blocks": 336,
+  "measured_gemms": 14298592,
+  "max_relative_iqr": 0.0006995817839234828,
+  "max_abs_drift": 0.000586416670696957,
+  "max_between_round_spread": 0.007363356348686427,
+  "min_block_ms": 94.68816375732422,
+  "min_settle_ms": 3003.0270080566406,
+  "candidates": {
+    "g00": 32,
+    "g01": 16,
+    "g02": 32
+  },
+  "paired_64_to_128": {
+    "g00": {
+      "median": -0.0027200854436756905,
+      "minimum": -0.0034537612284689656,
+      "maximum": -0.0018138523068342849
+    },
+    "g01": {
+      "median": -0.0010254233505632149,
+      "minimum": -0.0011002455308696257,
+      "maximum": -0.000967136019147774
+    },
+    "g02": {
+      "median": -0.002598897201585071,
+      "minimum": -0.002680542194536062,
+      "maximum": -0.002572125584938245
+    }
+  },
+  "process_snapshots": 57,
+  "telemetry_samples": 913,
+  "telemetry_start": "2026/09/19 21:14:57.890",
+  "telemetry_end": "2026/09/19 21:30:10.399",
+  "telemetry_duration_seconds": 912.509,
+  "telemetry_max_gap_seconds": 1.02,
+  "telemetry_ranges": {
+    "temperature.gpu": {
+      "min": 35.0,
+      "median": 72.0,
+      "max": 75.0
+    },
+    "clocks.current.sm [MHz]": {
+      "min": 975.0,
+      "median": 1200.0,
+      "max": 2280.0
+    },
+    "clocks.current.memory [MHz]": {
+      "min": 6801.0,
+      "median": 6801.0,
+      "max": 7001.0
+    },
+    "power.draw [W]": {
+      "min": 16.99,
+      "median": 69.42,
+      "max": 70.17
+    }
+  },
+  "recommendation": "64 GEMMs/replay for the three tested small conditions",
+  "limitations": [
+    "Graph stream time includes GPU work and internal gaps.",
+    "Observed 1% criterion is not a confidence interval or absolute error bound.",
+    "No simultaneous new prealloc measurement or whole-GPU interference exclusion."
+  ]
+}

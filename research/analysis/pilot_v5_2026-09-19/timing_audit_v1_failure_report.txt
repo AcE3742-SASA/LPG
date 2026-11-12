@@ -1,0 +1,15 @@
+Source: user-provided terminal output, 2026-09-19
+RUN_DIR=/home/eu/gemm-research/scripts/timing_audit_v1/runs/timing_audit_20260919_174529_QgFkbq/checked/runs/20260919_174529_YJLgXd
+NOTE: Desktop GPU clients retained in process log: ['11192, /usr/bin/ptyxis, 33 MiB']
+Traceback (most recent call last):
+  File "/home/eu/gemm-research/scripts/timing_audit_v1/audit.py", line 283, in <module>
+    main()
+  File "/home/eu/gemm-research/scripts/timing_audit_v1/audit.py", line 278, in main
+    run(args)
+  File "/home/eu/gemm-research/scripts/timing_audit_v1/audit.py", line 212, in run
+    check_processes(suite, gpu_uuid, out / "processes_before.json")
+  File "/home/eu/gemm-research/scripts/timing_audit_v1/audit.py", line 103, in check_processes
+    raise RuntimeError("Other GPU workloads are active: " + str(others))
+RuntimeError: Other GPU workloads are active: ['6470, /usr/libexec/xdg-desktop-portal-gnome, 9 MiB']
+EXPERIMENT: FAIL (exit 1)
+RESULT_ZIP=/home/eu/gemm-research/scripts/timing_audit_v1/runs/timing_audit_20260919_174529_QgFkbq.zip

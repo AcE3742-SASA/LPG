@@ -1,0 +1,164 @@
+[
+  {
+    "dtype": "fp16",
+    "mode": "allocate",
+    "seed": 20261028,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_allocate_20261028.joblib",
+    "sha256": "d1154ac82b7d932bbd4a0a13b681f5c5d18d7a9ff25f2057f2643b54eb8c0612"
+  },
+  {
+    "dtype": "fp16",
+    "mode": "allocate",
+    "seed": 20261029,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_allocate_20261029.joblib",
+    "sha256": "ba0989c77dd28c6ad8c1c520c75c0c2210ed6e044d4a50d3e3dedd16b57c1621"
+  },
+  {
+    "dtype": "fp16",
+    "mode": "allocate",
+    "seed": 20261030,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_allocate_20261030.joblib",
+    "sha256": "2d1b7468cc32431d6533a8e7fb92c3d8d93bd2d440efaaf8136ce72f60652578"
+  },
+  {
+    "dtype": "fp16",
+    "mode": "prealloc",
+    "seed": 20261028,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_prealloc_20261028.joblib",
+    "sha256": "3cd0dcef242ac4b2d72718d0fe7fa362f6514a91a673eba44fe08298b0d9067c"
+  },
+  {
+    "dtype": "fp16",
+    "mode": "prealloc",
+    "seed": 20261029,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_prealloc_20261029.joblib",
+    "sha256": "2945b49249f3184270b28024c76a21baf6458a003664bd93a7aec021c5bc7501"
+  },
+  {
+    "dtype": "fp16",
+    "mode": "prealloc",
+    "seed": 20261030,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_prealloc_20261030.joblib",
+    "sha256": "9c74a6df62eb081a500ba54e763cffb8e1663fae51305c188d03974f04245026"
+  },
+  {
+    "dtype": "fp16",
+    "mode": "graph",
+    "seed": 20261028,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_graph_20261028.joblib",
+    "sha256": "b10f36da7238a7a58d17dc407375ec7ebd89f2152384daebc1b796dc85ae82b6"
+  },
+  {
+    "dtype": "fp16",
+    "mode": "graph",
+    "seed": 20261029,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_graph_20261029.joblib",
+    "sha256": "f69b82b354ba11927b2841db64812fbaaf3126dfb724ace552ed2f2a49d9607a"
+  },
+  {
+    "dtype": "fp16",
+    "mode": "graph",
+    "seed": 20261030,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp16_graph_20261030.joblib",
+    "sha256": "c3220d01fc2b07e2cc4f885c16d256c402745b4fc8e4be3db92722586f122070"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "allocate",
+    "seed": 20261028,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_allocate_20261028.joblib",
+    "sha256": "dd48d12de91eb4ff0987026e5206fd5dded29446effa8dc5ff5907fd8c4638ac"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "allocate",
+    "seed": 20261029,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_allocate_20261029.joblib",
+    "sha256": "5430e779dbad5cd713cefd38a53bb4073d2bbf6ed291d2cae99c442adbac9691"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "allocate",
+    "seed": 20261030,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_allocate_20261030.joblib",
+    "sha256": "14ee001f2cf58c6d12d8f9e374c46e78c3bd2c24ddeadc2902fe31a7c201bc8e"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "prealloc",
+    "seed": 20261028,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_prealloc_20261028.joblib",
+    "sha256": "c40321aa027773d3df64c4c752a2543a3442b89747311a0461bede138e899719"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "prealloc",
+    "seed": 20261029,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_prealloc_20261029.joblib",
+    "sha256": "198d2159f48a5912c17264400ecdbbc7f2f34b94b4be7831e3c3eff900a3891d"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "prealloc",
+    "seed": 20261030,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_prealloc_20261030.joblib",
+    "sha256": "9ae387d62ac6cb826e8c3fe8661ffbaafe0485fa97205da335113314dd67029f"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "graph",
+    "seed": 20261028,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_graph_20261028.joblib",
+    "sha256": "4a6a81148dc94ee63ff83ecee95455d2b406b13e15fe40c0034ee546131b7ace"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "graph",
+    "seed": 20261029,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_graph_20261029.joblib",
+    "sha256": "851cd3080c41a71823b52741eed45720394e9cd5bb8cab65431d9c5efb515471"
+  },
+  {
+    "dtype": "fp32",
+    "mode": "graph",
+    "seed": 20261030,
+    "train_labels": 11498,
+    "method": "neuralpower_fold_scaled",
+    "model_ref": "models/fp32_graph_20261030.joblib",
+    "sha256": "295f2bd41b6d1d67f3526d12345490b4acf58a71aef227a5c817d60ea533981f"
+  }
+]

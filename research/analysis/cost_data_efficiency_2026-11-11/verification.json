@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "inputs_unchanged": 700,
+  "original_final_preflight_files": 523,
+  "final_artifacts_checked": 89,
+  "layer_configurations": 2304,
+  "equivalent_accuracy_rows": 768,
+  "layer_attempts": 33,
+  "gemm_sessions": 7,
+  "refitting": false,
+  "model_selection_changed": false,
+  "test_metrics_used_for_efficiency": false,
+  "learning_curve_points": 576
+}

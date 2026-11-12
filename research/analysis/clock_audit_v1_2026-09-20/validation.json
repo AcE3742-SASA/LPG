@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "new_tests": 10,
+  "legacy_trace_tests": 22,
+  "baseline_v6_tests": 33,
+  "python_ast": "PASS",
+  "bash_syntax": "PASS",
+  "unchanged_v6_source_files": 14,
+  "unchanged_v5_source_files": 13,
+  "unchanged_reused_functions": [
+    "union_ns",
+    "finite_positive",
+    "activity_gaps",
+    "read_trace_metadata",
+    "validate_preparation",
+    "read_trace",
+    "parse_trace",
+    "sha256_file",
+    "traced_timer",
+    "run_logged",
+    "package"
+  ],
+  "gpu_run_performed": false,
+  "planned_target_measurements": 40,
+  "planned_timed_blocks": 280,
+  "planned_nsys_blocks": 56,
+  "prior_pilot_sha256": "082d6f113aabf70391f79984673c50b988aa2e89ddca518c85d5bc6cefce9e4b"
+}

@@ -1,0 +1,236 @@
+{
+  "summary": {
+    "gate": "REVIEW",
+    "expected": 240,
+    "recorded": 240,
+    "missing": 0,
+    "timed_blocks": 1680,
+    "mode_triplets": 80,
+    "counts": {
+      "PASS": 240
+    },
+    "correctness_scopes": {
+      "sampled": 192,
+      "full": 48
+    },
+    "stage_timing_and_sampled_clocks": {
+      "s0_750_before": true,
+      "s1_780": true,
+      "s2_810": true,
+      "s3_750_after": true
+    },
+    "repeat_750_time_pass": true,
+    "counter_anomaly_blocks": 130,
+    "historical_counter_issue": "UNRESOLVED; per-stage and per-block observations retained",
+    "restoration": "COMMANDS_ACCEPTED",
+    "flags": [
+      "s0_750_before:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s0_750_before:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s0_750_before:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample",
+      "s1_780:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s1_780:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s1_780:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample",
+      "s2_810:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s2_810:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s2_810:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample",
+      "s3_750_after:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s3_750_after:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s3_750_after:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample"
+    ],
+    "full_sweep": "HOLD",
+    "selected_clock_mhz": null,
+    "interpretation": "Screened conditions only. Review before a broader pilot. Mode ratios are not causal overhead estimates."
+  },
+  "stages": [
+    {
+      "stage": "s0_750_before",
+      "sm_mhz": 750,
+      "samples": 7918,
+      "span_s": 415.863,
+      "max_iqr_pct": 0.17342502237107266,
+      "max_abs_drift_pct": 0.40168186315142057,
+      "max_round_range_pct": 0.6928088097337848,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        21.06,
+        68.91
+      ],
+      "temperature_c": [
+        34.0,
+        69.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 367065739,
+      "counter_anomaly_blocks": 34,
+      "cadence": {
+        "samples": 7918,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05299997329711914,
+        "observed_interval_seconds_max": 0.07199978828430176,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s1_780",
+      "sm_mhz": 780,
+      "samples": 7913,
+      "span_s": 415.607,
+      "max_iqr_pct": 0.3393332370420696,
+      "max_abs_drift_pct": 0.3573364962297169,
+      "max_round_range_pct": 0.7205474793726656,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.15,
+        68.8
+      ],
+      "temperature_c": [
+        52.0,
+        69.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 366764536,
+      "counter_anomaly_blocks": 30,
+      "cadence": {
+        "samples": 7913,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05299997329711914,
+        "observed_interval_seconds_max": 0.05900001525878906,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s2_810",
+      "sm_mhz": 810,
+      "samples": 7915,
+      "span_s": 415.683,
+      "max_iqr_pct": 0.057647276288918865,
+      "max_abs_drift_pct": 0.6722238338913245,
+      "max_round_range_pct": 0.7151065469081853,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.07,
+        68.94
+      ],
+      "temperature_c": [
+        52.0,
+        69.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 366921741,
+      "counter_anomaly_blocks": 36,
+      "cadence": {
+        "samples": 7915,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05299997329711914,
+        "observed_interval_seconds_max": 0.05900001525878906,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s3_750_after",
+      "sm_mhz": 750,
+      "samples": 7923,
+      "span_s": 416.005,
+      "max_iqr_pct": 0.14735109548181527,
+      "max_abs_drift_pct": 0.410073792176346,
+      "max_round_range_pct": 0.7298559746885058,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.09,
+        69.24
+      ],
+      "temperature_c": [
+        52.0,
+        70.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 367046928,
+      "counter_anomaly_blocks": 30,
+      "cadence": {
+        "samples": 7923,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.06000018119812012,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    }
+  ],
+  "elapsed_snapshot_s": 1670.0,
+  "snapshot_times": [
+    "Sun Sep 20 19:30:05 2026",
+    "Sun Sep 20 19:57:55 2026"
+  ],
+  "total_samples": 31669,
+  "total_sample_spans_s": 1663.158,
+  "max_iqr_pct": 0.3393332370420696,
+  "max_abs_drift_pct": 0.6722238338913245,
+  "max_round_range_pct": 0.7298559746885058,
+  "max_abs_repeat750_change_pct": 0.15561911279224905,
+  "worst_repeat750": {
+    "shape": [
+      1999,
+      646,
+      425
+    ],
+    "dtype": "fp32",
+    "mode": "allocate",
+    "before_us": 249.0009200542479,
+    "after_us": 249.38841307688085,
+    "after_over_before_minus_one": 0.0015561911279224905,
+    "relative_range": 0.0015549812039456355,
+    "review": false
+  },
+  "max_abs_810_vs_750_change_pct": 0.48649081873729516,
+  "max_abs_allocate_vs_prealloc_at810_pct": 0.07273006223129652,
+  "max_abs_allocate_vs_prealloc_all_stages_pct": 0.19849234042799146,
+  "max_abs_host_event_block_difference_pct": 0.017803749494604837,
+  "correctness_scopes": {
+    "sampled": 192,
+    "full": 48
+  },
+  "post_restore_clocks": {
+    "Graphics": 1680,
+    "SM": 1680,
+    "Memory": 7001
+  },
+  "limits": [
+    "Sampled clocks do not establish continuous or effective kernel frequency.",
+    "Stored correctness records were checked, not rerun on GPU.",
+    "Ten shape/dtype combinations; not independent-session or all-shape evidence.",
+    "No new profiler capture or automatic-core load comparison.",
+    "Mode differences are not causal CPU wait or allocation cost.",
+    "Counter interpretation unresolved; final clock unselected and full HOLD."
+  ]
+}

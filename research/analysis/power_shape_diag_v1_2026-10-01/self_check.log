@@ -1,0 +1,27 @@
+Recovery: wait for <= 55 C for 10 sampled seconds.
+Recovery: wait for <= 55 C for 10 sampled seconds.
+Trial 1/16: K=72 saved
+Trial 2/16: K=72 saved
+Trial 3/16: K=72 saved
+Trial 4/16: K=72 saved
+Trial 5/16: K=72 saved
+Trial 6/16: K=72 saved
+Trial 7/16: K=72 saved
+Trial 8/16: K=72 saved
+Trial 9/16: K=72 saved
+Trial 10/16: K=72 saved
+Trial 11/16: K=72 saved
+Trial 12/16: K=72 saved
+Trial 13/16: K=72 saved
+Trial 14/16: K=72 saved
+Trial 15/16: K=72 saved
+Trial 16/16: K=72 saved
+RESTORE: COMMANDS ACCEPTED
+RESTORE: COMMANDS ACCEPTED
+RESTORE: COMMANDS ACCEPTED
+RESTORE: COMMANDS ACCEPTED
+RESTORE: FAILED; inspect restore.json
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rgc
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rmc
+RESTORE: COMMANDS ACCEPTED
+CHECK PASS: scope/seeds; sampled recovery and timeout; 16-trial worker; 1/20-call profile workers; telemetry faults; lock/reset failures and interrupt; profiler commands/parsers; 128-trial return analysis, mismatched starts and missing profiles; ASCII sources.

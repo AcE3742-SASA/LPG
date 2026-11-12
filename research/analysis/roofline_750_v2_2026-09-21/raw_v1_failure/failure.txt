@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/eu/roofline_750_v1/roofline.py", line 286, in run
+    require(not capture(repo+'_source_status', ['git', '-C', str(REMOTE/repo), 'status', '--porcelain']), repo+' source tree is modified')
+  File "/home/eu/roofline_750_v1/roofline.py", line 46, in require
+    raise ValueError(message)
+ValueError: BabelStream source tree is modified

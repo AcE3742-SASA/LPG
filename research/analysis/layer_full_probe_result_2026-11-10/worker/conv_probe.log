@@ -1,0 +1,10 @@
+FAIL: Conv regression probe failed; inspect conv_reference_probe.json
+Traceback (most recent call last):
+  File "/home/eu/gemm-research/layer_full_20261110_v3/conv_probe.py", line 80, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/eu/gemm-research/layer_full_20261110_v3/conv_probe.py", line 69, in main
+    run(torch, config['tolerances'], out, save)
+  File "/home/eu/gemm-research/layer_full_20261110_v3/conv_probe.py", line 29, in run
+    raise RuntimeError('Conv regression probe failed; inspect conv_reference_probe.json')
+RuntimeError: Conv regression probe failed; inspect conv_reference_probe.json

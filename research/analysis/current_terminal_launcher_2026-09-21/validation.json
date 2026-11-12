@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "zip": "fixed_sweep_780_2026-09-21_current_terminal.zip",
+  "sha256": "38d27700cf10d24c4d686f31d99dc6e9949dfb477f0c9e7b8ddf70a0081e9fbc",
+  "files": 9,
+  "original_package_files_unchanged": 7,
+  "frozen_dependencies_unchanged": 42,
+  "checks": "Bash syntax; TMUX unset/set x check/full; exit 0/2; no tmux invocation; stdin open and no Enter wait; spaced argument preservation; launcher source capture; ZIP CRC and all bytes identical",
+  "initial_local_check": "Mac Bash 3.2 rejected empty extra array under nounset; launcher now appends optional arguments only when present; four cases pass after fix",
+  "gpu_execution": "none"
+}

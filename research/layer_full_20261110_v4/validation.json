@@ -1,0 +1,52 @@
+{
+  "status": "LOCAL_VALIDATION_PASS",
+  "release": "layer_full_20261110_v4",
+  "runtime": "Python 3.13 / torch 2.15.0 CPU",
+  "checks": {
+    "full_selfcheck": "PASS: manifests, protection, analyzer, sealed access, recovery, archive and signal cleanup",
+    "numeric_cases": 16,
+    "cpu_worker_records": 1062,
+    "healthy_records": 108,
+    "known_fp16_records_retained": 18,
+    "excluded_before_pair_creation": true,
+    "unexpected_correctness_failure_stops": true,
+    "conv_adjudicated_points": 1938,
+    "hidden_error_points_checked": 300,
+    "unchanged_numeric_cases": 8,
+    "legacy_fp16_ffn_regression": "PASS",
+    "real_archive_inheritance": "PASS: 22 pinned ZIPs; 20 train skipped; first validation attempt003",
+    "interrupted_import_and_resume": "PASS: attempts001/002/003 retained; retry004 continues",
+    "train_recollection_calls": 0,
+    "v3_campaign_reconstructed_with_unchanged_producer": "BYTE_IDENTICAL",
+    "v3_campaign_sha256": "759d18b2d520efd2829443caa92d8db943ea01d70a91b58e82e3038f5bb4ca6a",
+    "final_measured_records": 32382,
+    "final_excluded_records": 18,
+    "final_planned_records": 32400,
+    "inherited_review_batches": [
+      "train_03",
+      "train_09"
+    ],
+    "new_exclusion_review_batch": "validation_01",
+    "mixed_analysis_tests": 41,
+    "original_tolerances_unchanged": true,
+    "preserved_v2_v3_files_sha256": 336,
+    "ascii_python_and_shell_syntax": "PASS"
+  },
+  "actual_gpu_evidence": {
+    "archive": "validation_01_attempt_002_81f2dedc.zip",
+    "archive_sha256": "fa81d2256e781d0cfbaf71fe8bc55f7984736110121baa34109866d438a53fe4",
+    "case": "lf_ce6440e85a4add93",
+    "dtype": "fp32",
+    "result": "STANDARD_FAIL_DECOMPOSED_PASS",
+    "checked_coordinates": 2,
+    "maximum_standard_tolerance_ratio": 1.2453719901139924,
+    "policy": "Preserve original criterion; exclude this known case/dtype; collect remaining conditions"
+  },
+  "v4_gpu_collection": "PENDING_RESEARCH_PC_EXECUTION",
+  "original_campaign": "full_20261108_105717_8tqhrkir",
+  "test_commands": [
+    "/private/tmp/layer-v3-numeric-20261110/bin/python -B layer_full_20261110_v4/selfcheck.py --numeric",
+    "python3 -B layer_full_20261110_v4/test_inheritance.py /private/tmp/layer-v4-inherited-source-20261110",
+    "analysis/integrated_rq14_2026-10-28/.venv/bin/python -B -m unittest discover -s analysis/layer_full_fit_2026-11-10_v4 -p test_*.py -v"
+  ]
+}

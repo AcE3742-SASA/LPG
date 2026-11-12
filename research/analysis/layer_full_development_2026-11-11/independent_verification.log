@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-11-10T16:19:27.539786+00:00",
+  "frozen_artifacts": 307,
+  "metric_rows": 6912,
+  "aggregate_rows": 2304,
+  "selections": 112,
+  "validation_predictions": 344736,
+  "replayed_models": 288,
+  "replayed_predictions": 14364,
+  "source_overlap": {
+    "source_train_validation_shapes": 13109,
+    "layer_cases": 1200,
+    "logical_gemm_entries": 1500,
+    "exact_or_one_axis_within_8_overlaps": 0,
+    "measurement_labels_read": false
+  },
+  "sealed_test_status": "NOT_OPENED",
+  "training_performed": false,
+  "frozen_protocol_sha256": "4dabf3939473f70cf56d0905c9f86346049cbe1afd8b193bc23048dec6311790",
+  "selection_frozen_sha256": "beed9b4314c3f258f0fcd6f86d19b15d271fac2d1abe705875aa50a94e99cbd4",
+  "script_sha256": "3788059a37d91c1201e54fdeeef8a310e03c6d6045f0f47cc45f04c91e514b32"
+}

@@ -1,0 +1,4 @@
+seq,kind,phase,shape,dtype,round,split,mode,id,median_us,relative_iqr,first_last_drift,stored_status,analyzed_status,flags
+1171,gemm,main,"[2329, 3998, 66]",fp32,0,legacy_train,allocate,793454a4bd7093a91960dddd,289.4614931485838,0.05978245967063535,0.07093087379463665,REVIEW,REVIEW,"['first_last_drift', 'observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm', 'relative_iqr']"
+1172,gemm,main,"[2329, 3998, 66]",fp32,0,legacy_train,prealloc,ba973c6f3277f22fdbf0fa26,294.1080656297569,0.05612084749515694,0.07208285417368873,REVIEW,REVIEW,"['first_last_drift', 'observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm', 'relative_iqr']"
+1173,gemm,main,"[2329, 3998, 66]",fp32,0,legacy_train,graph,84a2e9e891ebf6c073c7168d,279.2128086090088,0.06850688846091636,0.12467046035388507,REVIEW,REVIEW,"['first_last_drift', 'observed_active:clocks_event_reasons.sw_power_cap', 'observed_mismatch:clocks.sm', 'relative_iqr']"

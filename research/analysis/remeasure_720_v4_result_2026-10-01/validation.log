@@ -1,0 +1,107 @@
+{
+  "validation": "PASS",
+  "summary_exact_match": true,
+  "export_byte_matches": {
+    "between_round.json": true,
+    "blocks.csv": true,
+    "blocks_fresh_holdout_LOCKED.csv": true,
+    "clock_selection_20261001_142936_b3fd3f.json": true,
+    "fresh_holdout_LOCKED.csv": true,
+    "manifest.json": true,
+    "metrics.csv": true,
+    "progress.json": true,
+    "recovery_provenance.json": true,
+    "remeasure_tasks.json": true,
+    "report.md": true,
+    "review_fresh_holdout_LOCKED.csv": true,
+    "review_queue.csv": true,
+    "shape_splits.csv": true,
+    "summary.json": true,
+    "triplets.csv": true,
+    "triplets_fresh_holdout_LOCKED.csv": true
+  },
+  "sqlite_quick_check": "ok",
+  "recorded": 113382,
+  "duplicate_task_ids": 0,
+  "missing_task_ids": 0,
+  "correctness_passed": 113382,
+  "correctness_scopes": {
+    "sampled": 113238,
+    "full": 144
+  },
+  "raw_status_counts": {
+    "PASS": 113382
+  },
+  "sessions": {
+    "20260922_165030_e89635b2": 779,
+    "20260922_175658_0cf7c114": 107443,
+    "20260930_144016_61da8183": 3360,
+    "20261001_143341_57d18ef1": 1800
+  },
+  "final_status_counts": {
+    "PASS": 113331,
+    "REVIEW": 51
+  },
+  "split_status_counts": [
+    {
+      "split": "boundary_diagnostic",
+      "status": "PASS",
+      "count": 1350
+    },
+    {
+      "split": "calibration",
+      "status": "PASS",
+      "count": 54
+    },
+    {
+      "split": "development",
+      "status": "PASS",
+      "count": 7854
+    },
+    {
+      "split": "development",
+      "status": "REVIEW",
+      "count": 30
+    },
+    {
+      "split": "fresh_holdout",
+      "status": "PASS",
+      "count": 18000
+    },
+    {
+      "split": "legacy_test_explored",
+      "status": "PASS",
+      "count": 12924
+    },
+    {
+      "split": "legacy_train",
+      "status": "PASS",
+      "count": 60246
+    },
+    {
+      "split": "legacy_train",
+      "status": "REVIEW",
+      "count": 18
+    },
+    {
+      "split": "legacy_validation",
+      "status": "PASS",
+      "count": 12903
+    },
+    {
+      "split": "legacy_validation",
+      "status": "REVIEW",
+      "count": 3
+    }
+  ],
+  "accepted_measurements": 113328,
+  "between_round_groups": 3,
+  "between_round_tasks": 9,
+  "additional_between_round_tasks": 3,
+  "remeasure_tasks": 54,
+  "remeasure_list_has_no_latency": true,
+  "telemetry_hashes_checked": 947,
+  "holdout_latencies_disclosed": false,
+  "experiment_gate": "REVIEW",
+  "archive_sha256": "319c8480f15fd5f310bd0c211b326104ed341276b76e214bec688b673ecdc5c4"
+}

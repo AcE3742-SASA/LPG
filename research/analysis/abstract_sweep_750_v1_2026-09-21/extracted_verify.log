@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "size": "full",
+  "tasks": 3600,
+  "phases": {
+    "main": 3600
+  },
+  "triplets": 1200,
+  "task_digest": "1117bbb961aba4990da5d96f3365a2bcdfce498d77865e8d7433caeba2ad17a2"
+}

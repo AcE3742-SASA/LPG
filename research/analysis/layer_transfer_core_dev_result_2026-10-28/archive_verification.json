@@ -1,0 +1,13 @@
+{
+  "archive": "core_dev_20261028_143530_VEnIY5_17236749.zip",
+  "archive_sha256": "5e32c060c2cd477c5675e1048b065b373df878bf9cbb20099c137cac86a3ec0f",
+  "zip_crc": "PASS",
+  "entries": 2256,
+  "files": 2256,
+  "uncompressed_bytes": 40635498,
+  "result_hashes_verified": 2255,
+  "release_hashes_verified": 135,
+  "phase": "core_dev",
+  "locked_test_opened": false,
+  "explicit_values_parsed": false
+}

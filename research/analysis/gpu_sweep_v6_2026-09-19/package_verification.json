@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "archive": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/gpu_sweep_2026-09-19_v6.zip",
+  "sha256": "210b9eb91820b0c16f12d118b7a27fcd3202de39837c37b1a3446f62a52916b0",
+  "bytes": 70983,
+  "file_count": 16,
+  "files": {
+    "README.md": "e30462daa36b24c89eb6fedea28b33a0fa1c59dd200654ac03c57f2d3d6298fd",
+    "VALIDATION.md": "6a55dc4b69077d17e1b29a567c1f60a3dbaadbfdefd8fca6512dafc756ee2156",
+    "full.py": "f0b29e6b91a1b0231dd844c93f94c3996b0b45dc3727d8728d04842a20f4e233",
+    "inputs/legacy_shapes.csv": "325ea0bd2b6c8b0bc8af6f941d5578dd9d5db58a8d7fa9f961f605943c22bbab",
+    "inputs/provenance.json": "c78f12efacf05a1daa7578f3b525052aaadf57383ac74df0ba3ef50bb9abdc75",
+    "inputs/review_shapes.csv": "ece950163d193923f1a69d6e76c122cb419ae63b287d14cdd6e8e9bfa7466f3b",
+    "launch.sh": "91f632ea6530e3b55650221f4d9c4baa4c928c1194bbcae8b8f69abdddde2762",
+    "measure.py": "1e28f9e6b18ece3cf3322bf00d51549898e65f3cb14dca592eae6c8bf583e2e6",
+    "pilot.py": "d1d196a5dcd24d168914a5f14daba55f38b636963f834f19e31a7e06967651ac",
+    "plan.py": "2bded90cf494e25cb391b88703205e95b86b4173fe7760d0aea8706833347281",
+    "profiling.py": "20f723fcefcdf814d45811684e80e384e49b48604b79597224ac97a0a0b77654",
+    "report.py": "8f39b1a516b7605aab409073e304b57e5d03f05abb92ea91c6b3ff47e1e2568f",
+    "run_research_checked.sh": "aa1f6462e801f14af5b8f67afd3680179949d802601d46402d381b32001b7b78",
+    "suite.py": "be77e6ab47bdf139e7b0aab6300877173a2a66dc63934f59a71573bee9a7f07f",
+    "test_suite.py": "ef542f07ab616a55957b3e5ebc540c09d1d2f8d9796a77f907e0ea9771cd5383",
+    "test_v6.py": "c89c1e4a6699b8c23b3beae7ac78dbd151b8c8d9461a9b918716577ae563f7ad"
+  }
+}

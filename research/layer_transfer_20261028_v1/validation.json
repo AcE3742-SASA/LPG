@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "deterministic metadata-only manifest regeneration",
+    "protected exact/one-axis8 adjacency exclusion",
+    "train30/validation10/test20 split and aligned/unaligned balance",
+    "960 default,480 locked,240 confirm,264 diagnostic budgets",
+    "default locked phase denial",
+    "960/264 synthetic records with real frozen telemetry.window",
+    "clock drift,correctness,restoration and component-round failure injections",
+    "public summaries omit explicit times",
+    "source/dependency SHA256 checks",
+    "Python AST and shell syntax",
+    "pack phase guard blocks locked record hashing and archival without release",
+    "RQ3 three-seed train-only nested k5/10/20/30 IDs frozen and balanced without labels"
+  ],
+  "cpu_torch_numeric_run": false,
+  "date": "2026-10-28",
+  "gpu_run": false,
+  "locked_test_times_collected": false,
+  "locked_test_times_read": false,
+  "scope": "LOCAL_CPU_STATIC_AND_SYNTHETIC_ONLY"
+}

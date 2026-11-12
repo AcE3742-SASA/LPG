@@ -1,0 +1,2 @@
+model_fit_seconds,prediction_seconds,scope,wall_seconds
+715.3581625714432,9.126975197345018,Recorded CPU calls; serialization and other overhead remain in wall time; separate from GPU collection wall,789.3983812920051

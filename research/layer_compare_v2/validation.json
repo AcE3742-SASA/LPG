@@ -1,0 +1,96 @@
+{
+  "checks": [
+    {
+      "check": "original embedded analyzer failure reproduction",
+      "result": "PASS"
+    },
+    {
+      "check": "actual frozen telemetry.window in health and full 1920-record analysis fixtures",
+      "result": "PASS"
+    },
+    {
+      "check": "returned 48 measurements and actual sensor CSV reanalysis",
+      "result": "PASS",
+      "scope": "representative health only"
+    },
+    {
+      "check": "returned stored correctness",
+      "passed": 48,
+      "result": "PASS",
+      "total": 48
+    },
+    {
+      "check": "raw archive and extracted result hashes after analysis",
+      "result": "PASS"
+    },
+    {
+      "check": "v1/v2 layers, cases, timing/tolerance settings and frozen dependencies",
+      "result": "PASS",
+      "scope": "unchanged except release version"
+    },
+    {
+      "check": "v1 CPU numeric checks",
+      "dtype_cases": 18,
+      "layers_unchanged": true,
+      "result": "PASS_CARRIED_FORWARD",
+      "torch_version": "2.14.1"
+    },
+    {
+      "check": "Python AST and bash -n",
+      "result": "PASS"
+    },
+    {
+      "check": "original v1 source hashes and 114 frozen dependencies",
+      "result": "PASS"
+    },
+    {
+      "check": "ASCII execution entrypoints",
+      "result": "PASS"
+    }
+  ],
+  "date": "2026-10-06",
+  "fix": {
+    "cause": "datetime objects passed to frozen telemetry.window which accepts ISO strings",
+    "change": "pass host_envelope ISO strings unchanged; remove unused datetime import",
+    "old_file": "layer_compare_v1/compare.py",
+    "old_lines": [
+      130,
+      131
+    ],
+    "original_test_gap": "window was stubbed; repaired test invokes actual frozen window"
+  },
+  "limitations": [
+    "v2 has not executed on GPU",
+    "full 1920-measurement collection not completed",
+    "48 stored correctness outcomes verified; CUDA reference not newly recomputed locally",
+    "reset commands accepted, not proof of a particular idle clock"
+  ],
+  "new_gpu_run": false,
+  "preserved": {
+    "original_embedded_result_hashes": 267,
+    "original_run_state": "FAILED_OR_INTERRUPTED",
+    "original_source_files": 127,
+    "v1_run_archive_sha256": "5c270e075b4ee84e98d119968d7c6b5ca967f1494b31c8b41dd442a8dcd949b9"
+  },
+  "recovered_health": {
+    "comparison_count": 8,
+    "expected": 48,
+    "gate": "PASS",
+    "recorded": 48
+  },
+  "recovered_telemetry": {
+    "all_memory_mhz": [
+      6801.0
+    ],
+    "all_sm_mhz": [
+      720.0
+    ],
+    "max_between_round_relative_range": 0.0030777013806838473,
+    "power_cap_samples": 0,
+    "safe_row_checks": "PASS",
+    "samples": 7085,
+    "temperature_c_max": 60.0,
+    "temperature_c_min": 32.0
+  },
+  "status": "TIMESTAMP_FIX_STATIC_AND_RETURNED_DATA_PASS_NEW_GPU_RUN_PENDING"
+}

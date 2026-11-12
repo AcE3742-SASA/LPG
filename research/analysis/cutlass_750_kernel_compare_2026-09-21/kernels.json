@@ -1,0 +1,162 @@
+[
+  {
+    "tag": "fp32_simt_01",
+    "kernel": "cutlass_simt_sgemm_128x128_8x2_nn_align1",
+    "dtype": "f32",
+    "op": "simt",
+    "A": "f32:column",
+    "B": "f32:column",
+    "C": "f32:column",
+    "D": "f32:column"
+  },
+  {
+    "tag": "fp32_simt_02",
+    "kernel": "cutlass_simt_sgemm_128x128_8x2_nt_align1",
+    "dtype": "f32",
+    "op": "simt",
+    "A": "f32:column",
+    "B": "f32:row",
+    "C": "f32:column",
+    "D": "f32:column"
+  },
+  {
+    "tag": "fp32_simt_03",
+    "kernel": "cutlass_simt_sgemm_128x128_8x2_tn_align1",
+    "dtype": "f32",
+    "op": "simt",
+    "A": "f32:row",
+    "B": "f32:column",
+    "C": "f32:column",
+    "D": "f32:column"
+  },
+  {
+    "tag": "fp32_simt_04",
+    "kernel": "cutlass_simt_sgemm_128x128_8x2_tt_align1",
+    "dtype": "f32",
+    "op": "simt",
+    "A": "f32:row",
+    "B": "f32:row",
+    "C": "f32:column",
+    "D": "f32:column"
+  },
+  {
+    "tag": "fp32_simt_05",
+    "kernel": "cutlass_simt_sgemm_256x128_8x5_nn_align1",
+    "dtype": "f32",
+    "op": "simt",
+    "A": "f32:column",
+    "B": "f32:column",
+    "C": "f32:column",
+    "D": "f32:column"
+  },
+  {
+    "tag": "fp32_simt_06",
+    "kernel": "cutlass_simt_sgemm_256x128_8x5_nt_align1",
+    "dtype": "f32",
+    "op": "simt",
+    "A": "f32:column",
+    "B": "f32:row",
+    "C": "f32:column",
+    "D": "f32:column"
+  },
+  {
+    "tag": "fp32_simt_07",
+    "kernel": "cutlass_simt_sgemm_256x128_8x5_tn_align1",
+    "dtype": "f32",
+    "op": "simt",
+    "A": "f32:row",
+    "B": "f32:column",
+    "C": "f32:column",
+    "D": "f32:column"
+  },
+  {
+    "tag": "fp32_simt_08",
+    "kernel": "cutlass_simt_sgemm_256x128_8x5_tt_align1",
+    "dtype": "f32",
+    "op": "simt",
+    "A": "f32:row",
+    "B": "f32:row",
+    "C": "f32:column",
+    "D": "f32:column"
+  },
+  {
+    "tag": "fp16_tensor_01",
+    "kernel": "cutlass_tensorop_f16_s1688gemm_f16_256x128_32x2_nn_align8",
+    "dtype": "f16",
+    "op": "tensorop",
+    "A": "f16:column",
+    "B": "f16:column",
+    "C": "f16:column",
+    "D": "f16:column"
+  },
+  {
+    "tag": "fp16_tensor_02",
+    "kernel": "cutlass_tensorop_f16_s1688gemm_f16_256x128_32x2_nt_align8",
+    "dtype": "f16",
+    "op": "tensorop",
+    "A": "f16:column",
+    "B": "f16:row",
+    "C": "f16:column",
+    "D": "f16:column"
+  },
+  {
+    "tag": "fp16_tensor_03",
+    "kernel": "cutlass_tensorop_f16_s1688gemm_f16_256x128_32x2_tn_align8",
+    "dtype": "f16",
+    "op": "tensorop",
+    "A": "f16:row",
+    "B": "f16:column",
+    "C": "f16:column",
+    "D": "f16:column"
+  },
+  {
+    "tag": "fp16_tensor_04",
+    "kernel": "cutlass_tensorop_f16_s1688gemm_f16_256x128_32x2_tt_align8",
+    "dtype": "f16",
+    "op": "tensorop",
+    "A": "f16:row",
+    "B": "f16:row",
+    "C": "f16:column",
+    "D": "f16:column"
+  },
+  {
+    "tag": "fp16_tensor_05",
+    "kernel": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_nn_align8",
+    "dtype": "f16",
+    "op": "tensorop",
+    "A": "f16:column",
+    "B": "f16:column",
+    "C": "f16:column",
+    "D": "f16:column"
+  },
+  {
+    "tag": "fp16_tensor_06",
+    "kernel": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_nt_align8",
+    "dtype": "f16",
+    "op": "tensorop",
+    "A": "f16:column",
+    "B": "f16:row",
+    "C": "f16:column",
+    "D": "f16:column"
+  },
+  {
+    "tag": "fp16_tensor_07",
+    "kernel": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_tn_align8",
+    "dtype": "f16",
+    "op": "tensorop",
+    "A": "f16:row",
+    "B": "f16:column",
+    "C": "f16:column",
+    "D": "f16:column"
+  },
+  {
+    "tag": "fp16_tensor_08",
+    "kernel": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_tt_align8",
+    "dtype": "f16",
+    "op": "tensorop",
+    "A": "f16:row",
+    "B": "f16:row",
+    "C": "f16:column",
+    "D": "f16:column"
+  }
+]

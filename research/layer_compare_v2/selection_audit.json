@@ -1,0 +1,172 @@
+{
+  "algorithm": "greedy coverage with seed-hash tie order; shape exclusions only",
+  "anchors": {
+    "conv": [
+      [
+        1,
+        32,
+        128,
+        256
+      ],
+      [
+        4,
+        32,
+        32,
+        64
+      ],
+      [
+        2,
+        64,
+        16,
+        32
+      ],
+      [
+        4,
+        64,
+        256,
+        128
+      ],
+      [
+        1,
+        64,
+        64,
+        128
+      ],
+      [
+        1,
+        8,
+        32,
+        64
+      ],
+      [
+        2,
+        8,
+        32,
+        64
+      ],
+      [
+        4,
+        16,
+        16,
+        32
+      ],
+      [
+        2,
+        32,
+        128,
+        256
+      ],
+      [
+        1,
+        16,
+        16,
+        32
+      ],
+      [
+        4,
+        8,
+        32,
+        64
+      ],
+      [
+        2,
+        16,
+        32,
+        64
+      ],
+      [
+        1,
+        32,
+        16,
+        32
+      ],
+      [
+        1,
+        32,
+        32,
+        64
+      ],
+      [
+        4,
+        32,
+        64,
+        128
+      ],
+      [
+        1,
+        64,
+        32,
+        64
+      ]
+    ],
+    "ffn": [
+      [
+        512,
+        256,
+        1024
+      ],
+      [
+        2048,
+        512,
+        2048
+      ],
+      [
+        1024,
+        64,
+        256
+      ],
+      [
+        2048,
+        128,
+        512
+      ]
+    ],
+    "linear": [
+      [
+        256,
+        64,
+        64
+      ],
+      [
+        512,
+        512,
+        1024
+      ],
+      [
+        2048,
+        128,
+        256
+      ],
+      [
+        1024,
+        256,
+        512
+      ]
+    ]
+  },
+  "forbidden_scope_counts": {
+    "fresh_holdout": 1000,
+    "layer_test_locked": 50,
+    "layer_validation": 49,
+    "legacy_test_explored": 718,
+    "legacy_validation": 717
+  },
+  "forbidden_shapes": 2534,
+  "neighbour_rule": "one axis +/-8 including exact shape",
+  "rejected_families": {
+    "conv": 19,
+    "ffn": 15,
+    "linear": 8
+  },
+  "selected_metadata_fields": [
+    "split",
+    "shape",
+    "kind",
+    "logical_key"
+  ],
+  "source_metadata_sha256": {
+    "analysis/gemm_dataset_v1_2026-10-02/measurement_index.csv": "53ee02d0485f944674ef783459a4202b1706760d07d02938a026a9e995ab72d7",
+    "analysis/layer_spec_v1_2026-10-02/operations.json": "8e53a635376fc68c15f5c0028addb02a09b2449031fbee33a832799b6b9ecbc5"
+  },
+  "time_values_used": false
+}

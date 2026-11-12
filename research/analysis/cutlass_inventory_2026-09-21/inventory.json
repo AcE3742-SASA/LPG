@@ -1,0 +1,32 @@
+{
+  "archive_sha256": "aece49011c9587b24a15da42eb4e84da7d87b9b274b197972868c2053943ebb9",
+  "operations": 239,
+  "fp32_simt": 8,
+  "fp16_tensor_f32_accum_f16_output": 8,
+  "dispositions": {
+    "not_run": 239
+  },
+  "chosen_smoke_kernels": {
+    "fp32_simt": "cutlass_simt_sgemm_256x128_8x5_tn_align1",
+    "fp16_tensor": "cutlass_tensorop_f16_s16816gemm_f16_256x128_32x3_tn_align8"
+  },
+  "version_output": "CUTLASS @CUTLASS_VERSION@ built on Sep 16 2026 at 20:20:55 with commit @CUTLASS_REVISION@",
+  "files": {
+    "version.txt": {
+      "bytes": 90,
+      "sha256": "dfcc5e7fb76546ec0a73d80835cb28bc1d5c16147109f454f8613698fec7c8ad"
+    },
+    "gemm_help.txt": {
+      "bytes": 5761,
+      "sha256": "2815022ce9754e0c3d81f5834ee7c05492493f4c3de50e46a1a45c21721cd1f7"
+    },
+    "help.txt": {
+      "bytes": 10804,
+      "sha256": "c5d4cb4f2e79cdd1c405ec911698411fd3839534c07288fc89545646511752b8"
+    },
+    "kernels.txt": {
+      "bytes": 353814,
+      "sha256": "747615a0cb1ac8b7298f96bc3c010767cb92748dcda1a772a02c47aa76d0e380"
+    }
+  }
+}

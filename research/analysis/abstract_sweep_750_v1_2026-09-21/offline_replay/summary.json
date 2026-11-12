@@ -1,0 +1,33 @@
+{
+  "gate": "INCOMPLETE",
+  "size": "full",
+  "expected": 3600,
+  "recorded": 36,
+  "missing": 3564,
+  "attempts": 36,
+  "counts": {
+    "PASS": 36
+  },
+  "timed_blocks": 252,
+  "triplets_expected": 1200,
+  "triplets_complete": 12,
+  "timing_and_sampled_clocks_pass": false,
+  "max_relative_iqr": 0.00037353771873995683,
+  "max_abs_drift": 0.000460886608767596,
+  "max_between_round_range": 0.007143648816737423,
+  "between_round_flags": 0,
+  "round_group_sizes": {
+    "2": 18
+  },
+  "round_groups_complete": 0,
+  "round_groups_expected": 1200,
+  "clock_flags": [],
+  "counter_anomaly_blocks": 13,
+  "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+  "all_restorations_accepted": false,
+  "results_digest": "21f4aa6fe3cc95bf4b25df31c106e164ee3eee06ff4f83ac88f6fdae64226c26",
+  "task_wall_seconds_median": null,
+  "reference_change_abs_max_pct": null,
+  "full_sweep": "COLLECTION_ONLY",
+  "sampling_note": "Host-envelope samples are not continuous/effective kernel clocks."
+}

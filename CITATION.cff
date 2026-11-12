@@ -11,7 +11,9 @@ version: "1.0.0"
 date-released: "2026-11-13"
 url: "https://github.com/AcE3742-SASA/LPG"
 repository-code: "https://github.com/AcE3742-SASA/LPG"
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
 abstract: >-
   Measurement and analysis code for predicting GEMM and individual layer
   execution times on an NVIDIA RTX 4000 SFF Ada Generation GPU. The release

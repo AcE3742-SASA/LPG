@@ -1,0 +1,14 @@
+{
+  "legacy_shapes.csv": {
+    "source": "analysis/2026-09-19/raw/full/full_5000x2.csv",
+    "source_sha256": "2e8274a588369de504a5d53e92bafd99750ab43f7af5b74e7b76463ce614180a",
+    "shapes": 5000,
+    "sha256": "325ea0bd2b6c8b0bc8af6f941d5578dd9d5db58a8d7fa9f961f605943c22bbab"
+  },
+  "review_shapes.csv": {
+    "source": "analysis/2026-09-19/tables/combined_review_queue.csv",
+    "source_sha256": "b5395d9c869f74dc1019f25bd2d029105daef7bd966258269e1aafb29f42e81c",
+    "shapes": 206,
+    "sha256": "ece950163d193923f1a69d6e76c122cb419ae63b287d14cdd6e8e9bfa7466f3b"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checked_local_links": 28,
+  "ascii_terminal_scripts": 3,
+  "markdown_tables_cross_checked": true,
+  "original_v1_files_unchanged": 483,
+  "figure_png_visual_review": "PASS",
+  "figure_pdf_render_review": "PASS",
+  "vault_modified_pages_issues": 0,
+  "vault_existing_broken_links": 31
+}

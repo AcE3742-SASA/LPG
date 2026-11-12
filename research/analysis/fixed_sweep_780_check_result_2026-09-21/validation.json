@@ -1,0 +1,107 @@
+{
+  "verification": "PASS",
+  "decision": "FULL_COLLECTION_ELIGIBLE_AFTER_REVIEW",
+  "zip_sha256": "655d794d706dd340a3276c651ff4eb43276880fe61077c829d3877e6996e99b6",
+  "raw_files": 171,
+  "source_files_verified": 7,
+  "dependencies_verified": 42,
+  "reproduced_identical_outputs": 16,
+  "gpu_execution_on_mac": false,
+  "result": {
+    "gate": "REVIEW",
+    "size": "check",
+    "expected": 60,
+    "recorded": 60,
+    "missing": 0,
+    "attempts": 60,
+    "counts": {
+      "PASS": 60
+    },
+    "timed_blocks": 420,
+    "triplets_expected": 20,
+    "triplets_complete": 20,
+    "timing_and_sampled_clocks_pass": true,
+    "max_relative_iqr": 0.0005272654028844294,
+    "max_abs_drift": 0.001160158917370635,
+    "max_between_round_range": 0.005755885659616419,
+    "between_round_flags": 0,
+    "clock_flags": [],
+    "counter_anomaly_blocks": 23,
+    "known_counter_issue": "UNRESOLVED; retained separately from timing and sampled clock quality",
+    "all_restorations_accepted": true,
+    "results_digest": "a613a4d736b12407fd6c62960174c98b874cdb06bb011f228e958cf427286aa2",
+    "task_wall_seconds_median": 3.883123034502205,
+    "reference_change_abs_max_pct": 2.096618789190985,
+    "full_sweep": "HOLD_PENDING_CHECK_REVIEW",
+    "sampling_note": "Host-envelope samples are not continuous/effective kernel clocks."
+  },
+  "session_counts": {
+    "20260921_032837_552d5166": 30,
+    "20260921_033336_98df0b61": 30
+  },
+  "exit_codes": {
+    "launcher/20260921_032825_Ctv1iQ/exit_code.txt": 2,
+    "launcher/20260921_032825_Ctv1iQ/tee_exit_code.txt": 0,
+    "launcher/20260921_032825_Ctv1iQ/checked/runs/20260921_032833_zYXU24/exit_code.txt": 2,
+    "launches/20260921_032835_2a16b9/worker_0.exit_code.txt": 0,
+    "launches/20260921_032835_2a16b9/worker_1.exit_code.txt": 0
+  },
+  "correctness_scopes": {
+    "sampled": 48,
+    "full": 12
+  },
+  "telemetry_samples": 11352,
+  "instantaneous_active_samples": {
+    "clocks_event_reasons.sw_power_cap": 0,
+    "clocks_event_reasons.sw_thermal_slowdown": 0,
+    "clocks_event_reasons.hw_thermal_slowdown": 0
+  },
+  "telemetry_ranges": {
+    "clocks.sm": [
+      780.0,
+      780.0
+    ],
+    "clocks.mem": [
+      6801.0,
+      6801.0
+    ],
+    "power.limit": [
+      70.0,
+      70.0
+    ],
+    "power.draw": [
+      21.07,
+      67.59
+    ],
+    "temperature.gpu": [
+      35.0,
+      70.0
+    ]
+  },
+  "max_round_condition": {
+    "shape": [
+      4096,
+      4096,
+      4096
+    ],
+    "dtype": "fp32",
+    "mode": "prealloc",
+    "relative_range": 0.005755885659616419
+  },
+  "historical_comparison": {
+    "pairs": 20,
+    "min_pct": 1.5537624597006916,
+    "median_pct": 1.8179514803303487,
+    "max_pct": 2.096618789190985
+  },
+  "time_estimate": {
+    "worker_elapsed_seconds": 595.4289129340032,
+    "task_wall_seconds_sum": 233.18153744901792,
+    "task_wall_seconds_mean": 3.886358957483632,
+    "full_tasks": 113382,
+    "full_mean_task_hours": 122.400875365947,
+    "full_worker_excluding_preheat_hours": 123.58056021427382,
+    "caveat": "Representative check extrapolation, not a completion-time guarantee; shape mix and restarts differ."
+  },
+  "launcher_source_present": false
+}

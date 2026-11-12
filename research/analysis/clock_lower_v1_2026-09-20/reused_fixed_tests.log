@@ -1,0 +1,33 @@
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpuqy2nioq/worker.log
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: PASS; full remains HOLD
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpcov30fu6/worker.log
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: REVIEW; full remains HOLD
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpyxtirrwh/worker.log
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmphbhppkol/worker.log
+RESTORE: COMMANDS ACCEPTED
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf23s3opj/worker.log
+RESTORE: FAILED; inspect restore.json
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rgc
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rmc
+FIXED PILOT: FAIL; full remains HOLD
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+FIXED PILOT: 180 s preheat + 192 measurements; progress: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmptcxahnti/worker.log
+RESTORE: COMMANDS ACCEPTED
+test_changed_timing_seed_batch_correctness_missing_duplicate_tasks_rejected (test_fixed.FixedTests.test_changed_timing_seed_batch_correctness_missing_duplicate_tasks_rejected) ... ok
+test_complete_pilot_and_counter_review_remain_distinct (test_fixed.FixedTests.test_complete_pilot_and_counter_review_remain_distinct) ... ok
+test_controller_restores_under_gpu_lock_and_preserves_failure (test_fixed.FixedTests.test_controller_restores_under_gpu_lock_and_preserves_failure) ... ok
+test_exact_pilot_order_seeds_batches_and_adapter_restoration (test_fixed.FixedTests.test_exact_pilot_order_seeds_batches_and_adapter_restoration) ... ok
+test_incorrect_clocks_active_reason_or_missing_inside_sample_cannot_pass (test_fixed.FixedTests.test_incorrect_clocks_active_reason_or_missing_inside_sample_cannot_pass) ... ok
+test_launcher_preserves_review_and_waits_for_cleanup_before_packaging (test_fixed.FixedTests.test_launcher_preserves_review_and_waits_for_cleanup_before_packaging) ... ok
+test_round_variation_is_not_hidden_by_stable_individual_measurements (test_fixed.FixedTests.test_round_variation_is_not_hidden_by_stable_individual_measurements) ... ok
+test_sources_environment_and_worker_exit_checked (test_fixed.FixedTests.test_sources_environment_and_worker_exit_checked) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.166s
+
+OK

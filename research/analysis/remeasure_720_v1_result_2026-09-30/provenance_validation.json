@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "pending": 0,
+  "imported_records": 108222,
+  "remeasured_records": 5160,
+  "original_zip_preserved": true,
+  "imported_evidence_and_records_unchanged": true,
+  "original_graph_choices_preserved": true
+}

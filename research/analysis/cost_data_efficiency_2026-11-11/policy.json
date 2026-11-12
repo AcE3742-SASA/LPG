@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-11",
+  "status": "RETROSPECTIVE_DEVELOPMENT_ANALYSIS",
+  "scope": "GEMM and layer data efficiency; no model fitting or selection changes; no neural-network end-to-end experiment",
+  "primary_target": "Each target/layer/dtype frozen best direct mean validation MAPE",
+  "secondary_targets": [
+    {
+      "name": "direct_mape_and_p90",
+      "p90": "frozen best direct p90"
+    },
+    {
+      "name": "mape_10",
+      "mape_pct": 10
+    },
+    {
+      "name": "mape_15",
+      "mape_pct": 15
+    },
+    {
+      "name": "mape_20",
+      "mape_pct": 20
+    },
+    {
+      "name": "legacy_15_30",
+      "mape_pct": 15,
+      "p90_pct": 30
+    }
+  ],
+  "retrospective_rule": "Among zero-failure finite existing development rows meeting a target, minimize actual training labels, then mean MAPE, mean p90, learner, method, k. No interpolation. The existing accuracy-first frozen choices remain fixed.",
+  "seed_policy": "Three-seed mean is primary; show seed min/max and all-seed-attained sensitivity; count actual distinct training-label union across seeds",
+  "counting": "One aggregate label is three independent collection rounds; seven timing blocks and adaptive inner repeats are not independent labels. Validation target labels are mandatory. Component validation diagnostics and common PASS qualification belong to full search access.",
+  "accounting": "Observed bundled GPU collection and CPU wall separate. Retrospective label budgets are conditional recipes. Historical worker sessions include replaced, stopped and retry sessions once; calibration, wrapper and idle gaps remain separately identified.",
+  "break_even": "Report conditional label-count break-even. GPU time allocation scenarios use measured per-record historical average with explicit proportional-allocation assumption and separate timing boundaries. CPU fit-call arithmetic uses actual logged calls only.",
+  "user_confirmed_primary_and_secondary_targets": true
+}

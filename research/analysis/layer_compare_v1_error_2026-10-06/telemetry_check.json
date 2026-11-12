@@ -1,0 +1,14 @@
+{
+  "all_memory_mhz": [
+    6801.0
+  ],
+  "all_sm_mhz": [
+    720.0
+  ],
+  "max_between_round_relative_range": 0.0030777013806838473,
+  "power_cap_samples": 0,
+  "safe_row_checks": "PASS",
+  "samples": 7085,
+  "temperature_c_max": 60.0,
+  "temperature_c_min": 32.0
+}

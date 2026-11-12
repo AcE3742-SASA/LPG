@@ -1,0 +1,9 @@
+PASS: development models linear fp16
+PASS: development models linear fp32
+PASS: development models ffn fp16
+PASS: development models ffn fp32
+PASS: development models conv1 fp16
+PASS: development models conv1 fp32
+PASS: development models conv3 fp16
+PASS: development models conv3 fp32
+PASS: development selection and model hashes frozen

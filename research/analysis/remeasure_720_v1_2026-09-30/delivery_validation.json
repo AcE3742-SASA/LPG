@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "gpu_execution": false,
+  "zip": "/Users/studyhard/Claude/\u110c\u1161\u110b\u1172\u11af\u110b\u1167\u11ab\u1100\u116e/remeasure_720_review_2026-09-30_v1.zip",
+  "sha256": "59aad0e8b451f46b46dc4182f012b4a7485616efcb2ee39bf840a503ac601062",
+  "source_files": 9,
+  "dependency_hashes": 100,
+  "crc_and_extracted_bytes_match": true,
+  "extracted_full_plan": {
+    "status": "PASS",
+    "size": "full",
+    "tasks": 113382,
+    "phases": {
+      "compute_reference": 54,
+      "main": 108036,
+      "controls": 3942,
+      "boundary": 1350
+    },
+    "triplets": 37794,
+    "task_digest": "7c30aca9dd4442b05612e81ce36fbe28f1f6c8137007f587e7f5fc13e547eeab"
+  },
+  "shell_syntax": true,
+  "prepare_before_gpu": true,
+  "preparation_failure_stops_launch": true,
+  "review_exit_2_and_pack_preserved": true,
+  "existing_tmux_used": true
+}

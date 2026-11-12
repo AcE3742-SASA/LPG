@@ -1,0 +1,4 @@
+{
+  "type": "RuntimeError",
+  "message": "Worker exited 1; inspect /home/eu/gemm-research/layer_full_20261108_v2/runs/full_20261108_105717_8tqhrkir/validation_01_attempt_001/worker/worker.log"
+}

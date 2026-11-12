@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-11",
+  "scope": "Deadline audit of the supplementary prior-model benchmark; preserve every v1 artifact",
+  "already_disclosed": "All original and supplementary v1 test scores have been viewed. Audit reruns are descriptive, not a new blind test.",
+  "neuralpower_revision": "Fit the StandardScaler separately within each inner training fold. Reuse the original outer-train-derived 100-alpha grid and raw-MSE selection. Freeze validation selection before rerun test scoring.",
+  "neuralpower_preserved": "Original polynomial map, train group subsets, seeds, alpha endpoints, loss, convergence tolerances, full refit scaler, and train-min latency floor; retain 0.105 ms floor sensitivity.",
+  "neuralpower_budgets": [5, 10, 20, 30, 50, 100, 200],
+  "gemm_budget": 11498,
+  "fair_comparison": "Use k=200 shared three-layer training pool for local direct, NeuralPower, and GEMMify; choose each existing direct learner by validation only. Original frozen overall methods are reported separately with shared source/component-label costs.",
+  "external_source_check": "Run pinned NeuSight pretrained weights on the authors' public LINEAR/BMM/GELU test measurements and original device profiles; report all available devices, including failures. These checks address source-domain execution, not reproduction of the whole-network headline.",
+  "other_methods": "Audit GEMMify equations and literal grid against original paper; audit Paleo original FLOP/memory forward path and device units. Preserve existing outputs unless a concrete discrepancy is found.",
+  "no_new_gpu_measurements": true,
+  "no_end_to_end_network_evaluation": true,
+  "source_model_cost": "Keep local target labels, shared GEMM calibration/source training and external pretrained cost separate.",
+  "author_baseline_reproduction_status": "Report fidelity by component, rather than treating a successful execution as validation of a published score."
+}

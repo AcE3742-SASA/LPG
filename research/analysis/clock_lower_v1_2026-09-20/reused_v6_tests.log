@@ -1,0 +1,61 @@
+Preheating GPU for 0 seconds; telemetry is recording.
+[1/4] gemm [1024, 512, 256] fp16 prealloc r0
+  PASS (0.0s)
+[2/4] gemm [1024, 512, 256] fp16 graph r0
+STOP requested: finishing this task and saving it; no next task.
+  PASS (0.0s)
+{
+  "gate": "INCOMPLETE",
+  "expected": 4,
+  "recorded": 2,
+  "missing": 2,
+  "attempts": 2,
+  "counts": {
+    "PASS": 2
+  },
+  "between_round_flags": 0,
+  "result_digest": "c8166fe56a79e1300d6371156ccd613d6bf790f459ed4e1254edddf38687f276",
+  "size": "pilot",
+  "paired_expected": 2,
+  "paired_complete": 1
+}
+Report: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpk3hitm3v/report.html
+No automatic transition to full sweep.
+Preheating GPU for 0 seconds; telemetry is recording.
+[3/4] gemm [1024, 512, 256] fp16 graph r1
+  PASS (0.0s)
+[4/4] gemm [1024, 512, 256] fp16 prealloc r1
+  PASS (0.0s)
+{
+  "gate": "PASS",
+  "expected": 4,
+  "recorded": 4,
+  "missing": 0,
+  "attempts": 4,
+  "counts": {
+    "PASS": 4
+  },
+  "between_round_flags": 0,
+  "result_digest": "76453aae0f11bad5e20b9c76eb1c49478cdbced69ac1506cc253d52985704b76",
+  "size": "pilot",
+  "paired_expected": 2,
+  "paired_complete": 2
+}
+Report: /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpk3hitm3v/report.html
+No automatic transition to full sweep.
+NOTE: Desktop GPU clients retained in process log: ['6470, /usr/libexec/xdg-desktop-portal-gnome, 9 MiB']
+test_holdout_paired_latency_stays_in_locked_export (test_v6.PairedExportTests.test_holdout_paired_latency_stays_in_locked_export) ... ok
+test_interrupted_acquisition_restores_graph_choice_and_skips_saved_rows (test_v6.PairedExportTests.test_interrupted_acquisition_restores_graph_choice_and_skips_saved_rows) ... ok
+test_pilot_gate_rejects_a_different_task_plan (test_v6.PairedExportTests.test_pilot_gate_rejects_a_different_task_plan) ... ok
+test_seed_mismatch_is_not_silently_paired (test_v6.PairedExportTests.test_seed_mismatch_is_not_silently_paired) ... ok
+test_two_targets_exported_without_averaging_and_partial_pair_visible (test_v6.PairedExportTests.test_two_targets_exported_without_averaging_and_partial_pair_visible) ... ok
+test_all_main_and_boundary_conditions_have_adjacent_modes (test_v6.PairedPlanTests.test_all_main_and_boundary_conditions_have_adjacent_modes) ... ok
+test_batch_selection_and_restoration_across_rounds_and_phases (test_v6.PairedPlanTests.test_batch_selection_and_restoration_across_rounds_and_phases) ... ok
+test_fixed_capture_does_not_reprobe_or_change_count (test_v6.PairedPlanTests.test_fixed_capture_does_not_reprobe_or_change_count) ... ok
+test_only_current_complete_review_is_labelled_review (test_v6.WrapperTests.test_only_current_complete_review_is_labelled_review) ... ok
+test_portal_exception_is_exact_and_not_a_wildcard (test_v6.WrapperTests.test_portal_exception_is_exact_and_not_a_wildcard) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.365s
+
+OK

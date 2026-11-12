@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/studyhard/Claude/자율연구/analysis/final_test_2026-11-11/summarize_results.py", line 153, in <module>
+    main()
+    ~~~~^^
+  File "/Users/studyhard/Claude/자율연구/analysis/final_test_2026-11-11/summarize_results.py", line 103, in main
+    final.gemm.save_csv(OUT / 'paired_group_bootstrap.csv', pairs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studyhard/Claude/자율연구/analysis/integrated_rq14_2026-10-28/run_rq14.py", line 59, in save_csv
+    writer.writerows(rows)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/csv.py", line 228, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/csv.py", line 220, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+                     + ", ".join([repr(x) for x in wrong_fields]))
+ValueError: dict contains fields not in fieldnames: 'layer', 'target'

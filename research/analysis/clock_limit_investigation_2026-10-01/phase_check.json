@@ -1,0 +1,210 @@
+{
+  "minimum_615_samples": [
+    {
+      "utc": "2026-10-01T07:33:02.376000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:02.429000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:02.482000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:02.535000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:02.589000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:02.643000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:02.696000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:02.749000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:02.802000+00:00",
+      "matches": [
+        [
+          "settling",
+          "85ab7c1deea732eb4ac2a345"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.32
+    },
+    {
+      "utc": "2026-10-01T07:33:06.370000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    },
+    {
+      "utc": "2026-10-01T07:33:06.423000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    },
+    {
+      "utc": "2026-10-01T07:33:06.477000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    },
+    {
+      "utc": "2026-10-01T07:33:06.530000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    },
+    {
+      "utc": "2026-10-01T07:33:06.583000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    },
+    {
+      "utc": "2026-10-01T07:33:06.636000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    },
+    {
+      "utc": "2026-10-01T07:33:06.689000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    },
+    {
+      "utc": "2026-10-01T07:33:06.742000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    },
+    {
+      "utc": "2026-10-01T07:33:06.795000+00:00",
+      "matches": [
+        [
+          "settling",
+          "eb21a000487c01caa75edd85"
+        ]
+      ],
+      "temperature.gpu": 73.0,
+      "power.draw": 69.46
+    }
+  ],
+  "total_settling_event_seconds": 155.77474295043945,
+  "total_timing_event_seconds": 37.51604354858399,
+  "graph_nodes": [
+    4,
+    6,
+    8
+  ],
+  "timing_window_minimum_mhz": 645.0
+}

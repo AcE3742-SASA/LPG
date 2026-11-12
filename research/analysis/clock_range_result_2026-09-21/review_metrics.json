@@ -1,0 +1,912 @@
+{
+  "summary": {
+    "gate": "REVIEW",
+    "expected": 540,
+    "recorded": 540,
+    "missing": 0,
+    "timed_blocks": 3780,
+    "mode_triplets": 180,
+    "counts": {
+      "PASS": 445,
+      "REVIEW": 95
+    },
+    "correctness_scopes": {
+      "sampled": 432,
+      "full": 108
+    },
+    "stage_timing_and_sampled_clocks": {
+      "s0_780_before": true,
+      "s1_810": true,
+      "s2_840": true,
+      "s3_870": false,
+      "s4_900": false,
+      "s5_960": false,
+      "s6_1050": false,
+      "s7_1200": false,
+      "s8_780_after": true
+    },
+    "repeat_780_time_pass": true,
+    "counter_anomaly_blocks": 295,
+    "historical_counter_issue": "UNRESOLVED; per-stage and per-block observations retained",
+    "restoration": "COMMANDS_ACCEPTED",
+    "flags": [
+      "s0_780_before:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s0_780_before:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s0_780_before:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample",
+      "s1_810:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s1_810:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s1_810:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample",
+      "s2_840:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s2_840:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s2_840:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample",
+      "s3_870:c3_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s3_870:c3_allocate_r0:observed_mismatch:clocks.sm",
+      "s3_870:c3_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s3_870:c3_graph_r0:observed_mismatch:clocks.sm",
+      "s3_870:c3_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s3_870:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s3_870:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s3_870:worker_observed_active:clocks_event_reasons.sw_power_cap",
+      "s3_870:worker_observed_mismatch:clocks.sm",
+      "s4_900:c0_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c1_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c1_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c1_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c1_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c2_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c2_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c3_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c3_allocate_r0:observed_mismatch:clocks.sm",
+      "s4_900:c3_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c3_graph_r0:observed_mismatch:clocks.sm",
+      "s4_900:c3_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:c3_prealloc_r0:observed_mismatch:clocks.sm",
+      "s4_900:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s4_900:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s4_900:worker_observed_active:clocks_event_reasons.sw_power_cap",
+      "s4_900:worker_observed_mismatch:clocks.sm",
+      "s5_960:(1999, 646, 425)/fp32/allocate:round_range_above_5pct",
+      "s5_960:(1999, 646, 425)/fp32/graph:round_range_above_5pct",
+      "s5_960:(1999, 646, 425)/fp32/prealloc:round_range_above_5pct",
+      "s5_960:c0_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c0_graph_r0:observed_mismatch:clocks.sm",
+      "s5_960:c0_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c0_prealloc_r0:observed_mismatch:clocks.sm",
+      "s5_960:c0_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c0_prealloc_r1:observed_mismatch:clocks.sm",
+      "s5_960:c1_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c1_allocate_r0:observed_mismatch:clocks.sm",
+      "s5_960:c1_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c1_allocate_r1:observed_mismatch:clocks.sm",
+      "s5_960:c1_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c1_graph_r0:observed_mismatch:clocks.sm",
+      "s5_960:c1_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c1_graph_r1:observed_mismatch:clocks.sm",
+      "s5_960:c1_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c1_prealloc_r0:observed_mismatch:clocks.sm",
+      "s5_960:c1_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c1_prealloc_r1:observed_mismatch:clocks.sm",
+      "s5_960:c2_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c2_allocate_r0:observed_mismatch:clocks.sm",
+      "s5_960:c2_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c2_allocate_r1:observed_mismatch:clocks.sm",
+      "s5_960:c2_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c2_graph_r0:observed_mismatch:clocks.sm",
+      "s5_960:c2_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c2_graph_r1:observed_mismatch:clocks.sm",
+      "s5_960:c2_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c2_prealloc_r0:observed_mismatch:clocks.sm",
+      "s5_960:c2_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c2_prealloc_r1:observed_mismatch:clocks.sm",
+      "s5_960:c3_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c3_allocate_r0:observed_mismatch:clocks.sm",
+      "s5_960:c3_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c3_graph_r0:observed_mismatch:clocks.sm",
+      "s5_960:c3_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c3_prealloc_r0:observed_mismatch:clocks.sm",
+      "s5_960:c6_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c6_allocate_r0:observed_mismatch:clocks.sm",
+      "s5_960:c6_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c6_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c6_graph_r0:observed_mismatch:clocks.sm",
+      "s5_960:c6_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:c6_prealloc_r0:observed_mismatch:clocks.sm",
+      "s5_960:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s5_960:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s5_960:worker_observed_active:clocks_event_reasons.sw_power_cap",
+      "s5_960:worker_observed_mismatch:clocks.sm",
+      "s6_1050:(1888, 832, 632)/fp32/graph:round_range_above_5pct",
+      "s6_1050:(1999, 646, 425)/fp32/allocate:round_range_above_5pct",
+      "s6_1050:(1999, 646, 425)/fp32/graph:round_range_above_5pct",
+      "s6_1050:(1999, 646, 425)/fp32/prealloc:round_range_above_5pct",
+      "s6_1050:c0_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c0_allocate_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c0_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c0_graph_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c0_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c0_graph_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c0_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c0_prealloc_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c0_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c0_prealloc_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c1_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c1_allocate_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c1_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c1_allocate_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c1_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c1_graph_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c1_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c1_graph_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c1_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c1_prealloc_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c1_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c1_prealloc_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c2_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c2_allocate_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c2_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c2_allocate_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c2_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c2_graph_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c2_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c2_graph_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c2_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c2_prealloc_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c2_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c2_prealloc_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c3_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c3_allocate_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c3_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c3_graph_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c3_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c3_prealloc_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c3_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c3_prealloc_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c6_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c6_allocate_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c6_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c6_allocate_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c6_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c6_graph_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c6_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c6_graph_r1:observed_mismatch:clocks.sm",
+      "s6_1050:c6_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c6_prealloc_r0:observed_mismatch:clocks.sm",
+      "s6_1050:c6_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:c6_prealloc_r1:observed_mismatch:clocks.sm",
+      "s6_1050:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s6_1050:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s6_1050:worker_observed_active:clocks_event_reasons.sw_power_cap",
+      "s6_1050:worker_observed_mismatch:clocks.sm",
+      "s7_1200:(1888, 832, 632)/fp32/allocate:round_range_above_5pct",
+      "s7_1200:(1888, 832, 632)/fp32/graph:round_range_above_5pct",
+      "s7_1200:(1999, 646, 425)/fp32/allocate:round_range_above_5pct",
+      "s7_1200:(1999, 646, 425)/fp32/graph:round_range_above_5pct",
+      "s7_1200:(1999, 646, 425)/fp32/prealloc:round_range_above_5pct",
+      "s7_1200:(392, 2776, 80)/fp32/allocate:round_range_above_5pct",
+      "s7_1200:c0_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c0_allocate_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c0_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c0_allocate_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c0_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c0_graph_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c0_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c0_graph_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c0_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c0_prealloc_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c0_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c0_prealloc_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c1_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c1_allocate_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c1_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c1_allocate_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c1_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c1_graph_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c1_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c1_graph_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c1_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c1_prealloc_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c1_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c1_prealloc_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c2_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c2_allocate_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c2_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c2_allocate_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c2_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c2_graph_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c2_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c2_graph_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c2_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c2_prealloc_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c2_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c2_prealloc_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c3_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c3_allocate_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c3_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c3_allocate_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c3_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c3_graph_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c3_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c3_graph_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c3_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c3_prealloc_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c3_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c3_prealloc_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c5_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c5_allocate_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c5_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c5_prealloc_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c6_allocate_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c6_allocate_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c6_allocate_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c6_allocate_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c6_graph_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c6_graph_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c6_graph_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c6_graph_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c6_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c6_prealloc_r0:observed_mismatch:clocks.sm",
+      "s7_1200:c6_prealloc_r1:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:c6_prealloc_r1:observed_mismatch:clocks.sm",
+      "s7_1200:c7_prealloc_r0:observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s7_1200:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s7_1200:worker_observed_active:clocks_event_reasons.sw_power_cap",
+      "s7_1200:worker_observed_mismatch:clocks.sm",
+      "s8_780_after:clocks_event_reasons_counters.sw_power_cap:block_delta_exceeds_inside_sample_span",
+      "s8_780_after:clocks_event_reasons_counters.sw_power_cap:block_increase_without_active_inside_sample",
+      "s8_780_after:clocks_event_reasons_counters.sw_power_cap:increase_without_active_sample"
+    ],
+    "full_sweep": "HOLD",
+    "selected_clock_mhz": null,
+    "reference_clock_mhz": 780,
+    "validated_for_full": false,
+    "interpretation": "Screened conditions only. Review before a broader pilot. Mode ratios are not causal overhead estimates."
+  },
+  "stages": [
+    {
+      "stage": "s0_780_before",
+      "sm_mhz": 780,
+      "samples": 7930,
+      "span_s": 415.892,
+      "measurements": 60,
+      "review_measurements": 0,
+      "timing_and_sampled_clocks_pass": true,
+      "worker_sm_mhz": [
+        780.0
+      ],
+      "worker_mismatch_samples": 0,
+      "timed_samples": 794,
+      "timed_sm_mhz": [
+        780.0
+      ],
+      "timed_mismatch_samples": 0,
+      "timed_power_cap_samples": 0,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.06630787242263964,
+      "max_abs_drift_pct": 0.09407428469668272,
+      "max_round_range_pct": 0.7531318377001833,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        21.12,
+        67.57
+      ],
+      "temperature_c": [
+        36.0,
+        69.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 367069573,
+      "counter_anomaly_blocks": 31,
+      "cadence": {
+        "samples": 7930,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.05900001525878906,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s1_810",
+      "sm_mhz": 810,
+      "samples": 7926,
+      "span_s": 415.569,
+      "measurements": 60,
+      "review_measurements": 0,
+      "timing_and_sampled_clocks_pass": true,
+      "worker_sm_mhz": [
+        810.0
+      ],
+      "worker_mismatch_samples": 0,
+      "timed_samples": 792,
+      "timed_sm_mhz": [
+        810.0
+      ],
+      "timed_mismatch_samples": 0,
+      "timed_power_cap_samples": 0,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.06409763047802358,
+      "max_abs_drift_pct": 0.10611447021713538,
+      "max_round_range_pct": 0.748618776372208,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.33,
+        67.94
+      ],
+      "temperature_c": [
+        53.0,
+        70.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 366814964,
+      "counter_anomaly_blocks": 32,
+      "cadence": {
+        "samples": 7926,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.059999942779541016,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s2_840",
+      "sm_mhz": 840,
+      "samples": 7922,
+      "span_s": 415.427,
+      "measurements": 60,
+      "review_measurements": 0,
+      "timing_and_sampled_clocks_pass": true,
+      "worker_sm_mhz": [
+        840.0
+      ],
+      "worker_mismatch_samples": 0,
+      "timed_samples": 805,
+      "timed_sm_mhz": [
+        840.0
+      ],
+      "timed_mismatch_samples": 0,
+      "timed_power_cap_samples": 0,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.08147223431140463,
+      "max_abs_drift_pct": 0.08288538563554938,
+      "max_round_range_pct": 0.23718291828660584,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.41,
+        68.37
+      ],
+      "temperature_c": [
+        53.0,
+        70.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 366840298,
+      "counter_anomaly_blocks": 27,
+      "cadence": {
+        "samples": 7922,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.07800006866455078,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s3_870",
+      "sm_mhz": 870,
+      "samples": 7921,
+      "span_s": 415.263,
+      "measurements": 60,
+      "review_measurements": 3,
+      "timing_and_sampled_clocks_pass": false,
+      "worker_sm_mhz": [
+        840.0,
+        855.0,
+        870.0
+      ],
+      "worker_mismatch_samples": 181,
+      "timed_samples": 805,
+      "timed_sm_mhz": [
+        855.0,
+        870.0
+      ],
+      "timed_mismatch_samples": 26,
+      "timed_power_cap_samples": 39,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.04305353610594444,
+      "max_abs_drift_pct": 0.05535637883742725,
+      "max_round_range_pct": 1.5371617994269606,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.53,
+        69.56
+      ],
+      "temperature_c": [
+        54.0,
+        71.0
+      ],
+      "power_cap_active_samples": 220,
+      "power_cap_counter_delta_us": 366866834,
+      "counter_anomaly_blocks": 40,
+      "cadence": {
+        "samples": 7921,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.059999942779541016,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s4_900",
+      "sm_mhz": 900,
+      "samples": 7929,
+      "span_s": 415.393,
+      "measurements": 60,
+      "review_measurements": 10,
+      "timing_and_sampled_clocks_pass": false,
+      "worker_sm_mhz": [
+        855.0,
+        870.0,
+        900.0
+      ],
+      "worker_mismatch_samples": 209,
+      "timed_samples": 804,
+      "timed_sm_mhz": [
+        855.0,
+        870.0,
+        900.0
+      ],
+      "timed_mismatch_samples": 40,
+      "timed_power_cap_samples": 133,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.03871533747815233,
+      "max_abs_drift_pct": 0.07119182541653249,
+      "max_round_range_pct": 4.760127078654175,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.61,
+        69.75
+      ],
+      "temperature_c": [
+        54.0,
+        71.0
+      ],
+      "power_cap_active_samples": 735,
+      "power_cap_counter_delta_us": 366840830,
+      "counter_anomaly_blocks": 27,
+      "cadence": {
+        "samples": 7929,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.06299996376037598,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s5_960",
+      "sm_mhz": 960,
+      "samples": 7956,
+      "span_s": 416.051,
+      "measurements": 60,
+      "review_measurements": 22,
+      "timing_and_sampled_clocks_pass": false,
+      "worker_sm_mhz": [
+        855.0,
+        870.0,
+        885.0,
+        900.0,
+        915.0,
+        930.0,
+        945.0,
+        960.0
+      ],
+      "worker_mismatch_samples": 1463,
+      "timed_samples": 809,
+      "timed_sm_mhz": [
+        855.0,
+        885.0,
+        900.0,
+        915.0,
+        930.0,
+        945.0,
+        960.0
+      ],
+      "timed_mismatch_samples": 297,
+      "timed_power_cap_samples": 305,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.5190922779961055,
+      "max_abs_drift_pct": 1.5445137742838326,
+      "max_round_range_pct": 10.718418484523724,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.67,
+        69.73
+      ],
+      "temperature_c": [
+        54.0,
+        72.0
+      ],
+      "power_cap_active_samples": 1585,
+      "power_cap_counter_delta_us": 367407455,
+      "counter_anomaly_blocks": 32,
+      "cadence": {
+        "samples": 7956,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.05900001525878906,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s6_1050",
+      "sm_mhz": 1050,
+      "samples": 8011,
+      "span_s": 417.619,
+      "measurements": 60,
+      "review_measurements": 27,
+      "timing_and_sampled_clocks_pass": false,
+      "worker_sm_mhz": [
+        840.0,
+        855.0,
+        885.0,
+        900.0,
+        915.0,
+        930.0,
+        945.0,
+        960.0,
+        975.0,
+        990.0,
+        1005.0,
+        1020.0,
+        1050.0
+      ],
+      "worker_mismatch_samples": 2040,
+      "timed_samples": 802,
+      "timed_sm_mhz": [
+        855.0,
+        885.0,
+        915.0,
+        930.0,
+        945.0,
+        960.0,
+        975.0,
+        990.0,
+        1020.0,
+        1050.0
+      ],
+      "timed_mismatch_samples": 365,
+      "timed_power_cap_samples": 365,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.04297812639124923,
+      "max_abs_drift_pct": 0.056350340647812344,
+      "max_round_range_pct": 19.368325747157268,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.98,
+        69.66
+      ],
+      "temperature_c": [
+        54.0,
+        72.0
+      ],
+      "power_cap_active_samples": 2041,
+      "power_cap_counter_delta_us": 368840032,
+      "counter_anomaly_blocks": 39,
+      "cadence": {
+        "samples": 8011,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.05800008773803711,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s7_1200",
+      "sm_mhz": 1200,
+      "samples": 8052,
+      "span_s": 418.246,
+      "measurements": 60,
+      "review_measurements": 33,
+      "timing_and_sampled_clocks_pass": false,
+      "worker_sm_mhz": [
+        795.0,
+        825.0,
+        840.0,
+        870.0,
+        885.0,
+        900.0,
+        915.0,
+        930.0,
+        945.0,
+        960.0,
+        975.0,
+        990.0,
+        1005.0,
+        1020.0,
+        1035.0,
+        1050.0,
+        1065.0,
+        1080.0,
+        1095.0,
+        1110.0,
+        1125.0,
+        1140.0,
+        1200.0
+      ],
+      "worker_mismatch_samples": 2433,
+      "timed_samples": 810,
+      "timed_sm_mhz": [
+        795.0,
+        870.0,
+        885.0,
+        900.0,
+        915.0,
+        930.0,
+        945.0,
+        960.0,
+        975.0,
+        990.0,
+        1005.0,
+        1065.0,
+        1110.0,
+        1125.0,
+        1200.0
+      ],
+      "timed_mismatch_samples": 433,
+      "timed_power_cap_samples": 447,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 1.7532754974864668,
+      "max_abs_drift_pct": 3.153345084610331,
+      "max_round_range_pct": 21.412553602052608,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        24.22,
+        70.81
+      ],
+      "temperature_c": [
+        55.0,
+        74.0
+      ],
+      "power_cap_active_samples": 2519,
+      "power_cap_counter_delta_us": 369799862,
+      "counter_anomaly_blocks": 34,
+      "cadence": {
+        "samples": 8052,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.06599998474121094,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    },
+    {
+      "stage": "s8_780_after",
+      "sm_mhz": 780,
+      "samples": 7926,
+      "span_s": 415.634,
+      "measurements": 60,
+      "review_measurements": 0,
+      "timing_and_sampled_clocks_pass": true,
+      "worker_sm_mhz": [
+        780.0
+      ],
+      "worker_mismatch_samples": 0,
+      "timed_samples": 791,
+      "timed_sm_mhz": [
+        780.0
+      ],
+      "timed_mismatch_samples": 0,
+      "timed_power_cap_samples": 0,
+      "thermal_active_samples": {
+        "clocks_event_reasons.sw_thermal_slowdown": 0,
+        "clocks_event_reasons.hw_thermal_slowdown": 0
+      },
+      "max_iqr_pct": 0.07367669107816498,
+      "max_abs_drift_pct": 0.07166272956692349,
+      "max_round_range_pct": 0.6349986301477267,
+      "memory_mhz": [
+        6801.0,
+        6801.0
+      ],
+      "power_limit_w": [
+        70.0,
+        70.0
+      ],
+      "power_draw_w": [
+        23.22,
+        67.54
+      ],
+      "temperature_c": [
+        53.0,
+        70.0
+      ],
+      "power_cap_active_samples": 0,
+      "power_cap_counter_delta_us": 366743656,
+      "counter_anomaly_blocks": 33,
+      "cadence": {
+        "samples": 7926,
+        "requested_interval_ms": 50,
+        "observed_interval_seconds_median": 0.05200004577636719,
+        "observed_interval_seconds_max": 0.06699991226196289,
+        "unavailable_fields": [],
+        "sensor_resolution_verified": false
+      }
+    }
+  ],
+  "elapsed_snapshot_s": 3760.0,
+  "snapshot_times": [
+    "Mon Sep 21 01:12:22 2026",
+    "Mon Sep 21 02:15:02 2026"
+  ],
+  "total_samples": 71573,
+  "total_sample_spans_s": 3745.094,
+  "max_iqr_pct": 1.7532754974864668,
+  "max_abs_drift_pct": 3.153345084610331,
+  "max_round_range_pct": 21.412553602052608,
+  "max_abs_repeat780_change_pct": 0.06471444197337917,
+  "worst_repeat780": {
+    "shape": [
+      1999,
+      646,
+      425
+    ],
+    "dtype": "fp32",
+    "mode": "allocate",
+    "before_us": 249.01428481164055,
+    "after_us": 249.1754330164904,
+    "after_over_before_minus_one": 0.0006471444197337917,
+    "relative_range": 0.0006469350895171684,
+    "review": false
+  },
+  "max_abs_840_vs_780_change_pct": 2.7949628157316497,
+  "max_abs_allocate_vs_prealloc_at840_pct": 0.11658962773539727,
+  "max_abs_allocate_vs_prealloc_all_stages_pct": 11.330443879890007,
+  "max_abs_host_event_block_difference_pct": 0.029797581351398428,
+  "correctness_scopes": {
+    "sampled": 432,
+    "full": 108
+  },
+  "post_restore_clocks": {
+    "Graphics": 1560,
+    "SM": 1560,
+    "Memory": 7001
+  },
+  "limits": [
+    "Sampled clocks do not establish continuous or effective kernel frequency.",
+    "Stored correctness records were checked, not rerun on GPU.",
+    "Ten shape/dtype combinations; not independent-session or all-shape evidence.",
+    "No new profiler capture or automatic-core load comparison; higher requested clocks may not be maintained.",
+    "Mode differences are not causal CPU wait or allocation cost.",
+    "Counter interpretation unresolved; final clock unselected and full HOLD."
+  ],
+  "cross_run_780": {
+    "s0_780_before": {
+      "min_change_pct": 1.6224966806616337,
+      "median_change_pct": 1.901009955874955,
+      "max_change_pct": 2.167307049996592,
+      "worst": {
+        "stage": "s0_780_before",
+        "shape": "(64, 64, 64)",
+        "dtype": "fp32",
+        "mode": "graph",
+        "fixed780_us": 13.155428301386472,
+        "range780_us": 13.440546826419666,
+        "change_pct": 2.167307049996592
+      }
+    },
+    "s8_780_after": {
+      "min_change_pct": 1.6157791664876076,
+      "median_change_pct": 1.9254479633314059,
+      "max_change_pct": 2.1580268839316297,
+      "worst": {
+        "stage": "s8_780_after",
+        "shape": "(64, 64, 64)",
+        "dtype": "fp32",
+        "mode": "graph",
+        "fixed780_us": 13.155428301386472,
+        "range780_us": 13.439325980826741,
+        "change_pct": 2.1580268839316297
+      }
+    }
+  },
+  "matched_clock_change_pct": {
+    "810_vs_780": {
+      "minimum": -0.4545650532559953,
+      "median": -0.055461423303765356,
+      "maximum": 0.01431305754107104,
+      "matched_condition_modes": 30
+    },
+    "840_vs_780": {
+      "minimum": -2.7949628157316497,
+      "median": -1.6275037033873951,
+      "maximum": -0.42136227236712065,
+      "matched_condition_modes": 30
+    }
+  },
+  "review_queue_count": 101
+}

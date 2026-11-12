@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-11",
+  "reviewer": "assistant",
+  "status": "PASS",
+  "figures": [
+    {
+      "figure": "layer_standard",
+      "files": {
+        "figures/layer_standard.png": "13ce0f728b4ca9ded582b11158a96db9d7324023bf9b9e798d5e1b30b7db6b12",
+        "figures/layer_standard.pdf": "3a9db9a2f7961f7185347dd3323cb80de026deb25933c59e582da4c01fcf3274",
+        "qa/layer_standard_pdf.png": "86286f6af8db015cf06323f02a73ecc62af2c0024fea25fcf73213a24474bc4e"
+      },
+      "visual_review": "PASS",
+      "checks": [
+        "axes and labels legible",
+        "legends legible",
+        "no clipped plot content"
+      ]
+    },
+    {
+      "figure": "layer_decomposed",
+      "files": {
+        "figures/layer_decomposed.png": "00897a5fb7d370ca5fe9eb26bf007466fb5da4d74cbca526f1532792832cf98a",
+        "figures/layer_decomposed.pdf": "97d18be0f15514b35d56569bb430caf632411b0c6d55ef7fc1d4bd1714c5d351",
+        "qa/layer_decomposed_pdf.png": "4c265723168398c8c725a1d3e131367fc827387f89a3d8651d3cb95ad11d47f9"
+      },
+      "visual_review": "PASS",
+      "checks": [
+        "axes and labels legible",
+        "legends legible",
+        "no clipped plot content"
+      ]
+    },
+    {
+      "figure": "gemm_curves",
+      "files": {
+        "figures/gemm_curves.png": "7f7463a3eb27991c628e0aad442222e8a2a1a3e3094c5a5949b0a11b1f5c5192",
+        "figures/gemm_curves.pdf": "bbd54ed43e816312d7a8ce067fc989a56db2dafe4d4064cdba47aaa33c02fe76",
+        "qa/gemm_curves_pdf.png": "cc8cbeb865711190d29e7034cea0645321fe4ece361ecd5df2d9cd05b270f563"
+      },
+      "visual_review": "PASS",
+      "checks": [
+        "axes and labels legible",
+        "legends legible",
+        "no clipped plot content"
+      ]
+    }
+  ]
+}

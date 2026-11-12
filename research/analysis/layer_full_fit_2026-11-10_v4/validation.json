@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "client_date": "2026-11-10",
+  "tests_passed": 41,
+  "test_wall_seconds": 24.443,
+  "command": "MPLCONFIGDIR=/private/tmp/layer-full-report-mpl analysis/integrated_rq14_2026-10-28/.venv/bin/python -B -m unittest discover -s analysis/layer_full_fit_2026-11-10_v4 -p 'test_*.py' -v",
+  "checks": [
+    "Fixed Conv3 FP32 exclusion and unchanged FP64 criterion evidence",
+    "Six explicit FAIL conditions without timing labels; FP16 retained",
+    "Conv3 validation common cohort: FP32 49/50, FP16 50/50",
+    "Wrong identity, reason, evidence, undeclared missing records rejected",
+    "Pinned v2 train and both v2/v3 failed-attempt costs preserved",
+    "Source weights and development predictions replayed",
+    "Synthetic train, selection freeze, final evaluation and reporting",
+    "Sealed-test access gates"
+  ],
+  "actual_training_executed": false,
+  "sealed_test_opened": false,
+  "gpu_executed": false,
+  "real_continuation_validation": "PASS; continuation_validation.json",
+  "frozen_protocol_sha256": "78c3354cd433f2440469fabfa548a92cbde19a44d0ab34c2602031bf9abb4c68"
+}

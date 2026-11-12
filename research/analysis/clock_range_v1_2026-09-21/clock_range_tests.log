@@ -1,0 +1,54 @@
+......STAGE 1/9: s0_780_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s0_780_before.log
+STAGE 2/9: s1_810; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s1_810.log
+STAGE 3/9: s2_840; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s2_840.log
+STAGE 4/9: s3_870; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s3_870.log
+STAGE 5/9: s4_900; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s4_900.log
+STAGE 6/9: s5_960; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s5_960.log
+STAGE 7/9: s6_1050; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s6_1050.log
+STAGE 8/9: s7_1200; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s7_1200.log
+STAGE 9/9: s8_780_after; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpth_7chgn/s8_780_after.log
+RESTORE: COMMANDS ACCEPTED
+CLOCK RANGE: PASS; full remains HOLD
+STAGE 1/9: s0_780_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s0_780_before.log
+STAGE 2/9: s1_810; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s1_810.log
+STAGE 3/9: s2_840; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s2_840.log
+STAGE 4/9: s3_870; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s3_870.log
+STAGE 5/9: s4_900; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s4_900.log
+STAGE 6/9: s5_960; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s5_960.log
+STAGE 7/9: s6_1050; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s6_1050.log
+STAGE 8/9: s7_1200; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s7_1200.log
+STAGE 9/9: s8_780_after; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpf1rrie0e/s8_780_after.log
+RESTORE: COMMANDS ACCEPTED
+CLOCK RANGE: REVIEW; full remains HOLD
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/9: s0_780_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpe92rrhgc/s0_780_before.log
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/9: s0_780_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpwxg9_788/s0_780_before.log
+STAGE 2/9: s1_810; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpwxg9_788/s1_810.log
+STAGE 3/9: s2_840; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpwxg9_788/s2_840.log
+STAGE 4/9: s3_870; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpwxg9_788/s3_870.log
+STAGE 5/9: s4_900; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpwxg9_788/s4_900.log
+STAGE 6/9: s5_960; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpwxg9_788/s5_960.log
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/9: s0_780_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmp0gbnvs_1/s0_780_before.log
+RESTORE: COMMANDS ACCEPTED
+STAGE 1/9: s0_780_before; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s0_780_before.log
+STAGE 2/9: s1_810; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s1_810.log
+STAGE 3/9: s2_840; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s2_840.log
+STAGE 4/9: s3_870; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s3_870.log
+STAGE 5/9: s4_900; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s4_900.log
+STAGE 6/9: s5_960; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s5_960.log
+STAGE 7/9: s6_1050; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s6_1050.log
+STAGE 8/9: s7_1200; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s7_1200.log
+STAGE 9/9: s8_780_after; 180 s preheat + 60 measurements; /var/folders/1k/qh8hgtkd70949f93bc2g204w0000gq/T/tmpjsfbhvem/s8_780_after.log
+RESTORE: FAILED; inspect restore.json
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rgc
+MANUAL RESTORE: sudo nvidia-smi -i GPU-d6dbbd43-fc23-eacb-f7c3-97ccb94a728a -rmc
+CLOCK RANGE: FAIL; full remains HOLD
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+RESTORE NOT ATTEMPTED: admission failed before this run changed settings.
+....
+----------------------------------------------------------------------
+Ran 10 tests in 8.452s
+
+OK
