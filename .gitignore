@@ -1,0 +1,9 @@
+# Release payloads are restored here; tracked source files remain versioned.
+/research/
+/.artifacts-cache/
+/.artifacts-export/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+

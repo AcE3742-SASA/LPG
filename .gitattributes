@@ -1,0 +1,9 @@
+# Preserve the exact bytes used by the research manifests.
+* -text
+*.py diff=python
+*.gz -diff
+*.pdf -diff
+*.png -diff
+*.docx -diff
+*.hwp -diff
+

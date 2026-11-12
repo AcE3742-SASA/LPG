@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this release when using the LPG code or data."
+type: software
+title: "LPG: Latency Prediction Through GEMM Building Blocks"
+authors:
+  - family-names: "홍"
+    given-names: "이준"
+  - family-names: "전"
+    given-names: "유찬"
+version: "1.0.0"
+date-released: "2026-11-13"
+url: "https://github.com/AcE3742-SASA/LPG"
+repository-code: "https://github.com/AcE3742-SASA/LPG"
+license: MIT
+abstract: >-
+  Measurement and analysis code for predicting GEMM and individual layer
+  execution times on an NVIDIA RTX 4000 SFF Ada Generation GPU. The release
+  includes measurement data, trained models, frozen test results, and
+  verification records. Original research data are licensed under CC BY 4.0;
+  third-party materials retain their original licenses.
+keywords:
+  - GEMM
+  - GPU latency
+  - performance prediction
+  - residual regression
+  - Roofline
+
